@@ -1,0 +1,44 @@
+//Blank festival template
+{"LogName": "Egg Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations":
+   			[//SetUp
+			{
+   				"Operation": "Append",
+   				"Target": ["Entries", "Set-Up_additionalCharacters"],
+   				"Value": "{{ModId}}_Peiming 34 67 right",
+   				"Delimiter": "/"
+			},
+				
+				
+   				//MainEvent - during the actual hunt
+			{
+   				"Operation": "Append",
+   				"Target": ["Entries", "MainEvent_additionalCharacters"],
+   				"Value": "{{ModId}}_Peiming 34 67 left",
+   				"Delimiter": "/"
+			},
+			],
+			"When": { "IsOddYear": true,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		},
+    }
+
+        //Festival animation - if you want any of your NPC's animations during a festival, uncomment this code.
+				//{
+				//"Operation": "Append",
+				//"Target": ["Fields", "set-up", 5],
+				//"Value": "/animate {{ModId}}_Peiming false true 100 28 28 28 28 28 28 28 28 28 28 29 30 31 32 33 34",
+				//},
+
+        //dialogue
+        { "LogName": "Festival Dialogue",
+        "Action": "EditData",
+			"Target": "data/festivals/spring13",
+			"Entries": {
+				"{{ModId}}_Peiming": "",
+				"{{ModId}}_Peiming_y2": "",
+				"{{ModId}}_Peiming_spouse_y2": ""
+            }
+        }

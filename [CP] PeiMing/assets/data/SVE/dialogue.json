@@ -1,0 +1,194 @@
+//SVE DIALOGUE
+{ 
+"Changes": 
+    [
+ 
+		{ //random dialogue: "{{Random: && |inputSeparator=&&}}"
+            "LogName": "yappingMing",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{ModId}}_Peiming",
+			"Entries": {
+				"Introduction": "Good day to you. I am Pei Ming, Martial God of the North, also known as General Ming Guang. #$b# Although that was a long time ago. #$b# I ended up here without knowing how and why. #$b# Oh, and I am also called God of Love.$3",
+				//location specific <location>_<x>_<y>
+				"ArchaeologyHouse_21_5": "Greetings. I am trying to find books on times past.$3#$e#I wonder if there are records on ancient deities in here.",
+				"Saloon_6_71": "There is hardly anything better than good food and wine, don't you think?$1",
+                //green rain
+                "GreenRain": "Me? Scared of this weather?#$e# Ha! $6#$e# I have seen more unbelievable things.#$b# A gigantic piloted statue, ghosts in all shapes and forms, the fall of several dynasties...#$e#$8 Just to name a few.",
+                "GreenRainFinished": "See? That wasn't so scary, right? ",
+                //movie
+                "MovieInvitation": "Movies? This is the modern form of stageplay, no? Well, I am all for it. $1",
+                "RejectMovieTicket_AlreadyInvitedBySomeoneElse": "hoho",
+                "RejectMovieTicket_AlreadyWatchedThisWeek": "I have already watched a movie this week. Why don't we go next week?",
+                "RejectMovieTicket_Divorced": "Are you serious? $7",
+                "RejectMovieTicket_DontWantToSeeThatMovie": "I don't find this movie interesting enough. Why don't you ask {{DisplayName}}?",
+                "RejectMovieTicket": "I have other things to do.",
+                //dating
+                "breakUp": "Your loss. Do you even know who I am? A martial god and- #$b#$2 Not that it matters now.$2",
+                "dating_Peiming_memory_oneyear": "It's our anniversary, although a year feels like nothing to me.",
+                "RejectBouquet_NotDatable": "Romantic commitment? Not my thing.",
+                "RejectBouquet_NpcAlreadyMarried": "No, thank you.",
+                "RejectBouquet_VeryLowHearts": "No, thank you.",
+                "RejectBouquet_LowHearts": "No.",
+                "RejectBouquet": "No.",
+               //marriage
+                "SpouseFarmhouseClutter": "Someone should tidy up. Do you have any deputies to help?",
+                "Spouse_MonstersInHouse": "Let me take care of these monsters! Huh? No?",
+                "SpouseStardrop": "I heard there is a custom to give someone you hold dear a Stardrop. So... here you go.$6",
+                "RejectMermaidPendant_NeedHouseUpgrade": "Do you think a small shack such as yours is enough for someone like me? Please.",
+                "RejectMermaidPendant_NotDatable": "I don't deem this necessary. And I frankly am not interested.",
+                "RejectMermaidPendant_Under8Hearts": "This is not a commitment I am willing to make.",
+                "RejectMermaidPendant_Under10Hearts": "Do you really think you are ready for this?",
+                "RejectMermaidPendant_Under10Hearts_AskedAgain": "Asking again? I am not into clingy people.",
+                "RejectMermaidPendant": "Keep it for yourself.",
+                //divorced
+                "divorced": "Sometimes people have to make decisions that are irreversible. In your case, it's also laughable. $5",
+                "RejectGift_Divorced": "Once you lost a god's good graces, there is nearly no coming back.$7#$b# Let me phrase this in a way someone like you would understand, @.#$b# You. Screwed. Up.$5", 
+                "RejectMermaidPendant_Divorced": "Is this your understanding of comedy? If so, I suggest you take classes. $5",
+                "RejectBouquet_Divorced": "Shove it up your- $5#$b# Ahem. Get rid of those weeds.",
+                "WipedMemory": "Huh? Hm?",
+                //island
+                "Resort": "{{Random: You see, I hail from a cold landscape. Deadly cold Winters were a normal occurrence.#$b# So the beach is quite the treat. && I am more of a Winter person but I can always appreciate a nice day at the beach.|inputSeparator=&&}}",
+                "Resort_Bar": "Those drinks are amazing.$3 Want to share one with me?",
+                "Resort_Chair": "{{Random: You see, I hail from a cold landscape. Deadly cold Winters were a normal occurrence.#$b# So the beach is quite the treat. && I am more of a Winter person but I can always appreciate a nice day at the beach.|inputSeparator=&&}}",
+                "Resort_Dance": "{{Random: You see, I hail from a cold landscape. Deadly cold Winters were a normal occurrence.#$b# So the beach is quite the treat. && I am more of a Winter person but I can always appreciate a nice day at the beach.|inputSeparator=&&}}",
+                "Resort_Entering": "{{Random: You see, I hail from a cold landscape. Deadly cold Winters were a normal occurrence.#$b# So the beach is quite the treat. && I am more of a Winter person but I can always appreciate a nice day at the beach.|inputSeparator=&&}}",
+                "Resort_Leaving": "{{Random: You see, I hail from a cold landscape. Deadly cold Winters were a normal occurrence.#$b# So the beach is quite the treat. && I am more of a Winter person but I can always appreciate a nice day at the beach.|inputSeparator=&&}}",
+                "Resort_Shore": "{{Random: You see, I hail from a cold landscape. Deadly cold Winters were a normal occurrence.#$b# So the beach is quite the treat. && I am more of a Winter person but I can always appreciate a nice day at the beach.|inputSeparator=&&}}",
+                "Resort_Towel": "{{Random: You see, I hail from a cold landscape. Deadly cold Winters were a normal occurrence.#$b# So the beach is quite the treat. && I am more of a Winter person but I can always appreciate a nice day at the beach.|inputSeparator=&&}}",
+                "Resort_Umbrella": "{{Random: You see, I hail from a cold landscape. Deadly cold Winters were a normal occurrence.#$b# So the beach is quite the treat. && I am more of a Winter person but I can always appreciate a nice day at the beach.|inputSeparator=&&}}",
+                "Resort_Wander": "{{Random: You see, I hail from a cold landscape. Deadly cold Winters were a normal occurrence.#$b# So the beach is quite the treat. && I am more of a Winter person but I can always appreciate a nice day at the beach.|inputSeparator=&&}}",
+                //birthday
+                "AcceptBirthdayGift_Negative": "Sometimes, being forgotten doesn't seem so bad compared to getting an offering like this.#$b# If I have to be honest, you should try better with your offerings.$2",
+                "AcceptBirthdayGift_Positive": "Even after thousands of years, I love when people remember my birthday.#$b# You have my gratitude. Why don't you come over later?$3",
+                "AcceptBirthdayGift": "This reminds me of something.$8#$b# Quite a while back, a fellow God gave another one a cursed robe as a birthday present.$8#$b# Chaos ensured and the gifting God and his loyal official were banished from our realm. And this is only the short version.$8#$b# Thank you for the offering, I suppose.",
+                //dating proposal
+                "AcceptBouquet": "Oho? You're not the first one to make such an offer to me.$3#$b# I accept.$3",
+                //trashcan
+                "DumpsterDiveComment": "Is that proper behavior? I doubt so. Learn some manners.$2",
+                //slingshot
+                "HitBySlingshot": "You do know that I am a martial god, no?$5",
+				
+				//////////////////////////weekday dialogue depending on heart level
+				"Mon": "{{Random: The higher you climb, the harder you fall. Life is full of surprises, and one cannot escape whatever that comes.#$e# Even when mortal has become god, we do not have the good fortune to avoid fate in the end.&& $1 Hoho! It is nice to see you, Farmer. && Ever since I ended up here, I have been on the lookout for beautiful women.I am not sure if any of the ladies living here suit my refined tastes.#$e#$8 Hoh?! Men?! I mean...#$b# I would not say no to another man either, I suppose.#$b#$6. But I prefer women. && I heard the Adventurer's Guild mainly fights with swords.#$b# You want to know if I have expertise on sword fighting?#$b#$7 Let's change the topic. |inputSeparator=&&}}", 
+				"Tue": "",
+				"Wed": "",
+				"Thu": "",
+				"Fri": "",
+				"Sat": "",
+				"Sun": "",
+
+				"Mon2": "", 
+				"Tue2": "",
+				"Wed2": "",
+				"Thu2": "",
+				"Fri2": "",
+				"Sat2": "",
+				"Sun2": "",
+
+				"Mon4": "", 
+				"Tue4": "",
+				"Wed4": "",
+				"Thu4": "",
+				"Fri4": "",
+				"Sat4": "",
+				"Sun4": "",
+
+				"Mon6": "",
+				"Tue6": "",
+				"Wed6": "",
+				"Thu6": "",
+				"Fri6": "",
+				"Sat6": "",
+				"Sun6": "",
+
+
+				"Mon8": "",
+				"Tue8": "",
+				"Wed8": "",
+				"Thu8": "",
+				"Fri8": "",
+				"Sat8": "",
+				"Sun8": "",
+
+				"Mon10": "",
+				"Tue10": "",
+				"Wed10": "",
+				"Thu10": "",
+				"Fri10": "",
+				"Sat10": "",
+				"Sun10": "",  
+				
+
+                ////////////////////////////////////////////////seasonals
+                //spring
+                "spring_Mon": "{{Random: The higher you climb, the harder you fall. Life is full of surprises, and one cannot escape whatever that comes.#$e# Even when mortal has become god, we do not have the good fortune to avoid fate in the end.&& $1 Hoho! It is nice to see you, Farmer. && Ever since I ended up here, I have been on the lookout for beautiful women.I am not sure if any of the ladies living here suit my refined tastes.#$e#$8 Hoh?! Men?! I mean...#$b# I would not say no to another man either, I suppose.#$b#$6. But I prefer women. && I heard the Adventurer's Guild mainly fights with swords.#$b# You want to know if I have expertise on sword fighting?#$b#$7 Let's change the topic. |inputSeparator=&&}}",
+                "spring_Tue": "{{Random: The higher you climb, the harder you fall. Life is full of surprises, and one cannot escape whatever that comes.#$e# Even when mortal has become god, we do not have the good fortune to avoid fate in the end.&& $1 Hoho! It is nice to see you, Farmer. && Ever since I ended up here, I have been on the lookout for beautiful women.I am not sure if any of the ladies living here suit my refined tastes.#$e#$8 Hoh?! Men?! I mean...#$b# I would not say no to another man either, I suppose.#$b#$6. But I prefer women. && I heard the Adventurer's Guild mainly fights with swords.#$b# You want to know if I have expertise on sword fighting?#$b#$7 Let's change the topic. |inputSeparator=&&}}",
+                "spring_Wed": "{{Random: The higher you climb, the harder you fall. Life is full of surprises, and one cannot escape whatever that comes.#$e# Even when mortal has become god, we do not have the good fortune to avoid fate in the end.&& $1 Hoho! It is nice to see you, Farmer. && Ever since I ended up here, I have been on the lookout for beautiful women.I am not sure if any of the ladies living here suit my refined tastes.#$e#$8 Hoh?! Men?! I mean...#$b# I would not say no to another man either, I suppose.#$b#$6. But I prefer women. && I heard the Adventurer's Guild mainly fights with swords.#$b# You want to know if I have expertise on sword fighting?#$b#$7 Let's change the topic. |inputSeparator=&&}}",
+                "spring_Thu": "{{Random: The higher you climb, the harder you fall. Life is full of surprises, and one cannot escape whatever that comes.#$e# Even when mortal has become god, we do not have the good fortune to avoid fate in the end.&& $1 Hoho! It is nice to see you, Farmer. && Ever since I ended up here, I have been on the lookout for beautiful women.I am not sure if any of the ladies living here suit my refined tastes.#$e#$8 Hoh?! Men?! I mean...#$b# I would not say no to another man either, I suppose.#$b#$6. But I prefer women. && I heard the Adventurer's Guild mainly fights with swords.#$b# You want to know if I have expertise on sword fighting?#$b#$7 Let's change the topic. |inputSeparator=&&}}",
+                "spring_Fri": "{{Random: The higher you climb, the harder you fall. Life is full of surprises, and one cannot escape whatever that comes.#$e# Even when mortal has become god, we do not have the good fortune to avoid fate in the end.&& $1 Hoho! It is nice to see you, Farmer. && Ever since I ended up here, I have been on the lookout for beautiful women.I am not sure if any of the ladies living here suit my refined tastes.#$e#$8 Hoh?! Men?! I mean...#$b# I would not say no to another man either, I suppose.#$b#$6. But I prefer women. && I heard the Adventurer's Guild mainly fights with swords.#$b# You want to know if I have expertise on sword fighting?#$b#$7 Let's change the topic. |inputSeparator=&&}}",
+                "spring_Sat": "{{Random: The higher you climb, the harder you fall. Life is full of surprises, and one cannot escape whatever that comes.#$e# Even when mortal has become god, we do not have the good fortune to avoid fate in the end.&& $1 Hoho! It is nice to see you, Farmer. && Ever since I ended up here, I have been on the lookout for beautiful women.I am not sure if any of the ladies living here suit my refined tastes.#$e#$8 Hoh?! Men?! I mean...#$b# I would not say no to another man either, I suppose.#$b#$6. But I prefer women. && I heard the Adventurer's Guild mainly fights with swords.#$b# You want to know if I have expertise on sword fighting?#$b#$7 Let's change the topic. |inputSeparator=&&}}",
+                "spring_Sun": "{{Random: The higher you climb, the harder you fall. Life is full of surprises, and one cannot escape whatever that comes.#$e# Even when mortal has become god, we do not have the good fortune to avoid fate in the end.&& $1 Hoho! It is nice to see you, Farmer. && Ever since I ended up here, I have been on the lookout for beautiful women.I am not sure if any of the ladies living here suit my refined tastes.#$e#$8 Hoh?! Men?! I mean...#$b# I would not say no to another man either, I suppose.#$b#$6. But I prefer women. && I heard the Adventurer's Guild mainly fights with swords.#$b# You want to know if I have expertise on sword fighting?#$b#$7 Let's change the topic. |inputSeparator=&&}}",
+                //flower festival
+                "FlowerDance_Accept_Spouse": "The same old dance again doesn't have to be bad by necessity. On the contrary.",
+                "FlowerDance_Accept": "Oh my, it is an honor. I seduced many a lady with my skill.",
+                "FlowerDance_Decline": "Did you really think the God of Love would accept this invitation of yours?$6#$b# I commend your confidence, but that is all.",
+                //summer
+                "summer_20": "It's been hundreds of years since my birth and I have made all kinds of memories since then, bad and good. But never have I thought I would get sent to a place like this.",
+                "summer_Mon": "hoho",
+                "summer_Tue": "hoho",
+                "summer_Wed": "hoho",
+                "summer_Thu": "hoho",
+                "summer_Fri": "hoho",
+                "summer_Sat": "hoho",
+                "summer_Sun": "hoho",
+                //fall
+                "fall_Mon": "hoho",
+                "fall_Tue": "hoho",
+                "fall_Wed": "hoho",
+                "fall_Thu": "hoho",
+                "fall_Fri": "hoho",
+                "fall_Sat": "hoho",
+                "fall_Sun": "hoho",
+                //fair
+                "Fair_Judging": "@, do you think you will win? Maybe if I helped-",
+                "Fair_Judged_PlayerLost_PurpleShorts": "Those shorts were an interesting additon. I wouldn't have added them myself, but Lewis looked mighty annoyed. Good.$1",
+                "Fair_Judged_PlayerLost_Skipped": "You skipped? Disappointing.",
+                "Fair_Judged_PlayerLost": "Well. That was nothing to talk about.",
+                "Fair_Judged_PlayerWon": "Dare I say that I am impressed?$6",
+                "Fair_Judged": "So? What are you going to do for the rest of the fair? #$e# Me? I will try my hand at the target practice stall.",
+                //winter
+                "winter_Mon": "hoho",
+                "winter_Tue": "hoho",
+                "winter_Wed": "hoho",
+                "winter_Thu": "hoho",
+                "winter_Fri": "hoho",
+                "winter_Sat": "hoho",
+                "winter_Sun": "hoho",
+                //winter star
+                "WinterStar_GiveGift_Before_Spouse": "Ah, the anticipation of receiving a gift. What will it be? ",
+                "WinterStar_GiveGift_Before": "Ah, the anticipation of receiving a gift. What will it be?",
+                "WinterStar_GiveGift_After_Spouse": "@, I will cherish this gift with all I have.",
+                "WinterStar_GiveGift_After": "You have my gratitude, @.",
+                "WinterStar_ReceiveGift": "Hoho, happy Winter Start! I have the honorable task of presenting a gift to you. #$b# And don't say anything cheesy such as 'You are the greatest gift' or I might just vomit.$1",
+
+                //Gift Response
+                "AcceptGift_(O)109": "How dare you- this brings back terrible memories.$2#$b# Have you heard the tale of 'The General who broke his Sword?' Most likely not. Leave me alone.$5",
+				"AcceptGift_(O)155": "Hoho~ You know me too well.$3",
+				"AcceptGift_(O)91": "Ha! Thank you. I needed to blow off some steam later, if you catch my drift. $3",
+				"AcceptGift_(O)342": "I do not have the best memories of... pickles. Thank you for nothing!$7",
+				
+				
+            }
+        },
+        {
+            "LogName": "Summit Dialogue",
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries": {
+                "SummitEvent_Dialogue3_{{ModId}}_Peiming": "hoho"
+            }
+        }
+    ]
+}
+
+		

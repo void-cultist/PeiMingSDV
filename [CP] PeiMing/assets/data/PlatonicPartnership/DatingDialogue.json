@@ -1,0 +1,29 @@
+//VANILLA DIALOGUE
+{ 
+"Changes": 
+    [
+ 
+		{ //random dialogue: "{{Random: && |inputSeparator=&&}}"
+            "LogName": "yappingMing",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/{{ModId}}_Peiming",
+			"Entries": {
+				
+                //dating
+                "breakUp": "Your loss. Do you even know who I am? A martial god and- #$b#$2 Not that it matters now.$2",
+                "dating_Peiming_memory_oneyear": "It's our anniversary, although a year feels like nothing to me.",
+                "RejectBouquet_NotDatable": "Romantic commitment? Not my thing.",
+                "RejectBouquet_NpcAlreadyMarried": "No, thank you.",
+                "RejectBouquet_VeryLowHearts": "No, thank you.",
+                "RejectBouquet_LowHearts": "No.",
+                "RejectBouquet": "No.",
+               
+                //dating proposal
+                "AcceptBouquet": "Oho? You're not the first one to make such an offer to me.$3#$b# I accept.$3",
+			},
+		},
+               
+    ]
+}
+
+		

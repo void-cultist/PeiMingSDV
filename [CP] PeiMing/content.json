@@ -1,0 +1,963 @@
+{
+    "Format": "2.8.0",
+	
+	"DynamicTokens": [
+		{
+			"Name": "IsOddYear",
+			"Value": "{{Query: {{Year}} % 2 = 1}}"
+		},
+
+//Tokens for map patching & map strings
+		{
+            "Name": "HouseLocationToken",
+            "Value": "PeiMingExterior"
+        },
+        {
+            "Name": "HouseLocationToken",
+            "Value": "PeiMingExteriorSVE",
+            "When": {
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "House Location": "SVE"
+            }
+        },
+       {
+            "Name": "HouseLocationToken",
+            "Value": "PeiMingWarp",
+            "When": {
+                "House Location": "Alternate"
+            }
+        },
+		{
+			"Name": "OutdoorStrings",
+			"Value": "PeiMingExterior",
+		},
+		{
+			"Name": "OutdoorStrings",
+			"Value": "PeiMingExteriorSVE",
+			"When": {
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "House Location": "SVE"
+            }
+		},
+		{
+			"Name": "OutdoorStrings",
+			"Value": "PeiMingNewOutdoors",
+			"When": {
+                "House Location": "Alternate"
+            }
+		},
+		{
+			"Name": "LockedHouseLocationToken",
+			"Value": "PeiMingExteriorLocked",
+		},
+		{
+			"Name": "LockedHouseLocationToken",
+			"Value": "PeiMingExteriorSVELocked",
+			"When": {
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "House Location": "SVE"
+            }
+		},
+		{
+			"Name": "LockedHouseLocationToken",
+			"Value": "PeiMingNewOutdoorsLocked",
+			"When": {
+                "House Location": "Alternate"
+            }
+		},
+		
+		
+		//vanilla patch, fallback
+		{ "Name": "HousePatchXCoord",
+		"Value": 40
+		
+		},
+		{ "Name": "HousePatchYCoord",
+		"Value": 65
+
+		},
+		{ "Name": "HousePatchWidth",
+		"Value": 21
+
+		},
+		{ "Name": "HousePatchHeight",
+		"Value": 16
+
+		},
+
+		//sve patch
+		{ "Name": "HousePatchXCoord",
+		"Value": 6,
+		"When":
+			{
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "House Location": "SVE"
+            }
+		
+		},
+
+		{ "Name": "HousePatchYCoord",
+		"Value": 56,
+		"When": 
+			{
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "House Location": "SVE"
+            }
+		},
+
+		{ "Name": "HousePatchWidth",
+		"Value": 30,
+		"When": 
+			{
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "House Location": "SVE"
+            }
+		},
+
+		{ "Name": "HousePatchHeight",
+		"Value": 31,
+		"When": 
+			{
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "House Location": "SVE"
+            }
+		},
+
+
+	
+
+		//alternate warp
+		{ "Name": "HousePatchXCoord",
+		"Value": 0,
+		"When": 
+			{
+                "House Location": "Alternate"
+            }
+		
+		},
+
+		{ "Name": "HousePatchYCoord",
+		"Value": 30,
+		"When":
+			 {
+                "House Location": "Alternate"
+            }
+		},
+
+		{ "Name": "HousePatchWidth",
+		"Value": 5,
+		"When": 
+			{
+                "House Location": "Alternate"
+            }
+		},
+		
+		{ "Name": "HousePatchHeight",
+		"Value": 10,
+		"When": 
+			{
+                "House Location": "Alternate"
+            }
+		},
+		{
+			"Name": "PartnershipStrings",
+			"Value": "Roommate",
+		},
+
+		{
+			"Name": "PartnershipStrings",
+			"Value": "Companion",
+			"When": { "Partnership": "Platonic Partnership",
+         "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true },
+		},
+
+	//woods or beach visit during birthday
+		{ "Name": "WoodsOrBeach",
+		   "Value": "Beach",
+		   "When": { "IsOddYear": true 
+				
+			},
+		},
+		{ "Name": "WoodsOrBeach",
+			"Value": "Woods",
+			"When": {
+				"IsOddYear": false
+				
+			},
+		},
+	//event stuff, don't ask. don't. please.
+	{
+		"Name": "PM2H_1",
+		"Value": "speak {{ModID}}_Peiming \"Ah, @. I did not hear you coming. Do you need anything from this venerable one?\"/pause 400/emote farmer 8/pause 500/speak {{ModID}}_Peiming \"Me? Oh, I have been trying to make sense of all this mess.#$b# Landing here, having no way back yet...#$b# I refuse to acknowledge all these dwarf scrolls and elven books that offered me nothing but a waste of my time.$7\"/pause 400/emote farmer 40/pause 500/speak {{ModID}}_Peiming \"How difficult can it be?$2#$b# Are you trying to tell me that these ancient civilizations figured out enchanted weapons and computers,#$b# but none of them were curious enough to ask themselves about dimension-hopping?$7\""
+	},
+	{
+		"Name": "2HQuickQuestion",
+		"Value": "speak {{ModID}}_Peiming \"Well, more like 'dimension-falling', I guess. My answers to why I showed up here remain the same as they were when we first met.\"/quickQuestion \"(What should I say?)\"#\"Have you tried speaking to the Wizard? Perhaps he would know.\"#\"Perhaps you got cursed.\"(break)speak {{ModID}}_Peiming \"The Wizard? $2#$b# A bumbling fool who stays cooped up in his tower and thinks I can't see him watching me? Please.$7\"(break)speak {{ModID}}_Peiming \"Cursed!?$8#$b# Who in their right mind would ever think to curse me, the General Ming Guang?$5#$b#.................#$b# Actually, nevermind.$9\"\/pause 300\/\/emote farmer 28/pause 500/"
+	},
+	{
+		"Name": "ReadingAnimation",
+		"Value": "animate {{ModID}}_Peiming false false 600 32 33 33 33 33 34 34 34 34 32 32 33 33 34 34 32"
+	},
+/* 	{
+		"Name": "5HTriggerCondition",
+		"Value": "PM4HSaloon",
+		"When": {
+			"HasSeenEvent: |contains={{ModID}}_PM4HSaloon": true
+		}
+	},
+	{
+		"Name": "5HTriggerCondition",
+		"Value": "PM4HMountain",
+		"When": {
+			"HasSeenEvent: |contains={{ModID}}_PM4HMountain": true
+		}	
+	} */
+		
+	],
+	
+   "ConfigSchema": 
+   {
+	   "House Location": 
+		{	"AllowValues": "Vanilla, SVE, Alternate",
+			"Default": "Vanilla",
+			"AllowBlank": false,
+			"Description": "Changes the location of Pei Ming's house when using SVE, will otherwise cause clipping issues with Andy's farm. 'Alternate' adds a warp point next to the Wizard Tower and should be selected in case there's conflicts with other mods."
+		},
+			
+		"Portrait Style": 
+		{	"AllowValues": "Default, Alternative",
+			"Default": "Default",
+			"AllowBlank": true,
+			"Description": "Default = by Pastelshrooms whose sprites inspired this mod; Alternative = by voidcultist, inspired by Nyapu"
+		},
+
+		"Festival Participation":
+		{ 	"AllowValues": "true, false",
+			"Default": "true",
+			"AllowBlank": false,
+			"Description": "Let Pei Ming attend festivals. Disable if there is conflict with other mods. Default true."
+		},
+
+		"Partnership":
+		{	"AllowValues": "Platonic Partnership, Roommates",
+			"Default": "Roommates",
+			"AllowBlank": false,
+			"Description": "Whether Pei Ming behaves like a vanilla roommate or a platonic partner after moving in. Should be used with the Mod 'Hugs and Kisses' with 'RoommateKisses' enabled!",
+			"Section": "Relationship"
+		},
+		"Ceremony":
+		{	"AllowValues": "true, false",
+			"Default": false,
+			"AllowBlank": false,
+			"Description": "Whether or not you want to celebrate your companionship with a platonic ceremony (like a Wedding event). Should be used with the Mod 'Hugs and Kisses' with 'RoommateKisses' enabled!",
+			"Section": "Relationship"
+
+		},
+	
+			
+	}, 
+    "Changes":
+	  [{
+   		 "LogName": "Blank JSON load", //The logline is not required, but it's useful down the road for labeling your patches so you can tell your problem is, say "NPC Dialogue Patch" and not "NPC Patch #14"
+        	"Action": "Load",
+        	"Target": "Characters/Dialogue/{{ModId}}_Peiming, Characters/schedules/{{ModId}}_Peiming, Strings/schedules/{{ModId}}_Peiming, Strings/StringsFromMaps/{{ModID}}_PeiMingHouse, Strings/StringsFromMaps/{{ModID}}_PeiMingExterior, Strings/StringsFromCSFiles/{{ModID}}_Peiming_EngagedRoommate, Data/EngagementDialogue/{{ModID}}_Peiming, Data/Events/{{ModID}}_PeiMingHouse, Data/Locations/{{ModID}}_PeiMingNewOutdoors", 
+        	"FromFile": "assets/data/blank.json" //this should be wherever you put it in your assets folder - put it in a subfolder if you want
+   	 },
+
+     // NPC Disposition - updated for 1.6	 
+    	{
+        "LogName": "Pei Ming in da house",
+   		 "Action": "Include",
+   		 "FromFile": "assets/data/dispos.json"
+    	},
+
+	//portraits and sprites 
+	{
+        	"LogName": "Base Portraits",
+        	"Action": "Load",
+        	"Target": "Portraits/{{ModId}}_Peiming",
+        	"FromFile": "assets/Portraits/{{Portrait Style}}/Normal.png"
+   	 },		
+	 
+	 {
+        	"LogName": "Base Sprites",
+        	"Action": "Load",
+        	"Target": "Characters/{{ModId}}_Peiming",
+        	"FromFile": "assets/Characters/Normal.png"
+   	 },
+	 
+	//appearances for Winter, BathHouse and Ginger Island
+	
+	{
+	"Action": "EditData",
+	"Target": "Data/Characters",
+	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
+	"Entries":
+	{
+		"{{ModID}}_Peiming_Winter":
+		{
+			"Id": "{{ModID}}_Peiming_Winter",
+			"Season": "winter",
+			"Portrait": "Portraits/{{ModID}}_Peiming_Winter",
+			"Sprite": "Characters/{{ModID}}_Peiming_Winter",
+			"Indoors": true,
+			"Outdoors": true,
+			"IsIslandAttire": false,
+			"Condition": "TRUE",
+			"Precedence": 0,
+			"Weight": 1
+		},
+	}
+},
+{
+	"Action": "EditData",
+	"Target": "Data/Characters",
+	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
+	"Entries":
+	{
+		"{{ModID}}_Peiming_Beach":
+		{
+			"Id": "{{ModID}}_Peiming_Beach",
+			"Portrait": "Portraits/{{ModID}}_Peiming_Beach",
+			"Sprite": "Characters/{{ModID}}_Peiming_Beach",
+			"Indoors": true,
+			"Outdoors": true,
+			"IsIslandAttire": true,
+			"Condition": "TRUE",
+			"Precedence": 0,
+			"Weight": 1
+		},
+	}
+},
+
+{
+	"Action": "EditData",
+	"Target": "Data/Characters",
+	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
+	"Entries":
+	{
+		"{{ModID}}_Peiming_Bath":
+		{
+			"Id": "{{ModID}}_Peiming_Bath",
+			"Portrait": "Portraits/{{ModID}}_Peiming_Bath",
+			"Sprite": "Characters/{{ModID}}_Peiming_Bath",
+			"Indoors": true,
+			"Outdoors": true,
+			"IsIslandAttire": false,
+			"Condition": "LOCATION_NAME Target BathHouse_Pool", 
+			"Precedence": 0,
+			"Weight": 1
+		},
+	}
+},
+
+{
+	"Action": "EditData",
+	"Target": "Data/Characters",
+	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
+	"Entries":
+	{
+		"{{ModID}}_Peiming_SummerBeach":
+		{
+			"Id": "{{ModID}}_Peiming_SummerBeach",
+			"Portrait": "Portraits/{{ModID}}_Peiming_SummerBeach",
+			"Sprite": "Characters/{{ModID}}_Peiming_SummerBeach",
+			"Season": "Summer",
+			"Indoors": true,
+			"Outdoors": true,
+			"IsIslandAttire": false,
+			"Condition": "LOCATION_NAME Target Beach, WEATHER Target Sun", 
+			"Precedence": 0,
+			"Weight": 1
+		},
+	}
+},
+
+{
+	"LogName": "Beach Portraits - Appearance Load",
+	"Action": "Load",
+	"Target": "Portraits/{{ModID}}_Peiming_Beach",
+	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Beach.png",
+},
+
+
+{
+	"LogName": "Beach Sprites - Appearance Load",
+	"Action": "Load",
+	"Target": "Characters/{{ModID}}_Peiming_Beach",
+	"FromFile": "assets/Characters/Peiming_Beach.png"
+},
+
+{
+	"LogName": "Winter Portraits - Appearance Load",
+	"Action": "Load",
+	"Target": "Portraits/{{ModID}}_Peiming_Winter",
+	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Winter.png",
+},
+
+
+{
+	"LogName": "Winter Sprites - Appearance Load",
+	"Action": "Load",
+	"Target": "Characters/{{ModID}}_Peiming_Winter",
+	"FromFile": "assets/Characters/Peiming_Winter.png"
+},
+
+{
+	"LogName": "BathHouse Portraits - Appearance Load",
+	"Action": "Load",
+	"Target": "Portraits/{{ModID}}_Peiming_Bath",
+	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Beach.png",
+},
+
+
+{
+	"LogName": "BathHouse Sprites - Appearance Load",
+	"Action": "Load",
+	"Target": "Characters/{{ModID}}_Peiming_Bath",
+	"FromFile": "assets/Characters/Peiming_Beach.png"
+},
+
+{
+	"LogName": "SummerBeach Portraits - Appearance Load",
+	"Action": "Load",
+	"Target": "Portraits/{{ModID}}_Peiming_SummerBeach",
+	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Beach.png",
+},
+
+
+{
+	"LogName": "SummerBeach Sprites - Appearance Load",
+	"Action": "Load",
+	"Target": "Characters/{{ModID}}_Peiming_SummerBeach",
+	"FromFile": "assets/Characters/Peiming_Beach.png"
+},
+	
+	
+	 
+	//dialogue & CT
+	{
+       "LogName": "NPC Dialogue",
+   	   "Action": "Include",
+	   "FromFile": "assets/data/dialogue.json"
+    },
+	
+	{ "LogName": "Include CT",
+	  "Action": "Include",
+	  "FromFile": "assets/data/ConversationTopics.json",
+	},
+	
+	{ "LogName": "Include Platonic Partner Dialogue",
+	"Action": "Include",
+	"When": {"HasMod |contains=aedenthorn.FreeLove": true,
+			"HasMod |contains=Spiderbuttons.CMCT": true,
+			}, 
+	//CMCT can't do both a token grab and a has mod check in one patch, so you use an include that checks for CMCT and do the token grab in the included file!! also separate has mod checks, if you separated by comma it would be OR
+	"FromFile": "assets/data/PlatonicPartnership/marriageDialogue.json",
+	},
+	{"LogName": "Include 'dating' dialogue",
+	"Action": "Include",
+	"FromFile": "assets/data/PlatonicPartnership/DatingDialogue.json"},
+	
+		
+	
+	//house interior
+{ 
+    "LogName": "Load PM's House Interior Map", // LogName gives your CP patch (different concept to map patch - it's one action that Content Patcher takes, identified by being a block of JSON with the "Action" field) a descriptive name that shows up in errors/warnings and patch summaries
+	"Action": "Load", // This action loads the map as a new asset into the game
+	"Target": "Maps/{{ModID}}_PeiMingHouse", // {{ModID}} is a CP token that is automatically converted into your mod's unique ID. Using it to prefix all your asset names and IDs ensures that your mod's things are unique and won't clash with things from other mods
+	"FromFile": "assets/Maps/PeiMingHouse.tmx" // The name of the map file you made, inside the Maps folder you moved it to
+},	
+{
+	"LogName": "Add PM House Interior ",
+	"Action": "EditData",
+	"Target": "Data/Locations",
+	"Entries": {
+		"{{ModID}}_PeiMingHouse": 
+		{ 
+// This can be the same or different to the name of the map, but do make sure it is prefixed with your mod ID to be unique
+			"DefaultArrivalTile":
+		    { // Make this the tile that you want the farmer to arrive on when using the door so when anyone warps in from a different action (like using debug warp) they will still arrive at the door instead of in the void
+				
+			},
+			"CreateOnLoad":
+			 {
+				"MapPath": "Maps/{{ModID}}_PeiMingHouse" // Notice that this is the Target from the map Load patch we wrote in the section before this one. This field tells the game which map to use for this location.
+			},
+			
+		}	
+	}
+},
+	
+//house exterior
+        {
+            "LogName": "Add PM New Outdoor Location",
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "FromFile": "Assets/Maps/{{HouseLocationToken}}.tmx",
+			 "PatchMode": "Replace",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": "{{HousePatchWidth}}",
+                "Height": "{{HousePatchHeight}}"
+            },
+            "ToArea": {
+                "X": "{{HousePatchXCoord}}",
+                "Y": "{{HousePatchYCoord}}",
+                "Width": "{{HousePatchWidth}}",
+                "Height": "{{HousePatchHeight}}"
+            }
+        },
+	
+	//separate map for compatibility
+
+{
+		"LogName": "Load Alternate Map",
+		"Action": "Load",
+		"When": { "House Location": "Alternate" },
+		"Target": "Maps/{{ModID}}_PeiMingNewOutdoors",
+		"FromFile": "assets/Maps/PeiMingNewOutdoors.tmx",
+},
+
+{
+	"LogName": "Add PM New Outdoor Location",
+	"Action": "EditData",
+	"Target": "Data/Locations",
+	"Entries": {
+		"{{ModID}}_PeiMingNewOutdoors": 
+		{
+			"DefaultArrivalTile": { "X": 20, "Y": 14},
+			"CreateOnLoad": {
+				"MapPath": "Maps/{{ModID}}_PeiMingNewOutdoors"
+			},	
+			"Forage": [
+				 { "RandomItemId": ["(O)595", "(O)638", "(O)637", "(O)272", "(O)91", "(O)64", "(O)84", "(O)Cornucopia_WinterRose", "(O)Cornucopia_Rose", "(O)Cornucopia_SpringRose", "(O)Cornucopia_FallRose", "(O)Cornucopia_SummerRose"],
+				"PerItemCondition": "SEASON {{season}}",
+				"Chance": 0.9, },
+
+				{ "ItemID":  "(O)void.NorthernHeartMelon_NHMelon",
+				"Condition": "PLAYER_FRIENDSHIP_POINTS host {{ModID}}_Peiming 2000",
+				"Chance": 0.1,
+				"Season": "winter",
+				}
+			]
+			}
+		}
+	},
+
+
+
+//map strings
+	{
+		"LogName": "add map messages to Pei Ming's house and patio",
+		"Action": "Include",
+		"FromFile":  "assets/data/Strings/StringsFromMaps.json" 
+	},
+		
+//warps between map edits
+// Adds the LockedDoorWarp. This tile is locked behind a specific time in-game + the player clicking on said tile. It can also be locked behind heart level with an NPC.
+{
+    "LogName": "Edit Vanilla Forest map to add warp into PM's house",
+    "Action": "EditMap",
+    "Target": "Maps/Forest", // Target the map you're adding your house to.
+	"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"House Location": "Vanilla", 
+			},
+    "MapTiles": [ 
+        {
+            "Position": { "X": 50, "Y": 72 }, // The coordinate of the bottom tile of the door. This is the first set of coordinates that we wrote down earlier in the tutorial.
+            "Layer": "Buildings", // The tile the player is clicking is on the buildings layer.
+            "SetProperties": {
+                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350" // LockedDoorWarp that takes you to these coordinates INSIDE the house, then the name of the house, and then the opening and closing time. If you also want the player to be locked out until they reach a certain heart level with an NPC you can add their internal name and the number of friendship points needed to use the warp (in this case AirynDao 1000).
+            }
+        },
+		{ "Position": { "X": 51, "Y": 72 }, // The coordinate of the bottom tile of the door. This is the first set of coordinates that we wrote down earlier in the tutorial.
+            "Layer": "Buildings", // The tile the player is clicking is on the buildings layer.
+            "SetProperties": {
+                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350"
+			}
+			},
+    ]
+},
+
+{
+    "LogName": "Edit SVE Forest map to add warp into PM's house",
+    "Action": "EditMap",
+    "Target": "Maps/Forest", // Target the map you're adding your house to.
+	"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true, 
+				"House Location": "SVE",
+			},
+    "MapTiles": [ 
+        { "Position": { "X": 26, "Y": 73 }, 
+            "Layer": "Buildings", 
+            "SetProperties": {
+                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350" 
+            }
+        },
+		{ "Position": { "X": 27, "Y": 73 }, 
+            "Layer": "Buildings", 
+            "SetProperties": {
+                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350"
+			}
+			},
+    ]
+},
+{
+    "LogName": "add warp into PM's house in alternate location",
+    "Action": "EditMap",
+    "Target": "Maps/{{ModID}}_PeiMingNewOutdoors", 
+	"When": { "House Location": "Alternate" },
+    "MapTiles": [ 
+        {
+            "Position": { "X": 8, "Y": 9 },
+            "Layer": "Buildings", 
+            "SetProperties": {
+                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350",
+            }
+        },
+		{ "Position": { "X": 9, "Y": 9 }, 
+            "Layer": "Buildings", 
+            "SetProperties": {
+                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350"
+			}
+			},
+    ]
+},
+
+// Adds warps to leave the house/area
+{
+    "LogName": "Edit PM's house interior to add warp out of PM's house(VANILLA)",
+    "Action": "EditMap",
+    "Target": "Maps/{{ModID}}_PeiMingHouse", // Target the interior house map this time
+	"When": { "House Location": "Vanilla", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+    "AddWarps": [
+        "5 12 Forest 50 73"	// The first set of coordinates is where you want the player to step to LEAVE the house, the second set is where they will show up OUTSIDE the house, in the village.
+    ]
+},
+
+{
+    "LogName": "Edit PM's house interior to add warp out of PM's house(SVE)",
+    "Action": "EditMap",
+    "Target": "Maps/{{ModID}}_PeiMingHouse", 
+	"When": { "House Location": "SVE", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+    "AddWarps": [
+        "5 12 Forest 26 74" ]
+},
+{
+	 "LogName": "Warp from forest to alternate location for mod compat",
+     "Action": "EditMap",
+    "Target": "Maps/{{ModID}}_PeiMingNewOutdoors",
+	"When": { "House Location": "Alternate",
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+    "AddWarps": [
+        "21 14 Forest 0 36"
+            ]
+        },
+
+{
+	 "LogName": "Warp from alternate location to forest  for mod compat",
+     "Action": "EditMap",
+    "Target": "Maps/Forest",
+	"When": { "House Location": "Alternate",
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+    "AddWarps": [
+        "1 36 {{ModID}}_PeiMingNewOutdoors 20 14"
+            ]
+        },
+{
+	 "LogName": "Warp from forest to alternate location for mod compat - SVE",
+     "Action": "EditMap",
+    "Target": "Maps/{{ModID}}_PeiMingNewOutdoors",
+	"When": { "House Location": "Alternate",
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+    "AddWarps": [
+        "21 14 Forest 0 37"
+            ]
+        },
+
+{
+	 "LogName": "Warp from alternate location to forest  for mod compat - SVE",
+     "Action": "EditMap",
+    "Target": "Maps/Forest",
+	"When": { "House Location": "Alternate",
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+    "AddWarps": [
+        "-1 37 {{ModID}}_PeiMingNewOutdoors 20 14"
+            ]
+        },
+
+{
+    "LogName": "Edit PM's house interior to add warp out of PM's house(ALTERNATE)",
+    "Action": "EditMap",
+    "Target": "Maps/{{ModID}}_PeiMingHouse", 
+	"When": { "House Location": "Alternate"},
+    "AddWarps": [
+        "5 12 {{ModID}}_PeiMingNewOutdoors 8 10" ]
+},
+
+//Warp Shortcuts (BusStop) After PM sends letter about it
+{
+	"LogName": "PatchBusStopWarp",
+	"Action": "EditMap",
+	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
+	"Update": "OnLocationChange",
+	"Target": "Maps/BusStop",
+	"FromFile": "assets/Maps/PeiMingBusStopWarpPatch.tmx",
+	"PatchMode": "Replace",
+	 "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 2,
+                "Height": 1,
+            },
+            "ToArea": {
+                "X": 22,
+                "Y": 21,
+                "Width": 2,
+                "Height": 1,
+            }
+
+},
+
+{
+	"LogName": "PatchPeiMingHouseWarp",
+	"Action": "EditMap",
+	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
+	"Update": "OnLocationChange",
+	"Target": "Maps/{{ModID}}_PeiMingHouse",
+	"FromFile": "assets/Maps/PeiMingBedPatch.tmx",
+	"PatchMode": "Replace",
+	 "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 7,
+                "Height": 3,
+            },
+            "ToArea": {
+                "X": 16,
+                "Y": 4,
+                "Width": 7,
+                "Height": 3,
+            }
+
+},
+
+{
+    "LogName": "Add in Warp tiles for the new warps (BusStopwarp)",
+    "Action": "EditMap",
+    "Target": "Maps/{{ModID}}_PeiMingHouse", 
+	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
+    "AddWarps": [
+        "16 4 BusStop 12 23" ]
+},
+
+
+{
+    "LogName": "Add in Warp tiles for the new warps (Warp to PM House)",
+    "Action": "EditMap",
+    "Target": "Maps/BusStop", 
+	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
+    "AddWarps": [
+        "22 22 {{ModID}}_PeiMingHouse 16 5" ]
+},
+
+//load spouse Map
+{ "LogName": "Load PM spouse Patio",
+	"Action": "Load",
+			"Target": "Maps/{{ModID}}_Peiming_OutsideArea",
+			"FromFile": "assets/Maps/PeiMingSpousePatio.tmx"
+}, 
+
+{ "LogName": "Load PM spouse Room",
+	"Action": "Load",
+	"Target": "Maps/{{ModID}}_Peiming_SpouseRoom",
+		"FromFile": "assets/Maps/PeiMingSpouseRoom.tmx"
+},
+//gift tastes
+{ 
+		"LogName": "Gift Tastes Include",
+   	 	"Action": "Include",
+   		"FromFile": "assets/data/gifttastes.json"
+   	 },
+	 
+//schedule
+
+//ignore marriage schedule, requires space core and targets the asset provided by it directly with an edit data patch!
+
+{
+  "Action": "EditData",
+  "Target": "spacechase0.SpaceCore/NpcExtensionData",
+  "When": { "Partnership": "Platonic Partnership"},
+  "Entries": {
+    "{{ModID}}_Peiming": {
+      "IgnoreMarriageSchedule": true,
+	  "SeparateDatability": true,
+    }
+  }
+},
+{
+        "LogName": "PeiMing Vanilla Schedule",
+   		 "Action": "Include",
+		 "When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+		"House Location": "Vanilla, Alternate" },
+   		 "FromFile": "assets/data/schedule.json"
+    	},
+		
+{
+        	"LogName": "PeiMing SVE Schedule",
+   		 "Action": "Include",
+		 "When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+		"House Location": "SVE, Alternate" },
+   		 "FromFile": "assets/data/SVE/schedule.json"
+    },
+
+{
+        "LogName": "Include PeiMing Schedule Strings",
+   		 "Action": "Include",
+   		 "FromFile": "assets/data/Strings/schedules.json"
+		},
+{
+		"LogName": "Include schedule after PM becomes platonic companion",
+		"Action": "Include",
+		"When":  {
+				"HasMod |contains=aedenthorn.HugsAndKisses": true,
+				"HasMod |contains=Spiderbuttons.CMCT": true,
+				"Partnership": "Platonic Partnership",
+				},
+		"FromFile": "assets/data/PlatonicPartnership/partnershipSchedule.json"
+
+},
+
+
+//animations
+{
+            "LogName": "PeiMing Animations",
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries":
+            {
+                "{{ModId}}_Peiming_drinkTea": "16/16 16 16 16 16 16 17 17 18 18 19 19 19 19 19 18 18 17 17 16 16 16 16 16/16",
+				"{{ModId}}_Peiming_drinkBooze": "16/16 16 16 16 16 16 17 17 18 18 19 19 19 19 19 18 18 17 17 16 16 16 20 20 21 21 22 22 20 22 20 22 20 22/16",
+				"{{ModId}}_Peiming_readBook": "32/33 33 33 33 34 34 34 34 32 32 33 33 34 34/32",
+				"{{ModId}}_Peiming_readPaper": "38/38 38 38 38 38 39 39 39 39/39",
+			}
+		},
+		
+//festivals
+{
+   		 "LogName": "Festival Include SVE",
+   		 "Action": "Include",
+		 "When": {  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+					"Festival Participation": true,
+				 },
+   		 "FromFile": "assets/data/SVE/Festivals.json"
+   	 },
+{
+   		 "LogName": "Festival Include Vanilla",
+   		 "Action": "Include",
+		 "When": {  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+					"Festival Participation": true,
+				 },
+   		 "FromFile": "assets/data/Festivals.json"
+   	 },
+
+//events include
+{ 
+	"LogName": "Include Pei Ming's events",
+	"Action": "Include",
+	"FromFile": "assets/data/Events.json" 
+	}, 
+
+{ 
+	"LogName": "Include Companionship ceremony (Event)",
+	"Action": "Include",
+	"When":  {
+	"HasMod |contains=aedenthorn.HugsAndKisses": true,
+	"HasMod |contains=Spiderbuttons.CMCT": true,
+			},
+	"FromFile": "assets/data/PlatonicPartnership/ceremony.json"
+		},
+
+//trigger actions
+ {
+	"LogName": "Include Trigger Actions for PM",
+	"Action": "Include",
+	"FromFile": "assets/data/triggeractions.json",
+ },
+//quests
+//quest format: <"quest type/quest title/quest description in quest log/opt: additional quest instructions/opt: completion requirements/next quests for quest chain, add 0 for none/reward money in numbers/-1/can be cancelled (default false)/opt. Reaction dialogue for item delivery quests">
+{
+	"LogName": "Edit Quests for PM",
+	"Action": "EditData",
+	"Target": "Data/Quests",
+	"Entries": 
+		{
+			"{{ModID}}_TalkWizard": "Location/{{i18n:TalkWizard.title}}/{{i18n:TalkWizard.text}}/{{i18n:TalkWizard.objective}}/WizardHouse/0/100/-1/false",
+			"{{ModID}}_PMSaloon": "Location/{{i18n:PMSaloon.title}}/{{i18n:PMSaloon.text}}/{{i18n:PMSaloon.objective}}/Saloon/0/0/-1/false/",
+			"{{ModID}}_PMMountains": "Location/{{i18n:PMMountains.title}}/{{i18n:PMMountains.text}}/{{i18n:PMMountains.objective}}/Mountain/0/0/-1/false/",
+		}
+},
+//mail
+//mail syntax: <"text"><"commands"><%item quest [quest ID] true%% for quests in letter>[#]<letter title>
+{"LogName": "edit mail related to Pei Ming",
+"Action": "EditData",
+"Target": "data/mail",
+"Entries": {
+	"{{ModID}}_WizardLetter": "{{i18n:WizardLetter.text}}%item quest {{ModID}}_TalkWizard true%%[2][#]{{i18n:WizardLetter.title}}",
+	"{{ModID}}_PMLibraryThanks": "{{i18n:PMLibraryThanks.text}}%item id (O)524 1%%[#]{{i18n:PMLibraryThanks.title}}",
+	"{{ModID}}_PM4HSaloonLetter": "{{i18n:PM4HSaloonLetter.text}}%item quest {{ModID}}_PMSaloon true%%[#]{{i18n:PM4HSaloonLetter.title}}",
+	"{{ModID}}_PM4HMountainsLetter": "{{i18n:PM4HMountainsLetter.text}}%item quest {{ModID}}_PMMountains true%%[#]{{i18n:PM4HMountainsLetter.title}}",
+	"{{ModID}}_PMTanghuluLetter": "{{i18n:PMTanghuluLetter.text}}%item cookingRecipe {{ModID}}_Tanghulu%%[#]{{i18n:PMTanghuluLetter.title}}",
+	"{{ModID}}_PMApologyLetter": "{{i18n:PMApologyLetter.text}}[#]{{i18n:PMApologyLetter.title}}",
+	"{{ModID}}_SleepoverLetter": "{{i18n:SleepoverLetter.text}}[#]{{i18n:SleepoverLetter.title}}"
+
+
+}},
+
+//custom item include
+{ "LogName": "custom item include",
+"Action": "Include",
+"FromFile": "assets/items/items.json" 
+	}, 
+
+
+//music edits and add-ins
+
+  {			
+	"LogName": "Add custom tracks",
+    "Action": "EditData",
+    "Target": "Data/AudioChanges",
+    "Entries": {
+                "{{ModId}}_Music": 
+				{
+                    "ID": "{{ModId}}_Music",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/asian_duet.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+				"{{ModID}}_PMHouseMusic":
+				{   "ID": "{{ModId}}_PMHouseMusic",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/Sunrise_in_the_Dynasty.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+
+				},
+				"{{ModID}}_PMOutdoorMusic":
+				{   "ID": "{{ModId}}_PMOutdoorMusic",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/asian_strings.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+
+				},
+           	 }
+},
+],
+
+
+}
+	
+

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="4" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="1">
+ <properties>
+  <property name="Outdoors" value="T"/>
+  <property name="Warp" value="80 15 BusStop 0 23 80 18 BusStop 0 24 80 16 BusStop 0 23 80 17 BusStop 0 23 40 65 Forest 68 0 41 65 Forest 68 0 42 65 Forest 68 0 40 -1 Backwoods 14 39 41 -1 Backwoods 14 39 34 5 FarmCave 8 11"/>
+ </properties>
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="65" name="hime_romanticfurniture" tilewidth="16" tileheight="16" tilecount="1728" columns="54">
+  <image source="hime_romanticfurniture.png" width="864" height="512"/>
+ </tileset>
+ <tileset firstgid="1793" name="hime_romanticfountains" tilewidth="16" tileheight="16" tilecount="7056" columns="112">
+  <image source="hime_romanticfountains.png" width="1792" height="1008"/>
+  <tile id="4104">
+   <animation>
+    <frame tileid="4104" duration="150"/>
+    <frame tileid="4106" duration="150"/>
+    <frame tileid="4108" duration="150"/>
+    <frame tileid="4110" duration="150"/>
+    <frame tileid="4112" duration="150"/>
+    <frame tileid="4114" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="4105">
+   <animation>
+    <frame tileid="4105" duration="150"/>
+    <frame tileid="4107" duration="150"/>
+    <frame tileid="4109" duration="150"/>
+    <frame tileid="4111" duration="150"/>
+    <frame tileid="4113" duration="150"/>
+    <frame tileid="4115" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="4216">
+   <animation>
+    <frame tileid="4216" duration="150"/>
+    <frame tileid="4218" duration="150"/>
+    <frame tileid="4220" duration="150"/>
+    <frame tileid="4222" duration="150"/>
+    <frame tileid="4224" duration="150"/>
+    <frame tileid="4226" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="4217">
+   <animation>
+    <frame tileid="4217" duration="150"/>
+    <frame tileid="4219" duration="150"/>
+    <frame tileid="4221" duration="150"/>
+    <frame tileid="4223" duration="150"/>
+    <frame tileid="4225" duration="150"/>
+    <frame tileid="4227" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="4328">
+   <animation>
+    <frame tileid="4328" duration="150"/>
+    <frame tileid="4330" duration="150"/>
+    <frame tileid="4332" duration="150"/>
+    <frame tileid="4334" duration="150"/>
+    <frame tileid="4336" duration="150"/>
+    <frame tileid="4338" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="4329">
+   <animation>
+    <frame tileid="4329" duration="150"/>
+    <frame tileid="4331" duration="150"/>
+    <frame tileid="4333" duration="150"/>
+    <frame tileid="4335" duration="150"/>
+    <frame tileid="4337" duration="150"/>
+    <frame tileid="4339" duration="150"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="8849" name="hime_outdoorplants" tilewidth="16" tileheight="16" tilecount="640" columns="32">
+  <image source="hime_outdoorplants.png" width="512" height="320"/>
+ </tileset>
+ <layer id="1" name="Back" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,9376,0,
+9441,0,0,0,
+9473,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,6009,6010,211,
+0,6121,6122,265
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+8,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <layer id="5" name="AlwaysFront" width="4" height="4">
+  <data encoding="csv">
+0,5785,5786,103,
+0,5897,5898,157,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Back"/>
+ <objectgroup id="7" name="Buildings"/>
+ <objectgroup id="8" name="Paths"/>
+ <objectgroup id="9" name="Front"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>
