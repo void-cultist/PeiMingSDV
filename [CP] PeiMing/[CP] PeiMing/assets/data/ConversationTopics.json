@@ -1,0 +1,314 @@
+{
+"Changes": [	//Conversation Topics (Villagers commenting on Peiming)
+
+//Abigail
+{ "LogName": "ConversationTopics - Abigail",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Abigail",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Abigail}}"
+},
+},
+
+//Alex
+{ "LogName": "ConversationTopics - Alex",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Alex",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Alex}}"
+},
+},
+
+//Caroline
+{ "LogName": "ConversationTopics - Caroline",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Caroline",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Caroline}}"
+},
+},
+
+//Clint
+{ "LogName": "ConversationTopics - Clint",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Clint",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Clint}}"
+},
+},
+
+//Demetrius
+{ "LogName": "ConversationTopics - Demetrius",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Demetrius",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Demetrius}}"
+},
+},
+
+//Elliot
+{ "LogName": "ConversationTopics - Elliott",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Elliott",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Elliott}}"
+},
+},
+
+//Emily
+{ "LogName": "ConversationTopics - Emily",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Emily",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Emily}}"
+},
+},
+
+//Evelyn
+{ "LogName": "ConversationTopics - Evelyn",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Evelyn",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Evelyn}}"
+},
+},
+
+//George
+{ "LogName": "ConversationTopics - George",
+"Action": "EditData",
+"Target": "Characters/Dialogue/George",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_George}}"
+},
+},
+
+//Gus
+{ "LogName": "ConversationTopics - Gus",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Gus",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Gus}}"
+},
+},
+
+//Haley
+{ "LogName": "ConversationTopics - Haley",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Haley",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Haley}}"
+},
+},
+
+//Harvey
+{ "LogName": "ConversationTopics - Harvey",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Harvey",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Harvey}}"
+},
+},
+
+//Jas
+{ "LogName": "ConversationTopics - Jas",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Jas",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Jas}}"
+},
+},
+
+//Krobus
+{ "LogName": "ConversationTopics - Krobus",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Krobus",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Krobus}}"
+},
+},
+
+//Leah
+{ "LogName": "ConversationTopics - Leah",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Leah",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Leah}}"
+},
+},
+
+//Leo
+{ "LogName": "ConversationTopics - Leo",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Leo",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Leo}}"
+},
+},
+
+//Lewis
+{ "LogName": "ConversationTopics - Lewis",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Lewis",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Lewis}}"
+},
+},
+
+//Linus
+{ "LogName": "ConversationTopics - Linus",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Linus",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Linus}}"
+},
+},
+
+//Marnie
+{ "LogName": "ConversationTopics - Marnie",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Marnie",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Marnie}}"
+},
+},
+
+//Maru
+{ "LogName": "ConversationTopics - Maru",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Maru",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Maru}}"
+},
+},
+//Penny
+{ "LogName": "ConversationTopics - Penny",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Penny",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Penny}}"
+},
+},
+
+//Pierre
+{ "LogName": "ConversationTopics - Pierre",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Pierre",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Pierre}}"
+},
+},
+
+//Sam
+{ "LogName": "ConversationTopics - Sam",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Sam",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Sam}}"
+},
+},
+//Sebastian
+{ "LogName": "ConversationTopics - Sebastian",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Sebastian",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Sebastian}}"
+},
+},
+
+//Shane
+{ "LogName": "ConversationTopics - Shane",
+"Action": "EditData",
+"Target": "Characters/Dialogue/Shane",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Shane}}"
+},
+},
+
+/////////////////////////SVE Characters
+//Andy
+{ "LogName": "ConversationTopics - Andy",
+"Action": "EditData",
+"When":  {"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+"Target": "Characters/Dialogue/Andy",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Andy}}"
+},
+},
+
+//Claire
+{ "LogName": "ConversationTopics - Claire",
+"Action": "EditData",
+"When":  {"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+"Target": "Characters/Dialogue/Claire",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Claire}}",
+},
+},
+
+//Morgan
+{ "LogName": "ConversationTopics - Morgan",
+"Action": "EditData",
+"When":  {"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+"Target": "Characters/Dialogue/Morgan",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Morgan}}"
+},
+},
+
+//Olivia
+{ "LogName": "ConversationTopics - Olivia",
+"Action": "EditData",
+"When":  {"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+"Target": "Characters/Dialogue/Olivia",
+"Entries":{
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Olivia}}",
+},
+},
+
+//LOAD CT
+{ "LogName": "Load Conversation Topics about Pei Ming",
+"Action": "Load",
+"Target": "Characters/Dialogue",
+"FromFile": "assets/data/ConversationTopics.json"
+},
+
+////////////////////Conversation Topics for when Pei Ming has to say something because that bitch never shuts up
+{
+	"LogName": "ConversationTopics - PeiMing",
+	"Action": "EditData",
+	"Target": "Character/Dialogue/{{ModID}}_Peiming",
+	"Entries":
+ {
+		"cc_Complete": "{{i18n:cc_Complete}}",
+		"cc_Bus": "{{i18n:cc_Bus}}",
+		"ElliottGone5": "{{i18n:ElliottGone5}}",
+		"gotPet": "{{i18n:gotPet}}",
+		"married": "{{i18n:married}}",
+		"married_twice": "{{i18n:married_twice}}",
+		"divorced_twice": "{{i18n:divorced_twice}}",
+		"gotPet_memory_oneyear": "{{i18n:gotPet_memory_oneyear}}",
+		"cropMatured_417": "{{i18n:cropMatured_417}}",
+		"cropMatured_void.NorthernHeartMelon_NHMelon": "{{i18n:cropMatured_void.NorthernHeartMelon_NHMelon}}",
+		"dating_Elliott": "{{i18n:dating_Elliott}}",
+		"movieTheater": "{{i18n:movieTheater}}",
+		"SterlingTrash": "{{i18n:SterlingTrash}}",
+		"SterlingDrugs": "{{i18n:SterlingDrugs}}",
+		"JunaSign": "{{i18n:JunaSign}}",
+		"JasperGone2": "{{i18n:JasperGone2}}",
+		"JasperHomeA": "{{i18n:JasperHomeA}}",
+		"keahi_prank": "{{i18n:keahi_prank}}",
+		"MeetTheCats": "{{i18n:MeetTheCats}}",
+		"HaleysCakeWalk": "{{i18n:HaleysCakeWalk}}",
+		"joja_Complete": "{{i18n:joja_Complete}}",
+		"Vinilla.Honeyfuggle_Arrival": "{{i18n:Vinilla.Honeyfuggle_Arrival}}",
+		"{{ModID}}_UnhelpfulAdvice": "{{i18n:UnhelpfulAdvice}}$action addConversationTopic {{ModID}}_UnhelpfulAdvice2 30, RemoveConversationTopic {{ModID}}_UnhelpfulAdvice, AddFriendshipPoints {{ModID}}_Peiming -100 $k", //only after bad choice in 5H event
+		"{{ModID}}_UnhelpfulAdvice2": "{{i18n:UnhelpfulAdvice2}} $action addConversationTopic {{ModID}}_UnhelpfulAdvice3 30, RemoveConversationTopic {{ModID}}_UnhelpfulAdvice2 $k",
+		"{{ModID}}_UnhelpfulAdvice3": "%{{i18n:UnhelpfulAdvice3}} $action addConversationTopic {{ModID}}_UnhelpfulAdvice4 10, RemoveConversationTopic {{ModID}}_UnhelpfulAdvice3 $k",
+
+	}
+}
+
+
+], 
+
+}

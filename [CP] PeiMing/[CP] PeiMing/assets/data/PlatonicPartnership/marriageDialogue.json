@@ -1,0 +1,141 @@
+//VANILLA DIALOGUE
+//some hints: if you want to add a break so the text scrolls to the next break, type <#$b#> (without the brackets)
+//if you want to add a certain portrait expression, add <$[position of portrait]>. you can look at the file with the portrait, it starts from the left with $0 (default) continues at the right with $1 
+//and then the next line $2 and so on. needs to be added at the end of the text or before the break
+//Keep the text inside the " " and do not remove the commas at the end. commas are evil
+//basically just touch the actual text but none of the other stuff if you don't know what's happening or else i'll have to troubleshoot for 494539069054690 years
+//feel free to add suggestions in ellipsus!!! and thank you i have literally no ideas
+{ 
+"Changes": 
+    [
+ 
+		{ //random dialogue: "{{Random: && |inputSeparator=&&}}"
+            "LogName": "yappingRoommateMing",
+            "Action": "EditData",
+			 "When": { "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true,
+            	 "Partnership": "Platonic Partnership", },
+            "Target": "Characters/Dialogue/{{ModId}}_Peiming",
+			"Entries": {
+                "SpouseFarmhouseClutter": "{{i18n:SpouseFarmhouseClutter}}",
+                "Spouse_MonstersInHouse": "{{i18n:Spouse_MonstersInHouse}}",
+                "SpouseStardrop": "{{i18n:SpouseStardrop}}",
+                "RejectMermaidPendant_NeedHouseUpgrade": "{{i18n:RejectMermaidPendant_NeedHouseUpgrade}}",
+                "RejectMermaidPendant_NotDatable": "{{i18n:RejectMermaidPendant_NotDatable}}",
+                "RejectMermaidPendant_Under8Hearts": "{{i18n:RejectMermaidPendant_Under8Hearts}}",
+                "RejectMermaidPendant_Under10Hearts": "{{i18n:RejectMermaidPendant_Under10Hearts}}",
+                "RejectMermaidPendant_Under10Hearts_AskedAgain": "{{i18n:RejectMermaidPendant_Under10Hearts_AskedAgain}}",
+                "RejectMermaidPendant": "{{i18n:RejectMermaidPendant}}",
+                "divorced": "{{i18n:divorced}}",
+                "RejectGift_Divorced": "{{i18n:RejectGift_Divorced}}",
+                "RejectMermaidPendant_Divorced": "{{i18n:RejectMermaidPendant_Divorced}}",
+                "RejectBouquet_Divorced": "{{i18n:RejectBouquet_Divorced}}",
+                "WipedMemory": "{{i18n:WipedMemory}}",
+
+			},
+		},
+		{	"LogName": "PM 'Engagement' response",
+			"Action": "EditData",
+			"Target": "Data/EngagementDialogue",
+             "When": { "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true,
+            	         "Partnership": "Platonic Partnership", },
+			"Entries":
+             {
+                        "PeimingRoommate0": "{{i18n:PeimingEngaged0}}",
+                        "PeimingRoommate1": "{{i18n:PeimingEngaged1}}",
+ 
+			}
+		},
+
+        {	"LogName": "MovingIn Accept Platonic Partner",
+			"Action": "EditData",
+            "When": { "Partnership": "Platonic Partnership",
+         "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true },
+			"Target": "Data/Strings/StringsFromCSFiles/{{ModID}}_Peiming_EngagedRoommate",
+			"Entries": { 
+        "{{ModID}}_Peiming_EngagedRoommate": "Oho!$1#$b# Yes, I appreciate your companionship as well, my dear @. Why don't we have a little gathering to celebrate that? $6"
+		},
+        },
+        
+    { "LogName":   "Partnership Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue{{ModId}}_PeimingRoommate",
+            "When":  { "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true,
+            "Partnership": "Platonic Partnership",
+                        "Roommate": "{{ModID}}_Peiming", },
+            "Entries": {
+                "Spring_{{ModId}}_Peiming": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
+                "Summer_{{ModId}}_Peiming": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
+                "Fall_{{ModId}}_Peiming": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
+                "Winter_{{ModId}}_Peiming": "{{i18n: PartnerDialogue{{Random: {{Range:1,5}} }} }}",
+                "patio_{{ModId}}_Peiming": "Hoho!",
+                "Rainy_Day_0": "Hoho!",
+                "Rainy_Day_1": "Hoho!",
+                "Rainy_Day_2": "Hoho!",
+                "Rainy_Day_3": "Hoho!",
+                "Rainy_Day_4": "Hoho!",
+                "Rainy_Day_5": "Hoho!",
+                "Indoor_Day_0": "{{i18n:Indoor_Day_0}}",
+                "Indoor_Day_1": "{{i18n:PartnerDialogue4}}",
+                "Indoor_Day_2": "Hoho!",
+                "Indoor_Day_3": "Hoho!",
+                "Indoor_Day_4": "Hoho!",
+                "Indoor_Day_5": "Hoho!",
+                "Rainy_Night_0": "Hoho!",
+                "Rainy_Night_1": "Hoho!",
+                "Rainy_Night_2": "Hoho!",
+                "Rainy_Night_3": "Hoho!",
+                "Rainy_Night_4": "Hoho!",
+                "Rainy_Night_5": "Hoho!",
+                "Indoor_Night_0": "{{i18n:Indoor_Night_0}}",
+                "Indoor_Night_1": "Hoho!",
+                "Indoor_Night_2": "Hoho!",
+                "Indoor_Night_3": "Hoho!",
+                "Indoor_Night_4": "Hoho!",
+                "Indoor_Night_5": "Hoho!",
+                "funLeave_{{ModId}}_Peiming": "{{i18n: funLeave{{Random: {{Range:1,2}} }} }}",
+                "funReturn_{{ModId}}_Peiming": "Hoho!",
+                "Outdoor_{{ModId}}_Peiming": "Hoho!",
+                "Outdoor_0": "Hoho!",
+                "Outdoor_1": "Hoho!",
+                "Outdoor_2": "Hoho!",
+                "Outdoor_3": "Hoho!",
+                "Outdoor_4": "Hoho!",
+                "spouseRoom_{{ModId}}_Peiming": "Hoho!",
+                "Good_0": "Hoho!",
+                "Good_1": "Hoho!",
+                "Good_2": "Hoho!",
+                "Good_3": "Hoho!",
+                "Good_4": "Hoho!",
+                "Good_5": "Hoho!",
+                "Good_6": "Hoho!",
+                "Good_7": "Hoho!",
+                "Good_8": "Hoho!",
+                "Good_9": "Hoho!",
+                "Neutral_0": "Hoho!",
+                "Neutral_1": "Hoho!",
+                "Neutral_2": "Hoho!",
+                "Neutral_3": "Hoho!",
+                "Neutral_4": "Hoho!",
+                "Neutral_5": "Hoho!",
+                "Neutral_6": "Hoho!",
+                "Neutral_7": "Hoho!",
+                "Neutral_8": "Hoho!",
+                "Neutral_9": "Hoho!",
+                "Bad_0": "Hoho!",
+                "Bad_1": "Hoho!",
+                "Bad_2": "Hoho!",
+                "Bad_3": "Hoho!",
+                "Bad_4": "Hoho!",
+                "Bad_5": "Hoho!",
+                "Bad_6": "Hoho!",
+                "Bad_7": "Hoho!",
+                "Bad_8": "Hoho!",
+                "Bad_9": "Hoho!",
+            }
+        }
+    
+               
+    ]
+}
+
+		

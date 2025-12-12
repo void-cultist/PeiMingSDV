@@ -1,0 +1,118 @@
+{ 
+"Changes": 
+    [
+	//texture load
+	{ "LogName": "Load textures for new items",
+            "Action": "Load",
+            "Target": "{{ModId}}/77616e6c657420646f6c6c, {{ModID}}/tanghulu",
+            "FromFile": "assets/items/{{TargetWithoutPath}}.png"
+	},
+
+    //custom buffs
+    { 
+    "LogName": "Add Custom Buff",
+    "Action": "EditData",
+    "Target": "Data/Buffs",
+    "Entries": {
+        "{{ModID}}_Tanghulubuff": 
+        {
+            "DisplayName": "Tanghulu buff",
+            "Duration": 600000,
+            "IconTexture": "Tilesheets\\BuffsIcons",
+            "IconSpriteIndex": 16, // The index within the icon texture set above. Each index is 16x16, and is read left to right, top to bottom.
+            "Effects":
+             {
+                "LuckLevel": 5,
+                "CombatLevel": 5,
+                "Defense": 3,
+                "CriticalChanceMultiplier": 2,
+                "CriticalPowerMultiplier": 1.5, 
+            }
+         },
+         "{{ModID}}_wvxlwvgsrhzmwdvdrooszfmgblf":
+         {
+             "DisplayName": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "Duration": 2000000,
+            "IconTexture": "Tilesheets\\BuffsIcons",
+            "IconSpriteIndex": 14, // The index within the icon texture set above. Each index is 16x16, and is read left to right, top to bottom.
+            "IsDebuff": true,
+            "Effects":
+             { "LuckLevel": 10,
+            },
+         }
+            },
+},
+	
+	//add in items
+	{ "LogName": "AddDzmovgWloo",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_WhatIsThis": {
+                    "Name": "{{ModId}}_77616e6c657420646f6c6c",
+                    "DisplayName": "77616e6c657420646f6c6c",
+                    "Description": "Dvdroohvvblfrmblfimrtsgnzivhtvmvizo!",
+                    "Edibility": "-299",
+                    "Type": "Basic",
+                    "Category": -28,
+                    "Price": "999999",
+                    "Texture": "{{ModId}}\\77616e6c657420646f6c6c",
+                    "SpriteIndex": 0,
+                    "CanBeTrashed": false,
+                    "ContextTags": [
+                        "color_purple",
+                        "prevent_loss_on_death",
+                    ],
+                    "Buffs": [
+                                {
+                                    "Id": "{{ModId}}_donotquestionthis",
+                                    "BuffId": "{{ModID}}_wvxlwvgsrhzmwdvdrooszfmgblf",
+                                }
+                            ] 
+				},
+			},
+        },
+
+     {
+            "LogName": "Add Tanghulu dish",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Tanghulu": {
+                    "Name": "{{ModId}}_Tanghulu",
+                    "DisplayName": "Tanghulu",
+                    "Description": "A traditional Chinese snack consisting of several malt sugar coated fruits of Chinese hawthorn on a bamboo skewer",
+                    "Edibility": "40",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": "15000",
+                    "Texture": "{{ModId}}\\tanghulu",
+                    "SpriteIndex": 0,
+                    "ContextTags": [
+                        "color_red",
+                        "food_sweet",
+                        "candied_fruit_item"
+                    ],
+                    "Buffs": [
+                                {
+                                    "Id": "{{ModId}}_TanghuluEffects",
+                                    "BuffId": "{{ModID}}_Tanghulubuff",
+                                }
+                            ] 
+                }
+            }
+        },
+
+//add cooking recipes for objects
+    {
+
+    "LogName": "Create Tanghulu recipe",
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Entries": {
+		"{{ModID}}_Tanghulu": "(O)417 3 (O)245 1/10 10/{{ModID}}_Tanghulu 1/null/Tanghulu/",
+      }
+    },
+	]
+	
+}

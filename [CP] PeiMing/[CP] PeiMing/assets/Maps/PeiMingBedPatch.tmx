@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="7" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="21" nextobjectid="123">
+ <properties>
+  <property name="DayTiles" value="Back2 1 2 405 Back2 2 2 406 Back2 21 1 469 Back3 21 2 501 Front3 4 2 480 Front3 4 3 496 Front3 15 1 480 Front3 15 2 496"/>
+  <property name="Light" value="4 2 4 4 3 4 15 2 4 15 1 4"/>
+  <property name="Music" value="void.peiming_PMHouseMusic"/>
+  <property name="NightTiles" value="Back2 1 2 1220 Back2 2 2 1221 Back2 21 1 1219 Back3 21 2 1251 Front3 4 2 481 Front3 4 3 497 Front3 15 1 481 Front3 15 2 497"/>
+  <property name="WindowLight" value="1 2 2 2 2 2 21 1 2"/>
+ </properties>
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+  <tile id="0">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="32">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="36">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="41">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="42">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="43">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="44">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="45">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="46">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="47">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="48">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="49">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="64">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="68">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="73">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="74">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="75">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="76">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="77">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="78">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="79">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="80">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="81">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="96">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="100">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="105">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="106">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="107">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="108">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="109">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="110">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="111">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="112">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="113">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="128">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="130">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="132">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="142">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="143">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="144">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="145">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="160">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="161">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="162">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="163">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="164">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="165">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="166">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="167">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="192">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="193">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="194">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="195">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="196">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="197">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="300">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="301">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="302">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="2162">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="2177" name="untitled tile sheet2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2.png" width="512" height="656"/>
+  <tile id="52">
+   <animation>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="112" duration="50"/>
+    <frame tileid="113" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="113" duration="50"/>
+    <frame tileid="112" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="3489" name="z_lumi_towninterior" tilewidth="16" tileheight="16" tilecount="3425" columns="25">
+  <image source="lumi_towninterior.png" width="400" height="2192"/>
+  <tile id="1462">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="1463">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="1464">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="1487">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="1488">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="1489">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="1512">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="1513">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="1514">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="1537">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="1538">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="1539">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="2645">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2646">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2647">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2648">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2670">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2671">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2672">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2673">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2695">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2696">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2697">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2698">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2720">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2721">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2722">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2723">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="2747">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="2772">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="2797">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="2822">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="2847">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="3137">
+   <properties>
+    <property name="Bed" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3138">
+   <properties>
+    <property name="Bed" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3139">
+   <properties>
+    <property name="Bed" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3162">
+   <properties>
+    <property name="Bed" value="T"/>
+    <property name="Passable" value="T"/>
+    <property name="TouchAction" value="Sleep"/>
+   </properties>
+  </tile>
+  <tile id="3163">
+   <properties>
+    <property name="Bed" value="T"/>
+    <property name="Passable" value="T"/>
+    <property name="TouchAction" value="Sleep"/>
+   </properties>
+  </tile>
+  <tile id="3164">
+   <properties>
+    <property name="Bed" value="T"/>
+    <property name="Passable" value="T"/>
+    <property name="TouchAction" value="Sleep"/>
+   </properties>
+  </tile>
+  <tile id="3350">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="3351">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="3352">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="3353">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="3375">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="3376">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="3377">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="3378">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="3400">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="3401">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="3402">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+  <tile id="3403">
+   <properties>
+    <property name="Type" value="Grass"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="6914" name="z_paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="6978" name="hime_winery" tilewidth="16" tileheight="16" tilecount="272" columns="17">
+  <image source="hime_winery.png" width="272" height="256"/>
+  <tile id="79">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="96">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+  <tile id="113">
+   <properties>
+    <property name="Passable" value="F"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="7250" name="z_OWFurniture" tilewidth="16" tileheight="16" tilecount="800" columns="16">
+  <image source="z_OWFurniture.png" width="256" height="800"/>
+ </tileset>
+ <tileset firstgid="8050" name="z_VFSwan" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="z_VFSwan.png" width="256" height="560"/>
+ </tileset>
+ <tileset firstgid="8610" name="z_RattanFurniture" tilewidth="16" tileheight="16" tilecount="1100" columns="44">
+  <image source="z_RattanFurniture.png" width="704" height="400"/>
+ </tileset>
+ <layer id="1" name="Back" width="7" height="3">
+  <data encoding="csv">
+1073743987,1073743987,1073743987,1073743987,1073743987,1073743987,2131,
+1073743987,1073743987,1073743987,1073743987,1073743987,1073743987,2131,
+1073743987,1073743987,1073743987,1073743987,2131,1073743987,1073743987
+</data>
+ </layer>
+ <layer id="2" name="Back2" width="7" height="3">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+3686,0,0,6134,0,0,0,
+3687,0,0,6159,6160,6161,6162
+</data>
+ </layer>
+ <layer id="15" name="Back3" width="7" height="3">
+  <data encoding="csv">
+0,0,0,0,7266,7267,7268,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Buildings" width="7" height="3">
+  <data encoding="csv">
+8939,8450,8451,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,7301,7302,7303
+</data>
+ </layer>
+ <layer id="4" name="Front" width="7" height="3">
+  <data encoding="csv">
+0,0,0,0,7269,7270,7271,
+0,0,0,0,7285,7286,7287,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="5" name="Front2" width="7" height="3">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="6" name="Front3" width="7" height="3">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="19" name="AlwaysFront" width="7" height="3">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="7" name="Paths" width="7" height="3">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Back">
+  <object id="117" name="TileData" x="64" y="0" width="16" height="16">
+   <properties>
+    <property name="Bed" value="T"/>
+    <property name="TouchAction" value="Sleep"/>
+   </properties>
+  </object>
+  <object id="120" name="TileData" x="80" y="0" width="16" height="16">
+   <properties>
+    <property name="Bed" value="T"/>
+    <property name="TouchAction" value="Sleep"/>
+   </properties>
+  </object>
+  <object id="121" name="TileData" x="96" y="0" width="16" height="16">
+   <properties>
+    <property name="Bed" value="T"/>
+    <property name="TouchAction" value="Sleep"/>
+   </properties>
+  </object>
+  <object id="122" name="TileData" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="MagicWarp BusStop 14 23"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="Back2"/>
+ <objectgroup id="16" name="Back3"/>
+ <objectgroup id="10" name="Buildings">
+  <object id="113" name="TileData" x="16" y="0" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message PeiMingHouse.007"/>
+   </properties>
+  </object>
+  <object id="114" name="TileData" x="32" y="0" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message PeiMingHouse.007"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="18" name="Buildings2"/>
+ <objectgroup id="11" name="Front"/>
+ <objectgroup id="12" name="Front2"/>
+ <objectgroup id="13" name="Front3"/>
+ <objectgroup id="20" name="AlwaysFront"/>
+ <objectgroup id="14" name="Paths"/>
+</map>

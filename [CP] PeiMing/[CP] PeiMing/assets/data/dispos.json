@@ -1,0 +1,81 @@
+
+{ 
+	"Changes": [
+		
+		{ 
+			"Action": "EditData",
+			"Target": "Data/Characters",
+				
+			"Entries": {
+				"{{ModId}}_Peiming": {
+				"DisplayName": "Pei Ming",
+				"BirthSeason": "Summer",
+				"BirthDay": 20,
+				"HomeRegion": "Town",
+				"Language": "Default",
+				"Gender": "Male",
+				"Age": "Adult",
+				"Manner": "Polite",
+				"SocialAnxiety": "Outgoing",
+				"Optimism": "Positive",
+				"IsDarkSkinned": "False",
+				"CanBeRomanced": "False",
+				"SocialTab": "HiddenUntilMet",
+				"CanSocialize": "True",
+				"CanReceiveGifts": "True",
+				"CanGreetNearbyCharacters": "True",
+				"KissSpriteIndex": 36,
+				"KissSpriteFacingRight": true, 
+				"Home": [ //set this to where you want the NPC to spawn in normally.  
+									{
+										"Id": "Default",
+										"Location": "{{ModID}}_PeiMingHouse",
+										"Tile": {
+											"X": 15,
+											"Y": 7
+										},
+										"Direction": "right",
+									
+									}
+								],
+				"SpouseRoom": {
+										"MapAsset": "{{ModID}}_Peiming_SpouseRoom",
+										"MapSourceRect": {
+											"X": 0,
+											"Y": 0,
+											"Width": 6,
+											"Height": 9
+										},
+				"SpousePatio": {
+										"MapAsset": "{{ModID}}_Peiming_SpousePatio",
+										"MapSourceRect": {
+											"X": 0,
+											"Y": 0,
+											"Width": 4,
+											"Height": 4
+										},
+
+
+
+				"SpouseAdopts": null,
+				"SpouseWantsChildren": null,
+				"SpouseGiftJealousy": null,
+
+				"WinterStarGifts": [
+									{
+											"Condition": null,
+											"Id": "Default",
+											"ItemId": null,
+											"RandomItemId": ["(O)Book_Friendship", "(O)888", "(O)614", "(O)72", "(O)74", "(O)279", "(O)Cornucopia_PrismaticRose"] //glowstone ring, diamond, prismatic shard, magic rock candy, green tea
+									}
+								
+								],
+
+					}	
+							}
+						}
+					},
+				},
+
+	]
+}

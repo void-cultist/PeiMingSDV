@@ -1,0 +1,26 @@
+
+{
+"Changes":
+	[
+ 
+   	 {
+        	"LogName": "PeiMing Schedule Partner",
+        	"Action": "EditData",
+        	"Target": "Characters/schedules/{{ModId}}_Peiming",
+   		 "Entries": {
+			"marriage_spring": "",
+			"marriage_summer": "",
+			"marriage_fall": "",
+			"marriage_winter": "",
+			"marriage_NightMarket_3": "",
+   		 
+			}
+    	
+	 }
+ 	]
+}
+
+//format Time MapName Xcoord Ycoord Facing Animation StringDialogue
+// <time> [location] <tileX> <tileY> [facingDirection] [animation] [dialogue] things in <> are a must, things i [] are optional
+//0	up 1right 2	down3	left
+//template for string dialogue \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"

@@ -1,0 +1,27 @@
+
+{ //Directions are 0 for up, 1 for right, 2 for down, and 3 for left.
+"Changes":
+	[
+ { //well here we go female spotted
+  "LogName": "Roommate Ceremony",
+  "Action": "EditData",
+  "Target": "Data/Weddings",
+  "When": {
+   "Partnership": "Platonic Partnership",
+   "Ceremony": true,
+  },
+  "TargetField": [
+    "EventScript"
+  ],
+
+  "Entries": {
+    "{{ModID}}_Peiming": "sweet/-100000 -100000/farmer 43 41 2 Lance 44 55 48 Lewis 43 57 0 Camilla 44 57 0 otherFarmers 40 55 0[SetupContextualWeddingAttendees]/globalFade/specificTemporarySprite wedding/addTemporaryActor FirstSlashATTEND 94 47 46 49 2/changePortrait Lance Wedding/changePortrait Camilla LEWedding/changeLocation Custom_FableReef/playMusic wedding/viewport 44 52 clamp/showFrame Lance 53/beginSimultaneousCommand/move farmer 0 14 1/showFrame Lance 49/endSimultaneousCommand/beginSimultaneousCommand/showFrame farmer 89/endSimultaneousCommand/pause 500/speak Lewis \"[GenderedText [EscapedText [LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5367 [DayOfMonth] [Season]]] [EscapedText [LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5369 [DayOfMonth] [Season]]]]\"/pause 300/speak Lewis \"{{i18n:Wedding.01}}\"/pause 200/speak Lewis \"{{i18n:Wedding.02}}\"/shake Camilla 1000/speak Camilla \"{{i18n:Wedding.03}}\"/emote Camilla 28/jump Lewis 3/shake Lewis 50/speak Lewis \"{{i18n:Wedding.04}}\"/pause 400/message \"{{i18n:Wedding.05}}\"/pause 300/speak Lance \"{{i18n:Wedding.FCall.02}}\"/pause 200/beginSimultaneousCommand/emote farmer 20/emote Lance 20/endSimultaneousCommand/pause 300/speak Lewis \"{{i18n:Wedding.07}}\"/pause 300/speak Lewis \"{{i18n:Wedding.08}}\"/beginSimultaneousCommand/[ContextualWeddingCelebrations]/playsound dwoop/showFrame Lance 50/showFrame farmer 101/endSimultaneouscommand/pause 1000/beginSimultaneousCommand/showFrame Lance 49/showFrame farmer 89/endSimultaneousCommand/pause 300/message \"{{i18n:Wedding.09}}\"/message \"{{i18n:Wedding.10}}\"/globalFade/viewport -1000 -1000/changeToTemporaryMap custom_FableReef false/bgColor 0 0 0/ambientLight 0 0 0/switchEvent LE.JustMarried"
+  }
+},
+ 	]
+}
+
+//format Time MapName Xcoord Ycoord Facing Animation StringDialogue
+// <time> [location] <tileX> <tileY> [facingDirection] [animation] [dialogue] things in <> are a must, things i [] are optional
+//0	up 1right 2	down3	left
+//template for string dialogue \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"

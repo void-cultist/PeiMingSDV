@@ -1,0 +1,23 @@
+{
+	"Changes": 
+    [
+		{
+            "LogName": "Pei Ming Gift Taste Data",
+            "Action":"EditData",
+            "Target":"Data/NPCGiftTastes",
+            "Entries": {
+"{{ModId}}_Peiming": "Hoho! Now that is certainly a treat./155 91 272/Recognizing this General’s refined tastes? Wonderful./348 430 445 432 64/Are you making fun of me?/342/How dare you- this brings back terrible memories./109/I appreciate the gesture but I doubt I have use for this./SkillBook_4/"
+						}
+
+
+		}
+		
+	]
+} 
+
+//love super cucumber, banana, eggplant
+//like truffle, truffle oil, wine, caviar, ink , ruby(have to check custom response)
+//dislike pickles
+//neutral
+//hated ancient sword
+//gift taste order: love, like, dislike, hate, neutral
