@@ -109,6 +109,34 @@
 						"RemoveConversationTopic {{ModID}}_UnhelpfulAdvice4"
 					]
 				},
+		"{{ModID}}_Add_NHMSeedsLetter":
+				{
+					"ID": "{{ModID}}_Add_NHMSeedsLetter",
+					"Trigger": "DayEnding",
+					"Condition": "SEASON Fall, PLAYER_FRIENDSHIP_POINTS Current {{ModID}}_Peiming 1250",
+					"Actions": [
+						"AddMail Current {{ModID}}_NHMSeedsLetter tomorrow"
+					]
+				},
+		"{{ModID}}_Add_NHMForPMQuest":
+				{
+					"ID": "{{ModID}}_Add_NHMForPMQuest",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_NHMSeedsLetter Received", 
+					"Actions": [ 
+						"AddQuest {{ModID}}_NHMForPM"
+									]
+
+				},
+		"{{ModID}}_Add_GlazedHeartMelonLetter":
+				{
+					"ID": "{{ModID}}_Add_GlazedHeartMelonLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_CONVERSATION_TOPIC Current questComplete_{{ModID}}_NHMForPM",
+					"Actions": [
+						"AddMail Current {{ModID}}_GlazedHeartMelonLetter tomorrow"
+					]
+				}
 	},
 },
 

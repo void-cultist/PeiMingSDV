@@ -171,7 +171,7 @@
          "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true },
 		},
 
-	//woods or beach visit during birthday
+//woods or beach visit during birthday
 		{ "Name": "WoodsOrBeach",
 		   "Value": "Beach",
 		   "When": { "IsOddYear": true 
@@ -185,20 +185,26 @@
 				
 			},
 		},
+	
+
 	//event stuff, don't ask. don't. please.
-	{
-		"Name": "PM2H_1",
-		"Value": "speak {{ModID}}_Peiming \"Ah, @. I did not hear you coming. Do you need anything from this venerable one?\"/pause 400/emote farmer 8/pause 500/speak {{ModID}}_Peiming \"Me? Oh, I have been trying to make sense of all this mess.#$b# Landing here, having no way back yet...#$b# I refuse to acknowledge all these dwarf scrolls and elven books that offered me nothing but a waste of my time.$7\"/pause 400/emote farmer 40/pause 500/speak {{ModID}}_Peiming \"How difficult can it be?$2#$b# Are you trying to tell me that these ancient civilizations figured out enchanted weapons and computers,#$b# but none of them were curious enough to ask themselves about dimension-hopping?$7\""
-	},
-	{
-		"Name": "2HQuickQuestion",
-		"Value": "speak {{ModID}}_Peiming \"Well, more like 'dimension-falling', I guess. My answers to why I showed up here remain the same as they were when we first met.\"/quickQuestion \"(What should I say?)\"#\"Have you tried speaking to the Wizard? Perhaps he would know.\"#\"Perhaps you got cursed.\"(break)speak {{ModID}}_Peiming \"The Wizard? $2#$b# A bumbling fool who stays cooped up in his tower and thinks I can't see him watching me? Please.$7\"(break)speak {{ModID}}_Peiming \"Cursed!?$8#$b# Who in their right mind would ever think to curse me, the General Ming Guang?$5#$b#.................#$b# Actually, nevermind.$9\"\/pause 300\/\/emote farmer 28/pause 500/"
-	},
 	{
 		"Name": "ReadingAnimation",
 		"Value": "animate {{ModID}}_Peiming false false 600 32 33 33 33 33 34 34 34 34 32 32 33 33 34 34 32"
 	},
-/* 	{
+//Saloon or Mountains?
+
+{	"Name": "PM4HLocation",
+	"Value": "Mountain",
+	"When": { "HasSeenEvent |contains={{ModID}}_PM3HMountains": true }
+},
+{
+	"Name": "PM4HLocation",
+	"Value": "Saloon",
+},
+
+
+	{
 		"Name": "5HTriggerCondition",
 		"Value": "PM4HSaloon",
 		"When": {
@@ -211,7 +217,7 @@
 		"When": {
 			"HasSeenEvent: |contains={{ModID}}_PM4HMountain": true
 		}	
-	} */
+	}
 		
 	],
 	
@@ -250,9 +256,17 @@
 			"Default": false,
 			"AllowBlank": false,
 			"Description": "Whether or not you want to celebrate your companionship with a platonic ceremony (like a Wedding event). Should be used with the Mod 'Hugs and Kisses' with 'RoommateKisses' enabled!",
-			"Section": "Relationship"
+			"Section": "Platonic Partnership exclusive",
 
 		},
+		/* "Farm Upgrades":
+		{
+			"AllowValues": "Farmhouse Renovation, Farm Building",
+			"Default": "Farmhouse Renovation",
+			"AllowBlank": true,
+			"Description": "Farmhouse Renovation: Pei Ming gets his own little room in your farmhouse (this is NOT the vanilla spouse room); Farm Building: Pei Ming gets his own little cabin you can place on your farm",
+			"Section": "Platonic Partnership exclusive",
+		} */
 	
 			
 	}, 
@@ -260,16 +274,9 @@
 	  [{
    		 "LogName": "Blank JSON load", //The logline is not required, but it's useful down the road for labeling your patches so you can tell your problem is, say "NPC Dialogue Patch" and not "NPC Patch #14"
         	"Action": "Load",
-        	"Target": "Characters/Dialogue/{{ModId}}_Peiming, Characters/schedules/{{ModId}}_Peiming, Strings/schedules/{{ModId}}_Peiming, Strings/StringsFromMaps/{{ModID}}_PeiMingHouse, Strings/StringsFromMaps/{{ModID}}_PeiMingExterior, Strings/StringsFromCSFiles/{{ModID}}_Peiming_EngagedRoommate, Data/EngagementDialogue/{{ModID}}_Peiming, Data/Events/{{ModID}}_PeiMingHouse, Data/Locations/{{ModID}}_PeiMingNewOutdoors", 
+        	"Target": "Characters/Dialogue/{{ModId}}_Peiming, Characters/schedules/{{ModId}}_Peiming, Strings/schedules/{{ModId}}_Peiming, Strings/StringsFromMaps/{{ModID}}_PeiMingHouse, Strings/StringsFromMaps/{{ModID}}_PeiMingExterior, Strings/StringsFromCSFiles/{{ModID}}_Peiming_EngagedRoommate, Strings/1_6_Strings/{{ModID}}_Renovation_AddCustomRoom, Data/EngagementDialogue/{{ModID}}_Peiming, Data/Events/{{ModID}}_PeiMingHouse, Data/Locations/{{ModID}}_PeiMingNewOutdoors", 
         	"FromFile": "assets/data/blank.json" //this should be wherever you put it in your assets folder - put it in a subfolder if you want
    	 },
-
-     // NPC Disposition - updated for 1.6	 
-    	{
-        "LogName": "Pei Ming in da house",
-   		 "Action": "Include",
-   		 "FromFile": "assets/data/dispos.json"
-    	},
 
 	//portraits and sprites 
 	{
@@ -435,35 +442,105 @@
 	
 	
 	 
-	//dialogue & CT
-	{
-       "LogName": "NPC Dialogue",
-   	   "Action": "Include",
-	   "FromFile": "assets/data/dialogue.json"
-    },
-	
-	{ "LogName": "Include CT",
-	  "Action": "Include",
-	  "FromFile": "assets/data/ConversationTopics.json",
-	},
-	
-	{ "LogName": "Include Platonic Partner Dialogue",
+//includes
+{
+    "LogName": "Pei Ming dispos",
+   	"Action": "Include",
+   	"FromFile": "assets/data/dispos.json"
+},
+{
+    "LogName": "NPC Dialogue",
+   	"Action": "Include",
+	"FromFile": "assets/data/dialogue.json"
+},
+{
+	"LogName": "Include CT",
 	"Action": "Include",
-	"When": {"HasMod |contains=aedenthorn.FreeLove": true,
+	"FromFile": "assets/data/ConversationTopics.json",
+},
+	
+{ 
+	"LogName": "Include Platonic Partner Dialogue",
+	"Action": "Include",
+	"When": {"HasMod |contains=aedenthorn.HugsAndKisses": true,
 			"HasMod |contains=Spiderbuttons.CMCT": true,
 			}, 
 	//CMCT can't do both a token grab and a has mod check in one patch, so you use an include that checks for CMCT and do the token grab in the included file!! also separate has mod checks, if you separated by comma it would be OR
 	"FromFile": "assets/data/PlatonicPartnership/marriageDialogue.json",
-	},
-	{"LogName": "Include 'dating' dialogue",
+},
+
+{
+	"LogName": "Include 'dating' dialogue",
 	"Action": "Include",
-	"FromFile": "assets/data/PlatonicPartnership/DatingDialogue.json"},
-	
+	"FromFile": "assets/data/PlatonicPartnership/DatingDialogue.json"
+},
+
+{
+	"LogName": "1.6.Strings include",
+	"Action": "Include",
+	"FromFile": "assets/data/Strings/1_6_Strings.json",
+},
+{
+	"LogName": "add map messages to Pei Ming's house and patio",
+	"Action": "Include",
+	"FromFile":  "assets/data/Strings/StringsFromMaps.json" 
+},
+{
+    "LogName": "PeiMing Vanilla Schedule",
+   	"Action": "Include",
+	"When": { 
+		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+		"House Location": "Vanilla, Alternate" },
+   	"FromFile": "assets/data/schedule.json"
+},
 		
-	
+{
+    "LogName": "PeiMing SVE Schedule",
+   	"Action": "Include",
+	"When": { 
+		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+		"House Location": "SVE, Alternate" },
+   	"FromFile": "assets/data/SVE/schedule.json"
+},
+
+{
+    "LogName": "Include PeiMing Schedule Strings",
+   	"Action": "Include",
+   	"FromFile": "assets/data/Strings/schedules.json"
+},
+
+{ 	"LogName": "custom item include",
+	"Action": "Include",
+	"FromFile": "assets/items/items.json" 
+}, 
+
+{ 
+	"LogName": "Include Pei Ming's events",
+	"Action": "Include",
+	"FromFile": "assets/data/Events.json" 
+}, 
+
+{ 
+	"LogName": "Include Companionship ceremony (Event)",
+	"Action": "Include",
+	"When":  {
+	"HasMod |contains=aedenthorn.HugsAndKisses": true,
+	"HasMod |contains=Spiderbuttons.CMCT": true,
+			},
+	"FromFile": "assets/data/PlatonicPartnership/ceremony.json"
+},
+
+{
+	"LogName": "Include Trigger Actions for PM",
+	"Action": "Include",
+	"FromFile": "assets/data/triggeractions.json",
+},
+
+
+
 	//house interior
 { 
-    "LogName": "Load PM's House Interior Map", // LogName gives your CP patch (different concept to map patch - it's one action that Content Patcher takes, identified by being a block of JSON with the "Action" field) a descriptive name that shows up in errors/warnings and patch summaries
+    "LogName": "Load PM's House Interior Map", 
 	"Action": "Load", // This action loads the map as a new asset into the game
 	"Target": "Maps/{{ModID}}_PeiMingHouse", // {{ModID}} is a CP token that is automatically converted into your mod's unique ID. Using it to prefix all your asset names and IDs ensures that your mod's things are unique and won't clash with things from other mods
 	"FromFile": "assets/Maps/PeiMingHouse.tmx" // The name of the map file you made, inside the Maps folder you moved it to
@@ -545,15 +622,6 @@
 			}
 		}
 	},
-
-
-
-//map strings
-	{
-		"LogName": "add map messages to Pei Ming's house and patio",
-		"Action": "Include",
-		"FromFile":  "assets/data/Strings/StringsFromMaps.json" 
-	},
 		
 //warps between map edits
 // Adds the LockedDoorWarp. This tile is locked behind a specific time in-game + the player clicking on said tile. It can also be locked behind heart level with an NPC.
@@ -569,7 +637,7 @@
             "Position": { "X": 50, "Y": 72 }, // The coordinate of the bottom tile of the door. This is the first set of coordinates that we wrote down earlier in the tutorial.
             "Layer": "Buildings", // The tile the player is clicking is on the buildings layer.
             "SetProperties": {
-                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350" // LockedDoorWarp that takes you to these coordinates INSIDE the house, then the name of the house, and then the opening and closing time. If you also want the player to be locked out until they reach a certain heart level with an NPC you can add their internal name and the number of friendship points needed to use the warp (in this case AirynDao 1000).
+                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350" 
             }
         },
 		{ "Position": { "X": 51, "Y": 72 }, // The coordinate of the bottom tile of the door. This is the first set of coordinates that we wrote down earlier in the tutorial.
@@ -708,14 +776,14 @@
 	 "FromArea": {
                 "X": 0,
                 "Y": 0,
-                "Width": 2,
-                "Height": 1,
+                "Width": 1,
+                "Height": 2,
             },
             "ToArea": {
                 "X": 22,
                 "Y": 21,
-                "Width": 2,
-                "Height": 1,
+                "Width": 1,
+                "Height": 2,
             }
 
 },
@@ -749,9 +817,8 @@
     "Target": "Maps/{{ModID}}_PeiMingHouse", 
 	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
     "AddWarps": [
-        "16 4 BusStop 12 23" ]
+        "16 5 BusStop 12 23" ]
 },
-
 
 {
     "LogName": "Add in Warp tiles for the new warps (Warp to PM House)",
@@ -759,8 +826,90 @@
     "Target": "Maps/BusStop", 
 	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
     "AddWarps": [
-        "22 22 {{ModID}}_PeiMingHouse 16 5" ]
+        "22 22 {{ModID}}_PeiMingHouse 16 6" ]
 },
+
+//Adding in Home Renovations
+
+ {		"LogName": "Patch Farmhouse Map with new custom room (NOT SPOUSEROOM!!)",
+            "Action": "EditMap",
+			"When": {
+				"Partnership": "Platonic Partnership",
+				/* "Farm Upgrades": "Farmhouse Renovation" */,
+			},
+            "Target": "Maps/FarmHouse2, Maps/FarmHouse2_marriage",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "MapProperties", "AdditionalRenovations" ],
+                    "Value": "{{ModId}}_PeiMingRoomRenovation {{ModID}}_MovingInLetter {{ModID}}_PeiMingRoom {{ModID}}_PeiMingRoomEmpty 49 33 10 12",
+                    "Delimiter": "," // if there are already renovations, add a comma before this one
+                }
+            ]
+        },
+
+ {	"LogName": "Load Renovation Map patch",
+    "Action": "Load",
+    "Target": "Maps/{{ModId}}_PeiMingRoom",
+    "FromFile": "assets/Maps/PeiMingRoom.tmx"
+},
+
+
+{	"LogName": "Load Empty House Renovation patch",
+	"Action": "Load",
+    "Target": "Maps/{{ModId}}_PeiMingRoomEmpty",
+    "FromFile": "assets/PeiMingRoomEmpty.tmx"
+},
+
+{ "LogName": "Add custom House Renovation to Robin's shop",
+	"Action": "EditData",
+	"Target": "Data/HomeRenovations",
+	"When": { 
+		"Partnership": "Platonic Partnership",
+		"Farm Upgrades": "Farmhouse Renovation",
+		"HasReadLetter:AnyPlayer |contains={{ModID}}_MovingInLetter": true
+			},
+	"Entries": 
+	{
+		"{{ModID}}_Add_CustomRoom":
+		{
+    "TextStrings": "Strings\\1_6_Strings:{{ModID}}_Renovation_AddCustomRoom",
+    "AnimationType": "build",
+    "CheckForObstructions": true,
+    "Price": 100000,
+    "RoomId": "{{ModID}}_PeiMingRoom",
+    "Requirements": [
+      {
+        "Type": "Mail",
+        "Key": "{{ModID}}_MovingInLetter",
+        "Value": "1"
+      }
+    ],
+    "RenovateActions": [
+      {
+        "Type": "Mail",
+        "Key": "{{ModID}}_MovingInLetter",
+        "Value": "1"
+      }
+    ],
+    "RectGroups": [
+      {
+        "Rects": [
+          {
+            "X": 49,
+            "Y": 33,
+            "Width": 10,
+            "Height": 12
+          }
+        ]
+      }
+    ],
+   
+  },
+
+}
+},	
+
 
 //load spouse Map
 { "LogName": "Load PM spouse Patio",
@@ -781,7 +930,7 @@
    		"FromFile": "assets/data/gifttastes.json"
    	 },
 	 
-//schedule
+/////schedule
 
 //ignore marriage schedule, requires space core and targets the asset provided by it directly with an edit data patch!
 
@@ -795,38 +944,6 @@
 	  "SeparateDatability": true,
     }
   }
-},
-{
-        "LogName": "PeiMing Vanilla Schedule",
-   		 "Action": "Include",
-		 "When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
-		"House Location": "Vanilla, Alternate" },
-   		 "FromFile": "assets/data/schedule.json"
-    	},
-		
-{
-        	"LogName": "PeiMing SVE Schedule",
-   		 "Action": "Include",
-		 "When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
-		"House Location": "SVE, Alternate" },
-   		 "FromFile": "assets/data/SVE/schedule.json"
-    },
-
-{
-        "LogName": "Include PeiMing Schedule Strings",
-   		 "Action": "Include",
-   		 "FromFile": "assets/data/Strings/schedules.json"
-		},
-{
-		"LogName": "Include schedule after PM becomes platonic companion",
-		"Action": "Include",
-		"When":  {
-				"HasMod |contains=aedenthorn.HugsAndKisses": true,
-				"HasMod |contains=Spiderbuttons.CMCT": true,
-				"Partnership": "Platonic Partnership",
-				},
-		"FromFile": "assets/data/PlatonicPartnership/partnershipSchedule.json"
-
 },
 
 
@@ -862,29 +979,6 @@
    		 "FromFile": "assets/data/Festivals.json"
    	 },
 
-//events include
-{ 
-	"LogName": "Include Pei Ming's events",
-	"Action": "Include",
-	"FromFile": "assets/data/Events.json" 
-	}, 
-
-{ 
-	"LogName": "Include Companionship ceremony (Event)",
-	"Action": "Include",
-	"When":  {
-	"HasMod |contains=aedenthorn.HugsAndKisses": true,
-	"HasMod |contains=Spiderbuttons.CMCT": true,
-			},
-	"FromFile": "assets/data/PlatonicPartnership/ceremony.json"
-		},
-
-//trigger actions
- {
-	"LogName": "Include Trigger Actions for PM",
-	"Action": "Include",
-	"FromFile": "assets/data/triggeractions.json",
- },
 //quests
 //quest format: <"quest type/quest title/quest description in quest log/opt: additional quest instructions/opt: completion requirements/next quests for quest chain, add 0 for none/reward money in numbers/-1/can be cancelled (default false)/opt. Reaction dialogue for item delivery quests">
 {
@@ -894,8 +988,9 @@
 	"Entries": 
 		{
 			"{{ModID}}_TalkWizard": "Location/{{i18n:TalkWizard.title}}/{{i18n:TalkWizard.text}}/{{i18n:TalkWizard.objective}}/WizardHouse/0/100/-1/false",
-			"{{ModID}}_PMSaloon": "Location/{{i18n:PMSaloon.title}}/{{i18n:PMSaloon.text}}/{{i18n:PMSaloon.objective}}/Saloon/0/0/-1/false/",
-			"{{ModID}}_PMMountains": "Location/{{i18n:PMMountains.title}}/{{i18n:PMMountains.text}}/{{i18n:PMMountains.objective}}/Mountain/0/0/-1/false/",
+			"{{ModID}}_PMSaloon": "Location/{{i18n:PMSaloon.title}}/{{i18n:PMSaloon.text}}/{{i18n:PMSaloon.objective}}/Saloon/0/0/-1/false",
+			"{{ModID}}_PMMountains": "Location/{{i18n:PMMountains.title}}/{{i18n:PMMountains.text}}/{{i18n:PMMountains.objective}}/Mountain/0/0/-1/false",
+			"{{ModID}}_NHMForPM": "ItemDelivery/{{i18n:NHMForPM.title}}/{{i18n:NHMForPM.text}}/{{i18n:NHMForPM.objective}}/{{ModID}}_Peiming void.NorthernHeartMelon_NHMelon 1/0/10000/-1/false/{{i18n:NHMForPM.reaction}}"
 		}
 },
 //mail
@@ -910,16 +1005,11 @@
 	"{{ModID}}_PM4HMountainsLetter": "{{i18n:PM4HMountainsLetter.text}}%item quest {{ModID}}_PMMountains true%%[#]{{i18n:PM4HMountainsLetter.title}}",
 	"{{ModID}}_PMTanghuluLetter": "{{i18n:PMTanghuluLetter.text}}%item cookingRecipe {{ModID}}_Tanghulu%%[#]{{i18n:PMTanghuluLetter.title}}",
 	"{{ModID}}_PMApologyLetter": "{{i18n:PMApologyLetter.text}}[#]{{i18n:PMApologyLetter.title}}",
-	"{{ModID}}_SleepoverLetter": "{{i18n:SleepoverLetter.text}}[#]{{i18n:SleepoverLetter.title}}"
-
-
+	"{{ModID}}_SleepoverLetter": "{{i18n:SleepoverLetter.text}}[#]{{i18n:SleepoverLetter.title}}",
+	"{{ModID}}_NHMSeedsLetter": "{{i18n:NHMSeedsLetter.text}}%item id (O)void.NorthernHeartMelon_NHMSeeds 1%%%item quest {{ModID}}_NHMForPM true%%[#]{{i18n:NHMSeedsLetter.title}}",
+	"{{ModID}}_GlazedHeartMelonLetter": "{{i18n:GlazedHeartMelonLetter.text}}%item cookingRecipe void.NorthernHeartMelon_GlazedHeartMelon%%[#]{{i18n:GlazedHeartMelonLetter.title}}",
+	"{{ModID}}_MovingInLetter": "{{i18n:MovingInLetter.text}} [#]{{i18n:MovingInLetter.title}}",
 }},
-
-//custom item include
-{ "LogName": "custom item include",
-"Action": "Include",
-"FromFile": "assets/items/items.json" 
-	}, 
 
 
 //music edits and add-ins
@@ -949,6 +1039,14 @@
 				{   "ID": "{{ModId}}_PMOutdoorMusic",
                     "Category": "Music",
                     "FilePaths": [ "{{AbsoluteFilePath: assets/music/asian_strings.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+
+				},
+				"{{ModID}}_HappyBGM":
+				{   "ID": "{{ModId}}_HappyBGM",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/100116happybgm.ogg}}" ],
                     "StreamedVorbis": true,
                     "Looped": true
 

@@ -6,9 +6,10 @@
 "Action": "EditData",
 "Target": "Strings/StringsFromMaps",
 "Entries": {
-                "{{OutdoorStrings}}.000": "A marble statue depiciting a conventionally attractive woman. You wonder if it reflects the owner's tastes.",
-				"{{OutdoorStrings}}.001": "PEI MING",
-				"{{OutdoorStrings}}.002": "Pei Ming seems to have locked the door for you and doesn't want you to enter his house anymore.", //when bad answer during 5H event
+               "{{OutdoorStrings}}.000": "{{i18n:OutdoorString0}}",
+			   "{{OutdoorStrings}}.001": "{{i18n:OutdoorString1}}",
+				"{{OutdoorStrings}}.002": "{{i18n:OutdoorString2}}",
+
 				
 			}
 		},
@@ -21,16 +22,17 @@
 		  	"Target": "Strings/StringsFromMaps",
             "Entries": 
             {
-                "PeiMingHouse.000": "You wish you had never seen what's inside that drawer.",
-				"PeiMingHouse.001": "Those look like strategic notes... or, wait? Is that a... poem?",
-				"PeiMingHouse.002": "You wonder why Pei Ming has a kitchen at all. He can neither cook nor does he like doing it, but expects women to be perfect cooks. Perhaps you should teach him a lesson someday.",
-				"PeiMingHouse.003": "Pei Ming seems to be fond of roses.",
-				"PeiMingHouse.004": "A good book and tea gets you through the gloomiest day. Even Pei Ming seems to understand that. You check the book cover and read the title 'Heaven Official's Blessing'.",
-				"PeiMingHouse.005": "An interesting collection of trinkets and artifacts that seem as if they were from a whole different world. It appears that they manifested here just as randomly as Pei Ming did.",
-				"PeiMingHouse.006": "Pei Ming appears to enjoy wine. This bottle looks very expensive...",
-				"PeiMingHouse.007": "Different kinds of robes that are befitting of an ancient deity. Pei Ming really sticks out like a sore thumb here.",
-				"PeiMingHouse.008": "Fresh and cheap?... there is something written in the bottom left corner of the flag. 'Happy birthday from your two best friends, old Pei.'",
-				"PeiMingHouse.009": "You always find a freshly brewed mug of tea here. You would never find him drink tea from those cheap tea bags."
+                "PeiMingHouse.000": "{{i18n:PeiMingHouse.000}}",
+				"PeiMingHouse.001": "{{i18n:PeiMingHouse.001}}",
+				"PeiMingHouse.002": "{{i18n:PeiMingHouse.002}}",
+				"PeiMingHouse.003": "{{i18n:PeiMingHouse.003}}",
+				"PeiMingHouse.004": "{{i18n:PeiMingHouse.004}}",
+				"PeiMingHouse.005": "{{i18n:PeiMingHouse.005}}",
+				"PeiMingHouse.006": "{{i18n:PeiMingHouse.006}}",
+				"PeiMingHouse.007": "{{i18n:PeiMingHouse.007}}",
+				"PeiMingHouse.008": "{{i18n:PeiMingHouse.008}}",
+				"PeiMingHouse.009": "{{i18n:PeiMingHouse.009}}",
+
 			},
 		},
 
@@ -40,9 +42,10 @@
 		  	"Target": "Strings/StringsFromMaps",
             "Entries": 
             {
-                "PeiMingSpouseRoom.000": "Pei Ming deposited books of all genres for indoor days here.",
-				"PeiMingSpouseRoom.001": "Since Pei Ming loves roses so much, he put some on display here.",
-				"PeiMingSpouseRoom.002": "Pei Ming's favorite wine. Maybe you should have a drink with him together later."
+                "PeiMingSpouseRoom.000": "{{i18n:PeiMingSpouseRoom.000}}",
+				"PeiMingSpouseRoom.001": "{{i18n:PeiMingSpouseRoom.001}}",
+				"PeiMingSpouseRoom.002": "{{i18n:PeiMingSpouseRoom.002}}",
+
 			},
 		},
 		

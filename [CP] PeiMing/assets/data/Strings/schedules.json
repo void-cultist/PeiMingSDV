@@ -30,12 +30,21 @@
 			//birthday
 				"PeiMingBday.000": "{{i18n: PeiMingBday{{Random: {{Range:0,2}} }} }}", 
 				"PeiMingBday.001": "{{i18n: PeiMingBday{{Random: {{Range:3,5}} }} }}",
+			
+			//Roommate strings
+				"PeiMingRoommate.000": "{{i18n:PMRoommate0}}",
+				"PeiMingRoommate.001": "{{i18n:PMRoommate1}}",
+				"PeiMingRoommate.002": "{{i18n:PMRoommate2}}",
+				"PeiMingRoommate.003": "{{i18n:PMRoommate3}}",
+				"PeiMingRoommate.004": "{{i18n:PMRoommate4}}",
+				"PeiMingRoommate.005": "{{i18n:PMRoommate5}}",
+				"PeiMingRoommate.006": "{{i18n:PMRoommate6}}",
+				"PeiMingRoommate.007": "{{i18n:PMRoommate7}}",
+			
+
 			//Partnership strings
 				"PeiMingPartner.000": "",
 				"PeiMingPartner.001": "",
-			//Roommate strings
-				"PeiMingRoommate.000": "",
-			
 			},
 		},
 		

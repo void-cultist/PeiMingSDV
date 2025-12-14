@@ -95,6 +95,30 @@
 
 "PM3HMountains.0": "Oho, it's been a while since someone has been bold enough to invite me so. $3#$b# But I appreciate the idea. Thank you, I will send you a letter regarding the date and time as soon as I can.",
 
+//4 HEARTS
+"PM4H.0": "@! You actually came! $1",
+"PM4H.1": "Despite the weather, you actually showed up. That is commendable, there is no one here because of it.#$b# Keep this up and you might actually ascend to Godhood yourself. $9",
+"PM4H.2": "Actually, @, I have a request...#$b# Could we perhaps go somewhere else?",
+"PM4H.3": "Follow me.",
+"PM4H.4": "This is just the right spot for such a weather, don't you think?",
+"PM4H.5": "Forgive me for spontaneously changing the location when you actually picked the other one for a reason. But is there anything better than sharing a bath with friends?",
+"PM4H.6": "What do you think?",
+"PM4H.7": "I agree, it's very relaxing!",
+"PM4H.8": "Well, actually, I wish we could go back.",
+"PM4H.9": "(nod silently)",
+"PM4H.10": "Ha! The more I learn about you, the more I realize that we have a lot in common!$1",
+"PM4H.11": "Why did you agree to come here in the first place then? #$b# Feel free to leave anytime!",
+"PM4H.12": "What, cat got your tongue? $6#$b# Or is the sight of my body rendering you speechless? $3",
+"PM4H.13": "Ohoho!",
+"PM4H.14": "Well, regardless, I appreciate you joining me. This here is one of the few places that remind me of home, to be honest.",
+"PM4H.15": "I used to go to the hot springs with my two best friends every now and then,#$b# which often was the only moment of respite we were granted.",
+"PM4H.16": "(.......)",
+"PM4H.17": "Sounds like your life as a god was very busy.",
+"PM4H.18": "Sounds like those gatherings were fun, though!",
+"PM4H.19": "Ha! That's true!$6#$b# But you know, @...#$b# Even if the chances to see my friends were few and all of us had a lot to do...#$b# I always enjoyed godhood.",
+"PM4H.20": "We spent the rest of the time in the spa swimming and relaxing. It was fun! I should come here more often. Pei Ming, too, seems to have enjoyed himself.",
+
+
 //5 HEARTS
 "PM5H.0": "@! It's such a delight to see you. What brings you here?$1",
 "PM5H.1": "You were in the area and decided to check on me? Why, you're going to make be blush, hoho! Aren't you a delight?$6#$b#Come on in, don't just stand by the door. I was going to leave, but how could I refuse your company? It has been a while since we caught up.#$b#Feel free to make yourself at home.$6",
@@ -162,6 +186,15 @@
 "DumpsterDiveComment": "Is that proper behavior? I doubt so. Learn some manners.$2",
 "HitBySlingshot": "You do know that I am a martial god, no?$5",
 
+"breakUp": "Your loss. Do you even know who I am? A martial god and- #$b#$2 Not that it matters now.$2",
+"dating_Peiming_memory_oneyear": "It's our anniversary, although a year feels like nothing to me.",
+"RejectBouquet_NotDatable": "Romantic commitment? Not my thing.",
+"RejectBouquet_NpcAlreadyMarried": "No, thank you.",
+"RejectBouquet_VeryLowHearts": "Are you serious?! $9",
+"RejectBouquet_LowHearts": "No. $3",
+"RejectBouquet": "No.",
+
+
 
 //Seasonal
 //Spring
@@ -198,6 +231,29 @@
 "Winter4": "I saw Vincent and Jas building something made of snow the other day.$#b# I don't know if it was supposed to represent any god of yours...#$b# but I certainly know someone who would pass out from anger if he saw something like that in his temple. Hah! $1",
 "Winter5": "When I was a mortal still, my brothers and I used to build snow lions in our family's garden.#$b# The results varied.#$b# We weren't the most... artistically skilled bunch.$7#$e# Why do you think I became a soldier instead? $1",
 
+//Festivals
+"Peimingegg": "So this is how the villagers search for a suitable partner?#$b# I have better means but I would not say no to a dance with the right person.$2",
+"Peiming_y2egg": "And here we go again. Are you having fun?",
+"Peiming_spouse_y2egg": "Why don't we dance together, dear @?",
+"Peimingflower": "So this is how the villagers search for a suitable partner?#$b# I have better means but I would not say no to a dance with the right person.$2",
+"Peiming_y2flower": "And here we go again. Are you having fun?",
+"Peiming_spouse_y2flower": "Why don't we dance together, dear @?",
+"Peimingluau": "I have no expertise on cooking. Do you think this flower I found on the road is suitable?",
+"Peiming_y2luau": "Why is Lewis always acting like this, all high and mighty? He is quite bothersome.",
+"Peiming_spouse_y2luau": "I trust you to make the best possible choice for this soup. And if you don't, I won't die either way.",
+"Peimingjellies": "I have been informed of this natural spectacle, so naturally, I came here to see what it is about.",
+"Peiming_y2jellies": "If this is as gorgeous as it was last year, I am all too excited. $1",
+"Peiming_spouse_y2jellies": "Want to watch the jellies together, dear @?",
+"Peimingice": "Did you see Leah's sculpture? Interesting craftsmenship! $8",
+"Peiming_y2ice": "This weather is more to my tastes. The cold, brisk air... wonderful. #$e# I could do without the fishy stench, though.",
+"Peiming_spouse_y2ice": "Are you going to take part in the fishing challenge, @?#$b# Make this General proud! $1",
+"PeimingWinterStar": "I find it sort of sad that the saloon doesn't open today.",
+"Peiming_y2WinterStar": "Another year has almost passed. Who do you think is your secret gift giver?",
+"Peiming_spouse_y2WinterStar": "Hey, @.#$b# %Pei Ming lowers his voice and whispers. #$b# Why don't we go home and enjoy the day with each other instead, hmm? $3",
+"DesertFestival1": "I don't think I am made to be a vendor, but let's try.",
+"DesertFestival2": "You'll find only the finest wares here!$1#$b# Am I a convincing vendor?",
+"RSVEmberOfResolutions.": "Another year has passed. To someone like me whose age spans several centuries, it felt like but a moment.#$e# Well. It is quite interesting that you celebrate New Year's on another day than I used to.",
+
 //Gift responses
 "AcceptGift(O)109": "How dare you- this brings back terrible memories.$2#$b# Have you heard the tale of 'The General who broke his Sword?' Most likely not. Leave me alone.$5",
 "AcceptGift(O)155": "Hoho~ You know me too well.$3",
@@ -222,8 +278,6 @@
 "GiftTastePeiMing.dislike": "Well, thank you, I suppose.",
 "GiftTastePeiMing.hate": "How dare you-",
 "GiftTastePeiMing.neutral": "I appreciate the gesture but I doubt I have use for this.",
-
-
 
 "Peiming_EngagedRoommate": "So you want this God of Love to move in with you? A bold step.#$b# But I like your courage, so let me accept. $1",
 
@@ -284,9 +338,12 @@
 "AfterFirstMeeting_Claire": "Gods descending from the sky? Sure, why not. Can they also end retail jobs once and for all?",
 "AfterFirstMeeting_Andy": "Yoba almighty, just what was that loud noise across my farm?",
 
-//roommate dialogue
-	"PeimingRoommate0": "What an interesting choice to make. But remember that I can't cook at all. $1",
-	"PeimingRoommate1": "I hope we will enjoy each other's company. It has become quite lonely in my abode.",
+////////roommate dialogue
+//moving in accept
+"PeimingRoommate0": "What an interesting choice to make. But remember that I can't cook at all. $1",
+"PeimingRoommate1": "I hope we will enjoy each other's company. It has become quite lonely in my abode.",
+
+
 
 //partner dialogue
 
@@ -335,6 +392,11 @@
 "PMMountains.text": "Pei Ming accepted your offer to spend time together.",
 "PMMountains.objective": "Head to the mountains after 18:00 to meet up with him.",
 
+"NHMForPM.title": "A melon for Pei Ming",
+"NHMForPM.text": "Pei Ming sent you a letter informing you about the desert trader's new item in stock. He even sent you a sample!",
+"NHMForPM.objective": "Plant the seed in Winter and bring the harvested Northern Heart Melon to Pei Ming.",
+"NHMForPM.reaction": "Hoho! I can't believe the Northern Heart Melon managed to prosper on your farm!$1#$b# Thank you so much, @.$6",
+
 /////MAIL
 "WizardLetter.title": "So about this General...",
 "WizardLetter.text": "Hello, enlightened farmer @.^You have encountered the newcomer in the Forest. Let us talk about him.^Come to my abode as soon as you can.^ - Magnus R.",
@@ -350,6 +412,12 @@
 "PMApologyLetter.text": "Greetings, @.^^ I have done some thinking since our last conversation. I don't think you are in the right, but moping about won't help my case either. In fact, it is quite immature to try to avoid you like this, so forgive my rare emotional response to your words. Let us try be better friends for each other; my doors will be open for you again. ^^ - General Ming Guang, Martial God of the North",
 "SleepoverLetter.title": "Come over anytime!",
 "SleepoverLetter.text": "Greetings @! ^^ I wanted to offer you the possibility to sleep at my place any time you need. So feel free to use my bed whenever you need it.  Additionally, I managed to set up a teleportation array from the Bus Stop to my house! ^^ - General Ming Guang, Martial God of The North",
+"NHMSeedsLetter.title": "Northern Heart Melon seeds!",
+"NHMSeedsLetter.text": "Esteemed @, ^^ the other day, I was taking a stroll to the desert as I heard that the dungeon there is a lot more challenging than the mines. However, a special trader caught my eye and I went to check out their wares. The good news: for some reason, they are selling Northern Heart Melon seeds! That is incredible, I thought they only existed in my time and location. Perhaps I shouldn't question where they got them from. I luckily had Prismatic Shards with me, so I am adding the seed package to this letter. Why don't you try growing a Northern Heart Melon plant? ^^ - General Ming Guang, Martial God of the North",
+"GlazedHeartMelonLetter.title": "Cooking with the Northern Heart Melon.",
+"GlazedHeartMelonLetter.text": "Greetings @! ^^ I would like to show you my gratitude for bringing me a fresh Northern Heart Melon. I am not a good cook but I added a recipe from my childhood made from this rare ingredient. Give it a try! ^^ - General Ming Guang, Martial God of the North",
+"MovingInLetter.title": "Renovations for Pei Ming",
+"MovingInLetter.text": "Dear @, ^^ Pei Ming approached me about adding more space to your farm so he can move in. Come see me in my workshop and we can talk about the details! ^^ Robin",
 
 //////SCHEDULE STRINGS
 "PeiMingHouse0": "Hoho, coming to see me at this time?$3",
@@ -394,5 +462,39 @@
 "PeiMingBday4": "Hello, @. I was just reminiscing. #$b#$y 'Have you ever crossed the waters within a coffin?_I'm sorry, what?_Yeah, forget about it.$7_That's a little macabre._Life is macabre, little farmer.$7_Uhm... isn't it your birthday?_....ha. You remembered?$7#$b# Indeed it is. I am not in a festive mood, though.",
 "PeiMingBday5": "This birthday in particular causes me to feel quite sad. But maybe you could help me, @? #$e# Why don't we go for a swim together? I just know you look great in swimwear.",
 "PeiMingBday6": "All in all, if this birthday taught me anything, it's that I am glad to have you around, @. $6",
+
+//1_6_Strings
+"Renovation_AddCustomRoom": "Add Pei Ming's own little room to your house!/Select an area for the renovation.",
+
+//StringsFromMaps
+"OutdoorString0": "A marble statue depiciting a conventionally attractive woman. You wonder if it reflects the owner's tastes.",
+"OutdoorString1": "PEI MING",
+"OutdoorString2": "Pei Ming seems to have locked the door for you and doesn't want you to enter his house anymore.",
+
+"PeiMingHouse.000": "You wish you had never seen what's inside that drawer.",
+"PeiMingHouse.001": "Those look like strategic notes... or, wait? Is that a... poem?",
+"PeiMingHouse.002": "You wonder why Pei Ming has a kitchen at all. He can neither cook nor does he like doing it, but expects women to be perfect cooks. Perhaps you should teach him a lesson someday.",
+"PeiMingHouse.003": "Pei Ming seems to be fond of roses.",
+"PeiMingHouse.004": "A good book and tea gets you through the gloomiest day. Even Pei Ming seems to understand that. You check the book cover and read the title 'Heaven Official's Blessing'.",
+"PeiMingHouse.005": "An interesting collection of trinkets and artifacts that seem as if they were from a whole different world. It appears that they manifested here just as randomly as Pei Ming did.",
+"PeiMingHouse.006": "Pei Ming appears to enjoy wine. This bottle looks very expensive...",
+"PeiMingHouse.007": "Different kinds of robes that are befitting of an ancient deity. Pei Ming really sticks out like a sore thumb here.",
+"PeiMingHouse.008": "Fresh and cheap?... there is something written in the bottom left corner of the flag. 'Happy birthday from your two best friends, old Pei.'",
+"PeiMingHouse.009": "You always find a freshly brewed mug of tea here. You would never find him drink tea from those cheap tea bags.",
+
+"PeiMingSpouseRoom.000": "Pei Ming deposited books of all genres for indoor days here.",
+"PeiMingSpouseRoom.001": "Since Pei Ming loves roses so much, he put some on display here.",
+"PeiMingSpouseRoom.002": "Pei Ming's favorite wine. Maybe you should have a drink with him together later.",
+
+
+//roommate schedule dialogue (after he moved in)
+"PMRoommate0": "Ah, good morning, @. Do you want to head to the Night Market together later?",
+"PMRoommate1": "I thought it would be nice to have a little drink before heading to the Night Market. Why don't you have some, too?#$b# Don't worry, I'll pay!$1 [(O)873 (O)903 (O)Wildflour.AtelierGoods_Bonfire_Ale (O)Wildflour.AtelierGoods_Snowman_Cream_Ale (O)Wildflour.AtelierGoods_Sunny_Daze_Mead]",
+"PMRoommate2": "@! You actually came to the Night Market!$1#$e# I am pretty curious about the vendors that have set up shop here.",
+"PMRoommate3": "So there are even real mermaids, huh? #$e# Perhaps I'll check them out. $3",
+"PMRoommate4": "Ah, so you've decided to hike up the mountain, too? I quite enjoyed myself doing so.$6",
+"PMRoommate5": "A 'witch' lives in here, according to rumors. I sort of want to check out this place.",
+"PMRoommate6": "During Winter, I prefer retreating to my abode and enjoy some tea just how I like it. #$e# You are always free to join, naturally.",
+"PMRoommate7": "Missing me on the farm already? $3#$e# Worry not! I shall return shortly.$6",
 
 }

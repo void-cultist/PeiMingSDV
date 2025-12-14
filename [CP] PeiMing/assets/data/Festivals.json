@@ -68,9 +68,9 @@
         "Action": "EditData",
 			"Target": "data/festivals/spring13",
 			"Entries": {
-				"{{ModId}}_Peiming": "Searching for eggs? This is ridiculous. Why should I, as a God...#$b# %Pei Ming continues yapping and you decide to slowly distance yourself.",
-				"{{ModId}}_Peiming_y2": "If that's what the people of this village like doing, so be it.",
-				"{{ModId}}_Peiming_spouse_y1": "You are going to search eggs, @? Well, if you are into it..."
+				"{{ModId}}_Peiming": "{{i18n:Peimingegg}}",
+"{{ModId}}_Peiming_y2": "{{i18n:Peiming_y2egg}}",
+"{{ModId}}_Peiming_spouse_y2": "{{i18n:Peiming_spouse_y2egg}}",
             }
         },
 
@@ -130,9 +130,9 @@
         "Action": "EditData",
 			"Target": "data/festivals/spring13",
 			"Entries": {
-				"{{ModId}}_Peiming": "So this is how the villagers search for a suitable partner?#$b# I have better means but I would not say no to a dance with the right person.$2",
-				"{{ModId}}_Peiming_y2": "And here we go again. Are you having fun?",
-				"{{ModId}}_Peiming_spouse_y2": "Why don't we dance together, dear @?"
+			"{{ModId}}_Peiming": "{{i18n:Peimingflower}}",
+"{{ModId}}_Peiming_y2": "{{i18n:Peiming_y2flower}}",
+"{{ModId}}_Peiming_spouse_y2": "{{i18n:Peiming_spouse_y2flower}}",
             }
         },
 		{	//VANILLA LUAU Y1
@@ -178,9 +178,9 @@
 			"Action": "EditData",
 			"Target": "Data/Festivals/summer11",
 			"Entries": 
-			{ "{{ModId}}_Peiming": "I have no expertise on cooking. Do you think this flower I found on the road is suitable?",
-			  "{{ModId}}_Peiming_y2": "Why is Lewis always acting like this, all high and mighty? He is quite bothersome.",
-			"{{ModId}}_Peiming_spouse_y2": "I trust you to make the best possible choice for this soup. And if you don't, I won't die either way.",
+			{"{{ModId}}_Peiming": "{{i18n:Peimingluau}}",
+"{{ModId}}_Peiming_y2": "{{i18n:Peiming_y2luau}}",
+"{{ModId}}_Peiming_spouse_y2": "{{i18n:Peiming_spouse_y2luau}}",
 			},
 		},
 	
@@ -240,9 +240,9 @@
 			"Action": "EditData",
 			"Target": "Data/Festivals/summer28",
 			"Entries": 
-			{ "{{ModId}}_Peiming": "I have been informed of this natural spectacle, so naturally, I came here to see what it is about.",
-				"{{ModId}}_Peiming_y2": "If this is as gorgeous as it was last year, I am all too excited. $1",
-				"{{ModId}}_Peiming_spouse_y2": "Want to watch the jellies together, dear @?"
+			{ "{{ModId}}_Peiming": "{{i18n:Peimingjellies}}",
+"{{ModId}}_Peiming_y2": "{{i18n:Peiming_y2jellies}}",
+"{{ModId}}_Peiming_spouse_y2": "{{i18n:Peiming_spouse_y2jellies}}",
 			}
 		},
 		
@@ -350,9 +350,9 @@
 			"Action": "EditData",
 			"Target": "Data/Festivals/winter8",
 			"Entries": 
-			{"{{ModId}}_Peiming": "Did you see Leah's sculpture? Interesting craftsmenship! $8",
-				"{{ModId}}_Peiming_y2": "This weather is more to my tastes. The cold, brisk air... wonderful. #$e# I could do without the fishy stench, though.",
-				"{{ModId}}_Peiming_spouse_y2": "Are you going to take part in the fishing challenge, @?#$b# Make this General proud! $1" },
+			{"{{ModId}}_Peiming": "{{i18n:Peimingice}}",
+			"{{ModId}}_Peiming_y2": "{{i18n:Peiming_y2ice}}",
+			"{{ModId}}_Peiming_spouse_y2": "{{i18n:Peiming_spouse_y2ice}}", },
 		},
 		{	//Winter Star Vanilla Y1
 			"LogName": "Feast of the Winter Star Vanilla Y1",
@@ -395,9 +395,9 @@
 			"Action": "EditData",
 			"Target": "Data/Festivals/winter25",
 			"Entries": 
-			{ "{{ModId}}_Peiming": "I find it sort of sad that the saloon doesn't open today.",
-				"{{ModId}}_Peiming_y2": "Another year has almost passed. Who do you think is your secret gift giver?",
-				"{{ModId}}_Peiming_spouse_y2": "Hey, @.#$b# %Pei Ming lowers his voice and whispers. #$b# Why don't we go home and enjoy the day with each other instead, hmm? $2"
+			{ "{{ModId}}_Peiming": "{{i18n:PeimingWinterStar}}",
+				"{{ModId}}_Peiming_y2": "{{i18n:Peiming_y2WinterStar}}",
+				"{{ModId}}_Peiming_spouse_y2": "{{i18n:Peiming_spouse_y2WinterStar}}",
 			},
 		},
 		
@@ -413,8 +413,8 @@
            		 {
                 "Name": "{{ModId}}_Peiming",
                 "Portrait": "{{ModId}}_Peiming",
-                "Dialogues": [ "I don't think I am made to be a vendor, but let's try.", 
-				"You'll find only the finest wares here!$1#$b# Am I a convincing vendor?"
+                "Dialogues": [ "{{i18n:DesertFestival1}}", 
+				 "{{i18n:DesertFestival2}}"
                    
                				]
             	}
@@ -504,7 +504,7 @@
 			"When": { "HasMod":"Rafseazz.RSVCP" },
 			"Target": "Data/Festivals/winter28",
 			"Entries": 
-			{ "{{ModId}}_Peiming": "Another year has passed. To someone like me whose age spans several centuries, it felt like but a moment.#$e# Well. It is quite interesting that you celebrate New Year's on another day than I used to.",
+			{ "{{ModId}}_Peiming":  "{{i18n:RSVEmberOfResolutions.}}",
 			},
 		},
 
