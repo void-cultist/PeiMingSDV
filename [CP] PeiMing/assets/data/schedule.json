@@ -18,9 +18,10 @@
 			
 			"summer": "610 Forest 51 79 2/630 Forest 83 51 3/700 Beach 45 21 2 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingSummerBeach.000\"/1600 Saloon 6 17 0 2/2100 {{ModID}}_PeiMingHouse 9 5 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"",
 
-			"summer_20": "500 Railroad 61 10 2 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingBday.000\"/1000 {{WoodsOrBeach}} 12 18 2 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingBday.001\"/1800 Forest 58 87 2/2130 {{ModID}}_PeiMingHouse 6 5 0",
+			"summer_20": "0 Railroad 61 10 2/1000 {{WoodsOrBeach}} 12 18 2/1800 Forest 58 87 2/2130 {{ModID}}_PeiMingHouse 6 5 0",
 
-			"fall": "0 BathHouse_Pool 8 15 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingBath.001\"/1300 ArchaeologyHouse 21 5 2 {{ModId}}_Peiming_readBook/1800 Saloon 6 17 2/2030 {{ModID}}_PeiMingHouse 9 5 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"",
+			"fall": "0 BathHouse_Pool 13 10 0/1300 ArchaeologyHouse 21 5 2 {{ModId}}_Peiming_readBook/1800 Saloon 6 17 2/2030 {{ModID}}_PeiMingHouse 9 5 0",
+			"fall_Wed": "610 BathHouse_Pool 13 10 0 \"{{i18n:PeiMingBath{{Random:{{Range:2,3}}}}}}\"/1600 {{ModID}}_PeiMingHouse 9 5 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"",
 			
 			"winter": "610 {{ModID}}_PeiMingHouse 9 5 2 {{ModId}}_Peiming_drinkTea/700 BathHouse_Pool 8 15 2 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingBath.001\"/1600 Saloon 6 17 0 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"",
 			"winter_Thu": "610 {{ModID}}_PeiMingHouse 9 5 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.003\"/830 {{ModID}}_PeiMingHouse 18 5 0\"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.004\"",
@@ -29,9 +30,9 @@
 			"rain": "610 {{ModID}}_PeiMingHouse 2 6 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.001\"/730 {{ModID}}_PeiMingHouse 6 5 2 {{ModId}}_Peiming_readPaper \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.002\"/1200 Forest 47 28 3 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingRainyOutdoor.000\"/1300 ArchaeologyHouse 21 5 2 {{ModId}}_Peiming_readBook/1600 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/2000 {{ModID}}_PeiMingHouse 9 5 2 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"",
 			"GreenRain": "610 Forest 51 79 2/700 BathHouse_Pool 8 15 2 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingBath.000\"/1300 Mine 24 10 2 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingMines.000\"/1930 {{ModID}}_PeiMingHouse 9 5 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"",
 
-			"Mon": "610 {{ModID}}_PeiMingHouse 2 6 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingMines.000\"/1730 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 0 0",
-			"Tue": "610 {{ModID}}_PeiMingHouse 2 6 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingMines.000\"/1730 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 0 0",
-			"Wed": "610 {{ModID}}_PeiMingHouse 2 6 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingMines.000\"/1730 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 0 0",
+			"Mon": "610 {{ModID}}_PeiMingHouse 2 6 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingMines.000\"/1730 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 0",
+			"Tue": "610 {{ModID}}_PeiMingHouse 2 6 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingMines.000\"/1730 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 0",
+			"Wed": "610 {{ModID}}_PeiMingHouse 2 6 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingMines.000\"/1730 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 0",
 			
 			 
    		 
@@ -51,9 +52,11 @@
 			"spring_4": "610 {{ModID}}_PeiMingNewOutdoors 11 16 2/930 ArchaeologyHouse 21 5 2 {{ModId}}_Peiming_readBook/1400 Beach 13 26 3/1730 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 2 {{ModId}}_Peiming_readPaper \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"",
 			"spring_5": "610 {{ModID}}_PeiMingNewOutdoors 11 16 2/930 ArchaeologyHouse 21 5 2 {{ModId}}_Peiming_readBook/1400 Beach 13 26 3/1730 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 2 {{ModId}}_Peiming_readPaper \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"",
 			
-			"summer_20": "500 Railroad 61 10 2 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingBday.000\"/1000 {{WoodsOrBeach}} 12 18 2 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingBday.001\"/1800 {{ModID}}_PeiMingNewOutdoors 13 3 2/2130 {{ModID}}_PeiMingHouse 6 5 0",
+			"summer_20": "0 Railroad 61 10 2/1000 {{WoodsOrBeach}} 12 18 2/1800 {{ModID}}_PeiMingNewOutdoors 13 3 2/2130 {{ModID}}_PeiMingHouse 6 5 0",
 			"summer": "610 {{ModID}}_PeiMingNewOutdoors 11 16 2/700 Beach 45 21 2 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingSummerBeach.000\"/1730 Saloon 6 17 0 2/2100 {{ModID}}_PeiMingHouse 9 5 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"",
-			"fall": "0 BathHouse_Pool 8 15 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingBath.001\"/1300 ArchaeologyHouse 21 5 2 {{ModId}}_Peiming_readBook/1800 Saloon 6 17 2/2030 {{ModID}}_PeiMingHouse 9 5 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"",
+
+			"fall": "0 BathHouse_Pool 13 10 0 \"{{i18n: PeiMingBath{{Random: {{Range:2,3}}}}}}\"/1300 ArchaeologyHouse 21 5 2 {{ModId}}_Peiming_readBook/1800 Saloon 6 17 2/2030 {{ModID}}_PeiMingHouse 9 5 0",
+			"fall_Wed": "610 BathHouse_Pool 13 10 0 \"{{i18n:PeiMingBath{{Random: {{Range:2,3}}}}}}\"/1600 {{ModID}}_PeiMingHouse 9 5 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"",
 			
 			"winter": "610 {{ModID}}_PeiMingHouse 9 5 2 {{ModId}}_Peiming_drinkTea/700 BathHouse_Pool 8 15 2 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingBath.001\"/1600 Saloon 6 17 0 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"",
 			"winter_Thu": "610 {{ModID}}_PeiMingHouse 9 5 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.003\"/830 {{ModID}}_PeiMingHouse 18 5 0\"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.004\"",
@@ -62,9 +65,9 @@
 			"rain": "610 {{ModID}}_PeiMingHouse 2 6 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.001\"/730 {{ModID}}_PeiMingHouse 6 5 2 {{ModId}}_Peiming_readPaper \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.002\"/1200 Forest 47 28 3 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingRainyOutdoor.000\"/1300 ArchaeologyHouse 21 5 2 {{ModId}}_Peiming_readBook/1600 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/2000 {{ModID}}_PeiMingHouse 9 5 2 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"",
 			"GreenRain": "610 Forest 51 79 2/700 BathHouse_Pool 8 15 2 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingBath.000\"/1300 Mine 24 10 2 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingMines.000\"/1930 {{ModID}}_PeiMingHouse 9 5 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.000\"",
 
-			"Mon": "610 {{ModID}}_PeiMingHouse 2 6 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingMines.000\"/1730 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 0 0",
-			"Tue": "610 {{ModID}}_PeiMingHouse 2 6 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingMines.000\"/1730 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 0 0",
-			"Wed": "610 {{ModID}}_PeiMingHouse 2 6 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingMines.000\"/1730 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 0 0",
+			"Mon": "610 {{ModID}}_PeiMingHouse 2 6 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingMines.000\"/1730 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 0",
+			"Tue": "610 {{ModID}}_PeiMingHouse 2 6 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingMines.000\"/1730 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 0",
+			"Wed": "610 {{ModID}}_PeiMingHouse 2 6 2 {{ModId}}_Peiming_drinkTea \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{ModId}}_Peiming:PeiMingMines.000\"/1730 Saloon 6 17 2 {{ModId}}_Peiming_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 0",
 			
 			 
    		 

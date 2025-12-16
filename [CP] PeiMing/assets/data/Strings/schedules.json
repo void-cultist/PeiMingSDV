@@ -8,28 +8,28 @@
 		  	"Target": "Strings/Schedules/{{ModId}}_Peiming",
             "Entries": 
             { //in his house
-                "PeiMingHouse.000": "{{i18n: PeiMingHouse{{Random: {{Range:0,1}} }} }}",
+                "PeiMingHouse.000": "{{i18n:PeiMingHouse{{Random:{{Range:0,1}}}}}}",
 
-				"PeiMingHouse.001": "{{i18n: PeiMingHouse{{Random: {{Range:2,4}} }} }}",
+				"PeiMingHouse.001": "{{i18n:PeiMingHouse{{Random:{{Range:2,4}}}}}}",
 
-				"PeiMingHouse.002": "{{i18n: PeiMingHouse{{Random: {{Range:5,6}} }} }}",
+				"PeiMingHouse.002": "{{i18n:PeiMingHouse{{Random:{{Range:5,6}}}}}}",
 
-				"PeiMingHouse.003": "{{i18n: PeiMingHouse{{Random: {{Range:7,8}} }} }}",
+				"PeiMingHouse.003": "{{i18n:PeiMingHouse{{Random:{{Range:7,8}}}}}}",
 
-				"PeiMingHouse.004": "{{i18n: PeiMingHouse{{Random: {{Range:9,11}} }} }}",
+				"PeiMingHouse.004": "{{i18n:PeiMingHouse{{Random:{{Range:9,11}}}}}}",
 
 			//rainy day 
-				"PeiMingRainyOutdoor.000": "{{i18n: PeiMingRainyOutdoor{{Random: {{Range:0,3}} }} }}",
+				"PeiMingRainyOutdoor.000": "{{i18n:PeiMingRainyOutdoor{{Random:{{Range:0,3}}}}}}",
 			//Mines
-				"PeiMingMines.000": "{{i18n: PeiMingMines{{Random: {{Range:0,4}} }} }}",
+				"PeiMingMines.000": "{{i18n:PeiMingMines{{Random:{{Range:0,4}}}}}}",
 			//Beach visit in Summer
-				"PeiMingSummerBeach.000": "{{i18n: PeiMingSummerBeach{{Random: {{Range:0,4}} }} }}",
+				"PeiMingSummerBeach.000": "{{i18n:PeiMingSummerBeach{{Random:{{Range:0,4}}}}}}",
 			//Bath house
-				"PeiMingBath.000": "{{i18n: PeiMingBath{{Random: {{Range:0,1}} }} }}",
-				"PeiMingBath.001": "{{i18n: PeiMingBath{{Random: {{Range:2,3}} }} }}",
+				"PeiMingBath.000": "{{i18n:PeiMingBath{{Random:{{Range:0,1}}}}}}",
+				"PeiMingBath.001": "{{i18n:PeiMingBath{{Random:{{Range:2,3}}}}}}",
 			//birthday
-				"PeiMingBday.000": "{{i18n: PeiMingBday{{Random: {{Range:0,2}} }} }}", 
-				"PeiMingBday.001": "{{i18n: PeiMingBday{{Random: {{Range:3,5}} }} }}",
+				"PeiMingBday.000": "{{i18n:PeiMingBday{{Random:{{Range:0,2}}}}}}", 
+				"PeiMingBday.001": "{{i18n:PeiMingBday{{Random:{{Range:3,5}}}}}}",
 			
 			//Roommate strings
 				"PeiMingRoommate.000": "{{i18n:PMRoommate0}}",

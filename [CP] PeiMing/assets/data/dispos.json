@@ -77,5 +77,168 @@
 					},
 				},
 
+		//portraits and sprites 
+	{
+        	"LogName": "Base Portraits",
+        	"Action": "Load",
+        	"Target": "Portraits/{{ModId}}_Peiming",
+        	"FromFile": "assets/Portraits/{{Portrait Style}}/Normal.png"
+   	 },		
+	 
+	 {
+        	"LogName": "Base Sprites",
+        	"Action": "Load",
+        	"Target": "Characters/{{ModId}}_Peiming",
+        	"FromFile": "assets/Characters/Normal.png"
+   	 },
+	 
+	//appearances for Winter, BathHouse and Ginger Island
+	
+{	"LogName": "Winter Appearance edit",
+	"Action": "EditData",
+	"Target": "Data/Characters",
+	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
+	"Entries":
+	{
+		"{{ModID}}_Peiming_Winter":
+		{
+			"Id": "{{ModID}}_Peiming_Winter",
+			"Season": "winter",
+			"Portrait": "Portraits/{{ModID}}_Peiming_Winter",
+			"Sprite": "Characters/{{ModID}}_Peiming_Winter",
+			"Indoors": true,
+			"Outdoors": true,
+			"IsIslandAttire": false,
+			"Condition": "TRUE",
+			"Precedence": 0,
+			"Weight": 1
+		},
+	}
+},
+{	"LogName": "Ginger Island Appearance edit",
+	"Action": "EditData",
+	"Target": "Data/Characters",
+	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
+	"Entries":
+	{
+		"{{ModID}}_Peiming_Beach":
+		{
+			"Id": "{{ModID}}_Peiming_Beach",
+			"Portrait": "Portraits/{{ModID}}_Peiming_Beach",
+			"Sprite": "Characters/{{ModID}}_Peiming_Beach",
+			"Indoors": true,
+			"Outdoors": true,
+			"IsIslandAttire": true,
+			"Condition": "TRUE",
+			"Precedence": 0,
+			"Weight": 1
+		},
+	}
+},
+
+{	"LogName": "Spa appearance edit",
+	"Action": "EditData",
+	"Target": "Data/Characters",
+	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
+	"Entries":
+	{
+		"{{ModID}}_Peiming_Bath":
+		{
+			"Id": "{{ModID}}_Peiming_Bath",
+			"Portrait": "Portraits/{{ModID}}_Peiming_Bath",
+			"Sprite": "Characters/{{ModID}}_Peiming_Bath",
+			"Indoors": true,
+			"Outdoors": true,
+			"IsIslandAttire": false,
+			"Condition": "LOCATION_NAME Target BathHouse_Pool", 
+			"Precedence": 0,
+			"Weight": 1
+		},
+	}
+},
+
+{	"LogName": "Beach appearance edit",
+	"Action": "EditData",
+	"Target": "Data/Characters",
+	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
+	"Entries":
+	{
+		"{{ModID}}_Peiming_SummerBeach":
+		{
+			"Id": "{{ModID}}_Peiming_SummerBeach",
+			"Portrait": "Portraits/{{ModID}}_Peiming_SummerBeach",
+			"Sprite": "Characters/{{ModID}}_Peiming_SummerBeach",
+			"Season": "Summer",
+			"Indoors": true,
+			"Outdoors": true,
+			"IsIslandAttire": false,
+			"Condition": "LOCATION_NAME Target Beach, WEATHER Target Sun", 
+			"Precedence": 0,
+			"Weight": 1
+		},
+	}
+},
+
+{
+	"LogName": "Beach Portraits - Appearance Load",
+	"Action": "Load",
+	"Target": "Portraits/{{ModID}}_Peiming_Beach",
+	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Beach.png",
+},
+
+
+{
+	"LogName": "Beach Sprites - Appearance Load",
+	"Action": "Load",
+	"Target": "Characters/{{ModID}}_Peiming_Beach",
+	"FromFile": "assets/Characters/Peiming_Beach.png"
+},
+
+{
+	"LogName": "Winter Portraits - Appearance Load",
+	"Action": "Load",
+	"Target": "Portraits/{{ModID}}_Peiming_Winter",
+	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Winter.png",
+},
+
+
+{
+	"LogName": "Winter Sprites - Appearance Load",
+	"Action": "Load",
+	"Target": "Characters/{{ModID}}_Peiming_Winter",
+	"FromFile": "assets/Characters/Peiming_Winter.png"
+},
+
+{
+	"LogName": "BathHouse Portraits - Appearance Load",
+	"Action": "Load",
+	"Target": "Portraits/{{ModID}}_Peiming_Bath",
+	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Beach.png",
+},
+
+
+{
+	"LogName": "BathHouse Sprites - Appearance Load",
+	"Action": "Load",
+	"Target": "Characters/{{ModID}}_Peiming_Bath",
+	"FromFile": "assets/Characters/Peiming_Beach.png"
+},
+
+{
+	"LogName": "SummerBeach Portraits - Appearance Load",
+	"Action": "Load",
+	"Target": "Portraits/{{ModID}}_Peiming_SummerBeach",
+	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Beach.png",
+},
+
+
+{
+	"LogName": "SummerBeach Sprites - Appearance Load",
+	"Action": "Load",
+	"Target": "Characters/{{ModID}}_Peiming_SummerBeach",
+	"FromFile": "assets/Characters/Peiming_Beach.png"
+},
+
+
 	]
 }

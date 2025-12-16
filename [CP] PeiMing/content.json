@@ -278,170 +278,6 @@
         	"FromFile": "assets/data/blank.json" //this should be wherever you put it in your assets folder - put it in a subfolder if you want
    	 },
 
-	//portraits and sprites 
-	{
-        	"LogName": "Base Portraits",
-        	"Action": "Load",
-        	"Target": "Portraits/{{ModId}}_Peiming",
-        	"FromFile": "assets/Portraits/{{Portrait Style}}/Normal.png"
-   	 },		
-	 
-	 {
-        	"LogName": "Base Sprites",
-        	"Action": "Load",
-        	"Target": "Characters/{{ModId}}_Peiming",
-        	"FromFile": "assets/Characters/Normal.png"
-   	 },
-	 
-	//appearances for Winter, BathHouse and Ginger Island
-	
-	{
-	"Action": "EditData",
-	"Target": "Data/Characters",
-	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
-	"Entries":
-	{
-		"{{ModID}}_Peiming_Winter":
-		{
-			"Id": "{{ModID}}_Peiming_Winter",
-			"Season": "winter",
-			"Portrait": "Portraits/{{ModID}}_Peiming_Winter",
-			"Sprite": "Characters/{{ModID}}_Peiming_Winter",
-			"Indoors": true,
-			"Outdoors": true,
-			"IsIslandAttire": false,
-			"Condition": "TRUE",
-			"Precedence": 0,
-			"Weight": 1
-		},
-	}
-},
-{
-	"Action": "EditData",
-	"Target": "Data/Characters",
-	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
-	"Entries":
-	{
-		"{{ModID}}_Peiming_Beach":
-		{
-			"Id": "{{ModID}}_Peiming_Beach",
-			"Portrait": "Portraits/{{ModID}}_Peiming_Beach",
-			"Sprite": "Characters/{{ModID}}_Peiming_Beach",
-			"Indoors": true,
-			"Outdoors": true,
-			"IsIslandAttire": true,
-			"Condition": "TRUE",
-			"Precedence": 0,
-			"Weight": 1
-		},
-	}
-},
-
-{
-	"Action": "EditData",
-	"Target": "Data/Characters",
-	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
-	"Entries":
-	{
-		"{{ModID}}_Peiming_Bath":
-		{
-			"Id": "{{ModID}}_Peiming_Bath",
-			"Portrait": "Portraits/{{ModID}}_Peiming_Bath",
-			"Sprite": "Characters/{{ModID}}_Peiming_Bath",
-			"Indoors": true,
-			"Outdoors": true,
-			"IsIslandAttire": false,
-			"Condition": "LOCATION_NAME Target BathHouse_Pool", 
-			"Precedence": 0,
-			"Weight": 1
-		},
-	}
-},
-
-{
-	"Action": "EditData",
-	"Target": "Data/Characters",
-	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
-	"Entries":
-	{
-		"{{ModID}}_Peiming_SummerBeach":
-		{
-			"Id": "{{ModID}}_Peiming_SummerBeach",
-			"Portrait": "Portraits/{{ModID}}_Peiming_SummerBeach",
-			"Sprite": "Characters/{{ModID}}_Peiming_SummerBeach",
-			"Season": "Summer",
-			"Indoors": true,
-			"Outdoors": true,
-			"IsIslandAttire": false,
-			"Condition": "LOCATION_NAME Target Beach, WEATHER Target Sun", 
-			"Precedence": 0,
-			"Weight": 1
-		},
-	}
-},
-
-{
-	"LogName": "Beach Portraits - Appearance Load",
-	"Action": "Load",
-	"Target": "Portraits/{{ModID}}_Peiming_Beach",
-	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Beach.png",
-},
-
-
-{
-	"LogName": "Beach Sprites - Appearance Load",
-	"Action": "Load",
-	"Target": "Characters/{{ModID}}_Peiming_Beach",
-	"FromFile": "assets/Characters/Peiming_Beach.png"
-},
-
-{
-	"LogName": "Winter Portraits - Appearance Load",
-	"Action": "Load",
-	"Target": "Portraits/{{ModID}}_Peiming_Winter",
-	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Winter.png",
-},
-
-
-{
-	"LogName": "Winter Sprites - Appearance Load",
-	"Action": "Load",
-	"Target": "Characters/{{ModID}}_Peiming_Winter",
-	"FromFile": "assets/Characters/Peiming_Winter.png"
-},
-
-{
-	"LogName": "BathHouse Portraits - Appearance Load",
-	"Action": "Load",
-	"Target": "Portraits/{{ModID}}_Peiming_Bath",
-	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Beach.png",
-},
-
-
-{
-	"LogName": "BathHouse Sprites - Appearance Load",
-	"Action": "Load",
-	"Target": "Characters/{{ModID}}_Peiming_Bath",
-	"FromFile": "assets/Characters/Peiming_Beach.png"
-},
-
-{
-	"LogName": "SummerBeach Portraits - Appearance Load",
-	"Action": "Load",
-	"Target": "Portraits/{{ModID}}_Peiming_SummerBeach",
-	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Beach.png",
-},
-
-
-{
-	"LogName": "SummerBeach Sprites - Appearance Load",
-	"Action": "Load",
-	"Target": "Characters/{{ModID}}_Peiming_SummerBeach",
-	"FromFile": "assets/Characters/Peiming_Beach.png"
-},
-	
-	
-	 
 //includes
 {
     "LogName": "Pei Ming dispos",
@@ -536,8 +372,6 @@
 	"FromFile": "assets/data/triggeractions.json",
 },
 
-
-
 	//house interior
 { 
     "LogName": "Load PM's House Interior Map", 
@@ -609,16 +443,418 @@
 				"MapPath": "Maps/{{ModID}}_PeiMingNewOutdoors"
 			},	
 			"Forage": [
-				 { "RandomItemId": ["(O)595", "(O)638", "(O)637", "(O)272", "(O)91", "(O)64", "(O)84", "(O)Cornucopia_WinterRose", "(O)Cornucopia_Rose", "(O)Cornucopia_SpringRose", "(O)Cornucopia_FallRose", "(O)Cornucopia_SummerRose"],
-				"PerItemCondition": "SEASON {{season}}",
-				"Chance": 0.9, },
-
+				 { //Fairy Rose
+				"ItemID":"(O)595",
+				"Chance":"0.3",
+				"Season": "Fall",
+				},
+				{ //Cherry
+				"ItemID":"(O)638",
+				"Chance":"0.2",
+				"Season": "Spring",
+				},
+				{ //Pomegranate
+				"ItemID":"(O)637",
+				"Chance":"0.2",
+				"Season": "Fall",
+				},
+				{ //Eggplant
+				"ItemID":"(O)272",
+				"Chance":"0.5",
+				"Season": "Fall",
+				},
+				{ //Banane
+				"ItemID":"(O)91",
+				"Chance":"0.1",
+				"Season": "Summer",
+				},
+				{ //Ruby
+				"ItemID":"(O)64",
+				"Condition": "SEASON spring summer fall",
+				"Chance":"0.3",
+				},
+				{ //Frozen Tear
+				"ItemID":"(O)84",
+				"Chance":"0.4",
+				"Season": "Winter",
+				},
+				//Cornucopia Roses
+				{ 
+				"ItemID":"(O)Cornucopia_Rose",
+				"Chance":"0.5",
+				"Condition": "SEASON spring summer fall"
+				},
+				{ 
+				"ItemID":"(O)Cornucopia_SpringRose",
+				"Chance":"0.3",
+				"Season": "Spring",
+				},
+				{ 
+				"ItemID":"(O)Cornucopia_SummerRose",
+				"Chance":"0.3",
+				"Season": "Summer",
+				},
+				{ 
+				"ItemID":"(O)Cornucopia_FallRose",
+				"Chance":"0.3",
+				"Season": "Fall",
+				},
+				{ 
+				"ItemID":"(O)Cornucopia_WinterRose",
+				"Chance":"0.4",
+				"Season": "Winter",
+				},
+				{ 
+				"ItemID":"(O)Cornucopia_PrismaticRose",
+				"Condition": "PLAYER_HAS_MAIL Host {{ModID}}_NHMSeedsLetter Received",
+				"Chance":"0.001",
+				},
+				{ //??????????????????????????
+				"ItemID": "(O){{ModId}}_77616e6c657420646f6c6c",
+				"Chance": "0.0000001"
+				},
 				{ "ItemID":  "(O)void.NorthernHeartMelon_NHMelon",
 				"Condition": "PLAYER_FRIENDSHIP_POINTS host {{ModID}}_Peiming 2000",
 				"Chance": 0.1,
 				"Season": "winter",
 				}
+			],
+			"FishAreas": 
+			{ "River": 
+				{
+					"DisplayName": null,
+					"Position": null,
+					"CrabPotFishTypes": [],
+					"CrabPotJunkChance": 0.1
+				}
+			},
+			"Fish": [
+				{ 	//Salmon
+					"ItemID": "(O)139",
+					"Chance": 0.3,
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 3,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.3,
+					"SpecificBaitMultiplier": 1.66,
+					"Precedence": -101,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ 	//Eel
+					"ItemID": "(O)148",
+					"Chance": 0.3,
+					"Season": "Spring",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 2,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 1.66,
+					"Precedence": -20,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ 	//Octopus
+					"ItemID": "(O)149",
+					"Chance": 0.1,
+					"Season": "Summer",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 4,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 2.00,
+					"Precedence": -90,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.2,
+				},
+				{ 	//Sea Cucumber
+					"ItemID": "(O)154",
+					"Chance": 0.4,
+					"Condition": "SEASON spring summer fall",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 4,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"Precedence": -80,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0,
+				},
+				{ 	//Super Cucumber
+					"ItemID": "(O)128",
+					"Chance": 0.4,
+					"Season": "Winter",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 4,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 1.66,
+					"Precedence": -80,
+					"IgnoreFishDataRequirements": true,
+				},
+				{ 	//Ice Pip
+					"ItemID": "(O)161", //haha based
+					"Chance": 0.2,
+					"Season": "Winter",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 4,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 1.66,
+					"Precedence": -81,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ 	//Midnight Carp
+					"ItemID": "(O)269",
+					"Chance": 0.3,
+					"Condition": "TIME 1900 2550, SEASON spring summer",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 4,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 1.66,
+					"Precedence": -70,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ 	//Void Salmon
+					"ItemID": "(O)795",
+					"Chance": 0.1,
+					"Condition": "TIME 1900 2550, SEASON fall winter",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 6,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 2,
+					"Precedence": -70,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.2,
+				},
+				{ 	//Blobfish
+					"ItemID": "(O)800",
+					"Chance": 0.01,
+					"Season": "Summer",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 8,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.4,
+					"SpecificBaitBuff": 0.4,
+					"SpecificBaitMultiplier": 2,
+					"Precedence": -91,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.3,
+				},
+				{ 	//SeaJelly
+					"ItemID": "(O)SeaJelly",
+					"Chance": 0.4,
+					"Condition": "SEASON summer winter",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 2,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"Precedence": -40,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ 	//CaveJelly
+					"ItemID": "(O)CaveJelly",
+					"Chance": 0.4,
+					"Condition": "SEASON spring fall",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 2,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"Precedence": -40,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{	//RiverJelly
+					"ItemID": "(O)RiverJelly",
+					"Chance": 0.4,
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 2,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"Precedence": -40,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ //?????????????????????
+					"ItemID": "(O){{ModId}}_77616e6c657420646f6c6c", 
+					"Chance": 0.0001,
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 10,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"Precedence": 90,
+				},
+				//////SVE Fish
+				{ //Bonefish
+					"ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Bonefish", 
+					"Chance": 0.01,
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 6,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 1.66,
+					"Precedence": -78,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ //DiamondCarp
+					"ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Diamond_Carp", 
+					"Chance": 0.1,
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 6,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 1.66,
+					"Precedence": -77,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ //Kittyfish
+					"ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Kittyfish", 
+					"Chance": 0.3,
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 6,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"Precedence": -76,
+					"IgnoreFishDataRequirements": true,
+				},
+				{ //Arrowhead shark
+					"ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Arrowhead_Shark", 
+					"Chance": 0.1,
+					"Condition": "SEASON fall, TIME 1200 1800, WEATHER rainy",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 6,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"Precedence": -75,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.2,
+				},
 			]
+
 			}
 		}
 	},
@@ -835,7 +1071,7 @@
             "Action": "EditMap",
 			"When": {
 				"Partnership": "Platonic Partnership",
-				/* "Farm Upgrades": "Farmhouse Renovation" */,
+				/* "Farm Upgrades": "Farmhouse Renovation", */
 			},
             "Target": "Maps/FarmHouse2, Maps/FarmHouse2_marriage",
             "TextOperations": [
@@ -858,7 +1094,7 @@
 {	"LogName": "Load Empty House Renovation patch",
 	"Action": "Load",
     "Target": "Maps/{{ModId}}_PeiMingRoomEmpty",
-    "FromFile": "assets/PeiMingRoomEmpty.tmx"
+    "FromFile": "assets/Maps/PeiMingRoomEmpty.tmx"
 },
 
 { "LogName": "Add custom House Renovation to Robin's shop",
@@ -866,7 +1102,7 @@
 	"Target": "Data/HomeRenovations",
 	"When": { 
 		"Partnership": "Platonic Partnership",
-		"Farm Upgrades": "Farmhouse Renovation",
+		// "Farm Upgrades": "Farmhouse Renovation",
 		"HasReadLetter:AnyPlayer |contains={{ModID}}_MovingInLetter": true
 			},
 	"Entries": 
@@ -934,15 +1170,38 @@
 
 //ignore marriage schedule, requires space core and targets the asset provided by it directly with an edit data patch!
 
-{
+{ "LogName": "Space Core: Ignoer marriage schedule when Partnership is Platonic Partnership",
   "Action": "EditData",
   "Target": "spacechase0.SpaceCore/NpcExtensionData",
   "When": { "Partnership": "Platonic Partnership"},
   "Entries": {
     "{{ModID}}_Peiming": {
       "IgnoreMarriageSchedule": true,
-	  "SeparateDatability": true,
     }
+  }
+},
+{ "LogName": "Space Core: Separate Datability",
+  "Action": "EditData",
+  "Target": "spacechase0.SpaceCore/NpcExtensionData",
+  "Entries": {
+  "{{ModID}}_Peiming": { "SeparateDatability": true,
+  }
+},
+},
+
+{ "LogName": "Space Core: Gift Event Trigger - Roommate Proposal",
+  "Action": "EditData",
+  "Target": "spacechase0.SpaceCore/NpcExtensionData",
+  "When": { "LocationName": "{{ModID}}_PeiMingHouse",
+			"HasSeenEvent |contains=BecomeRoommates": false }, 
+  "Update": "OnLocationChange",
+  "Entries": {
+	"{{ModID}}_Peiming": { 
+	"GiftEventTriggers": {
+		"(O)void.NorthernHeartMelon": "{{ModID}}_RoommateProposal"
+	}
+}
+
   }
 },
 

@@ -469,10 +469,39 @@
 
 			]
 
-				}
+			}
                 
             }
         },
+		{
+        "LogName": "Make seeds available for purchase at desert festival",
+		"Action": "EditData",
+		"Target":  "Data/Shops",
+            "TargetField": [
+                "DesertFestival_{{ModID}}_Peiming",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_NHMSeeds": {
+                    "Id": "void.NorthernHeartMelon_NHMSeeds",
+                    "ItemId": "(O)void.NorthernHeartMelon_NHMSeeds",
+                    "TradeItemId": "CalicoEgg",
+        		    "TradeItemAmount": 50,
+					"AvailableStock": 2,
+                },
+                "{{ModID}}_GlazedHeartMelonRecipe": {
+                 "Id": "void.NorthernHeartMelon_GlazedHeartMelonRecipe",
+                    "ItemId": "(O)void.NorthernHeartMelon_GlazedHeartMelon",
+                    "IsRecipe": true,
+                    "ObjectInternalName": "void.NorthernHeartMelon_GlazedHeartMelon",
+                    "TradeItemId": "CalicoEgg",
+        		    "TradeItemAmount": 60,
+                },
+
+            },
+            
+		},
+
 	
 	
 		{	//RSV Ember of Resolutions

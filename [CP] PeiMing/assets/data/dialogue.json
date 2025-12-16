@@ -12,6 +12,15 @@
 				//location specific <location>_<x>_<y>
 			    "ArchaeologyHouse_21_5": "{{i18n:ArchaeologyHouse_21_5}}",
                 "Saloon_6_71": "{{i18n:Saloon_6_71}}",
+                "{{ModID}}_PeiMingHouse_6_5": "{{i18n:PeiMingBday6}}",
+
+                //Bday dialogue 
+                "BathHouse_Pool_13_10": "{{i18n:PeiMingBath{{Random:{{Range:2,3}}}}}}",
+                "Railroad_61_10": "{{i18n:PeiMingBday{{Random:{{Range:0,2}}}}}}", //Vanilla
+                "Railroad_52_26": "{{i18n:PeiMingBday{{Random:{{Range:0,2}}}}}}", //SVE
+                "Woods_12_18": "{{i18n:PeiMingBday{{Random:{{Range:3,5}}}}}}",
+                "Beach_12_18": "{{i18n:PeiMingBday{{Random:{{Range:3,5}}}}}}",
+
                 //Green Rain
                 "GreenRain": "{{i18n:GreenRain}}",
                 "GreenRainFinished": "{{i18n:GreenRainFinished}}",
@@ -26,16 +35,16 @@
  */
           
                 //island
-                "Resort": "{{i18n: Resort{{Random: {{Range:1,2}} }} }}",
+                "Resort": "{{i18n:Resort{{Random: {{Range:1,2}} }} }}",
                 "Resort_Bar": "{{i18n:Resort_Bar}}",
-                "Resort_Chair": "{{i18n: Resort{{Random: {{Range:1,2}} }} }}",
-                "Resort_Dance": "{{i18n: Resort{{Random: {{Range:1,2}} }} }}",
-                "Resort_Entering": "{{i18n: Resort{{Random: {{Range:1,2}} }} }}",
-                "Resort_Leaving":"{{i18n: Resort{{Random: {{Range:1,2}} }} }}",
-                "Resort_Shore": "{{i18n: Resort{{Random: {{Range:1,2}} }} }}",
-                "Resort_Towel": "{{i18n: Resort{{Random: {{Range:1,2}} }} }}",
-                "Resort_Umbrella": "{{i18n: Resort{{Random: {{Range:1,2}} }} }}",
-                "Resort_Wander": "{{i18n: Resort{{Random: {{Range:1,2}} }} }}",
+                "Resort_Chair": "{{i18n:Resort{{Random: {{Range:1,2}} }} }}",
+                "Resort_Dance": "{{i18n:Resort{{Random: {{Range:1,2}} }} }}",
+                "Resort_Entering": "{{i18n:Resort{{Random: {{Range:1,2}} }} }}",
+                "Resort_Leaving":"{{i18n:Resort{{Random: {{Range:1,2}} }} }}",
+                "Resort_Shore": "{{i18n:Resort{{Random: {{Range:1,2}} }} }}",
+                "Resort_Towel": "{{i18n:Resort{{Random: {{Range:1,2}} }} }}",
+                "Resort_Umbrella": "{{i18n:Resort{{Random:{{Range:1,2}} }} }}",
+                "Resort_Wander": "{{i18n:Resort{{Random:{{Range:1,2}} }} }}",
                 //birthday
                 "AcceptBirthdayGift_Negative": "{{i18n:AcceptBirthdayGift_Negative}}",
                 "AcceptBirthdayGift_Positive": "{{i18n:AcceptBirthdayGift_Positive}}",
@@ -144,6 +153,8 @@
                 "AcceptGift_(O)637": "{{i18n:AcceptGift(O)637}}",
                 "AcceptGift_(O)814": "{{i18n:AcceptGift(O)814}}",
                 "AcceptGift_(O)852": "{{i18n:AcceptGift(O)852}}",
+                "AcceptGift_(O)void.NorthernHeartMelon_Tassel": "{{i18n:AcceptGift(O)void.NorthernHeartMelon_Tassel}}",
+
 				
                 //dating
                 "breakUp": "{{i18n:breakUp}}",

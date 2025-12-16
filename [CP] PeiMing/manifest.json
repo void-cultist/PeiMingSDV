@@ -14,7 +14,7 @@
       "IsRequired": true,
     },
     {"UniqueID": "spacechase0.SpaceCore",
-  "IsRequired": true, },
+  "IsRequired": false, },
 
    {"UniqueID": "Lumisteria.LumiTilesheetsIndoor",
 	   "IsRequired": true,

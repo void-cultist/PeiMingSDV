@@ -155,10 +155,10 @@
 
 ///////////////////DIALOGUE
 "Introduction": "We meet again. I decided to wander around the valley. Some of the villagers seem scared of me, ha!",
-"ArchaeologyHouse_21_5": "{{i18n:ArchaeologyHouse_21_5}}",
-"Saloon_6_71": "{{i18n:Saloon_6_71}}",
-"GreenRain": "{{i18n:GreenRain}}",
-"GreenRainFinished": "{{i18n:GreenRainFinished}}",
+"ArchaeologyHouse_21_5": "Greetings. I am trying to find books on times past.$3#$e#I wonder if there are records on ancient deities in here.",
+"Saloon_6_71": "There is hardly anything better than good food and wine, don't you think?$1",
+"GreenRain": "Me? Scared of this weather?#$e# Ha! $6#$e# I have seen more unbelievable things.#$b# A gigantic piloted statue, ghosts in all shapes and forms, the fall of several dynasties...#$e#$8 Just to name a few.",
+"GreenRainFinished": "See? That wasn't so scary, right?",
 
 
 "WinterStar_GiveGift_Before_Spouse": "Oh please, don't say anything among the lines of how I am the gift that keeps on giving.#$b# I know. $3",
@@ -218,7 +218,7 @@
 
 //Fall
 "fall_28": "Ho! Can you feel it, @? Winter is coming. Exciting, isn't it? #$b# Have you prepared your farm already?$6#$e# Me? I have my coat dusted off and ready!$3",
-"Fall1": "Greetings, @. I am curious about something. Fall is the perfect weather for warm beverages.#$b#$y 'Do you prefer tea, coffee or hot chocolate?_I like tea!_Hoho! You are the same as me then.$1_Coffee all the way._I am not averse to drinking coffee but there are so many different ways of drinking it regarding the amount of milk and sugar that the possibilities are overwhelming for this old General, ha._Hot chocolate!_Sweet.$3#$b# Just as sweet as you are.$9' ",
+"Fall1": "Greetings, @. I am curious about something. Fall is the perfect weather for warm beverages.#$b#$y 'Do you prefer tea, coffee or hot chocolate?_I like tea!_Hoho! You are the same as me then.$1_Coffee all the way._I am not averse to drinking coffee but there are so many different ways of drinking it regarding the amount of milk and sugar that the possibilities are overwhelming for this old General, ha._Hot chocolate!_Sweet.Just as sweet as you are.$9' ",
 "Fall2": "I hate the smell of pickles. $7",
 "Fall3": "Ever since I arrived here, I have learned about so many new things that do not exist where I'm from.#$b# For example - record players! Sam showed me something called 'vinyls' and if you place them in such a 'record player', you can listen to music!$8#$e#........you are saying that this is old technology?",
 "Fall4": "Fall is the season for cozying up, I suppose. I am not one much for that, however.#$b#$y 'What about you?_I like cuddling!_Ah, is that so? Good for you._No, I am not too fond of it myself._I knew you'd understand me, @.$6'",
@@ -262,16 +262,18 @@
 "AcceptGift(O_WhatIsThis": ".............$8#$b#..............................................$8#$b#........................................................$8",
 "AcceptGift(O_Tanghulu": "!!!!!!!$8#$b# Is that...$8#$b#... Tanghulu?! $1#$b# That certainly is a flavor of my childhood. It's been hundreds of years but I will never forget having that treat with my brothers. @, you have my gratitude. $6 ",
 "AcceptGift(O)613": "And you are the apple of my eye, @. $3",
-"AcceptGift(O)StardropTea": "",
-"AcceptGift(O)797": "",
-"AcceptGift(O)Cornucopia_Rose": "",
-"AcceptGift(O)FlashShifter.StardewValleyExpandedCP_Alligator": "",
-"AcceptGift(O)FlashShifter.StardewValleyExpandedCP_Bonefish": "",
-"AcceptGift(O)FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose": "",
-"AcceptGift(O)454": "",
-"AcceptGift(O)637": "",
-"AcceptGift(O)814": "",
-"AcceptGift(O)852": "",
+"AcceptGift(O)StardropTea": "So this is the specialty tea in this area? I love this a lot, thank you, @! #$b# Want to have a taste?",
+"AcceptGift(O)797": "Oh, how gorgeous, a pearl. I love seeing those on gorgeous ladies. $2",
+"AcceptGift(O)Cornucopia_Rose": "A rose, the ultimate symbol of elegance and beauty.#$b# I will find a proper vase for it. Thank you, @.#$b# Or wait...#$b# Did you give it to me because you fancy me? Hoho, you poor soul, this General will never be romantically available! $9",
+"AcceptGift(O)FlashShifter.StardewValleyExpandedCP_Alligator": "AAAH?! WHAT IN THE WORLD?! IT'S TRYING TO EAT ME! $8",
+"AcceptGift(O)FlashShifter.StardewValleyExpandedCP_Bonefish": "Hm. Would it surprise you if I told you that I knew of someone who kept things like these as pets? #$b# I hate them.$7",
+"AcceptGift(O)FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose": "Oh, what a gorgeous, gorgeous flower. I could glance at it all day. Beauty is such a fickle thing, don't you think,@?",
+"AcceptGift(O)454": "Now that is an intersting fruit! You say its origins are in a distant past? Ha! #$b# That fruit is just like me! $9",
+"AcceptGift(O)637": "Ah, now this is a fruit of divinity. Pomegranates, the gods among fruits.",
+"AcceptGift(O)814": "Ink! I remember the scent of ink, the scent of scrolls and ink, to be precise. #$b# Reminds me of my studious friends. Thank you, @.",
+"AcceptGift(O)852": "Impressive! Did you slay a dragon on your own?! $8",
+"AcceptGift(O)void.NorthernHeartMelon_Tassel": "Is that...$8#$b# Did you make this yourself?! This is such fine craftmenship.$8#$b# I am truly impressed!",
+
 
 "GiftTastePeiMing.love": "Hoho! Now that is certainly a treat.",
 "GiftTastePeiMing.like": "Recognizing this General’s refined tastes? Wonderful.",

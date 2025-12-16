@@ -136,8 +136,18 @@
 					"Actions": [
 						"AddMail Current {{ModID}}_GlazedHeartMelonLetter tomorrow"
 					]
+				},
+		"{{ModID}}_Trigger_RoommateProposalEvent":
+				{
+					"ID": "{{ModID}}_Trigger_RoommateProposalEvent",
+					"Trigger": "spacechase0.SpaceCore_OnItemUsed",
+					"Condition": "ITEM_ID Target void.NorthernHeartMelon_Tassel",
+					"Actions": [
+						"spacechase0.SpaceCore_PlayEvent {{ModID}}_RoommateProposal true"
+					]
 				}
 	},
+
 },
 
 		

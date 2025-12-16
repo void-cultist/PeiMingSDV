@@ -68,7 +68,7 @@
                 "Fall_{{ModId}}_Peiming": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
                 "Winter_{{ModId}}_Peiming": "{{i18n: PartnerDialogue{{Random: {{Range:1,5}} }} }}",
                 "patio_{{ModId}}_Peiming": "Hoho!",
-                "Rainy_Day_0": "Hoho!",
+                "Rainy_Day_0": "Knowing you, you are not going to stay inside despite the rain, are you? That's commendable.$6#$b# This is why we get along so well.",
                 "Rainy_Day_1": "Hoho!",
                 "Rainy_Day_2": "Hoho!",
                 "Rainy_Day_3": "Hoho!",
