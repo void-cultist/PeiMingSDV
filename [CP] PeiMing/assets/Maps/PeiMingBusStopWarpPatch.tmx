@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="19" nextobjectid="139">
  <properties>
-  <property name="Fall_Objects" value="T"/>
-  <property name="NPCWarp" value="22 8 Desert 18 27"/>
   <property name="Outdoors" value="T"/>
-  <property name="Spring_Objects" value="T"/>
-  <property name="Summer_Objects" value="T"/>
-  <property name="ViewportClamp" value="10 0 35 30"/>
-  <property name="Warp" value="44 22 Town 0 54 44 23 Town 0 54 44 24 Town 0 54 44 25 Town 0 54 65 22 Town 0 54 65 23 Town 0 54 65 24 Town 0 54 65 25 Town 0 54 9 22 Farm 79 17 9 23 Farm 79 17 9 24 Farm 79 17 9 25 Farm 79 17 -1 22 Farm 79 17 -1 23 Farm 79 17 -1 24 Farm 79 17 -1 25 Farm 79 17 -1 26 Farm 79 17 11 6 Backwoods 49 30 11 7 Backwoods 49 30 11 8 Backwoods 49 30 11 9 Backwoods 49 30"/>
-  <property name="Winter_Objects" value="T"/>
  </properties>
  <tileset firstgid="1" name="outdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
   <image source="spring_outdoorsTileSheet" width="400" height="1264"/>

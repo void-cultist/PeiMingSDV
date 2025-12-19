@@ -2,6 +2,7 @@
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="30" height="31" tilewidth="16" tileheight="16" infinite="0" nextlayerid="35" nextobjectid="24618">
  <properties>
   <property name="Light" value="18 13 4 18 14 4 18 21 4 18 22 4 23 13 4 23 14 4 23 21 4 23 22 4"/>
+  <property name="LocationContext" value="Default"/>
   <property name="Outdoors" value="T"/>
   <property name="Warp" value="120 25 Town 0 90 120 26 Town 0 90 120 24 Town 0 90 120 27 Town 0 90 -1 6 Woods 81 29 -1 7 Woods 81 29 67 -1 Farm 41 64 68 -1 Farm 41 64 69 -1 Farm 41 64 70 -1 Farm 41 64 71 -1 Farm 41 64 72 -1 Farm 41 64 -1 76 Custom_ForestWest 154 26 -1 77 Custom_ForestWest 154 26 -1 78 Custom_ForestWest 154 26 -1 79 Custom_ForestWest 154 26 -1 80 Custom_ForestWest 154 26 -1 81 Custom_ForestWest 154 26 -1 82 Custom_ForestWest 154 26 -1 83 Custom_ForestWest 154 26 -1 84 Custom_ForestWest 154 26 -1 85 Custom_ForestWest 154 26 -1 86 Custom_ForestWest 154 26 -1 87 Custom_ForestWest 154 26 -1 88 Custom_ForestWest 154 26 -1 89 Custom_ForestWest 154 26 -1 90 Custom_ForestWest 154 26 -1 91 Custom_ForestWest 154 26 -1 92 Custom_ForestWest 154 26 -1 93 Custom_ForestWest 154 26 -1 94 Custom_ForestWest 154 26"/>
  </properties>

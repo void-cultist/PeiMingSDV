@@ -1,0 +1,400 @@
+{
+	"Changes": 
+    [
+    //spawnables without Cornucopia More Flowers installed
+   
+		 {  "LogName": "Add in spawnables with SpaceCore",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/SpawnableDefinitions",
+            "When": { "HasMod: |contains=Cornucopia.MoreFlowers": false},
+            "Entries": {
+                "{{ModID}}_SpawnOnPeiMingAlternateHouseLocation": {
+                    "Type": "SetPiece",
+                    "Condition": "TRUE", // GSQ
+                    "SetPiecesMap": "{{InternalAssetKey: assets/Maps/PeiMingNewOutdoors.tmx}}", // Normally you'd use your own map with {{InternalAssetKey}}
+                    "SetPieceSizeX": 3,
+                    "SetPieceSizeY": 3,
+                    "SetPieceCount": 10,
+                },
+				"{{ModID}}_SpawnSpringForageables": {
+					"Type": "Forageable",
+					"Condition": "SEASON spring",
+					"ForageableItemData": [
+						{//cherry
+                            "Weight": 0.9,
+                            "Value": {
+                            "ItemId": "(O)638",
+                            }
+                        }
+
+					]
+				},
+				"{{ModID}}_SpawnSummerForageables": {
+					"Type": "Forageable",
+					"Condition": "SEASON summer",
+					"ForageableItemData": [
+						{ //banana
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)91",
+                            }
+                        }
+					]
+				},
+				"{{ModID}}_SpawnFallForageables": {
+                    "Type": "Forageable",
+                    "Condition": "SEASON fall",
+                    "ForageableItemData": [
+						{ //eggplant
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)272",
+                            }
+                        },
+                        { //fairy rose
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)595",
+                            }
+                        },
+						{ //pomegranate
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)637",
+                            }
+                        },
+
+                    ],
+    
+				},
+				"{{ModID}}_SpawnWinterForageables": {
+					"Type": "Forageable",
+					"Condition": "SEASON winter",
+					"ForageableItemData": [
+						{ //frozen tear
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)84",
+                            }
+                        }
+
+					]
+				},
+				"{{ModID}}_ForageablesAllYearEXCEPTWinter": {
+					"Type": "Forageable",
+					"Condition": "!SEASON winter",
+					"ForageableItemData": [
+						{ //ruby
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)64",
+                            }
+                        },
+
+					]
+				},
+				"{{ModID}}_SpawnNorthernHeartMelon": {
+					"Type": "Forageable",
+					"Condition": "SEASON winter, PLAYER_HAS_MAIL Host {{ModID}}_NHMSeedsLetter Received",
+					"ForageableItemData": [
+						{ 
+                            "Weight": 0.05,
+                            "Value": {
+                            "ItemId": "(O)void.NorthernHeartMelon_NHMelon",
+                            }
+                        },
+
+					]
+				},
+				"{{ModId}}_no": {
+					"Type": "Forageable",
+					"Condition": "TRUE",
+					"ForageableItemData": [
+						{ 
+                            "Weight": 0.001,
+                            "Value": {
+                            "ItemId": "(O){{ModId}}_WhatIsThis",
+                            }
+                        },
+
+					]
+				},
+			}
+		 },
+
+
+//////////////////////////////////////////////////spawnables with Cornucopia installed
+		 {  "LogName": "Add in spawnables with SpaceCore when Cornucopia More Flowers is installed",
+            "Action": "EditData",
+             "When": { "HasMod: |contains=Cornucopia.MoreFlowers": true},
+            "Target": "spacechase0.SpaceCore/SpawnableDefinitions",
+            "Entries": {
+                "{{ModID}}_SpawnOnPeiMingAlternateHouseLocation": {
+                    "Type": "SetPiece",
+                    "Condition": "TRUE", // GSQ
+                    "SetPiecesMap": "{{InternalAssetKey: assets/Maps/PeiMingNewOutdoors.tmx}}", // Normally you'd use your own map with {{InternalAssetKey}}
+                    "SetPieceSizeX": 3,
+                    "SetPieceSizeY": 3,
+                    "SetPieceCount": 10,
+                },
+				"{{ModID}}_SpawnSpringForageables": {
+					"Type": "Forageable",
+					"Condition": "SEASON spring",
+					"ForageableItemData": [
+						{//cherry
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)638",
+                            }
+                        },
+						{
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)Cornucopia_SpringRose",
+                            }
+                        },
+
+					]
+				},
+				"{{ModID}}_SpawnSummerForageables": {
+					"Type": "Forageable",
+					"Condition": "SEASON summer",
+					"ForageableItemData": [
+						{ //banana
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)91",
+                            }
+                        },
+						{
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)Cornucopia_SummerRose",
+                            }
+                        },
+
+					]
+				},
+				"{{ModID}}_SpawnFallForageables": {
+                    "Type": "Forageable",
+                    "Condition": "SEASON fall",
+                    "ForageableItemData": [
+						{ //eggplant
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)272",
+                            }
+                        },
+                        { //fairy rose
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)595",
+                            }
+                        },
+						{ //pomegranate
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)637",
+                            }
+                        },
+						{
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)Cornucopia_FallRose",
+                            }
+                        },
+
+                    ],
+                    "ForageableExperienceGranted": 100,
+				},
+				"{{ModID}}_SpawnWinterForageables": {
+					"Type": "Forageable",
+					"Condition": "SEASON winter",
+					"ForageableItemData": [
+						{ //frozen tear
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)84",
+                            }
+                        },
+						{
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)Cornucopia_WinterRose",
+                            }
+                        },
+
+					]
+				},
+				"{{ModID}}_ForageablesAllYearEXCEPTWinter": {
+					"Type": "Forageable",
+					"Condition": "!SEASON winter",
+					"ForageableItemData": [
+						{ //ruby
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)64",
+                            }
+                        },
+						{
+                            "Weight": 1.0,
+                            "Value": {
+                            "ItemId": "(O)Cornucopia_Rose",
+                            }
+                        },
+
+					]
+				},
+				"{{ModID}}_SpawnNorthernHeartMelon": {
+					"Type": "Forageable",
+					"Condition": "SEASON winter, PLAYER_HAS_MAIL Host {{ModID}}_NHMSeedsLetter Received",
+					"ForageableItemData": [
+						{ 
+                            "Weight": 0.5,
+                            "Value": {
+                            "ItemId": "(O)void.NorthernHeartMelon_NHMelon",
+                            }
+                        },
+
+					]
+				},
+				"{{ModID}}_SpawnPrismaticRoseCornucopia": {
+					"Type": "Forageable",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS host {{ModID}}_Peiming 2000",
+					"ForageableItemData": [
+						{ 
+                            "Weight": 0.01,
+                            "Value": {
+                            "ItemId": "(O)Cornucopia_PrismaticRose",
+                            }
+                        },
+
+					]
+				},
+				"{{ModId}}_no": {
+					"Type": "Forageable",
+					"Condition": "TRUE",
+					"ForageableItemData": [
+						{ 
+                            "Weight": 0.001,
+                            "Value": {
+                            "ItemId": "(O){{ModId}}_WhatIsThis",
+                            }
+                        },
+
+					]
+				},
+			}
+		 },
+
+         //i think these need separate patches
+		{
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/SpawningGroups",
+            "Entries": {
+                "{{ModID}}_PeiMingNewOutdoorsSpawns": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnSpringForageables"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 2,
+                        },
+						{
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnSummerForageables"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 3,
+                        },
+						{
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnFallForageables"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 3,
+                        },
+						{
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnWinterForageables"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 3,
+                        },
+						{
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.7,
+                                    "Value": "{{ModID}}_ForageablesAllYearEXCEPTWinter"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 2,
+                        },
+						{
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.2,
+                                    "Value": "{{ModID}}_SpawnNorthernHeartMelon"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 1,
+                        },
+						{
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.001,
+                                    "Value": "{{ModID}}_no"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 1,
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.8,
+                                    "Value": "{{ModID}}_SpawnOnPeiMingAlternateHouseLocation"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 1,
+                        },
+					]
+					}
+				}
+			},
+        { 
+            "LogName": "Prismatic Rose setpiece with Cornucopia more Flowers enabled",
+            "Action": "EditData",
+            "When": { "HasMod: |contains=Cornucopia.MoreFlowers": true },
+            "Target": "spacechase0.SpaceCore/SpawningGroups",
+            "TargetField": [ "SpawnablesToSpawn" ], 
+            "Entries": {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.3,
+                                    "Value": "{{ModID}}_SpawnPrismaticRoseCornucopia"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 1,
+                        },
+            }
+        
+	]
+} 

@@ -2,7 +2,6 @@
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="21" height="23" tilewidth="16" tileheight="16" infinite="0" nextlayerid="25" nextobjectid="49">
  <properties>
   <property name="BrookSounds" value="16 7 4 17 7 4 18 7 4 19 7 4 15 2 4 3 17 3 15 17 0 15 12 0 15 10 0 6 18 0"/>
-  <property name="CanCaskHere" value="T"/>
   <property name="LocationContext" value="Default"/>
   <property name="Music" value="void.peiming_PMOutdoorMusic"/>
   <property name="Outdoors" value="T"/>

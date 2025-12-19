@@ -6,13 +6,13 @@
 		{ //random dialogue: "{{Random: && |inputSeparator=&&}}"
             "LogName": "yappingMing",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/{{ModId}}_Peiming",
+            "Target": "Characters/Dialogue/{{PeiMing}}",
 			"Entries": {
 				"Introduction": "{{i18n:Introduction}}",
 				//location specific <location>_<x>_<y>
 			    "ArchaeologyHouse_21_5": "{{i18n:ArchaeologyHouse_21_5}}",
                 "Saloon_6_71": "{{i18n:Saloon_6_71}}",
-                "{{ModID}}_PeiMingHouse_6_5": "{{i18n:PeiMingBday6}}",
+                "{{PMHouse}}_6_5": "{{i18n:PeiMingBday6}}",
 
                 //Bday dialogue 
                 "BathHouse_Pool_13_10": "{{i18n:PeiMingBath{{Random:{{Range:2,3}}}}}}",
@@ -26,13 +26,13 @@
                 "GreenRainFinished": "{{i18n:GreenRainFinished}}",
 
                 //movie
-           /*      "MovieInvitation": "{{i18n:MovieInvitation}}",
+                "MovieInvitation": "{{i18n:MovieInvitation}}",
                 "RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:RejectMovieTicket_AlreadyInvitedBySomeoneElse}}",
                 "RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:RejectMovieTicket_AlreadyWatchedThisWeek}}",
                 "RejectMovieTicket_Divorced": "{{i18n:RejectMovieTicket_Divorced}}",
                 "RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:RejectMovieTicket_DontWantToSeeThatMovie}}",
                 "RejectMovieTicket": "{{i18n:RejectMovieTicket}}",
- */
+
           
                 //island
                 "Resort": "{{i18n:Resort{{Random: {{Range:1,2}} }} }}",
@@ -70,7 +70,7 @@
 
                 "spring_Sun": "{{i18n: Spring{{Random: {{Range:1,4}} }} }}",
                 //flower festival
-                "FlowerDance_Accept_Spouse": "{{i18n:FlowerDance_Accept_Spouse}}",
+                "FlowerDance_Accept_Roommate": "{{i18n:FlowerDance_Accept_Spouse}}",
                 "FlowerDance_Accept": "{{i18n:FlowerDance_Accept}}",
                 "FlowerDance_Decline": "{{i18n:FlowerDance_Decline}}",
 
@@ -128,9 +128,9 @@
 
                 "winter_Sun": "{{i18n: Winter{{Random: {{Range:1,5}} }} }}",
                 //winter star
-                "WinterStar_GiveGift_Before_Spouse": "{{i18n:WinterStar_GiveGift_Before_Spouse}}",
+                "WinterStar_GiveGift_Before_Roommate": "{{i18n:WinterStar_GiveGift_Before_Spouse}}",
                 "WinterStar_GiveGift_Before": "{{i18n:WinterStar_GiveGift_Before}}",
-                "WinterStar_GiveGift_After_Spouse": "{{i18n:WinterStar_GiveGift_After_Spouse}}",
+                "WinterStar_GiveGift_After_Roommate": "{{i18n:WinterStar_GiveGift_After_Spouse}}",
                 "WinterStar_GiveGift_After": "{{i18n:WinterStar_GiveGift_After}}",
                 "WinterStar_ReceiveGift": "{{i18n:WinterStar_ReceiveGift}}",
 
@@ -153,17 +153,29 @@
                 "AcceptGift_(O)637": "{{i18n:AcceptGift(O)637}}",
                 "AcceptGift_(O)814": "{{i18n:AcceptGift(O)814}}",
                 "AcceptGift_(O)852": "{{i18n:AcceptGift(O)852}}",
-                "AcceptGift_(O)void.NorthernHeartMelon_Tassel": "{{i18n:AcceptGift(O)void.NorthernHeartMelon_Tassel}}",
+                "AcceptGift_(O)void.NorthernHeartMelon_GiftableTassel": "{{i18n:AcceptGift(O)void.NorthernHeartMelon_Tassel}}$action spacechase0.SpaceCore_PlayEvent {{ModID}}_RoommateProposal true",
 
 				
-                //dating
+                //"dating"
                 "breakUp": "{{i18n:breakUp}}",
                 "dating_Peiming_memory_oneyear": "{{i18n:dating_Peiming_memory_oneyear}}",
                 "RejectBouquet_NotDatable": "{{i18n:RejectBouquet_NotDatable}}",
-                "RejectBouquet_NpcAlreadyMarried": "{{i18n:RejectBouquet_NpcAlreadyMarried}}",
-                "RejectBouquet_VeryLowHearts": "{{i18n:RejectBouquet_VeryLowHearts}}",
-                "RejectBouquet_LowHearts": "{{i18n:RejectBouquet_LowHearts}}",
-                "RejectBouquet": "{{i18n:RejectBouquet}}",
+
+                "SpouseFarmhouseClutter": "{{i18n:SpouseFarmhouseClutter}}",
+                "Spouse_MonstersInHouse": "{{i18n:Spouse_MonstersInHouse}}",
+                "SpouseStardrop": "{{i18n:SpouseStardrop}}",
+
+                "RejectRoommateProposal_AlreadyAccepted": "{{i18n:RejectBouquet_VeryLowHearts}}",
+                "RejectRoommateProposal_NpcWithSomeoneElse": "{{i18n:RejectBouquet_NpcAlreadyMarried}}",
+                "RejectRoommateProposal_LowFriendship": "{{i18n:RejectBouquet_LowHearts}}",
+                "RejectRoommateProposal_SmallHouse": "{{i18n:RejectMermaidPendant_NeedHouseUpgrade}}",
+                "RejectRoommateProposal": "{{i18n:RejectBouquet}}",
+
+                "divorced": "{{i18n:divorced}}",
+                "RejectGift_Divorced": "{{i18n:RejectGift_Divorced}}",
+                "RejectMermaidPendant_Divorced": "{{i18n:RejectMermaidPendant_Divorced}}",
+                "RejectBouquet_Divorced": "{{i18n:RejectBouquet_Divorced}}",
+                "WipedMemory": "{{i18n:WipedMemory}}",
 
                 //dating proposal
                 "AcceptBouquet": "{{i18n:AcceptBouquet}}",
@@ -172,10 +184,21 @@
 				
             }
         },
+
+
+/* ····················································· */
+/* : ____   ___   ___  __  __ __  __    _  _____ _____ : */
+/* :|  _ \ / _ \ / _ \|  \/  |  \/  |  / \|_   _| ____|: */
+/* :| |_) | | | | | | | |\/| | |\/| | / _ \ | | |  _|  : */
+/* :|  _ <| |_| | |_| | |  | | |  | |/ ___ \| | | |___ : */
+/* :|_| \_\\___/ \___/|_|  |_|_|  |_/_/   \_\_| |_____|: */
+/* ····················································· */
+
+
         {	"LogName": "PM Roommate 'Engagement' response",
 			"Action": "EditData",
             "When": { "Partnership": "Roommates"},
-			"Target": "Data/EngagementDialogue",
+			"Target": "Data/EngagementDialogue:{{PeiMing}}Roommate0",
 			"Entries": {
                 "PeimingRoommate0": "{{i18n:PeimingRoommate0}}",
                 "PeimingRoommate1": "{{i18n:PeimingRoommate1}}",
@@ -185,58 +208,202 @@
             "LogName": "MovingIn Accept Roommate",
 			"Action": "EditData",
             "When": { "Partnership": "Roommates"},
-			"Target": "Data/Strings/StringsFromCSFiles/{{ModID}}_Peiming_EngagedRoommate",
+			"Target": "Data/Strings/StringsFromCSFiles/{{PeiMing}}_EngagedRoommate",
 			"Entries": { 
-        "{{ModID}}_Peiming_EngagedRoommate": "{{i18n:Peiming_EngagedRoommate}}",
+        "{{PeiMing}}_EngagedRoommate": "{{i18n:Peiming_EngagedRoommate}}",
 
 		},
         },
 		{ "LogName":   "Roommate Dialogue",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/MarriageDialogue{{ModId}}_PeimingRoommate",
-            "When": { "Partnership": "Roommates" }, 
+            "Target": "Characters/Dialogue/MarriageDialogue{{PeiMing}}Roommate",
+            "When": { "Partnership": "Roommates",  "Roommate": "{{PeiMing}}" }, 
             "Entries": {
-                "Spring_{{ModId}}_Peiming": "You know that I am a free spirit. We don't need to cling to each other day and night. #$b# So don't mind me if I wander around the valley.",
-                "Summer_{{ModId}}_Peiming": "Should I go to the beach? Or spend the day in the cool deep forest nearby?",
-                "Fall_{{ModId}}_Peiming": "Fall means it's time for chestnuts. Do chestnuts grow around the valley, I wonder?",
-                "Winter_{{ModId}}_Peiming": "Ah, finally. Winter has come after all. My favorite season. Why don't we go grab something warm to drink later?",
-                "patio_{{ModId}}_Peiming": "Hoho!",
-                "Rainy_Day_0": "This weather calls for a warm drink! Here you go!$1 [(O)Cornucopia_HotChocolate (O)614 (O)253]",
-                "Rainy_Day_1": "No excuse to stay at home just because it's raining. I used to win battles in the worst of weather conditions. $3",
-                "Rainy_Day_2": "Sometimes, I do think of the Rain Master... #$b# Oh, she's an old... #$b# ...acquaintance of mine.",
-                "Rainy_Day_3": "What a weather, huh? While I don't personally mind the rain, I do dislike that it ruins my hair.",
-                "Rainy_Day_4": "I should read a book. I found some fun ones with black and white drawings. #$e# Have you ever read 'The Scum Villain's Self-Saving System'? #$b# I'm not sure whether or not I want to give it a read.",
+                "Spring_{{PeiMing}}": "{{i18n:Spring_Peiming}}",
+                "Summer_{{PeiMing}}": "{{i18n:Summer_Peiming}}",
+                "Fall_{{PeiMing}}": "{{i18n:Fall_Peiming}}",
+                "Winter_{{PeiMing}}": "{{i18n:Winter_Peiming}}",
+                "patio_{{PeiMing}}": "{{i18n:patio_Peiming}}",
+                "Rainy_Day_0": "{{i18n:Rainy_Day_0}}",
+                "Rainy_Day_1": "{{i18n:Rainy_Day_1}}",
+                "Rainy_Day_2": "{{i18n:Rainy_Day_2}}",
+                "Rainy_Day_3": "{{i18n:Rainy_Day_3}}",
+                "Rainy_Day_4": "{{i18n:Rainy_Day_4}}",
+                "Rainy_Day_5": "{{i18n:Rainy_Day_5}}",
+                "Indoor_Day": "{{i18n:Indoor_Day}}",
+                "Indoor_Day_1": "{{i18n:Indoor_Day_1}}",
+                "Indoor_Day_2": "{{i18n:Indoor_Day_2}}",
+                "Indoor_Day_3": "{{i18n:Indoor_Day_3}}",
+                "Indoor_Day_4": "{{i18n:Indoor_Day_4}}",
+                "Indoor_Day_5": "{{i18n:Indoor_Day_5}}",
+                "Rainy_Night_0": "{{i18n:Rainy_Night_0}}",
+                "Rainy_Night_1": "{{i18n:Rainy_Night_1}}",
+                "Rainy_Night_2": "{{i18n:Rainy_Night_2}}",
+                "Rainy_Night_3": "{{i18n:Rainy_Night_3}}",
+                "Rainy_Night_4": "{{i18n:Rainy_Night_4}}",
+                "Rainy_Night_5": "{{i18n:Rainy_Night_5}}",
+                "Indoor_Night_0": "{{i18n:Indoor_Night_0}}",
+                "Indoor_Night_1": "{{i18n:Indoor_Night_1}}",
+                "Indoor_Night_2": "{{i18n:Indoor_Night_2}}",
+                "Indoor_Night_3": "{{i18n:Indoor_Night_3}}",
+                "Indoor_Night_4": "{{i18n:Indoor_Night_4}}",
+                "Indoor_Night_5": "{{i18n:Indoor_Night_5}}",
+                "funLeave_{{PeiMing}}": "{{i18n:funLeave_Peiming}}",
+                "funReturn_{{PeiMing}}": "{{i18n:funReturn_Peiming}}",
+                "Outdoor_{{PeiMing}}": "{{i18n:Outdoor_Peiming}}",
+                "Outdoor_0": "{{i18n:Outdoor_0}}",
+                "Outdoor_1": "{{i18n:Outdoor_1}}",
+                "Outdoor_2": "{{i18n:Outdoor_2}}",
+                "Outdoor_3": "{{i18n:Outdoor_3}}",
+                "Outdoor_4": "{{i18n:Outdoor_4}}",
+                "spouseRoom_{{PeiMing}}": "{{i18n:spouseRoom_Peiming}}",
+                "Good_0": "{{i18n:Good_0}}",
+                "Good_1": "{{i18n:Good_1}}",
+                "Good_2": "{{i18n:Good_2}}",
+                "Good_3": "{{i18n:Good_3}}",
+                "Good_4": "{{i18n:Good_4}}",
+                "Good_5": "{{i18n:Good_5}}",
+                "Good_6": "{{i18n:Good_6}}",
+                "Good_7": "{{i18n:Good_7}}",
+                "Good_8": "{{i18n:Good_8}}",
+                "Good_9": "{{i18n:Good_9}}",
+                "Neutral_0": "{{i18n:Neutral_0}}",
+                "Neutral_1": "{{i18n:Neutral_1}}",
+                "Neutral_2": "{{i18n:Neutral_2}}",
+                "Neutral_3": "{{i18n:Neutral_3}}",
+                "Neutral_4": "{{i18n:Neutral_4}}",
+                "Neutral_5": "{{i18n:Neutral_5}}",
+                "Neutral_6": "{{i18n:Neutral_6}}",
+                "Neutral_7": "{{i18n:Neutral_7}}",
+                "Neutral_8": "{{i18n:Neutral_8}}",
+                "Neutral_9": "{{i18n:Neutral_9}}",
+                "Bad_0": "{{i18n:Bad_0}}",
+                "Bad_1": "{{i18n:Bad_1}}",
+                "Bad_2": "{{i18n:Bad_2}}",
+                "Bad_3": "{{i18n:Bad_3}}",
+                "Bad_4": "{{i18n:Bad_4}}",
+                "Bad_5": "{{i18n:Bad_5}}",
+                "Bad_6": "{{i18n:Bad_6}}",
+                "Bad_7": "{{i18n:Bad_7}}",
+                "Bad_8": "{{i18n:Bad_8}}",
+                "Bad_9": "{{i18n:Bad_9}}",
+
+        }
+    
+        },
+
+
+/* ·································································· */
+/* : ____  _        _  _____ ___  _   _ ___ ____                    : */
+/* :|  _ \| |      / \|_   _/ _ \| \ | |_ _/ ___|                   : */
+/* :| |_) | |     / _ \ | || | | |  \| || | |                       : */
+/* :|  __/| |___ / ___ \| || |_| | |\  || | |___                    : */
+/* :|_|__ |_____/_/__ \_\_| \___/|_|_\_|___\____|_  _   _ ___ ____  : */
+/* :|  _ \ / \  |  _ \_   _| \ | | ____|  _ \/ ___|| | | |_ _|  _ \ : */
+/* :| |_) / _ \ | |_) || | |  \| |  _| | |_) \___ \| |_| || || |_) |: */
+/* :|  __/ ___ \|  _ < | | | |\  | |___|  _ < ___) |  _  || ||  __/ : */
+/* :|_| /_/   \_\_| \_\|_| |_| \_|_____|_| \_\____/|_| |_|___|_|    : */
+/* ·································································· */
+
+
+
+{	"LogName": "PM 'Engagement' response",
+			"Action": "EditData",
+			"Target": "Data/EngagementDialogue:{{PeiMing}}Roommate0",
+             "When": { "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true,
+            	         "Partnership": "Platonic Partnership", },
+			"Entries":
+             {
+                        "PeimingRoommate0": "{{i18n:PeimingEngaged0}}",
+                        "PeimingRoommate1": "{{i18n:PeimingEngaged1}}",
+ 
+			}
+		},
+
+        {	"LogName": "MovingIn Accept Platonic Partner",
+			"Action": "EditData",
+            "When": { "Partnership": "Platonic Partnership",
+         "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true },
+			"Target": "Data/Strings/StringsFromCSFiles/{{PeiMing}}_EngagedRoommate",
+			"Entries": { 
+        "{{PeiMing}}_EngagedRoommate": "Oho!$1#$b# Yes, I appreciate your companionship as well, my dear @. Why don't we have a little gathering to celebrate that? $6"
+		},
+        },
+
+        { //Updated Dialogue after Roommate proposal event 
+        "LogName": "Updated Dialogue after Roommate proposal",
+        "Action": "EditData",
+        "When": {
+            "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true,
+            "Partnership": "Platonic Partnership",
+            "HasSeenEvent": "{{ModID}}_RoommateProposal",
+            "Roommate": "{{PeiMing}}",
+            },
+        "Target": "Characters/Dialogue/{{PeiMing}}",
+        "TextOperations": [
+            {
+            "Operation": "RemoveDelimited",
+            "Target": ["Entries", "spring_Mon", "spring_Tue", "winter_Thu"],
+            "Search": "{{i18n:Spring{{Random:{{Range:1,4}}}}}} {{i18n:Winter{{Random:{{Range:1,5}}}}}}", 
+            "Delimiter": " "
+            },
+        ],
+        "Entries": {
+            "spring_Mon": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
+            "spring_Tue": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
+            "winter_Thu": "{{i18n:PartnerDialogue6}}",
+        }
+    },
+
+    /* shouldn't be required but will edit it if ignore schedule doesnt work    
+    { "LogName":   "Partnership Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogue{{PeiMing}}Roommate",
+            "When":  { "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true,
+            "Partnership": "Platonic Partnership",
+                        "Roommate": "{{PeiMing}}", },
+            "Entries": {
+                "Spring_{{PeiMing}}": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
+                "Summer_{{PeiMing}}": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
+                "Fall_{{PeiMing}}": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
+                "Winter_{{PeiMing}}": "{{i18n: PartnerDialogue{{Random: {{Range:1,5}} }} }}",
+                "patio_{{PeiMing}}": "Hoho!",
+                "Rainy_Day_0": "Knowing you, you are not going to stay inside despite the rain, are you? That's commendable.$6#$b# This is why we get along so well.",
+                "Rainy_Day_1": "Hoho!",
+                "Rainy_Day_2": "Hoho!",
+                "Rainy_Day_3": "Hoho!",
+                "Rainy_Day_4": "Hoho!",
                 "Rainy_Day_5": "Hoho!",
-                "Indoor_Day_0": "You shouldn't limit yourself to just me as your roommate, @. If there are other people you want to live with, go for it.",
-                "Indoor_Day_1": "Hoho!",
+                "Indoor_Day_0": "{{i18n:Indoor_Day_0}}",
+                "Indoor_Day_1": "{{i18n:PartnerDialogue4}}",
                 "Indoor_Day_2": "Hoho!",
                 "Indoor_Day_3": "Hoho!",
                 "Indoor_Day_4": "Hoho!",
                 "Indoor_Day_5": "Hoho!",
-                "Rainy_Night_0": "Rainy nights have something comforting about them, don't you think?",
-                "Rainy_Night_1": "Have you ever thought about how you and I are something like Sworn Brothers? $1",
+                "Rainy_Night_0": "Hoho!",
+                "Rainy_Night_1": "Hoho!",
                 "Rainy_Night_2": "Hoho!",
                 "Rainy_Night_3": "Hoho!",
                 "Rainy_Night_4": "Hoho!",
                 "Rainy_Night_5": "Hoho!",
                 "Indoor_Night_0": "{{i18n:Indoor_Night_0}}",
-                "Indoor_Night_1": "Nights like these make me wonder who I could ask to have some fun with... #$e# Oh, stop looking at me like that! You know exactly that's what I like to do! $9",
-                "Indoor_Night_2": "Welcome back, @. It's good to see you around.",
-                "Indoor_Night_3": "...hm. #$b# %Pei Ming seems to be spaced out. #$b# Ah, @! Welcome back home. Forgive me, I have been thinking about my best friends.",
-                "Indoor_Night_4": "Good evening, @! Why don't we have a drink together? Here you go! $6 [(O)FlashShifter.StardewValleyExpandedCP_BlueMoonWine (O)873 (O)903 (O)Wildflour.AtelierGoods_Bonfire_Ale]",
-                "Indoor_Night_5": "Hoho!$9",
-                "funLeave_{{ModId}}_Peiming": "I will be heading out today to have some fun.$3#$e# A god has his hobbies and desires, too, after all. $9#$e# See you later!",
-                "funReturn_{{ModId}}_Peiming": "That was a nice outing. I hope your day has been pleasant as well.",
-                "Outdoor_{{ModId}}_Peiming": "Let me know if I can help you on the farm! These muscles aren't just for show. $3",
+                "Indoor_Night_1": "Hoho!",
+                "Indoor_Night_2": "Hoho!",
+                "Indoor_Night_3": "Hoho!",
+                "Indoor_Night_4": "Hoho!",
+                "Indoor_Night_5": "Hoho!",
+                "funLeave_{{PeiMing}}": "{{i18n: funLeave{{Random: {{Range:1,2}} }} }}",
+                "funReturn_{{PeiMing}}": "Hoho!",
+                "Outdoor_{{PeiMing}}": "Hoho!",
                 "Outdoor_0": "Hoho!",
                 "Outdoor_1": "Hoho!",
                 "Outdoor_2": "Hoho!",
                 "Outdoor_3": "Hoho!",
                 "Outdoor_4": "Hoho!",
-                "spouseRoom_{{ModId}}_Peiming": "So, what do you think of my little corner here? Fabulous, no?$1",
-                "Good_0": "I am grateful for having a friend such as you, even if our lives have been so very different.",
-                "Good_1": "Should you ever stumble into my time and space, just pray to one of my statues, okay? $3#$b# As soon as I hear from you, I'll appoint you as a deity! $9",
-                "Good_2": "%Pei Ming seems to be in a good mood and is humming a melody to himself. #$e# %Upon listening closely, you realize with shock... #$b# %...that it's 'Rick Astley - Never Gonna Give You Up'.",
+                "spouseRoom_{{PeiMing}}": "Hoho!",
+                "Good_0": "Hoho!",
+                "Good_1": "Hoho!",
+                "Good_2": "Hoho!",
                 "Good_3": "Hoho!",
                 "Good_4": "Hoho!",
                 "Good_5": "Hoho!",
@@ -254,9 +421,9 @@
                 "Neutral_7": "Hoho!",
                 "Neutral_8": "Hoho!",
                 "Neutral_9": "Hoho!",
-                "Bad_0": "I am under the impression that you are avoiding me.",
-                "Bad_1": "Is something the matter? We aren't talking as often as we used to.",
-                "Bad_2": "Listen, @. If you don't want me around anymore, just say the word and I'll pack up and leave.",
+                "Bad_0": "Hoho!",
+                "Bad_1": "Hoho!",
+                "Bad_2": "Hoho!",
                 "Bad_3": "Hoho!",
                 "Bad_4": "Hoho!",
                 "Bad_5": "Hoho!",
@@ -264,9 +431,9 @@
                 "Bad_7": "Hoho!",
                 "Bad_8": "Hoho!",
                 "Bad_9": "Hoho!",
+            }
         }
-    
-        },
+     */
     ]
 }
 

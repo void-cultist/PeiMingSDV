@@ -40,7 +40,7 @@
 				{
 					"ID": "{{ModID}}_Add_PM3HSaloonLetter",
 					"Trigger": "DayEnding",
-					"Condition": "PLAYER_HAS_SEEN_EVENT Host {{ModID}}_PM3HSaloon, PLAYER_FRIENDSHIP_POINTS Host {{ModID}}_Peiming 1000",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Host {{ModID}}_PM3HSaloon, PLAYER_FRIENDSHIP_POINTS Host {{PeiMing}} 1000",
 					"Actions": [
 						"AddMail Current {{ModID}}_PM4HSaloonLetter tomorrow",
 					],
@@ -50,7 +50,7 @@
 				{
 					"ID": "{{ModID}}_Add_PM3HMountainsLetter",
 					"Trigger": "DayEnding",
-					"Condition": "PLAYER_HAS_SEEN_EVENT Host {{ModID}}_PM3HMountains, PLAYER_FRIENDSHIP_POINTS Current {{ModID}}_Peiming 1000",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Host {{ModID}}_PM3HMountains, PLAYER_FRIENDSHIP_POINTS Current {{PeiMing}} 1000",
 					"Actions": [
 						"AddMail Current {{ModID}}_PM4HMountainsLetter tomorrow"
 					]
@@ -77,7 +77,7 @@
 				{
 					"ID": "{{ModID}}_Add_TanghuluRecipeLetter",
 					"Trigger": "DayEnding",
-					"Condition": "PLAYER_FRIENDSHIP_POINTS Current {{ModID}}_Peiming 1250",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current {{PeiMing}} 1100",
 					"Actions": [
 						"AddMail Current {{ModID}}_PMTanghuluLetter tomorrow"
 					]
@@ -95,7 +95,7 @@
 				{
 					"ID": "{{ModID}}_Add_SleepOverLetter",
 					"Trigger": "DayEnding",
-					"Condition": "PLAYER_FRIENDSHIP_POINTS Current {{ModID}}_Peiming 1000",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current {{PeiMing}} 1000",
 					"Actions": [
 						"AddMail Current {{ModID}}_SleepoverLetter tomorrow",
 					]
@@ -113,7 +113,7 @@
 				{
 					"ID": "{{ModID}}_Add_NHMSeedsLetter",
 					"Trigger": "DayEnding",
-					"Condition": "SEASON Fall, PLAYER_FRIENDSHIP_POINTS Current {{ModID}}_Peiming 1250",
+					"Condition": "SEASON Fall, PLAYER_FRIENDSHIP_POINTS Current {{PeiMing}} 1250",
 					"Actions": [
 						"AddMail Current {{ModID}}_NHMSeedsLetter tomorrow"
 					]
@@ -137,13 +137,23 @@
 						"AddMail Current {{ModID}}_GlazedHeartMelonLetter tomorrow"
 					]
 				},
-		"{{ModID}}_Trigger_RoommateProposalEvent":
+		/* "{{ModID}}_Trigger_RoommateProposalEvent":
 				{
 					"ID": "{{ModID}}_Trigger_RoommateProposalEvent",
 					"Trigger": "spacechase0.SpaceCore_OnItemUsed",
-					"Condition": "ITEM_ID Target void.NorthernHeartMelon_Tassel",
+					"Condition": "ITEM_ID Target void.NorthernHeartMelon_GiftableTassel",
 					"Actions": [
 						"spacechase0.SpaceCore_PlayEvent {{ModID}}_RoommateProposal true"
+					]
+				}, */
+		"{{ModID}}_Trigger_Spawnables_NewOutdoors":
+				{
+					"ID": "{{ModID}}_Trigger_Spawnables_NewOutdoors",
+					"Trigger": "DayStarted",
+					"Condition": "TRUE",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingNewOutdoorsSpawns {{ModID}}_PeiMingNewOutdoors 3,3,11,15 5,7,7,7"
 					]
 				}
 	},

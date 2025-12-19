@@ -6,6 +6,16 @@
 			"Name": "IsOddYear",
 			"Value": "{{Query: {{Year}} % 2 = 1}}"
 		},
+//name token
+		{
+			"Name": "PeiMing",
+			"Value": "{{ModID}}_Peiming"
+		},
+		{
+			"Name": "PMHouse",
+			"Value": "{{ModID}}_PeiMingHouse"
+		},
+
 
 //Tokens for map patching & map strings
 		{
@@ -159,7 +169,7 @@
                 "House Location": "Alternate"
             }
 		},
-		{
+		/* {
 			"Name": "PartnershipStrings",
 			"Value": "Roommate",
 		},
@@ -169,7 +179,7 @@
 			"Value": "Companion",
 			"When": { "Partnership": "Platonic Partnership",
          "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true },
-		},
+		}, */
 
 //woods or beach visit during birthday
 		{ "Name": "WoodsOrBeach",
@@ -190,20 +200,23 @@
 	//event stuff, don't ask. don't. please.
 	{
 		"Name": "ReadingAnimation",
-		"Value": "animate {{ModID}}_Peiming false false 600 32 33 33 33 33 34 34 34 34 32 32 33 33 34 34 32"
+		"Value": "animate {{PeiMing}} false false 600 32 33 33 33 33 34 34 34 34 32 32 33 33 34 34 32"
+	},
+	{
+		"Name": "DrinkingAnimation",
+		"Value": "animate {{PeiMing}} false false 600 16 16 16 16 16 16 16 17 17 18 18 19 19 19 19 19 18 18 17 17 16 16 16 16 16 16"
 	},
 //Saloon or Mountains?
 
-{	"Name": "PM4HLocation",
+	{	
+	"Name": "PM4HLocation",
 	"Value": "Mountain",
 	"When": { "HasSeenEvent |contains={{ModID}}_PM3HMountains": true }
-},
-{
+	},
+	{
 	"Name": "PM4HLocation",
 	"Value": "Saloon",
-},
-
-
+	},
 	{
 		"Name": "5HTriggerCondition",
 		"Value": "PM4HSaloon",
@@ -248,14 +261,14 @@
 		{	"AllowValues": "Platonic Partnership, Roommates",
 			"Default": "Roommates",
 			"AllowBlank": false,
-			"Description": "Whether Pei Ming behaves like a vanilla roommate or a platonic partner after moving in. Should be used with the Mod 'Hugs and Kisses' with 'RoommateKisses' enabled!",
+			"Description": "Whether Pei Ming behaves like a vanilla roommate or a platonic partner after moving in. Suggestion: use Platonic Partnership with the Mod 'Hugs and Kisses' with 'RoommateKisses' enabled!",
 			"Section": "Relationship"
 		},
 		"Ceremony":
 		{	"AllowValues": "true, false",
 			"Default": false,
 			"AllowBlank": false,
-			"Description": "Whether or not you want to celebrate your companionship with a platonic ceremony (like a Wedding event). Should be used with the Mod 'Hugs and Kisses' with 'RoommateKisses' enabled!",
+			"Description": "Whether or not you want to celebrate your companionship with a platonic ceremony (like a Wedding event).",
 			"Section": "Platonic Partnership exclusive",
 
 		},
@@ -274,7 +287,7 @@
 	  [{
    		 "LogName": "Blank JSON load", //The logline is not required, but it's useful down the road for labeling your patches so you can tell your problem is, say "NPC Dialogue Patch" and not "NPC Patch #14"
         	"Action": "Load",
-        	"Target": "Characters/Dialogue/{{ModId}}_Peiming, Characters/schedules/{{ModId}}_Peiming, Strings/schedules/{{ModId}}_Peiming, Strings/StringsFromMaps/{{ModID}}_PeiMingHouse, Strings/StringsFromMaps/{{ModID}}_PeiMingExterior, Strings/StringsFromCSFiles/{{ModID}}_Peiming_EngagedRoommate, Strings/1_6_Strings/{{ModID}}_Renovation_AddCustomRoom, Data/EngagementDialogue/{{ModID}}_Peiming, Data/Events/{{ModID}}_PeiMingHouse, Data/Locations/{{ModID}}_PeiMingNewOutdoors", 
+        	"Target": "Characters/Dialogue/{{PeiMing}}, Characters/schedules/{{PeiMing}}, Strings/schedules/{{PeiMing}}, Strings/StringsFromMaps/{{PMHouse}}, Strings/StringsFromMaps/{{ModID}}_PeiMingExterior, Strings/StringsFromCSFiles/{{PeiMing}}_EngagedRoommate, Strings/1_6_Strings/{{ModID}}_Renovation_AddCustomRoom, Data/EngagementDialogue/{{PeiMing}}, Characters/Dialogue/MarriageDialogue{{PeiMing}}Roommate, Characters/schedules/{{PeiMing}}Roommate, Data/Events/{{PMHouse}}, Data/Locations/{{ModID}}_PeiMingNewOutdoors", 
         	"FromFile": "assets/data/blank.json" //this should be wherever you put it in your assets folder - put it in a subfolder if you want
    	 },
 
@@ -284,31 +297,25 @@
    	"Action": "Include",
    	"FromFile": "assets/data/dispos.json"
 },
+{ 
+	"LogName": "Gift Tastes Include",
+   	"Action": "Include",
+   	"FromFile": "assets/data/gifttastes.json"
+},
 {
     "LogName": "NPC Dialogue",
    	"Action": "Include",
 	"FromFile": "assets/data/dialogue.json"
 },
 {
+	"LogName": "Include map data",
+	"Action": "Include",
+	"FromFile": "assets/data/mapdata.json"
+},
+{
 	"LogName": "Include CT",
 	"Action": "Include",
 	"FromFile": "assets/data/ConversationTopics.json",
-},
-	
-{ 
-	"LogName": "Include Platonic Partner Dialogue",
-	"Action": "Include",
-	"When": {"HasMod |contains=aedenthorn.HugsAndKisses": true,
-			"HasMod |contains=Spiderbuttons.CMCT": true,
-			}, 
-	//CMCT can't do both a token grab and a has mod check in one patch, so you use an include that checks for CMCT and do the token grab in the included file!! also separate has mod checks, if you separated by comma it would be OR
-	"FromFile": "assets/data/PlatonicPartnership/marriageDialogue.json",
-},
-
-{
-	"LogName": "Include 'dating' dialogue",
-	"Action": "Include",
-	"FromFile": "assets/data/PlatonicPartnership/DatingDialogue.json"
 },
 
 {
@@ -356,6 +363,16 @@
 	"FromFile": "assets/data/Events.json" 
 }, 
 
+{
+	"LogName": "Include Trigger Actions for PM",
+	"Action": "Include",
+	"FromFile": "assets/data/triggeractions.json",
+},
+{
+	"LogName": "Include space core spawnables",
+	"Action": "Include",
+	"FromFile": "assets/data/spawnables.json"
+},
 { 
 	"LogName": "Include Companionship ceremony (Event)",
 	"Action": "Include",
@@ -365,806 +382,13 @@
 			},
 	"FromFile": "assets/data/PlatonicPartnership/ceremony.json"
 },
-
 {
-	"LogName": "Include Trigger Actions for PM",
+	"LogName": "Include Movie data",
 	"Action": "Include",
-	"FromFile": "assets/data/triggeractions.json",
+	"FromFile": "assets/data/movies.json"
 },
 
-	//house interior
-{ 
-    "LogName": "Load PM's House Interior Map", 
-	"Action": "Load", // This action loads the map as a new asset into the game
-	"Target": "Maps/{{ModID}}_PeiMingHouse", // {{ModID}} is a CP token that is automatically converted into your mod's unique ID. Using it to prefix all your asset names and IDs ensures that your mod's things are unique and won't clash with things from other mods
-	"FromFile": "assets/Maps/PeiMingHouse.tmx" // The name of the map file you made, inside the Maps folder you moved it to
-},	
-{
-	"LogName": "Add PM House Interior ",
-	"Action": "EditData",
-	"Target": "Data/Locations",
-	"Entries": {
-		"{{ModID}}_PeiMingHouse": 
-		{ 
-// This can be the same or different to the name of the map, but do make sure it is prefixed with your mod ID to be unique
-			"DefaultArrivalTile":
-		    { // Make this the tile that you want the farmer to arrive on when using the door so when anyone warps in from a different action (like using debug warp) they will still arrive at the door instead of in the void
-				
-			},
-			"CreateOnLoad":
-			 {
-				"MapPath": "Maps/{{ModID}}_PeiMingHouse" // Notice that this is the Target from the map Load patch we wrote in the section before this one. This field tells the game which map to use for this location.
-			},
-			
-		}	
-	}
-},
 	
-//house exterior
-        {
-            "LogName": "Add PM New Outdoor Location",
-            "Action": "EditMap",
-            "Target": "Maps/Forest",
-            "FromFile": "Assets/Maps/{{HouseLocationToken}}.tmx",
-			 "PatchMode": "Replace",
-            "FromArea": {
-                "X": 0,
-                "Y": 0,
-                "Width": "{{HousePatchWidth}}",
-                "Height": "{{HousePatchHeight}}"
-            },
-            "ToArea": {
-                "X": "{{HousePatchXCoord}}",
-                "Y": "{{HousePatchYCoord}}",
-                "Width": "{{HousePatchWidth}}",
-                "Height": "{{HousePatchHeight}}"
-            }
-        },
-	
-	//separate map for compatibility
-
-{
-		"LogName": "Load Alternate Map",
-		"Action": "Load",
-		"When": { "House Location": "Alternate" },
-		"Target": "Maps/{{ModID}}_PeiMingNewOutdoors",
-		"FromFile": "assets/Maps/PeiMingNewOutdoors.tmx",
-},
-
-{
-	"LogName": "Add PM New Outdoor Location",
-	"Action": "EditData",
-	"Target": "Data/Locations",
-	"Entries": {
-		"{{ModID}}_PeiMingNewOutdoors": 
-		{
-			"DefaultArrivalTile": { "X": 20, "Y": 14},
-			"CreateOnLoad": {
-				"MapPath": "Maps/{{ModID}}_PeiMingNewOutdoors"
-			},	
-			"Forage": [
-				 { //Fairy Rose
-				"ItemID":"(O)595",
-				"Chance":"0.3",
-				"Season": "Fall",
-				},
-				{ //Cherry
-				"ItemID":"(O)638",
-				"Chance":"0.2",
-				"Season": "Spring",
-				},
-				{ //Pomegranate
-				"ItemID":"(O)637",
-				"Chance":"0.2",
-				"Season": "Fall",
-				},
-				{ //Eggplant
-				"ItemID":"(O)272",
-				"Chance":"0.5",
-				"Season": "Fall",
-				},
-				{ //Banane
-				"ItemID":"(O)91",
-				"Chance":"0.1",
-				"Season": "Summer",
-				},
-				{ //Ruby
-				"ItemID":"(O)64",
-				"Condition": "SEASON spring summer fall",
-				"Chance":"0.3",
-				},
-				{ //Frozen Tear
-				"ItemID":"(O)84",
-				"Chance":"0.4",
-				"Season": "Winter",
-				},
-				//Cornucopia Roses
-				{ 
-				"ItemID":"(O)Cornucopia_Rose",
-				"Chance":"0.5",
-				"Condition": "SEASON spring summer fall"
-				},
-				{ 
-				"ItemID":"(O)Cornucopia_SpringRose",
-				"Chance":"0.3",
-				"Season": "Spring",
-				},
-				{ 
-				"ItemID":"(O)Cornucopia_SummerRose",
-				"Chance":"0.3",
-				"Season": "Summer",
-				},
-				{ 
-				"ItemID":"(O)Cornucopia_FallRose",
-				"Chance":"0.3",
-				"Season": "Fall",
-				},
-				{ 
-				"ItemID":"(O)Cornucopia_WinterRose",
-				"Chance":"0.4",
-				"Season": "Winter",
-				},
-				{ 
-				"ItemID":"(O)Cornucopia_PrismaticRose",
-				"Condition": "PLAYER_HAS_MAIL Host {{ModID}}_NHMSeedsLetter Received",
-				"Chance":"0.001",
-				},
-				{ //??????????????????????????
-				"ItemID": "(O){{ModId}}_77616e6c657420646f6c6c",
-				"Chance": "0.0000001"
-				},
-				{ "ItemID":  "(O)void.NorthernHeartMelon_NHMelon",
-				"Condition": "PLAYER_FRIENDSHIP_POINTS host {{ModID}}_Peiming 2000",
-				"Chance": 0.1,
-				"Season": "winter",
-				}
-			],
-			"FishAreas": 
-			{ "River": 
-				{
-					"DisplayName": null,
-					"Position": null,
-					"CrabPotFishTypes": [],
-					"CrabPotJunkChance": 0.1
-				}
-			},
-			"Fish": [
-				{ 	//Salmon
-					"ItemID": "(O)139",
-					"Chance": 0.3,
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 3,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"ApplyDailyLuck": true,
-					"CuriosityLureBuff": 0.2,
-					"SpecificBaitBuff": 0.3,
-					"SpecificBaitMultiplier": 1.66,
-					"Precedence": -101,
-					"IgnoreFishDataRequirements": true,
-					"ChanceBoostPerLuckLevel": 0.1,
-				},
-				{ 	//Eel
-					"ItemID": "(O)148",
-					"Chance": 0.3,
-					"Season": "Spring",
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 2,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"ApplyDailyLuck": true,
-					"CuriosityLureBuff": 0.2,
-					"SpecificBaitBuff": 0.2,
-					"SpecificBaitMultiplier": 1.66,
-					"Precedence": -20,
-					"IgnoreFishDataRequirements": true,
-					"ChanceBoostPerLuckLevel": 0.1,
-				},
-				{ 	//Octopus
-					"ItemID": "(O)149",
-					"Chance": 0.1,
-					"Season": "Summer",
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 4,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"ApplyDailyLuck": true,
-					"CuriosityLureBuff": 0.2,
-					"SpecificBaitBuff": 0.2,
-					"SpecificBaitMultiplier": 2.00,
-					"Precedence": -90,
-					"IgnoreFishDataRequirements": true,
-					"ChanceBoostPerLuckLevel": 0.2,
-				},
-				{ 	//Sea Cucumber
-					"ItemID": "(O)154",
-					"Chance": 0.4,
-					"Condition": "SEASON spring summer fall",
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 4,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"Precedence": -80,
-					"IgnoreFishDataRequirements": true,
-					"ChanceBoostPerLuckLevel": 0,
-				},
-				{ 	//Super Cucumber
-					"ItemID": "(O)128",
-					"Chance": 0.4,
-					"Season": "Winter",
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 4,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"ApplyDailyLuck": true,
-					"CuriosityLureBuff": 0.2,
-					"SpecificBaitBuff": 0.2,
-					"SpecificBaitMultiplier": 1.66,
-					"Precedence": -80,
-					"IgnoreFishDataRequirements": true,
-				},
-				{ 	//Ice Pip
-					"ItemID": "(O)161", //haha based
-					"Chance": 0.2,
-					"Season": "Winter",
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 4,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"ApplyDailyLuck": true,
-					"CuriosityLureBuff": 0.2,
-					"SpecificBaitBuff": 0.2,
-					"SpecificBaitMultiplier": 1.66,
-					"Precedence": -81,
-					"IgnoreFishDataRequirements": true,
-					"ChanceBoostPerLuckLevel": 0.1,
-				},
-				{ 	//Midnight Carp
-					"ItemID": "(O)269",
-					"Chance": 0.3,
-					"Condition": "TIME 1900 2550, SEASON spring summer",
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 4,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"ApplyDailyLuck": true,
-					"CuriosityLureBuff": 0.2,
-					"SpecificBaitBuff": 0.2,
-					"SpecificBaitMultiplier": 1.66,
-					"Precedence": -70,
-					"IgnoreFishDataRequirements": true,
-					"ChanceBoostPerLuckLevel": 0.1,
-				},
-				{ 	//Void Salmon
-					"ItemID": "(O)795",
-					"Chance": 0.1,
-					"Condition": "TIME 1900 2550, SEASON fall winter",
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 6,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"ApplyDailyLuck": true,
-					"CuriosityLureBuff": 0.2,
-					"SpecificBaitBuff": 0.2,
-					"SpecificBaitMultiplier": 2,
-					"Precedence": -70,
-					"IgnoreFishDataRequirements": true,
-					"ChanceBoostPerLuckLevel": 0.2,
-				},
-				{ 	//Blobfish
-					"ItemID": "(O)800",
-					"Chance": 0.01,
-					"Season": "Summer",
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 8,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"ApplyDailyLuck": true,
-					"CuriosityLureBuff": 0.4,
-					"SpecificBaitBuff": 0.4,
-					"SpecificBaitMultiplier": 2,
-					"Precedence": -91,
-					"IgnoreFishDataRequirements": true,
-					"ChanceBoostPerLuckLevel": 0.3,
-				},
-				{ 	//SeaJelly
-					"ItemID": "(O)SeaJelly",
-					"Chance": 0.4,
-					"Condition": "SEASON summer winter",
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 2,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"ApplyDailyLuck": true,
-					"Precedence": -40,
-					"IgnoreFishDataRequirements": true,
-					"ChanceBoostPerLuckLevel": 0.1,
-				},
-				{ 	//CaveJelly
-					"ItemID": "(O)CaveJelly",
-					"Chance": 0.4,
-					"Condition": "SEASON spring fall",
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 2,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"ApplyDailyLuck": true,
-					"Precedence": -40,
-					"IgnoreFishDataRequirements": true,
-					"ChanceBoostPerLuckLevel": 0.1,
-				},
-				{	//RiverJelly
-					"ItemID": "(O)RiverJelly",
-					"Chance": 0.4,
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 2,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"ApplyDailyLuck": true,
-					"Precedence": -40,
-					"IgnoreFishDataRequirements": true,
-					"ChanceBoostPerLuckLevel": 0.1,
-				},
-				{ //?????????????????????
-					"ItemID": "(O){{ModId}}_77616e6c657420646f6c6c", 
-					"Chance": 0.0001,
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 10,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"Precedence": 90,
-				},
-				//////SVE Fish
-				{ //Bonefish
-					"ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Bonefish", 
-					"Chance": 0.01,
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 6,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"ApplyDailyLuck": true,
-					"CuriosityLureBuff": 0.2,
-					"SpecificBaitBuff": 0.2,
-					"SpecificBaitMultiplier": 1.66,
-					"Precedence": -78,
-					"IgnoreFishDataRequirements": true,
-					"ChanceBoostPerLuckLevel": 0.1,
-				},
-				{ //DiamondCarp
-					"ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Diamond_Carp", 
-					"Chance": 0.1,
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 6,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"ApplyDailyLuck": true,
-					"CuriosityLureBuff": 0.2,
-					"SpecificBaitBuff": 0.2,
-					"SpecificBaitMultiplier": 1.66,
-					"Precedence": -77,
-					"IgnoreFishDataRequirements": true,
-					"ChanceBoostPerLuckLevel": 0.1,
-				},
-				{ //Kittyfish
-					"ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Kittyfish", 
-					"Chance": 0.3,
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 6,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"Precedence": -76,
-					"IgnoreFishDataRequirements": true,
-				},
-				{ //Arrowhead shark
-					"ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Arrowhead_Shark", 
-					"Chance": 0.1,
-					"Condition": "SEASON fall, TIME 1200 1800, WEATHER rainy",
-					"PlayerPosition": {
-					"X": 0,
-					"Y": 0,
-					"Width": 255,
-					"Height": 15
-					},
-					"MinFishingLevel": 6,
-					"MinDistanceFromShore": 0,
-					"MaxDistanceFromShore": -1,
-					"ApplyDailyLuck": true,
-					"Precedence": -75,
-					"IgnoreFishDataRequirements": true,
-					"ChanceBoostPerLuckLevel": 0.2,
-				},
-			]
-
-			}
-		}
-	},
-		
-//warps between map edits
-// Adds the LockedDoorWarp. This tile is locked behind a specific time in-game + the player clicking on said tile. It can also be locked behind heart level with an NPC.
-{
-    "LogName": "Edit Vanilla Forest map to add warp into PM's house",
-    "Action": "EditMap",
-    "Target": "Maps/Forest", // Target the map you're adding your house to.
-	"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
-				"House Location": "Vanilla", 
-			},
-    "MapTiles": [ 
-        {
-            "Position": { "X": 50, "Y": 72 }, // The coordinate of the bottom tile of the door. This is the first set of coordinates that we wrote down earlier in the tutorial.
-            "Layer": "Buildings", // The tile the player is clicking is on the buildings layer.
-            "SetProperties": {
-                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350" 
-            }
-        },
-		{ "Position": { "X": 51, "Y": 72 }, // The coordinate of the bottom tile of the door. This is the first set of coordinates that we wrote down earlier in the tutorial.
-            "Layer": "Buildings", // The tile the player is clicking is on the buildings layer.
-            "SetProperties": {
-                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350"
-			}
-			},
-    ]
-},
-
-{
-    "LogName": "Edit SVE Forest map to add warp into PM's house",
-    "Action": "EditMap",
-    "Target": "Maps/Forest", // Target the map you're adding your house to.
-	"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true, 
-				"House Location": "SVE",
-			},
-    "MapTiles": [ 
-        { "Position": { "X": 26, "Y": 73 }, 
-            "Layer": "Buildings", 
-            "SetProperties": {
-                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350" 
-            }
-        },
-		{ "Position": { "X": 27, "Y": 73 }, 
-            "Layer": "Buildings", 
-            "SetProperties": {
-                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350"
-			}
-			},
-    ]
-},
-{
-    "LogName": "add warp into PM's house in alternate location",
-    "Action": "EditMap",
-    "Target": "Maps/{{ModID}}_PeiMingNewOutdoors", 
-	"When": { "House Location": "Alternate" },
-    "MapTiles": [ 
-        {
-            "Position": { "X": 8, "Y": 9 },
-            "Layer": "Buildings", 
-            "SetProperties": {
-                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350",
-            }
-        },
-		{ "Position": { "X": 9, "Y": 9 }, 
-            "Layer": "Buildings", 
-            "SetProperties": {
-                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350"
-			}
-			},
-    ]
-},
-
-// Adds warps to leave the house/area
-{
-    "LogName": "Edit PM's house interior to add warp out of PM's house(VANILLA)",
-    "Action": "EditMap",
-    "Target": "Maps/{{ModID}}_PeiMingHouse", // Target the interior house map this time
-	"When": { "House Location": "Vanilla", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
-    "AddWarps": [
-        "5 12 Forest 50 73"	// The first set of coordinates is where you want the player to step to LEAVE the house, the second set is where they will show up OUTSIDE the house, in the village.
-    ]
-},
-
-{
-    "LogName": "Edit PM's house interior to add warp out of PM's house(SVE)",
-    "Action": "EditMap",
-    "Target": "Maps/{{ModID}}_PeiMingHouse", 
-	"When": { "House Location": "SVE", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
-    "AddWarps": [
-        "5 12 Forest 26 74" ]
-},
-{
-	 "LogName": "Warp from forest to alternate location for mod compat",
-     "Action": "EditMap",
-    "Target": "Maps/{{ModID}}_PeiMingNewOutdoors",
-	"When": { "House Location": "Alternate",
-"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
-    "AddWarps": [
-        "21 14 Forest 0 36"
-            ]
-        },
-
-{
-	 "LogName": "Warp from alternate location to forest  for mod compat",
-     "Action": "EditMap",
-    "Target": "Maps/Forest",
-	"When": { "House Location": "Alternate",
-"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
-    "AddWarps": [
-        "1 36 {{ModID}}_PeiMingNewOutdoors 20 14"
-            ]
-        },
-{
-	 "LogName": "Warp from forest to alternate location for mod compat - SVE",
-     "Action": "EditMap",
-    "Target": "Maps/{{ModID}}_PeiMingNewOutdoors",
-	"When": { "House Location": "Alternate",
-"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
-    "AddWarps": [
-        "21 14 Forest 0 37"
-            ]
-        },
-
-{
-	 "LogName": "Warp from alternate location to forest  for mod compat - SVE",
-     "Action": "EditMap",
-    "Target": "Maps/Forest",
-	"When": { "House Location": "Alternate",
-"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
-    "AddWarps": [
-        "-1 37 {{ModID}}_PeiMingNewOutdoors 20 14"
-            ]
-        },
-
-{
-    "LogName": "Edit PM's house interior to add warp out of PM's house(ALTERNATE)",
-    "Action": "EditMap",
-    "Target": "Maps/{{ModID}}_PeiMingHouse", 
-	"When": { "House Location": "Alternate"},
-    "AddWarps": [
-        "5 12 {{ModID}}_PeiMingNewOutdoors 8 10" ]
-},
-
-//Warp Shortcuts (BusStop) After PM sends letter about it
-{
-	"LogName": "PatchBusStopWarp",
-	"Action": "EditMap",
-	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
-	"Update": "OnLocationChange",
-	"Target": "Maps/BusStop",
-	"FromFile": "assets/Maps/PeiMingBusStopWarpPatch.tmx",
-	"PatchMode": "Replace",
-	 "FromArea": {
-                "X": 0,
-                "Y": 0,
-                "Width": 1,
-                "Height": 2,
-            },
-            "ToArea": {
-                "X": 22,
-                "Y": 21,
-                "Width": 1,
-                "Height": 2,
-            }
-
-},
-
-{
-	"LogName": "PatchPeiMingHouseWarp",
-	"Action": "EditMap",
-	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
-	"Update": "OnLocationChange",
-	"Target": "Maps/{{ModID}}_PeiMingHouse",
-	"FromFile": "assets/Maps/PeiMingBedPatch.tmx",
-	"PatchMode": "Replace",
-	 "FromArea": {
-                "X": 0,
-                "Y": 0,
-                "Width": 7,
-                "Height": 3,
-            },
-            "ToArea": {
-                "X": 16,
-                "Y": 4,
-                "Width": 7,
-                "Height": 3,
-            }
-
-},
-
-{
-    "LogName": "Add in Warp tiles for the new warps (BusStopwarp)",
-    "Action": "EditMap",
-    "Target": "Maps/{{ModID}}_PeiMingHouse", 
-	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
-    "AddWarps": [
-        "16 5 BusStop 12 23" ]
-},
-
-{
-    "LogName": "Add in Warp tiles for the new warps (Warp to PM House)",
-    "Action": "EditMap",
-    "Target": "Maps/BusStop", 
-	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
-    "AddWarps": [
-        "22 22 {{ModID}}_PeiMingHouse 16 6" ]
-},
-
-//Adding in Home Renovations
-
- {		"LogName": "Patch Farmhouse Map with new custom room (NOT SPOUSEROOM!!)",
-            "Action": "EditMap",
-			"When": {
-				"Partnership": "Platonic Partnership",
-				/* "Farm Upgrades": "Farmhouse Renovation", */
-			},
-            "Target": "Maps/FarmHouse2, Maps/FarmHouse2_marriage",
-            "TextOperations": [
-                {
-                    "Operation": "Append",
-                    "Target": [ "MapProperties", "AdditionalRenovations" ],
-                    "Value": "{{ModId}}_PeiMingRoomRenovation {{ModID}}_MovingInLetter {{ModID}}_PeiMingRoom {{ModID}}_PeiMingRoomEmpty 49 33 10 12",
-                    "Delimiter": "," // if there are already renovations, add a comma before this one
-                }
-            ]
-        },
-
- {	"LogName": "Load Renovation Map patch",
-    "Action": "Load",
-    "Target": "Maps/{{ModId}}_PeiMingRoom",
-    "FromFile": "assets/Maps/PeiMingRoom.tmx"
-},
-
-
-{	"LogName": "Load Empty House Renovation patch",
-	"Action": "Load",
-    "Target": "Maps/{{ModId}}_PeiMingRoomEmpty",
-    "FromFile": "assets/Maps/PeiMingRoomEmpty.tmx"
-},
-
-{ "LogName": "Add custom House Renovation to Robin's shop",
-	"Action": "EditData",
-	"Target": "Data/HomeRenovations",
-	"When": { 
-		"Partnership": "Platonic Partnership",
-		// "Farm Upgrades": "Farmhouse Renovation",
-		"HasReadLetter:AnyPlayer |contains={{ModID}}_MovingInLetter": true
-			},
-	"Entries": 
-	{
-		"{{ModID}}_Add_CustomRoom":
-		{
-    "TextStrings": "Strings\\1_6_Strings:{{ModID}}_Renovation_AddCustomRoom",
-    "AnimationType": "build",
-    "CheckForObstructions": true,
-    "Price": 100000,
-    "RoomId": "{{ModID}}_PeiMingRoom",
-    "Requirements": [
-      {
-        "Type": "Mail",
-        "Key": "{{ModID}}_MovingInLetter",
-        "Value": "1"
-      }
-    ],
-    "RenovateActions": [
-      {
-        "Type": "Mail",
-        "Key": "{{ModID}}_MovingInLetter",
-        "Value": "1"
-      }
-    ],
-    "RectGroups": [
-      {
-        "Rects": [
-          {
-            "X": 49,
-            "Y": 33,
-            "Width": 10,
-            "Height": 12
-          }
-        ]
-      }
-    ],
-   
-  },
-
-}
-},	
-
-
-//load spouse Map
-{ "LogName": "Load PM spouse Patio",
-	"Action": "Load",
-			"Target": "Maps/{{ModID}}_Peiming_OutsideArea",
-			"FromFile": "assets/Maps/PeiMingSpousePatio.tmx"
-}, 
-
-{ "LogName": "Load PM spouse Room",
-	"Action": "Load",
-	"Target": "Maps/{{ModID}}_Peiming_SpouseRoom",
-		"FromFile": "assets/Maps/PeiMingSpouseRoom.tmx"
-},
-//gift tastes
-{ 
-		"LogName": "Gift Tastes Include",
-   	 	"Action": "Include",
-   		"FromFile": "assets/data/gifttastes.json"
-   	 },
 	 
 /////schedule
 
@@ -1175,7 +399,7 @@
   "Target": "spacechase0.SpaceCore/NpcExtensionData",
   "When": { "Partnership": "Platonic Partnership"},
   "Entries": {
-    "{{ModID}}_Peiming": {
+    "{{PeiMing}}": {
       "IgnoreMarriageSchedule": true,
     }
   }
@@ -1184,7 +408,7 @@
   "Action": "EditData",
   "Target": "spacechase0.SpaceCore/NpcExtensionData",
   "Entries": {
-  "{{ModID}}_Peiming": { "SeparateDatability": true,
+  "{{PeiMing}}": { "SeparateDatability": true,
   }
 },
 },
@@ -1192,13 +416,13 @@
 { "LogName": "Space Core: Gift Event Trigger - Roommate Proposal",
   "Action": "EditData",
   "Target": "spacechase0.SpaceCore/NpcExtensionData",
-  "When": { "LocationName": "{{ModID}}_PeiMingHouse",
-			"HasSeenEvent |contains=BecomeRoommates": false }, 
+  "When": { "LocationName": "{{PMHouse}}",
+			"HasSeenEvent |contains={{ModID}}_BecomeRoommates": false }, 
   "Update": "OnLocationChange",
   "Entries": {
-	"{{ModID}}_Peiming": { 
+	"{{PeiMing}}": { 
 	"GiftEventTriggers": {
-		"(O)void.NorthernHeartMelon": "{{ModID}}_RoommateProposal"
+		"(O)void.NorthernHeartMelon_GiftableTassel": "{{ModID}}_RoommateProposal"
 	}
 }
 
@@ -1213,10 +437,10 @@
             "Target": "Data/animationdescriptions",
             "Entries":
             {
-                "{{ModId}}_Peiming_drinkTea": "16/16 16 16 16 16 16 17 17 18 18 19 19 19 19 19 18 18 17 17 16 16 16 16 16/16",
-				"{{ModId}}_Peiming_drinkBooze": "16/16 16 16 16 16 16 17 17 18 18 19 19 19 19 19 18 18 17 17 16 16 16 20 20 21 21 22 22 20 22 20 22 20 22/16",
-				"{{ModId}}_Peiming_readBook": "32/33 33 33 33 34 34 34 34 32 32 33 33 34 34/32",
-				"{{ModId}}_Peiming_readPaper": "38/38 38 38 38 38 39 39 39 39/39",
+                "{{PeiMing}}_drinkTea": "16/16 16 16 16 16 16 17 17 18 18 19 19 19 19 19 18 18 17 17 16 16 16 16 16/16",
+				"{{PeiMing}}_drinkBooze": "16/16 16 16 16 16 16 17 17 18 18 19 19 19 19 19 18 18 17 17 16 16 16 20 20 21 21 22 22 20 22 20 22 20 22/16",
+				"{{PeiMing}}_readBook": "32/33 33 33 33 34 34 34 34 32 32 33 33 34 34/32",
+				"{{PeiMing}}_readPaper": "38/38 38 38 38 38 39 39 39 39/39",
 			}
 		},
 		
@@ -1249,7 +473,7 @@
 			"{{ModID}}_TalkWizard": "Location/{{i18n:TalkWizard.title}}/{{i18n:TalkWizard.text}}/{{i18n:TalkWizard.objective}}/WizardHouse/0/100/-1/false",
 			"{{ModID}}_PMSaloon": "Location/{{i18n:PMSaloon.title}}/{{i18n:PMSaloon.text}}/{{i18n:PMSaloon.objective}}/Saloon/0/0/-1/false",
 			"{{ModID}}_PMMountains": "Location/{{i18n:PMMountains.title}}/{{i18n:PMMountains.text}}/{{i18n:PMMountains.objective}}/Mountain/0/0/-1/false",
-			"{{ModID}}_NHMForPM": "ItemDelivery/{{i18n:NHMForPM.title}}/{{i18n:NHMForPM.text}}/{{i18n:NHMForPM.objective}}/{{ModID}}_Peiming void.NorthernHeartMelon_NHMelon 1/0/10000/-1/false/{{i18n:NHMForPM.reaction}}"
+			"{{ModID}}_NHMForPM": "ItemDelivery/{{i18n:NHMForPM.title}}/{{i18n:NHMForPM.text}}/{{i18n:NHMForPM.objective}}/{{PeiMing}} void.NorthernHeartMelon_NHMelon 1/0/10000/-1/false/{{i18n:NHMForPM.reaction}}"
 		}
 },
 //mail

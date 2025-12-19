@@ -1,13 +1,15 @@
 
 { 
-	"Changes": [
+	"Changes": 
+[
 		
-		{ 
+		{ 	"LogName": "Pei Ming dispos",
 			"Action": "EditData",
 			"Target": "Data/Characters",
-				
-			"Entries": {
-				"{{ModId}}_Peiming": {
+			"Entries":
+			{
+				"{{PeiMing}}":
+			 {
 				"DisplayName": "Pei Ming",
 				"BirthSeason": "Summer",
 				"BirthDay": 20,
@@ -26,7 +28,7 @@
 				"CanGreetNearbyCharacters": "True",
 				"KissSpriteIndex": 36,
 				"KissSpriteFacingRight": true, 
-				"Home": [ //set this to where you want the NPC to spawn in normally.  
+				"Home": [ 
 									{
 										"Id": "Default",
 										"Location": "{{ModID}}_PeiMingHouse",
@@ -39,20 +41,27 @@
 									}
 								],
 				"SpouseRoom": {
-										"MapAsset": "{{ModID}}_Peiming_SpouseRoom",
+										"MapAsset": "{{PeiMing}}_SpouseRoom",
 										"MapSourceRect": {
 											"X": 0,
 											"Y": 0,
 											"Width": 6,
 											"Height": 9
 										},
+									},
 				"SpousePatio": {
-										"MapAsset": "{{ModID}}_Peiming_SpousePatio",
+										"MapAsset": "{{PeiMing}}_SpousePatio",
 										"MapSourceRect": {
 											"X": 0,
 											"Y": 0,
 											"Width": 4,
 											"Height": 4
+										},
+										"SpriteAnimationFrames": [
+											[38, 700],
+											[39, 700],
+
+											]
 										},
 
 
@@ -72,10 +81,10 @@
 								],
 
 					}	
-							}
-						}
-					},
-				},
+			}
+	},
+					
+
 
 		//portraits and sprites 
 	{
@@ -100,12 +109,12 @@
 	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
 	"Entries":
 	{
-		"{{ModID}}_Peiming_Winter":
+		"{{PeiMing}}_Winter":
 		{
-			"Id": "{{ModID}}_Peiming_Winter",
+			"Id": "{{PeiMing}}_Winter",
 			"Season": "winter",
-			"Portrait": "Portraits/{{ModID}}_Peiming_Winter",
-			"Sprite": "Characters/{{ModID}}_Peiming_Winter",
+			"Portrait": "Portraits/{{PeiMing}}_Winter",
+			"Sprite": "Characters/{{PeiMing}}_Winter",
 			"Indoors": true,
 			"Outdoors": true,
 			"IsIslandAttire": false,
@@ -121,11 +130,11 @@
 	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
 	"Entries":
 	{
-		"{{ModID}}_Peiming_Beach":
+		"{{PeiMing}}_Beach":
 		{
-			"Id": "{{ModID}}_Peiming_Beach",
-			"Portrait": "Portraits/{{ModID}}_Peiming_Beach",
-			"Sprite": "Characters/{{ModID}}_Peiming_Beach",
+			"Id": "{{PeiMing}}_Beach",
+			"Portrait": "Portraits/{{PeiMing}}_Beach",
+			"Sprite": "Characters/{{PeiMing}}_Beach",
 			"Indoors": true,
 			"Outdoors": true,
 			"IsIslandAttire": true,
@@ -142,11 +151,11 @@
 	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
 	"Entries":
 	{
-		"{{ModID}}_Peiming_Bath":
+		"{{PeiMing}}_Bath":
 		{
-			"Id": "{{ModID}}_Peiming_Bath",
-			"Portrait": "Portraits/{{ModID}}_Peiming_Bath",
-			"Sprite": "Characters/{{ModID}}_Peiming_Bath",
+			"Id": "{{PeiMing}}_Bath",
+			"Portrait": "Portraits/{{PeiMing}}_Bath",
+			"Sprite": "Characters/{{PeiMing}}_Bath",
 			"Indoors": true,
 			"Outdoors": true,
 			"IsIslandAttire": false,
@@ -163,11 +172,11 @@
 	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
 	"Entries":
 	{
-		"{{ModID}}_Peiming_SummerBeach":
+		"{{PeiMing}}_SummerBeach":
 		{
-			"Id": "{{ModID}}_Peiming_SummerBeach",
-			"Portrait": "Portraits/{{ModID}}_Peiming_SummerBeach",
-			"Sprite": "Characters/{{ModID}}_Peiming_SummerBeach",
+			"Id": "{{PeiMing}}_SummerBeach",
+			"Portrait": "Portraits/{{PeiMing}}_SummerBeach",
+			"Sprite": "Characters/{{PeiMing}}_SummerBeach",
 			"Season": "Summer",
 			"Indoors": true,
 			"Outdoors": true,
@@ -182,7 +191,7 @@
 {
 	"LogName": "Beach Portraits - Appearance Load",
 	"Action": "Load",
-	"Target": "Portraits/{{ModID}}_Peiming_Beach",
+	"Target": "Portraits/{{PeiMing}}_Beach",
 	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Beach.png",
 },
 
@@ -190,14 +199,14 @@
 {
 	"LogName": "Beach Sprites - Appearance Load",
 	"Action": "Load",
-	"Target": "Characters/{{ModID}}_Peiming_Beach",
+	"Target": "Characters/{{PeiMing}}_Beach",
 	"FromFile": "assets/Characters/Peiming_Beach.png"
 },
 
 {
 	"LogName": "Winter Portraits - Appearance Load",
 	"Action": "Load",
-	"Target": "Portraits/{{ModID}}_Peiming_Winter",
+	"Target": "Portraits/{{PeiMing}}_Winter",
 	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Winter.png",
 },
 
@@ -205,14 +214,14 @@
 {
 	"LogName": "Winter Sprites - Appearance Load",
 	"Action": "Load",
-	"Target": "Characters/{{ModID}}_Peiming_Winter",
+	"Target": "Characters/{{PeiMing}}_Winter",
 	"FromFile": "assets/Characters/Peiming_Winter.png"
 },
 
 {
 	"LogName": "BathHouse Portraits - Appearance Load",
 	"Action": "Load",
-	"Target": "Portraits/{{ModID}}_Peiming_Bath",
+	"Target": "Portraits/{{PeiMing}}_Bath",
 	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Beach.png",
 },
 
@@ -220,14 +229,14 @@
 {
 	"LogName": "BathHouse Sprites - Appearance Load",
 	"Action": "Load",
-	"Target": "Characters/{{ModID}}_Peiming_Bath",
+	"Target": "Characters/{{PeiMing}}_Bath",
 	"FromFile": "assets/Characters/Peiming_Beach.png"
 },
 
 {
 	"LogName": "SummerBeach Portraits - Appearance Load",
 	"Action": "Load",
-	"Target": "Portraits/{{ModID}}_Peiming_SummerBeach",
+	"Target": "Portraits/{{PeiMing}}_SummerBeach",
 	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Beach.png",
 },
 
@@ -235,7 +244,7 @@
 {
 	"LogName": "SummerBeach Sprites - Appearance Load",
 	"Action": "Load",
-	"Target": "Characters/{{ModID}}_Peiming_SummerBeach",
+	"Target": "Characters/{{PeiMing}}_SummerBeach",
 	"FromFile": "assets/Characters/Peiming_Beach.png"
 },
 

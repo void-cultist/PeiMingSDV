@@ -276,7 +276,7 @@
 {
 	"LogName": "ConversationTopics - PeiMing",
 	"Action": "EditData",
-	"Target": "Character/Dialogue/{{ModID}}_Peiming",
+	"Target": "Character/Dialogue/{{PeiMing}}",
 	"Entries":
  {
 		"cc_Complete": "{{i18n:cc_Complete}}",
@@ -301,7 +301,7 @@
 		"HaleysCakeWalk": "{{i18n:HaleysCakeWalk}}",
 		"joja_Complete": "{{i18n:joja_Complete}}",
 		"Vinilla.Honeyfuggle_Arrival": "{{i18n:Vinilla.Honeyfuggle_Arrival}}",
-		"{{ModID}}_UnhelpfulAdvice": "{{i18n:UnhelpfulAdvice}}$action addConversationTopic {{ModID}}_UnhelpfulAdvice2 30, RemoveConversationTopic {{ModID}}_UnhelpfulAdvice, AddFriendshipPoints {{ModID}}_Peiming -100 $k", //only after bad choice in 5H event
+		"{{ModID}}_UnhelpfulAdvice": "{{i18n:UnhelpfulAdvice}}$action addConversationTopic {{ModID}}_UnhelpfulAdvice2 30, RemoveConversationTopic {{ModID}}_UnhelpfulAdvice, AddFriendshipPoints {{PeiMing}} -100 $k", //only after bad choice in 5H event
 		"{{ModID}}_UnhelpfulAdvice2": "{{i18n:UnhelpfulAdvice2}} $action addConversationTopic {{ModID}}_UnhelpfulAdvice3 30, RemoveConversationTopic {{ModID}}_UnhelpfulAdvice2 $k",
 		"{{ModID}}_UnhelpfulAdvice3": "%{{i18n:UnhelpfulAdvice3}} $action addConversationTopic {{ModID}}_UnhelpfulAdvice4 10, RemoveConversationTopic {{ModID}}_UnhelpfulAdvice3 $k",
 

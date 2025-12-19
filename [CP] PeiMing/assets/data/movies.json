@@ -1,0 +1,208 @@
+
+{ 
+	"Changes": 
+[
+		//ConcessionsTastes
+		{   "LogName": "Pei Ming concession tastes",
+			"Action": "EditData",
+			"Target": "Data/ConcessionTastes",
+			"Entries": { 
+				"{{PeiMing}}": {
+					"Name": "{{PeiMing}}",
+					"LovedTags": [
+						"Gourmet",
+						"Jasmine Tea"
+					],
+					"LikedTags": [
+						"Healthy",
+						"Star Cookie",
+					],
+					"DislikedTags": [
+						"Sweet",
+						"Salty",
+						"Fatty",
+						"Joja Cola",
+					]
+						
+				} 
+			}
+		},
+
+		//Movie Reactions
+		{   "LogName": "Movie reactions Pei Ming",
+			"Action": "EditData", 
+			"Target": "Data/MoviesReactions",	 
+			"Entries": {
+
+				"{{PeiMing}}": {
+				"NPCName": "{{PeiMing}}",
+				"Reactions": [
+					{
+						"Tag": "spring_movie_0",
+						"Response": "dislike",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:Movies.0}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote {{PeiMing}} 36",
+								"Text": "{{i18n:Movies.1}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:Movies.2}}"
+							}
+						},
+						"ID": "{{ModID}}_LittleSaplingMovie"
+					},
+						{
+						"Tag": "summer_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:Movies.3}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "jump {{PeiMing}} 5",
+								"Text": "{{i18n:Movies.4}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:Movies.5}}"
+							}
+						},
+						"ID": "{{ModID}}_PrairieKingMovie"
+					},
+					{
+						"Tag": "fall_movie_0",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:Movies.6}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:Movies.7}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:Movies.8}}"
+							}
+						},
+						"ID": "{{ModID}}_MysteriumMovie"
+					},
+					{
+						"Tag": "winter_movie_0",
+						"Response": "dislike",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:Movies.9}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote {{PeiMing}} 24",
+								"Text": ""
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:Movies.10}}"
+							}
+						},
+						"ID": "{{ModID}}_ColdstarRanchMovie"
+					},
+						{
+						"Tag": "spring_movie_1",
+						"Response": "love",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:Movies.11}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote {{PeiMing}} 56",
+								"Text": ""
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:Movies.12}}"
+							}
+						},
+						"ID": "{{ModID}}_NaturalWondersMovie"
+					},
+					{
+						"Tag": "fall_movie_1",
+						"Response": "dislike",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:Movies.13}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote {{PeiMing}} 40",
+								"Text": "{{i18n:Movies.14}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:Movies.15}}"
+							}
+						},
+						"ID": "{{ModID}}_HowlsInTheRainMovie"
+					},
+						{
+						"Tag": "winter_movie_1",
+						"Response": "like",
+						"Whitelist": [],
+						"SpecialResponses": {
+							"BeforeMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:Movies.16}}",
+							},
+							"DuringMovie": {
+								"ResponsePoint": null,
+								"Script": "emote {{PeiMing}} 16",
+								"Text": "{{i18n:Movies.17}}"
+							},
+							"AfterMovie": {
+								"ResponsePoint": null,
+								"Script": "",
+								"Text": "{{i18n:Movies.18}}"
+							}
+						},
+						"ID": "{{ModID}}_ZuzuCityExpressMovie"
+
+					},
+				],
+				},
+			},
+		},
+
+	]
+}
