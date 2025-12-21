@@ -377,8 +377,7 @@
 	"LogName": "Include Companionship ceremony (Event)",
 	"Action": "Include",
 	"When":  {
-	"HasMod |contains=aedenthorn.HugsAndKisses": true,
-	"HasMod |contains=Spiderbuttons.CMCT": true,
+	"Partnership":"Platonic Partnership"
 			},
 	"FromFile": "assets/data/PlatonicPartnership/ceremony.json"
 },
@@ -530,6 +529,22 @@
 				{   "ID": "{{ModId}}_HappyBGM",
                     "Category": "Music",
                     "FilePaths": [ "{{AbsoluteFilePath: assets/music/100116happybgm.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+
+				},
+				"{{ModID}}_MelancholyBGM":
+				{   "ID": "{{ModId}}_MelancholyBGM",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/112416melancholypianobgm.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+
+				},
+				"{{ModID}}_ArukasBloom":
+				{   "ID": "{{ModId}}_ArukasBloom",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/arukas_bloom.ogg}}" ],
                     "StreamedVorbis": true,
                     "Looped": true
 

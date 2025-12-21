@@ -1,12 +1,22 @@
 Music license:
 "Asian Duet" by elerya on https://opengameart.org/content/asian-duet
 Licensed under CC-BY 3.0, https://creativecommons.org/licenses/by/3.0/
+used in the Mod under the ID "void.peiming_Music"
 
 "Sunrise in the Dynasty" by Yottabyte1024 on https://opengameart.org/content/sunrise-in-the-dynasty
 Licensed under CC-BY 3.0, https://creativecommons.org/licenses/by/3.0/
+used in the Mod under the ID "void.peiming__PMHouseMusic"
 
 "Asian String Suite" by BossLevelVGM on https://opengameart.org/content/asian-string-suite
 Licensed under CC-BY 3.0, https://creativecommons.org/licenses/by/3.0/
+used in the Mod under the ID "void.peiming_PMOutdoorMusic"
 
-"100116happybgm" by syncopika on https://opengameart.org/content/happy-bgm-100116
+"100116happybgm" and "112416melancholypianobgm" by syncopika on https://opengameart.org/users/syncopika
 Licensed under CC-BY 3.0, https://creativecommons.org/licenses/by/3.0/
+used in the Mod under the IDs "void.peiming_HappyBGM" and "void.peiming_MelancholyBGM"
+
+"Arukas Bloom" by TAD on https://opengameart.org/content/arukas-bloom/https://www.youtube.com/c/Tadon 
+Licensed under CC-BY 4.0, https://creativecommons.org/licenses/by/4.0/
+used in the Mod under the ID "void.peiming_ArukasBloom"
+
+No changes have been made to any of the aforementioned files other than converting them to .ogg for use in the mod. 

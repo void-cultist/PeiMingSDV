@@ -11,10 +11,10 @@
                 "{{ModID}}_SpawnOnPeiMingAlternateHouseLocation": {
                     "Type": "SetPiece",
                     "Condition": "TRUE", // GSQ
-                    "SetPiecesMap": "{{InternalAssetKey: assets/Maps/PeiMingNewOutdoors.tmx}}", // Normally you'd use your own map with {{InternalAssetKey}}
-                    "SetPieceSizeX": 3,
-                    "SetPieceSizeY": 3,
-                    "SetPieceCount": 10,
+                    "SetPiecesMap": "{{InternalAssetKey: assets/Maps/PeiMingNewOutdoors_Setpieces.tmx}}", // Normally you'd use your own map with {{InternalAssetKey}}
+                    "SetPieceSizeX": 2,
+                    "SetPieceSizeY": 2,
+                    "SetPieceCount": 4,
                 },
 				"{{ModID}}_SpawnSpringForageables": {
 					"Type": "Forageable",
@@ -95,10 +95,10 @@
 				},
 				"{{ModID}}_SpawnNorthernHeartMelon": {
 					"Type": "Forageable",
-					"Condition": "SEASON winter, PLAYER_HAS_MAIL Host {{ModID}}_NHMSeedsLetter Received",
+					"Condition": "SEASON winter, PLAYER_HAS_MAIL Host {{ModID}}_NHMSeedsLetter Received, RANDOM 0.2",
 					"ForageableItemData": [
 						{ 
-                            "Weight": 0.05,
+                            "Weight": 1.0,
                             "Value": {
                             "ItemId": "(O)void.NorthernHeartMelon_NHMelon",
                             }
@@ -108,10 +108,10 @@
 				},
 				"{{ModId}}_no": {
 					"Type": "Forageable",
-					"Condition": "TRUE",
+					"Condition": "RANDOM 0.01",
 					"ForageableItemData": [
 						{ 
-                            "Weight": 0.001,
+                            "Weight": 1.0,
                             "Value": {
                             "ItemId": "(O){{ModId}}_WhatIsThis",
                             }
@@ -132,10 +132,10 @@
                 "{{ModID}}_SpawnOnPeiMingAlternateHouseLocation": {
                     "Type": "SetPiece",
                     "Condition": "TRUE", // GSQ
-                    "SetPiecesMap": "{{InternalAssetKey: assets/Maps/PeiMingNewOutdoors.tmx}}", // Normally you'd use your own map with {{InternalAssetKey}}
-                    "SetPieceSizeX": 3,
-                    "SetPieceSizeY": 3,
-                    "SetPieceCount": 10,
+                    "SetPiecesMap": "{{InternalAssetKey: assets/Maps/PeiMingNewOutdoors_Setpieces.tmx}}", // Normally you'd use your own map with {{InternalAssetKey}}
+                    "SetPieceSizeX": 2,
+                    "SetPieceSizeY": 2,
+                    "SetPieceCount": 4,
                 },
 				"{{ModID}}_SpawnSpringForageables": {
 					"Type": "Forageable",
@@ -150,7 +150,7 @@
 						{
                             "Weight": 1.0,
                             "Value": {
-                            "ItemId": "(O)Cornucopia_SpringRose",
+                            "ItemId": "(O)Cornucopia_RoseSpring",
                             }
                         },
 
@@ -169,7 +169,7 @@
 						{
                             "Weight": 1.0,
                             "Value": {
-                            "ItemId": "(O)Cornucopia_SummerRose",
+                            "ItemId": "(O)Cornucopia_RoseSummer",
                             }
                         },
 
@@ -200,7 +200,7 @@
 						{
                             "Weight": 1.0,
                             "Value": {
-                            "ItemId": "(O)Cornucopia_FallRose",
+                            "ItemId": "(O)Cornucopia_RoseFall",
                             }
                         },
 
@@ -220,7 +220,7 @@
 						{
                             "Weight": 1.0,
                             "Value": {
-                            "ItemId": "(O)Cornucopia_WinterRose",
+                            "ItemId": "(O)Cornucopia_RoseWinter",
                             }
                         },
 
@@ -247,7 +247,7 @@
 				},
 				"{{ModID}}_SpawnNorthernHeartMelon": {
 					"Type": "Forageable",
-					"Condition": "SEASON winter, PLAYER_HAS_MAIL Host {{ModID}}_NHMSeedsLetter Received",
+					"Condition": "SEASON winter, PLAYER_HAS_MAIL Host {{ModID}}_NHMSeedsLetter Received, RANDOM 0.1",
 					"ForageableItemData": [
 						{ 
                             "Weight": 0.5,
@@ -260,12 +260,12 @@
 				},
 				"{{ModID}}_SpawnPrismaticRoseCornucopia": {
 					"Type": "Forageable",
-					"Condition": "PLAYER_FRIENDSHIP_POINTS host {{ModID}}_Peiming 2000",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Any {{ModID}}_Peiming 2000, RANDOM 0.2",
 					"ForageableItemData": [
 						{ 
-                            "Weight": 0.01,
+                            "Weight": 1.0,
                             "Value": {
-                            "ItemId": "(O)Cornucopia_PrismaticRose",
+                            "ItemId": "(O)Cornucopia_RosePrismatic",
                             }
                         },
 
@@ -273,10 +273,10 @@
 				},
 				"{{ModId}}_no": {
 					"Type": "Forageable",
-					"Condition": "TRUE",
+					"Condition": "RANDOM 0.01",
 					"ForageableItemData": [
 						{ 
-                            "Weight": 0.001,
+                            "Weight": 1.0,
                             "Value": {
                             "ItemId": "(O){{ModId}}_WhatIsThis",
                             }
@@ -288,11 +288,13 @@
 		 },
 
          //i think these need separate patches
-		{
+		{   "LogName": "SetPieces",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/SpawningGroups",
-            "Entries": {
-                "{{ModID}}_PeiMingNewOutdoorsSpawns": {
+            "Entries": 
+            {
+                "{{ModID}}_PeiMingNewOutdoorsSpawns_Spring":
+                 {
                     "SpawnablesToSpawn": [
                         {
                             "SpawnableIds": [
@@ -301,69 +303,188 @@
                                     "Value": "{{ModID}}_SpawnSpringForageables"
                                 }
                             ],
-                            "Minimum": 1,
+                            "Minimum": 0,
                             "Maximum": 2,
                         },
-						{
-                            "SpawnableIds": [
-                                {
-                                    "Weight": 0.5,
-                                    "Value": "{{ModID}}_SpawnSummerForageables"
-                                }
-                            ],
-                            "Minimum": 1,
-                            "Maximum": 3,
-                        },
-						{
-                            "SpawnableIds": [
-                                {
-                                    "Weight": 0.5,
-                                    "Value": "{{ModID}}_SpawnFallForageables"
-                                }
-                            ],
-                            "Minimum": 1,
-                            "Maximum": 3,
-                        },
-						{
-                            "SpawnableIds": [
-                                {
-                                    "Weight": 0.5,
-                                    "Value": "{{ModID}}_SpawnWinterForageables"
-                                }
-                            ],
-                            "Minimum": 1,
-                            "Maximum": 3,
-                        },
-						{
+                        {
                             "SpawnableIds": [
                                 {
                                     "Weight": 0.7,
                                     "Value": "{{ModID}}_ForageablesAllYearEXCEPTWinter"
                                 }
                             ],
-                            "Minimum": 1,
+                            "Minimum": 0,
                             "Maximum": 2,
                         },
-						{
+                      
+                          {
                             "SpawnableIds": [
                                 {
-                                    "Weight": 0.2,
+                                    "Weight": 0.8,
+                                    "Value": "{{ModID}}_SpawnOnPeiMingAlternateHouseLocation"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 1,
+                        },
+
+                    ]
+                },
+
+             "{{ModID}}_PeiMingNewOutdoorsSpawns_Summer": 
+             {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnSummerForageables"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 2,
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.7,
+                                    "Value": "{{ModID}}_ForageablesAllYearEXCEPTWinter"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 2,
+                        },
+                          {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.8,
+                                    "Value": "{{ModID}}_SpawnOnPeiMingAlternateHouseLocation"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 1,
+                        },
+
+                    ]
+                },
+
+                "{{ModID}}_PeiMingNewOutdoorsSpawns_Fall": 
+                {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnFallForageables"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 2,
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.7,
+                                    "Value": "{{ModID}}_ForageablesAllYearEXCEPTWinter"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 2,
+                        },
+                          {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.8,
+                                    "Value": "{{ModID}}_SpawnOnPeiMingAlternateHouseLocation"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 1,
+                        },
+
+                    ]
+                },
+                "{{ModID}}_PeiMingNewOutdoorsSpawns_Winter": 
+                {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnWinterForageables"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 2,
+                        },
+               	        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.02,
                                     "Value": "{{ModID}}_SpawnNorthernHeartMelon"
                                 }
                             ],
-                            "Minimum": 1,
+                            "Minimum": 0,
                             "Maximum": 1,
                         },
-						{
+                    
+                          {
                             "SpawnableIds": [
                                 {
-                                    "Weight": 0.001,
-                                    "Value": "{{ModID}}_no"
+                                    "Weight": 0.8,
+                                    "Value": "{{ModID}}_SpawnOnPeiMingAlternateHouseLocation"
                                 }
                             ],
                             "Minimum": 1,
                             "Maximum": 1,
                         },
+
+                    ]
+                }
+                }
+            },
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////			
+        { 
+            "LogName": "Prismatic Rose setpieces with Cornucopia more Flowers enabled",
+            "Action": "EditData",
+            "When": { "HasMod: |contains=Cornucopia.MoreFlowers": true },
+            "Target": "spacechase0.SpaceCore/SpawningGroups", 
+            "Entries":   {
+                "{{ModID}}_PeiMingNewOutdoorsSpawns_Spring": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnSpringForageables"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 2,
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.7,
+                                    "Value": "{{ModID}}_ForageablesAllYearEXCEPTWinter"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 2,
+                        },
+
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.7,
+                                    "Value": "{{ModID}}_SpawnPrismaticRoseCornucopia"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 1,
+                        },
+                        
                         {
                             "SpawnableIds": [
                                 {
@@ -374,27 +495,178 @@
                             "Minimum": 1,
                             "Maximum": 1,
                         },
-					]
-					}
-				}
-			},
-        { 
-            "LogName": "Prismatic Rose setpiece with Cornucopia more Flowers enabled",
-            "Action": "EditData",
-            "When": { "HasMod: |contains=Cornucopia.MoreFlowers": true },
-            "Target": "spacechase0.SpaceCore/SpawningGroups",
-            "TargetField": [ "SpawnablesToSpawn" ], 
-            "Entries": {
+                        
+
+                    ]
+                }
+            },
+
+             "{{ModID}}_PeiMingNewOutdoorsSpawns_Summer": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnSummerForageables"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 2,
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.7,
+                                    "Value": "{{ModID}}_ForageablesAllYearEXCEPTWinter"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 2,
+                        },
+                        {
                             "SpawnableIds": [
                                 {
                                     "Weight": 0.3,
                                     "Value": "{{ModID}}_SpawnPrismaticRoseCornucopia"
                                 }
                             ],
+                            "Minimum": 0,
+                            "Maximum": 1,
+                        },
+                          {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.8,
+                                    "Value": "{{ModID}}_SpawnOnPeiMingAlternateHouseLocation"
+                                }
+                            ],
                             "Minimum": 1,
                             "Maximum": 1,
                         },
+
+                    ]
+                },
+            
+
+            
+                "{{ModID}}_PeiMingNewOutdoorsSpawns_Fall": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnFallForageables"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 2,
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.7,
+                                    "Value": "{{ModID}}_ForageablesAllYearEXCEPTWinter"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 2,
+                        },
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.001,
+                                    "Value": "{{ModID}}_no"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 1,
+                        },
+                              {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.3,
+                                    "Value": "{{ModID}}_SpawnPrismaticRoseCornucopia"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 1,
+                        },
+                          {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.8,
+                                    "Value": "{{ModID}}_SpawnOnPeiMingAlternateHouseLocation"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 1,
+                        },
+
+                    ]
+                },
+            
+            
+                "{{ModID}}_PeiMingNewOutdoorsSpawns_Winter": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_SpawnWinterForageables"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 2,
+                        },
+               	        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.02,
+                                    "Value": "{{ModID}}_SpawnNorthernHeartMelon"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 1,
+                        },
+        
+                          {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.8,
+                                    "Value": "{{ModID}}_SpawnOnPeiMingAlternateHouseLocation"
+                                }
+                            ],
+                            "Minimum": 1,
+                            "Maximum": 1,
+                        }
+
+                    ]
+                }
+        },
+
+        {
+            
+            "LogName": "cursed spawn group",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/SpawningGroups", 
+            "Entries": {
+                "{{ModID}}_CursedSpawnable": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 0.5,
+                                    "Value": "{{ModID}}_no"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 1,
+                        },
+                    ]
+                    }
+
             }
+        }
         
 	]
 } 

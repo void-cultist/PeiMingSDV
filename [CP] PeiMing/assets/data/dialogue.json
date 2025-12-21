@@ -69,12 +69,14 @@
                 "spring_Sat": "{{i18n: Spring{{Random: {{Range:1,4}} }} }}",
 
                 "spring_Sun": "{{i18n: Spring{{Random: {{Range:1,4}} }} }}",
+                "spring_28": "{{i18n:Spring_28}}",
                 //flower festival
                 "FlowerDance_Accept_Roommate": "{{i18n:FlowerDance_Accept_Spouse}}",
                 "FlowerDance_Accept": "{{i18n:FlowerDance_Accept}}",
                 "FlowerDance_Decline": "{{i18n:FlowerDance_Decline}}",
 
                 //summer
+                "summer_1": "{{i18n:Summer_1}}",
                 "summer_20": "{{i18n: Birthday{{Random: {{Range:1,3}} }} }}",
                 "summer_Mon": "{{i18n: Summer{{Random: {{Range:1,3}} }} }}",
 
@@ -127,6 +129,7 @@
                 "winter_Sat": "{{i18n: Winter{{Random: {{Range:1,5}} }} }}",
 
                 "winter_Sun": "{{i18n: Winter{{Random: {{Range:1,5}} }} }}",
+                "winter_1": "{{i18n: Winter_1}}",
                 //winter star
                 "WinterStar_GiveGift_Before_Roommate": "{{i18n:WinterStar_GiveGift_Before_Spouse}}",
                 "WinterStar_GiveGift_Before": "{{i18n:WinterStar_GiveGift_Before}}",
@@ -154,6 +157,7 @@
                 "AcceptGift_(O)814": "{{i18n:AcceptGift(O)814}}",
                 "AcceptGift_(O)852": "{{i18n:AcceptGift(O)852}}",
                 "AcceptGift_(O)void.NorthernHeartMelon_GiftableTassel": "{{i18n:AcceptGift(O)void.NorthernHeartMelon_Tassel}}$action spacechase0.SpaceCore_PlayEvent {{ModID}}_RoommateProposal true",
+                "AcceptGift(O)void.NorthernHeartMelon_NHMelon": "{{i18n:AcceptGift(O)void.NorthernHeartMelon_NHMelon}}",
 
 				
                 //"dating"
@@ -310,8 +314,7 @@
 {	"LogName": "PM 'Engagement' response",
 			"Action": "EditData",
 			"Target": "Data/EngagementDialogue:{{PeiMing}}Roommate0",
-             "When": { "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true,
-            	         "Partnership": "Platonic Partnership", },
+             "When": { "Partnership": "Platonic Partnership", },
 			"Entries":
              {
                         "PeimingRoommate0": "{{i18n:PeimingEngaged0}}",
@@ -322,8 +325,7 @@
 
         {	"LogName": "MovingIn Accept Platonic Partner",
 			"Action": "EditData",
-            "When": { "Partnership": "Platonic Partnership",
-         "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true },
+            "When": { "Partnership": "Platonic Partnership" },
 			"Target": "Data/Strings/StringsFromCSFiles/{{PeiMing}}_EngagedRoommate",
 			"Entries": { 
         "{{PeiMing}}_EngagedRoommate": "Oho!$1#$b# Yes, I appreciate your companionship as well, my dear @. Why don't we have a little gathering to celebrate that? $6"
@@ -334,7 +336,6 @@
         "LogName": "Updated Dialogue after Roommate proposal",
         "Action": "EditData",
         "When": {
-            "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true,
             "Partnership": "Platonic Partnership",
             "HasSeenEvent": "{{ModID}}_RoommateProposal",
             "Roommate": "{{PeiMing}}",

@@ -146,17 +146,57 @@
 						"spacechase0.SpaceCore_PlayEvent {{ModID}}_RoommateProposal true"
 					]
 				}, */
-		"{{ModID}}_Trigger_Spawnables_NewOutdoors":
+		"{{ModID}}_Trigger_Spawnables_NewOutdoors_spring":
 				{
-					"ID": "{{ModID}}_Trigger_Spawnables_NewOutdoors",
+					"ID": "{{ModID}}_Trigger_Spawnables_NewOutdoors_spring",
 					"Trigger": "DayStarted",
-					"Condition": "TRUE",
+					"Condition": "SEASON spring",
 					"MarkActionApplied": false,
 					"Actions": [
-						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingNewOutdoorsSpawns {{ModID}}_PeiMingNewOutdoors 3,3,11,15 5,7,7,7"
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingNewOutdoorsSpawns_Spring {{ModID}}_PeiMingNewOutdoors 0,0,6,23/0,0,3,23/3,6,2,2/5,6,1,3/3,16,1,3/3,0,3,2 6,15,9,3/6,15,3,2/10,17,3,1/13,15,2,3 13,10,1,5 13,2,2,2/14,3,1,1"
 					]
-				}
-	},
+				},
+		"{{ModID}}_Trigger_Spawnables_NewOutdoors_summer":
+				{
+					"ID": "{{ModID}}_Trigger_Spawnables_NewOutdoors_summer",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON summer",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingNewOutdoorsSpawns_Summer {{ModID}}_PeiMingNewOutdoors 3,3,2,9 9,15,3,2"
+					]
+				},			
+		"{{ModID}}_Trigger_Spawnables_NewOutdoors_fall":
+				{
+					"ID": "{{ModID}}_Trigger_Spawnables_NewOutdoors_fall",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON fall",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingNewOutdoorsSpawns_Fall {{ModID}}_PeiMingNewOutdoors 3,3,2,9 9,15,3,2"
+					]
+				},
+		"{{ModID}}_Trigger_Spawnables_NewOutdoors_winter":
+				{
+					"ID": "{{ModID}}_Trigger_Spawnables_NewOutdoors_winter",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON winter",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingNewOutdoorsSpawns_Winter {{ModID}}_PeiMingNewOutdoors 3,3,2,9 9,15,3,2"
+					]
+				},		
+		"{{ModID}}_Trigger_CursedSpawnable":
+				{
+					"ID": "{{ModID}}_CursedSpawnable",
+					"Trigger": "DayStarted",
+					"Condition": "SYNCED_RANDOM day CursedRandomKey 0.001",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingNewOutdoorsSpawns_Winter {{ModID}}_PeiMingNewOutdoors 12,2,1,1"
+					]
+				},	
+			},
 
 },
 

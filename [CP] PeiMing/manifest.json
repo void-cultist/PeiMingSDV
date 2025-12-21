@@ -9,10 +9,7 @@
     "UniqueID": "Pathoschild.ContentPatcher"
   },
    "Dependencies": [
-    
-    {"UniqueID": "Spiderbuttons.CMCT",
-      "IsRequired": true,
-    },
+
     {"UniqueID": "spacechase0.SpaceCore",
   "IsRequired": true, },
 

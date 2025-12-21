@@ -153,6 +153,48 @@
 "PM5HBadAnswer.1": "sigh",
 "PM5HBadAnswer.2": "Get out of my sight.$5",
 
+//6 HEARTS
+"PM6H.0": "@! What are you doing here? $8",
+"PM6H.1": "Have you missed this handsome face, hm? $3",
+"PM6H.2": "...................................",
+"PM6H.3": ".........forget it.",
+"PM6H.4": "What's the matter?",
+"PM6H.5": "Have you been rejected?",
+"PM6H.6": "Oh, don't mind this venerable one. I just needed some time to clear my head.",
+"PM6H.7": "Pah! Rejected? Me? $9#$b# Please, don't make me laugh, @! Who in their right mind would reject a man like me? $1",
+"PM6H.8": "Let me get out of the water and join you.",
+"PM6H.9": "And here I am, in my full glory.",
+"PM6H.10": "siiiiigh",
+"PM6H.11": "...Truth be told, I have been... thinking, lately.",
+"PM6H.12": "About the circumstances of landing in this place. #$b# But the longer I dwell on it, the less sense it makes.",
+"PM6H.13": "I wish to share this with you because I've grown to trust you.",
+
+"PM6HQQ.0": "But I need you to promise to not tell anyone.",
+"PM6HQQ.1": "Of course! That's nobody's business.",
+"PM6HQQ.2": "Are you not going to dress up first?",
+"PM6HQQ.3": "Thank you.$6",
+
+"PM6HDressUp.0": "Say what now...?",
+"PM6HDressUp.1": "Does seeing me in my swimming outfit bother you that much?",
+"PM6HDressUp.2": "Yes, it does.",
+"PM6HDressUp.3": "No, I was just wondering if you were planning to stay like this on purpose.",
+"PM6HDressUp.4": "Give me a moment then.",
+"PM6HDressUp.5": "Pei Ming did change back into his robes but he did that without giving it any thought and without moving from the spot...",
+"PM6HDressUp.6": "I guess people were ashamed of other things back then? He really seems oblivious to the entire situation.",
+"PM6HDressUp.7": "There we go.",
+"PM6HDressUp.8": "Huh? Are you okay? What's the matter?$8",
+"PM6HDressUp.9": "Well, yes, I am going to stay like this.$3#$b# No shame in showing a body such as mine.$3",
+
+"PM6HCont.0": "Ah well. Where do I start...",
+"PM6HCont.1": "Let's see... #$b# I took up a mission at the Northern border. My close friend reported a disturbance in the area,#$b# so I've decided to check it out before any mortal would start to freak out - #$b# - no need to make more of a mess in this situation, you know?",
+"PM6HCont.2": "I went alone, because it was the fastest way for me to assess the situation.#$b# I thought it would be a quick trip, in and out, one day maximum.",
+"PM6HCont.3": "You could imagine my surprise when I saw these weird... #$b# ...ripples, if you will, all around the place.#$b# I had no idea what it was, so naturally, I wanted to consult the smartest person I know, which is the friend who also reported the disturbance to me, and then-",
+"PM6HCont.4": "I appreciate your concern, @. This weighs more heavily on me than I initially expected.",
+"PM6HCont.5": "Could we please continue this conversation another day? I need a moment to myself. To... think.",
+"PM6HCont.6": "You have my gratitude.",
+"PM6HCont.7": "What a mess.",
+"PM6HCont.8": "Guess I'll go back for a swim.",
+
 ///////////////////DIALOGUE
 "Introduction": "We meet again. I decided to wander around the valley. Some of the villagers seem scared of me, ha!",
 "ArchaeologyHouse_21_5": "Greetings. I am trying to find books on times past.$3#$e#I wonder if there are records on ancient deities in here.",
@@ -195,6 +237,7 @@
 "Spring2": "Hoho! It is nice to see you, @. $2",
 "Spring3": "Ever since I ended up here, I have been on the lookout for beautiful women.I am not sure if any of the ladies living here suit my refined tastes.#$e#$8 Hoh?! Men?! I mean...#$b# I would not say no to another man either, I suppose.#$b#$6. But I prefer women.",
 "Spring4": "I heard the Adventurer's Guild mainly fights with swords.#$b# You want to know if I have expertise on sword fighting?#$b#$7 Let's change the topic.",
+"Spring_28": "Summer is right around the corner. $3 Are you excited for the beach season? $3",
 
 "FlowerDance_Accept_Spouse": "The same old dance again doesn't have to be bad by necessity. On the contrary.",
 "FlowerDance_Accept": "Oh my, it is an honor. I seduced many a lady with my skill.",
@@ -208,9 +251,10 @@
 "Summer1": "I don't really have a favorite season. Perhaps Winter? But during Summer, I can enjoy the beach and take a swim in the ocean. #$b# I am doing that in Winter as well, however.",
 "Summer2": "Many things are way different than from how I know them.#$b# The other day, Leah punched my face because I was surprised that women are pursuing the arts.#$b# Then again, I suppose my friend back at home would have done the same as Leah.",
 "Summer3": " Hey, @, why don't we go for a swim together, just you and me? $3",
+"Summer_1": "And just like that, it's Summer. Seasons come and go, but they always return. #$b# There is comfort to be found in that, don't you think?",
 
 //Fall
-"fall_28": "Ho! Can you feel it, @? Winter is coming. Exciting, isn't it? #$b# Have you prepared your farm already?$6#$e# Me? I have my coat dusted off and ready!$3",
+"fall_28": "Hoh! Can you feel it, @? Winter is coming. Exciting, isn't it? #$b# Have you prepared your farm already?$6#$e# Me? I have my coat dusted off and ready!$3",
 "Fall1": "Greetings, @. I am curious about something. Fall is the perfect weather for warm beverages.#$b#$y 'Do you prefer tea, coffee or hot chocolate?_I like tea!_Hoho! You are the same as me then.$1_Coffee all the way._I am not averse to drinking coffee but there are so many different ways of drinking it regarding the amount of milk and sugar that the possibilities are overwhelming for this old General, ha._Hot chocolate!_Sweet.Just as sweet as you are.$9' ",
 "Fall2": "I hate the smell of pickles. $7",
 "Fall3": "Ever since I arrived here, I have learned about so many new things that do not exist where I'm from.#$b# For example - record players! Sam showed me something called 'vinyls' and if you place them in such a 'record player', you can listen to music!$8#$e#........you are saying that this is old technology?",
@@ -218,11 +262,12 @@
 "Fall5": "I have been thinking about my descendant recently. I helped him ascend to Godhood and wanted him to inherit my position one day.#$b# A lot of things happened, though, and I was very disappointed of him. #$e# Yet sometimes, I can't help but wonder whether or not I might have been to strict.",
 
 //Winter
-"Winter1": " The snow in the Northern capital often piled up so high that it reached the roofs of the houses.#$b# Some mortals loved it. Some hated it.#$e# But hey, if they were so angry about it, they could've just moved to the South, no?$1",
+"Winter1": "The snow in the Northern capital often piled up so high that it reached the roofs of the houses.#$b# Some mortals loved it. Some hated it.#$e# But hey, if they were so angry about it, they could've just moved to the South, no?$1",
 "Winter2": "Truth be told, the weather in here is much milder than in my homeland. #$e# I guess living with a heater makes surviving easier for the villagers...#$b# Such an interesting device.$6 ",
 "Winter3": "All this cold makes me crave some quality tanghulu again...$4#$b# Perhaps I should start using the kitchen in my residence more often.#$e# Hey, @, do you have some fruit in that fridge of yours that you wouldn't mind sharing? $3",
 "Winter4": "I saw Vincent and Jas building something made of snow the other day.$#b# I don't know if it was supposed to represent any god of yours...#$b# but I certainly know someone who would pass out from anger if he saw something like that in his temple. Hah! $1",
 "Winter5": "When I was a mortal still, my brothers and I used to build snow lions in our family's garden.#$b# The results varied.#$b# We weren't the most... artistically skilled bunch.$7#$e# Why do you think I became a soldier instead? $1",
+"Winter_1": "Finally, it's Winter. My favorite season. $6 #$b# It reminds me of home, even if it is a cruel and gruesome season.#$b# If you know how to navigate it, there is much potential to be found in this time of the year.",
 
 //Festivals
 "Peimingegg": "So this is how the villagers search for a suitable partner?#$b# I have better means but I would not say no to a dance with the right person.$2",
@@ -266,6 +311,7 @@
 "AcceptGift(O)814": "Ink! I remember the scent of ink, the scent of scrolls and ink, to be precise. #$b# Reminds me of my studious friends. Thank you, @.",
 "AcceptGift(O)852": "Impressive! Did you slay a dragon on your own?! $8",
 "AcceptGift(O)void.NorthernHeartMelon_Tassel": "Is that...$8#$b# Did you make this yourself?! This is such fine craftmenship.$8#$b# I am truly impressed!#$b#",
+"AcceptGift(O)void.NorthernHeartMelon_NHMelon": "A Northern Heart Melon! A sweet treat that is said to be able to change people's feelings towards the giver. #$b# And I might even like you a little more after receiving it!$1",
 
 
 "GiftTastePeiMing.love": "Hoho! Now that is certainly a treat.",
