@@ -1,0 +1,116 @@
+//SVE SCHEDULE
+{
+"Changes":
+	[
+ 
+   	 {
+        	"LogName": "PeiMing Schedule  when Partnership: Platonic Parntership - SVE",
+        	"Action": "EditData",
+			"When": { "House Location": "SVE",
+					"Partnership": "Platonic Partnership",
+						"Roommate": "{{PeiMing}}" },
+        	"Target": "Characters/schedules/{{PeiMing}}",
+   		 "Entries": {
+			"{{PP}}Rainy": "",
+			"{{PP}}GreenRain": "",
+			"{{PP}}Summer_20": "",
+			"{{PP}}SummerStorm": "",
+			"{{PP}}SpringMonTueWed": "",
+			"{{PP}}SpringThuFriSat": "",
+			"{{PP}}SpringSun": "",
+			"{{PP}}Summer": "",
+			"{{PP}}Fall": "",
+			"{{PP}}FallBathhouseDay": "",
+			"{{PP}}Nightmarket": "",
+			"{{PP}}Random1": "",
+			"{{PP}}Random2": "",
+			"{{PP}}Random3": "",
+			"{{PP}}WinterSnow": "",
+			"{{PP}}Winter": "",
+
+
+
+			"spring": "610 Forest 30 64 3/830 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1400 Beach 13 26 3 /1700 Saloon 6 17 2 {{PeiMing}}_drinkBooze/2000 {{PMHouse}} 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"spring_1": "610 Forest 30 64 3/830 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1400 Beach 13 26 3 /1700 Saloon 6 17 2 {{PeiMing}}_drinkBooze/2000 {{PMHouse}} 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"spring_2": "610 Forest 30 64 3/830 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1400 Beach 13 26 3 /1700 Saloon 6 17 2 {{PeiMing}}_drinkBooze/2000 {{PMHouse}} 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"spring_3": "610 Forest 30 64 3/830 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1400 Beach 13 26 3 /1700 Saloon 6 17 2 {{PeiMing}}_drinkBooze/2000 {{PMHouse}} 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"spring_4": "610 Forest 30 64 3/830 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1400 Beach 13 26 3 /1700 Saloon 6 17 2 {{PeiMing}}_drinkBooze/2000 {{PMHouse}} 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"spring_5": "610 Forest 30 64 3/830 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1400 Beach 13 26 3 /1700 Saloon 6 17 2 {{PeiMing}}_drinkBooze/2000 {{PMHouse}} 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			
+			"summer_20": "610 Railroad 52 26 2/1300 {{WoodsOrBeach}} 12 18 2/1900 Forest 58 87 2/2130 {{PMHouse}} 6 5 0",
+			"summer": "610 Forest 30 64 3/700 Beach 45 21 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingSummerBeach.000\"/1730 Saloon 6 17 0 2/2100 {{PMHouse}} 9 5 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			
+			"fall": "800 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1700 Saloon 6 17 2/2030 {{PMHouse}} 9 5 0",
+			"fall_Wed": "610 BathHouse_Pool 13 10 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingBath.001\"/1600 {{PMHouse}} 9 5 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+
+			"winter": "610 {{PMHouse}} 9 5 2 {{PeiMing}}_drinkTea/700 BathHouse_Pool 13 10 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingBath.001\"/1600 Saloon 6 17 0 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"winter_Thu": "610 {{PMHouse}} 9 5 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.003\"/830 {{PMHouse}} 18 5 0\"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.004\"",
+			"winter_Sun": "610 {{PMHouse}} 9 5 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.003\"/830 {{PMHouse}} 18 5 0\"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.004\"",
+			
+			"rain": "610 {{PMHouse}} 2 6 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.001\"/730 {{PMHouse}} 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.002\"/1200 Forest 47 28 3 0\"Strings\\schedules\\{{PeiMing}}:PeiMingRainyOutdoor.000\"/1300 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1600 Saloon 6 17 2 {{PeiMing}}_drinkBooze/2000 {{PMHouse}} 9 5 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"GreenRain": "610 Forest 30 64 3/700 BathHouse_Pool 13 9 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingBath.000\"/1300 Mine 24 10 2 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingMines.000\"/1930 {{PMHouse}} 9 5 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			
+			"Mon": "610 {{PMHouse}} 2 6 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingMines.000\"/1730 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 0",
+			"Tue": "610 {{PMHouse}} 2 6 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingMines.000\"/1730 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 0",
+			"Wed": "610 {{PMHouse}} 2 6 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingMines.000\"/1730 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 0",
+			
+			 
+   		 
+			}
+    	
+	 },
+	{  "LogName": "PeiMing Schedule  when Partnership: Platonic Parntership - Alternate House Location With SVE",
+	 "Action": "EditData",
+	 "When": { "House Location": "Alternate",
+				"Partnership": "Platonic Partnership",
+				"Roommate": "{{PeiMing}}"},
+	"Target": "Characters/schedules/{{ModId}}_Peiming",
+	"Entries": {
+		"spring": "610 {{ModID}}_PeiMingNewOutdoors 11 16 2/930 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1400 Beach 13 26 3/1730 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"spring_1": "610 {{ModID}}_PeiMingNewOutdoors 11 16 2/930 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1400 Beach 13 26 3/1730 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"spring_2": "610 {{ModID}}_PeiMingNewOutdoors 11 16 2/930 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1400 Beach 13 26 3/1730 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"spring_3": "610 {{ModID}}_PeiMingNewOutdoors 11 16 2/930 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1400 Beach 13 26 3/1730 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"spring_4": "610 {{ModID}}_PeiMingNewOutdoors 11 16 2/930 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1400 Beach 13 26 3/1730 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"spring_5": "610 {{ModID}}_PeiMingNewOutdoors 11 16 2/930 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1400 Beach 13 26 3/1730 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+
+			"summer_20": "610 Railroad 52 26 2/1300 {{WoodsOrBeach}} 12 18 2/1900 {{ModID}}_PeiMingNewOutdoors 13 3 2/2130 {{PMHouse}} 6 5 0",
+			"summer": "610 {{ModID}}_PeiMingNewOutdoors 11 16 2/700 Beach 45 21 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingSummerBeach.000\"/1730 Saloon 6 17 0 2/2100 {{PMHouse}} 9 5 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			
+			"fall": "800 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1700 Saloon 6 17 2/2030 {{PMHouse}} 9 5 0",
+			"fall_Wed": "610 BathHouse_Pool 13 10 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingBath.001\"\"/1600 {{PMHouse}} 9 5 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+
+			"winter": "610 {{PMHouse}} 9 5 2 {{PeiMing}}_drinkTea/700 BathHouse_Pool 13 10 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingBath.001\"/1600 Saloon 6 17 0 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"winter_Thu": "610 {{PMHouse}} 9 5 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.003\"/830 {{PMHouse}} 18 5 0\"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.004\"",
+			"winter_Sun": "610 {{PMHouse}} 9 5 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.003\"/830 {{PMHouse}} 18 5 0\"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.004\"",
+			
+			"rain": "610 {{PMHouse}} 2 6 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.001\"/730 {{PMHouse}} 6 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.002\"/1200 Forest 47 28 3 0\"Strings\\schedules\\{{PeiMing}}:PeiMingRainyOutdoor.000\"/1300 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1600 Saloon 6 17 2 {{PeiMing}}_drinkBooze/2000 {{PMHouse}} 9 5 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"GreenRain": "610 {{PeiMing}}NewOutdoors 11 16 2/700 BathHouse_Pool 13 9 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingBath.000\"/1300 Mine 24 10 2 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingMines.000\"/1930 {{PMHouse}} 9 5 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			
+			"Mon": "610 {{PMHouse}} 2 6 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingMines.000\"/1730 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 0 0",
+			"Tue": "610 {{PMHouse}} 2 6 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingMines.000\"/1730 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 0 0",
+			"Wed": "610 {{PMHouse}} 2 6 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingMines.000\"/1730 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 0 0",
+	}
+	},
+
+
+	{
+	 	"LogName": "PeiMing Schedule when Partnerhship: Roommate SVE",
+    	"Action": "EditData",
+        "Target": "Characters/schedules/{{PeiMing}}Roommate",
+   		"Entries": {
+			"marriage_spring": "930 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1800 bed",
+			"marriage_summer": "730 Beach 56 18 1/1600 {{PMHouse}} 10 6 0/2100 bed",
+			"marriage_summer_20": "610 Railroad 61 10 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingBday.000\"/1330 {{WoodsOrBeach}} 12 18 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingBday.001\"/1900 bed \"{{i18n:PeiMingBday6}}\"",
+			"marriage_fall": "630 BathHouse_Pool 8 15 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingBath.001\"/1700 Saloon 6 17 2 {{PeiMing}}_drinkBooze/2030 bed",
+			"marriage_fall_10": "700 Mountain 68 24 2 \"Strings\\schedules\\{{PeiMing}}_PeiMingRoommate.004\"/1300 Railroad 55 36 3 \"Strings\\schedules\\{{PeiMing}}_PeiMingRoommate.005\"/1900 bed",
+			"marriage_winter": "610 {{PMHouse}} 9 5 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingRoommate.006\"/1500 {{PMHouse}} 18 5 0\"Strings\\schedules\\{{PeiMing}}:PeiMingRoommate.007\"/1900 bed",
+			"marriage_NightMarket_3": "610 Forest 38 17 2  \"Strings\\schedules\\{{PeiMing}}_PMRoommate.000\"/1200 Saloon 1 19 2 {{PeiMing}}_drinkBooze \"Strings\\schedules\\{{PeiMing}}_PeiMingRoommate.001\"/1800 Beach-NightMarket 40 9 3 \"Strings\\schedules\\{{PeiMing}}_PeiMingRoommate.002\"/2100 Beach-NightMarket 30 34 2  \"Strings\\schedules\\{{PeiMing}}_PeiMingRoommate.003\"/2300 bed",
+		 }
+}
+	]
+}
+
+//format Time MapName Xcoord Ycoord Facing Animation StringDialogue
+// <time> [location] <tileX> <tileY> [facingDirection] [animation] [dialogue]
+//0	up 1right 2	down3	left
+//template for string dialogue \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"

@@ -9,7 +9,9 @@
     "UniqueID": "Pathoschild.ContentPatcher"
   },
    "Dependencies": [
-
+    {"UniqueID": "Spiderbuttons.CustomScheduleKeys",
+  "IsRequired: true "},
+  
     {"UniqueID": "spacechase0.SpaceCore",
   "IsRequired": true, },
 
@@ -23,9 +25,6 @@
    "IsRequired": true,
    },
    {	"UniqueID": "FlashShifter.StardewValleyExpandedCP",
-		"IsRequired": false,
-   },
-   {	"UniqueID": "aedenthorn.HugsAndKisses", 
 		"IsRequired": false,
    },
 

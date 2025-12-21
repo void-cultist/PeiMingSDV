@@ -4,8 +4,13 @@
     [
  
 		{ //random dialogue: "{{Random: && |inputSeparator=&&}}"
-            "LogName": "yappingMing",
+            "LogName": "Updated Dialogue after Roommate proposal",
             "Action": "EditData",
+             "When": {
+            "Partnership": "Platonic Partnership",
+            "HasSeenEvent": "{{ModID}}_RoommateProposal",
+            "Roommate": "{{PeiMing}}",
+            },
             "Target": "Characters/Dialogue/{{PeiMing}}",
 			"Entries": {
 				"Introduction": "{{i18n:Introduction}}",
@@ -56,9 +61,9 @@
 
                 ////////////////////////////////////////////////seasonals
                 //spring
-                "spring_Mon": "{{i18n: Spring{{Random: {{Range:1,4}} }} }}",
+                "spring_Mon": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
 
-                "spring_Tue": "{{i18n: Spring{{Random: {{Range:1,4}} }} }}",
+                "spring_Tue": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
 
                 "spring_Wed": "{{i18n: Spring{{Random: {{Range:1,4}} }} }}",
 
@@ -122,7 +127,7 @@
 
                 "winter_Wed": "{{i18n: Winter{{Random: {{Range:1,5}} }} }}",
 
-                "winter_Thu": "{{i18n: Winter{{Random: {{Range:1,5}} }} }}",
+                "winter_Thu": "{{i18n:PartnerDialogue6}}",
 
                 "winter_Fri": "{{i18n: Winter{{Random: {{Range:1,5}} }} }}",
 
@@ -188,175 +193,6 @@
 				
             }
         },
-
-
-/* ····················································· */
-/* : ____   ___   ___  __  __ __  __    _  _____ _____ : */
-/* :|  _ \ / _ \ / _ \|  \/  |  \/  |  / \|_   _| ____|: */
-/* :| |_) | | | | | | | |\/| | |\/| | / _ \ | | |  _|  : */
-/* :|  _ <| |_| | |_| | |  | | |  | |/ ___ \| | | |___ : */
-/* :|_| \_\\___/ \___/|_|  |_|_|  |_/_/   \_\_| |_____|: */
-/* ····················································· */
-
-
-        {	"LogName": "PM Roommate 'Engagement' response",
-			"Action": "EditData",
-            "When": { "Partnership": "Roommates"},
-			"Target": "Data/EngagementDialogue:{{PeiMing}}Roommate0",
-			"Entries": {
-                "PeimingRoommate0": "{{i18n:PeimingRoommate0}}",
-                "PeimingRoommate1": "{{i18n:PeimingRoommate1}}",
-			}
-		},
-        {	
-            "LogName": "MovingIn Accept Roommate",
-			"Action": "EditData",
-            "When": { "Partnership": "Roommates"},
-			"Target": "Data/Strings/StringsFromCSFiles/{{PeiMing}}_EngagedRoommate",
-			"Entries": { 
-        "{{PeiMing}}_EngagedRoommate": "{{i18n:Peiming_EngagedRoommate}}",
-
-		},
-        },
-		{ "LogName":   "Roommate Dialogue",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/MarriageDialogue{{PeiMing}}Roommate",
-            "When": { "Partnership": "Roommates",  "Roommate": "{{PeiMing}}" }, 
-            "Entries": {
-                "Spring_{{PeiMing}}": "{{i18n:Spring_Peiming}}",
-                "Summer_{{PeiMing}}": "{{i18n:Summer_Peiming}}",
-                "Fall_{{PeiMing}}": "{{i18n:Fall_Peiming}}",
-                "Winter_{{PeiMing}}": "{{i18n:Winter_Peiming}}",
-                "patio_{{PeiMing}}": "{{i18n:patio_Peiming}}",
-                "Rainy_Day_0": "{{i18n:Rainy_Day_0}}",
-                "Rainy_Day_1": "{{i18n:Rainy_Day_1}}",
-                "Rainy_Day_2": "{{i18n:Rainy_Day_2}}",
-                "Rainy_Day_3": "{{i18n:Rainy_Day_3}}",
-                "Rainy_Day_4": "{{i18n:Rainy_Day_4}}",
-                "Rainy_Day_5": "{{i18n:Rainy_Day_5}}",
-                "Indoor_Day": "{{i18n:Indoor_Day}}",
-                "Indoor_Day_1": "{{i18n:Indoor_Day_1}}",
-                "Indoor_Day_2": "{{i18n:Indoor_Day_2}}",
-                "Indoor_Day_3": "{{i18n:Indoor_Day_3}}",
-                "Indoor_Day_4": "{{i18n:Indoor_Day_4}}",
-                "Indoor_Day_5": "{{i18n:Indoor_Day_5}}",
-                "Rainy_Night_0": "{{i18n:Rainy_Night_0}}",
-                "Rainy_Night_1": "{{i18n:Rainy_Night_1}}",
-                "Rainy_Night_2": "{{i18n:Rainy_Night_2}}",
-                "Rainy_Night_3": "{{i18n:Rainy_Night_3}}",
-                "Rainy_Night_4": "{{i18n:Rainy_Night_4}}",
-                "Rainy_Night_5": "{{i18n:Rainy_Night_5}}",
-                "Indoor_Night_0": "{{i18n:Indoor_Night_0}}",
-                "Indoor_Night_1": "{{i18n:Indoor_Night_1}}",
-                "Indoor_Night_2": "{{i18n:Indoor_Night_2}}",
-                "Indoor_Night_3": "{{i18n:Indoor_Night_3}}",
-                "Indoor_Night_4": "{{i18n:Indoor_Night_4}}",
-                "Indoor_Night_5": "{{i18n:Indoor_Night_5}}",
-                "funLeave_{{PeiMing}}": "{{i18n:funLeave_Peiming}}",
-                "funReturn_{{PeiMing}}": "{{i18n:funReturn_Peiming}}",
-                "Outdoor_{{PeiMing}}": "{{i18n:Outdoor_Peiming}}",
-                "Outdoor_0": "{{i18n:Outdoor_0}}",
-                "Outdoor_1": "{{i18n:Outdoor_1}}",
-                "Outdoor_2": "{{i18n:Outdoor_2}}",
-                "Outdoor_3": "{{i18n:Outdoor_3}}",
-                "Outdoor_4": "{{i18n:Outdoor_4}}",
-                "spouseRoom_{{PeiMing}}": "{{i18n:spouseRoom_Peiming}}",
-                "Good_0": "{{i18n:Good_0}}",
-                "Good_1": "{{i18n:Good_1}}",
-                "Good_2": "{{i18n:Good_2}}",
-                "Good_3": "{{i18n:Good_3}}",
-                "Good_4": "{{i18n:Good_4}}",
-                "Good_5": "{{i18n:Good_5}}",
-                "Good_6": "{{i18n:Good_6}}",
-                "Good_7": "{{i18n:Good_7}}",
-                "Good_8": "{{i18n:Good_8}}",
-                "Good_9": "{{i18n:Good_9}}",
-                "Neutral_0": "{{i18n:Neutral_0}}",
-                "Neutral_1": "{{i18n:Neutral_1}}",
-                "Neutral_2": "{{i18n:Neutral_2}}",
-                "Neutral_3": "{{i18n:Neutral_3}}",
-                "Neutral_4": "{{i18n:Neutral_4}}",
-                "Neutral_5": "{{i18n:Neutral_5}}",
-                "Neutral_6": "{{i18n:Neutral_6}}",
-                "Neutral_7": "{{i18n:Neutral_7}}",
-                "Neutral_8": "{{i18n:Neutral_8}}",
-                "Neutral_9": "{{i18n:Neutral_9}}",
-                "Bad_0": "{{i18n:Bad_0}}",
-                "Bad_1": "{{i18n:Bad_1}}",
-                "Bad_2": "{{i18n:Bad_2}}",
-                "Bad_3": "{{i18n:Bad_3}}",
-                "Bad_4": "{{i18n:Bad_4}}",
-                "Bad_5": "{{i18n:Bad_5}}",
-                "Bad_6": "{{i18n:Bad_6}}",
-                "Bad_7": "{{i18n:Bad_7}}",
-                "Bad_8": "{{i18n:Bad_8}}",
-                "Bad_9": "{{i18n:Bad_9}}",
-
-        }
-    
-        },
-
-
-/* ·································································· */
-/* : ____  _        _  _____ ___  _   _ ___ ____                    : */
-/* :|  _ \| |      / \|_   _/ _ \| \ | |_ _/ ___|                   : */
-/* :| |_) | |     / _ \ | || | | |  \| || | |                       : */
-/* :|  __/| |___ / ___ \| || |_| | |\  || | |___                    : */
-/* :|_|__ |_____/_/__ \_\_| \___/|_|_\_|___\____|_  _   _ ___ ____  : */
-/* :|  _ \ / \  |  _ \_   _| \ | | ____|  _ \/ ___|| | | |_ _|  _ \ : */
-/* :| |_) / _ \ | |_) || | |  \| |  _| | |_) \___ \| |_| || || |_) |: */
-/* :|  __/ ___ \|  _ < | | | |\  | |___|  _ < ___) |  _  || ||  __/ : */
-/* :|_| /_/   \_\_| \_\|_| |_| \_|_____|_| \_\____/|_| |_|___|_|    : */
-/* ·································································· */
-
-
-
-{	"LogName": "PM 'Engagement' response",
-			"Action": "EditData",
-			"Target": "Data/EngagementDialogue:{{PeiMing}}Roommate0",
-             "When": { "Partnership": "Platonic Partnership", },
-			"Entries":
-             {
-                        "PeimingRoommate0": "{{i18n:PeimingEngaged0}}",
-                        "PeimingRoommate1": "{{i18n:PeimingEngaged1}}",
- 
-			}
-		},
-
-        {	"LogName": "MovingIn Accept Platonic Partner",
-			"Action": "EditData",
-            "When": { "Partnership": "Platonic Partnership" },
-			"Target": "Data/Strings/StringsFromCSFiles/{{PeiMing}}_EngagedRoommate",
-			"Entries": { 
-        "{{PeiMing}}_EngagedRoommate": "Oho!$1#$b# Yes, I appreciate your companionship as well, my dear @. Why don't we have a little gathering to celebrate that? $6"
-		},
-        },
-
-        { //Updated Dialogue after Roommate proposal event 
-        "LogName": "Updated Dialogue after Roommate proposal",
-        "Action": "EditData",
-        "When": {
-            "Partnership": "Platonic Partnership",
-            "HasSeenEvent": "{{ModID}}_RoommateProposal",
-            "Roommate": "{{PeiMing}}",
-            },
-        "Target": "Characters/Dialogue/{{PeiMing}}",
-        "TextOperations": [
-            {
-            "Operation": "RemoveDelimited",
-            "Target": ["Entries", "spring_Mon", "spring_Tue", "winter_Thu"],
-            "Search": "{{i18n:Spring{{Random:{{Range:1,4}}}}}} {{i18n:Winter{{Random:{{Range:1,5}}}}}}", 
-            "Delimiter": " "
-            },
-        ],
-        "Entries": { 
-        "{{PeiMing}}": {
-            "spring_Mon": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
-            "spring_Tue": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
-            "winter_Thu": "{{i18n:PartnerDialogue6}}",
-        }
-    }
-    },
 
     /* shouldn't be required but will edit it if ignore schedule doesnt work    
     { "LogName":   "Partnership Dialogue",

@@ -137,15 +137,19 @@
 						"AddMail Current {{ModID}}_GlazedHeartMelonLetter tomorrow"
 					]
 				},
-		/* "{{ModID}}_Trigger_RoommateProposalEvent":
-				{
-					"ID": "{{ModID}}_Trigger_RoommateProposalEvent",
-					"Trigger": "spacechase0.SpaceCore_OnItemUsed",
-					"Condition": "ITEM_ID Target void.NorthernHeartMelon_GiftableTassel",
-					"Actions": [
-						"spacechase0.SpaceCore_PlayEvent {{ModID}}_RoommateProposal true"
-					]
-				}, */
+			}
+		 },
+
+
+
+	
+	    { 
+			"LogName": "PeiMing Alternate Map Spawn Trigger Actions",
+            "Action": "EditData",
+			"When": { "House Location": "Alternate"},
+            "Target": "Data/TriggerActions",
+            "Entries": 
+			{  
 		"{{ModID}}_Trigger_Spawnables_NewOutdoors_spring":
 				{
 					"ID": "{{ModID}}_Trigger_Spawnables_NewOutdoors_spring",

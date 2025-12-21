@@ -1,0 +1,136 @@
+//SVE SCHEDULE
+{
+"Changes":
+	[
+ 
+         {
+		"LogName": "Define Custom Schedule keys",
+         "Action": "EditData",
+		 "Target": "Spiderbuttons.CustomScheduleKeys/ScheduleKeys",
+         "Entries": {
+			"{{PP}}Random1":  {
+               "Id": "Random1",
+               "ScheduleKey": "{{PP}}Random1",
+               "Priority": "Early +10",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, RANDOM 0.1"
+
+            },
+			"{{PP}}Random2":  {
+               "Id": "Random2",
+               "ScheduleKey": "{{PP}}Random2",
+               "Priority": "Early +10",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, RANDOM 0.1"
+
+            },
+			"{{PP}}Random3":  {
+               "Id": "Random3",
+               "ScheduleKey": "{{PP}}Random3",
+               "Priority": "Early +10",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, RANDOM 0.1"
+
+            },
+
+			"{{PP}}Rainy": {
+               "Id": "Rainy",
+               "ScheduleKey": "{{PP}}Rainy",
+               "Priority": "Early +1",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, WEATHER Target Rain"
+
+            },
+			"{{PP}}GreenRain": {
+               "Id": "GreenRain",
+               "ScheduleKey": "{{PP}}GreenRain",
+               "Priority": "Early +1",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, WEATHER Target GreenRain"
+
+            },
+			"{{PP}}Summer_20": {
+				"Id": "Summer_20",
+				"ScheduleKey": "{{PP}}Summer_20",
+				"Priority": "Early +2",
+				"Condition":"PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON_DAY summer 20"
+			},
+            "{{PP}}SpringMonTueWed": {
+               "Id": "SpringMonTueWed",
+               "ScheduleKey": "{{PP}}SpringMonTueWed",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, DAY_OF_WEEK Mon Tue Wed"
+
+            },
+
+			"{{PP}}SpringThuFriSat": {
+               "Id": "SpringThuFriSat",
+               "ScheduleKey": "{{PP}}SpringThuFriSat",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, !DAY_OF_WEEK Mon Tue Wed Sun"
+
+            },
+			"{{PP}}SpringSun": {
+               "Id": "SpringSun",
+               "ScheduleKey": "{{PP}}SpringSun",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, DAY_OF_WEEK Sun"
+
+            },
+			"{{PP}}SummerStorm": {
+               "Id": "SummerStorm",
+               "ScheduleKey": "{{PP}}SummerStorm",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON summer, WEATHER Target Storm"
+
+            },
+			"{{PP}}Summer": {
+               "Id": "Summer",
+               "ScheduleKey": "{{PP}}Summer",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON summer"
+
+            },
+			"{{PP}}FallBathhouseDay": {
+               "Id": "FallBathhouseDay",
+               "ScheduleKey": "{{PP}}FallBathhouseDay",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON fall, DAY_OF_WEEK Wed"
+
+            },
+
+			"{{PP}}Fall": {
+               "Id": "Fall",
+               "ScheduleKey": "{{PP}}Fall",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON fall"
+
+            },
+			"{{PP}}NightMarket": {
+               "Id": "NightMarket",
+               "ScheduleKey": "{{PP}}NightMarket",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON_DAY Winter 15 Winter 16 Winter 17"
+
+            },
+			"{{PP}}WinterSnow": {
+               "Id": "WinterSnow",
+               "ScheduleKey": "{{PP}}WinterSnow",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON Winter, WEATHER Target snow"
+
+            },
+			"{{PP}}Winter": {
+               "Id": "Winter",
+               "ScheduleKey": "{{PP}}Winter",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON Winter"
+
+            },
+
+
+         }
+
+      },
+	]
+}
+
+//format Time MapName Xcoord Ycoord Facing Animation StringDialogue
+// <time> [location] <tileX> <tileY> [facingDirection] [animation] [dialogue]
+//0	up 1right 2	down3	left
+//template for string dialogue \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"

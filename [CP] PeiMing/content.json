@@ -6,7 +6,7 @@
 			"Name": "IsOddYear",
 			"Value": "{{Query: {{Year}} % 2 = 1}}"
 		},
-//name token
+//name replacer tokens
 		{
 			"Name": "PeiMing",
 			"Value": "{{ModID}}_Peiming"
@@ -14,6 +14,10 @@
 		{
 			"Name": "PMHouse",
 			"Value": "{{ModID}}_PeiMingHouse"
+		},
+		{
+			"Name": "PP",
+			"Value": "{{ModID}}_PlatonicPartnerScheduleKey"
 		},
 
 
@@ -169,17 +173,7 @@
                 "House Location": "Alternate"
             }
 		},
-		/* {
-			"Name": "PartnershipStrings",
-			"Value": "Roommate",
-		},
 
-		{
-			"Name": "PartnershipStrings",
-			"Value": "Companion",
-			"When": { "Partnership": "Platonic Partnership",
-         "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true },
-		}, */
 
 //woods or beach visit during birthday
 		{ "Name": "WoodsOrBeach",
@@ -293,7 +287,7 @@
 
 //includes
 {
-    "LogName": "Pei Ming dispos",
+    "LogName": "Include Pei Ming dispos",
    	"Action": "Include",
    	"FromFile": "assets/data/dispos.json"
 },
@@ -303,7 +297,13 @@
    	"FromFile": "assets/data/gifttastes.json"
 },
 {
-    "LogName": "NPC Dialogue",
+	"LogName": "Include Custom Schedule keys",
+	"Action": "Include",
+	"When": { "Partnership": "Platonic Partnership"},
+	"FromFile": "assets/data/PlatonicPartnership/CustomScheduleKeys.json"
+},
+{
+    "LogName": "Include NPC Dialogue",
    	"Action": "Include",
 	"FromFile": "assets/data/dialogue.json"
 },
@@ -329,7 +329,27 @@
 	"FromFile":  "assets/data/Strings/StringsFromMaps.json" 
 },
 {
-    "LogName": "PeiMing Vanilla Schedule",
+	"LogName": "Include updated schedule when Pei Ming is roommate with config Platonic Partnership - Vanilla",
+	"Action": "Include",
+	"When": { 
+		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+		"House Location": "Vanilla, Alternate",
+		"Partnership": "Platonic Partnership",
+		"Roommate": "{{PeiMing}}" },
+	"FromFile": "assets/data/PlatonicPartnership/IgnoreMarriageScheduleVanilla.json"
+},
+{
+	"LogName": "Include updated schedule when Pei Ming is roommate with config Platonic Partnership - SVE",
+	"Action": "Include",
+	"When": { 
+		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+		"House Location": "SVE, Alternate",
+		"Partnership": "Platonic Partnership",
+		"Roommate": "{{PeiMing}}" },
+	"FromFile": "assets/data/PlatonicPartnership/IgnoreMarriageScheduleSVE.json"
+},
+{
+    "LogName": "PeiMing Vanilla Schedule include",
    	"Action": "Include",
 	"When": { 
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
@@ -338,12 +358,23 @@
 },
 		
 {
-    "LogName": "PeiMing SVE Schedule",
+    "LogName": "PeiMing SVE Schedule include",
    	"Action": "Include",
 	"When": { 
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 		"House Location": "SVE, Alternate" },
    	"FromFile": "assets/data/SVE/schedule.json"
+},
+
+{
+	"LogName": "Include updated partnership dialogue",
+	"Action": "Include",
+	"When": {
+            "Partnership": "Platonic Partnership",
+            "HasSeenEvent": "{{ModID}}_RoommateProposal",
+            "Roommate": "{{PeiMing}}",
+            },
+	"FromFile": "assets/data/PlatonicPartnership/UpdatedDialogue.json"
 },
 
 {
@@ -380,6 +411,22 @@
 	"Partnership":"Platonic Partnership"
 			},
 	"FromFile": "assets/data/PlatonicPartnership/ceremony.json"
+},
+{
+   	"LogName": "Festival Include SVE",
+   	"Action": "Include",
+	"When": {  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+					"Festival Participation": true,
+				 },
+   	"FromFile": "assets/data/SVE/Festivals.json"
+},
+{
+   	"LogName": "Festival Include Vanilla",
+   	"Action": "Include",
+	"When": {  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+					"Festival Participation": true,
+				 },
+   	"FromFile": "assets/data/Festivals.json"
 },
 {
 	"LogName": "Include Movie data",
@@ -442,24 +489,7 @@
 				"{{PeiMing}}_readPaper": "38/38 38 38 38 38 39 39 39 39/39",
 			}
 		},
-		
-//festivals
-{
-   		 "LogName": "Festival Include SVE",
-   		 "Action": "Include",
-		 "When": {  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
-					"Festival Participation": true,
-				 },
-   		 "FromFile": "assets/data/SVE/Festivals.json"
-   	 },
-{
-   		 "LogName": "Festival Include Vanilla",
-   		 "Action": "Include",
-		 "When": {  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
-					"Festival Participation": true,
-				 },
-   		 "FromFile": "assets/data/Festivals.json"
-   	 },
+	
 
 //quests
 //quest format: <"quest type/quest title/quest description in quest log/opt: additional quest instructions/opt: completion requirements/next quests for quest chain, add 0 for none/reward money in numbers/-1/can be cancelled (default false)/opt. Reaction dialogue for item delivery quests">

@@ -179,7 +179,7 @@
 		move farmer 0 1 3/pause 300/emote farmer 16/pause 500/
 		emote {{PeiMing}} 60/pause 500/speak {{PeiMing}} \"{{i18n:PM6HCont.4}}\"/pause 200/faceDirection {{PeiMing}} 1/pause 200/
 		speak {{PeiMing}} \"{{i18n:PM6HCont.5}}\"/pause 500/emote farmer 32/pause 500/
-		textAboveHead {{PeiMing}} \"{{i18n:PM6HCont.6}}\"/viewport 87 40 clamp false/pause 600/ignoreCollisions farmer/move farmer 0 -8 0/warp farmer -999 -999/textAboveHead {{PeiMing}} \"{{i18n:PM6HCont.7}}\"/pause 1000/textAboveHead {{PeiMing}} \"{{i18n:PM6HCont.8}}\"/pause 500/globalFade/viewport -999 -999/playSound waterSlosh/pause 300/playSound pullItemFromWater/eventSeen {{ModID}}_PM6H/end"
+		textAboveHead {{PeiMing}} \"{{i18n:PM6HCont.6}}\"/viewport 87 40 clamp false/pause 600/ignoreCollisions farmer/setRaining default true/move farmer 0 -8 0/warp farmer 1000 1000/textAboveHead {{PeiMing}} \"{{i18n:PM6HCont.7}}\"/pause 1000/textAboveHead {{PeiMing}} \"{{i18n:PM6HCont.8}}\"/pause 500/globalFade/viewport -999 -999/playSound waterSlosh/pause 300/playSound pullItemFromWater/eventSeen {{ModID}}_PM6H/end"
 
 
 
@@ -206,9 +206,9 @@
 	"Action": "EditData",
 	"Target": "Data/Events/{{PMHouse}}",
 	"Entries": {
-		"{{ModID}}_RoommateProposal": "{{ModId}}_HappyBGM/-1000 -1000/farmer 3 9 3 {{PeiMing}} 1 9 2/skippable/viewport 5 3 true/pause 100/speak {{PeiMing}} \"This tassel you gave me... it truly is some amazing craftsmenship.#$b# And my favorite color, too, hoho!$1\"/pause 300/emote farmer 32/pause 500/emote {{PeiMing}} 32/pause 500/speak {{PeiMing}} \"I must say, even if I still miss my old friends a lot, I am truly happy that we befriended each other as well.$1\"/pause 1000/{{DrinkingAnimation}}/emote farmer 40/pause 500/speak {{PeiMing}} \"Oh? There is something you wanted to tell me?\"/pause 300/quickQuestion \"What is it?\"#\"Would you like to be companions of sorts? [SETS PEI MING AS ROOMMATE/PLATONIC PARTNER]\"#\"I am glad the we became friends, too.[KEEP THE FRIENDSHIP AS IT IS]\"(break)switchEvent {{ModID}}_BecomeRoommates(break)switchEvent {{ModID}}_KeepFriendship",
+		"{{ModID}}_RoommateProposal": "{{ModId}}_HappyBGM/-1000 -1000/farmer 3 9 3 {{PeiMing}} 1 9 1/skippable/viewport 5 3 clamp false unfreeze/pause 100/speak {{PeiMing}} \"This tassel you gave me... it truly is some amazing craftsmenship.#$b# And my favorite color, too, hoho!$1\"/pause 300/emote farmer 32/pause 500/emote {{PeiMing}} 32/pause 500/speak {{PeiMing}} \"I must say, even if I still miss my old friends a lot, I am truly happy that we befriended each other as well.$1\"/pause 1000/{{DrinkingAnimation}}/emote farmer 40/pause 500/speak {{PeiMing}} \"Oh? There is something you wanted to tell me?\"/pause 300/quickQuestion \"What is it?\"#\"Would you like to be companions of sorts? [SETS PEI MING AS ROOMMATE/PLATONIC PARTNER]\"#\"I am glad the we became friends, too.[KEEP THE FRIENDSHIP AS IT IS]\"(break)switchEvent {{ModID}}_BecomeRoommates(break)switchEvent {{ModID}}_KeepFriendship",
 
-		"{{ModID}}_BecomeRoommates": "pause 10/setSkipActions MarkEventSeen current BecomeRoommates true/setEngaged {{PeiMing}} true 2/speak {{PeiMing}} \"Ha! Sure! As long as you don't expect me to latch onto you exclusively, I would like to accept your offer.\"/pause 300/emote farmer 32/pause 500/eventSeen BecomeRoommates/end",
+		"{{ModID}}_BecomeRoommates": "pause 10/setSkipActions MarkEventSeen current BecomeRoommates true/setEngaged {{PeiMing}} true 2/speak {{PeiMing}} \"Ha! Sure! As long as you don't expect me to latch onto you exclusively, I would like to accept your offer.\"/pause 300/emote farmer 32/pause 500/eventSeen BecomeRoommates/stopMusic/globalFade/viewport -999 -999/pause 300/playSound stardrop/message \"Pei Ming has accepted your offer of becoming companions! In two days, you will officially be recognized as such. Yay!\"/pause 200/end",
 
 		"{{ModID}}_KeepFriendship": "pause 10/speak {{PeiMing}} \"May our friendship last even throughout time and space. $6\"/pause 300/emote farmer 32/pause 500/end"
 	}
