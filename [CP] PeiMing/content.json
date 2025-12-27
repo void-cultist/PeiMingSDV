@@ -365,17 +365,12 @@
 		"House Location": "SVE, Alternate" },
    	"FromFile": "assets/data/SVE/schedule.json"
 },
-
 {
-	"LogName": "Include updated partnership dialogue",
+	"LogName": "Include Special Orders",
 	"Action": "Include",
-	"When": {
-            "Partnership": "Platonic Partnership",
-            "HasSeenEvent": "{{ModID}}_RoommateProposal",
-            "Roommate": "{{PeiMing}}",
-            },
-	"FromFile": "assets/data/PlatonicPartnership/UpdatedDialogue.json"
+	"FromFile": "assets/data/specialorders.json"
 },
+
 
 {
     "LogName": "Include PeiMing Schedule Strings",
@@ -502,7 +497,8 @@
 			"{{ModID}}_TalkWizard": "Location/{{i18n:TalkWizard.title}}/{{i18n:TalkWizard.text}}/{{i18n:TalkWizard.objective}}/WizardHouse/0/100/-1/false",
 			"{{ModID}}_PMSaloon": "Location/{{i18n:PMSaloon.title}}/{{i18n:PMSaloon.text}}/{{i18n:PMSaloon.objective}}/Saloon/0/0/-1/false",
 			"{{ModID}}_PMMountains": "Location/{{i18n:PMMountains.title}}/{{i18n:PMMountains.text}}/{{i18n:PMMountains.objective}}/Mountain/0/0/-1/false",
-			"{{ModID}}_NHMForPM": "ItemDelivery/{{i18n:NHMForPM.title}}/{{i18n:NHMForPM.text}}/{{i18n:NHMForPM.objective}}/{{PeiMing}} void.NorthernHeartMelon_NHMelon 1/0/10000/-1/false/{{i18n:NHMForPM.reaction}}"
+			"{{ModID}}_NHMForPM": "ItemDelivery/{{i18n:NHMForPM.title}}/{{i18n:NHMForPM.text}}/{{i18n:NHMForPM.objective}}/{{PeiMing}} void.NorthernHeartMelon_NHMelon 1/0/10000/-1/false/{{i18n:NHMForPM.reaction}}",
+			"{{ModID}}_PM7HQuest": "Location/Meeting up at the Saloon/Pei Ming wants to continue the conversation you had at the beach the other day./Meet Pei Ming at the Saloon at 18:00 during a rainy weekend day./Saloon/0/0/-1/false",
 		}
 },
 //mail
@@ -521,6 +517,8 @@
 	"{{ModID}}_NHMSeedsLetter": "{{i18n:NHMSeedsLetter.text}}%item id (O)void.NorthernHeartMelon_NHMSeeds 1%%%item quest {{ModID}}_NHMForPM true%%[#]{{i18n:NHMSeedsLetter.title}}",
 	"{{ModID}}_GlazedHeartMelonLetter": "{{i18n:GlazedHeartMelonLetter.text}}%item cookingRecipe void.NorthernHeartMelon_GlazedHeartMelon%%[#]{{i18n:GlazedHeartMelonLetter.title}}",
 	"{{ModID}}_MovingInLetter": "{{i18n:MovingInLetter.text}} [#]{{i18n:MovingInLetter.title}}",
+	"{{ModID}}_HuangjiuLetter": "{{i18n:HuangjiuLetter.text}}[#]{{i18n:HuangjiuLetter.title}}",
+	"{{ModID}}_PM7HSaloonLetter": "Greetings, @. ^^ I wish to continue our conversation from the other day. Why don't we meet up at the saloon at 18:00 during the weekend? I'd like to see you there. ^^ General Ming Guang, Martial God of the North%item quest {{ModID}}_PM7H true%%[#]Invitation to the Saloon",
 }},
 
 

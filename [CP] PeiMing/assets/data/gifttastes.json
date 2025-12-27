@@ -6,7 +6,7 @@
             "Action":"EditData",
             "Target":"Data/NPCGiftTastes",
             "Entries": {
-"{{ModId}}_Peiming": "{{i18n:GiftTastePeiMing.love}}/155 91 272 Cornucopia_CandiedCherries Cornucopia_ChocolateBanana Cornucopia_WinterRose Cornucopia_PrismaticRose Wildflour.AtelierGoods_Flavored_Chocolate_Truffles {{ModID}}_Tanghulu/ {{i18n:GiftTastePeiMing.like}}/348 430 445 454 432 64 637 814 Cornucopia_CandyApple Cornucopia_Rose Cornucopia_SpringRose Cornucopia_FallRose Cornucopia_SummerRose FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose/ {{i18n:GiftTastePeiMing.dislike}}/342/ {{i18n:GiftTastePeiMing.hate}} /109 {{ModId}}_WhatIsThis FlashShifter.StardewValleyExpandedCP_Bonefish/ {{i18n:GiftTastePeiMing.neutral}}/SkillBook_4/"
+"{{ModId}}_Peiming": "{{i18n:GiftTastePeiMing.love}}/155 91 272 Cornucopia_CandiedCherries Cornucopia_ChocolateBanana Cornucopia_WinterRose Cornucopia_PrismaticRose Wildflour.AtelierGoods_Flavored_Chocolate_Truffles {{ModID}}_Tanghulu void.NorthernHeartMelon_HeartMelonHuangjiu void.NorthernHeartMelon_NHMelon/ {{i18n:GiftTastePeiMing.like}}/348 430 445 454 432 64 637 814 Cornucopia_CandyApple Cornucopia_Rose Cornucopia_SpringRose Cornucopia_FallRose Cornucopia_SummerRose FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose/ {{i18n:GiftTastePeiMing.dislike}}/342/ {{i18n:GiftTastePeiMing.hate}} /109 {{ModId}}_WhatIsThis FlashShifter.StardewValleyExpandedCP_Bonefish/ {{i18n:GiftTastePeiMing.neutral}}/SkillBook_4/"
 						}
 
 

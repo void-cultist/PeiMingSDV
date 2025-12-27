@@ -42,9 +42,9 @@
 				"PeiMingRoommate.007": "{{i18n:PMRoommate7}}",
 			
 
-			//Partnership strings
-				"PeiMingPartner.000": "",
-				"PeiMingPartner.001": "",
+			//Partnership strings (when Platonic Partner enabled)
+				"PeiMingPartner.000": "{{i18n:CustomSchedule0}}",
+				"PeiMingPartner.001": "{{i18n:CustomSchedule1}}",
 			},
 		},
 		

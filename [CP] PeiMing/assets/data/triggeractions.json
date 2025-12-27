@@ -73,6 +73,24 @@
 									]
 
 				},
+		"{{ModID}}_Add_PM7HLetter":
+				{
+					"ID": "{{ModID}}_Add_PM7HLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Host {{ModID}}_PM6H, PLAYER_FRIENDSHIP_POINTS Current {{PeiMing}} 1750, WEATHER rainy",
+					"Actions": [
+						"AddMail Current {{ModID}}_PM7HLetter tomorrow"
+					]
+				},
+			"{{ModID}}_AddPM7HQuest":
+				{ 	"ID": "{{ModID}}_AddPM7HQuest",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_PM7HLetter Received", 
+					"Actions": [ 
+						"AddQuest {{ModID}}_PM7HQuest"
+									]
+
+				},
 		"{{ModID}}_Add_TanghuluRecipeLetter":
 				{
 					"ID": "{{ModID}}_Add_TanghuluRecipeLetter",
@@ -137,6 +155,15 @@
 						"AddMail Current {{ModID}}_GlazedHeartMelonLetter tomorrow"
 					]
 				},
+			"{{ModID}}_Add_HuangjiuLetter":
+				{
+					"ID": "{{ModID}}_Add_HuangjiuLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_SPECIAL_ORDER_COMPLETE current {{ModID}}_RefinedTastes",
+					"Actions": [
+						"AddMail Current {{ModID}}_Huangjiu tomorrow"
+					]
+				},		
 			}
 		 },
 

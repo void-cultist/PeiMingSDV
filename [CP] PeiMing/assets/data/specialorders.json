@@ -1,0 +1,117 @@
+{
+	"Changes": 
+    [
+		//custom context tag for special order use
+
+		{
+			"LogName": "Add context tag 'caviar",
+		   	"Action": "EditData",
+		   	"Target": "Data/Objects",
+		   	"TargetField": ["445", "ContextTags"],			
+		   	"Entries": {
+				  "#-1": "caviar_item"
+		   }
+		},
+		{
+			"LogName": "Add context tag 'aged roe",
+		   	"Action": "EditData",
+		   	"Target": "Data/Objects",
+		   	"TargetField": ["447", "ContextTags"],			
+		   	"Entries": {
+				  "#-1": "agedRoe_item"
+		   }
+		},
+			{
+			"LogName": "Add context tag 'wine_item",
+		   	"Action": "EditData",
+		   	"Target": "Data/Objects",
+		   	"TargetField": ["348", "ContextTags"],			
+		   	"Entries": {
+				  "#-1": "wine_item"
+		   }
+		},
+
+
+		{
+      "LogName": "Add PM Special orders", 
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "{{ModID}}_RefinedTastes": {
+		  	"Name": "{{i18n:SORefinedTastesName}}", 
+          	"Requester": "{{PeiMing}}",
+          	"Duration": "TwoWeeks", // options are TwoDays, ThreeDays, Week, TwoWeeks, or Month
+          	"Repeatable": "false", // Can be true or false
+          	"RequiredTags": "!season_spring, !season_summer, knows_{{PeiMing}}, event_{{ModID}}_PM7H", 
+			"OrderType": "",
+       		"SpecialRule": "",
+            "ItemToRemoveOnEnd": null,
+            "MailToRemoveOnEnd": null,
+            "RandomizedElements": null,
+			"Text": "{{i18n:SORefinedTastesText}}",
+			 "Objectives": [
+                {
+                  "Type": "Deliver",
+                  "Text": "{{i18n:SODeliverCaviar}}", 
+                  "RequiredCount": "1",
+                  "Data": {
+                    "AcceptedContextTags": "caviar_item",
+                    "Message": "{{i18n:SODeliverCaviarResponse}}", 
+                    "TargetName": "{{PeiMing}}"
+                  },
+				   },
+				  {
+                  "Type": "Deliver",
+                  "Text": "{{i18n:SODeliverAgedRoe.Text}}", 
+                  "RequiredCount": "3",
+                  "Data": {
+                    "AcceptedContextTags": "agedRoe_item",
+                    "Message": "{{i18n:SODeliverAgedRoe.Message}}", 
+                    "TargetName": "{{PeiMing}}"
+                  },
+				   },
+				     {
+                  "Type": "Deliver",
+                  "Text": "{{i18n:SODeliverWine.Text}}",
+                  "RequiredCount": "2",
+                  "Data": {
+                    "AcceptedContextTags": "wine_item",
+                    "Message": "{{i18n:SODeliverWine.Message}}", 
+                    "TargetName": "{{PeiMing}}"
+                  },
+				   },
+				     {
+                  "Type": "Deliver",
+                 "Text": "{{i18n:SODeliverSoup.Text}}",
+                  "RequiredCount": "5",
+                  "Data": {
+                    "AcceptedContextTags": "food_soup",
+                    "Message": "{{i18n:SODeliverSoup.Message}}", 
+                    "TargetName": "{{PeiMing}}"
+                  },
+				   },
+		],
+		   "Rewards": [
+                {
+                  "Type": "Money",
+                  "Data": {
+                    "Amount": "25000"
+                  }
+                },
+
+                {
+                  "Type": "Friendship",
+                  "Data": {
+					"Amount": 100, 
+    				"TargetName": "{{PeiMing}}" }
+				}
+              ]
+      }
+}
+
+		},
+		
+		
+	]
+} 
+

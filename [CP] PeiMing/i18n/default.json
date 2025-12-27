@@ -312,6 +312,7 @@
 "AcceptGift(O)852": "Impressive! Did you slay a dragon on your own?! $8",
 "AcceptGift(O)void.NorthernHeartMelon_Tassel": "Is that...$8#$b# Did you make this yourself?! This is such fine craftmenship.$8#$b# I am truly impressed!#$b#",
 "AcceptGift(O)void.NorthernHeartMelon_NHMelon": "A Northern Heart Melon! A sweet treat that is said to be able to change people's feelings towards the giver. #$b# And I might even like you a little more after receiving it!$1",
+"AcceptGift(O)void.NorthernHeartMelon_HeartMelonHuangjiu": "So you gave making your own huangjiu a try? $6#$b# I am impressed. I cannot wait to try this at home.",
 
 
 "GiftTastePeiMing.love": "Hoho! Now that is certainly a treat.",
@@ -321,6 +322,8 @@
 "GiftTastePeiMing.neutral": "I appreciate the gesture but I doubt I have use for this.",
 
 "Peiming_EngagedRoommate": "So you want this God of Love to move in with you? A bold step.#$b# But I like your courage, so let me accept. $1",
+"CustomSchedule1": "Ah, good morning, @! I think the town is lovely in Spring, don't you think? Especially the pink trees. $1",
+"CustomSchedule2": "I borrowed a history book from the library recently. I must say... #$b# a lot has happened. $8",
 
 //Conversation Topics
 "cc_Complete": "I heard you restored the village's Community Center. That is an impressive feat, @.#$b# Where I am from, this would have been reason enough for you to ascend to Godhood!$1",
@@ -481,6 +484,8 @@
 "PartnerDialogue3": "@! Good morning. Would you like to spar with me for morning workout?",
 "PartnerDialogue4": "Good morning, @. I brewed some fresh tea before you woke up - here you go. [(O)614 (O)Wildflour.AtelierGoods_Alchemist_Blend_Tea (O)Wildflour.AtelierGoods_Blueberry_Matcha_Tea (O)Wildflour.AtelierGoods_Cherry_Blossom_Matcha_Tea (O)Wildflour.AtelierGoods_Cookie_Jar_Tea (O)Wildflour.AtelierGoods_Good_Thyme_Tea (O)Wildflour.AtelierGoods_Happy_Harvest_Tea (O)Wildflour.AtelierGoods_North_Pole_Tea (O)Wildflour.AtelierGoods_Pelican_Fog_Tea (O)Wildflour.AtelierGoods_Plum_Chai_Tea (O)Wildflour.AtelierGoods_Positivitea_Tea (O)Wildflour.AtelierGoods_Sun_Room_Tea (O)Wildflour.AtelierGoods_Sunny_Delight_Tea (O)Wildflour.AtelierGoods_Flavored_Tea (O)DN.SnS_ancientsweettea (O)Rafseazz.RSVCP_Matcha_Latte]#$b#Why won't we enjoy it together?$6 #$e#",
 "PartnerDialogue5": "It is quite chilly outside. Why don't you take a hot beverage for the road? [(O)614 (O)StardropTea (O)253 (O)Cornucopia_Eggnog (O)Cornucopia_HotChocolate (O)void.NorthernHeartMelon_LoveTea]#$e#",
+"PartnerDialogue6": "Would you mind if I borrowed your horse for a ride, @? I promise to give it back to you in tip-top shape.",
+
 
 "Indoor_Day_0": "Try to not get into any trouble today, hm?#$b# We both know you have a talent for attracting that, hah!$6",
 
@@ -507,6 +512,19 @@
 "NHMForPM.objective": "Plant the seed in Winter and bring the harvested Northern Heart Melon to Pei Ming.",
 "NHMForPM.reaction": "Hoho! I can't believe the Northern Heart Melon managed to prosper on your farm!$1#$b# Thank you so much, @.$6",
 
+/////SPECIAL ORDER
+"SORefinedTastesName": "A Martial God's refined tastes",
+"SORefinedTastesText": "The valley has a lot of interesting food and drink options. I would love to try some to see if they suit my palate, freshly procured, of course. I will reward handsomely.",
+"SODeliverCaviar": "Deliver 1 Caviar to Pei Ming",
+"SODeliverCaviarResponse": "Caviar, a delicacy in many parts of the world. I wonder if it tastes just the way I remember it. #$b# Thank you, @!$h",
+"SODeliverAgedRoe.Text": "Deliver 3 Aged Roe to Pei Ming",
+"SODeliverAgedRoe.Message": "Aged roe, hm? It does look strange, but I do think it is quite tasty.",
+"SODeliverWine.Text": "Deliver 2 bottles of wine to Pei Ming",
+"SODeliverWine.Message": "I have always been quite fond of wine, but here, it is quite different from how I know it.#$b# I can't wait to sample it.",
+"SODeliverSoup.Text": "Deliver 5 bowls of soup to Pei Ming",
+"SODeliverSoup.Message": "Ah, sometimes, it's something as simple as a soup during a cold day to warm the soul. #$b# Thank you so much, @.",
+
+
 /////MAIL
 "WizardLetter.title": "So about this General...",
 "WizardLetter.text": "Hello, enlightened farmer @.^You have encountered the newcomer in the Forest. Let us talk about him.^Come to my abode as soon as you can.^ - Magnus R.",
@@ -528,6 +546,8 @@
 "GlazedHeartMelonLetter.text": "Greetings @! ^^ I would like to show you my gratitude for bringing me a fresh Northern Heart Melon. I am not a good cook but I added a recipe from my childhood made from this rare ingredient. Give it a try! ^^ - General Ming Guang, Martial God of the North",
 "MovingInLetter.title": "Renovations for Pei Ming",
 "MovingInLetter.text": "Dear @, ^^ Pei Ming approached me about adding more space to your farm so he can move in. Come see me in my workshop and we can talk about the details! ^^ Robin",
+"HuangjiuLetter.title": "Regarding my special order",
+"HuangjiuLetter.text": "Greetings, @. ^^ I have had time to taste the food and drink you brought me and I must say that I am quite impressed by the flavor and quality. I am curious whether or not you are capable of brewing Heart Melon Huangjiu with your means. Why don't you give it a try?^^ - General Ming Guang, Martial God of the North",
 
 //////SCHEDULE STRINGS
 "PeiMingHouse0": "Hoho, coming to see me at this time?$3",

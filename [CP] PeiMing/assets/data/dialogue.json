@@ -158,6 +158,7 @@
                 "AcceptGift_(O)852": "{{i18n:AcceptGift(O)852}}",
                 "AcceptGift_(O)void.NorthernHeartMelon_GiftableTassel": "{{i18n:AcceptGift(O)void.NorthernHeartMelon_Tassel}}$action spacechase0.SpaceCore_PlayEvent {{ModID}}_RoommateProposal true",
                 "AcceptGift(O)void.NorthernHeartMelon_NHMelon": "{{i18n:AcceptGift(O)void.NorthernHeartMelon_NHMelon}}",
+                "AcceptGift(O)void.NorthernHeartMelon_HeartMelonHuangjiu": "{{i18n:AcceptGift(O)void.NorthernHeartMelon_HeartMelonHuangjiu}}",
 
 				
                 //"dating"
@@ -332,39 +333,13 @@
 		},
         },
 
-        { //Updated Dialogue after Roommate proposal event 
-        "LogName": "Updated Dialogue after Roommate proposal",
-        "Action": "EditData",
-        "When": {
-            "Partnership": "Platonic Partnership",
-            "HasSeenEvent": "{{ModID}}_RoommateProposal",
-            "Roommate": "{{PeiMing}}",
-            },
-        "Target": "Characters/Dialogue/{{PeiMing}}",
-        "TextOperations": [
-            {
-            "Operation": "RemoveDelimited",
-            "Target": ["Entries", "spring_Mon", "spring_Tue", "winter_Thu"],
-            "Search": "{{i18n:Spring{{Random:{{Range:1,4}}}}}} {{i18n:Winter{{Random:{{Range:1,5}}}}}}", 
-            "Delimiter": " "
-            },
-        ],
-        "Entries": { 
-        "{{PeiMing}}": {
-            "spring_Mon": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
-            "spring_Tue": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
-            "winter_Thu": "{{i18n:PartnerDialogue6}}",
-        }
-    }
-    },
 
-    /* shouldn't be required but will edit it if ignore schedule doesnt work    
     { "LogName":   "Partnership Dialogue",
             "Action": "EditData",
             "Target": "Characters/Dialogue/MarriageDialogue{{PeiMing}}Roommate",
-            "When":  { "Spiderbuttons.CMCT/Config:aedenthorn.HugsAndKisses, RoommateKisses": true,
+            "When":  { 
             "Partnership": "Platonic Partnership",
-                        "Roommate": "{{PeiMing}}", },
+                        "Roommate": "{{PeiMing}}"},
             "Entries": {
                 "Spring_{{PeiMing}}": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
                 "Summer_{{PeiMing}}": "{{i18n: PartnerDialogue{{Random: {{Range:1,4}} }} }}",
@@ -436,7 +411,7 @@
                 "Bad_9": "Hoho!",
             }
         }
-     */
+     
     ]
 }
 

@@ -10,7 +10,7 @@
   },
    "Dependencies": [
     {"UniqueID": "Spiderbuttons.CustomScheduleKeys",
-  "IsRequired: true "},
+  "IsRequired": true },
   
     {"UniqueID": "spacechase0.SpaceCore",
   "IsRequired": true, },
