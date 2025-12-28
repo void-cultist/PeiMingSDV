@@ -382,6 +382,10 @@
 "AfterFirstMeeting_Claire": "Gods descending from the sky? Sure, why not. Can they also end retail jobs once and for all?",
 "AfterFirstMeeting_Andy": "Yoba almighty, just what was that loud noise across my farm?",
 
+"PM7HCT_Elliott": "I heard the story Pei Ming told you in the saloon recently. #$b# I joined him after you left, so he would not spiral into some bad thoughts. #$b# We had a couple of drinks, too. $h",
+"PM7HCT_Emily": "I couldn't help but listen to the story Pei Ming told you while you two were sitting in the bar the other day. #$b# I wonder if we could help him, somehow? Maybe there's a crystal for that?",
+"PM7HCT_Gus": "Poor Pei Ming. #$b# For as long as he stays here, he will always be welcome in my humble saloon.",
+
 ////////roommate dialogue
 //moving in accept
 "PeimingRoommate0": "What an interesting choice to make. But remember that I can't cook at all. $1",
@@ -479,12 +483,40 @@
 "PeimingEngaged0": "What an interesting choice to make. But remember that I can't cook at all. $1",
 "PeimingEngaged1": "Maybe one day, I can show you my palace. #$e# But do not expect me to cling to your side all the time. I am too much of a free spirit to do so. #$e# So, are there any retainers living in your house? No? How strange.",
 
+//neutral dialogue for partner and roommate
 "PartnerDialogue1": "You know that I am a free spirit. We don't need to cling to each other day and night. #$b# So don't mind me if I wander around the valley.",
 "PartnerDialogue2": "@! Up bright and early, are you?$1#$b# Do you need some help on the farm today? Say the word, and consider it done by yours truly.$3#$e#",
 "PartnerDialogue3": "@! Good morning. Would you like to spar with me for morning workout?",
 "PartnerDialogue4": "Good morning, @. I brewed some fresh tea before you woke up - here you go. [(O)614 (O)Wildflour.AtelierGoods_Alchemist_Blend_Tea (O)Wildflour.AtelierGoods_Blueberry_Matcha_Tea (O)Wildflour.AtelierGoods_Cherry_Blossom_Matcha_Tea (O)Wildflour.AtelierGoods_Cookie_Jar_Tea (O)Wildflour.AtelierGoods_Good_Thyme_Tea (O)Wildflour.AtelierGoods_Happy_Harvest_Tea (O)Wildflour.AtelierGoods_North_Pole_Tea (O)Wildflour.AtelierGoods_Pelican_Fog_Tea (O)Wildflour.AtelierGoods_Plum_Chai_Tea (O)Wildflour.AtelierGoods_Positivitea_Tea (O)Wildflour.AtelierGoods_Sun_Room_Tea (O)Wildflour.AtelierGoods_Sunny_Delight_Tea (O)Wildflour.AtelierGoods_Flavored_Tea (O)DN.SnS_ancientsweettea (O)Rafseazz.RSVCP_Matcha_Latte]#$b#Why won't we enjoy it together?$6 #$e#",
 "PartnerDialogue5": "It is quite chilly outside. Why don't you take a hot beverage for the road? [(O)614 (O)StardropTea (O)253 (O)Cornucopia_Eggnog (O)Cornucopia_HotChocolate (O)void.NorthernHeartMelon_LoveTea]#$e#",
 "PartnerDialogue6": "Would you mind if I borrowed your horse for a ride, @? I promise to give it back to you in tip-top shape.",
+"PartnerDialogue7": "When I still lived in the Cindersap Forest, the sound of the rushing creek was so relaxing. We should go there together one day, @.",
+"PartnerDialogue8": "Hm... Do you think these mortal robes you're wearing would suit me? #$b# They're so… plain. No offense. Maybe we should get you a hanfu instead so we could match, haha!",
+"PartnerDialogue9": "Caroline borrowed me some of her favourite novels to read. I must say, her taste in literature is... riveting. Would you like to read one of them, @?",
+"PartnerDialogue10": "I couldn't sleep at night so I roamed on the farm a bit.#$b# Yes, I took care of the monsters that were trying to eat your crops. #$b# No, you don't need the details. #$b# Yes, I looked impeccable as always. $3",
+"PartnerDialogue11": "I'll go check the mines today, maybe get some exercise while I'm at it. Don't wait up, @!",
+"PartnerDialogue12": "I saw an advertisement on the TV this morning. 'Travel with us to go places' #$b# ...isn't that what travelling is for in the first place?",
+"PartnerDialogue13": "The sauna is far from being on the same level as my favourite hot springs, but hey, I can't complain $1. #$b# Although, I think I know a way to make it more bearable...$3#$b# %[Pei Ming nudges you with a smug smile].",
+"PartnerDialogue14": "@, do you feel fine? You look a bit pale. Why won't you take it easy for today, hm?",
+"PartnerDialogue15": "Leah invited me for one of her drink and paint outings. Do you want to join us? #$b# You'll get to laugh at my painting skills, @! $1",
+"PartnerDialogue16": "That ancient sword that you donated to the museum? Yeah, the craftsmanship is nice. #$b# But why does it have to be all front and center? I swear, Gunther did it on purpose...$7",
+"PartnerDialogue17": "I'm still trying to get used to a slower lifestyle. #$b# No prayers to listen to, no powerful monsters to fight... #$b# The lack of an active communication array to keep me updated. Not even during my mortal life had I had as much free time as I do now.",
+"PartnerDialogue18": "The weather feels nice today. Maybe we should spend the day together, @?",
+
+//platonic partner exclusive
+
+"PartnerDialogue19": "I had no heart to wake you up early today. You looked extra comfortable, with %pet snuggled up to you.",
+"PartnerDialogue20": "Going out already? Keep your wits about, @.  Although I am but one call away, I do not wish to see you hurt from your outings.",
+"PartnerDialogue21": "While I like spending most of my time outside, please remember that coming back home always brings me comfort. #$b# Knowing that you'll be here makes our companionship important to me.",
+"PartnerDialogue22": "Hey, @. Do you need anything before I go out? I can stop by at Pierre's on my way back to the farm.",
+"PartnerDialogue23": "While I do not get the idea of sitting in a dark room and staring at the moving pictures at the screen, I suppose I'd be interested in going to the movies with you. #$b# This venerable one can even win you some prizes at those mysterious machines, heh. $3",
+"PartnerDialogue24": "I must admit that even though silence is not comfortable to me, I do not mind sharing it with you, @. Thank you.",
+"PartnerDialogue25": "I like what you did with the interior of the house, @. #$b# I do not possess such skill to make this place look as welcoming as it is right now $1.",
+"PartnerDialogue26": "If anything bothers you, I will always listen to your worries. #$b# However, I can't promise I'll give you good advice, but hey, #$b# I can always teach you how to beat someone up with a stick, hoho! $9",
+"PartnerDialogue27": "Knowing you, you are not going to stay inside despite the rain, are you? That's commendable.$6#$b# This is why we get along so well.",
+
+
+
 
 
 "Indoor_Day_0": "Try to not get into any trouble today, hm?#$b# We both know you have a talent for attracting that, hah!$6",

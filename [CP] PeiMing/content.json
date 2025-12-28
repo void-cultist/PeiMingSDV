@@ -200,6 +200,10 @@
 		"Name": "DrinkingAnimation",
 		"Value": "animate {{PeiMing}} false false 600 16 16 16 16 16 16 16 17 17 18 18 19 19 19 19 19 18 18 17 17 16 16 16 16 16 16"
 	},
+	{
+		"Name": "BeerAnimation",
+		"Value": "animate {{PeiMing}} false true 600 16 16 16 16 16 16 16 17 17 18 18 19 19 19 19 19 18 18 17 17 16 16 16 20 20 21 21 22 22 20 22 20 22 20 22 16"
+	},
 //Saloon or Mountains?
 
 	{	

@@ -51,7 +51,9 @@
 "Action": "EditData",
 "Target": "Characters/Dialogue/Elliott",
 "Entries":{
-	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Elliott}}"
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Elliott}}",
+	"{{ModID}}_PM7HCT": "{{i18n:PM7HCT_Elliott}}"
+
 },
 },
 
@@ -60,7 +62,8 @@
 "Action": "EditData",
 "Target": "Characters/Dialogue/Emily",
 "Entries":{
-	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Emily}}"
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Emily}}",
+	"{{ModID}}_PM7HCT": "{{i18n:PM7HCT_Emily}}"
 },
 },
 
@@ -87,7 +90,8 @@
 "Action": "EditData",
 "Target": "Characters/Dialogue/Gus",
 "Entries":{
-	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Gus}}"
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Gus}}",
+	"{{ModID}}_PM7HCT": "{{i18n:PM7HCT_Gus}}"
 },
 },
 
