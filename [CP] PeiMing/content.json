@@ -502,7 +502,6 @@
 			"{{ModID}}_PMSaloon": "Location/{{i18n:PMSaloon.title}}/{{i18n:PMSaloon.text}}/{{i18n:PMSaloon.objective}}/Saloon/0/0/-1/false",
 			"{{ModID}}_PMMountains": "Location/{{i18n:PMMountains.title}}/{{i18n:PMMountains.text}}/{{i18n:PMMountains.objective}}/Mountain/0/0/-1/false",
 			"{{ModID}}_NHMForPM": "ItemDelivery/{{i18n:NHMForPM.title}}/{{i18n:NHMForPM.text}}/{{i18n:NHMForPM.objective}}/{{PeiMing}} void.NorthernHeartMelon_NHMelon 1/0/10000/-1/false/{{i18n:NHMForPM.reaction}}",
-			"{{ModID}}_PM7HQuest": "Location/Meeting up at the Saloon/Pei Ming wants to continue the conversation you had at the beach the other day./Meet Pei Ming at the Saloon at 18:00 during a rainy weekend day./Saloon/0/0/-1/false",
 		}
 },
 //mail
@@ -522,7 +521,9 @@
 	"{{ModID}}_GlazedHeartMelonLetter": "{{i18n:GlazedHeartMelonLetter.text}}%item cookingRecipe void.NorthernHeartMelon_GlazedHeartMelon%%[#]{{i18n:GlazedHeartMelonLetter.title}}",
 	"{{ModID}}_MovingInLetter": "{{i18n:MovingInLetter.text}} [#]{{i18n:MovingInLetter.title}}",
 	"{{ModID}}_HuangjiuLetter": "{{i18n:HuangjiuLetter.text}}[#]{{i18n:HuangjiuLetter.title}}",
-	"{{ModID}}_PM7HSaloonLetter": "Greetings, @. ^^ I wish to continue our conversation from the other day. Why don't we meet up at the saloon at 18:00 during the weekend? I'd like to see you there. ^^ General Ming Guang, Martial God of the North%item quest {{ModID}}_PM7H true%%[#]Invitation to the Saloon",
+	"{{ModID}}_PM7HSaloonLetter": "{{i18n:PM7HSaloonLetter.text}}%item quest {{ModID}}_PM7HQuest true%%[#]{{i18n:PM7HSaloonLetter.title}}",
+	"{{ModID}}_TanghuluInvite": "Hello, @! ^^ I would like to invite you to making tanghulu with me at my house, since you have been kind enough to procure all the ingredients. Feel free to come over around 10 in the morning! ^^ General Ming Guang, Martial God of the North[#]Making Tanghulu"
+
 }},
 
 

@@ -30,10 +30,20 @@
 				  "#-1": "wine_item"
 		   }
 		},
+    	{
+			"LogName": "Add context tag 'sugar_item",
+		   	"Action": "EditData",
+		   	"Target": "Data/Objects",
+		   	"TargetField": ["245", "ContextTags"],			
+		   	"Entries": {
+				  "#-1": "sugar_item"
+		   }
+		},
+     	
 
 
 		{
-      "LogName": "Add PM Special orders", 
+      "LogName": "Add PM Special orders - Refined Tastes", 
       "Action": "EditData",
       "Target": "Data/SpecialOrders",
       "Entries": {
@@ -110,6 +120,84 @@
 }
 
 		},
+
+{ "LogName": "Add PM Special orders - Tanghulu ingredients", 
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "{{ModID}}_TanghuluIngredients": {
+		  	"Name": "{{i18n:SOTanghuluIngredientsName}}", 
+          	"Requester": "{{PeiMing}}",
+          	"Duration": "Month",
+          	"Repeatable": "false", // Can be true or false
+          	"RequiredTags": "season_spring, season_summer, knows_{{PeiMing}}, event_{{ModID}}_PM4H", 
+			"OrderType": "",
+       		"SpecialRule": "",
+            "ItemToRemoveOnEnd": null,
+            "MailToRemoveOnEnd": null,
+            "RandomizedElements": null,
+			"Text": "{{i18n:TanghuluIngredientsText}}",
+			 "Objectives": [
+                {
+                  "Type": "Deliver",
+                  "Text": "{{i18n:SODeliverSugar}}", 
+                  "RequiredCount": "20",
+                  "Data": {
+                    "AcceptedContextTags": "sugar_item",
+                    "Message": "{{i18n:SODeliverSugarResponse}}", 
+                    "TargetName": "{{PeiMing}}"
+                  },
+				   },
+				  {
+                  "Type": "Deliver",
+                  "Text": "{{i18n:SODeliverSweetGemBerry.Text}}", 
+                  "RequiredCount": "6",
+                  "Data": {
+                    "AcceptedContextTags": "id_o_417",
+                    "Message": "{{i18n:SODeliverSweetGemBerry.Message}}", 
+                    "TargetName": "{{PeiMing}}"
+                  },
+				   },
+				     {
+                  "Type": "Deliver",
+                  "Text": "{{i18n:SODeliverFruit.Text}}",
+                  "RequiredCount": "10",
+                  "Data": {
+                    "AcceptedContextTags": "category_fruits",
+                    "Message": "{{i18n:SODeliverFruit.Message}}", 
+                    "TargetName": "{{PeiMing}}"
+                  },
+				   },
+				     {
+                  "Type": "Deliver",
+                 "Text": "{{i18n:SODeliverBerries.Text}}",
+                  "RequiredCount": "20",
+                  "Data": {
+                    "AcceptedContextTags": "id_o_417, id_o_396, id_o_400, id_o_410, id_o_258",
+                    "Message": "{{i18n:SODeliverBerries.Message}}", 
+                    "TargetName": "{{PeiMing}}"
+                  },
+				   },
+		],
+		   "Rewards": [
+                {
+                  "Type": "Money",
+                  "Data": {
+                    "Amount": "30000"
+                  }
+                },
+
+                {
+                  "Type": "Friendship",
+                  "Data": {
+					"Amount": 100, 
+    				"TargetName": "{{PeiMing}}" }
+				}
+              ]
+      }
+}
+}
+
 		
 		
 	]
