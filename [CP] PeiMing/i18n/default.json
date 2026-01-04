@@ -376,8 +376,7 @@
 "GiftTastePeiMing.neutral": "I appreciate the gesture but I doubt I have use for this.",
 
 "Peiming_EngagedRoommate": "So you want this God of Love to move in with you? A bold step.#$b# But I like your courage, so let me accept. $1",
-"CustomSchedule1": "Ah, good morning, @! I think the town is lovely in Spring, don't you think? Especially the pink trees. $1",
-"CustomSchedule2": "I borrowed a history book from the library recently. I must say... #$b# a lot has happened. $8",
+
 
 //Conversation Topics
 "cc_Complete": "I heard you restored the village's Community Center. That is an impressive feat, @.#$b# Where I am from, this would have been reason enough for you to ascend to Godhood!$1",
@@ -492,10 +491,10 @@
 "Good_0": "I am grateful for having a friend such as you, even if our lives have been so very different.",
 "Good_1": "Should you ever stumble into my time and space, just pray to one of my statues, okay? $3#$b# As soon as I hear from you, I'll appoint you as a deity! $9",
 "Good_2": "%Pei Ming seems to be in a good mood and is humming a melody to himself. #$e# %Upon listening closely, you realize with shock... #$b# %...that it's 'Rick Astley - Never Gonna Give You Up'",
-"Good_3": "Hey, <Player Name>. You should be proud of what you've achieved on this farm. Good job maintaining all that for so long!",
+"Good_3": "Hey, @. You should be proud of what you've achieved on our farm. Good job maintaining all that for so long!",
 "Good_4": "The tassel you gave me? I keep it on me at all times. It reminds me of good things.",
 "Good_5": "You...$#b# ...need to give me cooking lessons one of these days.$4",
-"Good_6": "Should we start thinking about expanding this plot of land a bit? Hoho!",
+"Good_6": "Should we start thinking about expanding our plot of land a bit? Hoho!",
 "Good_7": "Would you like to watch my morning routine? I can show you some cool blade tricks, @!",
 "Good_8": "I would love to introduce you to some of my friends one day, @.$1#$b# I'm sure you would enjoy their company, just as much as I'm enjoying yours.$6",
 "Good_9": "$y If I ever were to return to my realm, would you like to come with me?_Temporarily, yes._Understandable. I would show you my palace and all kinds of sights then._No, I'd rather stay here._Too bad, but I can't blame you. Things are very different in my home realm.",
@@ -535,7 +534,7 @@
 
 "SpouseFarmhouseClutter": "Someone should tidy up. Do you have any deputies to help?",
 "Spouse_MonstersInHouse": "Let me take care of these monsters! Huh? No?",
-"SpouseStardrop": "hoho",
+"SpouseStardrop": "Oh!",
 "RejectMermaidPendant_NeedHouseUpgrade": "Do you think a small shack such as yours is enough for someone like me? Please.",
 "RejectMermaidPendant_NotDatable": "I don't deem this necessary. And I frankly am not interested.",
 "RejectMermaidPendant_Under8Hearts": "This is not a commitment I am willing to make.",
@@ -559,13 +558,13 @@
 "PartnerDialogue4": "Good morning, @. I brewed some fresh tea before you woke up - here you go. [(O)614 (O)Wildflour.AtelierGoods_Alchemist_Blend_Tea (O)Wildflour.AtelierGoods_Blueberry_Matcha_Tea (O)Wildflour.AtelierGoods_Cherry_Blossom_Matcha_Tea (O)Wildflour.AtelierGoods_Cookie_Jar_Tea (O)Wildflour.AtelierGoods_Good_Thyme_Tea (O)Wildflour.AtelierGoods_Happy_Harvest_Tea (O)Wildflour.AtelierGoods_North_Pole_Tea (O)Wildflour.AtelierGoods_Pelican_Fog_Tea (O)Wildflour.AtelierGoods_Plum_Chai_Tea (O)Wildflour.AtelierGoods_Positivitea_Tea (O)Wildflour.AtelierGoods_Sun_Room_Tea (O)Wildflour.AtelierGoods_Sunny_Delight_Tea (O)Wildflour.AtelierGoods_Flavored_Tea (O)DN.SnS_ancientsweettea (O)Rafseazz.RSVCP_Matcha_Latte] #$b# Why won't we enjoy it together?$6 #$e# ",
 "PartnerDialogue5": "I like this little patio you allowed me to have. Listening to the fountain and the birds is almost poetic.",
 "PartnerDialogue6": "Would you mind if I borrowed your horse for a ride, @? I promise to give it back to you in tip-top shape.",
-"PartnerDialogue7": "When I still lived in the Cindersap Forest, the sound of the rushing creek was so relaxing. We should go there together one day, @.",
+"PartnerDialogue7": "When I still lived in the Cindersap Forest, the sound of the rushing creek was so relaxing. We should go there again together one day, @.",
 "PartnerDialogue8": "Hm... Do you think these mortal robes you're wearing would suit me? #$b# They're so… plain. No offense. Maybe we should get you a hanfu instead so we could match, haha!",
 "PartnerDialogue9": "Caroline borrowed me some of her favourite novels to read. I must say, her taste in literature is... riveting. Would you like to read one of them, @?",
 
 "PartnerDialogue10": "I couldn't sleep at night so I roamed on the farm a bit.#$b# Yes, I took care of the monsters that were trying to eat your crops. #$b# No, you don't need the details. #$b# Yes, I looked impeccable as always. $3",
 "PartnerDialogue11": "I'll go check the mines today, maybe get some exercise while I'm at it. Don't wait up, @!",
-"PartnerDialogue12": "I saw an advertisement on the TV this morning. 'Travel with us to go places' #$b# ...isn't that what travelling is for in the first place?",
+"PartnerDialogue12": "I saw an advertisement on TV this morning. 'Travel with us to go places' #$b# ...isn't that what travelling is for in the first place?",
 "PartnerDialogue13": "The sauna is far from being on the same level as my favourite hot springs, but hey, I can't complain $1. #$b# Although, I think I know a way to make it more bearable...$3#$b# %[Pei Ming nudges you with a smug smile].",
 "PartnerDialogue14": "@, do you feel fine? You look a bit pale. Why won't you take it easy for today, hm?",
 "PartnerDialogue15": "I spent a nice day outside but I am always glad to return to you, my dear companion. $1",
@@ -577,11 +576,11 @@
 
 "PartnerDialogue19": "I had no heart to wake you up early today. You looked extra comfortable, with %pet snuggled up to you.",
 "PartnerDialogue20": "Going out already? Keep your wits about, @.  Although I am but one call away, I do not wish to see you hurt from your outings.",
-"PartnerDialogue21": "While I like spending most of my time outside, please remember that coming back home always brings me comfort. #$b# Knowing that you'll be here makes our companionship important to me.",
+"PartnerDialogue21": "While I like spending most of my time outside, please remember that coming back home always brings me comfort. #$b# Knowing that you'll be there makes our companionship important to me.",
 "PartnerDialogue22": "Hey, @. Do you need anything before I go out? I can stop by at Pierre's on my way back to the farm.",
 "PartnerDialogue23": "While I do not get the idea of sitting in a dark room and staring at the moving pictures at the screen, I suppose I'd be interested in going to the movies with you. #$b# This venerable one can even win you some prizes at those mysterious machines, heh. $3",
 "PartnerDialogue24": "I must admit that even though silence is not comfortable to me, I do not mind sharing it with you, @. Thank you.",
-"PartnerDialogue25": "I like what you did with the interior of the house, @. #$b# I do not possess such skill to make this place look as welcoming as it is right now $1.",
+"PartnerDialogue25": "I like what you did with the interior of the house, @. #$b# I do not possess such skill to make any place look as welcoming as our farm does right now $1.",
 "PartnerDialogue26": "If anything bothers you, I will always listen to your worries. #$b# However, I can't promise I'll give you good advice, but hey, #$b# I can always teach you how to beat someone up with a stick, hoho! $9",
 "PartnerDialogue27": "Knowing you, you are not going to stay inside despite the rain, are you? That's commendable.$6#$b# This is why we get along so well.",
 "PartnerDialogue28": "@! Isn't this the perfect weather to make some tanghulu together?$1",
@@ -594,6 +593,9 @@
 "funLeave1": "I will be out today - try to not pass out in the dirt again, hm?#$e# Oh, don't make that face, @! I wouldn't be teasing you about it if that had not happened four times by now!$1",
 "funLeave2": "I think I will take a stroll through the valley today - should I find something interesting, I will make sure to bring it back. #$e# Hm? What do you mean? We have enough cryst- #$b# Preposterous! $8#$b# There's never enough of these beautiful gems to display on these shelves! #$e#",
 "funLeave3": "Leah invited me for one of her drink and paint outings. Do you want to join us? #$b# You'll get to laugh at my painting skills, @! $1",
+
+"CustomSchedule0": "Ah, good morning, @! I think the town is lovely in Spring, don't you think? Especially the pink trees. $1",
+"CustomSchedule1": "I borrowed a history book from the library recently. I must say... #$b# a lot has happened. $8",
 
 /////QUESTS
 "TalkWizard.title": "The 'Heavenly' Newcomer",

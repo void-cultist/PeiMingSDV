@@ -42,9 +42,34 @@
 				"PeiMingRoommate.007": "{{i18n:PMRoommate7}}",
 			
 
-			//Partnership strings (when Platonic Partner enabled)
+			//Partnership strings for new schedule (when Platonic Partner enabled)
 				"PeiMingPartner.000": "{{i18n:CustomSchedule0}}",
-				"PeiMingPartner.001": "{{i18n:CustomSchedule1}}",
+				"PeiMingPartner.001": "{{Random: {{i18n:CustomSchedule1}} && {{18n:Neutral_6}} |inputSeparator=&&}}", //when in library
+				"PeiMingPartner.002": "{{Random: {{i18n:Outdoor_4}} && {{i18n:Good_2}} && {{i18n:Good_4}} && {{i18n:Good_9}} && {{i18n:Outdoor_Peiming}} |inputSeparator=&& }}",
+				"PeiMingPartner.003": "{{Random: {{i18n:PartnerDialogue14}} && {{i18n:PartnerDialogue16}} && {{PartnerDialogue19}} |inputSeparator=&&}}",
+				"PeiMingPartner.004": "{{Random: {{i18n:PartnerDialogue20}} && {{i18n:PartnerDialogue24}} && {{i18n:PartnerDialogue26}} |inputSeparator=&&}}",
+
+				"PeiMingPartnerRainy.000": "{{Random: {{i18n:Rainy_Day_{{Random: {{Range:0,4}} }} }} && {{i18n:PartnerDialogue12}} |inputSeparator=&& }}",
+				"PeiMingPartnerRainy.001": "{{Random: {{i18n:PartnerDialogue21}} && {{i18n:PartnerDialogue27}} |inputSeparator=&& }}",
+
+				"PeiMingPartnerBathHouse.000": "{{Random: {{i18n:PartnerDialogue13}} && {{i18n:Good_8}} && {{i18n:Good_9}} && {{i18n:Neutral_5}} |inputSeparator=&& }}",
+
+				"PeiMingPartnerMines.000": "{{Random: {{i18n:Good_11}} && {{i18n:Rainy_Day_5}} |inputSeparator=&& }}",
+
+				"PeiMingPartnerOutdoor.000": "{{Random: {{i18n:Outdoor_0}} && {{i18n:Outdoor_1}} |inputSeparator=&& }}",
+				"PeiMingPartnerOutdoor.001": "{{Random: {{i18n:Outdoor_2}} && {{i18n:Outdoor_3}} |inputSeparator=&& }}",
+
+				"PeiMingPartnerSummer.000": "{{Random: {{i18n:PartnerDialogue9}} && {{i18n:PartnerDialogue15}} && {{i18n:PartnerDialogue17}} && {{18n:PartnerDialogue18}} |inputSeparator=&&}}",
+
+				"PeiMingPartnerSaloon.000": "{{Random: {{i18n:PartnerDialogue23}} && {{i18n:funLeave3}} && {{i18n:Indoor_Night_1}} && {{i18n:Indoor_Night_4}} |inputSeparator=&& }}",
+
+				"PeiMingPartnerIndoorNight.000": "{{Random: {{i18n:Indoor_Night_0}} && {{i18n:Indoor_Night_{{Random: {{Range:3,5}} }} }} && {{i18n:PartnerDialogue15}} |inputSeparator=&& }}",
+				
+				"PeiMingPartnerWinter.000": "{{i18n: PartnerDialogue{{Random: {{Range:1,3}} }} }}",
+				"PeiMingPartnerWinter.001": "{{Random: {{i18n:PartnerDialogue4}} && {{i18n:PartnerDialogue19}} && {{i18n:PartnerDialogue24}} && {{i18n:PartnerDialogue25}} && {{i18n:Good_10}} |inputSeparator=&& }}",
+				"PeiMingPartnerWinterSnow.000": "{{Random: {{i18n:Winter_Peiming}} && {{i18n:Indoor_Day_5}} |inputSeparator=&&}}",
+				
+
 			},
 		},
 		

@@ -262,14 +262,14 @@
 			"Description": "Whether Pei Ming behaves like a vanilla roommate or a platonic partner after moving in. Suggestion: use Platonic Partnership with the Mod 'Hugs and Kisses' with 'RoommateKisses' enabled!",
 			"Section": "Relationship"
 		},
-		"Ceremony":
+	/* 	"Ceremony":
 		{	"AllowValues": "true, false",
 			"Default": false,
 			"AllowBlank": false,
 			"Description": "Whether or not you want to celebrate your companionship with a platonic ceremony (like a Wedding event).",
 			"Section": "Platonic Partnership exclusive",
 
-		},
+		}, */
 		/* "Farm Upgrades":
 		{
 			"AllowValues": "Farmhouse Renovation, Farm Building",
@@ -339,7 +339,7 @@
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
 		"House Location": "Vanilla, Alternate",
 		"Partnership": "Platonic Partnership",
-		"Roommate": "{{PeiMing}}" },
+		"HasSeenEvent |contains={{ModID}}_BecomeRoommates": true },
 	"FromFile": "assets/data/PlatonicPartnership/IgnoreMarriageScheduleVanilla.json"
 },
 {
@@ -349,7 +349,7 @@
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 		"House Location": "SVE, Alternate",
 		"Partnership": "Platonic Partnership",
-		"Roommate": "{{PeiMing}}" },
+		"HasSeenEvent |contains={{ModID}}_BecomeRoommates": true },
 	"FromFile": "assets/data/PlatonicPartnership/IgnoreMarriageScheduleSVE.json"
 },
 {
@@ -403,14 +403,14 @@
 	"Action": "Include",
 	"FromFile": "assets/data/spawnables.json"
 },
-{ 
+/* { 
 	"LogName": "Include Companionship ceremony (Event)",
 	"Action": "Include",
 	"When":  {
 	"Partnership":"Platonic Partnership"
 			},
 	"FromFile": "assets/data/PlatonicPartnership/ceremony.json"
-},
+}, */
 {
    	"LogName": "Festival Include SVE",
    	"Action": "Include",

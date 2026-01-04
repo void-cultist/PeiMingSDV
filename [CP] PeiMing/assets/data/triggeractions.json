@@ -82,7 +82,15 @@
 						"AddMail Current {{ModID}}_PM7HLetter tomorrow"
 					]
 				},
-			
+		"{{ModID}}_Add_TanghuluInviteLetter":
+				{
+					"ID": "{{ModID}}_Add_TanghuluInviteLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_SPECIAL_ORDER_COMPLETE current {{ModID}}_TanghuluIngredients",
+					"Actions": [
+						"AddMail Current {{ModID}}_TanghuluInvite tomorrow"
+					]
+				},	
 		"{{ModID}}_Add_TanghuluRecipeLetter":
 				{
 					"ID": "{{ModID}}_Add_TanghuluRecipeLetter",
@@ -148,15 +156,7 @@
 					]
 				},
 
-		"{{ModID}}_Add_TanghuluInviteLetter":
-				{
-					"ID": "{{ModID}}_Add_TanghuluInviteLetter",
-					"Trigger": "DayEnding",
-					"Condition": "PLAYER_SPECIAL_ORDER_COMPLETE current {{ModID}}_TanghuluIngredients",
-					"Actions": [
-						"AddMail Current {{ModID}}_TanghuluInvite tomorrow"
-					]
-				},	
+	
 			"{{ModID}}_Add_HuangjiuLetter":
 				{
 					"ID": "{{ModID}}_Add_HuangjiuLetter",

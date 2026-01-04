@@ -136,7 +136,7 @@
             "ItemToRemoveOnEnd": null,
             "MailToRemoveOnEnd": null,
             "RandomizedElements": null,
-			"Text": "{{i18n:TanghuluIngredientsText}}",
+			"Text": "{{i18n:SOTanghuluIngredientsText}}",
 			 "Objectives": [
                 {
                   "Type": "Deliver",
@@ -161,23 +161,14 @@
 				     {
                   "Type": "Deliver",
                   "Text": "{{i18n:SODeliverFruit.Text}}",
-                  "RequiredCount": "10",
+                  "RequiredCount": "30",
                   "Data": {
                     "AcceptedContextTags": "category_fruits",
                     "Message": "{{i18n:SODeliverFruit.Message}}", 
                     "TargetName": "{{PeiMing}}"
                   },
 				   },
-				     {
-                  "Type": "Deliver",
-                 "Text": "{{i18n:SODeliverBerries.Text}}",
-                  "RequiredCount": "20",
-                  "Data": {
-                    "AcceptedContextTags": "id_o_417, id_o_396, id_o_400, id_o_410, id_o_258",
-                    "Message": "{{i18n:SODeliverBerries.Message}}", 
-                    "TargetName": "{{PeiMing}}"
-                  },
-				   },
+				     
 		],
 		   "Rewards": [
                 {

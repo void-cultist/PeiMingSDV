@@ -252,7 +252,34 @@
 	"Action": "EditData",
 	"Target": "Data/Events/{{PMHouse}}",
 	"Entries": {
-		"{{ModID}}_TanghuluEvent/Time 1000 1500/HostOrLocalMail {{ModID}}_TanghuluInvite": "{{ModID}}_HappyBGM/farmer {{PeiMing}}/setSkipActions MarkEventSeen current {{ModID}}_TanghuluEvent/addConversationTopic {{ModID}}_TanghuluCT/skippable/end",
+		"{{ModID}}_TanghuluEvent/Time 1000 1500/HostOrLocalMail {{ModID}}_TanghuluInvite": "{{ModID}}_HappyBGM/-1000 -1000/farmer -100 -100 0 {{PeiMing}} 3 6 0/setSkipActions MarkEventSeen current {{ModID}}_TanghuluEvent/addConversationTopic {{ModID}}_TanghuluCT/skippable/viewport 7 7 clamp true unfreeze/pause 100/emote {{PeiMing}} 56/pause 500/beginSimultaneousCommand/textAboveHead {{PeiMing}} \"Tasty tanghulu < \"/playSound doorCreak/endSimultaneousCommand/pause 500/beginSimultaneousCommand/warp farmer 5 10/playSound doorClose/endSimultaneousCommand/pause 500/emote {{PeiMing}} 16/pause 500/textAboveHead {{PeiMing}} \"Come on in!\"/pause 500/emote farmer 32/pause 500/
+		advancedMove farmer false 0 -4 3 10 -1 0 3 100/speak {{PeiMing}} \"Confused? #$b# Yes, I suppose seeing the General Ming Guang by the dishes would make even the brightest of minds bewildered! $9\"/
+		waitForAllStationary/faceDirection {{PeiMing}} 1/pause 100/
+		speak {{PeiMing}} \"I wanted to try something out - it's a fairly easy recipe from my homeland. Something my brothers and I used to eat a lot when we were children.\"/pause 300/
+		quickQuestion \"I suppose I still get the cravings for it sometimes, haha!\" # \"What is it?\" # \"Fruit skewers?\"(break)pause 100\\speak {{PeiMing}} \"Tanghulu! It's just some fresh fruits in a sugar coating. Nothing complicated about it.$6\"(break)pause 100\\speak {{PeiMing}} \"Pretty much, yeah. Tanghulu consists of fruit and a sugar coating, to be more precise.\"/
+		pause 300/emote farmer 20/pause 500/
+		speak {{PeiMing}} \"Here, let me show you. You can use these strawberries.\"/pause 300/
+		advancedMove farmer false 0 1 3 10 -2 0 4 10 0 -1 1 200/waitForAllStationary/faceDirection {{PeiMing}} 3/
+		itemAboveHead (O)400 false/pause 400/emote {{PeiMing}} 56/pause 500/faceDirection {{PeiMing}} 0/pause 200/
+		globalFade/viewport -999 -999/
+		playSound bubbles/pause 300/speak {{PeiMing}} \"Be careful, @. #$b# This sugar may spray into your face and then we'll have a problem.\"/pause 400/
+		playSound flameSpellHit/pause 500/speak {{PeiMing}} \"Okay, now put it into cold water over there, quickly!$8\"/pause 400/
+		playSound waterSlosh/pause 600/playSound steam/pause 400/removeItem (O)400 1/globalFade/viewport 7 7 clamp true freeze/pause 300/
+		faceDirection {{PeiMing}} 3/pause 300/itemAboveHead (O){{ModID}}_Tanghulu true/pause 1200/
+		emote {{PeiMing}} 32/pause 500/
+		speak {{PeiMing}} \"Great! See? It couldn't be easier. $1\" /pause 300/jump {{PeiMing}} 3/speak {{PeiMing}} \"Give it a try!$6\"/pause 300/
+		emote farmer 32/pause 500/farmerEat (O){{ModID}}_Tanghulu/pause 600/emote {{PeiMing}} 56/pause 500/
+		quickQuestion \"What do you think?\" # \"It's really sweet.\" # \"It's alright. Tastes like candy.\" # \"I've had better.\"(break)pause 100\\speak {{PeiMing}} \"Isn't it? My brother would often eat too much of it and then would get a stomachache!$1\"(break)pause 100\\speak {{PeiMing}} \"Yeah, but it's homemade candy, @. And tastes better, too!\"(break)pause 100\\speak {{PeiMing}} \"You must be fun at parties. $7\"/pause 300/faceDirection farmer 1/pause 200/
+		speak {{PeiMing}} \"We still have a bunch of fruit to go through...\"/pause 300/emote {{PeiMing}} 40/pause 500/
+		speak {{PeiMing}} \"Say, would you like to help this venerable one out? #$b# I'll even let you keep it a few skewers, heh.$3\"/pause 300/
+		emote farmer 32/pause 500/globalFade/viewport -999 -999/
+		playSound bubbles/pause 400/playSound fuse/pause 500/
+		playSound flameSpellHit/pause 600/
+		playSound waterSlosh/pause 600/playSound steam/pause 400/addObject 1 4 (O){{ModID}}_Tanghulu 1/addObject 2 7 (O){{ModID}}_Tanghulu 2/addObject 3 4 (O){{ModID}}_Tanghulu 2/addObject 4 4 (O){{ModID}}_Tanghulu 2/globalFade/viewport 7 7 clamp true freeze/pause 300/
+		jump {{PeiMing}} 2/pause 200/speak {{PeiMing}} \"Whew, that took us less time than I expected. I guess making food with someone does make the experience better. #$b# I can't say I'm a fan, but... I had fun.\"/pause 300/faceDirection {{PeiMing}} 2/pause 100/faceDirection {{PeiMing}} 1/pause 100/faceDirection {{PeiMing}} 3/pause 100/emote {{PeiMing}} 56/pause 500/
+		speak {{PeiMing}} \"Thank you for joining me, @. #$b# We should do it more often. $3.\"/pause 300/emote farmer 32/pause 500/globalFade/viewport -999 -999/addItem (O){{ModID}}_Tanghulu 3/end warpOut"
+
+	
 	
 	}
 	

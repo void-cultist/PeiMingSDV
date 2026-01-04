@@ -28,7 +28,7 @@
 			"winter_Sun": "610 {{PMHouse}} 9 5 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.003\"/830 {{PMHouse}} 18 5 0\"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.004\"",
 			
 			"rain": "610 {{PMHouse}} 2 6 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.001\"/730 {{PMHouse}} 6 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.002\"/1200 Forest 47 28 3 \"Strings\\schedules\\{{PeiMing}}:PeiMingRainyOutdoor.000\"/1300 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1600 Saloon 6 17 2 {{PeiMing}}_drinkBooze/2000 {{PMHouse}} 9 5 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
-			"GreenRain": "610 Forest 51 79 2/700 BathHouse_Pool 8 15 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingBath.000\"/1300 Mine 24 10 2 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingMines.000\"/1930 {{PMHouse}} 9 5 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"GreenRain": "610 Forest 51 79 2/700 BathHouse_Pool 8 15 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingBath.000\"/1300 Mine 24 10 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingMines.000\"/1930 {{PMHouse}} 9 5 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
 
 			"Mon": "610 {{PMHouse}} 2 6 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingMines.000\"/1730 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 0",
 			"Tue": "610 {{PMHouse}} 2 6 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.002\"/900 Mine 24 10 2 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingMines.000\"/1730 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 0",
@@ -74,6 +74,8 @@
 
 
 	 },
+/////Backup schedule 
+
 
 //////Roommate Schedule
 {
