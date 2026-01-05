@@ -252,32 +252,33 @@
 	"Action": "EditData",
 	"Target": "Data/Events/{{PMHouse}}",
 	"Entries": {
-		"{{ModID}}_TanghuluEvent/Time 1000 1500/HostOrLocalMail {{ModID}}_TanghuluInvite": "{{ModID}}_HappyBGM/-1000 -1000/farmer -100 -100 0 {{PeiMing}} 3 6 0/setSkipActions MarkEventSeen current {{ModID}}_TanghuluEvent/addConversationTopic {{ModID}}_TanghuluCT/skippable/viewport 7 7 clamp true unfreeze/pause 100/emote {{PeiMing}} 56/pause 500/beginSimultaneousCommand/textAboveHead {{PeiMing}} \"Tasty tanghulu < \"/playSound doorCreak/endSimultaneousCommand/pause 500/beginSimultaneousCommand/warp farmer 5 10/playSound doorClose/endSimultaneousCommand/pause 500/emote {{PeiMing}} 16/pause 500/textAboveHead {{PeiMing}} \"Come on in!\"/pause 500/emote farmer 32/pause 500/
-		advancedMove farmer false 0 -4 3 10 -1 0 3 100/speak {{PeiMing}} \"Confused? #$b# Yes, I suppose seeing the General Ming Guang by the dishes would make even the brightest of minds bewildered! $9\"/
+		"{{ModID}}_TanghuluEvent/Time 1000 1500/HostOrLocalMail {{ModID}}_TanghuluInvite": "{{ModID}}_HappyBGM/-1000 -1000/farmer -100 -100 0 {{PeiMing}} 3 6 0/setSkipActions MarkEventSeen current {{ModID}}_TanghuluEvent/addConversationTopic {{ModID}}_TanghuluCT/skippable/viewport 7 7 clamp true unfreeze/pause 100/emote {{PeiMing}} 56/pause 500/beginSimultaneousCommand/textAboveHead {{PeiMing}} \"{{i18n:TanghuluEvent.0}} \"/playSound doorCreak/endSimultaneousCommand/pause 500/beginSimultaneousCommand/warp farmer 5 10/playSound doorClose/endSimultaneousCommand/pause 500/emote {{PeiMing}} 16/pause 500/textAboveHead {{PeiMing}} \" {{i18n:TanghuluEvent.1}} \"/pause 500/emote farmer 32/pause 500/
+		advancedMove farmer false 0 -4 3 10 -1 0 3 100/speak {{PeiMing}} \" {{i18n:TanghuluEvent.2}} \"/
 		waitForAllStationary/faceDirection {{PeiMing}} 1/pause 100/
-		speak {{PeiMing}} \"I wanted to try something out - it's a fairly easy recipe from my homeland. Something my brothers and I used to eat a lot when we were children.\"/pause 300/
-		quickQuestion \"I suppose I still get the cravings for it sometimes, haha!\" # \"What is it?\" # \"Fruit skewers?\"(break)pause 100\\speak {{PeiMing}} \"Tanghulu! It's just some fresh fruits in a sugar coating. Nothing complicated about it.$6\"(break)pause 100\\speak {{PeiMing}} \"Pretty much, yeah. Tanghulu consists of fruit and a sugar coating, to be more precise.\"/
+		speak {{PeiMing}} \" {{i18n:TanghuluEvent.3}} \"/pause 300/
+		quickQuestion {{i18n:TanghuluEvent.4}}#{{i18n:TanghuluEvent.5}}#{{i18n:TanghuluEvent.6}}(break)pause 100\\speak {{PeiMing}} \" {{i18n:TanghuluEvent.7}} \"(break)pause 100\\speak {{PeiMing}} \" {{i18n:TanghuluEvent.8}} \"/
 		pause 300/emote farmer 20/pause 500/
-		speak {{PeiMing}} \"Here, let me show you. You can use these strawberries.\"/pause 300/
+		speak {{PeiMing}} \" {{i18n:TanghuluEvent.9}} \"/pause 300/
 		advancedMove farmer false 0 1 3 10 -2 0 4 10 0 -1 1 200/waitForAllStationary/faceDirection {{PeiMing}} 3/
 		itemAboveHead (O)400 false/pause 400/emote {{PeiMing}} 56/pause 500/faceDirection {{PeiMing}} 0/pause 200/
 		globalFade/viewport -999 -999/
-		playSound bubbles/pause 300/speak {{PeiMing}} \"Be careful, @. #$b# This sugar may spray into your face and then we'll have a problem.\"/pause 400/
-		playSound flameSpellHit/pause 500/speak {{PeiMing}} \"Okay, now put it into cold water over there, quickly!$8\"/pause 400/
+		playSound bubbles/pause 300/speak {{PeiMing}} \" {{i18n:TanghuluEvent.10}} \"/pause 400/
+		playSound flameSpellHit/pause 500/speak {{PeiMing}} \" {{i18n:TanghuluEvent.11}} \"/pause 400/
 		playSound waterSlosh/pause 600/playSound steam/pause 400/removeItem (O)400 1/globalFade/viewport 7 7 clamp true freeze/pause 300/
 		faceDirection {{PeiMing}} 3/pause 300/itemAboveHead (O){{ModID}}_Tanghulu true/pause 1200/
 		emote {{PeiMing}} 32/pause 500/
-		speak {{PeiMing}} \"Great! See? It couldn't be easier. $1\" /pause 300/jump {{PeiMing}} 3/speak {{PeiMing}} \"Give it a try!$6\"/pause 300/
+		speak {{PeiMing}} \" {{i18n:TanghuluEvent.12}} \" /pause 300/jump {{PeiMing}} 3/speak {{PeiMing}} \" {{i18n:TanghuluEvent.13}} \"/pause 300/
 		emote farmer 32/pause 500/farmerEat (O){{ModID}}_Tanghulu/pause 600/emote {{PeiMing}} 56/pause 500/
-		quickQuestion \"What do you think?\" # \"It's really sweet.\" # \"It's alright. Tastes like candy.\" # \"I've had better.\"(break)pause 100\\speak {{PeiMing}} \"Isn't it? My brother would often eat too much of it and then would get a stomachache!$1\"(break)pause 100\\speak {{PeiMing}} \"Yeah, but it's homemade candy, @. And tastes better, too!\"(break)pause 100\\speak {{PeiMing}} \"You must be fun at parties. $7\"/pause 300/faceDirection farmer 1/pause 200/
-		speak {{PeiMing}} \"We still have a bunch of fruit to go through...\"/pause 300/emote {{PeiMing}} 40/pause 500/
-		speak {{PeiMing}} \"Say, would you like to help this venerable one out? #$b# I'll even let you keep it a few skewers, heh.$3\"/pause 300/
+		quickQuestion {{i18n:TanghuluEvent.14}}#{{i18n:TanghuluEvent.15}}#{{i18n:TanghuluEvent.16}}#{{i18n:TanghuluEvent.17}}(break)pause 100\\speak {{PeiMing}} \"{{i18n:TanghuluEvent.18}}\"(break)pause 100\\speak {{PeiMing}} \" {{i18n:TanghuluEvent.19}} \"(break)pause 100\\speak {{PeiMing}} \" {{i18n:TanghuluEvent.20}} \"/pause 300/faceDirection farmer 1/pause 200/
+		speak {{PeiMing}} \" {{i18n:TanghuluEvent.21}} \"/pause 300/emote {{PeiMing}} 40/pause 500/
+		speak {{PeiMing}} \" {{i18n:TanghuluEvent.22}} \"/pause 300/
 		emote farmer 32/pause 500/globalFade/viewport -999 -999/
 		playSound bubbles/pause 400/playSound fuse/pause 500/
 		playSound flameSpellHit/pause 600/
-		playSound waterSlosh/pause 600/playSound steam/pause 400/addObject 1 4 (O){{ModID}}_Tanghulu 1/addObject 2 7 (O){{ModID}}_Tanghulu 2/addObject 3 4 (O){{ModID}}_Tanghulu 2/addObject 4 4 (O){{ModID}}_Tanghulu 2/globalFade/viewport 7 7 clamp true freeze/pause 300/
-		jump {{PeiMing}} 2/pause 200/speak {{PeiMing}} \"Whew, that took us less time than I expected. I guess making food with someone does make the experience better. #$b# I can't say I'm a fan, but... I had fun.\"/pause 300/faceDirection {{PeiMing}} 2/pause 100/faceDirection {{PeiMing}} 1/pause 100/faceDirection {{PeiMing}} 3/pause 100/emote {{PeiMing}} 56/pause 500/
-		speak {{PeiMing}} \"Thank you for joining me, @. #$b# We should do it more often. $3.\"/pause 300/emote farmer 32/pause 500/globalFade/viewport -999 -999/addItem (O){{ModID}}_Tanghulu 3/end warpOut"
+		playSound waterSlosh/pause 600/playSound steam/pause 400/addObject 1 4 (O){{ModID}}_Tanghulu 1/addObject 2 7 (O){{ModID}}_Tanghulu 4/addObject 3 4 (O){{ModID}}_Tanghulu 2/addObject 4 4 (O){{ModID}}_Tanghulu 2/globalFade/viewport 7 7 clamp true freeze/pause 300/
+		jump {{PeiMing}} 2/pause 200/speak {{PeiMing}} \" {{i18n:TanghuluEvent.23}} \"/pause 300/faceDirection {{PeiMing}} 2/pause 100/faceDirection {{PeiMing}} 1/pause 100/faceDirection {{PeiMing}} 3/pause 100/emote {{PeiMing}} 56/pause 500/
+		speak {{PeiMing}} \" {{i18n:TanghuluEvent.24}} \"/pause 300/emote farmer 32/pause 500/globalFade/viewport -999 -999/addItem (O){{ModID}}_Tanghulu 3/end warpOut"
+
 
 	
 	
@@ -303,11 +304,14 @@
 	"Action": "EditData",
 	"Target": "Data/Events/{{PMHouse}}",
 	"Entries": {
-		"{{ModID}}_RoommateProposal/Friendship {{PeiMing}} 2500": "{{ModId}}_HappyBGM/-1000 -1000/farmer 3 9 3 {{PeiMing}} 1 9 1/skippable/viewport 5 3 clamp false unfreeze/pause 100/speak {{PeiMing}} \"This tassel you gave me... it truly is some amazing craftsmenship.#$b# And my favorite color, too, hoho!$1\"/pause 300/emote farmer 32/pause 500/emote {{PeiMing}} 32/pause 500/speak {{PeiMing}} \"I must say, even if I still miss my old friends a lot, I am truly happy that we befriended each other as well.$1\"/pause 1000/{{DrinkingAnimation}}/emote farmer 40/pause 500/speak {{PeiMing}} \"Oh? There is something you wanted to tell me?\"/pause 300/quickQuestion \"What is it?\"#\"Would you like to be companions of sorts? [SETS PEI MING AS ROOMMATE/PLATONIC PARTNER]\"#\"I am glad the we became friends, too.[KEEP THE FRIENDSHIP AS IT IS]\"(break)switchEvent {{ModID}}_BecomeRoommates(break)switchEvent {{ModID}}_KeepFriendship",
+		"{{ModID}}_RoommateProposal/Friendship {{PeiMing}} 2500": "{{ModId}}_HappyBGM/-1000 -1000/farmer 3 9 3 {{PeiMing}} 1 9 1/skippable/viewport 5 3 clamp false unfreeze/pause 100/speak {{PeiMing}} \" {{i18n:RoommateProposal.0}} \"/pause 300/emote farmer 32/pause 500/emote {{PeiMing}} 32/pause 500/speak {{PeiMing}} \" {{i18n:RoommateProposal.1}} \"/pause 1000/{{DrinkingAnimation}}/emote farmer 40/pause 500/speak {{PeiMing}} \" {{i18n:RoommateProposal.2}} \"/pause 300/quickQuestion {{i18n:RoommateProposal.3}}#{{i18n:RoommateProposal.4}}#{{i18n:RoommateProposal.5}}(break)switchEvent {{ModID}}_BecomeRoommates(break)switchEvent {{ModID}}_KeepFriendship",
 
-		"{{ModID}}_BecomeRoommates": "pause 10/setSkipActions MarkEventSeen current BecomeRoommates true/setEngaged {{PeiMing}} true 2/speak {{PeiMing}} \"Ha! Sure! As long as you don't expect me to latch onto you exclusively, I would like to accept your offer.\"/pause 300/emote farmer 32/pause 500/eventSeen BecomeRoommates/stopMusic/globalFade/viewport -999 -999/pause 300/playSound stardrop/message \"Pei Ming has accepted your offer of becoming companions! In two days, you will officially be recognized as such. Yay!\"/pause 200/end",
 
-		"{{ModID}}_KeepFriendship": "pause 10/speak {{PeiMing}} \"May our friendship last even throughout time and space. $6\"/pause 300/emote farmer 32/pause 500/end"
+		"{{ModID}}_BecomeRoommates": "pause 10/setSkipActions MarkEventSeen current BecomeRoommates true/setEngaged {{PeiMing}} true 2/speak {{PeiMing}} \" {{i18n:BecomeRoommates.0}} \"/pause 300/emote farmer 32/pause 500/eventSeen BecomeRoommates/stopMusic/globalFade/viewport -999 -999/pause 300/playSound stardrop/message \" {{i18n:BecomeRoommates.1}} \"/pause 200/end",
+
+
+		"{{ModID}}_KeepFriendship": "pause 10/speak {{PeiMing}} \"{{i18n:KeepFriendship.0}}\"/pause 300/emote farmer 32/pause 500/end"
+
 	}
 }
 

@@ -439,7 +439,7 @@
 
 //ignore marriage schedule, requires space core and targets the asset provided by it directly with an edit data patch!
 
-{ "LogName": "Space Core: Ignoer marriage schedule when Partnership is Platonic Partnership",
+{ "LogName": "Space Core: Ignore marriage schedule when Partnership is Platonic Partnership",
   "Action": "EditData",
   "Target": "spacechase0.SpaceCore/NpcExtensionData",
   "When": { "Partnership": "Platonic Partnership"},
@@ -522,7 +522,9 @@
 	"{{ModID}}_MovingInLetter": "{{i18n:MovingInLetter.text}} [#]{{i18n:MovingInLetter.title}}",
 	"{{ModID}}_HuangjiuLetter": "{{i18n:HuangjiuLetter.text}}[#]{{i18n:HuangjiuLetter.title}}",
 	"{{ModID}}_PM7HSaloonLetter": "{{i18n:PM7HSaloonLetter.text}}%item quest {{ModID}}_PM7HQuest true%%[#]{{i18n:PM7HSaloonLetter.title}}",
-	"{{ModID}}_TanghuluInvite": "Hello, @! ^^ I would like to invite you to making tanghulu with me at my house, since you have been kind enough to procure all the ingredients. Feel free to come over around 10 in the morning! ^^ General Ming Guang, Martial God of the North[#]Making Tanghulu"
+	"{{ModID}}_TanghuluInvite": "{{i18n:TanghuluInvite.text}}[#]{{i18n:TanghuluInvite.title}}",
+	"{{ModID}}_LoveTeaLetter": "{{i18n:LoveTeaLetter.text}}%item cookingRecipe void.NorthernHeartMelon_LoveTea%%[#]{{i18n:LoveTeaLetter.title}}"
+
 
 }},
 

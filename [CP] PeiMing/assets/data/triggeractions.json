@@ -163,9 +163,18 @@
 					"Trigger": "DayEnding",
 					"Condition": "PLAYER_SPECIAL_ORDER_COMPLETE current {{ModID}}_RefinedTastes",
 					"Actions": [
-						"AddMail Current {{ModID}}_Huangjiu tomorrow"
+						"AddMail Current {{ModID}}_HuangjiuLetter tomorrow"
 					]
 				},		
+			"{{ModID}}_Add_LoveTeaLetter":
+				{
+					"ID": "{{ModID}}_Add_LoveTeaLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current {{PeiMing}} 3500",
+					"Actions": [
+						"AddMail Current {{ModID}}_LoveTeaLetter tomorrow"
+					]
+				},	
 			}
 		 },
 

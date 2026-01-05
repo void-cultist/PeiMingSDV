@@ -83,6 +83,21 @@
 					}	
 			}
 	},
+
+	//compat with EnderTedi's Polyamory mod
+
+	{
+		"LogName": "EnderTedi Polyamory compat",
+		"Action": "EditData",
+		"When": { "HasMod: |contains=EnderTedi.Polyamory": true },
+		"Target": "EnderTedi.Polyamory/PolyamoryData",
+		"Entries": {
+			"{{PeiMing}}": {
+				"IsPolyamorous": true
+			}
+		}
+
+	},
 					
 
 

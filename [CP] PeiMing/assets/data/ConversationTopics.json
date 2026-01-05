@@ -24,7 +24,8 @@
 "Action": "EditData",
 "Target": "Characters/Dialogue/Caroline",
 "Entries":{
-	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Caroline}}"
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Caroline}}",
+	"{{ModID}}_TanghuluCT": "{{i18n:TanghuluCT_Caroline}}"
 },
 },
 
@@ -72,7 +73,8 @@
 "Action": "EditData",
 "Target": "Characters/Dialogue/Evelyn",
 "Entries":{
-	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Evelyn}}"
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Evelyn}}",
+	"{{ModID}}_TanghuluCT": "{{i18n:TanghuluCT_Evelyn}}"
 },
 },
 

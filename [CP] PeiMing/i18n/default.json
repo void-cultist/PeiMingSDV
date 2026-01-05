@@ -249,6 +249,46 @@
 "PM7HContinue.33": "Ha!",
 "PM7HContinue.34": "Sure, why not.",
 
+//Tanghulu Event
+"TanghuluEvent.0": "Tasty tanghulu < ",
+"TanghuluEvent.1": "Come on in!",
+"TanghuluEvent.2": "Confused? #$b# Yes, I suppose seeing the General Ming Guang by the dishes would make even the brightest of minds bewildered! $9",
+"TanghuluEvent.3": "I wanted to try something out - it's a fairly easy recipe from my homeland. Something my brothers and I used to eat a lot when we were children.",
+"TanghuluEvent.4": "I suppose I still get the cravings for it sometimes, haha!",
+"TanghuluEvent.5": "What is it?",
+"TanghuluEvent.6": "Fruit skewers?",
+"TanghuluEvent.7": "Tanghulu! It's just some fresh fruits in a sugar coating. Nothing complicated about it.$6",
+"TanghuluEvent.8": "Pretty much, yeah. Tanghulu consists of fruit and a sugar coating, to be more precise.",
+"TanghuluEvent.9": "Here, let me show you. You can use these strawberries.",
+"TanghuluEvent.10": "Be careful, @. #$b# This sugar may spray into your face and then we'll have a problem.",
+"TanghuluEvent.11": "Okay, now put it into cold water over there, quickly!$8",
+"TanghuluEvent.12": "Great! See? It couldn't be easier. $1",
+"TanghuluEvent.13": "Give it a try!$6",
+"TanghuluEvent.14": "What do you think?",
+"TanghuluEvent.15": "It's really sweet.",
+"TanghuluEvent.16": "It's alright. Tastes like candy.",
+"TanghuluEvent.17": "I've had better.",
+"TanghuluEvent.18": "Isn't it? My brother would often eat too much of it and then would get a stomachache!$1",
+"TanghuluEvent.19": "Yeah, but it's homemade candy, @. And tastes better, too!",
+"TanghuluEvent.20": "You must be fun at parties. $7",
+"TanghuluEvent.21": "We still have a bunch of fruit to go through...",
+"TanghuluEvent.22": "Say, would you like to help this venerable one out? #$b# I'll even let you keep it a few skewers, heh.$3",
+"TanghuluEvent.23": "Whew, that took us less time than I expected. I guess making food with someone does make the experience better. #$b# I can't say I'm a fan, but... I had fun.",
+"TanghuluEvent.24": "Thank you for joining me, @. #$b# We should do it more often. $3",
+
+//Roommate Proposal Event
+"RoommateProposal.0": "This tassel you gave me... it truly is some amazing craftsmenship.#$b# And my favorite color, too, hoho!$1",
+"RoommateProposal.1": "I must say, even if I still miss my old friends a lot, I am truly happy that we befriended each other as well.$1",
+"RoommateProposal.2": "Oh? There is something you wanted to tell me?",
+"RoommateProposal.3": "What is it?",
+"RoommateProposal.4": "Would you like to be companions of sorts? [SETS PEI MING AS ROOMMATE/PLATONIC PARTNER]",
+"RoommateProposal.5": "I am glad the we became friends, too.[KEEP THE FRIENDSHIP AS IT IS]",
+
+"BecomeRoommates.0": "Ha! Sure! As long as you don't expect me to latch onto you exclusively, I would like to accept your offer.",
+"BecomeRoommates.1": "Pei Ming has accepted your offer of becoming companions! In two days, you will officially be recognized as such. Yay!",
+
+"KeepFriendship.0": "May our friendship last even throughout time and space. $6",
+
 ///////////////////DIALOGUE
 "Introduction": "We meet again. I decided to wander around the valley. Some of the villagers seem scared of me, ha!",
 "ArchaeologyHouse_21_5": "Greetings. I am trying to find books on times past.$3#$e#I wonder if there are records on ancient deities in here.",
@@ -438,6 +478,9 @@
 "PM7HCT_Elliott": "I heard the story Pei Ming told you in the saloon recently. #$b# I joined him after you left, so he would not spiral into some bad thoughts. #$b# We had a couple of drinks, too. $h",
 "PM7HCT_Emily": "I couldn't help but listen to the story Pei Ming told you while you two were sitting in the bar the other day. #$b# I wonder if we could help him, somehow? Maybe there's a crystal for that?",
 "PM7HCT_Gus": "Poor Pei Ming. #$b# For as long as he stays here, he will always be welcome in my humble saloon.",
+
+"TanghuluCT_Caroline": "Pei Ming offered me some homemade tanghulu and told me that you helped him making them! #$b# They tasted very nice, well done.",
+"TanghuluCT_Evelyn": "Sir Pei Ming brought us some sweet fruit skewers earlier. #$b# It's nice to see that young men are willing to cook! $h",
 
 ////////roommate dialogue
 //moving in accept
@@ -664,6 +707,10 @@
 "HuangjiuLetter.text": "Greetings, @. ^^ I have had time to taste the food and drink you brought me and I must say that I am quite impressed by the flavor and quality. I am curious whether or not you are capable of brewing Heart Melon Huangjiu with your means. Why don't you give it a try?^^ - General Ming Guang, Martial God of the North",
 "PM7HSaloonLetter.title": "Invitation to the Saloon",
 "PM7HSaloonLetter.text": "Greetings, @. ^^ I wish to continue our conversation from the other day. Why don't we meet up at the saloon at 18:00 during a rainy weekend day? I'd like to see you there. ^^ General Ming Guang, Martial God of the North",
+"TanghuluInvite.title": "Making Tanghulu",
+"TanghuluInvite.text": "Hello, @! ^^ I would like to invite you to making tanghulu with me at my house, since you have been kind enough to procure all the ingredients. Feel free to come over around 10 in the morning! ^^ General Ming Guang, Martial God of the North",
+"LoveTeaLetter.title": "A special tea blend",
+"LoveTeaLetter.text": "Dear @, ^^ we have known for each other for such a long time and have shared a special bond ever since. To commemorate this, I added the recipe to one of my favorite blends of tea. It is said to make anyone love you instantly, hoho! ^^ General Ming Guang, Martial God of the North",
 
 //////SCHEDULE STRINGS
 "PeiMingHouse0": "Hoho, coming to see me at this time?$3",
@@ -771,5 +818,28 @@
 "Movies.16": "So you say that this is considered a classic these days? #$b# Well, to me, it is still quite the novelty!$1",
 "Movies.17": "No... it can't be...",
 "Movies.18": "I see why this is considered a 'classic'. It was really good! #$b# And the actress was...#$b# ... you know.< $3",
+
+//config options
+"config.House Location.name": "House Location",
+"config.House Location.description": "Changes the location of Pei Ming's house when using SVE, will otherwise cause clipping issues with Andy's farm. 'Alternate' adds a warp point next to the Wizard Tower and should be selected in case there's conflicts with other mods.",
+"config.House Location.values.Vanilla": "Vanilla",
+"config.House Location.values.SVE": "SVE",
+"config.House Location.values.Alternate": "Alternate",
+
+"config.Portrait Style.name": "Portrait Style",
+"config.Portrait Style.description": "Default = by Pastelshrooms whose sprites inspired this mod; Alternative = by voidcultist, inspired by Nyapu",
+"config.Portrait Style.values.Default": "Default",
+"config.Portrait Style.values.Alternative": "Alternative",
+
+"config.Festival Participation.name": "Festival Participation",
+"config.Festival Participation.description": "Let Pei Ming attend festivals. Disable if there is conflict with other mods. Default true.",
+
+"config.Partnership.name": "Partnership",
+"config.Partnership.description": "Whether Pei Ming behaves like a vanilla roommate or a platonic partner after moving in. Please note: Platonic Partner ignores the roommate schedule and is highly experimental, so bugs are to be expected. Gameplay Suggestion: use Platonic Partnership with the Mod 'Hugs and Kisses' with 'RoommateKisses' enabled!",
+"config.Partnership.values.Platonic Partnership": "Platonic Partnership",
+"config.Partnership.values.Roommates": "Roommates",
+
+"config.section.Relationship.name": "Relationship",
+"config.section.Relationship.description": "",
 
 }
