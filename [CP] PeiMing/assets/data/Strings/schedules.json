@@ -2,15 +2,84 @@
 "Changes":
 	[
  
-   	 {
+   	/*  {
         	"LogName": "PeiMing Schedule dialogue strings",
             "Action": "EditData",
-		  	"Target": "Strings/Schedules/{{ModId}}_Peiming",
+		  	"Target": "Strings/Schedules/{{PeiMing}}",
             "Entries": 
             { //in his house
-                "PeiMingHouse.000": "{{i18n:PeiMingHouse{{Random:{{Range:0,1}}}}}}",
+                "PeiMingHouse.000": "{{Random: Hoho, coming to see me at this time?$3 && Back in my day, I used to have a palace.#$e# So if I have to be honest, this shack here is a large downgrade.$2 |inputSeparator=&&}}",
+				"PeiMingHouse.001": "{{Random: Some green tea to start such a gloomy morning is always a treat. && Rain, huh? Luckily, it doesn't seem like this place will be affected by droughts anytime soon. && Did you know that where I come from, there were Gods controlling the elements? #$b# Seeing that rain outside reminded me of someone.|inputSeparator=&&}}",
+				"PeiMingHouse.002": "{{Random: Being a Martial God won't be of much use here, I suppose. So I tried picking up a new hobby. && Have you ever attempted writing poetry? Turns out this is hardly my field of expertise. |inputSeparator=&&}}",
+				"PeiMingHouse.003": "{{Random: To what do I owe the pleasure to see you here in this weather?$1#$e# Would you like some tea to warm up? I just brewed a whole pot.$6  && %Pei Ming looks relaxed.#$e# @! Fancy to see you in my abode again.$1#$b# Me? Oh, I simply enjoy the weather. It reminds me of my homeland.$6 |inputSeparator=&&}}",
+				"PeiMingHouse.004": "{{Random: Well, the weather can't be THAT bad if you made an effort to visit me today, @! Hoho! $9 && Do you have too much time in the winter, or are you just bored enough to come and see me so often?#$b# Not that I mind, heh.$3 && $y Do you grow anything on your farm this season?_Yes, I do._Hoho! Mortals' adaptability is truly fascinating to me.$1_No._That's a pity. I guess tending to animals is the way to go for you during the winter, hm? |inputSeparator=&&}}",
 
-				"PeiMingHouse.001": "{{i18n:PeiMingHouse{{Random:{{Range:2,4}}}}}}",
+			//rainy day 
+				"PeiMingRainyOutdoor.000": "{{Random: I actually don't mind being outside in the rain. && Hello. Why don't you stay and enjoy the rain with me for a while? #$e# We can go back to my place afterwards.$3 && .........(Pei Ming glances at you with a weird stare.)$2 #$b# HAHAHAHA! Farmer, you look so very funny all drenched from the rain. A sight to behold.$6 && I wonder if I should pick up fishing?|inputSeparator=&&}}",
+			//Mines
+				"PeiMingMines.000": "{{Random: I tend to get bored here so I went to check the mines.#$e# The monsters are still too weak here, so my boredom did not get resolved.$7 && I flung a stone crab onto a slime and it just exploded.#$b# The slime, I mean. && I find these mines to be quite underwhelming. I miss having a challenge. && Even if I do not particularly enjoy myself in those mines, venturing there reminds me of the various times I accompanied my descendant during missions. #$e# I wonder how he is doing and where he is right now.$7 && Have you heard the voice from over there? I want to know who's there! $1|inputSeparator=&&}}",
+			//Beach visit in Summer
+					"PeiMingSummerBeach.000": "{{Random: During such a Weather one simply must use the chance and take a dip in the sea. && Recently I learned of an ointment called 'sun screen'.#$e# Want to help me rub it on my back?$3 && The waves of the ocean remind me of a very dear friend I haven't seen in a long time.#$b#...............hm.$7#$e# I think I will listen to the waves a little longer.$7 && I love swimming. Those back muscles didn't build up on their own! $1 && With all due respect, @... #$b# You are standing in the sun. Please move a step or two. $7 |inputSeparator=&&}}",
+
+			//Bath house
+				"PeiMingBath.000": "{{Random: Lovely of you to join me today during this Green Rain, @. && There is nothing better to do in this weather than take a dip in the bath. I don't get why the villagers are so scared.|inputSeparator=&&}}",
+				"PeiMingBath.001": "{{Random: I used to be part of tight-knit friend trio.#$b# There were banquets in our realm every now and then and we would often go to the hot springs together afterwards.$1#$e# Hah...#$b# I miss them a lot. Don't tell anyone I said that. $4 && (Pei Ming seems to be zoned out. Best to leave him be before he starts flirting with you again.) $9 |inputSeparator=&&}}",
+			//birthday
+				"PeiMingBday.000": "{{Random: Ah, good morning, @. It is my birthday and I am a little melancholic about it. Please don't mind me. && The view over the valley from here is great but I can't help but miss the view from my old palace.#$e# On my birthday, I would often invite over my closest companions and enjoy freshly brewed tea, sitting at the balcony that overlooked the North together. && %It's Pei Ming's birthday but he seems to be lost in thought. Perhaps even someone like him needs a quiet moment to himself. |inputSeparator=&&}}", 
+				"PeiMingBday.001": "{{Random: %Pei Ming is wistfully staring at the water.#$e# (mumbling)... it's been so long since I last saw him. A birthday without him feels shallow.$7 #$e# %Pei Ming doesn't notice your presence. You decide to leave him alone. && Hello, @. I was just reminiscing. #$b#$y 'Have you ever crossed the waters within a coffin?_I'm sorry, what?_Yeah, forget about it.$7_That's a little macabre._Life is macabre, little farmer.$7_Uhm... isn't it your birthday?_....ha. You remembered?$7#$b# Indeed it is. I am not in a festive mood, though. && This birthday in particular causes me to feel quite sad. But maybe you could help me, @?#$b#Why don't we go for a swim together? I just know you look great in swimwear.$3 |inputSeparator= &&}}",
+			
+			//Roommate strings
+				"PeiMingRoommate.000": "{{i18n:PMRoommate0}}",
+				"PeiMingRoommate.001": "{{i18n:PMRoommate1}}",
+				"PeiMingRoommate.002": "{{i18n:PMRoommate2}}",
+				"PeiMingRoommate.003": "{{i18n:PMRoommate3}}",
+				"PeiMingRoommate.004": "{{i18n:PMRoommate4}}",
+				"PeiMingRoommate.005": "{{i18n:PMRoommate5}}",
+				"PeiMingRoommate.006": "{{i18n:PMRoommate6}}",
+				"PeiMingRoommate.007": "{{i18n:PMRoommate7}}",
+			
+
+			//Partnership strings for new schedule (when Platonic Partner enabled)
+				"PeiMingPartner.000": "{{i18n:CustomSchedule0}}",
+				"PeiMingPartner.001": "{{Random: {{i18n:CustomSchedule1}} && {{18n:Neutral_6}} |inputSeparator=&&}}", //when in library
+				"PeiMingPartner.002": "{{Random: {{i18n:Outdoor_4}} && {{i18n:Good_2}} && {{i18n:Good_4}} && {{i18n:Good_9}} && {{i18n:Outdoor_Peiming}} |inputSeparator=&& }}",
+				"PeiMingPartner.003": "{{Random: {{i18n:PartnerDialogue14}} && {{i18n:PartnerDialogue16}} && {{PartnerDialogue19}} |inputSeparator=&&}}",
+				"PeiMingPartner.004": "{{Random: {{i18n:PartnerDialogue20}} && {{i18n:PartnerDialogue24}} && {{i18n:PartnerDialogue26}} |inputSeparator=&&}}",
+
+				"PeiMingPartnerRainy.000": "{{Random: {{i18n:Rainy_Day_0}} && {{i18n:Rainy_Day_1}} && {{i18n:Rainy_Day_2}} && {{i18n:Rainy_Day_3}} && {{i18n:Rainy_Day_4}} && {{i18n:PartnerDialogue12}} |inputSeparator=&& }}",
+				"PeiMingPartnerRainy.001": "{{Random: {{i18n:PartnerDialogue21}} && {{i18n:PartnerDialogue27}} |inputSeparator=&& }}",
+
+				"PeiMingPartnerBathHouse.000": "{{Random: {{i18n:PartnerDialogue13}} && {{i18n:Good_8}} && {{i18n:Good_9}} && {{i18n:Neutral_5}} |inputSeparator=&& }}",
+
+				"PeiMingPartnerMines.000": "{{Random: {{i18n:Good_11}} && {{i18n:Rainy_Day_5}} |inputSeparator=&& }}",
+
+				"PeiMingPartnerOutdoor.000": "{{Random: {{i18n:Outdoor_0}} && {{i18n:Outdoor_1}} |inputSeparator=&& }}",
+				"PeiMingPartnerOutdoor.001": "{{Random: {{i18n:Outdoor_2}} && {{i18n:Outdoor_3}} |inputSeparator=&& }}",
+
+				"PeiMingPartnerSummer.000": "{{Random: {{i18n:PartnerDialogue9}} && {{i18n:PartnerDialogue15}} && {{i18n:PartnerDialogue17}} && {{18n:PartnerDialogue18}} |inputSeparator=&&}}",
+
+				"PeiMingPartnerSaloon.000": "{{Random: {{i18n:PartnerDialogue23}} && {{i18n:funLeave3}} && {{i18n:Indoor_Night_1}} && {{i18n:Indoor_Night_4}} |inputSeparator=&& }}",
+
+				"PeiMingPartnerIndoorNight.000": "{{Random: {{i18n:Indoor_Night_0}} && {{i18n:Indoor_Night_{{Random: {{Range:3,5}} }} }} && {{i18n:PartnerDialogue15}} |inputSeparator=&& }}",
+				
+				"PeiMingPartnerWinter.000": "{{Random: {{i18n: PartnerDialogue1}} &&  {{i18n: PartnerDialogue2}} &&  {{i18n: PartnerDialogue3}} |inputSeparator=&& }}",
+				"PeiMingPartnerWinter.001": "{{Random: {{i18n:PartnerDialogue4}} && {{i18n:PartnerDialogue19}} && {{i18n:PartnerDialogue24}} && {{i18n:PartnerDialogue25}} && {{i18n:Good_10}} |inputSeparator=&& }}",
+				"PeiMingPartnerWinterSnow.000": "{{Random: {{i18n:Winter_Peiming}} && {{i18n:Indoor_Day_5}} |inputSeparator=&&}}",
+				
+
+			},
+		}, */
+		
+	 //i cant get this shit to work in the schedule strings
+	  {
+        	"LogName": "PeiMing Schedule dialogue strings",
+            "Action": "EditData",
+		  	"Target": "Strings/Schedules/{{PeiMing}}",
+            "Entries": 
+            { //in his house
+                "PeiMingHouse.000": "{{i18n:PeiMingHouse{{Random:{{Range:0,1}} }} }}",
+
+				"PeiMingHouse.001": "{{i18n:PeiMingHouse{{Random:{{Range:2,4}} }}}}",
 
 				"PeiMingHouse.002": "{{i18n:PeiMingHouse{{Random:{{Range:5,6}}}}}}",
 
@@ -44,9 +113,9 @@
 
 			//Partnership strings for new schedule (when Platonic Partner enabled)
 				"PeiMingPartner.000": "{{i18n:CustomSchedule0}}",
-				"PeiMingPartner.001": "{{Random: {{i18n:CustomSchedule1}} && {{18n:Neutral_6}} |inputSeparator=&&}}", //when in library
+				"PeiMingPartner.001": "{{Random: {{i18n:CustomSchedule1}} && {{i18n:Neutral_6}} |inputSeparator=&&}}", //when in library
 				"PeiMingPartner.002": "{{Random: {{i18n:Outdoor_4}} && {{i18n:Good_2}} && {{i18n:Good_4}} && {{i18n:Good_9}} && {{i18n:Outdoor_Peiming}} |inputSeparator=&& }}",
-				"PeiMingPartner.003": "{{Random: {{i18n:PartnerDialogue14}} && {{i18n:PartnerDialogue16}} && {{PartnerDialogue19}} |inputSeparator=&&}}",
+				"PeiMingPartner.003": "{{Random: {{i18n:PartnerDialogue14}} && {{i18n:PartnerDialogue16}} && {{i18n:PartnerDialogue19}} |inputSeparator=&&}}",
 				"PeiMingPartner.004": "{{Random: {{i18n:PartnerDialogue20}} && {{i18n:PartnerDialogue24}} && {{i18n:PartnerDialogue26}} |inputSeparator=&&}}",
 
 				"PeiMingPartnerRainy.000": "{{Random: {{i18n:Rainy_Day_{{Random: {{Range:0,4}} }} }} && {{i18n:PartnerDialogue12}} |inputSeparator=&& }}",
@@ -59,7 +128,7 @@
 				"PeiMingPartnerOutdoor.000": "{{Random: {{i18n:Outdoor_0}} && {{i18n:Outdoor_1}} |inputSeparator=&& }}",
 				"PeiMingPartnerOutdoor.001": "{{Random: {{i18n:Outdoor_2}} && {{i18n:Outdoor_3}} |inputSeparator=&& }}",
 
-				"PeiMingPartnerSummer.000": "{{Random: {{i18n:PartnerDialogue9}} && {{i18n:PartnerDialogue15}} && {{i18n:PartnerDialogue17}} && {{18n:PartnerDialogue18}} |inputSeparator=&&}}",
+				"PeiMingPartnerSummer.000": "{{Random: {{i18n:PartnerDialogue9}} && {{i18n:PartnerDialogue15}} && {{i18n:PartnerDialogue17}} && {{i18n:PartnerDialogue18}} |inputSeparator=&&}}",
 
 				"PeiMingPartnerSaloon.000": "{{Random: {{i18n:PartnerDialogue23}} && {{i18n:funLeave3}} && {{i18n:Indoor_Night_1}} && {{i18n:Indoor_Night_4}} |inputSeparator=&& }}",
 
@@ -72,9 +141,8 @@
 
 			},
 		},
-		
-	 
 	]
 }
 
 //randomizing dialogue "{{Random: && |inputSeparator=&&}}",
+

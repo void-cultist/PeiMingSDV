@@ -15,10 +15,6 @@
 			"Name": "PMHouse",
 			"Value": "{{ModID}}_PeiMingHouse"
 		},
-		{
-			"Name": "PP",
-			"Value": "{{ModID}}_PlatonicPartnerScheduleKey"
-		},
 
 
 //Tokens for map patching & map strings
@@ -327,6 +323,13 @@
 	"Action": "Include",
 	"FromFile": "assets/data/Strings/1_6_Strings.json",
 },
+
+{
+    "LogName": "Include PeiMing Schedule Strings",
+   	"Action": "Include",
+   	"FromFile": "assets/data/Strings/schedules.json"
+},
+
 {
 	"LogName": "add map messages to Pei Ming's house and patio",
 	"Action": "Include",
@@ -375,12 +378,6 @@
 	"FromFile": "assets/data/specialorders.json"
 },
 
-
-{
-    "LogName": "Include PeiMing Schedule Strings",
-   	"Action": "Include",
-   	"FromFile": "assets/data/Strings/schedules.json"
-},
 
 { 	"LogName": "custom item include",
 	"Action": "Include",

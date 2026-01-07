@@ -52,6 +52,26 @@ Other than that, the mod is compatible with Stardew Valley Expanded. Should comp
 ### Roommate
 Pei Ming is an NPC that can become the farmer's roommate. In this mod, he was written to be allo-aro. Using [GMCM](https://www.nexusmods.com/stardewvalley/mods/5098) or by editing the config.json, you can choose whether you want him to behave like a vanilla roommate with his new roommate schedule intact or as platonic partner which will make him ignore the roommate schedule and adhere to a custom one. Please keep in mind that the latter is highly experimental and might come with bugs that are hard to circumvent due to hardcoded limitations. None of those bugs are gamebreaking but could involve dialogue lines not firing, the spouse room disappearing etc. Please do report if you run into any issues. 
 
+<details>
+<summary>How do I become roommates with Pei Ming?</summary>
+
+Regardless of which of the partnership options you have picked, you will have to gift the item **Giftable Tassel** to Pei Ming. Here's how to get it:
+
+| How to obtain? |Price | 
+| ------------- | ------------- |
+| Volcano Trader with at least 8 Hearts with Pei Ming and at least 1 farmhouse upgrade | 125000 / 250000 / 500000 |
+
+This item does nothing on its own and is only used to propose to Pei Ming to become roommates.
+
+Additionally, once you have seen the roommate proposal event, the Volcano Trader will offer a new, equippable tassel:
+
+| How to obtain? |Price | 
+| ------------- | ------------- |
+| Volcano Trader after having received the [Giftable Tassel](#giftable-tassel) recipe and having gifted said tassel to Pei Ming |  250000 / 500000 / 750000 |
+
+
+</details>
+
 
 ## Progression Requirements
 As of version 1.0.0, there are 7 Heart Events and 3 other Events, with more events coming soon. If you can't seem to be able to unlock the events, refer to the following section for the conditions. If all of the conditions apply but you can still not access the event, do report this to me.
