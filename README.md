@@ -38,6 +38,7 @@ And of course, SMAPI and Content Patcher.
 The following mods are not required for the mod to work.
 
 - [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098)
+- [Look Up Anything]
 
 ### Suggested Mods
 Mods that neatly tie in with this one and enhance it, some of them have added compatibility, but none of them are required.
@@ -45,12 +46,33 @@ Mods that neatly tie in with this one and enhance it, some of them have added co
 - [Polyamory Mod](https://github.com/EnderTedi/Polyamory): enables polyamory setting for NPC
 - [Hugs and Kisses](https://www.nexusmods.com/stardewvalley/mods/10062): for Roommate kisses! yay!
 - [Platonic Partners and Friendships](https://www.nexusmods.com/stardewvalley/mods/8146): custom relationship labels!
+- [Lookup Anything](https://www.nexusmods.com/stardewvalley/mods/541): just a generally very useful mod for checking schedules, gift tastes etc
 
 Other than that, the mod is compatible with Stardew Valley Expanded. Should compatibility issues with other mods pop up, please let me know.
 
 
 ### Roommate
 Pei Ming is an NPC that can become the farmer's roommate. In this mod, he was written to be allo-aro. Using [GMCM](https://www.nexusmods.com/stardewvalley/mods/5098) or by editing the config.json, you can choose whether you want him to behave like a vanilla roommate with his new roommate schedule intact or as platonic partner which will make him ignore the roommate schedule and adhere to a custom one. Please keep in mind that the latter is highly experimental and might come with bugs that are hard to circumvent due to hardcoded limitations. None of those bugs are gamebreaking but could involve dialogue lines not firing, the spouse room disappearing etc. Please do report if you run into any issues. 
+
+<details>
+<summary>How do I become roommates with Pei Ming?</summary>
+
+Regardless of which of the partnership options you have picked, you will have to gift the item **Giftable Tassel** to Pei Ming. Here's how to get it:
+
+| How to obtain? |Price | 
+| ------------- | ------------- |
+| Volcano Trader with at least 8 Hearts with Pei Ming and at least 1 farmhouse upgrade | 125000 / 250000 / 500000 |
+
+This item does nothing on its own and is only used to propose to Pei Ming to become roommates.
+
+Additionally, once you have seen the roommate proposal event, the Volcano Trader will offer a new, equippable tassel:
+
+| How to obtain? |Price | 
+| ------------- | ------------- |
+| Volcano Trader after having received the [Giftable Tassel](#giftable-tassel) recipe and having gifted said tassel to Pei Ming |  250000 / 500000 / 750000 |
+
+
+</details>
 
 
 ## Progression Requirements
