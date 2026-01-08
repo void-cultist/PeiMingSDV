@@ -1,4 +1,6 @@
 # NPC Pei Ming
+![alt text: banner in bright red color displaying manhua art work of pei ming on the left side and a pixel style artwork of his portrait with a funny expression and him saying "hoho!"](./banner.png)
+
 1. [Introduction](#introduction)
 
 2. [General](#general-information)
