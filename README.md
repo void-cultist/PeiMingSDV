@@ -18,6 +18,7 @@
 4. [Letters](#letters)
 
 5. [Special Orders and Quests](#special-orders-and-quests)
+6. [Gift Tastes](#gift-tastes)
 
 ## Introduction
 This mod adds the custom NPC Pei Ming from the Chinese novel series "Heaven Officials' Blessing" by Mo Xiang Tong Xiu to Stardew Valley, attempting to flesh out the character beyond the comic relief the novels had reduced him to. No knowledge of the story will be required to use this mod as it was written for all players in mind.
@@ -214,7 +215,8 @@ Some letters are requirements for certain events or quests, others add items or 
 <details>
 <summary> Wizard Letter 1: "So about this General..." </summary>
 Requirements:
-*  must have seen the "First Meeting" event
+ 
+* must have seen the "First Meeting" event
 * must have seen the event in which the wizard enables the player to understand the Junimo
 
 </details>
@@ -222,6 +224,7 @@ Requirements:
 <details>
 <summary>Invitation to the Mountains or the Saloon (4 Heart Event): "Your invitation." </summary>
 Requirements:
+ 
 * player must have seen the 3-Heart-Event and picked either the Saloon or the mountains. If the event has been skipped, this defaults to Saloon.
 * Friendship points with Pei Ming: 1000 (4 Hearts)
 
@@ -230,8 +233,9 @@ Requirements:
 <details>
 <summary>(Another) Invitation to the Saloon (7 Heart Event): "Invitation to the Saloon" </summary>
 Requirements:
-* player must have seen the 6-Heart-Event 
-* Friendship points with Pei Ming: 1750 (7 Hearts) 
+ 
+* player must have seen the 6-Heart-Event
+* Friendship points with Pei Ming: 1750 (7 Hearts)
 * rainy weather
 
 </details>
@@ -262,6 +266,7 @@ unlocks warp points between Pei Ming's house and the bus stop and lets the playe
 <details>
 <summary>Heart Melon seeds quest letter: "Northern Heart Melon seeds!" </summary>
 Requirements:
+ 
 * Friendship points with Pei Ming: 1250 (5 Hearts)
 * Season: Fall
 
@@ -296,4 +301,24 @@ This mod adds 2 Special Orders and some quests.
 |----------|--------------|------------------------|
 | "Tanghulu ingredients required! | Season: Spring or Summer, 4 Hearts with Pei Ming | Unlock tanghulu recipe |
 | "A Martial God's refined tastes" | Season: Fall or Winter, 7 Hearts with Pei Ming | Unlock huangjiu for kegs |
+
+## Gift tastes
+### Loved
+* Vanilla: banana, super cucumber, eggplant, general loves
+* Cornucopia: Candied Cherries, Chocolate Banane, Winter Rose, Prismatic Rose
+* WAG: Flavored Chocolate Truffles
+* Northern Heart Melon: Northern Heart Melon, Heart Melon Huanjiu
+* Added by this mod: Tanghulu
+
+### Likes
+* Vanilla: truffle, truffle oil, caviar, wine, ruby, pomegranate, squid ink general likes
+* Cornucopia: candied apple, all other kinds of roses
+* SVE: Winter star rose
+
+### Dislikes
+* Pickles
+
+### Hates
+* Ancient Sword
+* SVE: Bone Fish
 
