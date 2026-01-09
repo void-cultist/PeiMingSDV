@@ -1,0 +1,541 @@
+
+{
+	"Changes": 
+    [
+		
+		{//EGG FESTIVAL
+			//VANILLA Y1
+			"LogName": "Egg Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations":
+   			[//SetUp
+			{
+   				"Operation": "Append",
+   				"Target": ["Entries", "Set-Up_additionalCharacters"],
+   				"Value": "{{PeiMing}} 34 67 right",
+   				"Delimiter": "/"
+			},
+				//Festival animation - if you want any of your NPC's animations during a festival, uncomment this code.
+				//{
+				//"Operation": "Append",
+				//"Target": ["Fields", "set-up", 5],
+				//"Value": "/animate {{PeiMing}} false true 100 28 28 28 28 28 28 28 28 28 28 29 30 31 32 33 34",
+				//},
+				
+   				//MainEvent - during the actual hunt
+			{
+   				"Operation": "Append",
+   				"Target": ["Entries", "MainEvent_additionalCharacters"],
+   				"Value": "{{PeiMing}} 34 67 left",
+   				"Delimiter": "/"
+			},
+			],
+			"When": { "IsOddYear": true,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		},
+		},
+		//VANILLA Y2
+
+		{"LogName": "Egg Festival Y2 Vanilla",
+		"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "{{PeiMing}} 34 67 right",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "{{PeiMing}} 34 67 left",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"IsOddYear": false,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,}
+			}, 
+	 { "LogName": "Egg Festival Dialogue",
+        "Action": "EditData",
+			"Target": "data/festivals/spring13",
+			"Entries": {
+				"{{PeiMing}}": "{{i18n:Peimingegg}}",
+"{{PeiMing}}_y2": "{{i18n:Peiming_y2egg}}",
+"{{PeiMing}}_spouse_y2": "{{i18n:Peiming_spouse_y2egg}}",
+            }
+        },
+
+
+		{	//FLOWER DANCE VANILLA Y1
+			"LogName": "Flower Dance",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "{{PeiMing}} 15 25 up",
+   				    "Delimiter": "/"
+				},
+				//The actual dance - note this is pretty crowded, so you may want to just remove this, especially if they weren't near the dance to begin with/don't want to watch.
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Value": "{{PeiMing}} 22 40 down",
+   				    "Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": true,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		},
+		},
+
+		{	//FLOWER DANCE VANILLA Y2
+			"LogName": "Flower Dance",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "{{PeiMing}} 15 25 up",
+   				    "Delimiter": "/"
+				},
+				//The actual dance - note this is pretty crowded, so you may want to just remove this, especially if they weren't near the dance to begin with/don't want to watch.
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Value": "{{PeiMing}} 22 40 down",
+   				    "Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": false,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		},
+		},
+		{ "LogName": "Flower Dance Festival Dialogue",
+        "Action": "EditData",
+			"Target": "data/festivals/spring13",
+			"Entries": {
+			"{{PeiMing}}": "{{i18n:Peimingflower}}",
+"{{PeiMing}}_y2": "{{i18n:Peiming_y2flower}}",
+"{{PeiMing}}_spouse_y2": "{{i18n:Peiming_spouse_y2flower}}",
+            }
+        },
+		{	//VANILLA LUAU Y1
+			"LogName": "Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "{{PeiMing}} 27 22 up",
+   				    "Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": true,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		},
+		},
+
+		{	//VANILLA LUAU Y2
+			"LogName": "Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "{{PeiMing}} 27 22 up",
+   				    "Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": true,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		},
+		},
+
+		{	
+			"LogName": "Luau - dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": 
+			{"{{PeiMing}}": "{{i18n:Peimingluau}}",
+"{{PeiMing}}_y2": "{{i18n:Peiming_y2luau}}",
+"{{PeiMing}}_spouse_y2": "{{i18n:Peiming_spouse_y2luau}}",
+			},
+		},
+	
+		{	//MOONLIGHT JELLIES VANILLA Y1
+			"LogName": "Dance of the Moonlight Jellies Y1",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{PeiMing}} 70 24 down",
+					"Delimiter": "/"
+				},
+				//MainEvent - during the boat launch. Most characters don't move, but not all of them will be visible.
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{PeiMing}} 13 35 right",
+					"Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": true,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		},
+		},
+
+		{	//MOONLIGHT JELLIES VANILLA Y2
+			"LogName": "Dance of the Moonlight Jellies Y2",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations":
+			[
+			
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{PeiMing}} 70 24 down",
+					"Delimiter": "/"
+				},
+				
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{PeiMing}} 13 35 right",
+					"Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": false,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		},
+		},
+		{	
+			"LogName": "Dance of the Moonlight Jellies - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": 
+			{ "{{PeiMing}}": "{{i18n:Peimingjellies}}",
+"{{PeiMing}}_y2": "{{i18n:Peiming_y2jellies}}",
+"{{PeiMing}}_spouse_y2": "{{i18n:Peiming_spouse_y2jellies}}",
+			}
+		},
+		
+		{	//VANILLA FESTIVAL OF ICE Y1
+			"LogName": "Festival of Ice Y 1",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"When": { "IsOddYear": true,
+					   "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{PeiMing}} 70 14 left",
+					"Delimiter": "/"
+				},
+				//MainEvent - during the actual contest
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{PeiMing}} 70 14 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		
+			{	//VANILLA FESTIVAL OF ICE Y2
+			"LogName": "Festival of Ice Y 2",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"When": { "IsOddYear": false,
+					   "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{PeiMing}} 70 14 left",
+					"Delimiter": "/"
+				},
+				//MainEvent - during the actual contest
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{PeiMing}} 70 14 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	//SVE FESTIVAL OF ICE Y1
+			"LogName": "Festival of Ice - SVE compat Y1",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"When": { "IsOddYear": true,
+						"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"TextOperations":
+			[
+		
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{PeiMing}} 70 14 left",
+					"Delimiter": "/"
+				},
+		
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{PeiMing}} 70 14 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+
+		
+			{	//SVE FESTIVAL OF ICE Y2
+			"LogName": "SVE Festival of Ice Y 2",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"When": { "IsOddYear": false,
+					   "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"TextOperations":
+			[
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{PeiMing}} 70 14 left",
+					"Delimiter": "/"
+				},
+				
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{PeiMing}} 70 14 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+
+		{	
+			"LogName": "Festival of Ice - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": 
+			{"{{PeiMing}}": "{{i18n:Peimingice}}",
+			"{{PeiMing}}_y2": "{{i18n:Peiming_y2ice}}",
+			"{{PeiMing}}_spouse_y2": "{{i18n:Peiming_spouse_y2ice}}", },
+		},
+		{	//Winter Star Vanilla Y1
+			"LogName": "Feast of the Winter Star Vanilla Y1",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations":
+			[
+				//SetUp - I think there is a MainEvent, but only during the actual gift-giving cutscene.
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{PeiMing}} 45 72 up",
+					"Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": true,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		}, },
+
+			{	//Winter Star Vanilla Y2
+			"LogName": "Feast of the Winter Star Vanilla Y2",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations":
+			[
+				//SetUp - I think there is a MainEvent, but only during the actual gift-giving cutscene.
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{PeiMing}} 36 59 down",
+					"Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": false,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+		}, },
+
+		{	
+			"LogName": "Feast of the Winter Star - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": 
+			{ "{{PeiMing}}": "{{i18n:PeimingWinterStar}}",
+				"{{PeiMing}}_y2": "{{i18n:Peiming_y2WinterStar}}",
+				"{{PeiMing}}_spouse_y2": "{{i18n:Peiming_spouse_y2WinterStar}}",
+			},
+		},
+		
+		//Desert Festival Shop
+		 {
+            "LogName": "Adding PM's desert festival shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+				"DesertFestival_{{PeiMing}}": {
+					 "Owners": 
+			[
+           		 {
+                "Name": "{{PeiMing}}",
+                "Portrait": "{{PeiMing}}",
+                "Dialogues": [ "{{i18n:DesertFestival1}}", 
+				 "{{i18n:DesertFestival2}}"
+                   
+               				]
+            	}
+		
+			], 
+			"Items": [
+            { 	"Id": "{{ModID}}_IridiumBand",
+				"ItemId": "(O)527",
+				"TradeItemId": "CalicoEgg",
+        		"TradeItemAmount": 200,
+        		"Price": -1,
+			},
+			 { 	"Id": "{{ModID}}_PhoenixRing",
+				"ItemId": "(O)863",
+				"TradeItemId": "CalicoEgg",
+        		"TradeItemAmount": 150,
+        		"Price": -1,
+			},
+			 { 	"Id": "{{ModID}}_FriendshipBook",
+				"ItemId": "(O)Book_Friendship",
+				"TradeItemId": "CalicoEgg",
+        		"TradeItemAmount": 70,
+        		"Price": -1,
+			},
+			 {	"Id": "{{ModID}}_InfinityBlade",
+				"ItemId": "(W)62",
+				"TradeItemId": "CalicoEgg",
+        		"TradeItemAmount": 600,
+        		"Price": -1,
+			},
+			{	"Id": "{{ModID}}_DragonToothCutlass",
+				"ItemId": "(W)57",
+				"TradeItemId": "CalicoEgg",
+        		"TradeItemAmount": 300,
+        		"Price": -1,
+			},
+			{	"Id": "{{ModID}}_DragonscaleBoots",
+				"ItemId": "(B)855",
+				"TradeItemId": "CalicoEgg",
+        		"TradeItemAmount": 100,
+        		"Price": -1,
+			},
+			{	"Id": "{{ModID}}_CatEars",
+				"ItemId": "(H)32",
+				"TradeItemId": "CalicoEgg",
+        		"TradeItemAmount": 30,
+        		"Price": -1,
+			},
+
+        			],
+			"SalableItemTags": [ "category_weapon", "category_ring", "category_boots"
+
+			]
+
+			}
+                
+            }
+        },
+		{
+        "LogName": "Make seeds available for purchase at desert festival",
+		"Action": "EditData",
+		"Target":  "Data/Shops",
+            "TargetField": [
+                "DesertFestival_{{PeiMing}}",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_NHMSeeds": {
+                    "Id": "void.NorthernHeartMelon_NHMSeeds",
+                    "ItemId": "(O)void.NorthernHeartMelon_NHMSeeds",
+                    "TradeItemId": "CalicoEgg",
+        		    "TradeItemAmount": 50,
+					"AvailableStock": 2,
+                },
+                "{{ModID}}_GlazedHeartMelonRecipe": {
+                 "Id": "void.NorthernHeartMelon_GlazedHeartMelonRecipe",
+                    "ItemId": "(O)void.NorthernHeartMelon_GlazedHeartMelon",
+                    "IsRecipe": true,
+                    "ObjectInternalName": "void.NorthernHeartMelon_GlazedHeartMelon",
+                    "TradeItemId": "CalicoEgg",
+        		    "TradeItemAmount": 60,
+                },
+
+            },
+            
+		},
+
+	
+	
+		{	//RSV Ember of Resolutions
+			"LogName": "Ember of Resolutions",
+			"Action": "EditData",
+			"When": { "HasMod":"Rafseazz.RSVCP" },
+			"Target": "Data/Festivals/winter28",
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{PeiMing}} 44 37 down",
+					"Delimiter": "/"
+				},
+				//MainEvent - during the bonfire lighting. Characters do move around but it's not packed in.
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{PeiMing}} 39 34 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Ember of Resolutions - Dialogue",
+			"Action": "EditData",
+			"When": { "HasMod":"Rafseazz.RSVCP" },
+			"Target": "Data/Festivals/winter28",
+			"Entries": 
+			{ "{{PeiMing}}":  "{{i18n:RSVEmberOfResolutions.}}",
+			},
+		},
+
+	]
+}

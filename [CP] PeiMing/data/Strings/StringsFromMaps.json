@@ -1,0 +1,54 @@
+{
+"Changes":
+	[
+ {
+"LogName": "Strings for PM's new Outdoor Map",
+"Action": "EditData",
+"Target": "Strings/StringsFromMaps",
+"Entries": {
+               "{{OutdoorStrings}}.000": "{{i18n:OutdoorString0}}",
+			   "{{OutdoorStrings}}.001": "{{i18n:OutdoorString1}}",
+				"{{OutdoorStrings}}.002": "{{i18n:OutdoorString2}}",
+
+				
+			}
+		},
+		
+	 
+	 
+	 {
+        	"LogName": "Strings for PM's new Indoor Map",
+            "Action": "EditData",
+		  	"Target": "Strings/StringsFromMaps",
+            "Entries": 
+            {
+                "PeiMingHouse.000": "{{i18n:PeiMingHouse.000}}",
+				"PeiMingHouse.001": "{{i18n:PeiMingHouse.001}}",
+				"PeiMingHouse.002": "{{i18n:PeiMingHouse.002}}",
+				"PeiMingHouse.003": "{{i18n:PeiMingHouse.003}}",
+				"PeiMingHouse.004": "{{i18n:PeiMingHouse.004}}",
+				"PeiMingHouse.005": "{{i18n:PeiMingHouse.005}}",
+				"PeiMingHouse.006": "{{i18n:PeiMingHouse.006}}",
+				"PeiMingHouse.007": "{{i18n:PeiMingHouse.007}}",
+				"PeiMingHouse.008": "{{i18n:PeiMingHouse.008}}",
+				"PeiMingHouse.009": "{{i18n:PeiMingHouse.009}}",
+
+			},
+		},
+
+		 {
+        	"LogName": "Strings for PM's Spouse Room",
+            "Action": "EditData",
+		  	"Target": "Strings/StringsFromMaps",
+            "Entries": 
+            {
+                "PeiMingSpouseRoom.000": "{{i18n:PeiMingSpouseRoom.000}}",
+				"PeiMingSpouseRoom.001": "{{i18n:PeiMingSpouseRoom.001}}",
+				"PeiMingSpouseRoom.002": "{{i18n:PeiMingSpouseRoom.002}}",
+
+			},
+		},
+		
+	 
+	]
+}

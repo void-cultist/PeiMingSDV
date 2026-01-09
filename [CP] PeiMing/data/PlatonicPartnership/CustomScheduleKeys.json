@@ -1,0 +1,136 @@
+//SVE SCHEDULE
+{
+"Changes":
+	[
+ 
+         {
+		"LogName": "Define Custom Schedule keys",
+         "Action": "EditData",
+		 "Target": "Spiderbuttons.CustomScheduleKeys/ScheduleKeys",
+         "Entries": {
+			"{{ModID}}_PlatonicPartnerScheduleKeyRandom1":  {
+               "Id": "Random1",
+               "ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeyRandom1",
+               "Priority": "Early +10",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, RANDOM 0.1"
+
+            },
+			"{{ModID}}_PlatonicPartnerScheduleKeyRandom2":  {
+               "Id": "Random2",
+               "ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeyRandom2",
+               "Priority": "Early +10",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, RANDOM 0.1"
+
+            },
+			"{{ModID}}_PlatonicPartnerScheduleKeyRandom3":  {
+               "Id": "Random3",
+               "ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeyRandom3",
+               "Priority": "Early +10",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, RANDOM 0.1"
+
+            },
+
+			"{{ModID}}_PlatonicPartnerScheduleKeyRainy": {
+               "Id": "Rainy",
+               "ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeyRainy",
+               "Priority": "Early +1",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, WEATHER Target Rain"
+
+            },
+			"{{ModID}}_PlatonicPartnerScheduleKeyGreenRain": {
+               "Id": "GreenRain",
+               "ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeyGreenRain",
+               "Priority": "Early +1",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, WEATHER Target GreenRain"
+
+            },
+			"{{ModID}}_PlatonicPartnerScheduleKeySummer_20": {
+				"Id": "Summer_20",
+				"ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeySummer_20",
+				"Priority": "Early +2",
+				"Condition":"PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON_DAY summer 20"
+			},
+            "{{ModID}}_PlatonicPartnerScheduleKeySpringMonTueWed": {
+               "Id": "SpringMonTueWed",
+               "ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeySpringMonTueWed",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON spring, DAY_OF_WEEK Mon Tue Wed"
+
+            },
+
+			"{{ModID}}_PlatonicPartnerScheduleKeySpringThuFriSat": {
+               "Id": "SpringThuFriSat",
+               "ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeySpringThuFriSat",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON spring, !DAY_OF_WEEK Mon Tue Wed Sun"
+
+            },
+			"{{ModID}}_PlatonicPartnerScheduleKeySpringSun": {
+               "Id": "SpringSun",
+               "ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeySpringSun",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON spring, DAY_OF_WEEK Sun"
+
+            },
+			"{{ModID}}_PlatonicPartnerScheduleKeySummerStorm": {
+               "Id": "SummerStorm",
+               "ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeySummerStorm",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON summer, WEATHER Target Storm"
+
+            },
+			"{{ModID}}_PlatonicPartnerScheduleKeySummer": {
+               "Id": "Summer",
+               "ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeySummer",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON summer"
+
+            },
+			"{{ModID}}_PlatonicPartnerScheduleKeyFallBathhouseDay": {
+               "Id": "FallBathhouseDay",
+               "ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeyFallBathhouseDay",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON fall, DAY_OF_WEEK Wed"
+
+            },
+
+			"{{ModID}}_PlatonicPartnerScheduleKeyFall": {
+               "Id": "Fall",
+               "ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeyFall",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON fall"
+
+            },
+			"{{ModID}}_PlatonicPartnerScheduleKeyNightMarket": {
+               "Id": "NightMarket",
+               "ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeyNightMarket",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON_DAY Winter 15 Winter 16 Winter 17"
+
+            },
+			"{{ModID}}_PlatonicPartnerScheduleKeyWinterSnow": {
+               "Id": "WinterSnow",
+               "ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeyWinterSnow",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON Winter, WEATHER Target snow"
+
+            },
+			"{{ModID}}_PlatonicPartnerScheduleKeyWinter": {
+               "Id": "Winter",
+               "ScheduleKey": "{{ModID}}_PlatonicPartnerScheduleKeyWinter",
+               "Priority": "Early",
+               "Condition": "PLAYER_NPC_RELATIONSHIP Any {{PeiMing}} Roommate, SEASON Winter"
+
+            },
+
+
+         }
+
+      },
+	]
+}
+
+//format Time MapName Xcoord Ycoord Facing Animation StringDialogue
+// <time> [location] <tileX> <tileY> [facingDirection] [animation] [dialogue]
+//0	up 1right 2	down3	left
+//template for string dialogue \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"

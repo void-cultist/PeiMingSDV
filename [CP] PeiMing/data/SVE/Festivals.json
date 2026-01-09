@@ -1,0 +1,409 @@
+
+{
+	"Changes": 
+    [
+		
+		{//EGG FESTIVAL
+			//SVE Y1
+			"LogName": "Egg Festival",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations":
+   			[//SetUp
+			{
+   				"Operation": "Append",
+   				"Target": ["Entries", "Set-Up_additionalCharacters"],
+   				"Value": "{{ModId}}_Peiming 34 67 right",
+   				"Delimiter": "/"
+			},
+				
+				
+   				//MainEvent - during the actual hunt
+			{
+   				"Operation": "Append",
+   				"Target": ["Entries", "MainEvent_additionalCharacters"],
+   				"Value": "{{ModId}}_Peiming 34 67 left",
+   				"Delimiter": "/"
+			},
+			],
+			"When": { "IsOddYear": true,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		},
+		},
+		//SVE Y2
+
+		{"LogName": "Egg Festival Y2 SVE",
+		"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "{{ModId}}_Peiming 34 67 right",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "{{ModId}}_Peiming 34 67 left",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"IsOddYear": false,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,}
+			}, 
+	 { "LogName": "Egg Festival Dialogue",
+        "Action": "EditData",
+			"Target": "data/festivals/spring13",
+			"Entries": {
+				"{{ModId}}_Peiming": "Searching for eggs? This is ridiculous. Why should I, as a God...#$b# %Pei Ming continues yapping and you decide to slowly distance yourself.",
+				"{{ModId}}_Peiming_y2": "If that's what the people of this village like doing, so be it.",
+				"{{ModId}}_Peiming_spouse_y1": "You are going to search eggs, @? Well, if you are into it..."
+            }
+        },
+
+
+		{	//FLOWER DANCE SVE Y1
+			"LogName": "Flower Dance",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "{{ModId}}_Peiming 15 25 left",
+   				    "Delimiter": "/"
+				},
+				//The actual dance - note this is pretty crowded, so you may want to just remove this, especially if they weren't near the dance to begin with/don't want to watch.
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Value": "{{ModId}}_Peiming 15 20 down",
+   				    "Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": true,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		},
+		},
+
+		{	//FLOWER DANCE SVE Y2
+			"LogName": "Flower Dance",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "{{ModId}}_Peiming 15 25 left",
+   				    "Delimiter": "/"
+				},
+				//The actual dance - note this is pretty crowded, so you may want to just remove this, especially if they weren't near the dance to begin with/don't want to watch.
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "MainEvent_additionalCharacters"],
+   				    "Value": "{{ModId}}_Peiming 15 20 down",
+   				    "Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": false,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		},
+		},
+		{ "LogName": "Flower Dance Festival Dialogue",
+        "Action": "EditData",
+			"Target": "data/festivals/spring13",
+			"Entries": {
+				"{{ModId}}_Peiming": "So this is how the villagers search for a suitable partner?#$b# I have better means but I would not say no to a dance with the right person.$2",
+				"{{ModId}}_Peiming_y2": "And here we go again. Are you having fun?",
+				"{{ModId}}_Peiming_spouse_y2": "Why don't we dance together, dear @?"
+            }
+        },
+		{	//SVE LUAU Y1
+			"LogName": "Luau SVE Y1",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "{{ModId}}_Peiming 27 22 up",
+   				    "Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": true,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		},
+		},
+
+		{	//SVE LUAU Y2
+			"LogName": "Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations":
+   			[
+   				//SetUp
+				{
+   				    "Operation": "Append",
+   				    "Target": ["Entries", "Set-Up_additionalCharacters"],
+   				    "Value": "{{ModId}}_Peiming 27 22 up",
+   				    "Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": true,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		},
+		},
+
+		{	
+			"LogName": "Luau - dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": 
+			{ "{{ModId}}_Peiming": "I have no expertise on cooking. Do you think this flower I found on the road is suitable?",
+			  "{{ModId}}_Peiming_y2": "Why is Lewis always acting like this, all high and mighty? He is quite bothersome.",
+			"{{ModId}}_Peiming_spouse_y2": "I trust you to make the best possible choice for this soup. And if you don't, I won't die either way.",
+			},
+		},
+	
+		{	//MOONLIGHT JELLIES SVE Y1
+			"LogName": "Dance of the Moonlight Jellies Y1",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{ModId}}_Peiming 70 24 down",
+					"Delimiter": "/"
+				},
+				//MainEvent - during the boat launch. Most characters don't move, but not all of them will be visible.
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{ModId}}_Peiming 13 35 right",
+					"Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": true,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		},
+		},
+
+		{	//MOONLIGHT JELLIES SVE Y2
+			"LogName": "Dance of the Moonlight Jellies Y2",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations":
+			[
+			
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{ModId}}_Peiming 70 24 down",
+					"Delimiter": "/"
+				},
+				
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{ModId}}_Peiming 13 35 right",
+					"Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": false,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		},
+		},
+		{	
+			"LogName": "Dance of the Moonlight Jellies - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": 
+			{ "{{ModId}}_Peiming": "I have been informed of this natural spectacle, so naturally, I came here to see what it is about.",
+				"{{ModId}}_Peiming_y2": "If this is as gorgeous as it was last year, I am all too excited. $1",
+				"{{ModId}}_Peiming_spouse_y2": "Want to watch the jellies together, dear @?"
+			}
+		},
+		
+		{	//SVE FESTIVAL OF ICE Y1
+			"LogName": "Festival of Ice Y 1",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"When": { "IsOddYear": true,
+					   "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{ModId}}_Peiming 70 14 left",
+					"Delimiter": "/"
+				},
+				//MainEvent - during the actual contest
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{ModId}}_Peiming 70 14 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	//SVE FESTIVAL OF ICE Y1
+			"LogName": "Festival of Ice - SVE compat Y1",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"When": { "IsOddYear": true,
+						"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"TextOperations":
+			[
+		
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{ModId}}_Peiming 70 14 left",
+					"Delimiter": "/"
+				},
+		
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{ModId}}_Peiming 70 14 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+
+		
+			{	//SVE FESTIVAL OF ICE Y2
+			"LogName": "SVE Festival of Ice Y 2",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"When": { "IsOddYear": false,
+					   "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+			"TextOperations":
+			[
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{ModId}}_Peiming 70 14 left",
+					"Delimiter": "/"
+				},
+				
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{ModId}}_Peiming 70 14 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+
+		{	
+			"LogName": "Festival of Ice - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": 
+			{"{{ModId}}_Peiming": "Did you see Leah's sculpture? Interesting craftsmenship! $8",
+				"{{ModId}}_Peiming_y2": "This weather is more to my tastes. The cold, brisk air... wonderful. #$e# I could do without the fishy stench, though.",
+				"{{ModId}}_Peiming_spouse_y2": "Are you going to take part in the fishing challenge, @?#$b# Make this General proud! $1" },
+		},
+		{	//Winter Star SVE Y1
+			"LogName": "Feast of the Winter Star SVE Y1",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations":
+			[
+				//SetUp - I think there is a MainEvent, but only during the actual gift-giving cutscene.
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{ModId}}_Peiming 45 72 up",
+					"Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": true,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		}, },
+
+			{	//Winter Star SVE Y2
+			"LogName": "Feast of the Winter Star SVE Y2",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations":
+			[
+				//SetUp - I think there is a MainEvent, but only during the actual gift-giving cutscene.
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{ModId}}_Peiming 36 59 down",
+					"Delimiter": "/"
+				},
+			],
+			"When": { "IsOddYear": false,
+					 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+		}, },
+
+		{	
+			"LogName": "Feast of the Winter Star - Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": 
+			{ "{{ModId}}_Peiming": "I find it sort of sad that the saloon doesn't open today.",
+				"{{ModId}}_Peiming_y2": "Another year has almost passed. Who do you think is your secret gift giver?",
+				"{{ModId}}_Peiming_spouse_y2": "Hey, @.#$b# %Pei Ming lowers his voice and whispers. #$b# Why don't we go home and enjoy the day with each other instead, hmm? $2"
+			},
+		},
+	
+	
+		{	//RSV Ember of Resolutions
+			"LogName": "Ember of Resolutions",
+			"Action": "EditData",
+			"When": { "HasMod":"Rafseazz.RSVCP" },
+			"Target": "Data/Festivals/winter28",
+			"TextOperations":
+			[
+				//SetUp
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "{{ModId}}_Peiming 44 37 down",
+					"Delimiter": "/"
+				},
+				//MainEvent - during the bonfire lighting. Characters do move around but it's not packed in.
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "MainEvent_additionalCharacters"],
+					"Value": "{{ModId}}_Peiming 39 34 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{	
+			"LogName": "Ember of Resolutions - Dialogue",
+			"Action": "EditData",
+			"When": { "HasMod":"Rafseazz.RSVCP" },
+			"Target": "Data/Festivals/winter28",
+			"Entries": 
+			{ "{{ModId}}_Peiming": "Another year has passed. To someone like me whose age spans several centuries, it felt like but a moment.#$e# Well. It is quite interesting that you celebrate New Year's on another day than I used to.",
+			},
+		},
+
+	]
+}

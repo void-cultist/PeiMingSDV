@@ -1,10 +1,10 @@
 {
   "Name": "NPC Pei Ming",
   "Author": "voidcultist",
-  "Version": "0.1.0",
+  "Version": "1.0.0",
   "Description": "Adds the ancient deity Pei Ming to your valley.",
   "UniqueID": "void.peiming",
-  "UpdateKeys": ["???"],
+  "UpdateKeys": [ "Nexus:39402", "GitHub:void-cultist/PeiMingSDV" ],
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
   },
@@ -24,10 +24,6 @@
    {"UniqueID": "PC.Tilesheets",
    "IsRequired": true,
    },
-   {	"UniqueID": "FlashShifter.StardewValleyExpandedCP",
-		"IsRequired": false,
-   },
-
    {	"UniqueID": "void.NorthernHeartMelon",
 		"IsRequired": true,
    },

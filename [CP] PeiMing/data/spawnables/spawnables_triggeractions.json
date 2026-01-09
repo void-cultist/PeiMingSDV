@@ -1,0 +1,241 @@
+{
+	"Changes": 
+    [
+	    { 
+			"LogName": "PeiMing Alternate Map Spawn Trigger Actions",
+            "Action": "EditData",
+			"When": { "House Location": "Alternate"},
+            "Target": "Data/TriggerActions",
+            "Entries": 
+			{  
+		"{{ModID}}_Trigger_Spawnables_NewOutdoors_spring":
+				{
+					"ID": "{{ModID}}_Trigger_Spawnables_NewOutdoors_spring",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON spring",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Spring {{ModID}}_PeiMingNewOutdoors 0,0,6,23/0,0,3,23/3,6,2,2/5,6,1,3/3,16,1,3/3,0,3,2 6,15,9,3/6,15,3,2/10,17,3,1/13,15,2,3 13,10,1,5 13,2,2,2/14,3,1,1"
+					]
+				},
+		"{{ModID}}_Trigger_Spawnables_NewOutdoors_summer":
+				{
+					"ID": "{{ModID}}_Trigger_Spawnables_NewOutdoors_summer",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON summer",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Summer {{ModID}}_PeiMingNewOutdoors 3,3,2,9 9,15,3,2"
+					]
+				},			
+		"{{ModID}}_Trigger_Spawnables_NewOutdoors_fall":
+				{
+					"ID": "{{ModID}}_Trigger_Spawnables_NewOutdoors_fall",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON fall",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Fall {{ModID}}_PeiMingNewOutdoors 3,3,2,9 9,15,3,2"
+					]
+				},
+		"{{ModID}}_Trigger_Spawnables_NewOutdoors_winter":
+				{
+					"ID": "{{ModID}}_Trigger_Spawnables_NewOutdoors_winter",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON winter",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Winter {{ModID}}_PeiMingNewOutdoors 3,3,2,9 9,15,3,2"
+					]
+				},					
+	
+		"{{ModID}}_Trigger_CursedSpawnable":
+				{
+					"ID": "{{ModID}}_CursedSpawnable",
+					"Trigger": "DayStarted",
+					"Condition": "SYNCED_RANDOM day CursedRandomKey 0.001",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Winter {{ModID}}_PeiMingNewOutdoors 12,2,1,1"
+					]
+				},	
+			},
+
+},
+
+/////////SVE Spawnables
+{ 
+			"LogName": "PeiMing SVE Map Spawn Trigger Actions",
+            "Action": "EditData",
+			"When": 	{ "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"House Location": "SVE"},
+            "Target": "Data/TriggerActions",
+            "Entries": 
+			{  
+		"{{ModID}}_Trigger_SpawnablesSVEForestspring":
+				{
+					"ID": "{{ModID}}_Trigger_SpawnablesSVEForestspring",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON spring",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Spring Forest 18,69,2,2 17,79,3,2 22,79,2,2"
+					]
+				},
+		"{{ModID}}_Trigger_SpawnablesSVEForestsummer":
+				{
+					"ID": "{{ModID}}_Trigger_SpawnablesSVEForestsummer",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON summer",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Summer Forest 18,69,2,2 17,79,3,2 22,79,2,2"
+					]
+				},			
+		"{{ModID}}_Trigger_SpawnablesSVEForestfall":
+				{
+					"ID": "{{ModID}}_Trigger_SpawnablesSVEForestfall",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON fall",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Fall Forest 18,69,2,2 17,79,3,2 22,79,2,2"
+					]
+				},
+		"{{ModID}}_Trigger_SpawnablesSVEForestwinter":
+				{
+					"ID": "{{ModID}}_Trigger_SpawnablesSVEForestwinter",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON winter",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Winter Forest 18,69,2,2 17,79,3,2 22,79,2,2"
+					]
+				},				
+		"{{ModID}}_Trigger_CursedSpawnable":
+				{
+					"ID": "{{ModID}}_CursedSpawnable",
+					"Trigger": "DayStarted",
+					"Condition": "SYNCED_RANDOM day CursedRandomKey 0.001",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Winter Forest 31,68,1,1"
+					]
+				},	
+			},
+
+},
+
+/////Vanilla House Location Spawnables
+
+ { 
+			"LogName": "PeiMing Vanilla Map Spawn Trigger Actions",
+            "Action": "EditData",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+			"House Location": "Vanilla"},
+            "Target": "Data/TriggerActions",
+            "Entries": 
+			{  
+		"{{ModID}}_Trigger_SpawnablesVanillaForestspring":
+				{
+					"ID": "{{ModID}}_Trigger_SpawnablesVanillaForestspring",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON spring",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Spring Forest 42,73,4,3 55,73,3,7"
+					]
+				},
+		"{{ModID}}_Trigger_SpawnablesVanillaForestsummer":
+				{
+					"ID": "{{ModID}}_Trigger_SpawnablesVanillaForestsummer",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON summer",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Summer Forest 42,73,4,3 55,73,3,7"
+					]
+				},			
+		"{{ModID}}_Trigger_SpawnablesVanillaForestfall":
+				{
+					"ID": "{{ModID}}_Trigger_SpawnablesVanillaForestfall",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON fall",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Fall Forest 42,73,4,3 55,73,3,7"
+					]
+				},
+		"{{ModID}}_Trigger_SpawnablesVanillaForestwinter":
+				{
+					"ID": "{{ModID}}_Trigger_SpawnablesVanillaForestwinter",
+					"Trigger": "DayStarted",
+					"Condition": "SEASON winter",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Winter Forest 42,73,4,3 55,73,3,7"
+					]
+				},		
+		"{{ModID}}_Trigger_CursedSpawnable":
+				{
+					"ID": "{{ModID}}_CursedSpawnable",
+					"Trigger": "DayStarted",
+					"Condition": "SYNCED_RANDOM day CursedRandomKey 0.001",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Winter Forest 58,87,1,1"
+					]
+				},	
+			},
+
+},
+
+ { 
+			"LogName": "PeiMing Northern Heart Melon Trigger Actions",
+            "Action": "EditData",
+			"When": {  "Season": "Winter", "HasReadLetter: anyPlayer": "{{ModID}}_GlazedHeartMelonLetter",  },
+            "Target": "Data/TriggerActions",
+            "Entries": 
+			{ 
+				"{{ModID}}_Trigger_NHMSpawn":
+				{
+					"ID": "{{ModID}}_Trigger_NHMSpawn",
+					"Trigger": "DayStarted",
+					"Condition": "SYNCED_RANDOM day NHMSpawnRandomKey 0.05, SEASON winter, PLAYER_HAS_MAIL Any {{ModID}}_GlazedHeartMelonLetter Received",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_NHMSpawnGroups {{SpawnableCoordinates}}"
+					]
+				},		
+			 }
+},
+
+ { 
+			"LogName": "PeiMing Prismatic Rose Map Spawn Trigger Actions",
+            "Action": "EditData",
+			"When": { "HasMod: |contains=Cornucopia.MoreFlowers": true, "Hearts:{{PeiMing}}": "8, 9, 10, 11, 12, 13, 14" },
+            "Target": "Data/TriggerActions",
+            "Entries": 
+			{ 
+				"{{ModID}}_Trigger_PrismaticRoseSpawnable":
+				{
+					"ID": "{{ModID}}_Trigger_PrismaticRoseSpawnable",
+					"Trigger": "DayStarted",
+					"Condition": "SYNCED_RANDOM day RoseRandomKey 0.07",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PrismaticRoseSpawnGroups {{SpawnableCoordinates}}"
+					]
+				},	
+			 }
+}
+		
+	]
+} 
+
+//love super cucumber, banana, eggplant
+//like truffle, truffle oil, wine, caviar, ink , ruby(have to check custom response)
+//dislike pickles
+//neutral
+//hated ancient sword
+//gift taste order: love, like, dislike, hate, neutral

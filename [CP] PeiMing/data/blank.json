@@ -1,0 +1,10 @@
+{ }
+//The purpose behind the blank load is because an asset has to exist before it
+//can be edited. You can load your actual schedule file directly, but then you can't use CP tokens because CP passes 
+//the file straight to the game without editing it to replace the tokens with their intended values first. 
+//So if you want to use tokens (and we usually do, since the recommended convention for the NPC internal name is {{ModId}}_<Name>)
+//you load a blank json first so the asset can exist, then use EditData to pass the actual schedule data into that asset. Because you've used EditData, 
+//CP knows to edit it before passing it to the game and replaces the tokens correctly.
+//The same thing applies for NPC dialogue and event files for new locations that you made for your mod. 
+//We don't do it for things like NPC gift tastes or adding events to existing vanilla locations that already have
+//events in them, because those assets already exist so we jump straight to the EditData part to add our data to it.

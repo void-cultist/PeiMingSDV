@@ -1,0 +1,184 @@
+{
+	"Changes": 
+    [
+		
+		 { "LogName": "PeiMing Trigger Actions",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": 
+			{  
+        "{{ModID}}_Wizard_WantingToTalk":
+				{
+                    "ID": "{{ModId}}_Wizard_WantingToTalk",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 112, PLAYER_HAS_SEEN_EVENT Host {{ModID}}_FirstMeeting",
+                    "Actions": [
+                        "AddMail Current {{ModId}}_WizardLetter tomorrow"
+                    ]
+        },
+
+		"{{ModID}}_Add_WizardTalkQuest":
+				{
+						"ID": "{{ModID}}_Add_WizardTalkQuest",
+						"Trigger": "DayEnding",
+						"Condition": "PLAYER_HAS_MAIL Current {{ModId}}_WizardLetter Received", 
+						"Actions": [ 
+						"AddQuest {{ModID}}_TalkWizard"
+									]
+				},
+		"{{ModID}}_Add_ThankYouLetter":
+				{
+						"ID": "{{ModID}}_Add_ThankYouLetter",
+						"Trigger": "DayEnding",
+						"Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_PM2H", 
+						"Actions": [ 
+						"AddMail Current {{ModID}}_PMLibraryThanks tomorrow"
+									]
+				},
+
+		"{{ModID}}_Add_PM3HSaloonLetter": 
+				{
+					"ID": "{{ModID}}_Add_PM3HSaloonLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Host {{ModID}}_PM3HSaloon, PLAYER_FRIENDSHIP_POINTS Host {{PeiMing}} 1000",
+					"Actions": [
+						"AddMail Current {{ModID}}_PM4HSaloonLetter tomorrow",
+					],
+				},
+				
+		"{{ModID}}_Add_PM3HMountainsLetter":
+				{
+					"ID": "{{ModID}}_Add_PM3HMountainsLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Host {{ModID}}_PM3HMountains, PLAYER_FRIENDSHIP_POINTS Current {{PeiMing}} 1000",
+					"Actions": [
+						"AddMail Current {{ModID}}_PM4HMountainsLetter tomorrow"
+					]
+				},
+		"{{ModID}}_AddPM4HSaloonQuest":
+				{ 	"ID": "{{ModID}}_AddPM4HSaloonQuest",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_PM4HSaloonLetter Received", 
+					"Actions": [ 
+						"AddQuest {{ModID}}_PMSaloon"
+									]
+
+				},
+		"{{ModID}}_AddPM4HMountainQuest":
+				{ 	"ID": "{{ModID}}_AddPM4HMountainQuest",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_PM4HMountainsLetter Received", 
+					"Actions": [ 
+						"AddQuest {{ModID}}_PMMountains"
+									]
+
+				},
+		"{{ModID}}_Add_PM7HLetter":
+				{
+					"ID": "{{ModID}}_Add_PM7HLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_PM6H, PLAYER_FRIENDSHIP_POINTS Current {{PeiMing}} 1750, WEATHER here rain",
+					"Actions": [
+						"AddMail Current {{ModID}}_PM7HLetter tomorrow"
+					]
+				},
+		"{{ModID}}_Add_TanghuluInviteLetter":
+				{
+					"ID": "{{ModID}}_Add_TanghuluInviteLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_SPECIAL_ORDER_COMPLETE current {{ModID}}_TanghuluIngredients",
+					"Actions": [
+						"AddMail Current {{ModID}}_TanghuluInvite tomorrow"
+					]
+				},	
+		"{{ModID}}_Add_TanghuluRecipeLetter":
+				{
+					"ID": "{{ModID}}_Add_TanghuluRecipeLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_TanghuluEvent, PLAYER_FRIENDSHIP_POINTS Current {{PeiMing}} 1100",
+					"Actions": [
+						"AddMail Current {{ModID}}_PMTanghuluLetter tomorrow"
+					]
+				},
+		"{{ModID}}_Add_ApologyLetter":
+				{
+					"ID": "{{ModID}}_Add_ApologyLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_CONVERSATION_TOPIC Current {{ModID}}_UnhelpfulAdvice4",
+					"Actions": [
+						"AddMail Current {{ModID}}_PMApologyLetter tomorrow",
+					]
+				},
+		"{{ModID}}_Add_SleepOverLetter":
+				{
+					"ID": "{{ModID}}_Add_SleepOverLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current {{PeiMing}} 1000",
+					"Actions": [
+						"AddMail Current {{ModID}}_SleepoverLetter tomorrow",
+					]
+				},
+		"{{ModID}}_RemoveCTUnhelpfulAdvice4":
+				{
+					"ID": "{{ModID}}_RemoveCTUnhelpfulAdvice4",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_Add_ApologyLetter",
+					"Actions": [
+						"RemoveConversationTopic {{ModID}}_UnhelpfulAdvice4"
+					]
+				},
+		"{{ModID}}_Add_NHMSeedsLetter":
+				{
+					"ID": "{{ModID}}_Add_NHMSeedsLetter",
+					"Trigger": "DayEnding",
+					"Condition": "SEASON Fall, PLAYER_FRIENDSHIP_POINTS Current {{PeiMing}} 1250",
+					"Actions": [
+						"AddMail Current {{ModID}}_NHMSeedsLetter tomorrow"
+					]
+				},
+		"{{ModID}}_Add_NHMForPMQuest":
+				{
+					"ID": "{{ModID}}_Add_NHMForPMQuest",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_NHMSeedsLetter Received", 
+					"Actions": [ 
+						"AddQuest {{ModID}}_NHMForPM"
+									]
+
+				},
+		"{{ModID}}_Add_GlazedHeartMelonLetter":
+				{
+					"ID": "{{ModID}}_Add_GlazedHeartMelonLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_CONVERSATION_TOPIC Current questComplete_{{ModID}}_NHMForPM",
+					"Actions": [
+						"AddMail Current {{ModID}}_GlazedHeartMelonLetter tomorrow"
+					]
+				},
+
+	
+			"{{ModID}}_Add_HuangjiuLetter":
+				{
+					"ID": "{{ModID}}_Add_HuangjiuLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_SPECIAL_ORDER_COMPLETE current {{ModID}}_RefinedTastes",
+					"Actions": [
+						"AddMail Current {{ModID}}_HuangjiuLetter tomorrow"
+					]
+				},		
+			"{{ModID}}_Add_LoveTeaLetter":
+				{
+					"ID": "{{ModID}}_Add_LoveTeaLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_FRIENDSHIP_POINTS Current {{PeiMing}} 3500",
+					"Actions": [
+						"AddMail Current {{ModID}}_LoveTeaLetter tomorrow"
+					]
+				},	
+			}
+		 },
+
+
+	]
+} 
+

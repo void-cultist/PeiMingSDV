@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+ {
+"LogName": "Strings for PM's custom room house upgrade",
+"Action": "EditData",
+"Target": "Strings/1_6_Strings",
+"Entries": {
+                "{{ModID}}_Renovation_AddCustomRoom": "{{i18n:Renovation_AddCustomRoom}}",
+				
+			}
+		},
+	]
+}

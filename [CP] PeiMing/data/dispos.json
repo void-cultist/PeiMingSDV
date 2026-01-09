@@ -1,0 +1,268 @@
+
+{ 
+	"Changes": 
+[
+		
+		{ 	"LogName": "Pei Ming dispos",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Entries":
+			{
+				"{{PeiMing}}":
+			 {
+				"DisplayName": "Pei Ming",
+				"BirthSeason": "Summer",
+				"BirthDay": 20,
+				"HomeRegion": "Town",
+				"Language": "Default",
+				"Gender": "Male",
+				"Age": "Adult",
+				"Manner": "Polite",
+				"SocialAnxiety": "Outgoing",
+				"Optimism": "Positive",
+				"IsDarkSkinned": "False",
+				"CanBeRomanced": "False",
+				"SocialTab": "HiddenUntilMet",
+				"CanSocialize": "True",
+				"CanReceiveGifts": "True",
+				"CanGreetNearbyCharacters": "True",
+				"KissSpriteIndex": 36,
+				"KissSpriteFacingRight": true, 
+				"Home": [ 
+									{
+										"Id": "Default",
+										"Location": "{{ModID}}_PeiMingHouse",
+										"Tile": {
+											"X": 15,
+											"Y": 7
+										},
+										"Direction": "right",
+									
+									}
+								],
+				"SpouseRoom": {
+										"MapAsset": "{{PeiMing}}_SpouseRoom",
+										"MapSourceRect": {
+											"X": 0,
+											"Y": 0,
+											"Width": 6,
+											"Height": 9
+										},
+									},
+				"SpousePatio": {
+										"MapAsset": "{{PeiMing}}_SpousePatio",
+										"MapSourceRect": {
+											"X": 0,
+											"Y": 0,
+											"Width": 4,
+											"Height": 4
+										},
+										"SpriteAnimationFrames": [
+											[38, 700],
+											[39, 700],
+
+											]
+										},
+
+
+
+				"SpouseAdopts": null,
+				"SpouseWantsChildren": null,
+				"SpouseGiftJealousy": null,
+
+				"WinterStarGifts": [
+									{
+											"Condition": null,
+											"Id": "Default",
+											"ItemId": null,
+											"RandomItemId": ["(O)Book_Friendship", "(O)888", "(O)614", "(O)72", "(O)74", "(O)279", "(O)Cornucopia_PrismaticRose"] //glowstone ring, diamond, prismatic shard, magic rock candy, green tea
+									}
+								
+								],
+
+					}	
+			}
+	},
+
+	//compat with EnderTedi's Polyamory mod
+
+	{
+		"LogName": "EnderTedi Polyamory compat",
+		"Action": "EditData",
+		"When": { "HasMod: |contains=EnderTedi.Polyamory": true },
+		"Target": "EnderTedi.Polyamory/PolyamoryData",
+		"Entries": {
+			"{{PeiMing}}": {
+				"IsPolyamorous": true
+			}
+		}
+
+	},
+					
+
+
+		//portraits and sprites 
+	{
+        	"LogName": "Base Portraits",
+        	"Action": "Load",
+        	"Target": "Portraits/{{ModId}}_Peiming",
+        	"FromFile": "assets/Portraits/{{Portrait Style}}/Normal.png"
+   	 },		
+	 
+	 {
+        	"LogName": "Base Sprites",
+        	"Action": "Load",
+        	"Target": "Characters/{{ModId}}_Peiming",
+        	"FromFile": "assets/Characters/Normal.png"
+   	 },
+	 
+	//appearances for Winter, BathHouse and Ginger Island
+	
+{	"LogName": "Winter Appearance edit",
+	"Action": "EditData",
+	"Target": "Data/Characters",
+	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
+	"Entries":
+	{
+		"{{PeiMing}}_Winter":
+		{
+			"Id": "{{PeiMing}}_Winter",
+			"Season": "winter",
+			"Portrait": "Portraits/{{PeiMing}}_Winter",
+			"Sprite": "Characters/{{PeiMing}}_Winter",
+			"Indoors": true,
+			"Outdoors": true,
+			"IsIslandAttire": false,
+			"Condition": "TRUE",
+			"Precedence": 0,
+			"Weight": 1
+		},
+	}
+},
+{	"LogName": "Ginger Island Appearance edit",
+	"Action": "EditData",
+	"Target": "Data/Characters",
+	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
+	"Entries":
+	{
+		"{{PeiMing}}_Beach":
+		{
+			"Id": "{{PeiMing}}_Beach",
+			"Portrait": "Portraits/{{PeiMing}}_Beach",
+			"Sprite": "Characters/{{PeiMing}}_Beach",
+			"Indoors": true,
+			"Outdoors": true,
+			"IsIslandAttire": true,
+			"Condition": "TRUE",
+			"Precedence": 0,
+			"Weight": 1
+		},
+	}
+},
+
+{	"LogName": "Spa appearance edit",
+	"Action": "EditData",
+	"Target": "Data/Characters",
+	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
+	"Entries":
+	{
+		"{{PeiMing}}_Bath":
+		{
+			"Id": "{{PeiMing}}_Bath",
+			"Portrait": "Portraits/{{PeiMing}}_Bath",
+			"Sprite": "Characters/{{PeiMing}}_Bath",
+			"Indoors": true,
+			"Outdoors": true,
+			"IsIslandAttire": false,
+			"Condition": "LOCATION_NAME Target BathHouse_Pool", 
+			"Precedence": 0,
+			"Weight": 1
+		},
+	}
+},
+
+{	"LogName": "Beach appearance edit",
+	"Action": "EditData",
+	"Target": "Data/Characters",
+	"TargetField": ["{{ModId}}_Peiming", "Appearance"],
+	"Entries":
+	{
+		"{{PeiMing}}_SummerBeach":
+		{
+			"Id": "{{PeiMing}}_SummerBeach",
+			"Portrait": "Portraits/{{PeiMing}}_SummerBeach",
+			"Sprite": "Characters/{{PeiMing}}_SummerBeach",
+			"Season": "Summer",
+			"Indoors": true,
+			"Outdoors": true,
+			"IsIslandAttire": false,
+			"Condition": "LOCATION_NAME Target Beach, WEATHER Target Sun", 
+			"Precedence": 0,
+			"Weight": 1
+		},
+	}
+},
+
+{
+	"LogName": "Beach Portraits - Appearance Load",
+	"Action": "Load",
+	"Target": "Portraits/{{PeiMing}}_Beach",
+	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Beach.png",
+},
+
+
+{
+	"LogName": "Beach Sprites - Appearance Load",
+	"Action": "Load",
+	"Target": "Characters/{{PeiMing}}_Beach",
+	"FromFile": "assets/Characters/Peiming_Beach.png"
+},
+
+{
+	"LogName": "Winter Portraits - Appearance Load",
+	"Action": "Load",
+	"Target": "Portraits/{{PeiMing}}_Winter",
+	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Winter.png",
+},
+
+
+{
+	"LogName": "Winter Sprites - Appearance Load",
+	"Action": "Load",
+	"Target": "Characters/{{PeiMing}}_Winter",
+	"FromFile": "assets/Characters/Peiming_Winter.png"
+},
+
+{
+	"LogName": "BathHouse Portraits - Appearance Load",
+	"Action": "Load",
+	"Target": "Portraits/{{PeiMing}}_Bath",
+	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Beach.png",
+},
+
+
+{
+	"LogName": "BathHouse Sprites - Appearance Load",
+	"Action": "Load",
+	"Target": "Characters/{{PeiMing}}_Bath",
+	"FromFile": "assets/Characters/Peiming_Beach.png"
+},
+
+{
+	"LogName": "SummerBeach Portraits - Appearance Load",
+	"Action": "Load",
+	"Target": "Portraits/{{PeiMing}}_SummerBeach",
+	"FromFile": "assets/Portraits//{{Portrait Style}}/Peiming_Beach.png",
+},
+
+
+{
+	"LogName": "SummerBeach Sprites - Appearance Load",
+	"Action": "Load",
+	"Target": "Characters/{{PeiMing}}_SummerBeach",
+	"FromFile": "assets/Characters/Peiming_Beach.png"
+},
+
+
+	]
+}

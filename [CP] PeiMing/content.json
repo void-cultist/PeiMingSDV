@@ -56,7 +56,7 @@
                 "House Location": "Alternate"
             }
 		},
-		{
+		/* {
 			"Name": "LockedHouseLocationToken",
 			"Value": "PeiMingExteriorLocked",
 		},
@@ -74,9 +74,46 @@
 			"When": {
                 "House Location": "Alternate"
             }
+		}, */
+		
+		//setpieces
+
+		{
+			"Name": "SetpiecesMap",
+			"When": { "House Location": "Alternate"},
+			"Value": "PeiMingNewOutdoors_Setpieces.tmx"
 		},
-		
-		
+
+		{
+			"Name": "SetpiecesMap",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true, "House Location": "SVE"},
+			"Value": "PeiMingExteriorSVE_Setpieces.tmx"
+		},
+
+		{
+			"Name": "SetpiecesMap",
+			"Value": "PeiMingExterior_Setpieces.tmx"
+		},
+
+		//prismatic rose spawn coordinates. i figured out i could handle it like that AFTER i did separate patches for all other spawns. RIP
+		{
+			"Name": "SpawnableCoordinates",
+			"Value": "Forest 42,73,4,3 55,73,3,7"
+		},
+
+		{
+			"Name": "SpawnableCoordinates",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true, "House Location": "SVE"} ,
+			"Value": "Forest 18,69,2,2 17,79,3,2 22,79,2,2"
+		},
+		{
+			"Name": "SpawnableCoordinates", 
+			"When": { "House Location": "Alternate" },
+			"Value": "{{ModID}}_PeiMingNewOutdoors 3,3,2,9 9,15,3,2"
+		},
+
+
+
 		//vanilla patch, fallback
 		{ "Name": "HousePatchXCoord",
 		"Value": 40
@@ -205,7 +242,7 @@
 	{	
 	"Name": "PM4HLocation",
 	"Value": "Mountain",
-	"When": { "HasSeenEvent |contains={{ModID}}_PM3HMountains": true }
+	"When": { "HasSeenEvent: |contains={{ModID}}_PM3HMountains": true }
 	},
 	{
 	"Name": "PM4HLocation",
@@ -282,58 +319,58 @@
    		 "LogName": "Blank JSON load", //The logline is not required, but it's useful down the road for labeling your patches so you can tell your problem is, say "NPC Dialogue Patch" and not "NPC Patch #14"
         	"Action": "Load",
         	"Target": "Characters/Dialogue/{{PeiMing}}, Characters/schedules/{{PeiMing}}, Strings/schedules/{{PeiMing}}, Strings/StringsFromMaps/{{PMHouse}}, Strings/StringsFromMaps/{{ModID}}_PeiMingExterior, Strings/StringsFromCSFiles/{{PeiMing}}_EngagedRoommate, Strings/1_6_Strings/{{ModID}}_Renovation_AddCustomRoom, Data/EngagementDialogue/{{PeiMing}}, Characters/Dialogue/MarriageDialogue{{PeiMing}}Roommate, Characters/schedules/{{PeiMing}}Roommate, Data/Events/{{PMHouse}}, Data/Locations/{{ModID}}_PeiMingNewOutdoors", 
-        	"FromFile": "assets/data/blank.json" //this should be wherever you put it in your assets folder - put it in a subfolder if you want
+        	"FromFile": "data/blank.json" //this should be wherever you put it in your assets folder - put it in a subfolder if you want
    	 },
 
 //includes
 {
     "LogName": "Include Pei Ming dispos",
    	"Action": "Include",
-   	"FromFile": "assets/data/dispos.json"
+   	"FromFile": "data/dispos.json"
 },
 { 
 	"LogName": "Gift Tastes Include",
    	"Action": "Include",
-   	"FromFile": "assets/data/gifttastes.json"
+   	"FromFile": "data/gifttastes.json"
 },
 {
 	"LogName": "Include Custom Schedule keys",
 	"Action": "Include",
 	"When": { "Partnership": "Platonic Partnership"},
-	"FromFile": "assets/data/PlatonicPartnership/CustomScheduleKeys.json"
+	"FromFile": "data/PlatonicPartnership/CustomScheduleKeys.json"
 },
 {
     "LogName": "Include NPC Dialogue",
    	"Action": "Include",
-	"FromFile": "assets/data/dialogue.json"
+	"FromFile": "data/dialogue.json"
 },
 {
 	"LogName": "Include map data",
 	"Action": "Include",
-	"FromFile": "assets/data/mapdata.json"
+	"FromFile": "data/mapdata.json"
 },
 {
 	"LogName": "Include CT",
 	"Action": "Include",
-	"FromFile": "assets/data/ConversationTopics.json",
+	"FromFile": "data/ConversationTopics.json",
 },
 
 {
 	"LogName": "1.6.Strings include",
 	"Action": "Include",
-	"FromFile": "assets/data/Strings/1_6_Strings.json",
+	"FromFile": "data/Strings/1_6_Strings.json",
 },
 
 {
     "LogName": "Include PeiMing Schedule Strings",
    	"Action": "Include",
-   	"FromFile": "assets/data/Strings/schedules.json"
+   	"FromFile": "data/Strings/schedules.json"
 },
 
 {
 	"LogName": "add map messages to Pei Ming's house and patio",
 	"Action": "Include",
-	"FromFile":  "assets/data/Strings/StringsFromMaps.json" 
+	"FromFile":  "data/Strings/StringsFromMaps.json" 
 },
 {
 	"LogName": "Include updated schedule when Pei Ming is roommate with config Platonic Partnership - Vanilla",
@@ -342,8 +379,8 @@
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
 		"House Location": "Vanilla, Alternate",
 		"Partnership": "Platonic Partnership",
-		"HasSeenEvent |contains={{ModID}}_BecomeRoommates": true },
-	"FromFile": "assets/data/PlatonicPartnership/IgnoreMarriageScheduleVanilla.json"
+		"HasSeenEvent: |contains={{ModID}}_BecomeRoommates": true },
+	"FromFile": "data/PlatonicPartnership/IgnoreMarriageScheduleVanilla.json"
 },
 {
 	"LogName": "Include updated schedule when Pei Ming is roommate with config Platonic Partnership - SVE",
@@ -352,8 +389,8 @@
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 		"House Location": "SVE, Alternate",
 		"Partnership": "Platonic Partnership",
-		"HasSeenEvent |contains={{ModID}}_BecomeRoommates": true },
-	"FromFile": "assets/data/PlatonicPartnership/IgnoreMarriageScheduleSVE.json"
+		"HasSeenEvent: |contains={{ModID}}_BecomeRoommates": true },
+	"FromFile": "data/PlatonicPartnership/IgnoreMarriageScheduleSVE.json"
 },
 {
     "LogName": "PeiMing Vanilla Schedule include",
@@ -361,7 +398,7 @@
 	"When": { 
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
 		"House Location": "Vanilla, Alternate" },
-   	"FromFile": "assets/data/schedule.json"
+   	"FromFile": "data/schedule.json"
 },
 		
 {
@@ -370,12 +407,12 @@
 	"When": { 
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 		"House Location": "SVE, Alternate" },
-   	"FromFile": "assets/data/SVE/schedule.json"
+   	"FromFile": "data/SVE/schedule.json"
 },
 {
 	"LogName": "Include Special Orders",
 	"Action": "Include",
-	"FromFile": "assets/data/specialorders.json"
+	"FromFile": "data/specialorders.json"
 },
 
 
@@ -387,26 +424,32 @@
 { 
 	"LogName": "Include Pei Ming's events",
 	"Action": "Include",
-	"FromFile": "assets/data/Events.json" 
+	"FromFile": "data/Events.json" 
 }, 
 
 {
 	"LogName": "Include Trigger Actions for PM",
 	"Action": "Include",
-	"FromFile": "assets/data/triggeractions.json",
+	"FromFile": "data/triggeractions.json",
 },
 {
 	"LogName": "Include space core spawnables",
 	"Action": "Include",
-	"FromFile": "assets/data/spawnables.json"
+	"FromFile": "data/spawnables/spawnables.json"
 },
+{
+	"LogName": "Include space core spawnables trigger actions",
+	"Action": "Include",
+	"FromFile": "data/spawnables/spawnables_triggeractions.json"
+},
+
 /* { 
 	"LogName": "Include Companionship ceremony (Event)",
 	"Action": "Include",
 	"When":  {
 	"Partnership":"Platonic Partnership"
 			},
-	"FromFile": "assets/data/PlatonicPartnership/ceremony.json"
+	"FromFile": "data/PlatonicPartnership/ceremony.json"
 }, */
 {
    	"LogName": "Festival Include SVE",
@@ -414,7 +457,7 @@
 	"When": {  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 					"Festival Participation": true,
 				 },
-   	"FromFile": "assets/data/SVE/Festivals.json"
+   	"FromFile": "data/SVE/Festivals.json"
 },
 {
    	"LogName": "Festival Include Vanilla",
@@ -422,12 +465,12 @@
 	"When": {  "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
 					"Festival Participation": true,
 				 },
-   	"FromFile": "assets/data/Festivals.json"
+   	"FromFile": "data/Festivals.json"
 },
 {
 	"LogName": "Include Movie data",
 	"Action": "Include",
-	"FromFile": "assets/data/movies.json"
+	"FromFile": "data/movies.json"
 },
 
 	
@@ -459,7 +502,7 @@
   "Action": "EditData",
   "Target": "spacechase0.SpaceCore/NpcExtensionData",
   "When": { "LocationName": "{{PMHouse}}",
-			"HasSeenEvent |contains={{ModID}}_BecomeRoommates": false }, 
+			"HasSeenEvent: |contains={{ModID}}_BecomeRoommates": false }, 
   "Update": "OnLocationChange",
   "Entries": {
 	"{{PeiMing}}": { 

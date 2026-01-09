@@ -1,0 +1,817 @@
+
+{ 
+	"Changes": 
+[
+
+
+/*  █████             █████                        ███                     */
+/* ░░███             ░░███                        ░░░                      */
+/*  ░███  ████████   ███████    ██████  ████████  ████   ██████  ████████  */
+/*  ░███ ░░███░░███ ░░░███░    ███░░███░░███░░███░░███  ███░░███░░███░░███ */
+/*  ░███  ░███ ░███   ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ ░███ ░░░  */
+/*  ░███  ░███ ░███   ░███ ███░███░░░   ░███      ░███ ░███ ░███ ░███      */
+/*  █████ ████ █████  ░░█████ ░░██████  █████     █████░░██████  █████     */
+/* ░░░░░ ░░░░ ░░░░░    ░░░░░   ░░░░░░  ░░░░░     ░░░░░  ░░░░░░  ░░░░░      */
+
+
+{ 
+    "LogName": "Load PM's House Interior Map", 
+	"Action": "Load", // This action loads the map as a new asset into the game
+	"Target": "Maps/{{PMHouse}}", // {{ModID}} is a CP token that is automatically converted into your mod's unique ID. Using it to prefix all your asset names and IDs ensures that your mod's things are unique and won't clash with things from other mods
+	"FromFile": "assets/Maps/PeiMingHouse.tmx" // The name of the map file you made, inside the Maps folder you moved it to
+},	
+{
+	"LogName": "Add PM House Interior ",
+	"Action": "EditData",
+	"Target": "Data/Locations",
+	"Entries": {
+		"{{PMHouse}}": 
+		{ 
+			"DefaultArrivalTile":
+		    { 
+				
+			},
+			"CreateOnLoad":
+			 {
+				"MapPath": "Maps/{{PMHouse}}" 
+			},
+			
+		}	
+	}
+},
+	
+
+
+/*  ██████████              █████                        ███                     */
+/* ░░███░░░░░█             ░░███                        ░░░                      */
+/*  ░███  █ ░  █████ █████ ███████    ██████  ████████  ████   ██████  ████████  */
+/*  ░██████   ░░███ ░░███ ░░░███░    ███░░███░░███░░███░░███  ███░░███░░███░░███ */
+/*  ░███░░█    ░░░█████░    ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ ░███ ░░░  */
+/*  ░███ ░   █  ███░░░███   ░███ ███░███░░░   ░███      ░███ ░███ ░███ ░███      */
+/*  ██████████ █████ █████  ░░█████ ░░██████  █████     █████░░██████  █████     */
+/* ░░░░░░░░░░ ░░░░░ ░░░░░    ░░░░░   ░░░░░░  ░░░░░     ░░░░░  ░░░░░░  ░░░░░      */
+
+
+        {
+            "LogName": "Add PM New Outdoor Location",
+            "Action": "EditMap",
+            "Target": "Maps/Forest",
+            "FromFile": "Assets/Maps/{{HouseLocationToken}}.tmx",
+			 "PatchMode": "Replace",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": "{{HousePatchWidth}}",
+                "Height": "{{HousePatchHeight}}"
+            },
+            "ToArea": {
+                "X": "{{HousePatchXCoord}}",
+                "Y": "{{HousePatchYCoord}}",
+                "Width": "{{HousePatchWidth}}",
+                "Height": "{{HousePatchHeight}}"
+            }
+        },
+
+
+
+
+
+/*    █████████                  █████                             */
+/*   ███░░░░░███                ░░███                              */
+/*  ███     ░░░ █████ ████ ████████████    ██████  █████████████   */
+/* ░███        ░░███ ░███ ███░░░░░███░    ███░░███░░███░░███░░███  */
+/* ░███         ░███ ░███░░█████ ░███    ░███ ░███ ░███ ░███ ░███  */
+/* ░░███     ███░███ ░███ ░░░░███░███ ███░███ ░███ ░███ ░███ ░███  */
+/*  ░░█████████ ░░██████████████ ░░█████ ░░██████  █████░███ █████ */
+/*   ░░░░░░░░░   ░░░░░░░░░░░░░░   ░░░░░   ░░░░░░  ░░░░░ ░░░ ░░░░░  */
+/*                                                                 */
+/*                                                                 */
+
+
+
+
+{
+		"LogName": "Load Alternate Map",
+		"Action": "Load",
+		"When": { "House Location": "Alternate" },
+		"Target": "Maps/{{ModID}}_PeiMingNewOutdoors",
+		"FromFile": "assets/Maps/PeiMingNewOutdoors.tmx",
+},
+{
+	"LogName": "Add PM New Outdoor Location",
+	"Action": "EditData",
+	"When": { "House Location": "Alternate" },
+	"Target": "Data/Locations",
+	"Entries": {
+		"{{ModID}}_PeiMingNewOutdoors": 
+		{
+			"DefaultArrivalTile": { "X": 20, "Y": 14},
+			"CreateOnLoad": {
+				"MapPath": "Maps/{{ModID}}_PeiMingNewOutdoors"
+			},	
+			
+			"FishAreas": 
+			{ "River": 
+				{
+					"DisplayName": null,
+					"Position": null,
+					"CrabPotFishTypes": [],
+					"CrabPotJunkChance": 0.1
+				}
+			},
+			"Fish": [
+				{ 	//Salmon
+					"ItemID": "(O)139",
+					"Chance": 0.3,
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 3,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.3,
+					"SpecificBaitMultiplier": 1.66,
+					"Precedence": -101,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ 	//Eel
+					"ItemID": "(O)148",
+					"Chance": 0.3,
+					"Season": "Spring",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 2,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 1.66,
+					"Precedence": -20,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ 	//Octopus
+					"ItemID": "(O)149",
+					"Chance": 0.1,
+					"Season": "Summer",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 4,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 2.00,
+					"Precedence": -90,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.2,
+				},
+				{ 	//Sea Cucumber
+					"ItemID": "(O)154",
+					"Chance": 0.4,
+					"Condition": "SEASON spring summer fall",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 4,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"Precedence": -80,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0,
+				},
+				{ 	//Super Cucumber
+					"ItemID": "(O)128",
+					"Chance": 0.4,
+					"Season": "Winter",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 4,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 1.66,
+					"Precedence": -80,
+					"IgnoreFishDataRequirements": true,
+				},
+				{ 	//Ice Pip
+					"ItemID": "(O)161", //haha based
+					"Chance": 0.2,
+					"Season": "Winter",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 4,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 1.66,
+					"Precedence": -81,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ 	//Midnight Carp
+					"ItemID": "(O)269",
+					"Chance": 0.3,
+					"Condition": "TIME 1900 2550, SEASON spring summer",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 4,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 1.66,
+					"Precedence": -70,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ 	//Void Salmon
+					"ItemID": "(O)795",
+					"Chance": 0.1,
+					"Condition": "TIME 1900 2550, SEASON fall winter",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 6,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 2,
+					"Precedence": -70,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.2,
+				},
+				{ 	//Blobfish
+					"ItemID": "(O)800",
+					"Chance": 0.01,
+					"Season": "Summer",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 8,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.4,
+					"SpecificBaitBuff": 0.4,
+					"SpecificBaitMultiplier": 2,
+					"Precedence": -91,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.3,
+				},
+				{ 	//SeaJelly
+					"ItemID": "(O)SeaJelly",
+					"Chance": 0.4,
+					"Condition": "SEASON summer winter",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 2,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"Precedence": -40,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ 	//CaveJelly
+					"ItemID": "(O)CaveJelly",
+					"Chance": 0.4,
+					"Condition": "SEASON spring fall",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 2,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"Precedence": -40,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{	//RiverJelly
+					"ItemID": "(O)RiverJelly",
+					"Chance": 0.4,
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 2,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"Precedence": -40,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ //?????????????????????
+					"ItemID": "(O){{ModId}}_77616e6c657420646f6c6c", 
+					"Chance": 0.0001,
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 10,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"Precedence": 90,
+				},
+				//////SVE Fish
+				{ //Bonefish
+					"ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Bonefish", 
+					"Chance": 0.01,
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 6,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 1.66,
+					"Precedence": -78,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ //DiamondCarp
+					"ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Diamond_Carp", 
+					"Chance": 0.1,
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 6,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"CuriosityLureBuff": 0.2,
+					"SpecificBaitBuff": 0.2,
+					"SpecificBaitMultiplier": 1.66,
+					"Precedence": -77,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.1,
+				},
+				{ //Kittyfish
+					"ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Kittyfish", 
+					"Chance": 0.3,
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 6,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"Precedence": -76,
+					"IgnoreFishDataRequirements": true,
+				},
+				{ //Arrowhead shark
+					"ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Arrowhead_Shark", 
+					"Chance": 0.1,
+					"Condition": "SEASON fall, TIME 1200 1800, WEATHER rainy",
+					"PlayerPosition": {
+					"X": 0,
+					"Y": 0,
+					"Width": 255,
+					"Height": 15
+					},
+					"MinFishingLevel": 6,
+					"MinDistanceFromShore": 0,
+					"MaxDistanceFromShore": -1,
+					"ApplyDailyLuck": true,
+					"Precedence": -75,
+					"IgnoreFishDataRequirements": true,
+					"ChanceBoostPerLuckLevel": 0.2,
+				},
+			]
+
+			}
+		}
+	},
+
+
+/*  █████   ███   █████                                    */
+/* ░░███   ░███  ░░███                                     */
+/*  ░███   ░███   ░███ ██████  ████████  ████████   █████  */
+/*  ░███   ░███   ░███░░░░░███░░███░░███░░███░░███ ███░░   */
+/*  ░░███  █████  ███  ███████ ░███ ░░░  ░███ ░███░░█████  */
+/*   ░░░█████░█████░  ███░░███ ░███      ░███ ░███ ░░░░███ */
+/*     ░░███ ░░███   ░░█████████████     ░███████  ██████  */
+/*      ░░░   ░░░     ░░░░░░░░░░░░░      ░███░░░  ░░░░░░   */
+/*                                       ░███              */
+/*                                       █████             */
+/*                                      ░░░░░              */
+
+{
+    "LogName": "Edit Vanilla Forest map to add warp into PM's house",
+    "Action": "EditMap",
+    "Target": "Maps/Forest", // Target the map you're adding your house to.
+	"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"House Location": "Vanilla", 
+			},
+    "MapTiles": [ 
+        {
+            "Position": { "X": 50, "Y": 72 }, // The coordinate of the bottom tile of the door. This is the first set of coordinates that we wrote down earlier in the tutorial.
+            "Layer": "Buildings", // The tile the player is clicking is on the buildings layer.
+            "SetProperties": {
+                "Action": "LockedDoorWarp 5 10 {{PMHouse}} 600 2350" 
+            }
+        },
+		{ "Position": { "X": 51, "Y": 72 }, 
+            "Layer": "Buildings",
+            "SetProperties": {
+                "Action": "LockedDoorWarp 5 10 {{PMHouse}} 600 2350"
+			}
+			},
+    ]
+},
+
+{
+    "LogName": "Edit SVE Forest map to add warp into PM's house",
+    "Action": "EditMap",
+    "Target": "Maps/Forest", // Target the map you're adding your house to.
+	"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true, 
+				"House Location": "SVE",
+			},
+    "MapTiles": [ 
+        { "Position": { "X": 26, "Y": 73 }, 
+            "Layer": "Buildings", 
+            "SetProperties": {
+                "Action": "LockedDoorWarp 5 10 {{PMHouse}} 600 2350" 
+            }
+        },
+		{ "Position": { "X": 27, "Y": 73 }, 
+            "Layer": "Buildings", 
+            "SetProperties": {
+                "Action": "LockedDoorWarp 5 10 {{PMHouse}} 600 2350"
+			}
+			},
+    ]
+},
+{
+    "LogName": "add warp into PM's house in alternate location",
+    "Action": "EditMap",
+    "Target": "Maps/{{ModID}}_PeiMingNewOutdoors", 
+	"When": { "House Location": "Alternate" },
+    "MapTiles": [ 
+        {
+            "Position": { "X": 8, "Y": 9 },
+            "Layer": "Buildings", 
+            "SetProperties": {
+                "Action": "LockedDoorWarp 5 10 {{PMHouse}} 600 2350",
+            }
+        },
+		{ "Position": { "X": 9, "Y": 9 }, 
+            "Layer": "Buildings", 
+            "SetProperties": {
+                "Action": "LockedDoorWarp 5 10 {{PMHouse}} 600 2350"
+			}
+			},
+    ]
+},
+
+// Adds warps to leave the house/area
+{
+    "LogName": "Edit PM's house interior to add warp out of PM's house(VANILLA)",
+    "Action": "EditMap",
+    "Target": "Maps/{{PMHouse}}", // Target the interior house map this time
+	"When": { "House Location": "Vanilla", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
+    "AddWarps": [
+        "5 12 Forest 50 73"	// The first set of coordinates is where you want the player to step to LEAVE the house, the second set is where they will show up OUTSIDE the house, in the village.
+    ]
+},
+
+{
+    "LogName": "Edit PM's house interior to add warp out of PM's house(SVE)",
+    "Action": "EditMap",
+    "Target": "Maps/{{PMHouse}}", 
+	"When": { "House Location": "SVE", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+    "AddWarps": [
+        "5 12 Forest 26 74" ]
+},
+{
+	 "LogName": "Warp from forest to alternate location for mod compat",
+     "Action": "EditMap",
+    "Target": "Maps/{{ModID}}_PeiMingNewOutdoors",
+	"When": { "House Location": "Alternate",
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+    "AddWarps": [
+        "21 14 Forest 0 36"
+            ]
+        },
+
+{
+	 "LogName": "Warp from alternate location to forest  for mod compat",
+     "Action": "EditMap",
+    "Target": "Maps/Forest",
+	"When": { "House Location": "Alternate",
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+    "AddWarps": [
+        "1 36 {{ModID}}_PeiMingNewOutdoors 20 14"
+            ]
+        },
+{
+	 "LogName": "Warp from forest to alternate location for mod compat - SVE",
+     "Action": "EditMap",
+    "Target": "Maps/{{ModID}}_PeiMingNewOutdoors",
+	"When": { "House Location": "Alternate",
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+    "AddWarps": [
+        "21 14 Forest 0 37"
+            ]
+        },
+
+{
+	 "LogName": "Warp from alternate location to forest  for mod compat - SVE",
+     "Action": "EditMap",
+    "Target": "Maps/Forest",
+	"When": { "House Location": "Alternate",
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+    "AddWarps": [
+        "-1 37 {{ModID}}_PeiMingNewOutdoors 20 14"
+            ]
+        },
+
+{
+    "LogName": "Edit PM's house interior to add warp out of PM's house(ALTERNATE)",
+    "Action": "EditMap",
+    "Target": "Maps/{{PMHouse}}", 
+	"When": { "House Location": "Alternate"},
+    "AddWarps": [
+        "5 12 {{ModID}}_PeiMingNewOutdoors 8 10" ]
+},
+
+//Warp Shortcuts (BusStop) After PM sends letter about it
+{
+	"LogName": "PatchBusStopWarp",
+	"Action": "EditMap",
+	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
+	"Update": "OnLocationChange",
+	"Target": "Maps/BusStop",
+	"FromFile": "assets/Maps/PeiMingBusStopWarpPatch.tmx",
+	"PatchMode": "Replace",
+	 "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 2,
+            },
+            "ToArea": {
+                "X": 22,
+                "Y": 21,
+                "Width": 1,
+                "Height": 2,
+            }
+
+},
+
+{
+	"LogName": "PatchPeiMingHouseWarp",
+	"Action": "EditMap",
+	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
+	"Update": "OnLocationChange",
+	"Target": "Maps/{{PMHouse}}",
+	"FromFile": "assets/Maps/PeiMingBedPatch.tmx",
+	"PatchMode": "Replace",
+	 "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 7,
+                "Height": 3,
+            },
+            "ToArea": {
+                "X": 16,
+                "Y": 4,
+                "Width": 7,
+                "Height": 3,
+            }
+
+},
+
+{
+    "LogName": "Add in Warp tiles for the new warps (BusStopwarp)",
+    "Action": "EditMap",
+    "Target": "Maps/{{PMHouse}}", 
+	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
+	"MapTiles": [ 
+        {
+            "Position": { "X": 16, "Y": 5 }, 
+            "Layer": "Back", 
+            "SetProperties": {
+                "TouchAction": "MagicWarp BusStop 14 23" 
+            }
+        },
+	]
+},
+
+{
+    "LogName": "Add in Warp tiles for the new warps (Warp to PM House)",
+    "Action": "EditMap",
+    "Target": "Maps/BusStop", 
+	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
+	"MapTiles": [ 
+        {
+            "Position": { "X": 22, "Y": 22 }, 
+            "Layer": "Back", 
+            "SetProperties": {
+                "TouchAction": "MagicWarp {{PMHouse}} 16 6" 
+            }
+        },
+	]
+},
+
+
+
+/*  █████   █████                                                                                                */
+/* ░░███   ░░███                                                                                                 */
+/*  ░███    ░███   ██████  █████████████    ██████                                                               */
+/*  ░███████████  ███░░███░░███░░███░░███  ███░░███                                                              */
+/*  ░███░░░░░███ ░███ ░███ ░███ ░███ ░███ ░███████                                                               */
+/*  ░███    ░███ ░███ ░███ ░███ ░███ ░███ ░███░░░                                                                */
+/*  █████   █████░░██████  █████░███ █████░░██████                                                               */
+/* ░░░░░   ░░░░░  ░░░░░░  ░░░░░ ░░░ ░░░░░  ░░░░░░                                                                */
+/*                                                                                                               */
+/*                                                                                                               */
+/*                                                                                                               */
+/*  ███████████                                                       █████     ███                              */
+/* ░░███░░░░░███                                                     ░░███     ░░░                               */
+/*  ░███    ░███   ██████  ████████    ██████  █████ █████  ██████   ███████   ████   ██████  ████████    █████  */
+/*  ░██████████   ███░░███░░███░░███  ███░░███░░███ ░░███  ░░░░░███ ░░░███░   ░░███  ███░░███░░███░░███  ███░░   */
+/*  ░███░░░░░███ ░███████  ░███ ░███ ░███ ░███ ░███  ░███   ███████   ░███     ░███ ░███ ░███ ░███ ░███ ░░█████  */
+/*  ░███    ░███ ░███░░░   ░███ ░███ ░███ ░███ ░░███ ███   ███░░███   ░███ ███ ░███ ░███ ░███ ░███ ░███  ░░░░███ */
+/*  █████   █████░░██████  ████ █████░░██████   ░░█████   ░░████████  ░░█████  █████░░██████  ████ █████ ██████  */
+/* ░░░░░   ░░░░░  ░░░░░░  ░░░░ ░░░░░  ░░░░░░     ░░░░░     ░░░░░░░░    ░░░░░  ░░░░░  ░░░░░░  ░░░░ ░░░░░ ░░░░░░   */
+
+////this is still super experimental
+
+ {		"LogName": "Patch Farmhouse Map with new custom room (NOT SPOUSEROOM!!)",
+            "Action": "EditMap",
+			"When": {
+				"Partnership": "Platonic Partnership",
+				/* "Farm Upgrades": "Farmhouse Renovation", */
+			},
+            "Target": "Maps/FarmHouse2, Maps/FarmHouse2_marriage",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "MapProperties", "AdditionalRenovations" ],
+                    "Value": "{{ModId}}_PeiMingRoomRenovation {{ModID}}_MovingInLetter {{ModID}}_PeiMingRoom {{ModID}}_PeiMingRoomEmpty 49 33 10 12",
+                    "Delimiter": "," // if there are already renovations, add a comma before this one
+                }
+            ]
+        },
+
+ {	"LogName": "Load Renovation Map patch",
+    "Action": "Load",
+    "Target": "Maps/{{ModId}}_PeiMingRoom",
+    "FromFile": "assets/Maps/PeiMingRoom.tmx"
+},
+
+
+{	"LogName": "Load Empty House Renovation patch",
+	"Action": "Load",
+    "Target": "Maps/{{ModId}}_PeiMingRoomEmpty",
+    "FromFile": "assets/Maps/PeiMingRoomEmpty.tmx"
+},
+
+{ "LogName": "Add custom House Renovation to Robin's shop",
+	"Action": "EditData",
+	"Target": "Data/HomeRenovations",
+	"When": { 
+		"Partnership": "Platonic Partnership",
+		// "Farm Upgrades": "Farmhouse Renovation",
+		"HasReadLetter:AnyPlayer |contains={{ModID}}_MovingInLetter": true
+			},
+	"Entries": 
+	{
+		"{{ModID}}_Add_CustomRoom":
+		{
+    "TextStrings": "Strings\\1_6_Strings:{{ModID}}_Renovation_AddCustomRoom",
+    "AnimationType": "build",
+    "CheckForObstructions": true,
+    "Price": 100000,
+    "RoomId": "{{ModID}}_PeiMingRoom",
+    "Requirements": [
+      {
+        "Type": "Mail",
+        "Key": "{{ModID}}_MovingInLetter",
+        "Value": "1"
+      }
+    ],
+    "RenovateActions": [
+      {
+        "Type": "Mail",
+        "Key": "{{ModID}}_MovingInLetter",
+        "Value": "1"
+      }
+    ],
+    "RectGroups": [
+      {
+        "Rects": [
+          {
+            "X": 49,
+            "Y": 33,
+            "Width": 10,
+            "Height": 12
+          }
+        ]
+      }
+    ],
+   
+  },
+
+}
+},	
+
+
+
+/*   █████████                                                    ██████   ██████                             */
+/*  ███░░░░░███                                                  ░░██████ ██████                              */
+/* ░███    ░░░  ████████   ██████  █████ ████  █████   ██████     ░███░█████░███   ██████   ████████   █████  */
+/* ░░█████████ ░░███░░███ ███░░███░░███ ░███  ███░░   ███░░███    ░███░░███ ░███  ░░░░░███ ░░███░░███ ███░░   */
+/*  ░░░░░░░░███ ░███ ░███░███ ░███ ░███ ░███ ░░█████ ░███████     ░███ ░░░  ░███   ███████  ░███ ░███░░█████  */
+/*  ███    ░███ ░███ ░███░███ ░███ ░███ ░███  ░░░░███░███░░░      ░███      ░███  ███░░███  ░███ ░███ ░░░░███ */
+/* ░░█████████  ░███████ ░░██████  ░░████████ ██████ ░░██████     █████     █████░░████████ ░███████  ██████  */
+/*  ░░░░░░░░░   ░███░░░   ░░░░░░    ░░░░░░░░ ░░░░░░   ░░░░░░     ░░░░░     ░░░░░  ░░░░░░░░  ░███░░░  ░░░░░░   */
+/*              ░███                                                                        ░███              */
+/*              █████                                                                       █████             */
+/*             ░░░░░                                                                       ░░░░░              */
+
+
+
+{ "LogName": "Load PM spouse Patio",
+	"Action": "Load",
+	"Target": "Maps/{{PeiMing}}_SpousePatio",
+	"FromFile": "assets/Maps/PeiMingSpousePatio.tmx"
+}, 
+
+{ "LogName": "Load PM spouse Room",
+	"Action": "Load",
+	"Target": "Maps/{{PeiMing}}_SpouseRoom",
+		"FromFile": "assets/Maps/PeiMingSpouseRoom.tmx"
+},
+
+
+	]
+}
