@@ -33,7 +33,7 @@ The following mods absolutely **must** be installed for this one to work:
 - [Lumisteria Tilesheets Indoor](https://www.nexusmods.com/stardewvalley/mods/9599)
 - [HxW Tilesheets](https://www.nexusmods.com/stardewvalley/mods/20139)
 - [PC's Tilesheets](https://www.nexusmods.com/stardewvalley/mods/38116)
-- [Northern Heart Melon](placeholder)
+- [Northern Heart Melon](https://www.nexusmods.com/stardewvalley/mods/40998?tab=description)
 
 And of course, SMAPI and Content Patcher.
 
