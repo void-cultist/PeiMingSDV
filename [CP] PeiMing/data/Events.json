@@ -247,8 +247,8 @@
 
 },
 
-/* //8H
-{
+//8H
+/* {
 	"LogName": "Pei Ming 8 Hearts",
 	"Action": "EditData",
 	"When": { "HasFlag": "openedSewer" },
@@ -257,7 +257,7 @@
 		"{{ModID}}_PM8H/Friendship {{PeiMing}} 2000/SawEvent {{ModID}}_PM7H {{ModID}}_PMKrobus": "{{ModID}}_Music/-1000 -1000/farmer 999 999 0 {{PeiMing}} 29 17 1 Wizard 31 16 2 Krobus 32 17 3/"
 	}
 
-},
+}, */
 
 ////Other Events
 
@@ -267,9 +267,16 @@
 	"When": { "HasFlag": "openedSewer" },
 	"Target": "Data/Events/Town",
 	"Entries": { 
-		"{{ModID}}_PMKrobus/Time 2100 2600": "continue/-1000 -1000/{{PeiMing}} 45 91 0 Krobus -999 -999 0/"
+		"{{ModID}}_PMKrobus/Time 2100 2600": "continue/-1000 -1000/{{PeiMing}} 45 91 0 Krobus -999 -999 0/skippable/setSkipActions MarkEventSeen current {{ModID}}_PMKrobus/viewport 45 89 true/pause 500/
+		textAboveHead {{PeiMing}} \"Hm...\" /
+		pause 1000/advancedMove {{PeiMing}} false -12 0 2 500/warp Krobus 34 95/viewport 33 91 true/pause 500/playSound trashcan/advancedMove Krobus false 0 -1 4 300/waitForAllStationary/pause 500/faceDirection {{PeiMing}} 2/pause 500/emote {{PeiMing}} 40/emote Krobus 40/jump Krobus 5/jump {{PeiMing}} 3/pause 300/
+		speak {{PeiMing}} \"Woah! $8#$b# You startled me!\" /pause 500/emote Krobus 0/pause 500/
+		speak {{PeiMing}} \"Wait... what are you even?! $8 \"/pause 300/emote Krobus 40/pause 300/jump Krobus 5/advancedMove Krobus false 0 1 2 10/waitForAllStationary/playSound/warp Krobus -999 -999/pause 200/textAboveHead {{PeiMing}} \"Hold on!\" /
+		pause 1000/speed {{PeiMing}} 6/advancedMove {{PeiMing}} false -4 0 2 30 0 9 3 30 5 0 4 30 0 -4 4 10/waitForAllStationary/pause 200/playSound trashcan/warp {{PeiMing}} -999 -999/pause 1000/globalFade/viewport 1000 1000/
+		changeLocation Sewer/
+		warp Krobus 16 18/warp {{PeiMing}} 16 12/faceDirection Krobus 2/faceDirection {{PeiMing}} 2/globalFadeToClear/viewport 16 16 true/end",
 	}
-}, */
+},
 
 {
 	"LogName": "Tanghulu Event",
