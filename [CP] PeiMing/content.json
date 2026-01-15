@@ -1,5 +1,5 @@
 {
-    "Format": "2.8.0",
+    "Format": "2.9.0",
 	
 	"DynamicTokens": [
 		{
@@ -206,6 +206,102 @@
                 "House Location": "Alternate"
             }
 		},
+
+//lunna npc installed?
+
+{ 
+	"Name": "HasLunna",
+	"Value": false
+	
+},
+
+{ 
+
+	"Name": "HasLunna",
+	"Value": true,
+	"When":
+	{
+		"HasMod: |contains=Rafseazz.LunnaCP": true 
+		}
+},
+
+//////change alternate house location warps when lunna is or isnt installed, with or without SVE
+//vanilla, no lunna
+{
+	"Name": "AlternateToForestWarp",
+	"Value": "21 14 Forest 0 36"
+},
+
+{
+	"Name": "ForestToAlternateWarp",
+	"Value": "1 36 {{ModID}}_PeiMingNewOutdoors 20 14"
+},
+
+//SVE, no lunna
+{
+	"Name": "AlternateToForestWarp",
+	"When": { 
+		"House Location": "Alternate",
+		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+		"HadMod: |contains=Rafseazz.LunnaCP": false 
+},
+	"Value": "21 14 Forest 0 37"
+},
+
+{
+	"Name": "ForestToAlternateWarp",
+	"When": { 
+		"House Location": "Alternate",
+		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+		"HadMod: |contains=Rafseazz.LunnaCP": false 
+},
+	"Value": "-1 37 {{ModID}}_PeiMingNewOutdoors 20 14"
+},
+
+//vanilla with lunna
+{
+	"Name": "AlternateToForestWarp",
+	"When": { 
+		"House Location": "Alternate",
+		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+		"HadMod: |contains=Rafseazz.LunnaCP": true 
+},
+	"Value": "21 14 Forest 0 21"
+},
+
+{
+	"Name": "ForestToAlternateWarp",
+	"When": { 
+		"House Location": "Alternate",
+		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+		"HadMod: |contains=Rafseazz.LunnaCP": true 
+},
+	"Value": "0 26 {{ModID}}_PeiMingNewOutdoors 20 14"
+},
+
+//SVE with lunna
+{
+	"Name": "AlternateToForestWarp",
+	"When": { 
+		"House Location": "Alternate",
+		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+		"HadMod: |contains=Rafseazz.LunnaCP": true 
+},
+	"Value": "21 14 Forest 0 26"
+},
+{
+	"Name": "ForestToAlternateWarp",
+	"When": { 
+		"House Location": "Alternate",
+		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+		"HadMod: |contains=Rafseazz.LunnaCP": true 
+},
+	"Value": "-1 27 {{ModID}}_PeiMingNewOutdoors 20 14"
+},
+
+
+
+
 
 
 //woods or beach visit during birthday
