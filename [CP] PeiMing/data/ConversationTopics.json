@@ -129,7 +129,8 @@
 "Action": "EditData",
 "Target": "Characters/Dialogue/Krobus",
 "Entries":{
-	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Krobus}}"
+	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Krobus}}",
+	"{{ModID}}_PMKrobusCT": "{{i18n:PMKrobusCT_Krobus}}"
 },
 },
 
@@ -230,6 +231,16 @@
 },
 },
 
+//Wizard
+{
+	"LogName": "ConversationTopics - Wizard",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Wizard",
+	"Entries": {
+		"{{ModID}}_PMKrobusCT": "{{i18n:PMKrobusCT_Wizard}}"
+	}
+},
+
 /////////////////////////SVE Characters
 //Andy
 { "LogName": "ConversationTopics - Andy",
@@ -310,6 +321,7 @@
 		"{{ModID}}_UnhelpfulAdvice": "{{i18n:UnhelpfulAdvice}}$action addConversationTopic {{ModID}}_UnhelpfulAdvice2 30, RemoveConversationTopic {{ModID}}_UnhelpfulAdvice, AddFriendshipPoints {{PeiMing}} -100 $k", //only after bad choice in 5H event
 		"{{ModID}}_UnhelpfulAdvice2": "{{i18n:UnhelpfulAdvice2}} $action addConversationTopic {{ModID}}_UnhelpfulAdvice3 30, RemoveConversationTopic {{ModID}}_UnhelpfulAdvice2 $k",
 		"{{ModID}}_UnhelpfulAdvice3": "%{{i18n:UnhelpfulAdvice3}} $action addConversationTopic {{ModID}}_UnhelpfulAdvice4 10, RemoveConversationTopic {{ModID}}_UnhelpfulAdvice3 $k",
+		"{{ModID}}_PMKrobusCT": "{{i18n:PMKrobusCT_PeiMing}}"
 
 	}
 }
