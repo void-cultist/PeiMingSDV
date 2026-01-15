@@ -267,14 +267,49 @@
 	"When": { "HasFlag": "openedSewer" },
 	"Target": "Data/Events/Town",
 	"Entries": { 
-		"{{ModID}}_PMKrobus/Time 2100 2600": "continue/-1000 -1000/{{PeiMing}} 45 91 0 Krobus -999 -999 0/skippable/setSkipActions MarkEventSeen current {{ModID}}_PMKrobus/viewport 45 89 true/pause 500/
+		"{{ModID}}_PMKrobus/Time 2100 2600": "continue/-1000 -1000/{{PeiMing}} 45 91 0 Krobus -999 -999 0/skippable/addConversationTopic {{ModID}}_PMKrobusCT 5/setSkipActions MarkEventSeen current {{ModID}}_PMKrobus AddConversationTopic {{ModID}}_PMKrobusCT 5/viewport 45 89 true/pause 500/
 		textAboveHead {{PeiMing}} \"Hm...\" /
 		pause 1000/advancedMove {{PeiMing}} false -12 0 2 500/warp Krobus 34 95/viewport 33 91 true/pause 500/playSound trashcan/advancedMove Krobus false 0 -1 4 300/waitForAllStationary/pause 500/faceDirection {{PeiMing}} 2/pause 500/emote {{PeiMing}} 40/emote Krobus 40/jump Krobus 5/jump {{PeiMing}} 3/pause 300/
 		speak {{PeiMing}} \"Woah! $8#$b# You startled me!\" /pause 500/emote Krobus 0/pause 500/
-		speak {{PeiMing}} \"Wait... what are you even?! $8 \"/pause 300/emote Krobus 40/pause 300/jump Krobus 5/advancedMove Krobus false 0 1 2 10/waitForAllStationary/playSound/warp Krobus -999 -999/pause 200/textAboveHead {{PeiMing}} \"Hold on!\" /
+		speak {{PeiMing}} \"Wait... what are you even?! $8 \" /pause 300/emote Krobus 40/pause 300/jump Krobus 5/advancedMove Krobus false 0 1 2 10/waitForAllStationary/playSound/warp Krobus -999 -999/pause 200/textAboveHead {{PeiMing}} \"Hold on!\" /
 		pause 1000/speed {{PeiMing}} 6/advancedMove {{PeiMing}} false -4 0 2 30 0 9 3 30 5 0 4 30 0 -4 4 10/waitForAllStationary/pause 200/playSound trashcan/warp {{PeiMing}} -999 -999/pause 1000/globalFade/viewport 1000 1000/
 		changeLocation Sewer/
-		warp Krobus 16 18/warp {{PeiMing}} 16 12/faceDirection Krobus 2/faceDirection {{PeiMing}} 2/globalFadeToClear/viewport 16 16 true/end",
+		warp Krobus 16 18/warp {{PeiMing}} 16 12/faceDirection Krobus 2/faceDirection {{PeiMing}} 2/globalFadeToClear/viewport 16 16 true/pause 300/
+		textAboveHead {{PeiMing}} \"Ugh, that stench...\" /pause 1000/faceDirection {{PeiMing}} 1/pause 100/faceDirection {{PeiMing}} 3/pause 100/faceDirection {{PeiMing}} 2/pause 300/
+		emote {{PeiMing}} 16/pause 300/speak {{PeiMing}} \"There you are! $8\" /pause 300/speed {{PeiMing}} 6/
+		advancedMove {{PeiMing}} false 0 5 2 30/shake Krobus 1000/waitForAllStationary/pause 400/
+		textAboveHead Krobus \"Don't hurt me...\" /pause 1000/
+		emote {{PeiMing}} 8/pause 500/
+		textAboveHead {{PeiMing}} \"Huh...?\" /pause 1000/
+		faceDirection Krobus 1/pause 300/
+		speak Krobus \"Um... you are that god that suddenly appeared here, right?\" /
+		emote {{PeiMing}} 16/pause 500/
+		faceDirection Krobus 0/pause 300/
+		jump {{PeiMing}} 4/speak {{PeiMing}} \"Wait! You are one of those shadow people! From the mines!$8#$b# You know how to speak?! How do you even know my name?! Answer me! $8\" /pause 300/
+		speak Krobus \"This is an awful lot of questioning for an ancient god god that fell from the sky...\" /pause 500/
+		emote {{PeiMing}} 28/pause 500/speak {{PeiMing}} \"Ahaha...#$b# You do have a point.\" /pause 300/jump {{PeiMing}} 4/pause 300/
+		speak {{PeiMing}} \"Regardless! You know too much!\" /pause 500/
+		speak Krobus \"Somebody told me about you and I got curious... #$b# Sometimes, I saw you outside at night, trying to talk to someone.\" /pause 300/
+		emote {{PeiMing}} 40/pause 500/speak {{PeiMing}} \" Have you been stalking me?! $8 \" /pause 100/
+		jump Krobus 6/speak Krobus \"No! I just-\" /pause 400/emote {{PeiMing}} 8/pause 500/
+		speak Krobus \"I just wanted to help. $2\" /pause 1000/faceDirection Krobus 3/pause 100/
+		speak Krobus \"I know what it feels like to miss family and friends and-\" /
+		shake {{PeiMing}} 300/pause 200/jump {{PeiMing}} 3/pause 100/textAboveHead {{PeiMing}} \"Hahahahaha!\" /pause 1000/
+		emote Krobus 8/pause 500/speak {{PeiMing}} \"Ha- I see how it is. Okay. Alright.\"/pause 500/
+		speak {{PeiMing}} \"It's okay, you don't need to help me. I'll manage, somehow. Just don't startle me again, shadow kid.\" /pause 400/
+		textAboveHead Krobus \"It's Krobus...\" /pause 1000/
+		textAboveHead {{PeiMing}} \"Krobus then.\"/pause 1000/
+		faceDirection {{PeiMing}} 0/pause 100/advancedMove {{PeiMing}} 0 -3 4 50/
+		faceDirection Krobus 0/speak Krobus \"Stop, please!\" /waitForAllStationary/pause 300/faceDirection {{PeiMing}} 1/emote {{PeiMing}} 8/pause 500/
+		speak Krobus \"You are not going to tell the villagers about me, right? And why did you not attack me? I thought you'd- \" /pause 500/
+		speak {{PeiMing}} \" Stop being silly, Krobinian. \" /pause 200/emote Krobus 38/pause 400/beginSimultaneousCommand/textAboveHead Krobus \" It's Krobus... \" /
+		speak {{PeiMing}} \"You did not act as brutish as those shadow folks in the mines. #$b# And you were trembling when you saw me. #$b# I'll just go ask @ about you. ${He^She^They}$ ${knows^knows^know}$ all kinds of freaky magical things.\" /endSimultaneousCommand/pause 300/emote Krobus 28/
+		speak {{PeiMing}} \"Like yours sincerely! $9\" /pause 500/faceDirection {{PeiMing}} 0/advancedMove {{PeiMing}} false 0 -3 4 100/speed Krobus 6/
+		advancedMove {{PeiMing}} false 0 -3 4 100/waitForAllStationary/warp {{PeiMing}} 999 999/jump Krobus 4/
+		textAboveHead Krobus \"Um... stop by at my shop anytime!\" /pause 500/emote Krobus 40/pause 300/speak Krobus \" Strange fellow. But I guess he is on my side? \"/pause 500/
+		advancedMove Krobus 0 7 2 100/globalFade/viewport -999 -999/
+
+		end",
 	}
 },
 

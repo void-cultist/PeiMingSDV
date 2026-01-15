@@ -549,36 +549,44 @@
 	"When": { "House Location": "SVE", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
     "AddWarps": [
         "5 12 Forest 26 74" ]
+
 },
+
+//Alternate Location warp no SVE
 {
-	 "LogName": "Warp from forest to alternate location for mod compat",
+	 "LogName": "Warp from alternate location to forest  for mod compat",
      "Action": "EditMap",
     "Target": "Maps/{{ModID}}_PeiMingNewOutdoors",
 	"When": { "House Location": "Alternate",
-"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+"HasMod: |contains=Rafseazz.LunnaCP": "{{HasLunna}}" },
     "AddWarps": [
-        "21 14 Forest 0 36"
+        "{{AlternateToForestWarp}}"
             ]
         },
 
 {
-	 "LogName": "Warp from alternate location to forest  for mod compat",
+	 "LogName": "Warp from forest to alternate location for mod compat",
      "Action": "EditMap",
     "Target": "Maps/Forest",
 	"When": { "House Location": "Alternate",
-"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false},
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+"HasMod: |contains=Rafseazz.LunnaCP": "{{HasLunna}}" },
     "AddWarps": [
-        "1 36 {{ModID}}_PeiMingNewOutdoors 20 14"
+        "{{ForestToAlternateWarp}}"
             ]
         },
+
+//Alternate location warp with SVE
 {
 	 "LogName": "Warp from forest to alternate location for mod compat - SVE",
      "Action": "EditMap",
     "Target": "Maps/{{ModID}}_PeiMingNewOutdoors",
 	"When": { "House Location": "Alternate",
-"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+"HadMod: |contains=Rafseazz.LunnaCP": "{{HasLunna}}" },
     "AddWarps": [
-        "21 14 Forest 0 37"
+        "{{AlternateToForestWarp}}"
             ]
         },
 
@@ -587,12 +595,14 @@
      "Action": "EditMap",
     "Target": "Maps/Forest",
 	"When": { "House Location": "Alternate",
-"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true},
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+"HadMod: |contains=Rafseazz.LunnaCP": "{{HasLunna}}" },
     "AddWarps": [
-        "-1 37 {{ModID}}_PeiMingNewOutdoors 20 14"
+        "{{ForestToAlternateWarp}}"
             ]
         },
 
+//warp out to alternate location from house
 {
     "LogName": "Edit PM's house interior to add warp out of PM's house(ALTERNATE)",
     "Action": "EditMap",
