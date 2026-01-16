@@ -55,6 +55,41 @@
 "PMHaley.24": "People are only going to ask me about romantic partnerships, aren't they?",
 "PMHaley.25": "sigh...",
 
+//Pei Ming meets Krobus
+"PMKrobus.0": "Hm...",
+"PMKrobus.1": "Well, time to return home.",
+"PMKrobus.2": "Woah! $8#$b# You startled me!",
+"PMKrobus.3": "Wait... what are you even?! $8 ",
+"PMKrobus.4": "Hold on!",
+"PMKrobus.5": "Ugh, that stench...",
+"PMKrobus.6": "There you are! $8",
+"PMKrobus.7": "Don't hurt me...",
+"PMKrobus.8": "Huh...?",
+"PMKrobus.9": "Um... you are that god that suddenly appeared here, right?",
+"PMKrobus.10": "Wait! You are one of those shadow people! From the mines!$8#$b# You know how to speak?! How do you even know my name?! Answer me! $8",
+"PMKrobus.11": "This is an awful lot of questioning for an ancient god god that fell from the sky...",
+"PMKrobus.12": "Ahaha...#$b# You do have a point.",
+"PMKrobus.13": "Regardless! You know too much!",
+"PMKrobus.14": "Somebody has told me about you and I got curious... #$b# Occasionally, I have seen you outside at night, trying to talk to someone who wasn't there.",
+"PMKrobus.15": " Have you been stalking me?! $8 ",
+"PMKrobus.16": "No! I just-",
+"PMKrobus.17": "I just wanted to help. $2",
+"PMKrobus.18": "I know what it feels like to miss family and friends and-",
+"PMKrobus.19": "Hahahahaha!",
+"PMKrobus.20": "Ha- I see how it is. Okay. Alright.",
+"PMKrobus.21": "It's okay, you don't need to help me. I'll manage, somehow. Just don't startle me again, shadow kid.",
+"PMKrobus.22": "It's Krobus...",
+"PMKrobus.23": "Krobus then.",
+"PMKrobus.24": "Stop, please!",
+"PMKrobus.25": "You are not going to tell the villagers about me, right? And why did you not attack me? I thought you'd-",
+"PMKrobus.26": "Stop being silly, Krobinian.",
+"PMKrobus.27": "It's Krobus...",
+"PMKrobus.28": "You did not act as brutish as those shadow folks in the mines. #$b# And you were trembling when you saw me. #$b# I'll just go ask @ about you. ${He^She^They}$ ${knows^knows^know}$ all kinds of freaky magical things.",
+"PMKrobus.29": "Like yours sincerely! $9",
+"PMKrobus.30": "We shall meet again.",
+"PMKrobus.31": "Um... stop by at my shop anytime!",
+"PMKrobus.32": "Strange fellow. But I guess he is on my side?",
+
 //HEART EVENTS
 //2 HEARTS
 "PM2H.0": "Ah, @. I did not hear you coming. Do you need anything from this venerable one?",
@@ -481,6 +516,10 @@
 
 "TanghuluCT_Caroline": "Pei Ming offered me some homemade tanghulu and told me that you helped him making them! #$b# They tasted very nice, well done.",
 "TanghuluCT_Evelyn": "Sir Pei Ming brought us some sweet fruit skewers earlier. #$b# It's nice to see that young men are willing to cook! $h",
+
+"PMKrobusCT_Krobus": "Ah, hello, @. I encountered Pei Ming the other day. #$b# He really scared me at first but in the end, he didn't attack me at all. #$e# You see, I have been wanting to help him reconnect with the people he misses ever since his landing here. #$b# I will let you know if I figure something out. $1",
+"PMKrobusCT_PeiMing": "If it isn't my favorite farmer @. I am sure you know Krobers? #$b# I ran into them recently, they thought I was about to end their life or something. #$e# Turns out that they want to help somehow, heh...#$b#$y 'They shouldn't concern themselves with such things._Be nice to Krobus, okay?_Ha, of course! I have no reason not to._Their name is Krobus, by the way._Oh? Well, Krobus then.'",
+"PMKrobusCT_Wizard": "So our divine visitor has encountered Krobus? Well, I suppose they both are unique individuals.",
 
 ////////roommate dialogue
 //moving in accept
