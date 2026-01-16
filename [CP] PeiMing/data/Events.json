@@ -262,54 +262,59 @@
 ////Other Events
 
 {
-	"LogName": "Pei Ming meets Krobus",
+
+
+	"LogName": "Pei Ming meets Krobus SVE",
 	"Action": "EditData",
 	"When": { "HasFlag": "openedSewer" },
 	"Target": "Data/Events/Town",
 	"Entries": { 
-		"{{ModID}}_PMKrobus/Time 2100 2600": "continue/-1000 -1000/{{PeiMing}} 45 91 0 Krobus -999 -999 0/skippable/addConversationTopic {{ModID}}_PMKrobusCT 5/setSkipActions MarkEventSeen current {{ModID}}_PMKrobus AddConversationTopic {{ModID}}_PMKrobusCT 5/viewport 45 89 true/pause 500/
-		textAboveHead {{PeiMing}} \"Hm...\" /
-		pause 1000/advancedMove {{PeiMing}} false -12 0 2 500/warp Krobus 34 95/viewport 33 91 true/pause 500/playSound trashcan/advancedMove Krobus false 0 -1 4 300/waitForAllStationary/pause 500/faceDirection {{PeiMing}} 2/pause 500/emote {{PeiMing}} 40/emote Krobus 40/jump Krobus 5/jump {{PeiMing}} 3/pause 300/
-		speak {{PeiMing}} \"Woah! $8#$b# You startled me!\" /pause 500/emote Krobus 0/pause 500/
-		speak {{PeiMing}} \"Wait... what are you even?! $8 \" /pause 300/emote Krobus 40/pause 300/jump Krobus 5/advancedMove Krobus false 0 1 2 10/waitForAllStationary/playSound/warp Krobus -999 -999/pause 200/textAboveHead {{PeiMing}} \"Hold on!\" /
-		pause 1000/speed {{PeiMing}} 6/advancedMove {{PeiMing}} false -4 0 2 30 0 9 3 30 5 0 4 30 0 -4 4 10/waitForAllStationary/pause 200/playSound trashcan/warp {{PeiMing}} -999 -999/pause 1000/globalFade/viewport 1000 1000/
+		"{{ModID}}_PMKrobus/Time 2100 2600": "nightTime/-1000 -1000/{{PeiMing}} 47 89 0 Krobus -999 -999 0/skippable/addConversationTopic {{ModID}}_PMKrobusCT 5/setSkipActions MarkEventSeen current {{ModID}}_PMKrobus/setSkipActions AddConversationTopic {{ModID}}_PMKrobusCT 5/viewport 40 90 true/pause 500/
+		textAboveHead {{PeiMing}} \"{{i18n:PMKrobus.0}}\" /pause 3000/textAboveHead {{PeiMing}} \"{{i18n:PMKrobus.1}}\" /pause 2000/
+		speed {{PeiMing}} 3/
+		advancedMove {{PeiMing}} false 0 6 2 50 -7 0 3 10/waitForAllStationary/advancedMove {{PeiMing}} false 0 -3 3 10/waitForAllStationary/advancedMove {{PeiMing}} false -3 0 3 10/waitForAllStationary/advancedMove {{PeiMing}} false -3 0 2 10/warp Krobus 34 95/pause 300/playSound trashcanlid/advancedMove Krobus false -1 0 4 300/waitForAllStationary/pause 50/faceDirection {{PeiMing}} 2/emote {{PeiMing}} 40/emote Krobus 40/jump Krobus 7/jump {{PeiMing}} 5/pause 300/
+		speak {{PeiMing}} \"{{i18n:PMKrobus.2}}\" /pause 500/emote Krobus 40/pause 500/
+		speak {{PeiMing}} \"{{i18n:PMKrobus.3}}\" /pause 300/emote Krobus 40/pause 300/jump Krobus 5/advancedMove Krobus false 1 0 2 10/waitForAllStationary/playSound trashcanlid/warp Krobus -999 -999/pause 200/textAboveHead {{PeiMing}} \"{{i18n:PMKrobus.4}}\" /
+		pause 1000/speed {{PeiMing}} 6/advancedMove {{PeiMing}} false -4 0 2 30 0 9 3 30 5 0 4 30 0 -4 4 10/globalFade 0.05/viewport 1000 1000/waitForAllStationary/playSound trashcanlid/warp {{PeiMing}} -999 -999/stopMusic/pause 100/
 		changeLocation Sewer/
-		warp Krobus 16 18/warp {{PeiMing}} 16 12/faceDirection Krobus 2/faceDirection {{PeiMing}} 2/globalFadeToClear/viewport 16 16 true/pause 300/
-		textAboveHead {{PeiMing}} \"Ugh, that stench...\" /pause 1000/faceDirection {{PeiMing}} 1/pause 100/faceDirection {{PeiMing}} 3/pause 100/faceDirection {{PeiMing}} 2/pause 300/
-		emote {{PeiMing}} 16/pause 300/speak {{PeiMing}} \"There you are! $8\" /pause 300/speed {{PeiMing}} 6/
+		warp Krobus 16 18/warp {{PeiMing}} 16 12/faceDirection Krobus 2/faceDirection {{PeiMing}} 2/globalFadeToClear/viewport 16 16 true/pause 600/
+		textAboveHead {{PeiMing}} \"{{i18n:PMKrobus.5}}\" /pause 1000/faceDirection {{PeiMing}} 1/pause 100/faceDirection {{PeiMing}} 3/pause 100/faceDirection {{PeiMing}} 2/pause 300/
+		emote {{PeiMing}} 16/pause 300/speak {{PeiMing}} \"{{i18n:PMKrobus.6}}\" /pause 300/speed {{PeiMing}} 6/
 		advancedMove {{PeiMing}} false 0 5 2 30/shake Krobus 1000/waitForAllStationary/pause 400/
-		textAboveHead Krobus \"Don't hurt me...\" /pause 1000/
+		textAboveHead Krobus \"{{i18n:PMKrobus.7}}\" /pause 1000/
 		emote {{PeiMing}} 8/pause 500/
-		textAboveHead {{PeiMing}} \"Huh...?\" /pause 1000/
+		textAboveHead {{PeiMing}} \"{{i18n:PMKrobus.8}}\" /pause 1000/
 		faceDirection Krobus 1/pause 300/
-		speak Krobus \"Um... you are that god that suddenly appeared here, right?\" /
+		speak Krobus \"{{i18n:PMKrobus.9}}\" /
 		emote {{PeiMing}} 16/pause 500/
 		faceDirection Krobus 0/pause 300/
-		jump {{PeiMing}} 4/speak {{PeiMing}} \"Wait! You are one of those shadow people! From the mines!$8#$b# You know how to speak?! How do you even know my name?! Answer me! $8\" /pause 300/
-		speak Krobus \"This is an awful lot of questioning for an ancient god god that fell from the sky...\" /pause 500/
-		emote {{PeiMing}} 28/pause 500/speak {{PeiMing}} \"Ahaha...#$b# You do have a point.\" /pause 300/jump {{PeiMing}} 4/pause 300/
-		speak {{PeiMing}} \"Regardless! You know too much!\" /pause 500/
-		speak Krobus \"Somebody told me about you and I got curious... #$b# Sometimes, I saw you outside at night, trying to talk to someone.\" /pause 300/
-		emote {{PeiMing}} 40/pause 500/speak {{PeiMing}} \" Have you been stalking me?! $8 \" /pause 100/
-		jump Krobus 6/speak Krobus \"No! I just-\" /pause 400/emote {{PeiMing}} 8/pause 500/
-		speak Krobus \"I just wanted to help. $2\" /pause 1000/faceDirection Krobus 3/pause 100/
-		speak Krobus \"I know what it feels like to miss family and friends and-\" /
-		shake {{PeiMing}} 300/pause 200/jump {{PeiMing}} 3/pause 100/textAboveHead {{PeiMing}} \"Hahahahaha!\" /pause 1000/
-		emote Krobus 8/pause 500/speak {{PeiMing}} \"Ha- I see how it is. Okay. Alright.\"/pause 500/
-		speak {{PeiMing}} \"It's okay, you don't need to help me. I'll manage, somehow. Just don't startle me again, shadow kid.\" /pause 400/
-		textAboveHead Krobus \"It's Krobus...\" /pause 1000/
-		textAboveHead {{PeiMing}} \"Krobus then.\"/pause 1000/
-		faceDirection {{PeiMing}} 0/pause 100/advancedMove {{PeiMing}} 0 -3 4 50/
-		faceDirection Krobus 0/speak Krobus \"Stop, please!\" /waitForAllStationary/pause 300/faceDirection {{PeiMing}} 1/emote {{PeiMing}} 8/pause 500/
-		speak Krobus \"You are not going to tell the villagers about me, right? And why did you not attack me? I thought you'd- \" /pause 500/
-		speak {{PeiMing}} \" Stop being silly, Krobinian. \" /pause 200/emote Krobus 38/pause 400/beginSimultaneousCommand/textAboveHead Krobus \" It's Krobus... \" /
-		speak {{PeiMing}} \"You did not act as brutish as those shadow folks in the mines. #$b# And you were trembling when you saw me. #$b# I'll just go ask @ about you. ${He^She^They}$ ${knows^knows^know}$ all kinds of freaky magical things.\" /endSimultaneousCommand/pause 300/emote Krobus 28/
-		speak {{PeiMing}} \"Like yours sincerely! $9\" /pause 500/faceDirection {{PeiMing}} 0/advancedMove {{PeiMing}} false 0 -3 4 100/speed Krobus 6/
-		advancedMove {{PeiMing}} false 0 -3 4 100/waitForAllStationary/warp {{PeiMing}} 999 999/jump Krobus 4/
-		textAboveHead Krobus \"Um... stop by at my shop anytime!\" /pause 500/emote Krobus 40/pause 300/speak Krobus \" Strange fellow. But I guess he is on my side? \"/pause 500/
-		advancedMove Krobus 0 7 2 100/globalFade/viewport -999 -999/
+		jump {{PeiMing}} 4/speak {{PeiMing}} \"{{i18n:PMKrobus.10}}\" /pause 300/
+		speak Krobus \"{{i18n:PMKrobus.11}}\" /pause 500/
+		emote {{PeiMing}} 28/pause 500/speak {{PeiMing}} \"{{i18n:PMKrobus.12}}\" /pause 300/jump {{PeiMing}} 4/pause 300/
+		speak {{PeiMing}} \"{{i18n:PMKrobus.13}}\" /pause 500/playMusic {{ModID}}_ArukasBloom/
+		speak Krobus \"{{i18n:PMKrobus.14}}\" /pause 300/
+		emote {{PeiMing}} 40/pause 500/speak {{PeiMing}} \"{{i18n:PMKrobus.15}}\" /pause 100/
+		jump Krobus 6/speak Krobus \"{{i18n:PMKrobus.16}}\" /pause 400/emote {{PeiMing}} 8/pause 500/
+		speak Krobus \"{{i18n:PMKrobus.17}}\" /pause 1000/faceDirection Krobus 3/pause 100/
+		speak Krobus \"{{i18n:PMKrobus.18}}\" /pause 1500/
+		shake {{PeiMing}} 300/pause 200/jump {{PeiMing}} 4/pause 100/textAboveHead {{PeiMing}} \"{{i18n:PMKrobus.19}}\" /pause 1000/
+		emote Krobus 8/pause 500/speak {{PeiMing}} \"{{i18n:PMKrobus.20}}\" /pause 500/
+		speak {{PeiMing}} \"{{i18n:PMKrobus.21}}\" /pause 400/
+		textAboveHead Krobus \"{{i18n:PMKrobus.22}}\" /pause 1000/
+		textAboveHead {{PeiMing}} \"{{i18n:PMKrobus.23}}\" /pause 1000/
+		faceDirection {{PeiMing}} 0/pause 100/speed {{PeiMing}} 2/advancedMove {{PeiMing}} false 0 -3 4 50/
+		faceDirection Krobus 0/speak Krobus \"{{i18n:PMKrobus.24}}\" /waitForAllStationary/pause 300/faceDirection {{PeiMing}} 1/emote {{PeiMing}} 8/pause 500/
+		speak Krobus \"{{i18n:PMKrobus.25}}\" /pause 500/
+		speak {{PeiMing}} \"{{i18n:PMKrobus.26}}\" /pause 200/emote Krobus 28/pause 400/beginSimultaneousCommand/textAboveHead Krobus \"{{i18n:PMKrobus.27}}\" /
+		speak {{PeiMing}} \"{{i18n:PMKrobus.28}}\" /endSimultaneousCommand/pause 300/emote Krobus 28/
+		speak {{PeiMing}} \"{{i18n:PMKrobus.29}}\" /pause 500/faceDirection {{PeiMing}} 0/pause 500/textAboveHead {{PeiMing}} \"{{i18n:PMKrobus.30}}\" /pause 800/
+		advancedMove {{PeiMing}} false 0 -3 4 100/speed Krobus 2/
+		advancedMove Krobus false 0 -3 4 100/waitForAllStationary/warp {{PeiMing}} 999 999/jump Krobus 4/
+		textAboveHead Krobus \"{{i18n:PMKrobus.31}}\" /pause 1000/emote Krobus 40/pause 300/speak Krobus \"{{i18n:PMKrobus.32}}\" /pause 500/
+		advancedMove Krobus false 0 7 2 100/globalFade/viewport -999 -999/
 
 		end",
+
 	}
 },
 
@@ -359,7 +364,7 @@
 	"Action": "EditData",
 	"Target": "Data/Events/Town",
 	"Entries": {
-		"{{ModID}}_PMHaley/Season Spring/Time 1200 1700/Weather sunny/Friendship Haley 350, {{PeiMing}} 350": "poppy/-1000 -1000/Haley 24 90 3 {{PeiMing}} -100 -100 0/skippable/addConversationTopic {{ModID}}_HaleyLoveAdvice/viewport 24 92/warp {{PeiMing}} 1 91/pause 2000/speed {{PeiMing}} 4/move {{PeiMing}} 12 0 1/move {{PeiMing}} 11 0 1 true/faceDirection Haley 0/pause 100/faceDirection Haley 1/pause 200/faceDirection Haley 2/pause 2000/faceDirection Haley 2/pause 100/textAboveHead Haley \"{{i18n:PMHaley.0}}\"/pause 500/emote {{PeiMing}} 16/pause 500/faceDirection {{PeiMing}} 3/pause 100/move {{PeiMing}} 0 0 0/pause 300/speak {{PeiMing}} \"{{i18n:PMHaley.1}}\"/pause 300/emote Haley 40/pause 500/emote Haley 60/pause 500/speak Haley \"{{i18n:PMHaley.2}}\"/pause 300/emote {{PeiMing}} 32/pause 500/speak {{PeiMing}} \"{{i18n:PMHaley.3}}\"/pause 500/emote Haley 40/pause 500/textAboveHead Haley \"{{i18n:PMHaley.4}}\"/pause 500/speak Haley \"{{i18n:PMHaley.5}}\"/pause 1000/emote Haley 60/pause 900/emote {{PeiMing}} 8/pause 500/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.6}}\"/pause 300/jump Haley 5/pause 300/speak Haley \"{{i18n:PMHaley.7}}\"/StopMusic/pause 500/emote {{PeiMing}} 28/pause 500/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.8}}\"/pause 1000/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.9}}\"/pause 1000/emote Haley 8/pause 1000/beginSimultaneousCommand/jump {{PeiMing}} 8/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.10}}\"/endSimultaneousCommand/speak {{PeiMing}} \"{{i18n:PMHaley.11}}\"/playMusic poppy/pause 300/beginSimultaneousCommand/jump {{PeiMing}} 2/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.12}}\"/endSimultaneousCommand/pause 600/beginSimultaneousCommand/jump {{PeiMing}} 4/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.13}}\"/endSimultaneousCommand/pause 600/beginSimultaneousCommand/jump {{PeiMing}} 6/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.14}}\"/endSimultaneousCommand/pause 1000/speak Haley \"....................\"/pause 500/stopMusic/speak {{PeiMing}} \"......................\"/pause 400/speak Haley \"..............................\"/pause 400/emote {{PeiMing}} 28/pause 1000/emote Haley 40/pause 600/jump Haley 9/playMusic junimoKart/pause 500/speak Haley \"{{i18n:PMHaley.15}}\"/pause 200/speak {{PeiMing}} \"{{i18n:PMHaley.16}}\"/pause 500/emote Haley 20/pause 500/speak Haley \"{{i18n:PMHaley.17}}\"/pause 400/speak Haley \"{{i18n:PMHaley.18}}\"/pause 300/textAboveHead Haley \"{{i18n:PMHaley.19}}\"/pause 1000/jump Haley 3/speak Haley \"{{i18n:PMHaley.20}}\"/pause 500/move Haley -4 0 0/move Haley 0 -1 0/pause 100/playSound doorOpen/pause 700/warp Haley -1000 -1000/playSound doorClose/pause 300/emote {{PeiMing}} 28/pause 500/speak {{PeiMing}} \"{{i18n:PMHaley.21}}\"/pause 700/faceDirection {{PeiMing}} 2/pause 500/speak {{PeiMing}} \"{{i18n:PMHaley.22}}\"/pause 400/speak {{PeiMing}} \"{{i18n:PMHaley.23}}\"/pause 300/emote {{PeiMing}} 36/pause 1000/faceDirection {{PeiMing}} 1/speak {{PeiMing}} \"{{i18n:PMHaley.24}}\"/pause 300/beginSimultaneousCommand/move {{PeiMing}} 10 0 1/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.25}}\"/endSimultaneousCommand/end",
+		"{{ModID}}_PMHaley/Season Spring/Time 1200 1700/Weather sunny/Friendship Haley 500 {{PeiMing}} 500": "poppy/-1000 -1000/Haley 24 90 3 {{PeiMing}} -100 -100 0/skippable/addConversationTopic {{ModID}}_HaleyLoveAdvice/viewport 24 92/warp {{PeiMing}} 1 91/pause 2000/speed {{PeiMing}} 4/move {{PeiMing}} 12 0 1/move {{PeiMing}} 11 0 1 true/faceDirection Haley 0/pause 100/faceDirection Haley 1/pause 200/faceDirection Haley 2/pause 2000/faceDirection Haley 2/pause 100/textAboveHead Haley \"{{i18n:PMHaley.0}}\"/pause 500/emote {{PeiMing}} 16/pause 500/faceDirection {{PeiMing}} 3/pause 100/move {{PeiMing}} 0 0 0/pause 300/speak {{PeiMing}} \"{{i18n:PMHaley.1}}\"/pause 300/emote Haley 40/pause 500/emote Haley 60/pause 500/speak Haley \"{{i18n:PMHaley.2}}\"/pause 300/emote {{PeiMing}} 32/pause 500/speak {{PeiMing}} \"{{i18n:PMHaley.3}}\"/pause 500/emote Haley 40/pause 500/textAboveHead Haley \"{{i18n:PMHaley.4}}\"/pause 500/speak Haley \"{{i18n:PMHaley.5}}\"/pause 1000/emote Haley 60/pause 900/emote {{PeiMing}} 8/pause 500/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.6}}\"/pause 300/jump Haley 5/pause 300/speak Haley \"{{i18n:PMHaley.7}}\"/StopMusic/pause 500/emote {{PeiMing}} 28/pause 500/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.8}}\"/pause 1000/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.9}}\"/pause 1000/emote Haley 8/pause 1000/beginSimultaneousCommand/jump {{PeiMing}} 8/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.10}}\"/endSimultaneousCommand/speak {{PeiMing}} \"{{i18n:PMHaley.11}}\"/playMusic poppy/pause 300/beginSimultaneousCommand/jump {{PeiMing}} 2/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.12}}\"/endSimultaneousCommand/pause 600/beginSimultaneousCommand/jump {{PeiMing}} 4/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.13}}\"/endSimultaneousCommand/pause 600/beginSimultaneousCommand/jump {{PeiMing}} 6/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.14}}\"/endSimultaneousCommand/pause 1000/speak Haley \"....................\"/pause 500/stopMusic/speak {{PeiMing}} \"......................\"/pause 400/speak Haley \"..............................\"/pause 400/emote {{PeiMing}} 28/pause 1000/emote Haley 40/pause 600/jump Haley 9/playMusic junimoKart/pause 500/speak Haley \"{{i18n:PMHaley.15}}\"/pause 200/speak {{PeiMing}} \"{{i18n:PMHaley.16}}\"/pause 500/emote Haley 20/pause 500/speak Haley \"{{i18n:PMHaley.17}}\"/pause 400/speak Haley \"{{i18n:PMHaley.18}}\"/pause 300/textAboveHead Haley \"{{i18n:PMHaley.19}}\"/pause 1000/jump Haley 3/speak Haley \"{{i18n:PMHaley.20}}\"/pause 500/move Haley -4 0 0/move Haley 0 -1 0/pause 100/playSound doorOpen/pause 700/warp Haley -1000 -1000/playSound doorClose/pause 300/emote {{PeiMing}} 28/pause 500/speak {{PeiMing}} \"{{i18n:PMHaley.21}}\"/pause 700/faceDirection {{PeiMing}} 2/pause 500/speak {{PeiMing}} \"{{i18n:PMHaley.22}}\"/pause 400/speak {{PeiMing}} \"{{i18n:PMHaley.23}}\"/pause 300/emote {{PeiMing}} 36/pause 1000/faceDirection {{PeiMing}} 1/speak {{PeiMing}} \"{{i18n:PMHaley.24}}\"/pause 300/beginSimultaneousCommand/move {{PeiMing}} 10 0 1/textAboveHead {{PeiMing}} \"{{i18n:PMHaley.25}}\"/endSimultaneousCommand/end",
 
 
 	}

@@ -53,7 +53,7 @@
 
 
         {
-            "LogName": "Add PM New Outdoor Location",
+            "LogName": "Add Pei Mings House or Warps",
             "Action": "EditMap",
             "Target": "Maps/Forest",
             "FromFile": "Assets/Maps/{{HouseLocationToken}}.tmx",
@@ -554,24 +554,48 @@
 
 //Alternate Location warp no SVE
 {
-	 "LogName": "Warp from alternate location to forest  for mod compat",
+	 "LogName": "Warp from alternate location to forest  for mod compat - No Lunna, no SVE",
      "Action": "EditMap",
     "Target": "Maps/{{ModID}}_PeiMingNewOutdoors",
 	"When": { "House Location": "Alternate",
 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
-"HasMod: |contains=Rafseazz.LunnaCP": "{{HasLunna}}" },
+"HasMod: |contains=Rafseazz.LunnaCP": false },
     "AddWarps": [
         "{{AlternateToForestWarp}}"
             ]
         },
 
 {
-	 "LogName": "Warp from forest to alternate location for mod compat",
+	 "LogName": "Warp from alternate location to forest  for mod compat - With Lunna, no SVE",
+     "Action": "EditMap",
+    "Target": "Maps/{{ModID}}_PeiMingNewOutdoors",
+	"When": { "House Location": "Alternate",
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+"HasMod: |contains=Rafseazz.LunnaCP": true },
+    "AddWarps": [
+        "{{AlternateToForestWarp}}"
+            ]
+        },
+
+{
+	 "LogName": "Warp from forest to alternate location for mod compat - No Lunna, no SVE",
      "Action": "EditMap",
     "Target": "Maps/Forest",
 	"When": { "House Location": "Alternate",
 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
-"HasMod: |contains=Rafseazz.LunnaCP": "{{HasLunna}}" },
+"HasMod: |contains=Rafseazz.LunnaCP": false },
+    "AddWarps": [
+        "{{ForestToAlternateWarp}}"
+            ]
+        },
+
+{
+	 "LogName": "Warp from forest to alternate location for mod compat - With Lunna, no SVE",
+     "Action": "EditMap",
+    "Target": "Maps/Forest",
+	"When": { "House Location": "Alternate",
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+"HasMod: |contains=Rafseazz.LunnaCP": true },
     "AddWarps": [
         "{{ForestToAlternateWarp}}"
             ]
@@ -579,24 +603,48 @@
 
 //Alternate location warp with SVE
 {
-	 "LogName": "Warp from forest to alternate location for mod compat - SVE",
+	 "LogName": "Warp from alternate location to forest  for mod compat - No Lunna, with SVE",
      "Action": "EditMap",
     "Target": "Maps/{{ModID}}_PeiMingNewOutdoors",
 	"When": { "House Location": "Alternate",
 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
-"HadMod: |contains=Rafseazz.LunnaCP": "{{HasLunna}}" },
+"HasMod: |contains=Rafseazz.LunnaCP": false },
     "AddWarps": [
         "{{AlternateToForestWarp}}"
             ]
         },
 
 {
-	 "LogName": "Warp from alternate location to forest  for mod compat - SVE",
+	 "LogName": "Warp from alternate location to forest  for mod compat - With Lunna, with SVE",
+     "Action": "EditMap",
+    "Target": "Maps/{{ModID}}_PeiMingNewOutdoors",
+	"When": { "House Location": "Alternate",
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+"HasMod: |contains=Rafseazz.LunnaCP": true },
+    "AddWarps": [
+        "{{AlternateToForestWarp}}"
+            ]
+        },
+
+{
+	 "LogName": "Warp from forest to alternate location for mod compat - No Lunna, with SVE",
      "Action": "EditMap",
     "Target": "Maps/Forest",
 	"When": { "House Location": "Alternate",
 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
-"HadMod: |contains=Rafseazz.LunnaCP": "{{HasLunna}}" },
+"HasMod: |contains=Rafseazz.LunnaCP": false },
+    "AddWarps": [
+        "{{ForestToAlternateWarp}}"
+            ]
+        },
+
+{
+	 "LogName": "Warp from forest to alternate location for mod compat - With Lunna, with SVE",
+     "Action": "EditMap",
+    "Target": "Maps/Forest",
+	"When": { "House Location": "Alternate",
+"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+"HasMod: |contains=Rafseazz.LunnaCP": true },
     "AddWarps": [
         "{{ForestToAlternateWarp}}"
             ]
