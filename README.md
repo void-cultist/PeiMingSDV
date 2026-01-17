@@ -182,7 +182,7 @@ As of version 1.0.0, there are 7 Heart Events and 3 other Events, with more even
 | Location | Requirements |
 |----------|--------------|
 |Town  | Season: Spring   |
-|      | Friendship with Haley and Pei Ming needs to be at 350 points (roughly 1.5 hearts) |
+|      | Friendship with Haley and Pei Ming needs to be at 500 points (2 hearts) |
 |	   | between 12:00 and 17:00 |
 |      | Sunny weather |
 
@@ -206,6 +206,17 @@ As of version 1.0.0, there are 7 Heart Events and 3 other Events, with more even
 |Pei Ming's house  | Player must gift Pei Ming the item "Giftable Tassel" - the event should trigger right after |
 
 This event gives the player the option to become Roommates with Pei Ming. It should be repeatable if Pei Ming was not invited to become the player's roommate the first time. Please do report if there's any issues.
+
+</details>
+
+<details>
+<summary>Meeting Krobus</summary>
+
+| Location | Requirements |
+|----------|--------------|
+|Town  | Sewer open  |
+|	   | between 21:00 and 02:00 |
+
 
 </details>
 
