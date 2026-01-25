@@ -246,19 +246,7 @@
 
 					]
 				},
-				"{{ModID}}_SpawnPrismaticRoseCornucopia": {
-					"Type": "Forageable",
-					"Condition": "PLAYER_FRIENDSHIP_POINTS Any {{ModID}}_Peiming 2000, RANDOM 0.2",
-					"ForageableItemData": [
-						{ 
-                            "Weight": 1.0,
-                            "Value": {
-                            "ItemId": "(O)Cornucopia_RosePrismatic",
-                            }
-                        },
-
-					]
-				},
+	
 				"{{ModId}}_no": {
 					"Type": "Forageable",
 					"Condition": "RANDOM 0.01",
@@ -434,7 +422,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////			
         { 
-            "LogName": "Prismatic Rose setpieces with Cornucopia more Flowers enabled",
+            "LogName": "Rose setpieces with Cornucopia more Flowers enabled",
             "Action": "EditData",
             "When": { "HasMod: |contains=Cornucopia.MoreFlowers": true },
             "Target": "spacechase0.SpaceCore/SpawningGroups", 
@@ -462,16 +450,6 @@
                             "Maximum": 2,
                         },
 
-                        /* {
-                            "SpawnableIds": [
-                                {
-                                    "Weight": 0.7,
-                                    "Value": "{{ModID}}_SpawnPrismaticRoseCornucopia"
-                                }
-                            ],
-                            "Minimum": 0,
-                            "Maximum": 1,
-                        }, */
                         
                         {
                             "SpawnableIds": [
@@ -511,16 +489,7 @@
                             "Minimum": 0,
                             "Maximum": 2,
                         },
-                        /* {
-                            "SpawnableIds": [
-                                {
-                                    "Weight": 0.3,
-                                    "Value": "{{ModID}}_SpawnPrismaticRoseCornucopia"
-                                }
-                            ],
-                            "Minimum": 0,
-                            "Maximum": 1,
-                        }, */
+                       
                           {
                             "SpawnableIds": [
                                 {
@@ -569,16 +538,7 @@
                             "Minimum": 0,
                             "Maximum": 1,
                         },
-                             /*  {
-                            "SpawnableIds": [
-                                {
-                                    "Weight": 0.3,
-                                    "Value": "{{ModID}}_SpawnPrismaticRoseCornucopia"
-                                }
-                            ],
-                            "Minimum": 0,
-                            "Maximum": 1,
-                        }, */
+                          
                           {
                             "SpawnableIds": [
                                 {
@@ -606,16 +566,7 @@
                             "Minimum": 0,
                             "Maximum": 2,
                         },
-               	        /* {
-                            "SpawnableIds": [
-                                {
-                                    "Weight": 0.02,
-                                    "Value": "{{ModID}}_SpawnNorthernHeartMelon"
-                                }
-                            ],
-                            "Minimum": 0,
-                            "Maximum": 1,
-                        }, */
+               	
         
                           {
                             "SpawnableIds": [
@@ -655,29 +606,7 @@
 
             }
         },
-        {
-            "LogName": "Prismatic Rose spawn group",
-            "Action": "EditData",
-            "When": { "HasMod: |contains=Cornucopia.MoreFlowers": true, "Hearts:{{PeiMing}}": "8, 9, 10, 11, 12, 13, 14" },
-            "Target": "spacechase0.SpaceCore/SpawningGroups", 
-            "Entries": {
-                "{{ModID}}_PrismaticRoseSpawnGroups": {
-                    "SpawnablesToSpawn": [
-                        {
-                            "SpawnableIds": [
-                                {
-                                    "Weight": 0.8,
-                                    "Value": "{{ModID}}_SpawnPrismaticRoseCornucopia"
-                                }
-                            ],
-                            "Minimum": 0,
-                            "Maximum": 1,
-                        },
-                    ]
-                    }
-
-            }
-        },
+        
         {
             
             "LogName": "cursed spawn group",

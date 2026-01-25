@@ -1,0 +1,85 @@
+{
+  "Changes": [
+    { "LogName": "Pei Xiu Dispos",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "{{PeiXiu}}": 
+        {
+          "DisplayName": "{{PXDisplayName}}",
+          "BirthSeason": "Winter",
+          "BirthDay": 10,
+          "HomeRegion": "Town",
+          "Language": "Default",
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Polite",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Neutral",
+          "IsDarkSkinned": false,
+          "CanBeRomanced": false,
+          //"LoveInterest": {{ModID}}_Banyue,
+          "Calendar": "HiddenUntilMet",
+          "SocialTab": "UnknownUntilMet",
+          "SpawnIfMissing": true,
+          "CanSocialize": false,
+          "CanReceiveGifts": true,
+          "CanGreetNearbyCharacters": true,
+          "CanCommentOnPurchasedShopItems": false,
+          "CanVisitIsland": false,
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": false,
+          "PerfectionScore": false,
+          "EndSlideShow": "MainGroup",
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{PMHouse}}",
+              "Tile": {
+                "X": 7,
+                "Y": 7
+              },
+              "Direction": "down"
+            }
+          ],
+         
+          "Size": {
+            "X": 16,
+            "Y": 32
+          },
+          "Breather": true,
+          
+      }
+    },
+    },
+
+	//portraits and sprites 
+	{
+        	"LogName": "Base Portraits",
+        	"Action": "Load",
+        	"Target": "Portraits/{{PeiXiu}}",
+        	"FromFile": "assets/Portraits/PeiXiu.png"
+   	 },		
+	 
+	 {
+        	"LogName": "Base Sprites",
+        	"Action": "Load",
+        	"Target": "Characters/{{PeiXiu}}",
+        	"FromFile": "assets/Characters/PeiXiu.png"
+   	 },
+  
+//gift tastes so CT work
+    {
+      "LogName": "Pei Xiu gift tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "{{PeiXiu}}": "{{i18n:peixiu.GiftLove}}/445, 404, 109/{{i18n:peixiu.GiftLike}}/219, 62, 66, 74, 346, 454/...//{{i18n:peixiu.GiftDislike}}/342/{{i18n:peixiu.GiftHate}}//.../-28"
+      }
+    },
+    
+
+
+ 
+  ]
+}

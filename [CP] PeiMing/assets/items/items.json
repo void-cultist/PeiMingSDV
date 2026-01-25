@@ -4,7 +4,7 @@
 	//texture load
 	{ "LogName": "Load textures for new items",
             "Action": "Load",
-            "Target": "{{ModId}}/77616e6c657420646f6c6c, {{ModID}}/tanghulu",
+            "Target": "{{ModId}}/77616e6c657420646f6c6c, {{ModID}}/objects",
             "FromFile": "assets/items/{{TargetWithoutPath}}.png"
 	},
 
@@ -86,7 +86,7 @@
                     "Type": "Cooking",
                     "Category": -7,
                     "Price": "15000",
-                    "Texture": "{{ModId}}\\tanghulu",
+                    "Texture": "{{ModId}}\\objects",
                     "SpriteIndex": 0,
                     "ContextTags": [
                         "color_red",
@@ -102,6 +102,30 @@
                 }
             }
         },
+
+        {
+            "LogName": "Add mysterious note",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_MysteriousNote": {
+                    "Name": "{{ModId}}_MysteriousNote",
+                    "Displayname": "{{i18n:MysteriousNote.name}}",
+                    "Description": "{{i18n:MysteriousNote.description}}",
+                    "Type": "Basic",
+                    "Category": -102, 
+                    "Price": 1,
+                    "Texture": "{{ModId}}/objects",
+                    "SpriteIndex": 3,
+                    "ContextTags": [ "prevent_loss_on_death", "scroll_item" ],
+                    "CanBeGivenAsGift": false,
+                    "CanBeTrashed": false,
+                },
+                
+            }
+        },
+    
+
 
 //add cooking recipes for objects
     {

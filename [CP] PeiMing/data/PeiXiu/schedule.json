@@ -1,0 +1,14 @@
+{
+  "Changes": [
+
+  {
+    "LogName": "Pei Xiu Schedule",
+    "Action": "EditData",
+    "Target": "characters/schedules/{{PeiXiu}}",
+    "Entries":   
+{
+  "spring": "0700 Forest 5 27 2/1200 AdventureGuild 7 15 2"
+}
+  }
+  ]
+}

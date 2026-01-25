@@ -115,11 +115,22 @@
 },
 
 { 
-	"LogName": "Pei Ming 4 Hearts",
+	"LogName": "Pei Ming 4 Hearts Saloon",
 	"Action": "EditData",
-	"Target": "Data/Events/{{PM4HLocation}}",
+	"Target": "Data/Events/Saloon",
 	"Entries": {
-		"{{ModID}}_PM4H/Friendship {{PeiMing}} 1000/SawEvent {{ModID}}_PM3H/Time 1800 2200/Weather rainy": "{{ModID}}_HappyBGM/-1000 -1000/farmer 32 20 1 {{PeiMing}} 42 20 3/setSkipActions MarkEventSeen current {{ModID}}_PM4H true/skippable/viewport 42 20/pause 300/speak {{PeiMing}} \"{{i18n:PM4H.0}}\"/pause 400/emote farmer 32/pause 500/move farmer 3 0 1/pause 200/emote {{PeiMing}} 32/pause 500/speak {{PeiMing}} \"{{i18n:PM4H.1}}\"/pause 300/emote farmer 28/pause 500/emote {{PeiMing}} 40/pause 500/speak {{PeiMing}} \"{{i18n:PM4H.2}}\"/pause 300/emote farmer 8/pause 500/textAboveHead {{PeiMing}} \"{{i18n:PM4H.3}}\"/pause 300/move {{PeiMing}} 0 2 2/move {{PeiMing}} -6 0 3 true/globalFade/viewport -9999 -9999/pause 1000/warp farmer -1000 -1000/warp {{PeiMing}} -1000 -1000/changeSprite {{PeiMing}} Beach/showFrame farmer 108/stopMusic/changeLocation BathHouse_Pool/warp farmer 13 9/warp {{PeiMing}} 11 9/removeTile 11 8 Front/removeTile 13 8 Front/faceDirection farmer 2/faceDirection {{PeiMing}} 2/pause 500/viewport 12 12/emote {{PeiMing}} 56/pause 500/speak {{PeiMing}} \"{{i18n:PM4H.4}}\"/pause 500/eyes 0/pause 500/speak {{PeiMing}} \"{{i18n:PM4H.5}}\"/pause 300/quickQuestion {{i18n:PM4H.6}}#{{i18n:PM4H.7}}#{{i18n:PM4H.8}}#{{i18n:PM4H.9}}(break)pause 100\\speak {{PeiMing}} \"{{i18n:PM4H.10}}\"\\friendship {{PeiMing}} 20(break)pause 100\\emote {{PeiMing}} 8\\pause 500\\speak {{PeiMing}} \"{{i18n:PM4H.11}}\"\\friendship {{PeiMing}} -50(break)pause 100\\speak {{PeiMing}} \"{{i18n:PM4H.12}}\"\\emote farmer 28\\pause 500\\textAboveHead {{PeiMing}} \"{{i18n:PM4H.13}}\"/pause 1000/speak {{PeiMing}} \"{{i18n:PM4H.14}}\"/pause 600/jump {{PeiMing}} 2/pause 200/move {{PeiMing}} 0 1 2/pause 300/speak {{PeiMing}} \"{{i18n:PM4H.15}}\"/pause 300/question null \"{{i18n:PM4H.16}}#{{i18n:PM4H.17}}#{{i18n:PM4H.18}}\"/pause 400/speak {{PeiMing}} \"{{i18n:PM4H.19}}\"/pause 400/beginSimultaneousCommand/jump {{PeiMing}} 2/move {{PeiMing}} 0 2 2/endSimultaneousCommand/beginSimultaneousCommand/playSound waterSlosh/swimming {{PeiMing}}/endSimultaneousCommand/pause 300/move {{PeiMing}} 0 2 2/pause 400/faceDirection {{PeiMing}} 0/pause 300/emote {{PeiMing}} 56/pause 500/emote farmer 32/pause 500/move farmer 0 1 2/jump farmer 2/beginSimultaneousCommand/move farmer 0 2 2/swimming farmer/fade/viewport -9999 -9999/endSimultaneousCommand/playSound waterSlosh/globalFade/pause 1000/message \"{{i18n:PM4H.20}}\"/pause 1000/end"
+		"{{ModID}}_PM4H/Friendship {{PeiMing}} 1000/SawEvent {{ModID}}_PM3HSaloon/Time 1800 2200/Weather rainy": "{{ModID}}_HappyBGM/-1000 -1000/farmer 32 20 1 {{PeiMing}} 42 20 3/setSkipActions MarkEventSeen current {{ModID}}_PM4H true/skippable/viewport 42 20/pause 300/speak {{PeiMing}} \"{{i18n:PM4H.0}}\"/pause 400/emote farmer 32/pause 500/move farmer 3 0 1/pause 200/emote {{PeiMing}} 32/pause 500/speak {{PeiMing}} \"{{i18n:PM4H.1}}\"/pause 300/emote farmer 28/pause 500/emote {{PeiMing}} 40/pause 500/speak {{PeiMing}} \"{{i18n:PM4H.2}}\"/pause 300/emote farmer 8/pause 500/textAboveHead {{PeiMing}} \"{{i18n:PM4H.3}}\"/pause 300/move {{PeiMing}} 0 2 2/move {{PeiMing}} -6 0 3 true/globalFade/viewport -9999 -9999/pause 1000/warp farmer -1000 -1000/warp {{PeiMing}} -1000 -1000/changeSprite {{PeiMing}} Beach/showFrame farmer 108/stopMusic/changeLocation BathHouse_Pool/warp farmer 13 9/warp {{PeiMing}} 11 9/removeTile 11 8 Front/removeTile 13 8 Front/faceDirection farmer 2/faceDirection {{PeiMing}} 2/pause 500/viewport 12 12/emote {{PeiMing}} 56/pause 500/speak {{PeiMing}} \"{{i18n:PM4H.4}}\"/pause 500/eyes 0/pause 500/speak {{PeiMing}} \"{{i18n:PM4H.5}}\"/pause 300/quickQuestion {{i18n:PM4H.6}}#{{i18n:PM4H.7}}#{{i18n:PM4H.8}}#{{i18n:PM4H.9}}(break)pause 100\\speak {{PeiMing}} \"{{i18n:PM4H.10}}\"\\friendship {{PeiMing}} 20(break)pause 100\\emote {{PeiMing}} 8\\pause 500\\speak {{PeiMing}} \"{{i18n:PM4H.11}}\"\\friendship {{PeiMing}} -50(break)pause 100\\speak {{PeiMing}} \"{{i18n:PM4H.12}}\"\\emote farmer 28\\pause 500\\textAboveHead {{PeiMing}} \"{{i18n:PM4H.13}}\"/pause 1000/speak {{PeiMing}} \"{{i18n:PM4H.14}}\"/pause 600/jump {{PeiMing}} 2/pause 200/move {{PeiMing}} 0 1 2/pause 300/speak {{PeiMing}} \"{{i18n:PM4H.15}}\"/pause 300/question null \"{{i18n:PM4H.16}}#{{i18n:PM4H.17}}#{{i18n:PM4H.18}}\"/pause 400/speak {{PeiMing}} \"{{i18n:PM4H.19}}\"/pause 400/beginSimultaneousCommand/jump {{PeiMing}} 2/move {{PeiMing}} 0 2 2/endSimultaneousCommand/beginSimultaneousCommand/playSound waterSlosh/swimming {{PeiMing}}/endSimultaneousCommand/pause 300/move {{PeiMing}} 0 2 2/pause 400/faceDirection {{PeiMing}} 0/pause 300/emote {{PeiMing}} 56/pause 500/emote farmer 32/pause 500/move farmer 0 1 2/jump farmer 2/beginSimultaneousCommand/move farmer 0 2 2/swimming farmer/fade/viewport -9999 -9999/endSimultaneousCommand/playSound waterSlosh/globalFade/pause 1000/message \"{{i18n:PM4H.20}}\"/pause 1000/end"
+
+	}
+
+},
+
+{ 
+	"LogName": "Pei Ming 4 Hearts Mountain",
+	"Action": "EditData",
+	"Target": "Data/Events/Mountain",
+	"Entries": {
+		"{{ModID}}_PM4H/Friendship {{PeiMing}} 1000/SawEvent {{ModID}}_PM3HMountains/Time 1800 2200/Weather rainy": "{{ModID}}_HappyBGM/-1000 -1000/farmer 32 20 1 {{PeiMing}} 42 20 3/setSkipActions MarkEventSeen current {{ModID}}_PM4H true/skippable/viewport 42 20/pause 300/speak {{PeiMing}} \"{{i18n:PM4H.0}}\"/pause 400/emote farmer 32/pause 500/move farmer 3 0 1/pause 200/emote {{PeiMing}} 32/pause 500/speak {{PeiMing}} \"{{i18n:PM4H.1}}\"/pause 300/emote farmer 28/pause 500/emote {{PeiMing}} 40/pause 500/speak {{PeiMing}} \"{{i18n:PM4H.2}}\"/pause 300/emote farmer 8/pause 500/textAboveHead {{PeiMing}} \"{{i18n:PM4H.3}}\"/pause 300/move {{PeiMing}} 0 2 2/move {{PeiMing}} -6 0 3 true/globalFade/viewport -9999 -9999/pause 1000/warp farmer -1000 -1000/warp {{PeiMing}} -1000 -1000/changeSprite {{PeiMing}} Beach/showFrame farmer 108/stopMusic/changeLocation BathHouse_Pool/warp farmer 13 9/warp {{PeiMing}} 11 9/removeTile 11 8 Front/removeTile 13 8 Front/faceDirection farmer 2/faceDirection {{PeiMing}} 2/pause 500/viewport 12 12/emote {{PeiMing}} 56/pause 500/speak {{PeiMing}} \"{{i18n:PM4H.4}}\"/pause 500/eyes 0/pause 500/speak {{PeiMing}} \"{{i18n:PM4H.5}}\"/pause 300/quickQuestion {{i18n:PM4H.6}}#{{i18n:PM4H.7}}#{{i18n:PM4H.8}}#{{i18n:PM4H.9}}(break)pause 100\\speak {{PeiMing}} \"{{i18n:PM4H.10}}\"\\friendship {{PeiMing}} 20(break)pause 100\\emote {{PeiMing}} 8\\pause 500\\speak {{PeiMing}} \"{{i18n:PM4H.11}}\"\\friendship {{PeiMing}} -50(break)pause 100\\speak {{PeiMing}} \"{{i18n:PM4H.12}}\"\\emote farmer 28\\pause 500\\textAboveHead {{PeiMing}} \"{{i18n:PM4H.13}}\"/pause 1000/speak {{PeiMing}} \"{{i18n:PM4H.14}}\"/pause 600/jump {{PeiMing}} 2/pause 200/move {{PeiMing}} 0 1 2/pause 300/speak {{PeiMing}} \"{{i18n:PM4H.15}}\"/pause 300/question null \"{{i18n:PM4H.16}}#{{i18n:PM4H.17}}#{{i18n:PM4H.18}}\"/pause 400/speak {{PeiMing}} \"{{i18n:PM4H.19}}\"/pause 400/beginSimultaneousCommand/jump {{PeiMing}} 2/move {{PeiMing}} 0 2 2/endSimultaneousCommand/beginSimultaneousCommand/playSound waterSlosh/swimming {{PeiMing}}/endSimultaneousCommand/pause 300/move {{PeiMing}} 0 2 2/pause 400/faceDirection {{PeiMing}} 0/pause 300/emote {{PeiMing}} 56/pause 500/emote farmer 32/pause 500/move farmer 0 1 2/jump farmer 2/beginSimultaneousCommand/move farmer 0 2 2/swimming farmer/fade/viewport -9999 -9999/endSimultaneousCommand/playSound waterSlosh/globalFade/pause 1000/message \"{{i18n:PM4H.20}}\"/pause 1000/end"
 
 	}
 
@@ -384,6 +395,52 @@
 		"{{ModID}}_KeepFriendship": "pause 10/speak {{PeiMing}} \"{{i18n:KeepFriendship.0}}\"/pause 300/emote farmer 32/pause 500/end"
 
 	}
+},
+
+{ 	
+"LogName": "Pei Xiu appears!",
+"Action": "EditData",
+"Target": "Data/Events/BusStop",
+"Entries": {
+	"{{ModID}}_PeiXiuEncounter/Time 2000 2600/SawEvent {{ModID}}_PM7H": "nightTime/-1000 -1000/farmer 42 23 1 {{PeiXiu}} -999 -999 0/skippable/setSkipActions MarkEventSeen Current {{ModID}}_PeiXiuEncounter/viewport 42 23 clamp true unfreeze/speed farmer 3/
+	ichortower.ECC_StreamStart PeiXiuWarp/
+	ichortower.ECC_StreamPause 7465/
+	warp {{PeiXiu}} 22 12/
+	glow 151 117 207 false/
+	playSound wand/
+	ichortower.ECC_StreamPause 500/
+	emote farmer 16 true/
+	ichortower.ECC_StreamPause 200/
+	faceDirection farmer 0/
+	faceDirection {{PeiXiu}} 2/
+	ichortower.ECC_StreamAwait PeiXiuWarp/
+	ichortower.ECC_StreamEnd/
+	ichortower.ECC_ActorPathTo farmer 21 23 1/
+	ichortower.ECC_ActorAwaitMovement farmer/
+	ichortower.ECC_ViewportMove a22 a16 3000 wait/
+	ichortower.ECC_ViewportAwait/
+	emote {{PeiXiu}} 8/
+	pause 2000/
+	speak {{PeiXiu}} \"..............\" /pause 300/
+	emote farmer 8/pause 500/
+	ichortower.ECC_ActorPathTo farmer 22 18 0/
+	ichortower.ECC_ActorPathTo {{PeiXiu}} 22 17 0 wait/
+	pause 500/
+	speak {{PeiXiu}} \"....................\" /pause 200/
+	emote farmer 40/pause 500/
+	speed {{PeiXiu}} 5/ichortower.ECC_ActorPathTo {{PeiXiu}} 40 23 1/
+	addObject 22 17 (O){{ModID}}_MysteriousNote 1/
+	ichortower.ECC_ActorAwaitMovement {{PeiXiu}}/warp {{PeiXiu}} 999 999/pause 300/
+	emote farmer 8/pause 500/
+	message \"This stranger has dropped something...\" /pause 300/
+	removeObject 22 17/itemAboveHead {{ModID}}_MysteriousNote \"You picked up a mysterious note!\" /pause 1200/
+	addItem (O){{ModID}}_MysteriousNote 1/pause 100/
+	emote farmer 28/pause 500/
+	message \"However, you cannot decipher the writing at all. Perhaps you could show the note to the Wizard?\" /pause 300/
+	globalFade/viewport -999 -999/
+	message \"And just who was this person?\" /pause 1000/end",
+
+			}
 }
 
 

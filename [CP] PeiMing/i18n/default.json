@@ -399,9 +399,9 @@
 "Winter_1": "Finally, it's Winter. My favorite season. $6 #$b# It reminds me of home, even if it is a cruel and gruesome season.#$b# If you know how to navigate it, there is much potential to be found in this time of the year.",
 
 //Festivals
-"Peimingegg": "So this is how the villagers search for a suitable partner?#$b# I have better means but I would not say no to a dance with the right person.$2",
-"Peiming_y2egg": "And here we go again. Are you having fun?",
-"Peiming_spouse_y2egg": "Why don't we dance together, dear @?",
+"Peimingegg": "Searching for eggs? This is ridiculous. Why should I, as a God...#$b# %Pei Ming continues yapping and you decide to slowly distance yourself.",
+"Peiming_y2egg": "If that's what the people of this village like doing, so be it.",
+"Peiming_spouse_y2egg": "You are going to search eggs, @? Well, if you are into it...",
 "Peimingflower": "So this is how the villagers search for a suitable partner?#$b# I have better means but I would not say no to a dance with the right person.$2",
 "Peiming_y2flower": "And here we go again. Are you having fun?",
 "Peiming_spouse_y2flower": "Why don't we dance together, dear @?",
@@ -881,4 +881,28 @@
 "config.section.Relationship.name": "Relationship",
 "config.section.Relationship.description": "",
 
+//PeiXiu 
+
+
+  "peixiu.Intro": "Ah, good day, @. I apologize for everything my ancestor might have said to you thus far. Do call me Pei Xiu. I used to be part of the General's palace.",
+  "peixiu.Spring.Mon": "%Pei Xiu courtly nods at you.",
+  "peixiu.Spring.Mon.2Hearts": "Has my ancestor been giving you a headache lately?",
+  "peixiu.Spring.Tue": "Greetings.",
+  "peixiu.Spring.Tue.2Hearts": "General Ming Guang is a respectable person and I owe him a lot. I do understand that he can be quite a lot, sometimes.",
+  "peixiu.Spring.Wed": "%Pei Xiu looks at you with a deadpan gaze. You wonder if you did anyhting to offend him.",
+  "peixiu.Spring.Thu": "Is there anything you require?",
+  "peixiu.Spring.Fri": "Good day.",
+  "peixiu.Spring.Sat": "...yes?",
+  "peixiu.Spring.Sun": "Can I help you?",
+  "peixiu.GiftLove": "Interesting. I like this. You have my gratitude.",
+  "peixiu.GiftLike": "Thank you for the gift.",
+  "peixiu.GiftDislike": "What is this...?",
+  "peixiu.GiftHate": "...",
+  "peixiu.AcceptGift_(O)109": "Ah, an old sword, you say? I will keep it. Thank you.",
+  "peixiu.BirthdayGift.Loved": "Ah, you remembered my birthday? That is very thoughtful of you.",
+  "peixiu.Bouquet.Reject": "There is already someone else I have in mind.",
+  
+ 
 }
+
+

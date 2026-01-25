@@ -1,0 +1,28 @@
+{
+  "Changes": [
+    {
+      "LogName": "peixiu Dialogue Action",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/{{PeiXiu}}",
+      "Entries": {
+        "spring_Mon": "{{i18n:peixiu.Spring.Mon}}",
+        "spring_Tue": "{{i18n:peixiu.Spring.Tue}}",
+        "spring_Wed": "{{i18n:peixiu.Spring.Wed}}",
+        "spring_Thu": "{{i18n:peixiu.Spring.Thu}}",
+        "spring_Fri": "{{i18n:peixiu.Spring.Fri}}",
+        "spring_Sat": "{{i18n:peixiu.Spring.Sat}}",
+        "spring_Sun": "{{i18n:peixiu.Spring.Sun}}",
+
+    "Mon": "{{i18n:peixiu.Spring.Mon.2Hearts}}", 
+    "Tue": "{{i18n:peixiu.Spring.Tue.2Hearts}}",
+    "Wed": "Greetings.",
+    "Thu": "Greetings.",
+    "Fri": "Greetings.",
+    "Sat": "Greetings.",
+    "Sun": "Greetings.",
+        "Bouquet_Reject": "{{i18n:peixiu.Bouquet.reject}}",
+        "AcceptGift_(O)109": "{{i18n:peixiu.AcceptGift_(O)109}}"
+      }
+    }
+  ]
+}

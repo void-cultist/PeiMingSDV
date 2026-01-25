@@ -15,6 +15,23 @@
 			"Name": "PMHouse",
 			"Value": "{{ModID}}_PeiMingHouse"
 		},
+		{
+			"Name": "PeiXiu",
+			"Value": "{{ModID}}_PeiXiu"
+		},
+
+//Pei Xiu name before and after certain events
+		{
+			"Name": "PXDisplayName",
+			"Value": "???"
+		},
+		{
+			"Name": "PXDisplayName",
+			"Value": "Pei Xiu",
+			"When": {
+				"HasSeenEvent: |contains={{ModID}}_PeiXiuEncounter": true
+			}
+		},
 
 
 //Tokens for map patching & map strings
@@ -30,13 +47,37 @@
                 "House Location": "SVE"
             }
         },
+//warp tokens for alternative map patches
        {
             "Name": "HouseLocationToken",
             "Value": "PeiMingWarp",
             "When": {
-                "House Location": "Alternate"
+                "House Location": "Alternate",
+				"HasMod: |contains=Rafseazz.LunnaCP": false
             }
         },
+		{
+            "Name": "HouseLocationToken",
+            "Value": "PeiMingWarpLunnaVanilla",
+            "When": {
+                "House Location": "Alternate",
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod: |contains=Rafseazz.LunnaCP": true
+				
+            }
+        },
+		{
+            "Name": "HouseLocationToken",
+            "Value": "PeiMingWarpLunnaSVE",
+            "When": {
+                "House Location": "Alternate",
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod: |contains=Rafseazz.LunnaCP": true
+				
+            }
+        },
+
+//outdoor strings
 		{
 			"Name": "OutdoorStrings",
 			"Value": "PeiMingExterior",
@@ -170,15 +211,15 @@
             }
 		},
 
+//alternate warp patch no lunna, no sve
 
-	
-
-		//alternate warp
-		{ "Name": "HousePatchXCoord",
+	{ "Name": "HousePatchXCoord",
 		"Value": 0,
 		"When": 
 			{
-                "House Location": "Alternate"
+                "House Location": "Alternate",
+				"HasMod: |contains=Rafseazz.LunnaCP": false,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
             }
 		
 		},
@@ -187,7 +228,9 @@
 		"Value": 30,
 		"When":
 			 {
-                "House Location": "Alternate"
+                "House Location": "Alternate",
+				"HasMod: |contains=Rafseazz.LunnaCP": false,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
             }
 		},
 
@@ -195,7 +238,9 @@
 		"Value": 5,
 		"When": 
 			{
-                "House Location": "Alternate"
+                "House Location": "Alternate",
+				"HasMod: |contains=Rafseazz.LunnaCP": false,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
             }
 		},
 		
@@ -203,38 +248,153 @@
 		"Value": 10,
 		"When": 
 			{
-                "House Location": "Alternate"
+                "House Location": "Alternate",
+				"HasMod: |contains=Rafseazz.LunnaCP": false,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
             }
 		},
 
-//lunna npc installed?
 
-{ 
-	"Name": "HasLunna",
-	"Value": false
-	
-},
+//alternate warp patch with lunna, no sve
 
-{ 
+	{ "Name": "HousePatchXCoord",
+		"Value": 0,
+		"When": 
+			{
+                "House Location": "Alternate",
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod: |contains=Rafseazz.LunnaCP": true
+            }
+		
+		},
 
-	"Name": "HasLunna",
-	"Value": true,
-	"When":
-	{
-		"HasMod: |contains=Rafseazz.LunnaCP": true 
-		}
-},
+		{ "Name": "HousePatchYCoord",
+		"Value": 21,
+		"When":
+			 {
+              "House Location": "Alternate",
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod: |contains=Rafseazz.LunnaCP": true
+            }
+		},
+
+		{ "Name": "HousePatchWidth",
+		"Value": 6,
+		"When": 
+			{
+               "House Location": "Alternate",
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod: |contains=Rafseazz.LunnaCP": true
+            }
+		},
+		
+		{ "Name": "HousePatchHeight",
+		"Value": 8,
+		"When": 
+			{
+              "House Location": "Alternate",
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod: |contains=Rafseazz.LunnaCP": true
+            }
+		},
+
+//alternate warp patch with lunna + sve
+
+{ "Name": "HousePatchXCoord",
+		"Value": 0,
+		"When": 
+			{
+                "House Location": "Alternate",
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod: |contains=Rafseazz.LunnaCP": true
+            }
+		
+		},
+
+		{ "Name": "HousePatchYCoord",
+		"Value": 26,
+		"When":
+			 {
+              "House Location": "Alternate",
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod: |contains=Rafseazz.LunnaCP": true
+            }
+		},
+
+		{ "Name": "HousePatchWidth",
+		"Value": 5,
+		"When": 
+			{
+               "House Location": "Alternate",
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod: |contains=Rafseazz.LunnaCP": true
+            }
+		},
+		
+		{ "Name": "HousePatchHeight",
+		"Value": 4,
+		"When": 
+			{
+              "House Location": "Alternate",
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod: |contains=Rafseazz.LunnaCP": true
+            }
+		},
+
+//alternate warp no lunna, with SVE
+
+		{ "Name": "HousePatchXCoord",
+		"Value": 0,
+		"When": 
+			{
+                "House Location": "Alternate",
+				"HasMod: |contains=Rafseazz.LunnaCP": false,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+            }
+		
+		},
+
+		{ "Name": "HousePatchYCoord",
+		"Value": 30,
+		"When":
+			 {
+                "House Location": "Alternate",
+				"HasMod: |contains=Rafseazz.LunnaCP": false,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+            }
+		},
+
+		{ "Name": "HousePatchWidth",
+		"Value": 5,
+		"When": 
+			{
+                "House Location": "Alternate",
+				"HasMod: |contains=Rafseazz.LunnaCP": false,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+            }
+		},
+		
+		{ "Name": "HousePatchHeight",
+		"Value": 10,
+		"When": 
+			{
+                "House Location": "Alternate",
+				"HasMod: |contains=Rafseazz.LunnaCP": false,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+            }
+		},
+
 
 //////change alternate house location warps when lunna is or isnt installed, with or without SVE
 //vanilla, no lunna
 {
 	"Name": "AlternateToForestWarp",
-	"Value": "21 14 Forest 0 36"
+	"Value": "21 14 Forest 0 37"
 },
 
 {
 	"Name": "ForestToAlternateWarp",
-	"Value": "1 36 {{ModID}}_PeiMingNewOutdoors 20 14"
+	"Value": "-1 37 {{ModID}}_PeiMingNewOutdoors 20 14"
 },
 
 //SVE, no lunna
@@ -243,7 +403,7 @@
 	"When": { 
 		"House Location": "Alternate",
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
-		"HadMod: |contains=Rafseazz.LunnaCP": false 
+		"HasMod: |contains=Rafseazz.LunnaCP": false 
 },
 	"Value": "21 14 Forest 0 37"
 },
@@ -253,7 +413,7 @@
 	"When": { 
 		"House Location": "Alternate",
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
-		"HadMod: |contains=Rafseazz.LunnaCP": false 
+		"HasMod: |contains=Rafseazz.LunnaCP": false 
 },
 	"Value": "-1 37 {{ModID}}_PeiMingNewOutdoors 20 14"
 },
@@ -264,9 +424,9 @@
 	"When": { 
 		"House Location": "Alternate",
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
-		"HadMod: |contains=Rafseazz.LunnaCP": true 
+		"HasMod: |contains=Rafseazz.LunnaCP": true 
 },
-	"Value": "21 14 Forest 0 21"
+	"Value": "21 14 Forest 0 27"
 },
 
 {
@@ -274,9 +434,9 @@
 	"When": { 
 		"House Location": "Alternate",
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
-		"HadMod: |contains=Rafseazz.LunnaCP": true 
+		"HasMod: |contains=Rafseazz.LunnaCP": true 
 },
-	"Value": "0 26 {{ModID}}_PeiMingNewOutdoors 20 14"
+	"Value": "-1 27 {{ModID}}_PeiMingNewOutdoors 20 14"
 },
 
 //SVE with lunna
@@ -285,22 +445,19 @@
 	"When": { 
 		"House Location": "Alternate",
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
-		"HadMod: |contains=Rafseazz.LunnaCP": true 
+		"HasMod: |contains=Rafseazz.LunnaCP": true 
 },
-	"Value": "21 14 Forest 0 26"
+	"Value": "21 14 Forest 0 28"
 },
 {
 	"Name": "ForestToAlternateWarp",
 	"When": { 
 		"House Location": "Alternate",
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
-		"HadMod: |contains=Rafseazz.LunnaCP": true 
+		"HasMod: |contains=Rafseazz.LunnaCP": true 
 },
-	"Value": "-1 27 {{ModID}}_PeiMingNewOutdoors 20 14"
+	"Value": "-1 28 {{ModID}}_PeiMingNewOutdoors 20 14"
 },
-
-
-
 
 
 
@@ -412,17 +569,28 @@
 	}, 
     "Changes":
 	  [{
-   		 "LogName": "Blank JSON load", //The logline is not required, but it's useful down the road for labeling your patches so you can tell your problem is, say "NPC Dialogue Patch" and not "NPC Patch #14"
+   		 "LogName": "Blank JSON load for Pei Ming", //The logline is not required, but it's useful down the road for labeling your patches so you can tell your problem is, say "NPC Dialogue Patch" and not "NPC Patch #14"
         	"Action": "Load",
         	"Target": "Characters/Dialogue/{{PeiMing}}, Characters/schedules/{{PeiMing}}, Strings/schedules/{{PeiMing}}, Strings/StringsFromMaps/{{PMHouse}}, Strings/StringsFromMaps/{{ModID}}_PeiMingExterior, Strings/StringsFromCSFiles/{{PeiMing}}_EngagedRoommate, Strings/1_6_Strings/{{ModID}}_Renovation_AddCustomRoom, Data/EngagementDialogue/{{PeiMing}}, Characters/Dialogue/MarriageDialogue{{PeiMing}}Roommate, Characters/schedules/{{PeiMing}}Roommate, Data/Events/{{PMHouse}}, Data/Locations/{{ModID}}_PeiMingNewOutdoors", 
         	"FromFile": "data/blank.json" //this should be wherever you put it in your assets folder - put it in a subfolder if you want
    	 },
+	 {
+		"LogName": "Blank JSON load for Pei Xiu",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/{{PeiXiu}}, Characters/schedules/{{PeiXiu}}",
+		"FromFile": "data/blank.json"
+	 },
 
 //includes
 {
     "LogName": "Include Pei Ming dispos",
    	"Action": "Include",
    	"FromFile": "data/dispos.json"
+},
+{
+	"LogName": "Include Pei Xiu dispos",
+	"Action": "Include",
+	"FromFile": "data/PeiXiu/dispos.json"
 },
 { 
 	"LogName": "Gift Tastes Include",
@@ -436,9 +604,14 @@
 	"FromFile": "data/PlatonicPartnership/CustomScheduleKeys.json"
 },
 {
-    "LogName": "Include NPC Dialogue",
+    "LogName": "Include Pei Ming Dialogue",
    	"Action": "Include",
 	"FromFile": "data/dialogue.json"
+},
+{
+    "LogName": "Include Pei Xiu Dialogue",
+   	"Action": "Include",
+	"FromFile": "data/PeiXiu/dialogue.json"
 },
 {
 	"LogName": "Include map data",
@@ -504,6 +677,11 @@
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 		"House Location": "SVE, Alternate" },
    	"FromFile": "data/SVE/schedule.json"
+},
+{
+    "LogName": "Pei Xiu  Schedule include",
+   	"Action": "Include",
+   	"FromFile": "data/PeiXiu/schedule.json"
 },
 {
 	"LogName": "Include Special Orders",

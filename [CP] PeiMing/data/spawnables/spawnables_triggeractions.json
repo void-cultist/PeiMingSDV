@@ -208,26 +208,6 @@
 					]
 				},		
 			 }
-},
-
- { 
-			"LogName": "PeiMing Prismatic Rose Map Spawn Trigger Actions",
-            "Action": "EditData",
-			"When": { "HasMod: |contains=Cornucopia.MoreFlowers": true, "Hearts:{{PeiMing}}": "8, 9, 10, 11, 12, 13, 14" },
-            "Target": "Data/TriggerActions",
-            "Entries": 
-			{ 
-				"{{ModID}}_Trigger_PrismaticRoseSpawnable":
-				{
-					"ID": "{{ModID}}_Trigger_PrismaticRoseSpawnable",
-					"Trigger": "DayStarted",
-					"Condition": "SYNCED_RANDOM day RoseRandomKey 0.07",
-					"MarkActionApplied": false,
-					"Actions": [
-						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PrismaticRoseSpawnGroups {{SpawnableCoordinates}}"
-					]
-				},	
-			 }
 }
 		
 	]

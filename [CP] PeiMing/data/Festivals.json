@@ -406,21 +406,29 @@
             "LogName": "Adding PM's desert festival shop",
             "Action": "EditData",
             "Target": "Data/Shops",
-            "Entries": {
-				"DesertFestival_{{PeiMing}}": {
-					 "Owners": 
-			[
-           		 {
+            "Entries":
+		 {
+				"DesertFestival_{{PeiMing}}": 
+			{
+				"Owners": [
+           	 {
                 "Name": "{{PeiMing}}",
                 "Portrait": "{{PeiMing}}",
-                "Dialogues": [ "{{i18n:DesertFestival1}}", 
-				 "{{i18n:DesertFestival2}}"
-                   
-               				]
-            	}
-		
-			], 
-			"Items": [
+                "Dialogues":
+			[ 	
+				{ 
+					"Id": "PeiMingDesertShop1",
+					"Dialogue": [],
+					"RandomDialogue": [
+					"{{i18n:DesertFestival1}}", 
+					"{{i18n:DesertFestival2}}"
+					],
+					"Condition": null,
+				},
+			],
+			"RandomizedDialogueOnOpen": true,
+			"Items": 
+			[
             { 	"Id": "{{ModID}}_IridiumBand",
 				"ItemId": "(O)527",
 				"TradeItemId": "CalicoEgg",
@@ -462,17 +470,18 @@
 				"TradeItemId": "CalicoEgg",
         		"TradeItemAmount": 30,
         		"Price": -1,
+			}
+			],
 			},
 
-        			],
-			"SalableItemTags": [ "category_weapon", "category_ring", "category_boots"
-
-			]
-
-			}
+		],
+		},
+			"SalableItemTags": [ "category_weapon", "category_ring", "category_boots"],
+		}
+	
+},
                 
-            }
-        },
+           
 		{
         "LogName": "Make seeds available for purchase at desert festival",
 		"Action": "EditData",
