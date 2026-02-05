@@ -12,7 +12,7 @@
 				//location specific <location>_<x>_<y>
 			    "ArchaeologyHouse_21_5": "{{i18n:ArchaeologyHouse_21_5}}",
                 "Saloon_6_71": "{{i18n:Saloon_6_71}}",
-                "{{PMHouse}}_6_5": "{{i18n:PeiMingBday6}}",
+                "{{ModID}}_PeiMingHouse_6_5": "{{i18n:PeiMingBday6}}",
 
                 //Bday dialogue 
                 "BathHouse_Pool_13_10": "{{i18n:PeiMingBath{{Random:{{Range:2,3}}}}}}",
@@ -91,6 +91,7 @@
                 "summer_Sat": "{{i18n: Summer{{Random: {{Range:1,3}} }} }}",
 
                 "summer_Sun": "{{i18n: Summer{{Random: {{Range:1,3}} }} }}",
+                "summer_28": "{{i18n:Summer_28}}",
 
                 //fall
                 "fall_28": "{{i18n:fall_28}}",

@@ -381,6 +381,7 @@
 "Summer2": "Many things are way different than from how I know them.#$b# The other day, Leah punched my face because I was surprised that women are pursuing the arts.#$b# Then again, I suppose my friend back at home would have done the same as Leah.",
 "Summer3": " Hey, @, why don't we go for a swim together, just you and me? $3",
 "Summer_1": "And just like that, it's Summer. Seasons come and go, but they always return. #$b# There is comfort to be found in that, don't you think?",
+"Summer_28": "Fall is approaching rapidly, announced by the change of weather. I can't wait for Winter, though.",
 
 //Fall
 "fall_28": "Hoh! Can you feel it, @? Winter is coming. Exciting, isn't it? #$b# Have you prepared your farm already?$6#$e# Me? I have my coat dusted off and ready!$3",
@@ -521,6 +522,12 @@
 "PMKrobusCT_PeiMing": "If it isn't my favorite farmer @. I am sure you know Krobers? #$b# I ran into them recently, they thought I was about to end their life or something. #$e# Turns out that they want to help somehow, heh...#$b#$y 'They shouldn't concern themselves with such things._Be nice to Krobus, okay?_Ha, of course! I have no reason not to._Their name is Krobus, by the way._Oh? Well, Krobus then.'",
 "PMKrobusCT_Wizard": "So our divine visitor has encountered Krobus? Well, I suppose they both are unique individuals.",
 
+"PXDwarfCT_Dwarf1": "Greetings, @. #$b# You say you met a person on your way out? #$b# Yeah, he's... someone who got lost here.",
+"PXDwarfCT_Dwarf2": "He could understand me, for some reason, so I felt inclined to help him.",
+"PXDwarfCT_Dwarf3": "Huh? Is that the ancient Dwarven scroll...? #$b# .................. #$b# I see. I am sorry, @, as of now, I can't tell you anything about it.",
+"PXDwarfCT_Dwarf4": "To think he lost such an important ancient artifact, though... #$b# I wonder where it is now.",
+
+
 ////////roommate dialogue
 //moving in accept
 "PeimingRoommate0": "What an interesting choice to make. But remember that I can't cook at all. $1",
@@ -529,10 +536,10 @@
 "Spring_Peiming": "You know that I am a free spirit. We don't need to cling to each other day and night. #$b# So don't mind me if I wander around the valley.",
 "Summer_Peiming": "Should I go to the beach? Or spend the day in the cool deep forest nearby?",
 "Fall_Peiming": "Fall means it's time for chestnuts. Do chestnuts grow around the valley, I wonder?",
-"Winter_Peiming": "It is quite chilly outside. Why don't you take a hot beverage for the road? [(O)614 (O)StardropTea (O)253 (O)Cornucopia_Eggnog (O)Cornucopia_HotChocolate (O)void.NorthernHeartMelon_LoveTea (O)Lumisteria.MtVapius_ArtisanGoods_MyriadinTea (O)skellady.SBVCP_MarigoldTea (O)DN.SnS_ancientsweettea] #$e#",
+"Winter_Peiming": "It is quite chilly outside. Why don't you take a hot beverage for the road? [(O)614 (O)StardropTea (O)253 (O)Cornucopia_Eggnog (O)Cornucopia_HotChocolate (O)void.NorthernHeartMelon_LoveTea (O)Lumisteria.MtVapius_ArtisanGoods_MyriadinTea (O)skellady.SBVCP_MarigoldTea (O)DN.SnS_ancientsweettea] #$e#", //note for translators: do not translate the text in the [] brackets
 "patio_Peiming": "Greetings, @. It sure is nice sitting by the fountain and trying to come up with some poetry.",
 
-"Rainy_Day_0": "This weather calls for a warm drink! Here you go!$1 [(O)Cornucopia_HotChocolate (O)614 (O)253 (O)skellady.SBVCP_DialaHotChoco (O)Wildflour.AtelierGoods_Amoretto_Latte (O)Wildflour.AtelierGoods_Coco_Cabana_Latte (O)Wildflour.AtelierGoods_Early_Riser_Latte (O)Wildflour.AtelierGoods_Mucha_Mocha_Latte (O)Wildflour.AtelierGoods_Pistachio_Buzz_Latte (O)Wildflour.AtelierGoods_Sweetheart_Latte (O)Wildflour.AtelierGoods_Warm_Vanilla_Sugar_Latte (O)Wildflour.AtelierGoods_Flavored_Latte]",
+"Rainy_Day_0": "This weather calls for a warm drink! Here you go!$1 [(O)Cornucopia_HotChocolate (O)614 (O)253 (O)skellady.SBVCP_DialaHotChoco (O)Wildflour.AtelierGoods_Amoretto_Latte (O)Wildflour.AtelierGoods_Coco_Cabana_Latte (O)Wildflour.AtelierGoods_Early_Riser_Latte (O)Wildflour.AtelierGoods_Mucha_Mocha_Latte (O)Wildflour.AtelierGoods_Pistachio_Buzz_Latte (O)Wildflour.AtelierGoods_Sweetheart_Latte (O)Wildflour.AtelierGoods_Warm_Vanilla_Sugar_Latte (O)Wildflour.AtelierGoods_Flavored_Latte]", //note for translators: do not translate the text in the [] brackets
 
 "Rainy_Day_1": "No excuse to stay at home just because it's raining. I used to win battles in the worst of weather conditions. $3",
 "Rainy_Day_2": "Sometimes, I do think of the Rain Master... #$b# Oh, she's an old... #$b# ...acquaintance of mine.",
@@ -545,7 +552,7 @@
 "Indoor_Day_2": "I had a weird dream.#$b# There was this weird, white doll, and.......... $8#$e# You know what, forget it. Inviting evil spirits into this house is the last thing we should do.",
 "Indoor_Day_3": "Perhaps we should go for a walk together today, hm?#$e# We could visit my old house, if you know what I mean.$3",
 "Indoor_Day_4": "I opened the windows to let some fresh air in but I think a bee got inside. #$e# Don't worry, I will catch and release it when I spot it again, just like you taught me.",
-"Indoor_Day_5": "I planned on making some pancakes but %pet somehow got its snout into the mix, so scrambled eggs it is.#$b# Bon appetit, @. [(O)194 (O)195 (O)201 (O)748 (O)766 (O)874]",
+"Indoor_Day_5": "I planned on making some pancakes but %pet somehow got its snout into the mix, so scrambled eggs it is.#$b# Bon appetit, @. [(O)194 (O)195 (O)201 (O)748 (O)766 (O)874]", //note for translators: do not translate the text in the [] brackets
 
 "Rainy_Night_0": "Rainy nights have something comforting about them, don't you think?",
 "Rainy_Night_1": "Have you ever thought about how you and I are something like Sworn Brothers? $1",
@@ -557,7 +564,7 @@
 "Indoor_Night_1": "Nights like these make me wonder who I could ask to have some fun with... #$e# Oh, stop looking at me like that! You know exactly that's what I like to do! $9",
 "Indoor_Night_2": "Welcome back, @. It's good to see you around.",
 "Indoor_Night_3": "...hm. #$b# %Pei Ming seems to be spaced out. #$b# Ah, @! Welcome back home. Forgive me, I have been thinking about my best friends.",
-"Indoor_Night_4": "Good evening, @! Why don't we have a drink together? Here you go! $6[(O)FlashShifter.StardewValleyExpandedCP_BlueMoonWine (O)873 (O)903 (O)Wildflour.AtelierGoods_Bonfire_Ale (O)Wildflour.AtelierGoods_Flavored_Ale (O)Wildflour.AtelierGoods_Snowman_Cream_Ale (O)DN.SnS_salishbourbon (O)void.NorthernHeartMelon_HeartMelonHuangjiu]",
+"Indoor_Night_4": "Good evening, @! Why don't we have a drink together? Here you go! $6[(O)FlashShifter.StardewValleyExpandedCP_BlueMoonWine (O)873 (O)903 (O)Wildflour.AtelierGoods_Bonfire_Ale (O)Wildflour.AtelierGoods_Flavored_Ale (O)Wildflour.AtelierGoods_Snowman_Cream_Ale (O)DN.SnS_salishbourbon (O)void.NorthernHeartMelon_HeartMelonHuangjiu]",//note for translators: do not translate the text in the [] brackets
 "Indoor_Night_5": "Hoho!$9",
 
 "funLeave_Peiming": "I will be heading out today to have some fun.$3#$e# A god has his hobbies and desires, too, after all. $9#$e# See you later!",
@@ -581,8 +588,8 @@
 "Good_8": "I would love to introduce you to some of my friends one day, @.$1#$b# I'm sure you would enjoy their company, just as much as I'm enjoying yours.$6",
 "Good_9": "$y If I ever were to return to my realm, would you like to come with me?_Temporarily, yes._Understandable. I would show you my palace and all kinds of sights then._No, I'd rather stay here._Too bad, but I can't blame you. Things are very different in my home realm.",
 //good hearts dialogue for platonic parter only
-"Good_10": "I sometimes catch myself making two cups of tea out of reflex, even when I'm visiting my old house. [(O)614 (O)Wildflour.AtelierGoods_Alchemist_Blend_Tea (O)Wildflour.AtelierGoods_Blueberry_Matcha_Tea (O)Wildflour.AtelierGoods_Cherry_Blossom_Matcha_Tea (O)Wildflour.AtelierGoods_Good_Thyme_Tea (O)Wildflour.AtelierGoods_Happy_Harvest_Tea (O)Wildflour.AtelierGoods_North_Pole_Tea (O)Wildflour.AtelierGoods_Pelican_Fog_Tea (O)Wildflour.AtelierGoods_Plum_Chai_Tea (O)Wildflour.AtelierGoods_Sun_Room_Tea (O)Wildflour.AtelierGoods_Sunny_Delight_Tea] #$b# How peculiar, isn't it? I'm not used to that, haha! #$e#",
-"Good_11": "Hey, @. #$b# I got you this from the mines. A keepsake, for good luck, heh. #$e# [(O)64 (O)72 (O)166 (O)275 (O)MysteryBox (O)GoldenMysteryBox (O)skellady.SBVCP_PrismaticOrb (O)skellady.SBVCP_MidnightOrb (O)skellady.SBCP_EclipseOrb (O)Lumisteria.MtVapius_BlackGeode (O)Lumisteria.MtVapius_Treasures_ArtifactTrove]",
+"Good_10": "I sometimes catch myself making two cups of tea out of reflex, even when I'm visiting my old house. [(O)614 (O)Wildflour.AtelierGoods_Alchemist_Blend_Tea (O)Wildflour.AtelierGoods_Blueberry_Matcha_Tea (O)Wildflour.AtelierGoods_Cherry_Blossom_Matcha_Tea (O)Wildflour.AtelierGoods_Good_Thyme_Tea (O)Wildflour.AtelierGoods_Happy_Harvest_Tea (O)Wildflour.AtelierGoods_North_Pole_Tea (O)Wildflour.AtelierGoods_Pelican_Fog_Tea (O)Wildflour.AtelierGoods_Plum_Chai_Tea (O)Wildflour.AtelierGoods_Sun_Room_Tea (O)Wildflour.AtelierGoods_Sunny_Delight_Tea] #$b# How peculiar, isn't it? I'm not used to that, haha! #$e#",//note for translators: do not translate the text in the [] brackets
+"Good_11": "Hey, @. #$b# I got you this from the mines. A keepsake, for good luck, heh. #$e# [(O)64 (O)72 (O)166 (O)275 (O)MysteryBox (O)GoldenMysteryBox (O)skellady.SBVCP_PrismaticOrb (O)skellady.SBVCP_MidnightOrb (O)skellady.SBCP_EclipseOrb (O)Lumisteria.MtVapius_BlackGeode (O)Lumisteria.MtVapius_Treasures_ArtifactTrove]",//note for translators: do not translate the text in the [] brackets
 
 "Neutral_0": "Would you mind getting me some of your homemade wine one of these days? It's been a while and I'm craving some.",
 "Neutral_1": "Hm... I'm craving some caviar today. And wine...",
@@ -637,7 +644,7 @@
 "PartnerDialogue1": "You know that I am a free spirit. We don't need to cling to each other day and night. #$b# So don't mind me if I wander around the valley.",
 "PartnerDialogue2": "@! Up bright and early, are you?$1#$b# Do you need some help on the farm today? Say the word, and consider it done by yours truly.$3#$e#",
 "PartnerDialogue3": "@! Good morning. Would you like to spar with me for morning workout?",
-"PartnerDialogue4": "Good morning, @. I brewed some fresh tea before you woke up - here you go. [(O)614 (O)Wildflour.AtelierGoods_Alchemist_Blend_Tea (O)Wildflour.AtelierGoods_Blueberry_Matcha_Tea (O)Wildflour.AtelierGoods_Cherry_Blossom_Matcha_Tea (O)Wildflour.AtelierGoods_Cookie_Jar_Tea (O)Wildflour.AtelierGoods_Good_Thyme_Tea (O)Wildflour.AtelierGoods_Happy_Harvest_Tea (O)Wildflour.AtelierGoods_North_Pole_Tea (O)Wildflour.AtelierGoods_Pelican_Fog_Tea (O)Wildflour.AtelierGoods_Plum_Chai_Tea (O)Wildflour.AtelierGoods_Positivitea_Tea (O)Wildflour.AtelierGoods_Sun_Room_Tea (O)Wildflour.AtelierGoods_Sunny_Delight_Tea (O)Wildflour.AtelierGoods_Flavored_Tea (O)DN.SnS_ancientsweettea (O)Rafseazz.RSVCP_Matcha_Latte] #$b# Why won't we enjoy it together?$6 #$e# ",
+"PartnerDialogue4": "Good morning, @. I brewed some fresh tea before you woke up - here you go. [(O)614 (O)Wildflour.AtelierGoods_Alchemist_Blend_Tea (O)Wildflour.AtelierGoods_Blueberry_Matcha_Tea (O)Wildflour.AtelierGoods_Cherry_Blossom_Matcha_Tea (O)Wildflour.AtelierGoods_Cookie_Jar_Tea (O)Wildflour.AtelierGoods_Good_Thyme_Tea (O)Wildflour.AtelierGoods_Happy_Harvest_Tea (O)Wildflour.AtelierGoods_North_Pole_Tea (O)Wildflour.AtelierGoods_Pelican_Fog_Tea (O)Wildflour.AtelierGoods_Plum_Chai_Tea (O)Wildflour.AtelierGoods_Positivitea_Tea (O)Wildflour.AtelierGoods_Sun_Room_Tea (O)Wildflour.AtelierGoods_Sunny_Delight_Tea (O)Wildflour.AtelierGoods_Flavored_Tea (O)DN.SnS_ancientsweettea (O)Rafseazz.RSVCP_Matcha_Latte] #$b# Why won't we enjoy it together?$6 #$e# ",//note for translators: do not translate the text in the [] brackets
 "PartnerDialogue5": "I like this little patio you allowed me to have. Listening to the fountain and the birds is almost poetic.",
 "PartnerDialogue6": "Would you mind if I borrowed your horse for a ride, @? I promise to give it back to you in tip-top shape.",
 "PartnerDialogue7": "When I still lived in the Cindersap Forest, the sound of the rushing creek was so relaxing. We should go there again together one day, @.",
@@ -678,6 +685,14 @@
 
 "CustomSchedule0": "Ah, good morning, @! I think the town is lovely in Spring, don't you think? Especially the pink trees. $1",
 "CustomSchedule1": "I borrowed a history book from the library recently. I must say... #$b# a lot has happened. $8",
+
+/////Objects
+"MysteriousNote.name": "Mysterious Note",
+"MysteriousNote.description": "The mysterious person you met by the bus stop dropped this but you can't read it.",
+
+"Tanghulu.DisplayName": "Tanghulu",
+"Tanghulu.Description": "A traditional Chinese snack consisting of several malt sugar coated fruits of Chinese hawthorn on a bamboo skewer",
+
 
 /////QUESTS
 "TalkWizard.title": "The 'Heavenly' Newcomer",
@@ -821,7 +836,7 @@
 
 //roommate schedule dialogue (after he moved in)
 "PMRoommate0": "Ah, good morning, @. Do you want to head to the Night Market together later?",
-"PMRoommate1": "I thought it would be nice to have a little drink before heading to the Night Market. Why don't you have some, too?#$b# Don't worry, I'll pay!$1 [(O)873 (O)903 (O)Wildflour.AtelierGoods_Bonfire_Ale (O)Wildflour.AtelierGoods_Snowman_Cream_Ale (O)Wildflour.AtelierGoods_Sunny_Daze_Mead]",
+"PMRoommate1": "I thought it would be nice to have a little drink before heading to the Night Market. Why don't you have some, too?#$b# Don't worry, I'll pay!$1 [(O)873 (O)903 (O)Wildflour.AtelierGoods_Bonfire_Ale (O)Wildflour.AtelierGoods_Snowman_Cream_Ale (O)Wildflour.AtelierGoods_Sunny_Daze_Mead]",//note for translators: do not translate the text in the [] brackets
 "PMRoommate2": "@! You actually came to the Night Market!$1#$e# I am pretty curious about the vendors that have set up shop here.",
 "PMRoommate3": "So there are even real mermaids, huh? #$e# Perhaps I'll check them out. $3",
 "PMRoommate4": "Ah, so you've decided to hike up the mountain, too? I quite enjoyed myself doing so.$6",

@@ -80,8 +80,8 @@
             "Entries": {
                 "{{ModId}}_Tanghulu": {
                     "Name": "{{ModId}}_Tanghulu",
-                    "DisplayName": "Tanghulu",
-                    "Description": "A traditional Chinese snack consisting of several malt sugar coated fruits of Chinese hawthorn on a bamboo skewer",
+                    "DisplayName": "{{i18n:Tanghulu.DisplayName}}",
+                    "Description": "{{i18n:Tanghulu.Description}}",
                     "Edibility": "40",
                     "Type": "Cooking",
                     "Category": -7,

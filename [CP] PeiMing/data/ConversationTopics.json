@@ -47,6 +47,16 @@
 },
 },
 
+//Dwarf
+{
+	"LogName": "Conversation Topics - Dwarf",
+	"Action": "EditData",
+	"Target": "Characters/Dialogue/Dwarf",
+	"Entries": {
+		"{{ModID}}_PXDwarfCT": "{{i18n:PXDwarfCT_Dwarf1}}#$e#{{i18n:PXDwarfCT_Dwarf2}}#$e#$query PLAYER_HAS_ITEM current (O){{ModID}}_MysteriousNote#{{i18n:PXDwarfCT_Dwarf3}}|{{i18n:PXDwarfCT_Dwarf4}}"
+	}
+},
+
 //Elliot
 { "LogName": "ConversationTopics - Elliott",
 "Action": "EditData",

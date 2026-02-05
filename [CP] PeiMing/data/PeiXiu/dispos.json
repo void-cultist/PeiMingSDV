@@ -34,7 +34,7 @@
           "Home": [
             {
               "Id": "Default",
-              "Location": "{{PMHouse}}",
+              "Location": "{{ModID}}_PeiMingHouse",
               "Tile": {
                 "X": 7,
                 "Y": 7

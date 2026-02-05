@@ -12,19 +12,19 @@
 						"Partnership": "Platonic Partnership",
 						"Roommate": "{{PeiMing}}" },
    		 "Entries": {
-			"{{ModID}}_PlatonicPartnerScheduleKeyRainy": "610 {{PMHouse}} 2 6 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.001\"/730 {{PMHouse}} 6 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.002\"/1200 Forest 47 28 3 \"Strings\\schedules\\{{PeiMing}}:PeiMingRainyOutdoor.000\"/1300 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/2000 {{PMHouse}} 9 5 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"{{ModID}}_PlatonicPartnerScheduleKeyRainy": "610 {{ModID}}_PeiMingHouse 2 6 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.001\"/730 {{ModID}}_PeiMingHouse 6 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.002\"/1200 Forest 47 28 3 \"Strings\\schedules\\{{PeiMing}}:PeiMingRainyOutdoor.000\"/1300 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/2000 {{ModID}}_PeiMingHouse 9 5 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
 			
 			"{{ModID}}_PlatonicPartnerScheduleKeyGreenRain": "900 BathHouse_Pool 8 15 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingPartnerBathHouse.000\"/1500 Mine 24 10 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingPartnerMines.000\"",
 
-			"{{ModID}}_PlatonicPartnerScheduleKeySummer_20": "610 Railroad 61 10 2 \"{{i18n:PeiMingBday{{Random:{{Range:0,2}}}}}}\"/1400 {{WoodsOrBeach}} 12 18 2 \"{{i18n:PeiMingBday{{Random:{{Range:3,5}}}}}}\"/2000 {{PMHouse}} 6 5 0 \"{{i18n:Indoor_Day_5}}\"",
+			"{{ModID}}_PlatonicPartnerScheduleKeySummer_20": "610 Railroad 61 10 2 \"{{i18n:PeiMingBday{{Random:{{Range:0,2}}}}}}\"/1400 {{WoodsOrBeach}} 12 18 2 \"{{i18n:PeiMingBday{{Random:{{Range:3,5}}}}}}\"/2000 {{ModID}}_PeiMingHouse 6 5 0 \"{{i18n:Indoor_Day_5}}\"",
 			// "{{ModID}}_PlatonicPartnerScheduleKeySummerStorm": "",
-			"{{ModID}}_PlatonicPartnerScheduleKeySpringMonTueWed": "720 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1400 Beach 13 26 3/1530 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{PMHouse}} 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
-			"{{ModID}}_PlatonicPartnerScheduleKeySpringThuFriSat": "610 Forest 51 79 2/1330 Mountain 55 31 0/2000 {{PMHouse}} 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
-			"{{ModID}}_PlatonicPartnerScheduleKeySpringSun": "610 Town 27 97 2 \"{{i18n:CustomSchedule0}}\"/1300 {{PMHouse}} 9 5 2 {{PeiMing}}_readBook \"{{i18n:CustomSchedule1}}\"",
+			"{{ModID}}_PlatonicPartnerScheduleKeySpringMonTueWed": "720 ArchaeologyHouse 21 5 2 {{PeiMing}}_readBook/1400 Beach 13 26 3/1530 Saloon 6 17 2 {{PeiMing}}_drinkBooze/1930 {{ModID}}_PeiMingHouse 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"{{ModID}}_PlatonicPartnerScheduleKeySpringThuFriSat": "610 Forest 51 79 2/1330 Mountain 55 31 0/2000 {{ModID}}_PeiMingHouse 9 5 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.000\"",
+			"{{ModID}}_PlatonicPartnerScheduleKeySpringSun": "610 Town 27 97 2 \"{{i18n:CustomSchedule0}}\"/1300 {{ModID}}_PeiMingHouse 9 5 2 {{PeiMing}}_readBook \"{{i18n:CustomSchedule1}}\"",
 			"{{ModID}}_PlatonicPartnerScheduleKeySummer": "700 Beach 45 21 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingPartnerSummer.000\"/1730 Saloon 6 17 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingPartnerSaloon.000\"",
 
-			"{{ModID}}_PlatonicPartnerScheduleKeyFall": "700 {{PMHouse}} 2 6 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.002\"/1400 Mine 24 10 2 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingMines.000\"",
-			"{{ModID}}_PlatonicPartnerScheduleKeyFallBathhouseDay": "630 BathHouse_Pool 13 10 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingPartnerBathHouse.000\"/1300 ArchaeologyHouse 21 5 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingPartner.003\"/1800{{PMHouse}} 9 5 0",
+			"{{ModID}}_PlatonicPartnerScheduleKeyFall": "700 {{ModID}}_PeiMingHouse 2 6 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.002\"/1400 Mine 24 10 2 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingMines.000\"",
+			"{{ModID}}_PlatonicPartnerScheduleKeyFallBathhouseDay": "630 BathHouse_Pool 13 10 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingPartnerBathHouse.000\"/1300 ArchaeologyHouse 21 5 2 \"Strings\\schedules\\{{PeiMing}}:PeiMingPartner.003\"/1800{{ModID}}_PeiMingHouse 9 5 0",
 
 			"{{ModID}}_PlatonicPartnerScheduleKeyNightmarket": "800 BusStop 33 22 2 \"{{i18n:PMRoommate0}}/1200 Saloon 26 21 2 {{PeiMing}}_drinkBooze \"{{i18n:PMRoommate1}}/1730 Beach-Nightmarket 35 7 1 \"{{i18n:PMRoommate2}}\"/2000 Beach-Nightmarket 38 31 1 \"{{i18n:PMRoommate3}}\"",
 
@@ -32,10 +32,10 @@
 
 			"{{ModID}}_PlatonicPartnerScheduleKeyRandom2": "700 Railroad 30 39 1 \"{{i18n:PartnerDialogue6}}\"/1330 BathHouse_Pool \"{{i18n:PartnerDialogue8}}\"/1630 Town 62 17 2 \"{{i18n:PartnerDialogue28}}\"",
 
-			"{{ModID}}_PlatonicPartnerScheduleKeyRandom3": "800 {{PMHouse}} 3 7 2 {{PeiMing}}_drinkTea \"{{i18n:PartnerDialogue4}}\"/1200 {{PMHouse}} 19 9 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingPartner.004\"/1630 {{PMHouse}}3 6 1 \"{{i18n:Indoor_Night_4}}\"",
+			"{{ModID}}_PlatonicPartnerScheduleKeyRandom3": "800 {{ModID}}_PeiMingHouse 3 7 2 {{PeiMing}}_drinkTea \"{{i18n:PartnerDialogue4}}\"/1200 {{ModID}}_PeiMingHouse 19 9 2 {{PeiMing}}_readPaper \"Strings\\schedules\\{{PeiMing}}:PeiMingPartner.004\"/1630 {{ModID}}_PeiMingHouse3 6 1 \"{{i18n:Indoor_Night_4}}\"",
 
-			"{{ModID}}_PlatonicPartnerScheduleKeyWinterSnow": "610 {{PMHouse}} 9 5 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingPartnerWinterSnow.000\"/830 {{PMHouse}} 18 5 0\"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.004\"",
-			"{{ModID}}_PlatonicPartnerScheduleKeyWinter": "610 {{PMHouse}} 9 5 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingPartnerWinter.002 \"/1500 Town 29 26 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingPartner.002\"",
+			"{{ModID}}_PlatonicPartnerScheduleKeyWinterSnow": "610 {{ModID}}_PeiMingHouse 9 5 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingPartnerWinterSnow.000\"/830 {{ModID}}_PeiMingHouse 18 5 0\"Strings\\schedules\\{{PeiMing}}:PeiMingHouse.004\"",
+			"{{ModID}}_PlatonicPartnerScheduleKeyWinter": "610 {{ModID}}_PeiMingHouse 9 5 2 {{PeiMing}}_drinkTea \"Strings\\schedules\\{{PeiMing}}:PeiMingPartnerWinter.002 \"/1500 Town 29 26 0 \"Strings\\schedules\\{{PeiMing}}:PeiMingPartner.002\"",
 
 
 			

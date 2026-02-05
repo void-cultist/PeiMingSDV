@@ -12,10 +12,6 @@
 			"Value": "{{ModID}}_Peiming"
 		},
 		{
-			"Name": "PMHouse",
-			"Value": "{{ModID}}_PeiMingHouse"
-		},
-		{
 			"Name": "PeiXiu",
 			"Value": "{{ModID}}_PeiXiu"
 		},
@@ -136,7 +132,7 @@
 			"Value": "PeiMingExterior_Setpieces.tmx"
 		},
 
-		//prismatic rose spawn coordinates. i figured out i could handle it like that AFTER i did separate patches for all other spawns. RIP
+		//spawn coordinates. i figured out i could handle it like that AFTER i did separate patches for all other spawns. RIP
 		{
 			"Name": "SpawnableCoordinates",
 			"Value": "Forest 42,73,4,3 55,73,3,7"
@@ -514,7 +510,64 @@
 		"When": {
 			"HasSeenEvent: |contains={{ModID}}_PM4HMountain": true
 		}	
-	}
+	},
+
+	//vanilla music or custom?
+	{
+		"Name": "PMHouseBGM",
+		"Value": "shimmeringbastion"
+	},
+	{
+		"Name": "PMHouseBGM",
+		"When": { "Custom Music": "on" },
+		"Value": "{{ModId}}_PMHouseMusic"
+	},
+	{
+		"Name": "EventBGM",
+		"Value": "Icicles"
+	},
+	{
+		"Name": "EventBGM",
+		"When": { "Custom Music": "on" },
+		"Value": "{{ModId}}_Music"
+	},
+	{
+		"Name": "EventBGM2",
+		"Value": "AbigailFlute"
+	},
+	{
+		"Name": "EventBGM2", 
+		"When": { "Custom Music": "on" },
+		"Value": "{{ModId}}_ArukasBloom"
+	},
+	{
+		"Name": "HappyBGM",
+		"Value": "poppy"
+	},
+	{
+		"Name": "HappyBGM",
+		"When": { "Custom Music": "on" },
+		"Value": "{{ModId}}_HappyBGM"
+	},
+	{
+		"Name": "MelancholyBGM",
+		"Value": "desolate"
+	},
+	{
+		"Name": "MelancholyBGM",
+		"When": { "Custom Music": "on" },
+		"Value": "{{ModId}}_MelancholyBGM"
+	},
+		{
+		"Name": "SinisterBGM",
+		"Value": "junimoKart_ghostMusic"
+	},
+	{
+		"Name": "SinisterBGM",
+		"When": { "Custom Music": "on" },
+		"Value": "{{ModId}}_darkly"
+	},
+	
 		
 	],
 	
@@ -564,6 +617,13 @@
 			"Description": "Farmhouse Renovation: Pei Ming gets his own little room in your farmhouse (this is NOT the vanilla spouse room); Farm Building: Pei Ming gets his own little cabin you can place on your farm",
 			"Section": "Platonic Partnership exclusive",
 		} */
+		 "Custom Music":
+		 {
+			"AllowValues": "on, off",
+			"Default": "on",
+			"AllowBlank": false,
+			"Description": "This mod adds custom music tracks to certain events and locations involving Pei Ming. If you do not want this, turn this setting off. Custom music might also slow down your game in some instances, so if you are experiencing lag, disable this config as well."
+		 }
 	
 			
 	}, 
@@ -571,7 +631,7 @@
 	  [{
    		 "LogName": "Blank JSON load for Pei Ming", //The logline is not required, but it's useful down the road for labeling your patches so you can tell your problem is, say "NPC Dialogue Patch" and not "NPC Patch #14"
         	"Action": "Load",
-        	"Target": "Characters/Dialogue/{{PeiMing}}, Characters/schedules/{{PeiMing}}, Strings/schedules/{{PeiMing}}, Strings/StringsFromMaps/{{PMHouse}}, Strings/StringsFromMaps/{{ModID}}_PeiMingExterior, Strings/StringsFromCSFiles/{{PeiMing}}_EngagedRoommate, Strings/1_6_Strings/{{ModID}}_Renovation_AddCustomRoom, Data/EngagementDialogue/{{PeiMing}}, Characters/Dialogue/MarriageDialogue{{PeiMing}}Roommate, Characters/schedules/{{PeiMing}}Roommate, Data/Events/{{PMHouse}}, Data/Locations/{{ModID}}_PeiMingNewOutdoors", 
+        	"Target": "Characters/Dialogue/{{PeiMing}}, Characters/schedules/{{PeiMing}}, Strings/schedules/{{PeiMing}}, Strings/StringsFromMaps/{{ModID}}_PeiMingHouse, Strings/StringsFromMaps/{{ModID}}_PeiMingExterior, Strings/StringsFromCSFiles/{{PeiMing}}_EngagedRoommate, Strings/1_6_Strings/{{ModID}}_Renovation_AddCustomRoom, Data/EngagementDialogue/{{PeiMing}}, Characters/Dialogue/MarriageDialogue{{PeiMing}}Roommate, Characters/schedules/{{PeiMing}}Roommate, Data/Events/{{ModID}}_PeiMingHouse, Data/Locations/{{ModID}}_PeiMingNewOutdoors", 
         	"FromFile": "data/blank.json" //this should be wherever you put it in your assets folder - put it in a subfolder if you want
    	 },
 	 {
@@ -775,7 +835,7 @@
 { "LogName": "Space Core: Gift Event Trigger - Roommate Proposal",
   "Action": "EditData",
   "Target": "spacechase0.SpaceCore/NpcExtensionData",
-  "When": { "LocationName": "{{PMHouse}}",
+  "When": { "LocationName": "{{ModID}}_PeiMingHouse",
 			"HasSeenEvent: |contains={{ModID}}_BecomeRoommates": false }, 
   "Update": "OnLocationChange",
   "Entries": {
@@ -816,6 +876,7 @@
 			"{{ModID}}_PMSaloon": "Location/{{i18n:PMSaloon.title}}/{{i18n:PMSaloon.text}}/{{i18n:PMSaloon.objective}}/Saloon/0/0/-1/false",
 			"{{ModID}}_PMMountains": "Location/{{i18n:PMMountains.title}}/{{i18n:PMMountains.text}}/{{i18n:PMMountains.objective}}/Mountain/0/0/-1/false",
 			"{{ModID}}_NHMForPM": "ItemDelivery/{{i18n:NHMForPM.title}}/{{i18n:NHMForPM.text}}/{{i18n:NHMForPM.objective}}/{{PeiMing}} void.NorthernHeartMelon_NHMelon 1/0/10000/-1/false/{{i18n:NHMForPM.reaction}}",
+			//"{{ModID}}_MysteriousNoteQuest": "",
 		}
 },
 //mail
@@ -848,6 +909,7 @@
   {			
 	"LogName": "Add custom tracks",
     "Action": "EditData",
+	"When": { "Custom Music": "on" },
     "Target": "Data/AudioChanges",
     "Entries": {
                 "{{ModId}}_Music": 
@@ -894,6 +956,14 @@
 				{   "ID": "{{ModId}}_ArukasBloom",
                     "Category": "Music",
                     "FilePaths": [ "{{AbsoluteFilePath: assets/music/arukas_bloom.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+
+				},
+				"{{ModID}}_darkly":
+				{   "ID": "{{ModId}}_darkly",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/darkly.ogg}}" ],
                     "StreamedVorbis": true,
                     "Looped": true
 

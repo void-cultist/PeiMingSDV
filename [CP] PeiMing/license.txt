@@ -20,3 +20,10 @@ Licensed under CC-BY 4.0, https://creativecommons.org/licenses/by/4.0/
 used in the Mod under the ID "void.peiming_ArukasBloom"
 
 No changes have been made to any of the aforementioned files other than converting them to .ogg for use in the mod. 
+
+to be used potentially:
+https://opengameart.org/content/old-city-theme
+https://opengameart.org/content/%E2%80%9Cfull-moon%E2%80%9D-marcelo-fern%C3%A1ndez-lsao-migfus20
+https://opengameart.org/content/departure-0
+https://opengameart.org/content/rain-drops
+https://opengameart.org/content/little-hope

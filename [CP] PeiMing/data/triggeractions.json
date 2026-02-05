@@ -175,6 +175,17 @@
 						"AddMail Current {{ModID}}_LoveTeaLetter tomorrow"
 					]
 				},	
+			"{{ModID}}_Add_MysteriousNoteQuest":
+				{
+					"ID": "{{ModID}}_Add_MysteriousNoteQuest",
+					"Trigger": "LocationChanged",
+					"Condition": "PLAYER_HAS_ITEM Current (O){{ModID}}_MysteriousNote, PLAYER_HAS_SEEN_EVENT {{ModID}}_PeiXiuEncounter", 
+					"Actions": [ 
+						"AddQuest {{ModID}}_MysteriousNoteQuest"
+									]
+				},
+	
+			
 			}
 		 },
 

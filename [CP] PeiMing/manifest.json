@@ -1,15 +1,36 @@
 {
-  "Name": "Mushroom Meadow",
+  "Name": "NPC Pei Ming",
   "Author": "voidcultist",
-  "Version": "0.5.0",
-  "Description": "Adds a mushroom foraging area and lots of new shroomies to collect!",
-  "UniqueID": "void.MM",
-  "UpdateKeys": [ "Nexus:", "GitHub:" ],
+  "Version": "1.0.2",
+  "Description": "Adds the ancient deity Pei Ming to your valley.",
+  "UniqueID": "void.peiming",
+  "UpdateKeys": [ "Nexus:39402", "GitHub:void-cultist/PeiMingSDV" ],
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
   },
    "Dependencies": [
-   
+    {"UniqueID": "Spiderbuttons.CustomScheduleKeys",
+  "IsRequired": true },
+  
+    {"UniqueID": "spacechase0.SpaceCore",
+  "IsRequired": true, },
+
+   {"UniqueID": "Lumisteria.LumiTilesheetsIndoor",
+	   "IsRequired": true,
+   },
+   {"UniqueID": "hxw.tilesheets",
+	   "IsRequired": true,
+	 },
+   {"UniqueID": "PC.Tilesheets",
+   "IsRequired": true,
+   },
+   {	"UniqueID": "void.NorthernHeartMelon",
+		"IsRequired": true,
+   },
+   {
+    "UniqueID": "ichortower.ECC",
+    "IsRequired": true
+   }
 
    ],
   

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="15" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="2">
+ <properties>
+  <property name="AmbientLight" value="0 0 0"/>
+  <property name="LocationContext" value="Island"/>
+  <property name="SeasonOverride" value="summer"/>
+  <property name="Warp" value="21 40 VolcanoDungeon9 -1 -1 11 37 VolcanoDungeon0 20 30"/>
+  <property name="forceLoadObjects" value="T"/>
+  <property name="indoorWater" value="T"/>
+ </properties>
+ <tileset firstgid="1" name="dungeon" tilewidth="16" tileheight="16" tilecount="576" columns="16">
+  <image source="../../../../../../../../../Users/User/Documents/SDV Modding/Content (unpacked)/Maps/Mines/volcano_dungeon" width="256" height="576"/>
+  <tile id="25">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="126">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="142">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="157">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="158">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="320">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="577" name="P" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="../../../../../../../../../Users/User/Documents/SDV Modding/Content (unpacked)/Maps/paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="641" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="180" columns="9">
+  <image source="../../../../../../../../../Users/User/Documents/SDV Modding/Content (unpacked)/Maps/Mines/volcano_caldera" width="144" height="320"/>
+  <tile id="108">
+   <animation>
+    <frame tileid="108" duration="100"/>
+    <frame tileid="109" duration="100"/>
+    <frame tileid="110" duration="100"/>
+    <frame tileid="117" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="156">
+   <animation>
+    <frame tileid="156" duration="150"/>
+    <frame tileid="123" duration="150"/>
+    <frame tileid="124" duration="150"/>
+    <frame tileid="124" duration="150"/>
+    <frame tileid="124" duration="150"/>
+    <frame tileid="123" duration="150"/>
+    <frame tileid="156" duration="150"/>
+    <frame tileid="156" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="157">
+   <animation>
+    <frame tileid="157" duration="150"/>
+    <frame tileid="133" duration="150"/>
+    <frame tileid="134" duration="150"/>
+    <frame tileid="134" duration="150"/>
+    <frame tileid="134" duration="150"/>
+    <frame tileid="133" duration="150"/>
+    <frame tileid="157" duration="150"/>
+    <frame tileid="157" duration="150"/>
+   </animation>
+  </tile>
+  <tile id="161">
+   <animation>
+    <frame tileid="161" duration="100"/>
+    <frame tileid="170" duration="100"/>
+    <frame tileid="179" duration="100"/>
+    <frame tileid="152" duration="100"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="821" name="untitled tile sheet2" tilewidth="16" tileheight="16" tilecount="2080" columns="32">
+  <image source="../../../../../../../../../Users/User/Documents/SDV Modding/Content (unpacked)/Maps/island_tilesheet_1" width="512" height="1040"/>
+  <tile id="376">
+   <animation>
+    <frame tileid="376" duration="110"/>
+    <frame tileid="377" duration="110"/>
+    <frame tileid="378" duration="110"/>
+    <frame tileid="379" duration="110"/>
+    <frame tileid="380" duration="110"/>
+    <frame tileid="381" duration="110"/>
+    <frame tileid="382" duration="110"/>
+    <frame tileid="383" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+    <frame tileid="374" duration="110"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="15" height="9">
+  <data encoding="csv">
+669,321,321,321,321,321,321,321,321,321,321,321,321,669,669,
+321,321,321,321,321,321,321,669,669,669,669,669,669,669,669,
+321,321,321,669,669,669,669,669,669,669,669,669,321,700,669,
+321,700,669,669,669,669,669,669,669,321,321,669,321,700,669,
+321,669,669,700,321,321,321,321,321,321,321,669,669,669,669,
+321,669,669,321,321,321,321,321,321,321,321,669,669,669,669,
+321,669,669,669,669,669,669,669,669,669,669,669,669,669,669,
+321,669,669,669,0,0,0,0,0,0,687,667,687,0,0,
+669,669,669,0,0,0,0,0,0,0,687,676,687,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="15" height="9">
+  <data encoding="csv">
+0,699,0,0,0,0,0,709,709,709,709,709,710,0,0,
+690,711,0,709,709,709,710,0,0,0,0,0,0,0,0,
+711,0,710,0,0,0,0,0,0,0,0,0,690,692,0,
+0,710,0,0,0,0,0,0,0,690,692,0,708,710,0,
+701,0,0,690,691,691,691,691,691,711,701,0,0,0,666,
+701,0,0,708,709,709,709,709,709,709,710,0,0,666,675,
+701,0,0,0,0,0,0,0,1367,1368,0,0,666,675,687,
+710,0,0,1270,687,687,696,687,688,696,668,0,671,706,727,
+0,0,0,687,696,696,697,697,696,696,677,678,680,697,728
+</data>
+ </layer>
+ <layer id="3" name="Front" width="15" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,666,
+0,0,0,0,0,0,0,1334,1335,1336,1337,0,0,666,0,
+0,0,0,0,666,679,678,679,678,679,665,0,666,0,721,
+0,0,0,666,675,0,0,0,0,0,668,0,671,721,0,
+666,678,679,675,0,0,0,0,0,0,677,678,680,744,0
+</data>
+ </layer>
+ <layer id="4" name="AlwaysFront" width="15" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,1421,1422,0,0,0,0,0,0,0,
+0,0,0,0,1518,0,1453,1454,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="5" name="Paths" width="15" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,610,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Back"/>
+ <objectgroup id="7" name="Buildings">
+  <object id="1" name="TileData" x="16" y="0" width="16" height="16">
+   <properties>
+    <property name="Action" value="SpecialWaterDroppable"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="Front"/>
+ <objectgroup id="9" name="AlwaysFront"/>
+ <objectgroup id="10" name="Paths"/>
+</map>

@@ -17,7 +17,7 @@
 { 
     "LogName": "Load PM's House Interior Map", 
 	"Action": "Load", // This action loads the map as a new asset into the game
-	"Target": "Maps/{{PMHouse}}", // {{ModID}} is a CP token that is automatically converted into your mod's unique ID. Using it to prefix all your asset names and IDs ensures that your mod's things are unique and won't clash with things from other mods
+	"Target": "Maps/{{ModID}}_PeiMingHouse", // {{ModID}} is a CP token that is automatically converted into your mod's unique ID. Using it to prefix all your asset names and IDs ensures that your mod's things are unique and won't clash with things from other mods
 	"FromFile": "assets/Maps/PeiMingHouse.tmx" // The name of the map file you made, inside the Maps folder you moved it to
 },	
 {
@@ -25,7 +25,7 @@
 	"Action": "EditData",
 	"Target": "Data/Locations",
 	"Entries": {
-		"{{PMHouse}}": 
+		"{{ModID}}_PeiMingHouse": 
 		{ 
 			"DefaultArrivalTile":
 		    { 
@@ -33,7 +33,7 @@
 			},
 			"CreateOnLoad":
 			 {
-				"MapPath": "Maps/{{PMHouse}}" 
+				"MapPath": "Maps/{{ModID}}_PeiMingHouse" 
 			},
 			
 		}	
@@ -475,13 +475,13 @@
             "Position": { "X": 50, "Y": 72 }, // The coordinate of the bottom tile of the door. This is the first set of coordinates that we wrote down earlier in the tutorial.
             "Layer": "Buildings", // The tile the player is clicking is on the buildings layer.
             "SetProperties": {
-                "Action": "LockedDoorWarp 5 10 {{PMHouse}} 600 2350" 
+                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350" 
             }
         },
 		{ "Position": { "X": 51, "Y": 72 }, 
             "Layer": "Buildings",
             "SetProperties": {
-                "Action": "LockedDoorWarp 5 10 {{PMHouse}} 600 2350"
+                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350"
 			}
 			},
     ]
@@ -498,13 +498,13 @@
         { "Position": { "X": 26, "Y": 73 }, 
             "Layer": "Buildings", 
             "SetProperties": {
-                "Action": "LockedDoorWarp 5 10 {{PMHouse}} 600 2350" 
+                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350" 
             }
         },
 		{ "Position": { "X": 27, "Y": 73 }, 
             "Layer": "Buildings", 
             "SetProperties": {
-                "Action": "LockedDoorWarp 5 10 {{PMHouse}} 600 2350"
+                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350"
 			}
 			},
     ]
@@ -519,13 +519,13 @@
             "Position": { "X": 8, "Y": 9 },
             "Layer": "Buildings", 
             "SetProperties": {
-                "Action": "LockedDoorWarp 5 10 {{PMHouse}} 600 2350",
+                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350",
             }
         },
 		{ "Position": { "X": 9, "Y": 9 }, 
             "Layer": "Buildings", 
             "SetProperties": {
-                "Action": "LockedDoorWarp 5 10 {{PMHouse}} 600 2350"
+                "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350"
 			}
 			},
     ]
@@ -535,7 +535,7 @@
 {
     "LogName": "Edit PM's house interior to add warp out of PM's house(VANILLA)",
     "Action": "EditMap",
-    "Target": "Maps/{{PMHouse}}", // Target the interior house map this time
+    "Target": "Maps/{{ModID}}_PeiMingHouse", // Target the interior house map this time
 	"When": { "House Location": "Vanilla", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false },
     "AddWarps": [
         "5 12 Forest 50 73"	// The first set of coordinates is where you want the player to step to LEAVE the house, the second set is where they will show up OUTSIDE the house, in the village.
@@ -545,7 +545,7 @@
 {
     "LogName": "Edit PM's house interior to add warp out of PM's house(SVE)",
     "Action": "EditMap",
-    "Target": "Maps/{{PMHouse}}", 
+    "Target": "Maps/{{ModID}}_PeiMingHouse", 
 	"When": { "House Location": "SVE", "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
     "AddWarps": [
         "5 12 Forest 26 74" ]
@@ -654,7 +654,7 @@
 {
     "LogName": "Edit PM's house interior to add warp out of PM's house(ALTERNATE)",
     "Action": "EditMap",
-    "Target": "Maps/{{PMHouse}}", 
+    "Target": "Maps/{{ModID}}_PeiMingHouse", 
 	"When": { "House Location": "Alternate"},
     "AddWarps": [
         "5 12 {{ModID}}_PeiMingNewOutdoors 8 10" ]
@@ -689,7 +689,7 @@
 	"Action": "EditMap",
 	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
 	"Update": "OnLocationChange",
-	"Target": "Maps/{{PMHouse}}",
+	"Target": "Maps/{{ModID}}_PeiMingHouse",
 	"FromFile": "assets/Maps/PeiMingBedPatch.tmx",
 	"PatchMode": "Replace",
 	 "FromArea": {
@@ -710,7 +710,7 @@
 {
     "LogName": "Add in Warp tiles for the new warps (BusStopwarp)",
     "Action": "EditMap",
-    "Target": "Maps/{{PMHouse}}", 
+    "Target": "Maps/{{ModID}}_PeiMingHouse", 
 	"When": { "HasReadLetter:AnyPlayer |contains={{ModID}}_SleepoverLetter": true},
 	"MapTiles": [ 
         {
@@ -733,7 +733,7 @@
             "Position": { "X": 22, "Y": 22 }, 
             "Layer": "Back", 
             "SetProperties": {
-                "TouchAction": "MagicWarp {{PMHouse}} 16 6" 
+                "TouchAction": "MagicWarp {{ModID}}_PeiMingHouse 16 6" 
             }
         },
 	]
