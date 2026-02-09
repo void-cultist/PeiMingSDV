@@ -78,19 +78,19 @@
                 //summer
                 "summer_1": "{{i18n:Summer_1}}",
                 "summer_20": "{{i18n: Birthday{{Random: {{Range:1,3}} }} }}",
-                "summer_Mon": "{{i18n: Summer{{Random: {{Range:1,3}} }} }}",
+                "summer_Mon": "{{Random: {{i18n:Summer1}} && {{i18n:Summer2}} && {{i18n:Summer3{{LessFlirty}}}} |inputSeparator=&&}}",
 
-                "summer_Tue": "{{i18n: Summer{{Random: {{Range:1,3}} }} }}",
+                "summer_Tue": "{{Random: {{i18n:Summer1}} && {{i18n:Summer2}} && {{i18n:Summer3{{LessFlirty}}}} |inputSeparator=&&}}",
 
-                "summer_Wed": "{{i18n: Summer{{Random: {{Range:1,3}} }} }}",
+                "summer_Wed": "{{Random: {{i18n:Summer1}} && {{i18n:Summer2}} && {{i18n:Summer3{{LessFlirty}}}} |inputSeparator=&&}}",
                 
-                "summer_Thu": "{{i18n: Summer{{Random: {{Range:1,3}} }} }}",
+                "summer_Thu": "{{Random: {{i18n:Summer1}} && {{i18n:Summer2}} && {{i18n:Summer3{{LessFlirty}}}} |inputSeparator=&&}}",
 
-                "summer_Fri": "{{i18n: Summer{{Random: {{Range:1,3}} }} }}",
+                "summer_Fri": "{{Random: {{i18n:Summer1}} && {{i18n:Summer2}} && {{i18n:Summer3{{LessFlirty}}}} |inputSeparator=&&}}",
 
-                "summer_Sat": "{{i18n: Summer{{Random: {{Range:1,3}} }} }}",
+                "summer_Sat": "{{Random: {{i18n:Summer1}} && {{i18n:Summer2}} && {{i18n:Summer3{{LessFlirty}}}} |inputSeparator=&&}}",
 
-                "summer_Sun": "{{i18n: Summer{{Random: {{Range:1,3}} }} }}",
+                "summer_Sun": "{{Random: {{i18n:Summer1}} && {{i18n:Summer2}} && {{i18n:Summer3{{LessFlirty}}}} |inputSeparator=&&}}",
                 "summer_28": "{{i18n:Summer_28}}",
 
                 //fall
@@ -141,15 +141,15 @@
 
                 //Gift Response
                 "AcceptGift_(O)109": "{{i18n:AcceptGift(O)109}}",
-                "AcceptGift_(O)155": "{{i18n:AcceptGift(O)155}}",
-                "AcceptGift_(O)91": "{{i18n:AcceptGift(O)91}}",
+                "AcceptGift_(O)155": "{{i18n:AcceptGift(O)155{{LessFlirty}}}}",
+                "AcceptGift_(O)91": "{{i18n:AcceptGift(O)91{{LessFlirty}}}}",
                 "AcceptGift_(O)342": "{{i18n:AcceptGift(O)342}}",
                 "AcceptGift_(O){{ModId}}_WhatIsThis": "{{i18n:AcceptGift(O_WhatIsThis}}",
                 "AcceptGift_(O){{ModID}}_Tanghulu": "{{i18n:AcceptGift(O_Tanghulu}}",
-                "AcceptGift_(O)613": "{{i18n:AcceptGift(O)613}}",
+                "AcceptGift_(O)613": "{{i18n:AcceptGift(O)613{{LessFlirty}}}}",
                 "AcceptGift_(O)StardropTea": "{{i18n:AcceptGift(O)StardropTea}}",
                 "AcceptGift_(O)797": "{{i18n:AcceptGift(O)797}}",
-                "AcceptGift_(O)Cornucopia_Rose": "{{i18n:AcceptGift(O)Cornucopia_Rose}}",
+                "AcceptGift_(O)Cornucopia_Rose": "{{i18n:AcceptGift(O)Cornucopia_Rose{{LessFlirty}}}}",
                 "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Alligator": "{{i18n:AcceptGift(O)FlashShifter.StardewValleyExpandedCP_Alligator}}",
                 "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Bonefish": "{{i18n:AcceptGift(O)FlashShifter.StardewValleyExpandedCP_Bonefish}}",
                 "AcceptGift_(O)FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose": "{{i18n:AcceptGift(O)FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose}}",
@@ -238,15 +238,15 @@
                 "Rainy_Day_5": "{{i18n:Rainy_Day_5}}",
                 "Indoor_Day": "{{Random: {{i18n:Indoor_Day}} && {{i18n:Indoor_Day_0}} |inputSeparator=&&}}",
                 "Indoor_Day_1": "{{Random: {{i18n:Indoor_Day_1}} && {{i18n:PartnerDialogue12}} |inputSeparator=&&}}",
-                "Indoor_Day_2": "{{Random: {{i18n:Indoor_Day_{{Random: {{Range:2,4}} }} }} && {{i18n:Indoor_Day_5}} |inputSeparator=&&}}",
-                "Indoor_Day_3": "{{Random: {{i18n:Indoor_Day_{{Random: {{Range:2,4}} }} }} && {{i18n:Indoor_Day_5}} |inputSeparator=&&}}",
-                "Indoor_Day_4": "{{Random: {{i18n:Indoor_Day_{{Random: {{Range:2,4}} }} }} && {{i18n:Indoor_Day_5}} |inputSeparator=&&}}",
-                "Indoor_Day_5": "{{Random: {{i18n:Indoor_Day_{{Random: {{Range:2,4}} }} }} && {{i18n:Indoor_Day_5}} |inputSeparator=&&}}",
+                "Indoor_Day_2": "{{Random: {{i18n:Indoor_Day_2}} &&  {{i18n:Indoor_Day_3{{LessFlirty}}}} &&  {{i18n:Indoor_Day_4}} && {{i18n:Indoor_Day_5}} |inputSeparator=&&}}",
+                "Indoor_Day_3": "{{Random: {{i18n:Indoor_Day_2}} &&  {{i18n:Indoor_Day_3{{LessFlirty}}}} &&  {{i18n:Indoor_Day_4}} && {{i18n:Indoor_Day_5}} |inputSeparator=&&}}",
+                "Indoor_Day_4": "{{Random: {{i18n:Indoor_Day_2}} &&  {{i18n:Indoor_Day_3{{LessFlirty}}}} &&  {{i18n:Indoor_Day_4}} && {{i18n:Indoor_Day_5}} |inputSeparator=&&}}",
+                "Indoor_Day_5": "{{Random: {{i18n:Indoor_Day_2}} &&  {{i18n:Indoor_Day_3{{LessFlirty}}}} &&  {{i18n:Indoor_Day_4}} && {{i18n:Indoor_Day_5}} |inputSeparator=&&}}",
                 "Rainy_Night_0": "{{i18n:Rainy_Night_0}}",
                 "Rainy_Night_1": "{{i18n:Rainy_Night_1}}",
                 "Rainy_Night_2": "{{i18n:Rainy_Night_2}}",
                 "Rainy_Night_3": "{{i18n:Rainy_Night_3}}",
-                "Rainy_Night_4": "{{i18n:Rainy_Night_4}}",
+                "Rainy_Night_4": "{{i18n:Rainy_Night_4{{LessFlirty}}}}",
                 "Rainy_Night_5": "{{i18n:Rainy_Night_5}}",
                 "Indoor_Night_0": "{{i18n:Indoor_Night_0}}",
                 "Indoor_Night_1": "{{i18n:Indoor_Night_1}}",

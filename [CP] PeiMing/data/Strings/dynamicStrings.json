@@ -1,0 +1,12 @@
+{
+    "Changes": [
+        {
+            "LogName": "Dynamic Strings for PM",
+            "Action": "EditData",
+            "Target": "Strings/void.peiming",
+            "Entries": {
+                "PMPartnership": "{{i18n:PMRoommate.{{Partnership |contains=Roommate}}}}"
+            }
+        }
+    ]
+}

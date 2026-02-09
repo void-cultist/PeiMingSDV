@@ -303,7 +303,7 @@
 {
 	"LogName": "ConversationTopics - PeiMing",
 	"Action": "EditData",
-	"Target": "Character/Dialogue/{{PeiMing}}",
+	"Target": "Characters/Dialogue/{{PeiMing}}",
 	"Entries":
  {
 		"cc_Complete": "{{i18n:cc_Complete}}",

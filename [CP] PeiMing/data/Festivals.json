@@ -414,17 +414,15 @@
            	 {
                 "Name": "{{PeiMing}}",
                 "Portrait": "{{PeiMing}}",
-                "Dialogues":
-			[ 	
+                "Dialogues": [ 	
 				{ 
 					"Id": "PeiMingDesertShop1",
-					"Dialogue": [],
 					"RandomDialogue": [
 					"{{i18n:DesertFestival1}}", 
 					"{{i18n:DesertFestival2}}"
 					],
-					"Condition": null,
-				},
+					"Condition": null
+				}
 			],
 			"RandomizedDialogueOnOpen": true,
 			"Items": 
@@ -472,11 +470,12 @@
         		"Price": -1,
 			}
 			],
-			},
+			"SalableItemTags": [ "category_weapon", "category_ring", "category_boots"]
+			}
 
-		],
-		},
-			"SalableItemTags": [ "category_weapon", "category_ring", "category_boots"],
+		]
+		}
+			
 		}
 	
 },

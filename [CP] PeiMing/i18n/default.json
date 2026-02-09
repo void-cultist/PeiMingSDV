@@ -144,6 +144,7 @@
 "PM4H.10": "Ha! The more I learn about you, the more I realize that we have a lot in common!$1",
 "PM4H.11": "Why did you agree to come here in the first place then? #$b# Feel free to leave anytime!",
 "PM4H.12": "What, cat got your tongue? $6#$b# Or is the sight of my body rendering you speechless? $3",
+"PM4H.12.LessFlirty": "What, cat got your tongue? $6", //new in 1.1.0
 "PM4H.13": "Ohoho!",
 "PM4H.14": "Well, regardless, I appreciate you joining me. This here is one of the few places that remind me of home, to be honest.",
 "PM4H.15": "I used to go to the hot springs with my two best friends every now and then,#$b# which often was the only moment of respite we were granted.",
@@ -191,6 +192,7 @@
 //6 HEARTS
 "PM6H.0": "@! What are you doing here? $8",
 "PM6H.1": "Have you missed this handsome face, hm? $3",
+"PM6H.1.LessFlirty": "Have you missed your good friend? $3",
 "PM6H.2": "...................................",
 "PM6H.3": ".........forget it.",
 "PM6H.4": "What's the matter?",
@@ -278,7 +280,7 @@
 "PM7HContinue.27": "HAH! $9 #$b# If I were to punch a tree, I think the Wizard would curse me, and trust me, @...#$b# At this point, I have enough curses for at least a century.",
 "PM7HContinue.28": "........................",
 "PM7HContinue.29": "Hmm... Perhaps we can actually ask the Wizard, yes. #$b# ...Thank you, @. Talking about it to you... #$b# Helped me get it out off my chest. I appreciate it.",
-"PM7HContinue.30": "I will stay here for a bit longer. Gather my thoughts. The tab is on me, of course. #$b# See you around the town, eh? $3",
+"PM7HContinue.30": "I will stay here for a bit longer. Gather my thoughts. The tab is on me, of course. #$b# See you around town, eh? $3",
 "PM7HContinue.31": "Hey there.",
 "PM7HContinue.32": "Let's have a drink or two.",
 "PM7HContinue.33": "Ha!",
@@ -316,8 +318,8 @@
 "RoommateProposal.1": "I must say, even if I still miss my old friends a lot, I am truly happy that we befriended each other as well.$1",
 "RoommateProposal.2": "Oh? There is something you wanted to tell me?",
 "RoommateProposal.3": "What is it?",
-"RoommateProposal.4": "Would you like to be companions of sorts? [SETS PEI MING AS ROOMMATE/PLATONIC PARTNER]",
-"RoommateProposal.5": "I am glad the we became friends, too.[KEEP THE FRIENDSHIP AS IT IS]",
+"RoommateProposal.4": "Would you like to be companions of sorts? !!This will set Pei Ming as your roommate or platonic partner",
+"RoommateProposal.5": "I am glad that we became friends, too. !!KEEP THE FRIENDSHIP AS IT IS",
 
 "BecomeRoommates.0": "Ha! Sure! As long as you don't expect me to latch onto you exclusively, I would like to accept your offer.",
 "BecomeRoommates.1": "Pei Ming has accepted your offer of becoming companions! In two days, you will officially be recognized as such. Yay!",
@@ -340,7 +342,7 @@
 
 "Resort": "You see, I hail from a cold landscape. Deadly cold Winters were a normal occurrence.#$b# So the beach is quite the treat.",
 "Resort2": "I am more of a Winter person but I can always appreciate a nice day at the beach.",
-"Resort_Bar": "Those drinks are amazing.$3 Want to share one with me?",
+"Resort_Bar": "Those drinks are amazing. Want to share one with me?",
 
 "AcceptBirthdayGift_Negative": "Sometimes, being forgotten doesn't seem so bad compared to getting an offering like this.#$b# If I have to be honest, you should try better with your offerings.$2",
 "AcceptBirthdayGift_Positive": "Even after thousands of years, I love when people remember my birthday.#$b# You have my gratitude. Why don't you come over later?$3",
@@ -379,7 +381,8 @@
 
 "Summer1": "I don't really have a favorite season. Perhaps Winter? But during Summer, I can enjoy the beach and take a swim in the ocean. #$b# I am doing that in Winter as well, however.",
 "Summer2": "Many things are way different than from how I know them.#$b# The other day, Leah punched my face because I was surprised that women are pursuing the arts.#$b# Then again, I suppose my friend back at home would have done the same as Leah.",
-"Summer3": " Hey, @, why don't we go for a swim together, just you and me? $3",
+"Summer3": "Hey, @, why don't we go for a swim together, just you and me? $3",
+"Summer3.LessFlirty": " Hey, want to have a swimming race? $1", //new in 1.1.0
 "Summer_1": "And just like that, it's Summer. Seasons come and go, but they always return. #$b# There is comfort to be found in that, don't you think?",
 "Summer_28": "Fall is approaching rapidly, announced by the change of weather. I can't wait for Winter, though.",
 
@@ -389,7 +392,7 @@
 "Fall2": "I hate the smell of pickles. $7",
 "Fall3": "Ever since I arrived here, I have learned about so many new things that do not exist where I'm from.#$b# For example - record players! Sam showed me something called 'vinyls' and if you place them in such a 'record player', you can listen to music!$8#$e#........you are saying that this is old technology?",
 "Fall4": "Fall is the season for cozying up, I suppose. I am not one much for that, however.#$b#$y 'What about you?_I like cuddling!_Ah, is that so? Good for you._No, I am not too fond of it myself._I knew you'd understand me, @.$6'",
-"Fall5": "I have been thinking about my descendant recently. I helped him ascend to Godhood and wanted him to inherit my position one day.#$b# A lot of things happened, though, and I was very disappointed of him. #$e# Yet sometimes, I can't help but wonder whether or not I might have been to strict.",
+"Fall5": "I have been thinking about my descendant recently. I helped him ascend to Godhood and wanted him to inherit my position one day.#$b# A lot of things happened, though, and I was very disappointed of him. #$e# Yet sometimes, I can't help but wonder whether or not I might have been too strict.",
 
 //Winter
 "Winter1": "The snow in the Northern capital often piled up so high that it reached the roofs of the houses.#$b# Some mortals loved it. Some hated it.#$e# But hey, if they were so angry about it, they could've just moved to the South, no?$1",
@@ -425,14 +428,18 @@
 //Gift responses
 "AcceptGift(O)109": "How dare you- this brings back terrible memories.$2#$b# Have you heard the tale of 'The General who broke his Sword?' Most likely not. Leave me alone.$5",
 "AcceptGift(O)155": "Hoho~ You know me too well.$3",
+"AcceptGift(O)155.LessFlirty": "Now this thing certainly looks funny.",
 "AcceptGift(O)91": "Ha! Thank you. I needed to blow off some steam later, if you catch my drift. $3",
+"AcceptGift(O)91.LessFlirty": "Ha, how did you know I liked bananas? Thank you, @! $1", //new in 1.1.0
 "AcceptGift(O)342": "I do not have the best memories of... pickles. Thank you for nothing!$7",
 "AcceptGift(O_WhatIsThis": ".............$8#$b#..............................................$8#$b#........................................................$8",
 "AcceptGift(O_Tanghulu": "!!!!!!!$8#$b# Is that...$8#$b#... Tanghulu?! $1#$b# That certainly is a flavor of my childhood. It's been hundreds of years but I will never forget having that treat with my brothers. @, you have my gratitude. $6 ",
-"AcceptGift(O)613": "And you are the apple of my eye, @. $3",
+"AcceptGift(O)613": "And you are the apple of my eye, @. $3", 
+"AcceptGift(O)613.LessFlirty": "Now now, you really shouldn't have! Thank you, an apple a day keeps the doctor away. #$b# And I really don't want to see Harvey.", //new in 1.1.0
 "AcceptGift(O)StardropTea": "So this is the specialty tea in this area? I love this a lot, thank you, @! #$b# Want to have a taste?",
 "AcceptGift(O)797": "Oh, how gorgeous, a pearl. I love seeing those on gorgeous ladies. $2",
 "AcceptGift(O)Cornucopia_Rose": "A rose, the ultimate symbol of elegance and beauty.#$b# I will find a proper vase for it. Thank you, @.#$b# Or wait...#$b# Did you give it to me because you fancy me? Hoho, you poor soul, this General will never be romantically available! $9",
+"AcceptGift(O)Cornucopia_Rose.LessFlirty": "A rose, the ultimate symbol of elegance and beauty.#$b# I will find a proper vase for it. People would sometimes give roses to me because they fancied me, ha! #$b# But don't worry, I am not suspecting you of doing that. Besides... #$b# I'll never be romantically available to anyone! $9", //new in 1.1.0
 "AcceptGift(O)FlashShifter.StardewValleyExpandedCP_Alligator": "AAAH?! WHAT IN THE WORLD?! IT'S TRYING TO EAT ME! $8",
 "AcceptGift(O)FlashShifter.StardewValleyExpandedCP_Bonefish": "Hm. Would it surprise you if I told you that I knew of someone who kept things like these as pets? #$b# I hate them.$7",
 "AcceptGift(O)FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose": "Oh, what a gorgeous, gorgeous flower. I could glance at it all day. Beauty is such a fickle thing, don't you think,@?",
@@ -551,6 +558,7 @@
 "Indoor_Day_1": "Hey, @. Don't overextert yourself out there again, alright? I swear I can hear Harvey's gibberish in my sleep.",
 "Indoor_Day_2": "I had a weird dream.#$b# There was this weird, white doll, and.......... $8#$e# You know what, forget it. Inviting evil spirits into this house is the last thing we should do.",
 "Indoor_Day_3": "Perhaps we should go for a walk together today, hm?#$e# We could visit my old house, if you know what I mean.$3",
+"Indoor_Day_3.LessFlirty": "Perhaps we should go for a walk together today, hm?#$e# We could visit my old house, enjoy some fine tea or wine or both! $1",//new in 1.1.0
 "Indoor_Day_4": "I opened the windows to let some fresh air in but I think a bee got inside. #$e# Don't worry, I will catch and release it when I spot it again, just like you taught me.",
 "Indoor_Day_5": "I planned on making some pancakes but %pet somehow got its snout into the mix, so scrambled eggs it is.#$b# Bon appetit, @. [(O)194 (O)195 (O)201 (O)748 (O)766 (O)874]", //note for translators: do not translate the text in the [] brackets
 
@@ -559,6 +567,7 @@
 "Rainy_Night_2": "I helped myself to a bit of wine today. Would you like me to pour you a glass while you tell me about your day, @?",
 "Rainy_Night_3": "@! Welcome back. #$e# Would you like to join me for a quick game of weiqi before bed? I may even let you win.$3",
 "Rainy_Night_4": "You look positively drenched, my friend.#$e# Get rid of these clothes and go sit in front of the fireplace, no?#$b# We can't have you catch a cold now! $8",
+"Rainy_Night_4.LessFlirty": "You look positively drenched, my friend.#$e# I'll bring you a change of fresh and dry clothes, but do go sit in front of the fireplace! #$b# We can't have you catch a cold now! $8",
 "Rainy_Night_5": "I stayed inside and meditated today. #$e# I think %pet sat on my lap at some point, too. Too bad you couldn't see it, @.",
 
 "Indoor_Night_1": "Nights like these make me wonder who I could ask to have some fun with... #$e# Oh, stop looking at me like that! You know exactly that's what I like to do! $9",
@@ -686,8 +695,8 @@
 "CustomSchedule0": "Ah, good morning, @! I think the town is lovely in Spring, don't you think? Especially the pink trees. $1",
 "CustomSchedule1": "I borrowed a history book from the library recently. I must say... #$b# a lot has happened. $8",
 
-/////Objects
-"MysteriousNote.name": "Mysterious Note",
+/////Objects (new in 1.1.0)
+"MysteriousNote.name": "Mysterious Note", 
 "MysteriousNote.description": "The mysterious person you met by the bus stop dropped this but you can't read it.",
 
 "Tanghulu.DisplayName": "Tanghulu",
@@ -781,7 +790,7 @@
 "PeiMingHouse11": "$y Do you grow anything on your farm this season?_Yes, I do._Hoho! Mortals' adaptability is truly fascinating to me.$1_No._That's a pity. I guess tending to animals is the way to go for you during the winter, hm?",
 
 "PeiMingRainyOutdoor0": "I actually don't mind being outside in the rain.",
-"PeiMingRainyOutdoor1": "Hello. Why don't you stay and enjoy the rain with me for a while? #$e# We can go back to my place afterwards.$3",
+"PeiMingRainyOutdoor1": "Hello. Why don't you stay and enjoy the rain with me for a while? #$e# We can go back to my place afterwards.$3", //currently not in use I think
 "PeiMingRainyOutdoor2": ".........(Pei Ming glances at you with a weird stare.)$2 #$b# HAHAHAHA! Farmer, you look so very funny all drenched from the rain. A sight to behold.$6",
 "PeiMingRainyOutdoor3": "I wonder if I should pick up fishing?",
 
@@ -793,6 +802,7 @@
 
 "PeiMingSummerBeach0": "Random: During such a Weather one simply must use the chance and take a dip in the sea.",
 "PeiMingSummerBeach1": "Recently I learned of an ointment called 'sun screen'.#$e# Want to help me rub it on my back?$3",
+"PeiMingSummerBeach1.LessFlirty": "Recently I learned of an ointment called 'sun screen'.#$e# It's pretty difficult to get it on my back, though.", //new in 1.1.0
 "PeiMingSummerBeach2": "The waves of the ocean remind me of a very dear friend I haven't seen in a long time.#$b#...............hm.$7#$e# I think I will listen to the waves a little longer.$7",
 "PeiMingSummerBeach3": "I love swimming. Those back muscles didn't build up on their own! $1",
 "PeiMingSummerBeach4": "With all due respect, @... #$b# You are standing in the sun. Please move a step or two. $7",
@@ -801,6 +811,7 @@
 "PeiMingBath1": "There is nothing better to do in this weather than take a dip in the bath. I don't get why the villagers are so scared.",
 "PeiMingBath2": "I used to be part of tight-knit friend trio.#$b# There were banquets in our realm every now and then and we would often go to the hot springs together afterwards.$1#$e# Hah...#$b# I miss them a lot. Don't tell anyone I said that. $4",
 "PeiMingBath3": "%(Pei Ming seems to be zoned out. Best to leave him be before he starts flirting with you again.)",
+"PeiMingBath3.LessFlirty": "%(Pei Ming seems to be zoned out. Best to leave him be.)", //new in 1.1.0
 
 "PeiMingBday0": "Ah, good morning, @. It is my birthday and I am a little melancholic about it. Please don't mind me.",
 "PeiMingBday1": "The view over the valley from here is great but I can't help but miss the view from my old palace.#$e# On my birthday, I would often invite over my closest companions and enjoy freshly brewed tea, sitting at the balcony that overlooked the North together.",
@@ -808,6 +819,7 @@
 "PeiMingBday3": "%Pei Ming is wistfully staring at the water.#$e# (mumbling)... it's been so long since I last saw him. A birthday without him feels shallow.$7 #$e# %Pei Ming doesn't notice your presence. You decide to leave him alone.",
 "PeiMingBday4": "Hello, @. I was just reminiscing. #$b#$y 'Have you ever crossed the waters within a coffin?_I'm sorry, what?_Yeah, forget about it.$7_That's a little macabre._Life is macabre, little farmer.$7_Uhm... isn't it your birthday?_....ha. You remembered?$7#$b# Indeed it is. I am not in a festive mood, though.",
 "PeiMingBday5": "This birthday in particular causes me to feel quite sad. But maybe you could help me, @?#$b#Why don't we go for a swim together? I just know you look great in swimwear.$3",
+"PeiMingBday5.LessFlirty": "This birthday in particular causes me to feel quite sad. Maybe could help, @? #$b# Let's swim! The one who reaches the island first is the winner.",
 "PeiMingBday6": "All in all, if this birthday taught me anything, it's that I am glad to have you around, @. $6",
 
 //1_6_Strings
@@ -820,7 +832,7 @@
 
 "PeiMingHouse.000": "You wish you had never seen what's inside that drawer.",
 "PeiMingHouse.001": "Those look like strategic notes... or, wait? Is that a... poem?",
-"PeiMingHouse.002": "You wonder why Pei Ming has a kitchen at all. He can neither cook nor does he like doing it, but expects women to be perfect cooks. Perhaps you should teach him a lesson someday.",
+"PeiMingHouse.002": "You wonder why Pei Ming has a kitchen at all. He can neither cook nor does he like doing it, but expects women to be perfect cooks. ${You disagree with those archaic views.^Perhaps you should teach him a lesson someday.^What a weirdo.}$", //changed in 1.1.0
 "PeiMingHouse.003": "Pei Ming seems to be fond of roses.",
 "PeiMingHouse.004": "A good book and tea gets you through the gloomiest day. Even Pei Ming seems to understand that. You check the book cover and read the title 'Heaven Official's Blessing'.",
 "PeiMingHouse.005": "An interesting collection of trinkets and artifacts that seem as if they were from a whole different world. It appears that they manifested here just as randomly as Pei Ming did.",
@@ -833,6 +845,9 @@
 "PeiMingSpouseRoom.001": "Since Pei Ming loves roses so much, he put some on display here.",
 "PeiMingSpouseRoom.002": "Pei Ming's favorite wine. Maybe you should have a drink with him together later.",
 
+//Dynamic Strings
+"PMRoommate.true": "Roommate",
+"PMRoommate.false": "Platonic partner",
 
 //roommate schedule dialogue (after he moved in)
 "PMRoommate0": "Ah, good morning, @. Do you want to head to the Night Market together later?",
@@ -896,7 +911,7 @@
 "config.section.Relationship.name": "Relationship",
 "config.section.Relationship.description": "",
 
-//PeiXiu 
+//PeiXiu (new in 1.1.0)
 
 
   "peixiu.Intro": "Ah, good day, @. I apologize for everything my ancestor might have said to you thus far. Do call me Pei Xiu. I used to be part of the General's palace.",

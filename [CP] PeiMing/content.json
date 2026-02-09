@@ -29,6 +29,17 @@
 			}
 		},
 
+//I'm neutering Pei Ming.
+		{
+			"Name": "LessFlirty",
+			"Value": ""
+		},
+		{
+			"Name": "LessFlirty",
+			"Value": ".LessFlirty",
+			"When": { "Flirtatiousness": false  }
+		},
+
 
 //Tokens for map patching & map strings
 		{
@@ -141,12 +152,12 @@
 		{
 			"Name": "SpawnableCoordinates",
 			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true, "House Location": "SVE"} ,
-			"Value": "Forest 18,69,2,2 17,79,3,2 22,79,2,2"
+			"Value": "Forest 18,69,2,2/17,79,3,2/22,79,2,2"
 		},
 		{
 			"Name": "SpawnableCoordinates", 
 			"When": { "House Location": "Alternate" },
-			"Value": "{{ModID}}_PeiMingNewOutdoors 3,3,2,9 9,15,3,2"
+			"Value": "{{ModID}}_PeiMingNewOutdoors 3,3,2,9/9,15,3,2"
 		},
 
 
@@ -623,23 +634,30 @@
 			"Default": "on",
 			"AllowBlank": false,
 			"Description": "This mod adds custom music tracks to certain events and locations involving Pei Ming. If you do not want this, turn this setting off. Custom music might also slow down your game in some instances, so if you are experiencing lag, disable this config as well."
+		 },
+		 "Flirtatiousness": 
+		 {
+		 "AllowValues": "true, false",
+		 "Default": true,
+		 "AllowBlank": false,
+		 "Description": "Pei Ming is usually playfully flirty, occasionally overstepping boundaries with his remarks. If this is something that makes you uncomfortable, you can toggle it off."
 		 }
 	
 			
 	}, 
     "Changes":
 	  [{
-   		 "LogName": "Blank JSON load for Pei Ming", //The logline is not required, but it's useful down the road for labeling your patches so you can tell your problem is, say "NPC Dialogue Patch" and not "NPC Patch #14"
+   		 "LogName": "Blank JSON load for Pei Ming", 
         	"Action": "Load",
-        	"Target": "Characters/Dialogue/{{PeiMing}}, Characters/schedules/{{PeiMing}}, Strings/schedules/{{PeiMing}}, Strings/StringsFromMaps/{{ModID}}_PeiMingHouse, Strings/StringsFromMaps/{{ModID}}_PeiMingExterior, Strings/StringsFromCSFiles/{{PeiMing}}_EngagedRoommate, Strings/1_6_Strings/{{ModID}}_Renovation_AddCustomRoom, Data/EngagementDialogue/{{PeiMing}}, Characters/Dialogue/MarriageDialogue{{PeiMing}}Roommate, Characters/schedules/{{PeiMing}}Roommate, Data/Events/{{ModID}}_PeiMingHouse, Data/Locations/{{ModID}}_PeiMingNewOutdoors", 
+        	"Target": "Characters/Dialogue/{{PeiMing}}, Characters/schedules/{{PeiMing}}, Strings/schedules/{{PeiMing}}, Strings/StringsFromMaps/{{ModID}}_PeiMingHouse, Strings/StringsFromMaps/{{ModID}}_PeiMingExterior, Strings/StringsFromCSFiles/{{PeiMing}}_EngagedRoommate, Strings/1_6_Strings/{{ModID}}_Renovation_AddCustomRoom, Data/EngagementDialogue/{{PeiMing}}, Characters/Dialogue/MarriageDialogue{{PeiMing}}Roommate, Characters/schedules/{{PeiMing}}Roommate, Data/Events/{{ModID}}_PeiMingHouse, Data/Locations/{{ModID}}_PeiMingNewOutdoors", //Strings/void.peiming
         	"FromFile": "data/blank.json" //this should be wherever you put it in your assets folder - put it in a subfolder if you want
    	 },
-	 {
+/* 	 {
 		"LogName": "Blank JSON load for Pei Xiu",
 		"Action": "Load",
 		"Target": "Characters/Dialogue/{{PeiXiu}}, Characters/schedules/{{PeiXiu}}",
 		"FromFile": "data/blank.json"
-	 },
+	 }, */
 
 //includes
 {
@@ -647,11 +665,11 @@
    	"Action": "Include",
    	"FromFile": "data/dispos.json"
 },
-{
+/* {
 	"LogName": "Include Pei Xiu dispos",
 	"Action": "Include",
 	"FromFile": "data/PeiXiu/dispos.json"
-},
+}, */
 { 
 	"LogName": "Gift Tastes Include",
    	"Action": "Include",
@@ -668,11 +686,11 @@
    	"Action": "Include",
 	"FromFile": "data/dialogue.json"
 },
-{
+/* {
     "LogName": "Include Pei Xiu Dialogue",
    	"Action": "Include",
 	"FromFile": "data/PeiXiu/dialogue.json"
-},
+}, */
 {
 	"LogName": "Include map data",
 	"Action": "Include",
@@ -695,6 +713,11 @@
    	"Action": "Include",
    	"FromFile": "data/Strings/schedules.json"
 },
+/* {
+	"LogName": "Include dynamic strings",
+	"Action": "Include",
+	"FromFile": "data/Strings/dynamicStrings.json"
+}, */
 
 {
 	"LogName": "add map messages to Pei Ming's house and patio",
@@ -738,11 +761,11 @@
 		"House Location": "SVE, Alternate" },
    	"FromFile": "data/SVE/schedule.json"
 },
-{
+/* {
     "LogName": "Pei Xiu  Schedule include",
    	"Action": "Include",
    	"FromFile": "data/PeiXiu/schedule.json"
-},
+}, */
 {
 	"LogName": "Include Special Orders",
 	"Action": "Include",

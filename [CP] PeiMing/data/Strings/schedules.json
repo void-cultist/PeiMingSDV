@@ -92,13 +92,13 @@
 			//Mines
 				"PeiMingMines.000": "{{i18n:PeiMingMines{{Random:{{Range:0,4}}}}}}",
 			//Beach visit in Summer
-				"PeiMingSummerBeach.000": "{{i18n:PeiMingSummerBeach{{Random:{{Range:0,4}}}}}}",
+				"PeiMingSummerBeach.000": "{{Random: {{i18n:PeiMingSummerBeach0}} && {{i18n:PeiMingSummerBeach1{{LessFlirty}}}} && {{i18n:PeiMingSummerBeach2}} && {{i18n:PeiMingSummerBeach3}} && {{i18n:PeiMingSummerBeach4}} |inputSeparator=&&}}",
 			//Bath house
 				"PeiMingBath.000": "{{i18n:PeiMingBath{{Random:{{Range:0,1}}}}}}",
-				"PeiMingBath.001": "{{i18n:PeiMingBath{{Random:{{Range:2,3}}}}}}",
+				"PeiMingBath.001": "{{Random: {{i18n:PeiMingBath2}} && {{i18n:PeiMingBath3{{LessFlirty}}}} |inputSeparator=&&}}",
 			//birthday
 				"PeiMingBday.000": "{{i18n:PeiMingBday{{Random:{{Range:0,2}}}}}}", 
-				"PeiMingBday.001": "{{i18n:PeiMingBday{{Random:{{Range:3,5}}}}}}",
+				"PeiMingBday.001": "{{Random: {{i18n:PeiMingBday3}} && {{i18n:PeiMingBday4}} && {{i18n:PeiMingBday5{{LessFlirty}}}} |inputSeparator=&&}}",
 			
 			//Roommate strings
 				"PeiMingRoommate.000": "{{i18n:PMRoommate0}}",
