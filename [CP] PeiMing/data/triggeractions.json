@@ -175,16 +175,61 @@
 						"AddMail Current {{ModID}}_LoveTeaLetter tomorrow"
 					]
 				},	
-			"{{ModID}}_Add_MysteriousNoteQuest":
+			"{{ModId}}_Add_MysteriousNote1": 
 				{
-					"ID": "{{ModID}}_Add_MysteriousNoteQuest",
-					"Trigger": "LocationChanged",
-					"Condition": "PLAYER_HAS_ITEM Current (O){{ModID}}_MysteriousNote, PLAYER_HAS_SEEN_EVENT {{ModID}}_PeiXiuEncounter", 
+                  "Id": "{{ModId}}_Add_MysteriousNote1",
+                  "Trigger": "DayEnding",
+				  "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_PXEncounter",
+                  "Actions": [
+                      "boxosoup.CustomIntroductions_AddCohortQuest {{ModId}}_MysteriousNote1"
+                  ]
+              	},
+				"{{ModId}}_Add_MysteriousNote2": 
+				{
+                  "Id": "{{ModId}}_Add_MysteriousNote2",
+                  "Trigger": "DayEnding",
+				  "Condition": "PLAYER_SEEN_CONVERSATION_TOPIC Current {{ModID}}_CT_MysteriousNote1",
+                  "Actions": [
+                      "boxosoup.CustomIntroductions_AddCohortQuest {{ModId}}_MysteriousNote2"
+                  ]
+              	},
+				"{{ModId}}_Add_MysteriousNote3": 
+				{
+                  "Id": "{{ModId}}_Add_MysteriousNote3",
+                  "Trigger": "DayEnding",
+				  "Condition": "PLAYER_SEEN_CONVERSATION_TOPIC Current {{ModID}}_CT_MysteriousNote2",
+                  "Actions": [
+                      "AddQuest {{ModId}}_MysteriousNote3"
+                  ]
+              	},
+			"{{ModID}}_Add_CT_MysteriousNote1": 
+				{
+					"Id": "{{ModId}}_Add_CT_MysteriousNote1",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_PXEncounter",
 					"Actions": [ 
-						"AddQuest {{ModID}}_MysteriousNoteQuest"
-									]
+						"AddConversationTopic {{ModID}}_CT_MysteriousNote1 300"
+					]
 				},
-	
+			"{{ModID}}_Add_CT_MysteriousNote2":
+				{
+					"Id": "{{ModId}}_Add_CT_MysteriousNote2",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_SEEN_CONVERSATION_TOPIC Current {{ModID}}_CT_MysteriousNote1",
+					"Actions": [ 
+						"AddConversationTopic {{ModID}}_CT_MysteriousNote2 300"
+					]
+				},
+			"{{ModID}}_Add_CT_MysteriousNote3":
+				{
+					"Id": "{{ModId}}_Add_CT_MysteriousNote3",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_SEEN_CONVERSATION_TOPIC Current {{ModID}}_CT_MysteriousNote2",
+					"Actions": [ 
+						"AddConversationTopic {{ModID}}_CT_MysteriousNote3 300"
+					]
+				}
+		//perhaps use quest complete CT? that one only lasts 4 days so hmm
 			
 			}
 		 },

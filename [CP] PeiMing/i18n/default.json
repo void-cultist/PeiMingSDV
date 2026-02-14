@@ -286,6 +286,8 @@
 "PM7HContinue.33": "Ha!",
 "PM7HContinue.34": "Sure, why not.",
 
+//8 HEARTS
+
 //Tanghulu Event
 "TanghuluEvent.0": "Tasty tanghulu < ",
 "TanghuluEvent.1": "Come on in!",
@@ -326,6 +328,32 @@
 
 "KeepFriendship.0": "May our friendship last even throughout time and space. $6",
 
+//Pei Xiu First meeting
+"PXEncounter.0": "This stranger has dropped something...",
+"PXEncounter.1": "However, you cannot decipher the writing at all. Perhaps you could show the note to the Wizard tomorrow?",
+"PXEncounter.2": "And just who was this person?",
+"PXEncounter.4": "You picked up a mysterious note!",
+
+//Pei Xiu and Dwarf
+"PXDwarf.0": "You're back.",
+"PXDwarf.1": ".........",
+"PXDwarf.2": "......",
+"PXDwarf.3": "Well. Did you find what you have been looking for?",
+"PXDwarf.4": " I have not. What I am looking for must be in another location.",
+"PXDwarf.5": "But... #$b# I must have lost the scroll on the way here.",
+"PXDwarf.6": "You lost it?! It was an ancient dwarven arti-",
+"PXDwarf.7": "Do you happen to remember what was written in it? Even if I did make translation notes, I couldn't make sense of the text.",
+"PXDwarf.8": "Well, only vaguely. It said something about a warm place, high up, of Dwarven importance.",
+"PXDwarf.9": " I can work with that.",
+"PXDwarf.10": " It's this person that showed up at the bus stop recently...",
+"PXDwarf.11": "Say something.#Who are you?#What are you doing here? ",
+"PXDwarf.12": " It is of no importance to you.",
+"PXDwarf.13": "Wait... did you happen to find a note after we ran into each other?",
+"PXDwarf.14": "Reply:#No, I haven't.#Even if I did, it's my treasure now.",
+"PXDwarf.15": ".....$3",
+"PXDwarf.16": "Stop wasting my time with lies and immaturity. #$b# Move. ",
+"PXDwarf.17": " I have no time for this. #$b# Move. ",
+
 ///////////////////DIALOGUE
 "Introduction": "We meet again. I decided to wander around the valley. Some of the villagers seem scared of me, ha!",
 "ArchaeologyHouse_21_5": "Greetings. I am trying to find books on times past.$3#$e#I wonder if there are records on ancient deities in here.",
@@ -351,6 +379,7 @@
 "AcceptBouquet": "Oho? You're not the first one to make such an offer to me.$3#$b# I accept.$3",
 "DumpsterDiveComment": "Is that proper behavior? I doubt so. Learn some manners.$2",
 "HitBySlingshot": "You do know that I am a martial god, no?$5",
+"WTF": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA $8",
 
 "breakUp": "Your loss. Do you even know who I am? A martial god and- #$b#$2 Not that it matters now.$2",
 "dating_Peiming_memory_oneyear": "It's our anniversary, although a year feels like nothing to me.",
@@ -533,6 +562,13 @@
 "PXDwarfCT_Dwarf2": "He could understand me, for some reason, so I felt inclined to help him.",
 "PXDwarfCT_Dwarf3": "Huh? Is that the ancient Dwarven scroll...? #$b# .................. #$b# I see. I am sorry, @, as of now, I can't tell you anything about it.",
 "PXDwarfCT_Dwarf4": "To think he lost such an important ancient artifact, though... #$b# I wonder where it is now.",
+
+"CT_MysteriousNote1": "Greetings, farmer. #$b# Oh, you found a note you cannot decipher? Let me see. #$b# Hmmm... hm.... #$b# Ah. #$b# I am afraid I am unable to read any of this. You should ask someone else for help. Call it a day and continue your search tomorrow. $action RemoveConversationTopic {{ModID}}_CT_MysteriousNote1",
+"CT_MysteriousNote2_Elliott": "Oh, hello, @, what brings you here? #$b# A strange scripture, you say? #$b# ........... #$b# I am a writer, not a historian, mind you. Why don't you ask Pei Ming tomorrow? $action RemoveConversationTopic {{ModID}}_CT_MysteriousNote2",
+"CT_MysteriousNote2_Krobus": "You found a note? #$b# .........hm, I can't say I understand a thing. Try asking Pei Ming tomorrow, perhaps? $action RemoveConversationTopic {{ModID}}_CT_MysteriousNote2",
+"CT_MysteriousNote3": "Hello, @! What a day, huh? #$b# You want to show me something? #$b# .................. #$b# %You hand Pei Ming the note you found. #$b# !!!! $7 #$b# That handwriting... where and how did you find this letter?! $7#$b# %Pei Ming seems agitated. Best to leave the note with him and leave him be.",
+
+"CT_PMRoommate_Krobus": "Oh, Pei Ming moved in with you? That is interesting. He is quite the unusual person, but I am glad you get along. $h",
 
 
 ////////roommate dialogue
@@ -720,6 +756,29 @@
 "NHMForPM.text": "Pei Ming sent you a letter informing you about the desert trader's new item in stock. He even sent you a sample!",
 "NHMForPM.objective": "Plant the seed in Winter and bring the harvested Northern Heart Melon to Pei Ming.",
 "NHMForPM.reaction": "Hoho! I can't believe the Northern Heart Melon managed to prosper on your farm!$1#$b# Thank you so much, @.$6",
+
+"MysteriousLetter1.title": "The Mysterious Letter 1",
+"MysteriousLetter1.Description": "You found a mysterious letter after running into a stranger at the bus stop. Perhaps the Wizard can help decipher it?",
+
+"MysteriousLetter2.title": "The Mysterious Letter 2",
+"MysteriousLetter2.Description": "The Wizard couldn't help you read the note and suggested you find someone else to decipher it.",
+
+"MysteriousNote3.title": "The Mysterious Letter 3",
+"MysteriousNote3.text": "While you still haven't found anyone to decipher the note for you, you have been told to talk to Pei Ming. Could he possibly read the note?",
+"MysteriousNote3.objective": "Bring the Mysterious Note to Pei Ming.",
+"MysteriousNote3.reaction": "Hello, @! What a day, huh? #$b# You want to show me something? #$b# .................. #$b# %You hand Pei Ming the note you found. #$b# !!!! $7 #$b# That handwriting... where and how did you find this letter?! $7#$b# %Pei Ming seems agitated. Best to leave the note with him and leave him be.$action RemoveConversationTopic {{ModID}}_CT_MysteriousNote3",
+
+"MysteriousLetter3.title": "The Mysterious Letter 3",
+"MysteriousLetter3.Description": "While you still haven't found anyone to decipher the note for you, you have been told to talk to Pei Ming. Could he possibly read the note?",
+
+"MysteriousNote1": "Talk to the Wizard about the mysterious note you found.",
+"MysteriousNote2": "Find another person who could help you read the mysterious note.",
+"MysteriousNote3": "Talk to Pei Ming. Don't forget to bring the note with you!",
+
+"GemQuest.title": "The red gem",
+"GemQuest.text": "Krobus mentioned an ancient red gem that exists beyond the bounds of space and time, to be found in the dungeon of serpents and bone.",
+"GemQuest.objective": "Wait for more information.",
+
 
 /////SPECIAL ORDER
 "SORefinedTastesName": "A Martial God's refined tastes",

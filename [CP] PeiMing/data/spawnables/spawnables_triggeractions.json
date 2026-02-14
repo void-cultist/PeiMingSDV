@@ -15,7 +15,7 @@
 					"Condition": "SEASON spring",
 					"MarkActionApplied": false,
 					"Actions": [
-						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Spring {{ModID}}_PeiMingNewOutdoors 3,3,2,9/9,15,3,2"
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Spring {{ModID}}_PeiMingNewOutdoors 7,12,2,4/14,18,2,2"
 					]
 				},
 		"{{ModID}}_Trigger_Spawnables_NewOutdoors_summer":
@@ -25,7 +25,7 @@
 					"Condition": "SEASON summer",
 					"MarkActionApplied": false,
 					"Actions": [
-						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Summer {{ModID}}_PeiMingNewOutdoors 3,3,2,9/9,15,3,2"
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Summer {{ModID}}_PeiMingNewOutdoors 7,12,2,4/14,18,2,2"
 					]
 				},			
 		"{{ModID}}_Trigger_Spawnables_NewOutdoors_fall":
@@ -35,7 +35,7 @@
 					"Condition": "SEASON fall",
 					"MarkActionApplied": false,
 					"Actions": [
-						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Fall {{ModID}}_PeiMingNewOutdoors 3,3,2,9/9,15,3,2"
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Fall {{ModID}}_PeiMingNewOutdoors 7,12,2,4/14,18,2,2"
 					]
 				},
 		"{{ModID}}_Trigger_Spawnables_NewOutdoors_winter":
@@ -45,18 +45,18 @@
 					"Condition": "SEASON winter",
 					"MarkActionApplied": false,
 					"Actions": [
-						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Winter {{ModID}}_PeiMingNewOutdoors 3,3,2,9/9,15,3,2"
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Winter {{ModID}}_PeiMingNewOutdoors 7,12,2,4/14,18,2,2"
 					]
 				},					
 	
 		"{{ModID}}_Trigger_CursedSpawnable":
 				{
-					"ID": "{{ModID}}_CursedSpawnable",
+					"ID": "{{ModID}}_CursedSpawnableTrigger",
 					"Trigger": "DayStarted",
 					"Condition": "SYNCED_RANDOM day CursedRandomKey 0.001",
 					"MarkActionApplied": false,
 					"Actions": [
-						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Winter {{ModID}}_PeiMingNewOutdoors 12,2,1,1"
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_CursedSpawnable {{ModID}}_PeiMingNewOutdoors 16,5,2,2"
 					]
 				},	
 			},
@@ -183,7 +183,7 @@
 					"Condition": "SYNCED_RANDOM day CursedRandomKey 0.001",
 					"MarkActionApplied": false,
 					"Actions": [
-						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_PeiMingHouseExteriorSpawns_Winter Forest 58,87,1,1"
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_CursedSpawnable Forest 58,87,1,1"
 					]
 				},	
 			},

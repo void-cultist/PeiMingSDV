@@ -30,6 +30,10 @@
    {
     "UniqueID": "ichortower.ECC",
     "IsRequired": true
+   },
+   {
+    "UniqueID": "boxosoup.CustomIntroductions",
+    "IsRequired": true
    }
 
    ],

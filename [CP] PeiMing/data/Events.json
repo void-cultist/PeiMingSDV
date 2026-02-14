@@ -259,16 +259,85 @@
 },
 
 //8H
-/* {
+{
 	"LogName": "Pei Ming 8 Hearts",
 	"Action": "EditData",
 	"When": { "HasFlag": "openedSewer" },
 	"Target": "Data/Events/Sewer",
 	"Entries": {
-		"{{ModID}}_PM8H/Friendship {{PeiMing}} 2000/SawEvent {{ModID}}_PM7H {{ModID}}_PMKrobus": "{{EventBGM}}/-1000 -1000/farmer 999 999 0 {{PeiMing}} 29 17 1 Wizard 31 16 2 Krobus 32 17 3/"
+		"{{ModID}}_PM8H/Friendship {{PeiMing}} 2000/SawEvent {{ModID}}_PM7H {{ModID}}_PMKrobus/LocalMail {{ModID}}_Placeholder/Time 1900 2600": "{{EventBGM}}/-1000 -1000/farmer 999 999 0 {{PeiMing}} 29 17 1 Wizard 31 16 2 Krobus 32 17 3/skippable/setSkipActions MarkEventSeen current {{ModID}}_PM8H#AddQuest {{ModID}}_GemQuest/addConversationTopic {{ModID}}_PM8HCT/viewport 31 20 clamp true/speed farmer 4/
+		ichortower.ECC_StreamStart farmerarrives/
+		ichortower.ECC_Pause 1000/
+		warp farmer 16 11/
+		ichortower.ECC_ActorPathTo farmer 31 19 0 wait/
+		ichortower.ECC_StreamEnd/
+
+		speak Krobus \"Thank you, everyone, for coming here at my invitation.\"/pause 300/
+		emote {{PeiMing}} 40/pause 500/speak {{PeiMing}} \"It is quite late. You better have a good reason, seeing as Beardo over there came as well.\"/pause 100/
+		beginSimultaneousCommand/emote Krobus 28/emote Wizard 28/endSimultaneousCommand/
+
+		
+
+		ichortower.ECC_StreamStart turnAndEmote/
+		ichortower.ECC_Pause 1800/
+		beginSimultaneousCommand/
+		ichortower.ECC_FaceDirection {{PeiMing}} 2 100/
+		ichortower.ECC_FaceDirection Krobus 2 100/
+		endSimultaneousCommand/
+		beginSimultaneousCommand/
+		ichortower.ECC_Emote Krobus 16/
+		ichortower.ECC_Emote {{PeiMing}} 16/
+		endSimultaneousCommand/
+		ichortower.ECC_Pause 1000/
+		ichortower.ECC_StreamEnd/
+
+		ichortower.ECC_Pause 1000/
+
+	
+		speak Krobus \"There you are, @. $h I was just about to begin.\" /pause 300/
+		emote farmer 32/pause 500/
+		beginSimultaneousCommand/
+		ichortower.ECC_FaceDirection {{PeiMing}} 1 100/
+		ichortower.ECC_FaceDirection Krobus 3 100/
+		endSimultaneousCommand/
+		pause 300/
+		addObject  31 17 {{ModId}}_MysteriousNote 0/
+		speak Krobus \"Pei Ming has managed to decipher this letter and asked me if I could make sense of it.#$b# Well, I sort of could.\"/
+		emote farmer 16/pause 500/
+		speak {{PeiMing}} \"Oho! Now you have my attention.\" /pause 300/
+		speak Krobus \"I did not understand everything it was talking about.\" /pause 300/
+		speak {{PeiMing}} \"It did mention dwarven technology and a red gem, right? #$b# And that the dwarves allegedly managed to open the ability to communicate through time and space.\" /pause 1000/
+		emote Wizard 40/pause 500/
+		textAboveHead Wizard \"I see.\" /pause 1000/
+		speak Wizard \"This is why you summoned me as well, Krobus. Interacting with the dwarves is not exactly... easy for you.\" /pause 500/
+		message \"Krobus nods.\" /pause 400/
+		speak Krobus \"This is just a rumor that has been passed around among shadowfolk children but...\" /pause 300/
+		speak Krobus \"We used to sing of an ancient red gem that exists beyond the bounds of space and time, to be found in the dungeon of serpents and bone.\" /pause 500/
+		emote {{PeiMing}} 40/pause 500/
+		speak {{PeiMing}} \"So our only lead is an old children's song...\"/pause 500/jump {{PeiMing}} 4/pause 300/
+		speak {{PeiMing}} \"But there is always some old tale hidden in those songs, so I am sure following the lead will take us somewhere!$1 \"/pause 300/
+		faceDirection {{PeiMing}} 2/pause 300/
+		textAboveHead {{PeiMing}} \"Right?\" /pause 1000/
+		emote farmer 32/pause 500/
+		speak Wizard \"Interesting.#$b# And I shall converse with the local Dwarf to find out whether or not he holds knowledge in regards to the contents of this letter.\" /pause 500/
+		textAboveHead Krobus \"Yes, please.\" /pause 1000/
+		textAboveHead Wizard \"I shall see it done soon.\" /pause 1000/
+		textAboveHead Wizard \"You will hear from me soon.\" /pause 1000/
+		showFrame Wizard 16/pause 600/
+		beginSimultaneousCommand/
+		glow 153 153 204/
+		playSound wand/
+		warp Wizard 1000 1000/
+		endSimultaneousCommand/pause 500/
+		speak {{PeiMing}} \"Finally, something to work with.#$b# @, let's see what else we can figure out and meet again soon.\" /pause 300/
+		emote farmer 32/pause 500/
+		emote Krobus 32/pause 500/
+		globalFade/viewport -1000 -1000/
+		message \"Krobus mentioned n ancient red gem that exists beyond the bounds of space and time, to be found in the dungeon of serpents and bone...\" /pause 200/
+		message \"You have a vague idea of where that could be but should await further information.\"/pause 300/removeObject 31 17/addQuest {{ModID}}_GemQuest/end"
 	}
 
-}, */
+},
 
 ////Other Events
 
@@ -397,7 +466,7 @@
 	}
 },
 
-/* { 	
+{ 	
 "LogName": "Pei Xiu appears!",
 "Action": "EditData",
 "Target": "Data/Events/BusStop",
@@ -418,7 +487,7 @@
 	ichortower.ECC_FaceDirection {{PeiXiu}} 0 500/
 	ichortower.ECC_FaceDirection {{PeiXiu}} 2 100/
 	ichortower.ECC_StreamEnd/
-	ichortower.ECC_ActorPathTo farmer 18 23 3 wait/
+	ichortower.ECC_ActorPathfind farmer 18 23 3 wait/
 
 	ichortower.ECC_ViewportMove a22 a16 2400 wait/
 	ichortower.ECC_ActorHalt next farmer/
@@ -429,24 +498,24 @@
 	pause 1500/
 	speak {{PeiXiu}} \"..............\" /pause 300/
 	emote farmer 8/pause 500/
-	ichortower.ECC_ActorPathTo farmer 22 18 0/
-	ichortower.ECC_ActorPathTo {{PeiXiu}} 22 17 2/
+	ichortower.ECC_ActorPathfind farmer 22 18 0/
+	ichortower.ECC_ActorPathfind {{PeiXiu}} 22 17 2/
 	ichortower.ECC_ActorAwaitMovement farmer {{PeiXiu}}/
 	pause 500/
 	speak {{PeiXiu}} \"....................\" /pause 50/
 	emote farmer 40/pause 1000/
-	speed {{PeiXiu}} 4/ichortower.ECC_ActorPathTo {{PeiXiu}} 40 23 1/
+	speed {{PeiXiu}} 4/ichortower.ECC_ActorPathfind {{PeiXiu}} 40 23 1/
 	playSound dwoop/
 	addObject 23 17 (O){{ModID}}_MysteriousNote 0/
 	ichortower.ECC_ActorAwaitMovement {{PeiXiu}}/warp {{PeiXiu}} 999 999/pause 300/
 	emote farmer 8/pause 500/
-	message \"This stranger has dropped something...\" /pause 300/
-	removeObject 23 17/itemAboveHead {{ModID}}_MysteriousNote \"You picked up a mysterious note!\" /pause 1200/
+	message \"{{i18n:PXEncounter.0}}\" /pause 300/
+	removeObject 23 17/itemAboveHead {{ModID}}_MysteriousNote \"{{i18n:PXEncounter.4}}\" /pause 1200/
 	addItem (O){{ModID}}_MysteriousNote 1/pause 1000/
 	emote farmer 28/pause 500/
-	message \"However, you cannot decipher the writing at all. Perhaps you could show the note to the Wizard?\" /pause 300/
+	message \"{{i18n:PXEncounter.1}}\" /pause 300/
 	globalFade 0.1/viewport -999 -999/
-	message \"And just who was this person?\" /eventSeen {{ModID}}_PXEncounter/addConversationTopic {{ModID}}_PeiXiuEncounterCT 7/pause 1000/end" }
+	message \"{{i18n:PXEncounter.2}}\" /eventSeen {{ModID}}_PXEncounter/addConversationTopic {{ModID}}_PeiXiuEncounterCT 7/pause 1000/end" }
 },
 
 {
@@ -459,31 +528,31 @@
 		"{{ModID}}_PXDwarf/SawEvent {{ModID}}_PXEncounter/!ActiveDialogueEvent {{ModID}}_PeiXiuEncounterCT/GameStateQuery PLAYER_HAS_MET current Dwarf/Time 1800 2400": "{{SinisterBGM}}/-1000 -1000/farmer -999 -999 0 {{PeiXiu}} 33 8 1 Dwarf 43 6 2/skippable/setSkipActions MarkEventSeen Current {{ModID}}_PXDwarf#AddConversationTopic {{ModID}}_PXDwarfCT/viewport 33 8 clamp true/
 		ichortower.ECC_ViewportMove a43 a9 2010/
 		speed {{PeiXiu}} 3/
-		ichortower.ECC_ActorPathTo {{PeiXiu}} 43 8 0/
+		ichortower.ECC_ActorPathfind {{PeiXiu}} 43 8 0/
 		ichortower.ECC_Pause 500/
 		emote Dwarf 8/
 		ichortower.ECC_Pause 500/
 		ichortower.ECC_ActorAwaitMovement {{PeiXiu}}/
-		textAboveHead Dwarf \"You're back.\" /pause 1000/
-		speak {{PeiXiu}} \".........\"/pause 500/
-		speak Dwarf \"......\"/pause 500/
-		speak Dwarf \"Well. Did you find what you have been looking for?\" /pause 300/
+		textAboveHead Dwarf \"{{i18n:PXDwarf.0}}\" /pause 1000/
+		speak {{PeiXiu}} \"{{i18n:PXDwarf.1}}\"/pause 500/
+		speak Dwarf \"{{i18n:PXDwarf.2}}\"/pause 500/
+		speak Dwarf \"{{i18n:PXDwarf.3}}\" /pause 300/
 		emote {{PeiXiu}} 40/pause 500/
 		move {{PeiXiu}} 0 2 2/pause 200/
 		showFrame {{PeiXiu}} 16/
-		speak {{PeiXiu}} \" I have not. What I am looking for must be in another location.\"/pause 300/
-		speak {{PeiXiu}} \"But... #$b# I must have lost the scroll on the way here.\"/pause 300/
+		speak {{PeiXiu}} \"{{i18n:PXDwarf.4}}\"/pause 300/
+		speak {{PeiXiu}} \"{{i18n:PXDwarf.5}}\"/pause 300/
 		emote Dwarf 16/pause 500/move Dwarf 0 2 2/pause 100/
-		speak Dwarf \"You lost it?! It was an ancient dwarven arti-\" /pause 50/
-		speak {{PeiXiu}} \"Do you happen to remember what was written in it? Even if I did make translation notes, I couldn't make sense of the text.\"/
+		speak Dwarf \"{{i18n:PXDwarf.6}}\" /pause 50/
+		speak {{PeiXiu}} \"{{i18n:PXDwarf.7}}\"/
 		emote Dwarf 28/pause 500/
-		speak Dwarf \"Well, only vaguely. It said something about a warm place, high up, of Dwarven importance.\" /
+		speak Dwarf \"{{i18n:PXDwarf.8}}\" /
 		showFrame {{PeiXiu}} 0/pause 300/
 		faceDirection {{PeiXiu}} 0/pause 300/
-		speak {{PeiXiu}} \" I can work with that.\" /pause 1000/
+		speak {{PeiXiu}} \"{{i18n:PXDwarf.9}}\" /pause 1000/
 		emote Dwarf 40 true/
 		speed {{PeiXiu}} 4/
-		ichortower.ECC_ActorPathTo {{PeiXiu}} 18 10 2/
+		ichortower.ECC_ActorPathfind {{PeiXiu}} 18 10 2/
 	
 		ichortower.ECC_ViewportMove a18 a9 5000/
 		ichortower.ECC_ActorAwaitMovement {{PeiXiu}}/
@@ -491,26 +560,26 @@
 		faceDirection farmer 0/
 		emote farmer 16/pause 500/
 		emote {{PeiXiu}} 40/pause 500/
-		message \" It's this person that showed up at the bus stop recently...\"/pause 500/
-		question null \"Say something.#Who are you?#What are you doing here? \"/pause 100/
-		speak {{PeiXiu}} \" It is of no importance to you.\"/pause 300/
+		message \"{{i18n:PXDwarf.10}}\"/pause 500/
+		question null \"{{i18n:PXDwarf.11}}\"/pause 100/
+		speak {{PeiXiu}} \"{{i18n:PXDwarf.12}}\"/pause 300/
 		emote farmer 28/pause 500/
 		ichortower.ECC_If PLAYER_HAS_ITEM Current (O){{ModID}}_MysteriousNote/
-		emote {{PeiXiu}} 16/speak {{PeiXiu}} \"Wait... did you happen to find a note after we ran into each other?\"/pause 300/
-		question null \"Reply:#No, I haven't.#Even if I did, it's my treasure now.\"/pause 300/
-		speak {{PeiXiu}} \".....$3\" /
-		speak {{PeiXiu}} \"Stop wasting my time with lies and immaturity. #$b# Move. \" /pause 300/
+		emote {{PeiXiu}} 16/speak {{PeiXiu}} \"{{i18n:PXDwarf.13}}\"/pause 300/
+		question null \"{{i18n:PXDwarf.14}}\"/pause 300/
+		speak {{PeiXiu}} \"{{i18n:PXDwarf.15}}\" /
+		speak {{PeiXiu}} \"{{i18n:PXDwarf.16}}\" /pause 300/
 		ichortower.ECC_ElseIf !PLAYER_HAS_ITEM Current (O){{ModID}}_MysteriousNote/
-		speak {{PeiXiu}} \" I have no time for this. #$b# Move. \"/pause 300/
+		speak {{PeiXiu}} \"{{i18n:PXDwarf.17}}\"/pause 300/
 		ichortower.ECC_EndIf/
-		ichortower.ECC_ActorPathTo farmer 16 10 2/
+		ichortower.ECC_ActorPathfind farmer 16 10 2/
 		ichortower.ECC_ActorAwaitMovement farmer/
-		ichortower.ECC_ActorPathTo {{PeiXiu}} 18 13 2 wait/
+		ichortower.ECC_ActorPathfind {{PeiXiu}} 18 13 2 wait/
 		warp {{PeiXiu}} -1000 -1000/pause 500/
 		emote farmer 40/
 		eventSeen {{ModID}}_PXDwarf/addConversationTopic {{ModID}}_PXDwarfCT/end"
 	}
-} */
+}
 
 
 	]

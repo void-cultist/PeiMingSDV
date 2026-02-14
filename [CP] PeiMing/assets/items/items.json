@@ -48,7 +48,7 @@
             "Action": "EditData",
             "Target": "Data/Objects",
             "Entries": {
-                "{{ModId}}_WhatIsThis": {
+                "{{ModId}}_77616e6c657420646f6c6c": {
                     "Name": "{{ModId}}_77616e6c657420646f6c6c",
                     "DisplayName": "77616e6c657420646f6c6c",
                     "Description": "Dvdroohvvblfrmblfimrtsgnzivhtvmvizo!",
@@ -68,7 +68,13 @@
                                     "Id": "{{ModId}}_donotquestionthis",
                                     "BuffId": "{{ModID}}_wvxlwvgsrhzmwdvdrooszfmgblf",
                                 }
-                            ] 
+                            ],
+                    "CustomFields": {
+                        "selph.ExtraMachineConfig.SlingshotDamage": 100,
+                        "selph.ExtraMachineConfig.SlingshotExplosiveRadius": 10,
+                        "selph.ExtraMachineConfig.SlingshotExplosiveDamage": 50
+					
+                    },
 				},
 			},
         },

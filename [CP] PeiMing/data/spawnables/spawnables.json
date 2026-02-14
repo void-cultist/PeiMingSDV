@@ -101,7 +101,7 @@
 						{ 
                             "Weight": 1.0,
                             "Value": {
-                            "ItemId": "(O){{ModId}}_WhatIsThis",
+                            "ItemId": "(O){{ModId}}_77616e6c657420646f6c6c",
                             }
                         },
 
@@ -254,7 +254,7 @@
 						{ 
                             "Weight": 1.0,
                             "Value": {
-                            "ItemId": "(O){{ModId}}_WhatIsThis",
+                            "ItemId": "(O){{ModId}}_77616e6c657420646f6c6c",
                             }
                         },
 
@@ -464,8 +464,8 @@
                         
 
                     ]
-                }
-            },
+                },
+            
 
              "{{ModID}}_PeiMingHouseExteriorSpawns_Summer": {
                     "SpawnablesToSpawn": [
@@ -582,9 +582,9 @@
                     ]
                 }
         },
+        },
 
-         {
-            
+        {
             "LogName": "Northern Heart Melon spawn group",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/SpawningGroups", 

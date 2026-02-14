@@ -146,7 +146,7 @@
 		//spawn coordinates. i figured out i could handle it like that AFTER i did separate patches for all other spawns. RIP
 		{
 			"Name": "SpawnableCoordinates",
-			"Value": "Forest 42,73,4,3 55,73,3,7"
+			"Value": "Forest 42,73,4,3/55,73,3,7"
 		},
 
 		{
@@ -157,7 +157,7 @@
 		{
 			"Name": "SpawnableCoordinates", 
 			"When": { "House Location": "Alternate" },
-			"Value": "{{ModID}}_PeiMingNewOutdoors 3,3,2,9/9,15,3,2"
+			"Value": "{{ModID}}_PeiMingNewOutdoors 7,6,2,2"
 		},
 
 
@@ -396,12 +396,12 @@
 //vanilla, no lunna
 {
 	"Name": "AlternateToForestWarp",
-	"Value": "21 14 Forest 0 37"
+	"Value": "24 17 Forest 0 37"
 },
 
 {
 	"Name": "ForestToAlternateWarp",
-	"Value": "-1 37 {{ModID}}_PeiMingNewOutdoors 20 14"
+	"Value": "-1 37 {{ModID}}_PeiMingNewOutdoors 23 17"
 },
 
 //SVE, no lunna
@@ -412,7 +412,7 @@
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 		"HasMod: |contains=Rafseazz.LunnaCP": false 
 },
-	"Value": "21 14 Forest 0 37"
+	"Value": "24 17 Forest 0 37"
 },
 
 {
@@ -422,7 +422,7 @@
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 		"HasMod: |contains=Rafseazz.LunnaCP": false 
 },
-	"Value": "-1 37 {{ModID}}_PeiMingNewOutdoors 20 14"
+	"Value": "-1 37 {{ModID}}_PeiMingNewOutdoors 23 17"
 },
 
 //vanilla with lunna
@@ -433,7 +433,7 @@
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
 		"HasMod: |contains=Rafseazz.LunnaCP": true 
 },
-	"Value": "21 14 Forest 0 27"
+	"Value": "24 17 Forest 0 27"
 },
 
 {
@@ -443,7 +443,7 @@
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
 		"HasMod: |contains=Rafseazz.LunnaCP": true 
 },
-	"Value": "-1 27 {{ModID}}_PeiMingNewOutdoors 20 14"
+	"Value": "-1 27 {{ModID}}_PeiMingNewOutdoors 23 17"
 },
 
 //SVE with lunna
@@ -454,7 +454,7 @@
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 		"HasMod: |contains=Rafseazz.LunnaCP": true 
 },
-	"Value": "21 14 Forest 0 28"
+	"Value": "24 17 Forest 0 28"
 },
 {
 	"Name": "ForestToAlternateWarp",
@@ -463,7 +463,7 @@
 		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
 		"HasMod: |contains=Rafseazz.LunnaCP": true 
 },
-	"Value": "-1 28 {{ModID}}_PeiMingNewOutdoors 20 14"
+	"Value": "-1 28 {{ModID}}_PeiMingNewOutdoors 23 17"
 },
 
 
@@ -652,12 +652,12 @@
         	"Target": "Characters/Dialogue/{{PeiMing}}, Characters/schedules/{{PeiMing}}, Strings/schedules/{{PeiMing}}, Strings/StringsFromMaps/{{ModID}}_PeiMingHouse, Strings/StringsFromMaps/{{ModID}}_PeiMingExterior, Strings/StringsFromCSFiles/{{PeiMing}}_EngagedRoommate, Strings/1_6_Strings/{{ModID}}_Renovation_AddCustomRoom, Data/EngagementDialogue/{{PeiMing}}, Characters/Dialogue/MarriageDialogue{{PeiMing}}Roommate, Characters/schedules/{{PeiMing}}Roommate, Data/Events/{{ModID}}_PeiMingHouse, Data/Locations/{{ModID}}_PeiMingNewOutdoors", //Strings/void.peiming
         	"FromFile": "data/blank.json" //this should be wherever you put it in your assets folder - put it in a subfolder if you want
    	 },
-/* 	 {
+	 {
 		"LogName": "Blank JSON load for Pei Xiu",
 		"Action": "Load",
 		"Target": "Characters/Dialogue/{{PeiXiu}}, Characters/schedules/{{PeiXiu}}",
 		"FromFile": "data/blank.json"
-	 }, */
+	 },
 
 //includes
 {
@@ -665,11 +665,11 @@
    	"Action": "Include",
    	"FromFile": "data/dispos.json"
 },
-/* {
+{
 	"LogName": "Include Pei Xiu dispos",
 	"Action": "Include",
 	"FromFile": "data/PeiXiu/dispos.json"
-}, */
+},
 { 
 	"LogName": "Gift Tastes Include",
    	"Action": "Include",
@@ -686,11 +686,11 @@
    	"Action": "Include",
 	"FromFile": "data/dialogue.json"
 },
-/* {
+{
     "LogName": "Include Pei Xiu Dialogue",
    	"Action": "Include",
 	"FromFile": "data/PeiXiu/dialogue.json"
-}, */
+},
 {
 	"LogName": "Include map data",
 	"Action": "Include",
@@ -761,11 +761,11 @@
 		"House Location": "SVE, Alternate" },
    	"FromFile": "data/SVE/schedule.json"
 },
-/* {
+{
     "LogName": "Pei Xiu  Schedule include",
    	"Action": "Include",
    	"FromFile": "data/PeiXiu/schedule.json"
-}, */
+},
 {
 	"LogName": "Include Special Orders",
 	"Action": "Include",
@@ -829,6 +829,11 @@
 	"Action": "Include",
 	"FromFile": "data/movies.json"
 },
+{
+	"LogName": "Include Quests",
+	"Action": "Include",
+	"FromFile": "data/quests.json"
+},
 
 	
 	 
@@ -889,19 +894,7 @@
 
 //quests
 //quest format: <"quest type/quest title/quest description in quest log/opt: additional quest instructions/opt: completion requirements/next quests for quest chain, add 0 for none/reward money in numbers/-1/can be cancelled (default false)/opt. Reaction dialogue for item delivery quests">
-{
-	"LogName": "Edit Quests for PM",
-	"Action": "EditData",
-	"Target": "Data/Quests",
-	"Entries": 
-		{
-			"{{ModID}}_TalkWizard": "Location/{{i18n:TalkWizard.title}}/{{i18n:TalkWizard.text}}/{{i18n:TalkWizard.objective}}/WizardHouse/0/100/-1/false",
-			"{{ModID}}_PMSaloon": "Location/{{i18n:PMSaloon.title}}/{{i18n:PMSaloon.text}}/{{i18n:PMSaloon.objective}}/Saloon/0/0/-1/false",
-			"{{ModID}}_PMMountains": "Location/{{i18n:PMMountains.title}}/{{i18n:PMMountains.text}}/{{i18n:PMMountains.objective}}/Mountain/0/0/-1/false",
-			"{{ModID}}_NHMForPM": "ItemDelivery/{{i18n:NHMForPM.title}}/{{i18n:NHMForPM.text}}/{{i18n:NHMForPM.objective}}/{{PeiMing}} void.NorthernHeartMelon_NHMelon 1/0/10000/-1/false/{{i18n:NHMForPM.reaction}}",
-			//"{{ModID}}_MysteriousNoteQuest": "",
-		}
-},
+
 //mail
 //mail syntax: <"text"><"commands"><%item quest [quest ID] true%% for quests in letter>[#]<letter title>
 {"LogName": "edit mail related to Pei Ming",
@@ -921,7 +914,8 @@
 	"{{ModID}}_HuangjiuLetter": "{{i18n:HuangjiuLetter.text}}[#]{{i18n:HuangjiuLetter.title}}",
 	"{{ModID}}_PM7HSaloonLetter": "{{i18n:PM7HSaloonLetter.text}}%item quest {{ModID}}_PM7HQuest true%%[#]{{i18n:PM7HSaloonLetter.title}}",
 	"{{ModID}}_TanghuluInvite": "{{i18n:TanghuluInvite.text}}[#]{{i18n:TanghuluInvite.title}}",
-	"{{ModID}}_LoveTeaLetter": "{{i18n:LoveTeaLetter.text}}%item cookingRecipe void.NorthernHeartMelon_LoveTea%%[#]{{i18n:LoveTeaLetter.title}}"
+	"{{ModID}}_LoveTeaLetter": "{{i18n:LoveTeaLetter.text}}%item cookingRecipe void.NorthernHeartMelon_LoveTea%%[#]{{i18n:LoveTeaLetter.title}}",
+	//"{{ModID}}_Placeholder: "",
 
 
 }},

@@ -105,7 +105,7 @@
 	"Entries": {
 		"{{ModID}}_PeiMingNewOutdoors": 
 		{
-			"DefaultArrivalTile": { "X": 20, "Y": 14},
+			"DefaultArrivalTile": { "X": 23, "Y": 17},
 			"CreateOnLoad": {
 				"MapPath": "Maps/{{ModID}}_PeiMingNewOutdoors"
 			},	
@@ -516,13 +516,13 @@
 	"When": { "House Location": "Alternate" },
     "MapTiles": [ 
         {
-            "Position": { "X": 8, "Y": 9 },
+            "Position": { "X": 13, "Y": 12 },
             "Layer": "Buildings", 
             "SetProperties": {
                 "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350",
             }
         },
-		{ "Position": { "X": 9, "Y": 9 }, 
+		{ "Position": { "X": 12, "Y": 12 }, 
             "Layer": "Buildings", 
             "SetProperties": {
                 "Action": "LockedDoorWarp 5 10 {{ModID}}_PeiMingHouse 600 2350"
@@ -657,7 +657,7 @@
     "Target": "Maps/{{ModID}}_PeiMingHouse", 
 	"When": { "House Location": "Alternate"},
     "AddWarps": [
-        "5 12 {{ModID}}_PeiMingNewOutdoors 8 10" ]
+        "5 12 {{ModID}}_PeiMingNewOutdoors 12 13" ]
 },
 
 //Warp Shortcuts (BusStop) After PM sends letter about it

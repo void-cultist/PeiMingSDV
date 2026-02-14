@@ -1,0 +1,73 @@
+{
+    "Changes": [
+    {
+	"LogName": "Edit Quests for PM",
+	"Action": "EditData",
+	"Target": "Data/Quests",
+	"Entries": 
+		{
+			"{{ModID}}_TalkWizard": "Location/{{i18n:TalkWizard.title}}/{{i18n:TalkWizard.text}}/{{i18n:TalkWizard.objective}}/WizardHouse/0/100/-1/false",
+			"{{ModID}}_PMSaloon": "Location/{{i18n:PMSaloon.title}}/{{i18n:PMSaloon.text}}/{{i18n:PMSaloon.objective}}/Saloon/0/0/-1/false",
+			"{{ModID}}_PMMountains": "Location/{{i18n:PMMountains.title}}/{{i18n:PMMountains.text}}/{{i18n:PMMountains.objective}}/Mountain/0/0/-1/false",
+			"{{ModID}}_NHMForPM": "ItemDelivery/{{i18n:NHMForPM.title}}/{{i18n:NHMForPM.text}}/{{i18n:NHMForPM.objective}}/{{PeiMing}} void.NorthernHeartMelon_NHMelon 1/0/10000/-1/false/{{i18n:NHMForPM.reaction}}",
+            "{{ModID}}_GemQuest": "Basic/{{i18n:GemQuest.title}}/{{i18n:GemQuest.text}}/{{i18n:GemQuest.objective}}/null/0/0/-1/false",
+            "{{ModID}}_MysteriousNote3": "ItemDelivery/{{i18n:MysteriousNote3.title}}/{{i18n:MysteriousNote3.text}}/{{i18n:MysteriousNote3.objective}}/{{PeiMing}} {{ModId}}_MysteriousNote 1/0/10/-1/false/{{i18n:MysteriousNote3.reaction}}"
+			
+		}
+    },
+
+    ///custom quests
+        {
+            "LogName": "PM Custom Quests",
+            "Action": "EditData",
+            "Target": "boxosoup.CustomSocialQuest/CohortQuest",
+            "Entries": 
+            {
+                "{{ModId}}_MysteriousNote1": 
+                {
+                    "Id": "{{ModId}}_MysteriousNote1",
+                    "Title": "{{i18n:MysteriousLetter1.title}}",
+                    "Description": "{{i18n:MysteriousLetter1.Description}}",
+                    "MoneyReward": 100,
+                    "ObjectiveInstructions": "{{ModID}}_MysteriousNote1",
+                    "CanBeCancelled": false, 
+                    "Characters": [
+                        "Wizard"
+                    ]
+                },
+                "{{ModID}}_MysteriousNote2":
+                {
+                    "Id": "{{ModID}}_MysteriousNote2",
+                    "Title": "{{i18n:MysteriousLetter2.title}}",
+                    "Description": "{{i18n:MysteriousLetter2.Description}}",
+                    "MoneyReward": 100,
+                    "ObjectiveInstructions": "{{ModID}}_MysteriousNote2",
+                    "CanBeCancelled": false,
+                    "Characters": [ "Krobus" ]
+                },
+               /*  "{{ModID}}_MysteriousNote3":
+                {
+                    "Id": "{{ModID}}_MysteriousNote3",
+                    "Title": "The Mysterious Letter 3",
+                    "Description": "While you still haven't found anyone to decipher the note for you, you have been told to talk to Pei Ming. Could he possibly read the note?",
+                    "MoneyReward": 100,
+                    "CanBeCancelled": false,
+                    "Characters": [ "{{PeiMing}}" ]
+                }, */
+            }
+        },
+
+         {
+          "LogName": "PM Custom Quest Completion requirement strings",
+          "Action": "EditData",
+          "Target": "Strings/StringsFromCSFiles",
+          "Entries": {
+            "{{ModId}}_MysteriousNote1": "{{i18n:MysteriousNote1}}",
+            "{{ModID}}_MysteriousNote2": "{{i18n:MysteriousNote2}}",
+            //"{{ModID}}_MysteriousNote3": "{{i18n:MysteriousNote3}}",
+          }
+      },
+
+ 
+    ]
+}

@@ -21,6 +21,7 @@
           //"LoveInterest": {{ModID}}_Banyue,
           "Calendar": "HiddenUntilMet",
           "SocialTab": "UnknownUntilMet",
+          "UnlockConditions": "PLAYER_HAS_SEEN_EVENT current {{ModID}}_PXDwarf",
           "SpawnIfMissing": true,
           "CanSocialize": false,
           "CanReceiveGifts": true,

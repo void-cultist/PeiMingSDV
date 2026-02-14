@@ -52,6 +52,7 @@
 
                 "DumpsterDiveComment": "{{i18n:DumpsterDiveComment}}",
                 "HitBySlingshot": "{{i18n:HitBySlingshot}}",
+                "HitBySlingshot_(O){{ModId}}_77616e6c657420646f6c6c": "{{i18n:WTF}}",
 
 
                 ////////////////////////////////////////////////seasonals
@@ -144,7 +145,7 @@
                 "AcceptGift_(O)155": "{{i18n:AcceptGift(O)155{{LessFlirty}}}}",
                 "AcceptGift_(O)91": "{{i18n:AcceptGift(O)91{{LessFlirty}}}}",
                 "AcceptGift_(O)342": "{{i18n:AcceptGift(O)342}}",
-                "AcceptGift_(O){{ModId}}_WhatIsThis": "{{i18n:AcceptGift(O_WhatIsThis}}",
+                "AcceptGift_(O){{ModId}}_77616e6c657420646f6c6c": "{{i18n:AcceptGift(O_WhatIsThis}}",
                 "AcceptGift_(O){{ModID}}_Tanghulu": "{{i18n:AcceptGift(O_Tanghulu}}",
                 "AcceptGift_(O)613": "{{i18n:AcceptGift(O)613{{LessFlirty}}}}",
                 "AcceptGift_(O)StardropTea": "{{i18n:AcceptGift(O)StardropTea}}",
