@@ -466,7 +466,7 @@
 	}
 },
 
-{ 	
+{ 	//replace ActorPathTo with ActorPathfind once ichor updates ECC
 "LogName": "Pei Xiu appears!",
 "Action": "EditData",
 "Target": "Data/Events/BusStop",
@@ -487,7 +487,7 @@
 	ichortower.ECC_FaceDirection {{PeiXiu}} 0 500/
 	ichortower.ECC_FaceDirection {{PeiXiu}} 2 100/
 	ichortower.ECC_StreamEnd/
-	ichortower.ECC_ActorPathfind farmer 18 23 3 wait/
+	ichortower.ECC_ActorPathTo farmer 18 23 3 wait/ 
 
 	ichortower.ECC_ViewportMove a22 a16 2400 wait/
 	ichortower.ECC_ActorHalt next farmer/
@@ -498,13 +498,13 @@
 	pause 1500/
 	speak {{PeiXiu}} \"..............\" /pause 300/
 	emote farmer 8/pause 500/
-	ichortower.ECC_ActorPathfind farmer 22 18 0/
-	ichortower.ECC_ActorPathfind {{PeiXiu}} 22 17 2/
+	ichortower.ECC_ActorPathTo farmer 22 18 0/
+	ichortower.ECC_ActorPathTo {{PeiXiu}} 22 17 2/
 	ichortower.ECC_ActorAwaitMovement farmer {{PeiXiu}}/
 	pause 500/
 	speak {{PeiXiu}} \"....................\" /pause 50/
 	emote farmer 40/pause 1000/
-	speed {{PeiXiu}} 4/ichortower.ECC_ActorPathfind {{PeiXiu}} 40 23 1/
+	speed {{PeiXiu}} 4/ichortower.ECC_ActorPathTo {{PeiXiu}} 40 23 1/
 	playSound dwoop/
 	addObject 23 17 (O){{ModID}}_MysteriousNote 0/
 	ichortower.ECC_ActorAwaitMovement {{PeiXiu}}/warp {{PeiXiu}} 999 999/pause 300/
@@ -528,7 +528,7 @@
 		"{{ModID}}_PXDwarf/SawEvent {{ModID}}_PXEncounter/!ActiveDialogueEvent {{ModID}}_PeiXiuEncounterCT/GameStateQuery PLAYER_HAS_MET current Dwarf/Time 1800 2400": "{{SinisterBGM}}/-1000 -1000/farmer -999 -999 0 {{PeiXiu}} 33 8 1 Dwarf 43 6 2/skippable/setSkipActions MarkEventSeen Current {{ModID}}_PXDwarf#AddConversationTopic {{ModID}}_PXDwarfCT/viewport 33 8 clamp true/
 		ichortower.ECC_ViewportMove a43 a9 2010/
 		speed {{PeiXiu}} 3/
-		ichortower.ECC_ActorPathfind {{PeiXiu}} 43 8 0/
+		ichortower.ECC_ActorPathTo {{PeiXiu}} 43 8 0/
 		ichortower.ECC_Pause 500/
 		emote Dwarf 8/
 		ichortower.ECC_Pause 500/
@@ -552,7 +552,7 @@
 		speak {{PeiXiu}} \"{{i18n:PXDwarf.9}}\" /pause 1000/
 		emote Dwarf 40 true/
 		speed {{PeiXiu}} 4/
-		ichortower.ECC_ActorPathfind {{PeiXiu}} 18 10 2/
+		ichortower.ECC_ActorPathTo {{PeiXiu}} 18 10 2/
 	
 		ichortower.ECC_ViewportMove a18 a9 5000/
 		ichortower.ECC_ActorAwaitMovement {{PeiXiu}}/
@@ -572,13 +572,33 @@
 		ichortower.ECC_ElseIf !PLAYER_HAS_ITEM Current (O){{ModID}}_MysteriousNote/
 		speak {{PeiXiu}} \"{{i18n:PXDwarf.17}}\"/pause 300/
 		ichortower.ECC_EndIf/
-		ichortower.ECC_ActorPathfind farmer 16 10 2/
+		ichortower.ECC_ActorPathTo farmer 16 10 2/
 		ichortower.ECC_ActorAwaitMovement farmer/
-		ichortower.ECC_ActorPathfind {{PeiXiu}} 18 13 2 wait/
+		ichortower.ECC_ActorPathTo {{PeiXiu}} 18 13 2 wait/
 		warp {{PeiXiu}} -1000 -1000/pause 500/
 		emote farmer 40/
 		eventSeen {{ModID}}_PXDwarf/addConversationTopic {{ModID}}_PXDwarfCT/end"
 	}
+},
+
+{
+	"LogName": "Pei Ming Mysterious Note event",
+	"Action": "EditData",
+	"Target": "Data/Events/{{ModID}}_PeiMingHouse",
+	"Entries": {
+		"{{ModID}}_PMRequest/LocalMail {{ModID}}_PMRequestLetter": "{{MelancholyBGM}}/-1000 -1000/farmer 5 10 0 {{PeiMing}} 12 5 3/skippable/setSkipActions MarkEventSeen current {{ModID}}_PMRequest/viewport 5 6 clamp true/pause 300/
+		emote {{PeiMing}} 16/pause 500/
+		speak {{PeiMing}} \"Ah, there you are.\" /pause 500/
+		ichortower.ECC_ActorPathTo farmer 10 5 1/pause 500/
+		speak {{PeiMing}} \"Thank you for coming. I will make it short this time.\"/pause 300/
+		speak {{PeiMing}} \"The volcano on Ginger Island. This is where we will have to go.\" /
+		emote farmer 16/pause 500/
+		speak {{PeiMing}} \"And the note, well... the handwriting is my descendant's.\" /pause 300/
+		jump farmer 5/
+		globalFade/viewport -1000 -1000/end"
+
+	}
+
 }
 
 

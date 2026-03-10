@@ -578,6 +578,17 @@
 		"When": { "Custom Music": "on" },
 		"Value": "{{ModId}}_darkly"
 	},
+
+	//Pei Xiu home
+	{
+		"Name": "PXHome",
+		"Value": "{{ModID}}_GayBabyJail"
+	},
+	/* {
+		"Name": "PXHome",
+		"Value": "{{ModID}}_PeiMingHouse",
+		"When": 
+	}, */
 	
 		
 	],
@@ -713,11 +724,11 @@
    	"Action": "Include",
    	"FromFile": "data/Strings/schedules.json"
 },
-/* {
+{
 	"LogName": "Include dynamic strings",
 	"Action": "Include",
 	"FromFile": "data/Strings/dynamicStrings.json"
-}, */
+},
 
 {
 	"LogName": "add map messages to Pei Ming's house and patio",
@@ -800,14 +811,14 @@
 	"FromFile": "data/spawnables/spawnables_triggeractions.json"
 },
 
-/* { 
+{ 
 	"LogName": "Include Companionship ceremony (Event)",
 	"Action": "Include",
 	"When":  {
 	"Partnership":"Platonic Partnership"
 			},
 	"FromFile": "data/PlatonicPartnership/ceremony.json"
-}, */
+},
 {
    	"LogName": "Festival Include SVE",
    	"Action": "Include",
@@ -915,7 +926,7 @@
 	"{{ModID}}_PM7HSaloonLetter": "{{i18n:PM7HSaloonLetter.text}}%item quest {{ModID}}_PM7HQuest true%%[#]{{i18n:PM7HSaloonLetter.title}}",
 	"{{ModID}}_TanghuluInvite": "{{i18n:TanghuluInvite.text}}[#]{{i18n:TanghuluInvite.title}}",
 	"{{ModID}}_LoveTeaLetter": "{{i18n:LoveTeaLetter.text}}%item cookingRecipe void.NorthernHeartMelon_LoveTea%%[#]{{i18n:LoveTeaLetter.title}}",
-	//"{{ModID}}_Placeholder: "",
+	"{{ModID}}_PMRequestLetter": "Greetings, esteemed @. ^ Would you be so kind and meet me as soon as you can? I promise, there is no dubious activity involved. I wish to talk about the torn note you handed me the other day. ^ - General Ming Guang, Martial God of the North %item quest {{ModID}}_PMRequestQuest true%%[#]The mysterious note.",
 
 
 }},

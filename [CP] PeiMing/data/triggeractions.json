@@ -178,8 +178,8 @@
 			"{{ModId}}_Add_MysteriousNote1": 
 				{
                   "Id": "{{ModId}}_Add_MysteriousNote1",
-                  "Trigger": "DayEnding",
-				  "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_PXEncounter",
+                  "Trigger": "DayStarted",
+				  "Condition": "ANY \"PLAYER_HAS_SEEN_EVENT Current {{ModID}}_PXEncounter\" \"PLAYER_HAS_CONVERSATION_TOPIC Current {{ModID}}_CT_MysteriousNote1\" \"PLAYER_HAS_CONVERSATION_TOPIC Current eventSeen_{{ModID}}_PXEncounter",
                   "Actions": [
                       "boxosoup.CustomIntroductions_AddCohortQuest {{ModId}}_MysteriousNote1"
                   ]
@@ -188,18 +188,20 @@
 				{
                   "Id": "{{ModId}}_Add_MysteriousNote2",
                   "Trigger": "DayEnding",
-				  "Condition": "PLAYER_SEEN_CONVERSATION_TOPIC Current {{ModID}}_CT_MysteriousNote1",
+				  "Condition": "PLAYER_HAS_CONVERSATION_TOPIC Current questComplete_{{ModID}}_MysteriousNote1",
                   "Actions": [
-                      "boxosoup.CustomIntroductions_AddCohortQuest {{ModId}}_MysteriousNote2"
+                      "boxosoup.CustomIntroductions_AddCohortQuest {{ModId}}_MysteriousNote2",
+					  "RemoveConversationTopic {{ModID}}_CT_MysteriousNote1"
                   ]
               	},
 				"{{ModId}}_Add_MysteriousNote3": 
 				{
                   "Id": "{{ModId}}_Add_MysteriousNote3",
                   "Trigger": "DayEnding",
-				  "Condition": "PLAYER_SEEN_CONVERSATION_TOPIC Current {{ModID}}_CT_MysteriousNote2",
+				  "Condition": "PLAYER_HAS_CONVERSATION_TOPIC Current questComplete_{{ModID}}_MysteriousNote2",
                   "Actions": [
-                      "AddQuest {{ModId}}_MysteriousNote3"
+                      "AddQuest {{ModId}}_MysteriousNote3",
+					  "RemoveConversationTopic {{ModID}}_CT_MysteriousNote2"
                   ]
               	},
 			"{{ModID}}_Add_CT_MysteriousNote1": 
@@ -228,8 +230,28 @@
 					"Actions": [ 
 						"AddConversationTopic {{ModID}}_CT_MysteriousNote3 300"
 					]
-				}
-		//perhaps use quest complete CT? that one only lasts 4 days so hmm
+				},
+			"{{ModID}}_Add_PMRequestLetter":
+			{
+					"Id": "{{ModId}}_Add_PMRequestLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_SEEN_CONVERSATION_TOPIC Current questComplete_{{ModID}}_MysteriousNote3, PLAYER_VISITED_LOCATION Current Caldera",
+					"Actions": [ 
+						"AddMail Current {{ModID}}_PMRequestLetter tomorrow",
+						"RemoveConversationTopic {{ModID}}_CT_MysteriousNote3"
+					]
+				},
+			"{{ModID}}_Add_PMRequestQuest":
+			{
+					"Id": "{{ModId}}_Add_PMRequestQuest",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_PMRequestLetter Received", 
+					"Actions": [ 
+						"AddQuest {{ModID}}_PMRequestQuest"
+					]
+				},
+
+		//perhaps use quest complete CT to remove old CT? that one only lasts 4 days so hmm
 			
 			}
 		 },

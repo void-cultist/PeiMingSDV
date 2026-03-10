@@ -563,9 +563,9 @@
 "PXDwarfCT_Dwarf3": "Huh? Is that the ancient Dwarven scroll...? #$b# .................. #$b# I see. I am sorry, @, as of now, I can't tell you anything about it.",
 "PXDwarfCT_Dwarf4": "To think he lost such an important ancient artifact, though... #$b# I wonder where it is now.",
 
-"CT_MysteriousNote1": "Greetings, farmer. #$b# Oh, you found a note you cannot decipher? Let me see. #$b# Hmmm... hm.... #$b# Ah. #$b# I am afraid I am unable to read any of this. You should ask someone else for help. Call it a day and continue your search tomorrow. $action RemoveConversationTopic {{ModID}}_CT_MysteriousNote1",
-"CT_MysteriousNote2_Elliott": "Oh, hello, @, what brings you here? #$b# A strange scripture, you say? #$b# ........... #$b# I am a writer, not a historian, mind you. Why don't you ask Pei Ming tomorrow? $action RemoveConversationTopic {{ModID}}_CT_MysteriousNote2",
-"CT_MysteriousNote2_Krobus": "You found a note? #$b# .........hm, I can't say I understand a thing. Try asking Pei Ming tomorrow, perhaps? $action RemoveConversationTopic {{ModID}}_CT_MysteriousNote2",
+"CT_MysteriousNote1": "Greetings, farmer. #$b# Oh, you found a note you cannot decipher? Let me see. #$b# Hmmm... hm.... #$b# Ah. #$b# I am afraid I am unable to read any of this. You should ask someone else for help. Call it a day and continue your search tomorrow.",
+"CT_MysteriousNote2_Elliott": "Oh, hello, @, what brings you here? #$b# A strange scripture, you say? #$b# ........... #$b# I am a writer, not a historian, mind you. Why don't you ask Pei Ming tomorrow?",
+"CT_MysteriousNote2_Krobus": "You found a note? .........hm, I can't say I understand a thing. Try asking Pei Ming tomorrow, perhaps?",
 "CT_MysteriousNote3": "Hello, @! What a day, huh? #$b# You want to show me something? #$b# .................. #$b# %You hand Pei Ming the note you found. #$b# !!!! $7 #$b# That handwriting... where and how did you find this letter?! $7#$b# %Pei Ming seems agitated. Best to leave the note with him and leave him be.",
 
 "CT_PMRoommate_Krobus": "Oh, Pei Ming moved in with you? That is interesting. He is quite the unusual person, but I am glad you get along. $h",
@@ -757,27 +757,27 @@
 "NHMForPM.objective": "Plant the seed in Winter and bring the harvested Northern Heart Melon to Pei Ming.",
 "NHMForPM.reaction": "Hoho! I can't believe the Northern Heart Melon managed to prosper on your farm!$1#$b# Thank you so much, @.$6",
 
-"MysteriousLetter1.title": "The Mysterious Letter 1",
-"MysteriousLetter1.Description": "You found a mysterious letter after running into a stranger at the bus stop. Perhaps the Wizard can help decipher it?",
+"MysteriousLetter1.title": "The Mysterious Letter 1", //new in 1.1.0
+"MysteriousLetter1.Description": "You found a mysterious letter after running into a stranger at the bus stop. Perhaps the Wizard can help decipher it?", //new in 1.1.0
 
-"MysteriousLetter2.title": "The Mysterious Letter 2",
-"MysteriousLetter2.Description": "The Wizard couldn't help you read the note and suggested you find someone else to decipher it.",
+"MysteriousLetter2.title": "The Mysterious Letter 2", //new in 1.1.0
+"MysteriousLetter2.Description": "The Wizard couldn't help you read the note and suggested you find someone else to decipher it.",//new in 1.1.0
 
-"MysteriousNote3.title": "The Mysterious Letter 3",
-"MysteriousNote3.text": "While you still haven't found anyone to decipher the note for you, you have been told to talk to Pei Ming. Could he possibly read the note?",
-"MysteriousNote3.objective": "Bring the Mysterious Note to Pei Ming.",
-"MysteriousNote3.reaction": "Hello, @! What a day, huh? #$b# You want to show me something? #$b# .................. #$b# %You hand Pei Ming the note you found. #$b# !!!! $7 #$b# That handwriting... where and how did you find this letter?! $7#$b# %Pei Ming seems agitated. Best to leave the note with him and leave him be.$action RemoveConversationTopic {{ModID}}_CT_MysteriousNote3",
+"MysteriousNote3.title": "The Mysterious Letter 3", //new in 1.1.0
+"MysteriousNote3.text": "While you still haven't found anyone to decipher the note for you, you have been told to talk to Pei Ming. Could he possibly read the note?", //new in 1.1.0
+"MysteriousNote3.objective": "Bring the Mysterious Note to Pei Ming.", //new in 1.1.0
+"MysteriousNote3.reaction": "Hello, @! What a day, huh? #$b# You want to show me something? #$b# ..................  #$b# !!!! $7 #$b# That handwriting... where and how did you find this letter?! $7#$b# Could you please leave me be for a moment?", //new in 1.1.0
 
-"MysteriousLetter3.title": "The Mysterious Letter 3",
-"MysteriousLetter3.Description": "While you still haven't found anyone to decipher the note for you, you have been told to talk to Pei Ming. Could he possibly read the note?",
+"MysteriousLetter3.title": "The Mysterious Letter 3", //new in 1.1.0
+"MysteriousLetter3.Description": "While you still haven't found anyone to decipher the note for you, you have been told to talk to Pei Ming. Could he possibly read the note?", //new in 1.1.0
 
-"MysteriousNote1": "Talk to the Wizard about the mysterious note you found.",
-"MysteriousNote2": "Find another person who could help you read the mysterious note.",
-"MysteriousNote3": "Talk to Pei Ming. Don't forget to bring the note with you!",
+"MysteriousNote1": "Talk to the Wizard about the mysterious note you found.", //new in 1.1.0
+"MysteriousNote2": "Find another person who could help you read the mysterious note.", //new in 1.1.0
+"MysteriousNote3": "Talk to Pei Ming. Don't forget to bring the note with you!", //new in 1.1.0
 
-"GemQuest.title": "The red gem",
-"GemQuest.text": "Krobus mentioned an ancient red gem that exists beyond the bounds of space and time, to be found in the dungeon of serpents and bone.",
-"GemQuest.objective": "Wait for more information.",
+"GemQuest.title": "The red gem", //new in 1.1.0
+"GemQuest.text": "Krobus mentioned an ancient red gem that exists beyond the bounds of space and time, to be found in the dungeon of serpents and bone.", //new in 1.1.0
+"GemQuest.objective": "Wait for more information.", //new in 1.1.0
 
 
 /////SPECIAL ORDER
@@ -911,7 +911,7 @@
 //roommate schedule dialogue (after he moved in)
 "PMRoommate0": "Ah, good morning, @. Do you want to head to the Night Market together later?",
 "PMRoommate1": "I thought it would be nice to have a little drink before heading to the Night Market. Why don't you have some, too?#$b# Don't worry, I'll pay!$1 [(O)873 (O)903 (O)Wildflour.AtelierGoods_Bonfire_Ale (O)Wildflour.AtelierGoods_Snowman_Cream_Ale (O)Wildflour.AtelierGoods_Sunny_Daze_Mead]",//note for translators: do not translate the text in the [] brackets
-"PMRoommate2": "@! You actually came to the Night Market!$1#$e# I am pretty curious about the vendors that have set up shop here.",
+"PMRoommate2": "@! You actually came to the Night Market! $1#$e# I am pretty curious about the vendors that have set up shop here.",
 "PMRoommate3": "So there are even real mermaids, huh? #$e# Perhaps I'll check them out. $3",
 "PMRoommate4": "Ah, so you've decided to hike up the mountain, too? I quite enjoyed myself doing so.$6",
 "PMRoommate5": "A 'witch' lives in here, according to rumors. I sort of want to check out this place.",

@@ -11,7 +11,8 @@
 			"{{ModID}}_PMMountains": "Location/{{i18n:PMMountains.title}}/{{i18n:PMMountains.text}}/{{i18n:PMMountains.objective}}/Mountain/0/0/-1/false",
 			"{{ModID}}_NHMForPM": "ItemDelivery/{{i18n:NHMForPM.title}}/{{i18n:NHMForPM.text}}/{{i18n:NHMForPM.objective}}/{{PeiMing}} void.NorthernHeartMelon_NHMelon 1/0/10000/-1/false/{{i18n:NHMForPM.reaction}}",
             "{{ModID}}_GemQuest": "Basic/{{i18n:GemQuest.title}}/{{i18n:GemQuest.text}}/{{i18n:GemQuest.objective}}/null/0/0/-1/false",
-            "{{ModID}}_MysteriousNote3": "ItemDelivery/{{i18n:MysteriousNote3.title}}/{{i18n:MysteriousNote3.text}}/{{i18n:MysteriousNote3.objective}}/{{PeiMing}} {{ModId}}_MysteriousNote 1/0/10/-1/false/{{i18n:MysteriousNote3.reaction}}"
+            "{{ModID}}_MysteriousNote3": "ItemDelivery/{{i18n:MysteriousNote3.title}}/{{i18n:MysteriousNote3.text}}/{{i18n:MysteriousNote3.objective}}/{{PeiMing}} {{ModId}}_MysteriousNote 1/0/10/-1/false/{{i18n:MysteriousNote3.reaction}}",
+            "{{ModID}}_PMRequestQuest": "Location/Pei Ming and the Note/Pei Ming requested you to go see him to talk about the note you handed him the other day./Go to Pei Ming's house at your earliest convenience./{{ModID}}_PeiMingHouse/0/100/-1/false"
 			
 		}
     },
@@ -44,8 +45,8 @@
                     "ObjectiveInstructions": "{{ModID}}_MysteriousNote2",
                     "CanBeCancelled": false,
                     "Characters": [ "Krobus" ]
-                },
-               /*  "{{ModID}}_MysteriousNote3":
+                }, 
+              /*   "{{ModID}}_MysteriousNote3":
                 {
                     "Id": "{{ModID}}_MysteriousNote3",
                     "Title": "The Mysterious Letter 3",
@@ -64,7 +65,7 @@
           "Entries": {
             "{{ModId}}_MysteriousNote1": "{{i18n:MysteriousNote1}}",
             "{{ModID}}_MysteriousNote2": "{{i18n:MysteriousNote2}}",
-            //"{{ModID}}_MysteriousNote3": "{{i18n:MysteriousNote3}}",
+            "{{ModID}}_MysteriousNote3": "{{i18n:MysteriousNote3}}",
           }
       },
 

@@ -1,14 +1,24 @@
 {
   "Changes": [
 
-  {
+    {
+      "LogName": "Pei Xiu schedule 1",
+    "Action": "EditData",
+    "Target": "characters/schedules/{{PeiXiu}}",
+    "Entries":
+    {
+  "spring": "600 {{ModID}}_GayBabyJail 7 7 0"
+}
+    }, 
+ /*  {
     "LogName": "Pei Xiu Schedule",
     "Action": "EditData",
+    "When": { "" },
     "Target": "characters/schedules/{{PeiXiu}}",
     "Entries":   
 {
   "spring": "0700 Forest 5 27 2/1200 AdventureGuild 7 15 2"
 }
-  }
+  } */
   ]
 }

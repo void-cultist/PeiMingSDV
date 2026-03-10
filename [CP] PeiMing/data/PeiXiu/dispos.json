@@ -1,5 +1,13 @@
 {
   "Changes": [
+
+      {
+            "LogName": "Load gay baby jail waiting room",
+            "Action": "Load",
+            "FromFile": "assets/maps/GayBabyJail.tmx",
+            "Target": "Maps/{{ModID}}_GayBabyJail"
+        },
+        
     { "LogName": "Pei Xiu Dispos",
       "Action": "EditData",
       "Target": "Data/Characters",
@@ -35,7 +43,7 @@
           "Home": [
             {
               "Id": "Default",
-              "Location": "{{ModID}}_PeiMingHouse",
+              "Location": "{{PXHome}}",
               "Tile": {
                 "X": 7,
                 "Y": 7

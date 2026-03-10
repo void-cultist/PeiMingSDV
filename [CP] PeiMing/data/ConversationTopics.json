@@ -140,10 +140,12 @@
 "Action": "EditData",
 "Target": "Characters/Dialogue/Krobus",
 "Entries":{
+	"{{ModID}}_CT_MysteriousNote2": "{{i18n:CT_MysteriousNote2_Krobus}}",
+	"questComplete_{{ModID}}_MysteriousNote1": "{{i18n:CT_MysteriousNote2_Krobus}}",
 	"{{ModID}}_FirstMeeting": "{{i18n:AfterFirstMeeting_Krobus}}",
 	"{{ModID}}_PMKrobusCT": "{{i18n:PMKrobusCT_Krobus}}",
-	"roommates_{{PeiMing}}": "{{i18n:CT_PMRoommate_Krobus}}",
-	"{{ModID}}_CT_MysteriousNote2": "{{i18n:CT_MysteriousNote2_Krobus}}"
+	"roommates_{{PeiMing}}": "{{i18n:CT_PMRoommate_Krobus}}"
+	
 },
 },
 
@@ -250,6 +252,7 @@
 	"Action": "EditData",
 	"Target": "Characters/Dialogue/Wizard",
 	"Entries": {
+		"eventSeen_{{ModID}}_PXEncounter": "{{i18n:CT_MysteriousNote1}}",
 		"{{ModID}}_PMKrobusCT": "{{i18n:PMKrobusCT_Wizard}}",
 		"{{ModID}}_CT_MysteriousNote1": "{{i18n:CT_MysteriousNote1}}"
 	}
@@ -336,9 +339,6 @@
 		"{{ModID}}_UnhelpfulAdvice2": "{{i18n:UnhelpfulAdvice2}} $action addConversationTopic {{ModID}}_UnhelpfulAdvice3 30, RemoveConversationTopic {{ModID}}_UnhelpfulAdvice2 $k",
 		"{{ModID}}_UnhelpfulAdvice3": "%{{i18n:UnhelpfulAdvice3}} $action addConversationTopic {{ModID}}_UnhelpfulAdvice4 10, RemoveConversationTopic {{ModID}}_UnhelpfulAdvice3 $k",
 		"{{ModID}}_PMKrobusCT": "{{i18n:PMKrobusCT_PeiMing}}",
-		"{{ModID}}_CT_MysteriousNote3": "$query PLAYER_HAS_ITEM Current (O){{ModID}}_MysteriousNote#{{i18n:CT_MysteriousNote3}}$action RemoveConversationTopic {{ModID}}_CT_MysteriousNote3 $action RemoveItem (O){{ModID}}_MysteriousNote|{{i18n:CT_MysteriousNote3a}}$action AddConversationTopic {{ModID}}_CT_MysteriousNote3_ForRealThisTime 300",
-		"{{ModID}}_CT_MysteriousNote3_ForRealThisTime": "{{i18n:CT_MysteriousNote3}}$action RemoveConversationTopic {{ModID}}_CT_MysteriousNote3 $action RemoveConversationTopic {{ModID}}_CT_MysteriousNote3_ForRealThisTime $action RemoveItem (O){{ModID}}_MysteriousNote"
-
 
 
 	}
