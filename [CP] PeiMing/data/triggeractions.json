@@ -7,6 +7,8 @@
             "Target": "Data/TriggerActions",
             "Entries": 
 			{  
+
+			////LETTERS
         "{{ModID}}_Wizard_WantingToTalk":
 				{
                     "ID": "{{ModId}}_Wizard_WantingToTalk",
@@ -17,15 +19,6 @@
                     ]
         },
 
-		"{{ModID}}_Add_WizardTalkQuest":
-				{
-						"ID": "{{ModID}}_Add_WizardTalkQuest",
-						"Trigger": "DayEnding",
-						"Condition": "PLAYER_HAS_MAIL Current {{ModId}}_WizardLetter Received", 
-						"Actions": [ 
-						"AddQuest {{ModID}}_TalkWizard"
-									]
-				},
 		"{{ModID}}_Add_ThankYouLetter":
 				{
 						"ID": "{{ModID}}_Add_ThankYouLetter",
@@ -35,8 +28,7 @@
 						"AddMail Current {{ModID}}_PMLibraryThanks tomorrow"
 									]
 				},
-
-		"{{ModID}}_Add_PM3HSaloonLetter": 
+			"{{ModID}}_Add_PM3HSaloonLetter": 
 				{
 					"ID": "{{ModID}}_Add_PM3HSaloonLetter",
 					"Trigger": "DayEnding",
@@ -53,33 +45,6 @@
 					"Condition": "PLAYER_HAS_SEEN_EVENT Host {{ModID}}_PM3HMountains, PLAYER_FRIENDSHIP_POINTS Current {{PeiMing}} 1000",
 					"Actions": [
 						"AddMail Current {{ModID}}_PM4HMountainsLetter tomorrow"
-					]
-				},
-		"{{ModID}}_AddPM4HSaloonQuest":
-				{ 	"ID": "{{ModID}}_AddPM4HSaloonQuest",
-					"Trigger": "DayEnding",
-					"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_PM4HSaloonLetter Received", 
-					"Actions": [ 
-						"AddQuest {{ModID}}_PMSaloon"
-									]
-
-				},
-		"{{ModID}}_AddPM4HMountainQuest":
-				{ 	"ID": "{{ModID}}_AddPM4HMountainQuest",
-					"Trigger": "DayEnding",
-					"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_PM4HMountainsLetter Received", 
-					"Actions": [ 
-						"AddQuest {{ModID}}_PMMountains"
-									]
-
-				},
-		"{{ModID}}_Add_PM7HLetter":
-				{
-					"ID": "{{ModID}}_Add_PM7HLetter",
-					"Trigger": "DayEnding",
-					"Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_PM6H, PLAYER_FRIENDSHIP_POINTS Current {{PeiMing}} 1750, WEATHER here rain",
-					"Actions": [
-						"AddMail Current {{ModID}}_PM7HLetter tomorrow"
 					]
 				},
 		"{{ModID}}_Add_TanghuluInviteLetter":
@@ -118,13 +83,13 @@
 						"AddMail Current {{ModID}}_SleepoverLetter tomorrow",
 					]
 				},
-		"{{ModID}}_RemoveCTUnhelpfulAdvice4":
+		"{{ModID}}_Add_PM7HLetter":
 				{
-					"ID": "{{ModID}}_RemoveCTUnhelpfulAdvice4",
+					"ID": "{{ModID}}_Add_PM7HLetter",
 					"Trigger": "DayEnding",
-					"Condition": "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_Add_ApologyLetter",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_PM6H, PLAYER_FRIENDSHIP_POINTS Current {{PeiMing}} 1750, WEATHER here rain",
 					"Actions": [
-						"RemoveConversationTopic {{ModID}}_UnhelpfulAdvice4"
+						"AddMail Current {{ModID}}_PM7HLetter tomorrow"
 					]
 				},
 		"{{ModID}}_Add_NHMSeedsLetter":
@@ -136,17 +101,7 @@
 						"AddMail Current {{ModID}}_NHMSeedsLetter tomorrow"
 					]
 				},
-		"{{ModID}}_Add_NHMForPMQuest":
-				{
-					"ID": "{{ModID}}_Add_NHMForPMQuest",
-					"Trigger": "DayEnding",
-					"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_NHMSeedsLetter Received", 
-					"Actions": [ 
-						"AddQuest {{ModID}}_NHMForPM"
-									]
-
-				},
-		"{{ModID}}_Add_GlazedHeartMelonLetter":
+	"{{ModID}}_Add_GlazedHeartMelonLetter":
 				{
 					"ID": "{{ModID}}_Add_GlazedHeartMelonLetter",
 					"Trigger": "DayEnding",
@@ -175,6 +130,65 @@
 						"AddMail Current {{ModID}}_LoveTeaLetter tomorrow"
 					]
 				},	
+
+		
+////QUESTS
+		"{{ModID}}_Add_WizardTalkQuest":
+				{
+						"ID": "{{ModID}}_Add_WizardTalkQuest",
+						"Trigger": "DayEnding",
+						"Condition": "PLAYER_HAS_MAIL Current {{ModId}}_WizardLetter Received", 
+						"Actions": [ 
+						"AddQuest {{ModID}}_TalkWizard"
+									]
+				},
+		
+
+	
+		"{{ModID}}_AddPM4HSaloonQuest":
+				{ 	"ID": "{{ModID}}_AddPM4HSaloonQuest",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_PM4HSaloonLetter Received", 
+					"Actions": [ 
+						"AddQuest {{ModID}}_PMSaloon"
+									]
+
+				},
+		"{{ModID}}_AddPM4HMountainQuest":
+				{ 	"ID": "{{ModID}}_AddPM4HMountainQuest",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_PM4HMountainsLetter Received", 
+					"Actions": [ 
+						"AddQuest {{ModID}}_PMMountains"
+									]
+
+				},
+	
+		
+		"{{ModID}}_Add_NHMForPMQuest":
+				{
+					"ID": "{{ModID}}_Add_NHMForPMQuest",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_NHMSeedsLetter Received", 
+					"Actions": [ 
+						"AddQuest {{ModID}}_NHMForPM"
+									]
+
+				},
+		
+			"{{ModID}}_Add_GemQuest":
+			{
+					"ID": "{{ModID}}_Add_GemQuest",
+					"Trigger": "LocationChanged",
+					"Condition": "PLAYER_HAS_SEEN_EVENT {{ModID}}_PM8H",
+					"Actions": [
+						"AddMail Current {{ModID}}_GemQuestFlag now",
+						"AddQuest {{ModID}}_GemQuest"
+					]
+
+			},
+
+
 			"{{ModId}}_Add_MysteriousNote1": 
 				{
                   "Id": "{{ModId}}_Add_MysteriousNote1",
@@ -204,7 +218,40 @@
 					  "RemoveConversationTopic {{ModID}}_CT_MysteriousNote2"
                   ]
               	},
-			"{{ModID}}_Add_CT_MysteriousNote1": 
+			
+			"{{ModID}}_Add_PMRequestLetter":
+			{
+					"Id": "{{ModId}}_Add_PMRequestLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_SEEN_CONVERSATION_TOPIC Current questComplete_{{ModID}}_MysteriousNote3, PLAYER_VISITED_LOCATION Current Caldera",
+					"Actions": [ 
+						"AddMail Current {{ModID}}_PMRequestLetter tomorrow",
+						"RemoveConversationTopic {{ModID}}_CT_MysteriousNote3"
+					]
+				},
+			"{{ModID}}_Add_PMRequestQuest":
+			{
+					"Id": "{{ModId}}_Add_PMRequestQuest",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_PMRequestLetter Received", 
+					"Actions": [ 
+						"AddQuest {{ModID}}_PMRequestQuest"
+					]
+				},
+
+///CT
+
+
+		"{{ModID}}_RemoveCTUnhelpfulAdvice4":
+				{
+					"ID": "{{ModID}}_RemoveCTUnhelpfulAdvice4",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_Add_ApologyLetter",
+					"Actions": [
+						"RemoveConversationTopic {{ModID}}_UnhelpfulAdvice4"
+					]
+				},
+	"{{ModID}}_Add_CT_MysteriousNote1": 
 				{
 					"Id": "{{ModId}}_Add_CT_MysteriousNote1",
 					"Trigger": "DayStarted",
@@ -231,25 +278,19 @@
 						"AddConversationTopic {{ModID}}_CT_MysteriousNote3 300"
 					]
 				},
-			"{{ModID}}_Add_PMRequestLetter":
+
+////Other
+	"{{ModID}}_Remove_GemQuestFlag":
 			{
-					"Id": "{{ModId}}_Add_PMRequestLetter",
-					"Trigger": "DayEnding",
-					"Condition": "PLAYER_SEEN_CONVERSATION_TOPIC Current questComplete_{{ModID}}_MysteriousNote3, PLAYER_VISITED_LOCATION Current Caldera",
-					"Actions": [ 
-						"AddMail Current {{ModID}}_PMRequestLetter tomorrow",
-						"RemoveConversationTopic {{ModID}}_CT_MysteriousNote3"
+					"ID": "{{ModID}}_Remove_GemQuestFlag",
+					"Trigger": "LocationChanged",
+					"Condition": "PLAYER_HAS_CONVERSATION_TOPIC questComplete_{{ModID}}_GemQuest",
+					"Actions": [
+						"RemoveMail Current {{ModID}}_GemQuestFlag now",
 					]
-				},
-			"{{ModID}}_Add_PMRequestQuest":
-			{
-					"Id": "{{ModId}}_Add_PMRequestQuest",
-					"Trigger": "DayEnding",
-					"Condition": "PLAYER_HAS_MAIL Current {{ModID}}_PMRequestLetter Received", 
-					"Actions": [ 
-						"AddQuest {{ModID}}_PMRequestQuest"
-					]
-				},
+
+			},
+			
 
 		//perhaps use quest complete CT to remove old CT? that one only lasts 4 days so hmm
 			

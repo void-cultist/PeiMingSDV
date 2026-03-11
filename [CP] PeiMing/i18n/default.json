@@ -777,7 +777,8 @@
 
 "GemQuest.title": "The red gem", //new in 1.1.0
 "GemQuest.text": "Krobus mentioned an ancient red gem that exists beyond the bounds of space and time, to be found in the dungeon of serpents and bone.", //new in 1.1.0
-"GemQuest.objective": "Wait for more information.", //new in 1.1.0
+"GemQuest.objective": "Find that gem and bring it to Krobus.", //new in 1.1.0
+"GemQuest.reaction": "Could it be...? The gem from the tale really exists?! I will do some research on it. Give me some time to get back to you.", //new in 1.1.0
 
 
 /////SPECIAL ORDER

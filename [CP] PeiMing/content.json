@@ -663,12 +663,7 @@
         	"Target": "Characters/Dialogue/{{PeiMing}}, Characters/schedules/{{PeiMing}}, Strings/schedules/{{PeiMing}}, Strings/StringsFromMaps/{{ModID}}_PeiMingHouse, Strings/StringsFromMaps/{{ModID}}_PeiMingExterior, Strings/StringsFromCSFiles/{{PeiMing}}_EngagedRoommate, Strings/1_6_Strings/{{ModID}}_Renovation_AddCustomRoom, Data/EngagementDialogue/{{PeiMing}}, Characters/Dialogue/MarriageDialogue{{PeiMing}}Roommate, Characters/schedules/{{PeiMing}}Roommate, Data/Events/{{ModID}}_PeiMingHouse, Data/Locations/{{ModID}}_PeiMingNewOutdoors", //Strings/void.peiming
         	"FromFile": "data/blank.json" //this should be wherever you put it in your assets folder - put it in a subfolder if you want
    	 },
-	 {
-		"LogName": "Blank JSON load for Pei Xiu",
-		"Action": "Load",
-		"Target": "Characters/Dialogue/{{PeiXiu}}, Characters/schedules/{{PeiXiu}}",
-		"FromFile": "data/blank.json"
-	 },
+	 
 
 //includes
 {
@@ -676,11 +671,7 @@
    	"Action": "Include",
    	"FromFile": "data/dispos.json"
 },
-{
-	"LogName": "Include Pei Xiu dispos",
-	"Action": "Include",
-	"FromFile": "data/PeiXiu/dispos.json"
-},
+
 { 
 	"LogName": "Gift Tastes Include",
    	"Action": "Include",
@@ -697,11 +688,7 @@
    	"Action": "Include",
 	"FromFile": "data/dialogue.json"
 },
-{
-    "LogName": "Include Pei Xiu Dialogue",
-   	"Action": "Include",
-	"FromFile": "data/PeiXiu/dialogue.json"
-},
+
 {
 	"LogName": "Include map data",
 	"Action": "Include",
@@ -772,11 +759,7 @@
 		"House Location": "SVE, Alternate" },
    	"FromFile": "data/SVE/schedule.json"
 },
-{
-    "LogName": "Pei Xiu  Schedule include",
-   	"Action": "Include",
-   	"FromFile": "data/PeiXiu/schedule.json"
-},
+
 {
 	"LogName": "Include Special Orders",
 	"Action": "Include",
@@ -786,7 +769,7 @@
 
 { 	"LogName": "custom item include",
 	"Action": "Include",
-	"FromFile": "assets/items/items.json" 
+	"FromFile": "Dataems.json" 
 }, 
 
 { 
@@ -844,6 +827,23 @@
 	"LogName": "Include Quests",
 	"Action": "Include",
 	"FromFile": "data/quests.json"
+},
+
+//Pei xiu includes
+{
+    "LogName": "Include Pei Xiu Dialogue",
+   	"Action": "Include",
+	"FromFile": "data/PeiXiu/dialogue.json"
+},
+{
+    "LogName": "Pei Xiu  Schedule include",
+   	"Action": "Include",
+   	"FromFile": "data/PeiXiu/schedule.json"
+},
+{
+	"LogName": "Include Pei Xiu dispos",
+	"Action": "Include",
+	"FromFile": "data/PeiXiu/dispos.json"
 },
 
 	

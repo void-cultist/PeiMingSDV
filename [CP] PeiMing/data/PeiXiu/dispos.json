@@ -62,6 +62,14 @@
     },
     },
 
+  //blank load
+  {
+		"LogName": "Blank JSON load for Pei Xiu",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/{{PeiXiu}}, Characters/schedules/{{PeiXiu}}",
+		"FromFile": "data/blank.json"
+	 },
+
 	//portraits and sprites 
 	{
         	"LogName": "Base Portraits",
