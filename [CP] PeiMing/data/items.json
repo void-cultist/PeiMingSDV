@@ -137,15 +137,15 @@
             "Target": "Data/Objects",
             "Entries": {
                 "{{ModID}}_SpatialGem": {
-                     "Name": "{{ModId}}_MysteriousNote",
+                     "Name": "{{ModId}}_SpatialGem",
                     "Displayname": "Spatial Gem",
                     "Description": "A unique gem that is said to have magical properties.",
-                    "Type": "Quest",
+                    "Type": "Basic",
                     "Category": -2, 
                     "Price": 1,
                     "Texture": "{{ModId}}/objects",
                     "SpriteIndex": 4,
-                    "ContextTags": [ "prevent_loss_on_death", "scroll_item", "crystalarium_banned" ],
+                    "ContextTags": [ "prevent_loss_on_death",  "crystalarium_banned" ],
                     "CanBeGivenAsGift": false,
                     "CanBeTrashed": false,
                     "ExcludeFromRandomSale": true,
@@ -153,7 +153,91 @@
                 }
             }
         },
+        {
+            "LogName": "Add Gold Rose",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModID}}_GoldRose": {
+                     "Name": "{{ModId}}_GoldRose",
+                    "Displayname": "Gold Rose",
+                    "Description": "Is it a rose or is it metal?",
+                    "Type": "Basic",
+                    "Category": -80, 
+                    "Price": 10000,
+                    "Texture": "{{ModId}}/objects",
+                    "SpriteIndex": 2,
+                    "ContextTags": [ "color_gold" ],
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromRandomSale": true,
+
+                }
+            }
+        },
+
+        {
+            "LogName": "Add Gold Rose to universal loves",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Love"],
+                    "Value": "{{ModId}}_GoldRose",
+                    "Delimiter": " " // if there are already values, add a space between them and the new one
+                }
+            ]
+        },
 //add chance to find spatial gem in geodes
+        {
+            "LogName": "Spatial Gem Geode drop chance",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "535", "GeodeDrops" ],
+            "Entries": {
+                "{{ModID}}_SpatialGem":
+                {
+                    "Chance": 0.025,
+                    "Precedence": 0,
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModID}}_GemQuestFlag Received",
+                    "ItemId": "(O){{ModID}}_SpatialGem",
+
+                }
+            }
+        },
+        {
+            "LogName": "Spatial Gem frozen Geode drop chance",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "536", "GeodeDrops" ],
+            "Entries": {
+                "{{ModID}}_SpatialGem":
+                {
+                    "Chance": 0.05,
+                    "Precedence": 0,
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModID}}_GemQuestFlag Received",
+                    "ItemId": "(O){{ModID}}_SpatialGem",
+
+                }
+            }
+        },
+           {
+            "LogName": "Spatial Gem magma Geode drop chance",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "537", "GeodeDrops" ],
+            "Entries": {
+                "{{ModID}}_SpatialGem":
+                {
+                    "Chance": 0.075,
+                    "Precedence": 0,
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModID}}_GemQuestFlag Received",
+                    "ItemId": "(O){{ModID}}_SpatialGem",
+
+                }
+            }
+        },
         {
             "LogName": "Spatial Gem Omni Geode drop chance",
             "Action": "EditData",
@@ -162,14 +246,14 @@
             "Entries": {
                 "{{ModID}}_SpatialGem":
                 {
-                    "Chance": 1.0,
+                    "Chance": 0.1,
                     "Precedence": 0,
                     "Condition": "PLAYER_HAS_MAIL Current {{ModID}}_GemQuestFlag Received",
                     "ItemId": "(O){{ModID}}_SpatialGem",
 
                 }
             }
-        }
+        },
     
 //button wisdom: Set a mail flag at the same time you send the quest, remove the mail flag when you see the questComplete_<id> CT, Use the mail flag to determine if the item drops
 

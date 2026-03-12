@@ -262,10 +262,10 @@
 {
 	"LogName": "Pei Ming 8 Hearts",
 	"Action": "EditData",
-	"When": { "HasFlag": "openedSewer" },
+	"When": { "HasFlag": "OpenedSewer" },
 	"Target": "Data/Events/Sewer",
 	"Entries": {
-		"{{ModID}}_PM8H/Friendship {{PeiMing}} 2000/SawEvent {{ModID}}_PM7H {{ModID}}_PMKrobus/LocalMail {{ModID}}_Placeholder/Time 1900 2600": "{{EventBGM}}/-1000 -1000/farmer 999 999 0 {{PeiMing}} 29 17 1 Wizard 31 16 2 Krobus 32 17 3/skippable/setSkipActions MarkEventSeen current {{ModID}}_PM8H#AddQuest {{ModID}}_GemQuest/addConversationTopic {{ModID}}_PM8HCT/viewport 31 20 clamp true/speed farmer 4/
+		"{{ModID}}_PM8H/Friendship {{PeiMing}} 2000/SawEvent {{ModID}}_PM7H {{ModID}}_PMKrobus/HostOrLocalMail {{ModID}}_KrobusInvitation/Time 1900 2600": "{{EventBGM}}/-1000 -1000/farmer 999 999 0 {{PeiMing}} 29 17 1 Wizard 31 16 2 Krobus 32 17 3/skippable/setSkipActions MarkEventSeen current {{ModID}}_PM8H#AddQuest {{ModID}}_GemQuest/addConversationTopic {{ModID}}_PM8HCT/viewport 31 20 clamp true/speed farmer 4/
 		ichortower.ECC_StreamStart farmerarrives/
 		ichortower.ECC_Pause 1000/
 		warp farmer 16 11/
@@ -312,10 +312,10 @@
 		speak Wizard \"This is why you summoned me as well, Krobus. Interacting with the dwarves is not exactly... easy for you.\" /pause 500/
 		message \"Krobus nods.\" /pause 400/
 		speak Krobus \"This is just a rumor that has been passed around among shadowfolk children but...\" /pause 300/
-		speak Krobus \"We used to sing of an ancient red gem that exists beyond the bounds of space and time, to be found in the dungeon of serpents and bone.\" /pause 500/
+		speak Krobus \"We used to sing of an ancient red gem that exists beyond the bounds of space and time, to be found within the stones of a cave. \" /pause 500/
 		emote {{PeiMing}} 40/pause 500/
 		speak {{PeiMing}} \"So our only lead is an old children's song...\"/pause 500/jump {{PeiMing}} 4/pause 300/
-		speak {{PeiMing}} \"But there is always some old tale hidden in those songs, so I am sure following the lead will take us somewhere!$1 \"/pause 300/
+		speak {{PeiMing}} \"But there is always some old tale hidden in those songs, so I am sure following the lead will take us somewhere! $1 \"/pause 300/
 		faceDirection {{PeiMing}} 2/pause 300/
 		textAboveHead {{PeiMing}} \"Right?\" /pause 1000/
 		emote farmer 32/pause 500/
@@ -333,8 +333,8 @@
 		emote farmer 32/pause 500/
 		emote Krobus 32/pause 500/
 		globalFade/viewport -1000 -1000/
-		message \"Krobus mentioned n ancient red gem that exists beyond the bounds of space and time, to be found in the dungeon of serpents and bone...\" /pause 200/
-		message \"You have a vague idea of where that could be but should await further information.\"/pause 300/removeObject 31 17/addQuest {{ModID}}_GemQuest/end"
+		message \"Krobus mentioned an ancient red gem that exists beyond the bounds of space and time, enclosed within stone...? \" /pause 200/
+		message \" Now what could that mean? \" /pause 300/removeObject 31 17/addQuest {{ModID}}_GemQuest/end"
 	}
 
 },

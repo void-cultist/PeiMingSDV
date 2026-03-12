@@ -769,7 +769,7 @@
 
 { 	"LogName": "custom item include",
 	"Action": "Include",
-	"FromFile": "Dataems.json" 
+	"FromFile": "data/items.json" 
 }, 
 
 { 
@@ -926,6 +926,7 @@
 	"{{ModID}}_PM7HSaloonLetter": "{{i18n:PM7HSaloonLetter.text}}%item quest {{ModID}}_PM7HQuest true%%[#]{{i18n:PM7HSaloonLetter.title}}",
 	"{{ModID}}_TanghuluInvite": "{{i18n:TanghuluInvite.text}}[#]{{i18n:TanghuluInvite.title}}",
 	"{{ModID}}_LoveTeaLetter": "{{i18n:LoveTeaLetter.text}}%item cookingRecipe void.NorthernHeartMelon_LoveTea%%[#]{{i18n:LoveTeaLetter.title}}",
+	"{{ModID}}_KrobusInvitation": "Hello, @. I have some news I would like to talk to you about. Come see me in my usual spot in the sewers between 7 o'clock and midnight. ^ Krobus[#]Sewer Invitation",
 	"{{ModID}}_PMRequestLetter": "Greetings, esteemed @. ^ Would you be so kind and meet me as soon as you can? I promise, there is no dubious activity involved. I wish to talk about the torn note you handed me the other day. ^ - General Ming Guang, Martial God of the North %item quest {{ModID}}_PMRequestQuest true%%[#]The mysterious note.",
 
 

@@ -58,7 +58,7 @@
 					"Actions": [
 						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_CursedSpawnable {{ModID}}_PeiMingNewOutdoors 16,5,2,2"
 					]
-				},	
+				}
 			},
 
 },
@@ -208,14 +208,24 @@
 					]
 				},		
 			 }
-}
+},
+ /* { 
+			"LogName": "Spatial Gem spawn trigger action",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+			"{{ModID}}_Trigger_SpatialGemSpawn":
+				{
+					"ID": "{{ModID}}_Trigger_SpatialGemSpawn",
+					"Trigger": "LocationChanged",
+					"Condition": "LOCATION_IS_SKULL_CAVE Here, PLAYER_HAS_MAIL Current {{ModID}}_GemQuestFlag Received, SYNCED_RANDOM day SpatialGemRandomKey 0.1",
+					"MarkActionApplied": false,
+					"Actions": [
+						"spacechase0.SpaceCore_TriggerSpawnGroup {{ModID}}_SpawnGroup_SpatialGem Target"
+					]
+				},
+			}
+ } */
 		
 	]
 } 
-
-//love super cucumber, banana, eggplant
-//like truffle, truffle oil, wine, caviar, ink , ruby(have to check custom response)
-//dislike pickles
-//neutral
-//hated ancient sword
-//gift taste order: love, like, dislike, hate, neutral

@@ -629,7 +629,51 @@
                     }
 
             }
-        }
-        
+        },
+
+//////////////////SPATIAL GEM SPAWNABLE DURING QUEST
+
+/*  {          "LogName": "Spatial Gem spawnable",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/SpawnableDefinitions",
+            "Entries": {
+                
+                "{{ModID}}_SpawnDef_SpatialGem": {
+                    "Type": "Forageable",
+                    "Condition": "PLAYER_HAS_MAIL Current {{ModID}}_GemQuestFlag Received",
+                    "ForageableItemData": [
+                        {
+                            "Weight": 1.0,
+                            "Value": {
+                                "ItemId": "(O){{ModID}}_SpatialGem"
+                            }
+                        }
+                    ],
+                    "ForageableExperienceGranted": 150
+                }
+            }
+},
+
+{
+    "LogName": "Spatial Gem spawn group",
+    "Target": "spacechase0.SpaceCore/SpawnableDefinitions",
+    "Entries": {
+                "{{ModID}}_SpawnGroup_SpatialGem": {
+                    "SpawnablesToSpawn": [
+                        {
+                            "SpawnableIds": [
+                                {
+                                    "Weight": 1.0,
+                                    "Value": "{{ModID}}_SpawnSpatialGem"
+                                }
+                            ],
+                            "Minimum": 0,
+                            "Maximum": 1,
+                        },
+                    ]
+}
+    }
+}
+     */    
 	]
 } 

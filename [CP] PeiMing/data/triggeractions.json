@@ -130,6 +130,15 @@
 						"AddMail Current {{ModID}}_LoveTeaLetter tomorrow"
 					]
 				},	
+			"{{ModID}}_Add_KrobusInvitationLetter":
+				{
+					"ID": "{{ModID}}_Add_KrobusInvitationLetter",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_SEEN_CONVERSATION_TOPIC Current questComplete_{{ModID}}_MysteriousNote3",
+					"Actions": [
+						"AddMail Current {{ModID}}_KrobusInvitation tomorrow"
+					]
+				},	
 
 		
 ////QUESTS
@@ -180,7 +189,7 @@
 			{
 					"ID": "{{ModID}}_Add_GemQuest",
 					"Trigger": "LocationChanged",
-					"Condition": "PLAYER_HAS_SEEN_EVENT {{ModID}}_PM8H",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_PM8H",
 					"Actions": [
 						"AddMail Current {{ModID}}_GemQuestFlag now",
 						"AddQuest {{ModID}}_GemQuest"
@@ -223,7 +232,7 @@
 			{
 					"Id": "{{ModId}}_Add_PMRequestLetter",
 					"Trigger": "DayEnding",
-					"Condition": "PLAYER_SEEN_CONVERSATION_TOPIC Current questComplete_{{ModID}}_MysteriousNote3, PLAYER_VISITED_LOCATION Current Caldera",
+					"Condition": "PLAYER_SEEN_CONVERSATION_TOPIC Current questComplete_{{ModID}}_GemQuest, PLAYER_VISITED_LOCATION Current Caldera",
 					"Actions": [ 
 						"AddMail Current {{ModID}}_PMRequestLetter tomorrow",
 						"RemoveConversationTopic {{ModID}}_CT_MysteriousNote3"
@@ -284,7 +293,7 @@
 			{
 					"ID": "{{ModID}}_Remove_GemQuestFlag",
 					"Trigger": "LocationChanged",
-					"Condition": "PLAYER_HAS_CONVERSATION_TOPIC questComplete_{{ModID}}_GemQuest",
+					"Condition": "PLAYER_HAS_CONVERSATION_TOPIC Current questComplete_{{ModID}}_GemQuest",
 					"Actions": [
 						"RemoveMail Current {{ModID}}_GemQuestFlag now",
 					]

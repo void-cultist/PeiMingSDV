@@ -487,14 +487,14 @@
 "GiftTastePeiMing.hate": "How dare you-",
 "GiftTastePeiMing.neutral": "I appreciate the gesture but I doubt I have use for this.",
 
-"Peiming_EngagedRoommate": "So you want this God of Love to move in with you? A bold step.#$b# But I like your courage, so let me accept. $1",
+"Peiming_EngagedRoommate": "So you want this God of Love to move in with you? A bold step. #$b# But I like your courage, so let me accept. $1",
 
 
 //Conversation Topics
-"cc_Complete": "I heard you restored the village's Community Center. That is an impressive feat, @.#$b# Where I am from, this would have been reason enough for you to ascend to Godhood!$1",
-"cc_Bus": "I heard the object called 'bus' has been restored. What exactly is a bus? Do you ride it into war? It looks unsettling, to say the least.#$b# Like a very, very strange horse.$7",
+"cc_Complete": "I heard you restored the village's Community Center. That is an impressive feat, @.#$b# Where I am from, this would have been reason enough for you to ascend to Godhood! $1",
+"cc_Bus": "I heard the object called 'bus' has been restored. What exactly is a bus? Do you ride it into war? It looks unsettling, to say the least.#$b# Like a very, very strange horse. $7",
 "ElliottGone5": "Elliott has been gone for quite a while. I miss listening to him go and on on about his struggles as a storywriter.",
-"gotPet": "Oh, so you have adopted a pet!$1#$b# $y 'What kind of pet did you get?_A cat! Meow!_Oh, a cat. I am personally more of a dog person, but you could say that I like cat...$6#$b#...boys! Hoho!$9_A dog, woof._How lovely. When I was a young boy, my father took me into the city...#$b#...and I adopted a dog there. The pup has been the most loyal being I have ever encountered but I had to leave her behind after I joined the army.'",
+"gotPet": "Oh, so you have adopted a pet! $1 #$b# $y 'What kind of pet did you get?_A cat! Meow!_Oh, a cat. I am personally more of a dog person, but you could say that I like cat... $6#$b# ...boys! Hoho! $9_A dog, woof._How lovely. When I was a young boy, my father took me into the city... #$b# ...and I adopted a dog there. The pup has been the most loyal being I have ever encountered but I had to leave her behind after I joined the army.'",
 "married": "So you decided to walk the path of wedlock? Personally, that is something I do not wish for. I am a free spirit, after all. #$b# But as the God of Love, I do wish you all the best. You have my blessing, so to speak. $6",
 "married_twice": "Oh, you married again? Is polygamy common here? No? Oh, you got divorced the first time around? I see.",
 "divorced_twice": "Divorced again? Huh. #$b# Maybe third time's the charm then, hohoho! $9",
@@ -503,7 +503,7 @@
 "cropMatured_void.NorthernHeartMelon_NHMelon": "I can't believe it! You really managed to cultivate a Northern Heart Melon?$8#$b# I never thought it would be possible...",
 "dating_Elliott": "You have commenced a romantic relationship with Elliott? While those are not the kind of relationships I personally understand, I wish for your love to prosper. #$e# I AM the God of Love, after all.$3",
 "movieTheater": "I heard a movie theater has been built in the village. So what exactly is it? Is it like watching stage plays?",
-"SterlingTrash": "This Sterling guy vomited into the trashcan. Disgusting and undisciplined.$7",
+"SterlingTrash": "This Sterling guy vomited into the trashcan. Disgusting and undisciplined. $7",
 "SterlingDrugs": "Sterling has asked me for substances he could abuse. Hah, if only I had access to the Ghost City from here, I'd give him some and he would hopefully learn his lesson. $7",
 "JunaSign": "I did read the writing on the sign. Juna certainly is... interesting.",
 "JasperGone2": "I noticed that Jasper hasn't been around. Is he alright? I would hate for an entertaining man such as him to disappear.",
@@ -514,8 +514,8 @@
 "joja_Complete": "You spent a big sum of your money for the Community Development Program, but I have to wonder... #$b# Why were you the only one donating at all?",
 "Vinilla.Honeyfuggle_Arrival": "I can't particularly say I am fond of people hiding their identities behind a mask but this newcomer seems interesting. I wonder where they are from.",
 "UnhelpfulAdvice": "I don't want to talk to you. $2 ",
-"UnhelpfulAdvice2": "@, I mean it. I neither wish to see nor talk to you. Stop being clingy.$7",
-"UnhelpfulAdvice3": "%Pei Ming heaves out an exasperated sigh. #$e# This can't go on like this.$5",
+"UnhelpfulAdvice2": "@, I mean it. I neither wish to see nor talk to you. Stop being clingy. $7",
+"UnhelpfulAdvice3": "%Pei Ming heaves out an exasperated sigh. #$e# This can't go on like this. $5",
 
 "AfterFirstMeeting_Abigail": "Have you heard those weird noises from the forest? There was a WOOOOSH and a BOOOOM!$1#$b# I checked and suddenly found a new house there! This is so exciting!$1",
 "AfterFirstMeeting_Alex": "I heard a new house appeared in the forest all of a sudden. Do you think the person who lives in there is working out?",
@@ -529,14 +529,14 @@
 "AfterFirstMeeting_Gus": "No matter where this new person claiming to be a god is from, if they need food and drink, they will always be welcome in my saloon. #$b# This place is for everyone and we don't discriminate between gods and humans! Hahaha! $1",
 "AfterFirstMeeting_Haley": "Ugh, Emily is all worked up over this 'god' or whatever.$3#$b#$y 'But if he actually is a god... do you think he looks good?_Yes, very!_Ha, then I might check him out!$1_No, he wasn't my type._Huh, really? Here I thought this was my chance.'",
 "AfterFirstMeeting_Harvey": "A stranger claiming to be a god? #$b# Oh dear, perhaps you should send him to my clinic for a check-up.$8",
-"AfterFirstMeeting_Jas": "I saw a man and a house fall from the sky! It was so scary...$2",
-"AfterFirstMeeting_Krobus": "Hm, you think a deity accidentally showing up in the valley is strange?$1#$b# I wouldn't say so.$7",
+"AfterFirstMeeting_Jas": "I saw a man and a house fall from the sky! It was so scary... $2",
+"AfterFirstMeeting_Krobus": "Hm, you think a deity accidentally showing up in the valley is strange?$1#$b# I wouldn't say so. $7",
 "AfterFirstMeeting_Leah": "A lot of people here believe in Yoba. I don't really believe this newcomer is a god, but if he turns out to be, I would like to sculpt a statue of him.#$b# Just like people used to in old times!$1",
 "AfterFirstMeeting_Leo": "A man fell from the sky? Did he have an accident?",
 "AfterFirstMeeting_Lewis": "This newcomer in the Forest sounds like trouble. I will keep an eye on the situation.$2",
 "AfterFirstMeeting_Linus": "You say a disoriented man appeared in the forest? Perhaps I will check on him later. I still have some fresh fruit in my tent.",
 "AfterFirstMeeting_Marnie": "My poor cows got so startled from that noise! It took a while to calm them down. $3",
-"AfterFirstMeeting_Maru": "I wonder what the recent developments in the forest mean for science and research. @, will you help me find out?$1",
+"AfterFirstMeeting_Maru": "I wonder what the recent developments in the forest mean for science and research. @, will you help me find out? $1",
 "AfterFirstMeeting_Penny": "%Penny seems to be too shocked to talk to you.",
 "AfterFirstMeeting_Pierre": "Great. Yet another occurrence Abigail can be weird about.$2",
 "AfterFirstMeeting_Sam":"Finally, something interesting happening here. Do you reckon this sky guy likes to make music?",
@@ -776,7 +776,7 @@
 "MysteriousNote3": "Talk to Pei Ming. Don't forget to bring the note with you!", //new in 1.1.0
 
 "GemQuest.title": "The red gem", //new in 1.1.0
-"GemQuest.text": "Krobus mentioned an ancient red gem that exists beyond the bounds of space and time, to be found in the dungeon of serpents and bone.", //new in 1.1.0
+"GemQuest.text": "Krobus mentioned an ancient red gem that exists beyond the bounds of space and time, to be found in caverns.", //new in 1.1.0
 "GemQuest.objective": "Find that gem and bring it to Krobus.", //new in 1.1.0
 "GemQuest.reaction": "Could it be...? The gem from the tale really exists?! I will do some research on it. Give me some time to get back to you.", //new in 1.1.0
 
