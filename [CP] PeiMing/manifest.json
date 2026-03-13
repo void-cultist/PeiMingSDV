@@ -1,7 +1,7 @@
 {
   "Name": "NPC Pei Ming",
   "Author": "voidcultist",
-  "Version": "1.0.4",
+  "Version": "1.1.0",
   "Description": "Adds the ancient deity Pei Ming to your valley.",
   "UniqueID": "void.peiming",
   "UpdateKeys": [ "Nexus:39402", "GitHub:void-cultist/PeiMingSDV" ],

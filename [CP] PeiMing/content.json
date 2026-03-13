@@ -25,7 +25,7 @@
 			"Name": "PXDisplayName",
 			"Value": "Pei Xiu",
 			"When": {
-				"HasSeenEvent: |contains={{ModID}}_PeiXiuEncounter": true
+				"HasSeenEvent: |contains={{ModID}}_PMRequest": true
 			}
 		},
 
@@ -502,7 +502,7 @@
 	{	
 	"Name": "PM4HLocation",
 	"Value": "Mountain",
-	"When": { "HasSeenEvent: |contains={{ModID}}_PM3HMountains": true }
+	"When": { "HasSeenEvent: currentPlayer": "{{ModID}}_PM3HMountains" }
 	},
 	{
 	"Name": "PM4HLocation",
@@ -512,14 +512,14 @@
 		"Name": "5HTriggerCondition",
 		"Value": "PM4HSaloon",
 		"When": {
-			"HasSeenEvent: |contains={{ModID}}_PM4HSaloon": true
+			"HasSeenEvent: currentPlayer": "{{ModID}}_PM4HSaloon"
 		}
 	},
 	{
 		"Name": "5HTriggerCondition",
 		"Value": "PM4HMountain",
 		"When": {
-			"HasSeenEvent: |contains={{ModID}}_PM4HMountain": true
+			"HasSeenEvent: currentPlayer": "{{ModID}}_PM4HMountain"
 		}	
 	},
 
@@ -579,15 +579,31 @@
 		"Value": "{{ModId}}_darkly"
 	},
 
-	//Pei Xiu home
+	//Pei Xiu 
 	{
 		"Name": "PXHome",
 		"Value": "{{ModID}}_GayBabyJail"
 	},
+	{
+		"Name": "PXHome",
+		"Value": "Desert",
+		"When": { "HasSeenEvent: anyPlayer": "{{ModID}}_PXDwarf" }
+	},
 	/* {
 		"Name": "PXHome",
 		"Value": "{{ModID}}_PeiMingHouse",
-		"When": 
+		"When": { "SeenEvent": "PM9H" }
+	}, */
+
+	{
+		"Name": "Gifts",
+		"Value": false
+	},
+
+	/* {
+		"Name": "Gifts",
+		"Value": true,
+		"When": { "HasSeenEvent: |contains={{ModID}}_PM9H": true  }
 	}, */
 	
 		
@@ -794,14 +810,14 @@
 	"FromFile": "data/spawnables/spawnables_triggeractions.json"
 },
 
-{ 
+/* { 
 	"LogName": "Include Companionship ceremony (Event)",
 	"Action": "Include",
 	"When":  {
 	"Partnership":"Platonic Partnership"
 			},
 	"FromFile": "data/PlatonicPartnership/ceremony.json"
-},
+}, */
 {
    	"LogName": "Festival Include SVE",
    	"Action": "Include",
@@ -827,6 +843,12 @@
 	"LogName": "Include Quests",
 	"Action": "Include",
 	"FromFile": "data/quests.json"
+},
+{
+	"LogName": "Include merchant compat",
+	"Action": "Include",
+	"When": { "HasMod: |contains=mushymato.Merchant": true },
+	"FromFile": "data/Compat/Merchant/customer.json"
 },
 
 //Pei xiu includes
@@ -926,9 +948,8 @@
 	"{{ModID}}_PM7HSaloonLetter": "{{i18n:PM7HSaloonLetter.text}}%item quest {{ModID}}_PM7HQuest true%%[#]{{i18n:PM7HSaloonLetter.title}}",
 	"{{ModID}}_TanghuluInvite": "{{i18n:TanghuluInvite.text}}[#]{{i18n:TanghuluInvite.title}}",
 	"{{ModID}}_LoveTeaLetter": "{{i18n:LoveTeaLetter.text}}%item cookingRecipe void.NorthernHeartMelon_LoveTea%%[#]{{i18n:LoveTeaLetter.title}}",
-	"{{ModID}}_KrobusInvitation": "Hello, @. I have some news I would like to talk to you about. Come see me in my usual spot in the sewers between 7 o'clock and midnight. ^ Krobus[#]Sewer Invitation",
-	"{{ModID}}_PMRequestLetter": "Greetings, esteemed @. ^ Would you be so kind and meet me as soon as you can? I promise, there is no dubious activity involved. I wish to talk about the torn note you handed me the other day. ^ - General Ming Guang, Martial God of the North %item quest {{ModID}}_PMRequestQuest true%%[#]The mysterious note.",
-
+	"{{ModID}}_KrobusInvitation": "{{i18n:KrobusInvitation.text}}[#]{{i18n:KrobusInvitation.title}}",
+	"{{ModID}}_PMRequestLetter": "{{i18n:PMRequestLetter.text}} %item quest {{ModID}}_PMRequestQuest true%%[#]{{i18n:PMRequestLetter.title}}",
 
 }},
 

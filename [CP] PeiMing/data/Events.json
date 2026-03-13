@@ -272,8 +272,8 @@
 		ichortower.ECC_ActorPathTo farmer 31 19 0 wait/
 		ichortower.ECC_StreamEnd/
 
-		speak Krobus \"Thank you, everyone, for coming here at my invitation.\"/pause 300/
-		emote {{PeiMing}} 40/pause 500/speak {{PeiMing}} \"It is quite late. You better have a good reason, seeing as Beardo over there came as well.\"/pause 100/
+		speak Krobus \"{{i18n:PM8H.0}}\"/pause 300/
+		emote {{PeiMing}} 40/pause 500/speak {{PeiMing}} \"{{i18n:PM8H.1}}\"/pause 100/
 		beginSimultaneousCommand/emote Krobus 28/emote Wizard 28/endSimultaneousCommand/
 
 		
@@ -294,47 +294,50 @@
 		ichortower.ECC_Pause 1000/
 
 	
-		speak Krobus \"There you are, @. $h I was just about to begin.\" /pause 300/
+		speak Krobus \"{{i18n:PM8H.2}}\" /pause 300/
 		emote farmer 32/pause 500/
 		beginSimultaneousCommand/
+
 		ichortower.ECC_FaceDirection {{PeiMing}} 1 100/
 		ichortower.ECC_FaceDirection Krobus 3 100/
 		endSimultaneousCommand/
+		
 		pause 300/
 		addObject  31 17 {{ModId}}_MysteriousNote 0/
-		speak Krobus \"Pei Ming has managed to decipher this letter and asked me if I could make sense of it.#$b# Well, I sort of could.\"/
+		speak Krobus \"{{i18n:PM8H.3}}\"/
 		emote farmer 16/pause 500/
-		speak {{PeiMing}} \"Oho! Now you have my attention.\" /pause 300/
-		speak Krobus \"I did not understand everything it was talking about.\" /pause 300/
-		speak {{PeiMing}} \"It did mention dwarven technology and a red gem, right? #$b# And that the dwarves allegedly managed to open the ability to communicate through time and space.\" /pause 1000/
+		speak {{PeiMing}} \"{{i18n:PM8H.4}}\" /pause 300/
+		speak Krobus \"{{i18n:PM8H.5}}\" /pause 300/
+		speak {{PeiMing}} \"{{i18n:PM8H.6}}\" /pause 1000/
 		emote Wizard 40/pause 500/
-		textAboveHead Wizard \"I see.\" /pause 1000/
-		speak Wizard \"This is why you summoned me as well, Krobus. Interacting with the dwarves is not exactly... easy for you.\" /pause 500/
-		message \"Krobus nods.\" /pause 400/
-		speak Krobus \"This is just a rumor that has been passed around among shadowfolk children but...\" /pause 300/
-		speak Krobus \"We used to sing of an ancient red gem that exists beyond the bounds of space and time, to be found within the stones of a cave. \" /pause 500/
+		textAboveHead Wizard \"{{i18n:PM8H.7}}\" /pause 1000/
+		speak Wizard \"{{i18n:PM8H.8}}\" /pause 500/
+		message \"{{i18n:PM8H.9}}\" /pause 400/
+		speak Krobus \"{{i18n:PM8H.10}}\" /pause 300/
+		speak Krobus \"{{i18n:PM8H.11}}\" /pause 500/
 		emote {{PeiMing}} 40/pause 500/
-		speak {{PeiMing}} \"So our only lead is an old children's song...\"/pause 500/jump {{PeiMing}} 4/pause 300/
-		speak {{PeiMing}} \"But there is always some old tale hidden in those songs, so I am sure following the lead will take us somewhere! $1 \"/pause 300/
+		speak {{PeiMing}} \"{{i18n:PM8H.12}}\"/pause 500/jump {{PeiMing}} 4/pause 300/
+		speak {{PeiMing}} \"{{i18n:PM8H.13}}\"/pause 300/
 		faceDirection {{PeiMing}} 2/pause 300/
-		textAboveHead {{PeiMing}} \"Right?\" /pause 1000/
+		textAboveHead {{PeiMing}} \"{{i18n:PM8H.14}}\" /pause 1000/
 		emote farmer 32/pause 500/
-		speak Wizard \"Interesting.#$b# And I shall converse with the local Dwarf to find out whether or not he holds knowledge in regards to the contents of this letter.\" /pause 500/
-		textAboveHead Krobus \"Yes, please.\" /pause 1000/
-		textAboveHead Wizard \"I shall see it done soon.\" /pause 1000/
-		textAboveHead Wizard \"You will hear from me soon.\" /pause 1000/
+		speak Wizard \"{{i18n:PM8H.15}}\" /pause 500/
+		textAboveHead Krobus \"{{i18n:PM8H.16}}\" /pause 1000/
+		textAboveHead Wizard \"{{i18n:PM8H.17}}\" /pause 1000/
+		textAboveHead Wizard \"{{i18n:PM8H.18}}\" /pause 1000/
 		showFrame Wizard 16/pause 600/
 		beginSimultaneousCommand/
 		glow 153 153 204/
 		playSound wand/
 		warp Wizard 1000 1000/
 		endSimultaneousCommand/pause 500/
-		speak {{PeiMing}} \"Finally, something to work with.#$b# @, let's see what else we can figure out and meet again soon.\" /pause 300/
+		speak {{PeiMing}} \"{{i18n:PM8H.19}}\" /pause 300/
 		emote farmer 32/pause 500/
 		emote Krobus 32/pause 500/
 		globalFade/viewport -1000 -1000/
-		message \"Krobus mentioned an ancient red gem that exists beyond the bounds of space and time, enclosed within stone...? \" /pause 200/
-		message \" Now what could that mean? \" /pause 300/removeObject 31 17/addQuest {{ModID}}_GemQuest/end"
+		message \"{{i18n:PM8H.20}}\" /pause 200/
+		message \"{{i18n:PM8H.21}}\" /pause 300/removeObject 31 17/addQuest {{ModID}}_GemQuest/end"
+
 	}
 
 },
@@ -586,16 +589,18 @@
 	"Action": "EditData",
 	"Target": "Data/Events/{{ModID}}_PeiMingHouse",
 	"Entries": {
-		"{{ModID}}_PMRequest/LocalMail {{ModID}}_PMRequestLetter": "{{MelancholyBGM}}/-1000 -1000/farmer 5 10 0 {{PeiMing}} 12 5 3/skippable/setSkipActions MarkEventSeen current {{ModID}}_PMRequest/viewport 5 6 clamp true/pause 300/
+		"{{ModID}}_PMRequest/HostOrLocalMail {{ModID}}_PMRequestLetter": "{{MelancholyBGM}}/-1000 -1000/farmer 5 10 0 {{PeiMing}} 12 5 3/skippable/setSkipActions MarkEventSeen current {{ModID}}_PMRequest/viewport 5 6 clamp true/pause 300/
 		emote {{PeiMing}} 16/pause 500/
-		speak {{PeiMing}} \"Ah, there you are.\" /pause 500/
+		speak {{PeiMing}} \"{{i18n:PMRequest.0}}\" /pause 500/
+
 		ichortower.ECC_ActorPathTo farmer 10 5 1/pause 500/
-		speak {{PeiMing}} \"Thank you for coming. I will make it short this time.\"/pause 300/
-		speak {{PeiMing}} \"The volcano on Ginger Island. This is where we will have to go.\" /
+
+		speak {{PeiMing}} \"{{i18n:PMRequest.1}}\"/pause 300/
+		speak {{PeiMing}} \"{{i18n:PMRequest.2}}\" /
 		emote farmer 16/pause 500/
-		speak {{PeiMing}} \"And the note, well... the handwriting is my descendant's.\" /pause 300/
+		speak {{PeiMing}} \"{{i18n:PMRequest.3}}\" /pause 300/
 		jump farmer 5/
-		globalFade/viewport -1000 -1000/end"
+		globalFade/viewport -1000 -1000/end warpOut"
 
 	}
 

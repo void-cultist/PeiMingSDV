@@ -5,6 +5,7 @@
       "Action": "EditData",
       "Target": "Characters/Dialogue/{{PeiXiu}}",
       "Entries": {
+        "Desert_7_7": "{{i18n: desert.{{Random: {{Range:0,4}} }} }}",
         "spring_Mon": "{{i18n:peixiu.Spring.Mon}}",
         "spring_Tue": "{{i18n:peixiu.Spring.Tue}}",
         "spring_Wed": "{{i18n:peixiu.Spring.Wed}}",

@@ -1,0 +1,14 @@
+{
+"Haggle_AskA": "Oho, is that a {0} I spot? This venerable one offers you {1}$ in exchange for it. $h",
+"Haggle_CompromiseA": "{1}$? Really, @? Surely we can agree on a more reasonable price.",
+"Haggle_OverpricedA": "Are you assuming that I am willing to pay anything based on the fact that I am a deity? Be smarter than that, @.",
+"Haggle_SuccessA": "Now we are talking! {1}$, coming right up. {0} is something I have always had my eyes on.",
+"Haggle_FailA": "Isn't it sad? Well, not for me, I saved some money instead of spending it. #$b# But you didn't make any, hoho! $9",
+
+"Haggle_AskB": "This {0} seems truly befitting of a god like myself. I am willing to pay {1}$. What do you say?",
+"Haggle_CompromiseB": "Now, now, why don't we negotiate?",
+"Haggle_OverpricedB": "Your avarice reminds me of a dear friend, except that he was at least funny. #$b# I am not willing to pay {1}$ for your wares.",
+"Haggle_SuccessB": "A most favorable outcome. Any plans with the {1}$ you got for this {0}?",
+"Haggle_FailB": "At second glance, this {1} does not seem befitting of me after all."
+
+}

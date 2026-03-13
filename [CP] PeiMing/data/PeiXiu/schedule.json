@@ -10,6 +10,17 @@
   "spring": "600 {{ModID}}_GayBabyJail 7 7 0"
 }
     }, 
+
+     {
+      "LogName": "Pei Xiu schedule 2",
+    "Action": "EditData",
+       "When": { "HasSeenEvent: anyPlayer": "{{ModID}}_PXDwarf" },
+    "Target": "characters/schedules/{{PeiXiu}}",
+    "Entries":
+    {
+  "spring": "600 Desert 7 7 0/1800 Desert 7 7 0 {{PeiXiu}}_meditate"
+}
+    }, 
  /*  {
     "LogName": "Pei Xiu Schedule",
     "Action": "EditData",

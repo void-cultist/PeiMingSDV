@@ -1,0 +1,31 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Changes": [
+    {
+    
+    "LogName": "Merchant Customer Dialogue",
+      "Action": "EditData",
+      "Target": "mushymato.Merchant/Customers",
+      "TargetField": [
+        "{{PeiMing}}",
+        "Dialogue"
+      ],
+      "Entries": {
+        "{{ModId}}_Haggle_A": {
+          "Haggle_Ask": "{{i18n:Haggle_AskA}}",
+          "Haggle_Compromise": "{{i18n:Haggle_CompromiseA}}",
+          "Haggle_Overpriced": "{{i18n:Haggle_OverpricedA}}",
+          "Haggle_Success": "{{i18n:Haggle_SuccessA}}",
+          "Haggle_Fail": "{{i18n:Haggle_FailA}}",
+        },
+        "{{ModId}}_Haggle_B": {
+         "Haggle_Ask": "{{i18n:Haggle_AskB}}",
+        "Haggle_Compromise": "{{i18n:Haggle_CompromiseB}}",
+        "Haggle_Overpriced": "{{i18n:Haggle_OverpricedB}}",
+        "Haggle_Success": "{{i18n:Haggle_SuccessB}}",
+        "Haggle_Fail": "{{i18n:Haggle_FailB}}",
+                }
+      }
+    }
+  ]
+}

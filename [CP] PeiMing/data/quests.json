@@ -12,7 +12,7 @@
 			"{{ModID}}_NHMForPM": "ItemDelivery/{{i18n:NHMForPM.title}}/{{i18n:NHMForPM.text}}/{{i18n:NHMForPM.objective}}/{{PeiMing}} void.NorthernHeartMelon_NHMelon 1/0/10000/-1/false/{{i18n:NHMForPM.reaction}}",
             "{{ModID}}_GemQuest": "ItemDelivery/{{i18n:GemQuest.title}}/{{i18n:GemQuest.text}}/{{i18n:GemQuest.objective}}/Krobus {{ModID}}_SpatialGem/0/0/-1/false/{{i18n:GemQuest.reaction}}",
             "{{ModID}}_MysteriousNote3": "ItemDelivery/{{i18n:MysteriousNote3.title}}/{{i18n:MysteriousNote3.text}}/{{i18n:MysteriousNote3.objective}}/{{PeiMing}} {{ModId}}_MysteriousNote 1/0/10/-1/false/{{i18n:MysteriousNote3.reaction}}",
-            "{{ModID}}_PMRequestQuest": "Location/Pei Ming and the Note/Pei Ming requested you to go see him to talk about the note you handed him the other day./Go to Pei Ming's house at your earliest convenience./{{ModID}}_PeiMingHouse/0/100/-1/false"
+            "{{ModID}}_PMRequestQuest": "Location/{{i18n:PMRequestQuest.title}}/{{i18n:PMRequestQuest.text}}/{{i18n:PMRequestQuest.objective}}/{{ModID}}_PeiMingHouse/0/100/-1/false"
 			
 		}
     },

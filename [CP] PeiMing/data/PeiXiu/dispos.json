@@ -31,9 +31,9 @@
           "SocialTab": "UnknownUntilMet",
           "UnlockConditions": "PLAYER_HAS_SEEN_EVENT current {{ModID}}_PXDwarf",
           "SpawnIfMissing": true,
-          "CanSocialize": false,
-          "CanReceiveGifts": true,
-          "CanGreetNearbyCharacters": true,
+          "CanSocialize": true,
+          "CanReceiveGifts": "{{Gifts}}",
+          "CanGreetNearbyCharacters": false,
           "CanCommentOnPurchasedShopItems": false,
           "CanVisitIsland": false,
           "IntroductionsQuest": false,
@@ -84,6 +84,18 @@
         	"Target": "Characters/{{PeiXiu}}",
         	"FromFile": "assets/Characters/PeiXiu.png"
    	 },
+
+
+//animations
+{
+            "LogName": "PeiXiu Animations",
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries":
+            {
+                "{{PeiXiu}}_meditate": "17/17 17 17/17",
+			}
+		},
   
 //gift tastes so CT work
     {

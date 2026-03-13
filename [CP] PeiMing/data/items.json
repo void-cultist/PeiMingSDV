@@ -198,8 +198,8 @@
             "Entries": {
                 "{{ModID}}_SpatialGem":
                 {
-                    "Chance": 0.025,
-                    "Precedence": 0,
+                    "Chance": 0.1,
+                    "Precedence": -1,
                     "Condition": "PLAYER_HAS_MAIL Current {{ModID}}_GemQuestFlag Received",
                     "ItemId": "(O){{ModID}}_SpatialGem",
 
@@ -214,8 +214,8 @@
             "Entries": {
                 "{{ModID}}_SpatialGem":
                 {
-                    "Chance": 0.05,
-                    "Precedence": 0,
+                    "Chance": 0.15,
+                    "Precedence": -1,
                     "Condition": "PLAYER_HAS_MAIL Current {{ModID}}_GemQuestFlag Received",
                     "ItemId": "(O){{ModID}}_SpatialGem",
 
@@ -230,8 +230,8 @@
             "Entries": {
                 "{{ModID}}_SpatialGem":
                 {
-                    "Chance": 0.075,
-                    "Precedence": 0,
+                    "Chance": 0.2,
+                    "Precedence": -1,
                     "Condition": "PLAYER_HAS_MAIL Current {{ModID}}_GemQuestFlag Received",
                     "ItemId": "(O){{ModID}}_SpatialGem",
 
@@ -246,8 +246,8 @@
             "Entries": {
                 "{{ModID}}_SpatialGem":
                 {
-                    "Chance": 0.1,
-                    "Precedence": 0,
+                    "Chance": 0.25,
+                    "Precedence": -1,
                     "Condition": "PLAYER_HAS_MAIL Current {{ModID}}_GemQuestFlag Received",
                     "ItemId": "(O){{ModID}}_SpatialGem",
 

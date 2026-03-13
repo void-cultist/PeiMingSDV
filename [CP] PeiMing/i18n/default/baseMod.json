@@ -1,0 +1,1041 @@
+
+{
+//EVENTS
+//First Meeting
+"FirstMeeting.0": "Where...?",
+"FirstMeeting.1": "You!",
+"FirstMeeting.2": "What is the meaning of this? Where are we?!",
+"FirstMeeting.3": "Stardew Valley? Pelican Town?#$b#I have never heard of these places before!$8#$b# Are you trying to make a fool of this martial god?!$5",
+"FirstMeeting.4": "You claim to not know me, General Ming Guang, Martial God of the North and God of Love?!$5#$b# .........................................................$2#$b# I suppose this truly isn't the Heavens or the Mortal Realm as I know it.$2",
+"FirstMeeting.5": "Well, to be honest, the last thing I remember is descending from the Heavens to the Mortal Realm.$7#$b# I was to have a meeting with a beautiful lady, if you get what I mean.$3",
+"FirstMeeting.6": "But instead of landing in the ice cold capital of the North, I ended up in this place.#$b# And somehow, this house here showed up at the same time.",
+"FirstMeeting.7": "Strange...",
+"FirstMeeting.8": "This requires further investigation. If you'll excuse me.$7",
+"FirstMeeting.9": "What a strange person. Is he really a god? His clothes seemed out of place and the way he speaks was just as weird. Maybe I will find out the truth behind this. This valley is magical, after all.",
+//Wizard talking to Farmer about Pei Ming
+"WizardAboutPM.0": "Ah, @. It seems you have received my letter. Come on in.",
+"WizardAboutPM.1": "It's about this new person that has emerged in the valley. I need to explain one or two things, since people are panicking.#$b#And you are attuned to magic, so you are the only one here who might be able to comprehend.#$b# Feel free to ask any questions you might have.",
+
+"LoopingWizardQuestion.0": "Here is what I'd like to know...",
+"LoopingWizardQuestion.1": "Can Pei Ming really be a God or is he just... y'know...?",
+"LoopingWizardQuestion.2": "How did Pei Ming end up here then?",
+"LoopingWizardQuestion.3": "I think I understand. Thanks.",
+
+"WizAnswer1.0": "Ha! I see why you might think he is a little deluded.$2#$b# The people in Stardew Valley believe in Yoba, people in other places believe in other Gods. Are they real or not? We do not know. #$b# But their existence is not out of the realm of the possible. Maybe some Gods DO exist. #$b# I can detect an enormous amount of mana ever since Pei Ming showed up, so while I have nothing to confirm his alleged Godhood, I have even less to deny it.$2",
+
+"WizAnswer2.0": "Very perceptive of you to ask.#$b# I have spoken to Pei Ming before. And my best guess is that somehow, he has become victim of a space-time distortion.#$b# He hails from a far away time from an even farther away place. It is no surprise that he is confused.#$b# Even more interesting is that his language is being automatically translated to ours... there are so many mysteries to this occurrence.#$b# The last time I met an accidental time traveller has been about a century ago, but I forgot what happened to them.",
+
+"WizAnswer3.0": "Perfect. If there is anyone who is capable of befriending such a unique individual, I suppose it is you, @. Give it a try.",
+
+//Haley's Question
+"PMHaley.0": "Please wait!",
+"PMHaley.1": "Yes? What is it, young lady?",
+"PMHaley.2": "You are... a God of Love, right? That's what you tell everyone, at least. $4",
+"PMHaley.3": "Ohoho!$9#$b# Indeed I am. Why do you ask?",
+"PMHaley.4": "Well...",
+"PMHaley.5": "I need your advice then!",
+"PMHaley.6": "Yes...?",
+"PMHaley.7": "What should I do to find my true love?!$2",
+"PMHaley.8": "..........",
+"PMHaley.9": "Ahem...",
+"PMHaley.10": "Aha!",
+"PMHaley.11": "There is one important rule!",
+"PMHaley.12": "DON'T!",
+"PMHaley.13": "FORCE!",
+"PMHaley.14": "IT!",
+"PMHaley.15": "Wow! I haven't thought about it like that yet!$8",
+"PMHaley.16": "Hoho! See, love is not something that is forced. People will come to love you with time and care!",
+"PMHaley.17": "You're so right, actually! You truly are a god of love!$8",
+"PMHaley.18": "Thank you! I will stop looking for my true love then and let it happen when it's supposed to happen!",
+"PMHaley.19": "Might ask Emily to ask the cards for me, though...",
+"PMHaley.20": "Thanks for your words, God of Love! Talk to you soon! $1",
+"PMHaley.21": "I didn't even say anything profund.",
+"PMHaley.22": "I am the God of Love but I am not very well versed in  matters of the heart...#$b# But I will encourage everyone to pursue who they love, in a healthy manner, I suppose.",
+"PMHaley.23": "I wonder if my blessings actually work in this place? But then again...",
+"PMHaley.24": "People are only going to ask me about romantic partnerships, aren't they?",
+"PMHaley.25": "sigh...",
+
+//Pei Ming meets Krobus
+"PMKrobus.0": "Hm...",
+"PMKrobus.1": "Well, time to return home.",
+"PMKrobus.2": "Woah! $8#$b# You startled me!",
+"PMKrobus.3": "Wait... what are you even?! $8 ",
+"PMKrobus.4": "Hold on!",
+"PMKrobus.5": "Ugh, that stench...",
+"PMKrobus.6": "There you are! $8",
+"PMKrobus.7": "Don't hurt me...",
+"PMKrobus.8": "Huh...?",
+"PMKrobus.9": "Um... you are that god that suddenly appeared here, right?",
+"PMKrobus.10": "Wait! You are one of those shadow people! From the mines!$8#$b# You know how to speak?! How do you even know my name?! Answer me! $8",
+"PMKrobus.11": "This is an awful lot of questioning for an ancient god god that fell from the sky...",
+"PMKrobus.12": "Ahaha...#$b# You do have a point.",
+"PMKrobus.13": "Regardless! You know too much!",
+"PMKrobus.14": "Somebody has told me about you and I got curious... #$b# Occasionally, I have seen you outside at night, trying to talk to someone who wasn't there.",
+"PMKrobus.15": " Have you been stalking me?! $8 ",
+"PMKrobus.16": "No! I just-",
+"PMKrobus.17": "I just wanted to help. $2",
+"PMKrobus.18": "I know what it feels like to miss family and friends and-",
+"PMKrobus.19": "Hahahahaha!",
+"PMKrobus.20": "Ha- I see how it is. Okay. Alright.",
+"PMKrobus.21": "It's okay, you don't need to help me. I'll manage, somehow. Just don't startle me again, shadow kid.",
+"PMKrobus.22": "It's Krobus...",
+"PMKrobus.23": "Krobus then.",
+"PMKrobus.24": "Stop, please!",
+"PMKrobus.25": "You are not going to tell the villagers about me, right? And why did you not attack me? I thought you'd-",
+"PMKrobus.26": "Stop being silly, Krobinian.",
+"PMKrobus.27": "It's Krobus...",
+"PMKrobus.28": "You did not act as brutish as those shadow folks in the mines. #$b# And you were trembling when you saw me. #$b# I'll just go ask @ about you. ${He^She^They}$ ${knows^knows^know}$ all kinds of freaky magical things.",
+"PMKrobus.29": "Like yours sincerely! $9",
+"PMKrobus.30": "We shall meet again.",
+"PMKrobus.31": "Um... stop by at my shop anytime!",
+"PMKrobus.32": "Strange fellow. But I guess he is on my side?",
+
+//HEART EVENTS
+//2 HEARTS
+"PM2H.0": "Ah, @. I did not hear you coming. Do you need anything from this venerable one?",
+"PM2H.1": "Me? Oh, I have been trying to make sense of all this mess.#$b# Landing here, having no way back yet...#$b# I refuse to acknowledge all these dwarf scrolls and elven books that offered me nothing but a waste of my time.$7",
+"PM2H.2": "How difficult can it be?$2#$b# Are you trying to tell me that these ancient civilizations figured out enchanted weapons and computers,#$b# but none of them were curious enough to ask themselves about dimension-hopping?$7",
+"PM2H.3": "Well, more like 'dimension-falling', I guess. My answers to why I showed up here remain the same as they were when we first met.",
+"PM2H.4": "(What should I say?)",
+"PM2H.5": "Have you tried speaking to the Wizard? Perhaps he would know.",
+"PM2H.6": "Perhaps you got cursed.",
+"PM2H.7": "The Wizard? $2#$b# A bumbling fool who stays cooped up in his tower and thinks I can't see him watching me? Please.$7",
+"PM2H.8": "Cursed!?$8#$b# Who in their right mind would ever think to curse me, the General Ming Guang?$5#$b#.................#$b# Actually, nevermind.$9",
+"PM2H.9": "Regardless, standing here and talking won't solve any problems. #$b# Since you're already here, lend me a hand, no?#$b# Perhaps by doubling our efforts, we could find something that would help with figuring out this mystery.$6",
+"PM2H.10": "Two hours later...",
+"PM2H.11": "...well, that was a fruitless search. I think we turned around every possible book in this library.$7#$b# How unfortunate.$7#$b# There's no point in looking for something that does not exist. Let's get out of there.$7",
+"PM2H.12": "[Pei Ming looks frustrated, but then sighs.]",
+"PM2H.13": "@, I..........#$b#...thank you for your help today.#$b#I appreciate it, even if I don't show it right now. It's just a lot to deal with, and having no results after so much time is agitating.#$b# But you took your time to look through these old books with me regardless.#$b# So, thank you. As a form of gratitude, allow me to invite you to a cup of tea one of these days!$6",
+"PM2H.14": "Even if we didn't get closer to figuring out the reason why Pei Ming ended up in Pelican Town, I feel like our bond grew stronger!",
+
+//3 HEARTS
+"PM3H.0": "It's you.",
+"PM3H.1": "Surprised to see me? Well... #$b# Admittedly, I was looking for something interesting to do. $7",
+"PM3H.2": "I ventured deep into the mines to the lowest level but those critters were too easy to take care of.$7",
+"PM3H.3": "What should I say?",
+"PM3H.4": "Please take it easy.",
+"PM3H.5": "I doubt anyone is a match for a deity such as you.",
+"PM3H.6": "Take it easy? This is the first time in centuries I get any break at all.",
+"PM3H.7": "Ah, so you DO believe my tale after all? $1#$b# That Harvey person claimed I was suffering from a 'traumatic brain injury' due to some impact. I don't get it. #$b# I landed on my feet?",
+"PM3H.8": "It has been quite difficult, however. I am getting restless without the faintest idea of what to do about it. #$b# I used to fulfil people's prayers, slay evil ghosts, sleep ar- $3#$b#....................$6#$b# Sleep a lot.$9 ",
+"PM3H.9": "And other than that, I spent time with my close companions or my descendant.",
+"PM3H.10": "No, that descendant isn't my child.$8#$b# He's from my brother's side.$6#$b# Let's save the topic of children for another day, hahaha! $1",
+"PM3H.11": "But I digress.",
+"PM3H.12": "It seems as if Pei Ming is lonely here, even if he doesn't admit it directly.",
+"PM3H.13": "(Suggest Pei Ming to...)",
+"PM3H.14": "(...hang out at the Saloon together soon)",
+"PM3H.15": "(...take a trip to the mountains together at a later point)",
+
+"PM3HSaloon.0": "Oho, it's been a while since someone has been bold enough to invite me so. $3#$b# But I appreciate the idea. Thank you, I will send you a letter regarding the date and time as soon as I can.",
+
+"PM3HMountains.0": "Oho, it's been a while since someone has been bold enough to invite me so. $3#$b# But I appreciate the idea. Thank you, I will send you a letter regarding the date and time as soon as I can.",
+
+//4 HEARTS
+"PM4H.0": "@! You actually came! $1",
+"PM4H.1": "Despite the weather, you actually showed up. That is commendable, there is no one here because of it.#$b# Keep this up and you might actually ascend to Godhood yourself. $9",
+"PM4H.2": "Actually, @, I have a request...#$b# Could we perhaps go somewhere else?",
+"PM4H.3": "Follow me.",
+"PM4H.4": "This is just the right spot for such a weather, don't you think?",
+"PM4H.5": "Forgive me for spontaneously changing the location when you actually picked the other one for a reason. But is there anything better than sharing a bath with friends?",
+"PM4H.6": "What do you think?",
+"PM4H.7": "I agree, it's very relaxing!",
+"PM4H.8": "Well, actually, I wish we could go back.",
+"PM4H.9": "(nod silently)",
+"PM4H.10": "Ha! The more I learn about you, the more I realize that we have a lot in common!$1",
+"PM4H.11": "Why did you agree to come here in the first place then? #$b# Feel free to leave anytime!",
+"PM4H.12": "What, cat got your tongue? $6#$b# Or is the sight of my body rendering you speechless? $3",
+"PM4H.12.LessFlirty": "What, cat got your tongue? $6", //new in 1.1.0
+"PM4H.13": "Ohoho!",
+"PM4H.14": "Well, regardless, I appreciate you joining me. This here is one of the few places that remind me of home, to be honest.",
+"PM4H.15": "I used to go to the hot springs with my two best friends every now and then,#$b# which often was the only moment of respite we were granted.",
+"PM4H.16": "(.......)",
+"PM4H.17": "Sounds like your life as a god was very busy.",
+"PM4H.18": "Sounds like those gatherings were fun, though!",
+"PM4H.19": "Ha! That's true!$6#$b# But you know, @...#$b# Even if the chances to see my friends were few and all of us had a lot to do...#$b# I always enjoyed godhood.",
+"PM4H.20": "We spent the rest of the time in the spa swimming and relaxing. It was fun! I should come here more often. Pei Ming, too, seems to have enjoyed himself.",
+
+
+//5 HEARTS
+"PM5H.0": "@! It's such a delight to see you. What brings you here?$1",
+"PM5H.1": "You were in the area and decided to check on me? Why, you're going to make be blush, hoho! Aren't you a delight?$6#$b#Come on in, don't just stand by the door. I was going to leave, but how could I refuse your company? It has been a while since we caught up.#$b#Feel free to make yourself at home.$6",
+"PM5H.2": "The letters are addressed to someone whose name you partially recognize.",
+"PM5H.3": "Hm? Oh.#$b# Ohoho. Snooping around my personal work, are we now?$2#$b# Were you not taught anything about privacy? Or not sticking your nose where it does not belong?$2",
+"PM5H.4": "Hoho, I jest, I jest! $1#$b# These are just... #$b# Ah. Well.",
+"PM5H.5": "I have been trying to communicate with the ones in my realm, where I hail from.#$b# Since the communication array does not work in this place...#$b# I thought that maybe setting up a teleportation array and sending letters through it would do the job.",
+"PM5H.6": "Ah, my bad. A communication array allows us to converse even if we are far apart. #$b# Think of it as some sort of... what did you call it? Telephone. Telephone in your mind.",
+"PM5H.7": "I really hoped my plan would work.",
+"PM5H.8": "It didn't. $7",
+"PM5H.9": "...I suppose I'm simply... $7#$b# ...worried about a relative of mine. He's a good kid, just...$7#$b# a bit too emotional. Even if you wouldn't guess he was from just looking at him.$7#$b# And that causes him to make decisions that any sane person would regret. But not him.",
+"PM5H.10": "He's my brother's descendant, but I took him under my wing once he ascended as Middle Court official.#$b# A Middle Court official is a godling that has been appointed by another god, an Upper Court official, who ascended because of their own achievements.#$b# But you don't really have to keep that in mind. Let's get back to the topic.#$b# My descendant, he...#$b# He was a hardworking little guy, taking his tasks seriously...#$b# but, well, a kid is still a kid, one that has lost everything and has witnessed the cruelties of strife.#$b#He made several bad choices, which led to his banishment. Because of that-$7",
+"PM5H.11": "sigh",
+"PM5H.12": "I just want to make sure that he keeps himself out of trouble again.#$b# But... none of these letters are going through the teleportation array, no matter how many times I try.$7",
+"PM5H.13": "How annoying...",
+"PM5H.14": "(What do I say?)",
+"PM5H.15": "I'm sure he's worrying about you just as much.",
+"PM5H.16": "Yeah, I get you. I miss my family, too. I haven't seen them in a while now.",
+"PM5H.17": "Perhaps you should let go. You should accept that it won't work.",
+"PM5H.18": "Heh. I hope he isn't. I don't need him to become a worrywart on top of being an emotional brat.",
+"PM5H.19": "Have you? Well, I guess that's yet another thing we have in common.",
+
+"PM5HGoodAnswer.0": "What a mess. You did not come over here to listen to me complain all the time, did you?$7#$b# Ah, please forgive this venerable one. The loneliness gets to me these days.",
+"PM5HGoodAnswer.1": "But, I'm glad to have a kindred spirit to hear me out. Thank you, @. I will repay this debt one day.",
+"PM5HGoodAnswer.2": "(...)",
+"PM5HGoodAnswer.3": "There's no need for that. We're friends, after all!",
+"PM5HGoodAnswer.4": "Yeah, you owe me one!",
+"PM5HGoodAnswer.5": "Hoho, I suppose that's what we are!$1#$b# Now, why won't you join me for a warm beverage? I purchased a new blend of tea from that Caroline woman a few days ago.",
+"PM5HGoodAnswer.6": "Tsk, such haste.$1#$b# Shall we start with a fresh cup of tea, perhaps?$6",
+
+"PM5HBadAnswer.0": ".................$7#$b# perhaps you should leave.$2",
+"PM5HBadAnswer.1": "sigh",
+"PM5HBadAnswer.2": "Get out of my sight.$5",
+
+//6 HEARTS
+"PM6H.0": "@! What are you doing here? $8",
+"PM6H.1": "Have you missed this handsome face, hm? $3",
+"PM6H.1.LessFlirty": "Have you missed your good friend? $3",
+"PM6H.2": "...................................",
+"PM6H.3": ".........forget it.",
+"PM6H.4": "What's the matter?",
+"PM6H.5": "Have you been rejected?",
+"PM6H.6": "Oh, don't mind this venerable one. I just needed some time to clear my head.",
+"PM6H.7": "Pah! Rejected? Me? $9#$b# Please, don't make me laugh, @! Who in their right mind would reject a man like me? $1",
+"PM6H.8": "Let me get out of the water and join you.",
+"PM6H.9": "And here I am, in my full glory.",
+"PM6H.10": "siiiiigh",
+"PM6H.11": "...Truth be told, I have been... thinking, lately.",
+"PM6H.12": "About the circumstances of landing in this place. #$b# But the longer I dwell on it, the less sense it makes.",
+"PM6H.13": "I wish to share this with you because I've grown to trust you.",
+
+"PM6HQQ.0": "But I need you to promise to not tell anyone.",
+"PM6HQQ.1": "Of course! That's nobody's business.",
+"PM6HQQ.2": "Are you not going to dress up first?",
+"PM6HQQ.3": "Thank you.$6",
+
+"PM6HDressUp.0": "Say what now...?",
+"PM6HDressUp.1": "Does seeing me in my swimming outfit bother you that much?",
+"PM6HDressUp.2": "Yes, it does.",
+"PM6HDressUp.3": "No, I was just wondering if you were planning to stay like this on purpose.",
+"PM6HDressUp.4": "Give me a moment then.",
+"PM6HDressUp.5": "Pei Ming did change back into his robes but he did that without giving it any thought and without moving from the spot...",
+"PM6HDressUp.6": "I guess people were ashamed of other things back then? He really seems oblivious to the entire situation.",
+"PM6HDressUp.7": "There we go.",
+"PM6HDressUp.8": "Huh? Are you okay? What's the matter?$8",
+"PM6HDressUp.9": "Well, yes, I am going to stay like this.$3#$b# No shame in showing a body such as mine.$3",
+
+"PM6HCont.0": "Ah well. Where do I start...",
+"PM6HCont.1": "Let's see... #$b# I took up a mission at the Northern border. My close friend reported a disturbance in the area,#$b# so I've decided to check it out before any mortal would start to freak out - #$b# - no need to make more of a mess in this situation, you know?",
+"PM6HCont.2": "I went alone, because it was the fastest way for me to assess the situation.#$b# I thought it would be a quick trip, in and out, one day maximum.",
+"PM6HCont.3": "You could imagine my surprise when I saw these weird... #$b# ...ripples, if you will, all around the place.#$b# I had no idea what it was, so naturally, I wanted to consult the smartest person I know, which is the friend who also reported the disturbance to me, and then-",
+"PM6HCont.4": "I appreciate your concern, @. This weighs more heavily on me than I initially expected.",
+"PM6HCont.5": "Could we please continue this conversation another day? I need a moment to myself. To... think.",
+"PM6HCont.6": "You have my gratitude.",
+"PM6HCont.7": "What a mess.",
+"PM6HCont.8": "Guess I'll go back for a swim.",
+
+//7 HEARTS
+"PM7H.0": "@! I am happy you made it here.",
+"PM7H.1": "We have a table. Let's go get a seat.",
+"PM7H.2": "Enjoyable atmosphere...",
+"PM7H.3": "Hi! What can I get you two?",
+"PM7H.4": "One of your beers for me, please.",
+"PM7H.5": "What would you like, friend? It's on me.",
+"PM7H.6": "Some beer, please!",
+"PM7H.7": "I'd like some juice.",
+"PM7H.8": "Beer? Coming right up!",
+"PM7H.9": "Some juice? I'll be back with your orders in a moment!",
+
+"PM7HPickedBeer.0": "I really like the beer here.",
+"PM7HPickedBeer.1": "There you go! Two beers!",
+
+"PM7HPickedJuice.0": "I really like the beer here.",
+"PM7HPickedJuice.1": "There you go! One beer and one juice!",
+
+"PM7HContinue.0": "You have my gratitude.",
+"PM7HContinue.1": "Let me know if you need anything else.",
+"PM7HContinue.2": "Do enjoy your drink then.",
+"PM7HContinue.3": "I assume you followed my invitation because you wished to hear the rest of the story I began telling you the other day, huh?",
+"PM7HContinue.4": "Alright... where did I stop...",
+"PM7HContinue.5": "I remember now. #$b# Last thing I told you was that I was on a mission and encountered a strange rift.",
+"PM7HContinue.6": "While I was speaking to my friend to get information on this rift, something leaped out of one of these ripples and attacked me!$8#$b# I have no idea what this thing was but let me tell you, @, #$b# you can't just attack the General Ming Guang and think you will get out unscathed! $5",
+"PM7HContinue.7": "I battled this creature without breaking a sweat, but... #$b# this thing was just so infuriating to deal with and hard to get rid of.#$b# Worse than these two kids here sometimes, I swear!$8",
+"PM7HContinue.8": "Regardless, I stabbed it straight through its chest, cut off its head and got it off of me. #$b# A quick job, I told myself. #$b# But nooo, of course it wasn't, otherwise I wouldn't have ended up here, now, would I?",
+"PM7HContinue.9": "Quite the long tale.",
+"PM7HContinue.10": "Once again I tried to connect to my friend to give her a report, hoping she'd know more.",
+"PM7HContinue.11": "Scary, exciting and long.",
+"PM7HContinue.12": "But then, I felt a sharp pain in my side. Like a needle drilling into your skin, but worse.$7",
+"PM7HContinue.13": "The thing was still alive. #$b# While I was busy trying to push it on the ground and squash it, it materialized one of these ripples right behind me.",
+"PM7HContinue.14": "I didn't notice it on time and...",
+"PM7HContinue.15": "So you fell into it just like that?",
+"PM7HContinue.16": "And this is how you landed here?",
+"PM7HContinue.17": "H-hey now. I'll let you know that my fighting prowess is top notch most of the time. #$b# I got distracted for one second, and that was enough—#$b# come on, everyone makes mistakes sometimes!$8",
+"PM7HContinue.18": "Precisely. I like how you're fast to catch on, @ I appreciate that in you.$6",
+"PM7HContinue.19": "I must say, even as someone who lived as long as I have, I have never faced something like that. #$b# A rift in space and time...#$b# I would find it interesting if it wasn't me to suffer the consequences of that!",
+"PM7HContinue.20": "I feel sorry for him...",
+"PM7HContinue.21": "So many questions and no answers at all...",
+"PM7HContinue.22": "and they just keep pilling up!",
+"PM7HContinue.23": "...Mh. I apologize for losing my temper. All of this is very frustrating to me.",
+"PM7HContinue.24": "I get it. But you're not alone in this - I can help! We could ask the Wizard!",
+"PM7HContinue.25": "Maybe punching a tree would help?",
+"PM7HContinue.26": "Help? Isn't that a daring thing to say?#$b# But I must admit, I am quite…  intrigued by your boldness, @.$3",
+"PM7HContinue.27": "HAH! $9 #$b# If I were to punch a tree, I think the Wizard would curse me, and trust me, @...#$b# At this point, I have enough curses for at least a century.",
+"PM7HContinue.28": "........................",
+"PM7HContinue.29": "Hmm... Perhaps we can actually ask the Wizard, yes. #$b# ...Thank you, @. Talking about it to you... #$b# Helped me get it out off my chest. I appreciate it.",
+"PM7HContinue.30": "I will stay here for a bit longer. Gather my thoughts. The tab is on me, of course. #$b# See you around town, eh? $3",
+"PM7HContinue.31": "Hey there.",
+"PM7HContinue.32": "Let's have a drink or two.",
+"PM7HContinue.33": "Ha!",
+"PM7HContinue.34": "Sure, why not.",
+
+//8 HEARTS, new in 1.1.0
+"PM8H.0": "Thank you, everyone, for coming here at my invitation.",
+"PM8H.1": "It is quite late. You better have a good reason, seeing as Beardo over there came as well.",
+"PM8H.2": "There you are, @. $h I was just about to begin.",
+"PM8H.3": "Pei Ming has managed to decipher this letter and asked me if I could make sense of it.#$b# Well, I sort of could.",
+"PM8H.4": "Oho! Now you have my attention.",
+"PM8H.5": "I did not understand everything it was talking about.",
+"PM8H.6": "It did mention dwarven technology and a red gem, right? #$b# And that the dwarves allegedly managed to open the ability to communicate through time and space.",
+"PM8H.7": "I see.",
+"PM8H.8": "This is why you summoned me as well, Krobus. Interacting with the dwarves is not exactly... easy for you.",
+"PM8H.9": "Krobus nods.",
+"PM8H.10": "This is just a rumor that has been passed around among shadowfolk children but...",
+"PM8H.11": "We used to sing of an ancient red gem that exists beyond the bounds of space and time, to be found within the stones of a cave. ",
+"PM8H.12": "So our only lead is an old children's song...",
+"PM8H.13": "But there is always some old tale hidden in those songs, so I am sure following the lead will take us somewhere! $1 ",
+"PM8H.14": "Right?",
+"PM8H.15": "Interesting.#$b# And I shall converse with the local Dwarf to find out whether or not he holds knowledge in regards to the contents of this letter.",
+"PM8H.16": "Yes, please.",
+"PM8H.17": "I shall see it done soon.",
+"PM8H.18": "You will hear from me soon.",
+"PM8H.19": "Finally, something to work with.#$b# @, let's see what else we can figure out and meet again soon.",
+"PM8H.20": "Krobus mentioned an ancient red gem that exists beyond the bounds of space and time, enclosed within stone...? ",
+"PM8H.21": " Now what could that mean? ",
+
+//Tanghulu Event
+"TanghuluEvent.0": "Tasty tanghulu < ",
+"TanghuluEvent.1": "Come on in!",
+"TanghuluEvent.2": "Confused? #$b# Yes, I suppose seeing the General Ming Guang by the dishes would make even the brightest of minds bewildered! $9",
+"TanghuluEvent.3": "I wanted to try something out - it's a fairly easy recipe from my homeland. Something my brothers and I used to eat a lot when we were children.",
+"TanghuluEvent.4": "I suppose I still get the cravings for it sometimes, haha!",
+"TanghuluEvent.5": "What is it?",
+"TanghuluEvent.6": "Fruit skewers?",
+"TanghuluEvent.7": "Tanghulu! It's just some fresh fruits in a sugar coating. Nothing complicated about it.$6",
+"TanghuluEvent.8": "Pretty much, yeah. Tanghulu consists of fruit and a sugar coating, to be more precise.",
+"TanghuluEvent.9": "Here, let me show you. You can use these strawberries.",
+"TanghuluEvent.10": "Be careful, @. #$b# This sugar may spray into your face and then we'll have a problem.",
+"TanghuluEvent.11": "Okay, now put it into cold water over there, quickly!$8",
+"TanghuluEvent.12": "Great! See? It couldn't be easier. $1",
+"TanghuluEvent.13": "Give it a try!$6",
+"TanghuluEvent.14": "What do you think?",
+"TanghuluEvent.15": "It's really sweet.",
+"TanghuluEvent.16": "It's alright. Tastes like candy.",
+"TanghuluEvent.17": "I've had better.",
+"TanghuluEvent.18": "Isn't it? My brother would often eat too much of it and then would get a stomachache!$1",
+"TanghuluEvent.19": "Yeah, but it's homemade candy, @. And tastes better, too!",
+"TanghuluEvent.20": "You must be fun at parties. $7",
+"TanghuluEvent.21": "We still have a bunch of fruit to go through...",
+"TanghuluEvent.22": "Say, would you like to help this venerable one out? #$b# I'll even let you keep it a few skewers, heh.$3",
+"TanghuluEvent.23": "Whew, that took us less time than I expected. I guess making food with someone does make the experience better. #$b# I can't say I'm a fan, but... I had fun.",
+"TanghuluEvent.24": "Thank you for joining me, @. #$b# We should do it more often. $3",
+
+//PMRequest new in 1.1.0
+"PMRequest.0": "Ah, there you are.",
+"PMRequest.1": "Thank you for coming. I will make it short this time.",
+"PMRequest.2": "I think that we are on the right track, but as of now, we have to wait for answers. #$b# But aside from that, I need you to know something.",
+"PMRequest.3": "The note, well... the handwriting is my descendant's. #$b# Pei Xiu's.",
+
+//Roommate Proposal Event
+"RoommateProposal.0": "This tassel you gave me... it truly is some amazing craftsmenship.#$b# And my favorite color, too, hoho!$1",
+"RoommateProposal.1": "I must say, even if I still miss my old friends a lot, I am truly happy that we befriended each other as well.$1",
+"RoommateProposal.2": "Oh? There is something you wanted to tell me?",
+"RoommateProposal.3": "What is it?",
+"RoommateProposal.4": "Would you like to be companions of sorts? !!This will set Pei Ming as your roommate or platonic partner",
+"RoommateProposal.5": "I am glad that we became friends, too. !!KEEP THE FRIENDSHIP AS IT IS",
+
+"BecomeRoommates.0": "Ha! Sure! As long as you don't expect me to latch onto you exclusively, I would like to accept your offer.",
+"BecomeRoommates.1": "Pei Ming has accepted your offer of becoming companions! In two days, you will officially be recognized as such. Yay!",
+
+"KeepFriendship.0": "May our friendship last even throughout time and space. $6",
+
+//Pei Xiu First meeting new in 1.1.0
+"PXEncounter.0": "This stranger has dropped something...",
+"PXEncounter.1": "However, you cannot decipher the writing at all. Perhaps you could show the note to the Wizard tomorrow?",
+"PXEncounter.2": "And just who was this person?",
+"PXEncounter.4": "You picked up a mysterious note!",
+
+//Pei Xiu and Dwarf new in 1.1.0
+"PXDwarf.0": "You're back.",
+"PXDwarf.1": ".........",
+"PXDwarf.2": "......",
+"PXDwarf.3": "Well. Did you find what you have been looking for?",
+"PXDwarf.4": " I have not. What I am looking for must be in another location.",
+"PXDwarf.5": "But... #$b# I must have lost the scroll on the way here.",
+"PXDwarf.6": "You lost it?! It was an ancient dwarven arti-",
+"PXDwarf.7": "Do you happen to remember what was written in it? Even if I did make translation notes, I couldn't make sense of the text.",
+"PXDwarf.8": "Well, only vaguely. It said something about a warm place, high up, of Dwarven importance.",
+"PXDwarf.9": " I can work with that.",
+"PXDwarf.10": " It's this person that showed up at the bus stop recently...",
+"PXDwarf.11": "Say something.#Who are you?#What are you doing here? ",
+"PXDwarf.12": " It is of no importance to you.",
+"PXDwarf.13": "Wait... did you happen to find a note after we ran into each other?",
+"PXDwarf.14": "Reply:#No, I haven't.#Even if I did, it's my treasure now.",
+"PXDwarf.15": ".....$3",
+"PXDwarf.16": "Stop wasting my time with lies and immaturity. #$b# Move. ",
+"PXDwarf.17": " I have no time for this. #$b# Move. ",
+
+///////////////////DIALOGUE
+"Introduction": "We meet again. I decided to wander around the valley. Some of the villagers seem scared of me, ha!",
+"ArchaeologyHouse_21_5": "Greetings. I am trying to find books on times past.$3#$e#I wonder if there are records on ancient deities in here.",
+"Saloon_6_71": "There is hardly anything better than good food and wine, don't you think?$1",
+"GreenRain": "Me? Scared of this weather?#$e# Ha! $6#$e# I have seen more unbelievable things.#$b# A gigantic piloted statue, ghosts in all shapes and forms, the fall of several dynasties...#$e#$8 Just to name a few.",
+"GreenRainFinished": "See? That wasn't so scary, right?",
+
+
+"WinterStar_GiveGift_Before_Spouse": "Oh please, don't say anything among the lines of how I am the gift that keeps on giving.#$b# I know. $3",
+"WinterStar_GiveGift_Before": "No matter the times, gift giving has always been a beloved tradition for mortals and gods alike.",
+"WinterStar_GiveGift_After_Spouse": "Are you enjoy the day, dear @? Why don't we have some fun later?$3",
+"WinterStar_GiveGift_After": "So, are you happy with your gift? No, wait, it might be rude to say the truth.",
+"WinterStar_ReceiveGift": "For me? How exciting. $9",
+
+"Resort": "You see, I hail from a cold landscape. Deadly cold Winters were a normal occurrence.#$b# So the beach is quite the treat.",
+"Resort2": "I am more of a Winter person but I can always appreciate a nice day at the beach.",
+"Resort_Bar": "Those drinks are amazing. Want to share one with me?",
+
+"AcceptBirthdayGift_Negative": "Sometimes, being forgotten doesn't seem so bad compared to getting an offering like this.#$b# If I have to be honest, you should try better with your offerings.$2",
+"AcceptBirthdayGift_Positive": "Even after thousands of years, I love when people remember my birthday.#$b# You have my gratitude. Why don't you come over later?$3",
+"AcceptBirthdayGift": "This reminds me of something.$8#$b# Quite a while back, a fellow God gave another one a cursed robe as a birthday present.$8#$b# Chaos ensured and the gifting God and his loyal official were banished from our realm. And this is only the short version.$8#$b# Thank you for the offering, I suppose.",
+
+"AcceptBouquet": "Oho? You're not the first one to make such an offer to me.$3#$b# I accept.$3",
+"DumpsterDiveComment": "Is that proper behavior? I doubt so. Learn some manners.$2",
+"HitBySlingshot": "You do know that I am a martial god, no?$5",
+"WTF": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA $8",
+
+"breakUp": "Your loss. Do you even know who I am? A martial god and- #$b#$2 Not that it matters now.$2",
+"dating_Peiming_memory_oneyear": "It's our anniversary, although a year feels like nothing to me.",
+"RejectBouquet_NotDatable": "Romantic commitment? Not my thing.",
+"RejectBouquet_NpcAlreadyMarried": "No, thank you.",
+"RejectBouquet_VeryLowHearts": "Are you serious?! $9",
+"RejectBouquet_LowHearts": "No. $3",
+"RejectBouquet": "No.",
+
+
+
+//Seasonal
+//Spring
+"Spring1": "The higher you climb, the harder you fall. Life is full of surprises, and one cannot escape whatever that comes.#$e# Even when mortal has become god, we do not have the good fortune to avoid fate in the end.",
+"Spring2": "Hoho! It is nice to see you, @. $1",
+"Spring3": "Ever since I ended up here, I have been on the lookout for beautiful women.I am not sure if any of the ladies living here suit my refined tastes.#$e#$8 Hoh?! Men?! I mean...#$b# I would not say no to another man either, I suppose.#$b#$6. But I prefer women.",
+"Spring4": "I heard the Adventurer's Guild mainly fights with swords.#$b# You want to know if I have expertise on sword fighting?#$b#$7 Let's change the topic.",
+"Spring_28": "Summer is right around the corner. $3 Are you excited for the beach season? $3",
+
+"FlowerDance_Accept_Spouse": "The same old dance again doesn't have to be bad by necessity. On the contrary.",
+"FlowerDance_Accept": "Oh my, it is an honor. I seduced many a lady with my skill.",
+"FlowerDance_Decline": "Did you really think the God of Love would accept this invitation of yours?$6#$b# I commend your confidence, but that is all.",
+
+//Summer
+"Birthday1": "It's been hundreds of years since my birth and I have made all kinds of memories since then, bad and good. But never have I thought I would get sent to a place like this. ",
+"Birthday2": "The birthdays here feel a little sad and shallow without my companions, but at least you are here, @. Thank you.",
+"Birthday3": "You want to know how many birthdays I've had? $8#$b# At least 800, ha!$1",
+
+"Summer1": "I don't really have a favorite season. Perhaps Winter? But during Summer, I can enjoy the beach and take a swim in the ocean. #$b# I am doing that in Winter as well, however.",
+"Summer2": "Many things are way different than from how I know them.#$b# The other day, Leah punched my face because I was surprised that women are pursuing the arts.#$b# Then again, I suppose my friend back at home would have done the same as Leah.",
+"Summer3": "Hey, @, why don't we go for a swim together, just you and me? $3",
+"Summer3.LessFlirty": " Hey, want to have a swimming race? $1", //new in 1.1.0
+"Summer_1": "And just like that, it's Summer. Seasons come and go, but they always return. #$b# There is comfort to be found in that, don't you think?",
+"Summer_28": "Fall is approaching rapidly, announced by the change of weather. I can't wait for Winter, though.",
+
+//Fall
+"fall_28": "Hoh! Can you feel it, @? Winter is coming. Exciting, isn't it? #$b# Have you prepared your farm already?$6#$e# Me? I have my coat dusted off and ready!$3",
+"Fall1": "Greetings, @. I am curious about something. Fall is the perfect weather for warm beverages.#$b# $y 'Do you prefer tea, coffee or hot chocolate?_I like tea!_Hoho! You are the same as me then.$1_Coffee all the way._I am not averse to drinking coffee but there are so many different ways of drinking it regarding the amount of milk and sugar that the possibilities are overwhelming for this old General, ha._Hot chocolate!_Sweet.Just as sweet as you are.$9' ",
+"Fall2": "I hate the smell of pickles. $7",
+"Fall3": "Ever since I arrived here, I have learned about so many new things that do not exist where I'm from.#$b# For example - record players! Sam showed me something called 'vinyls' and if you place them in such a 'record player', you can listen to music!$8#$e#........you are saying that this is old technology?",
+"Fall4": "Fall is the season for cozying up, I suppose. I am not one much for that, however.#$b# $y 'What about you?_I like cuddling!_Ah, is that so? Good for you._No, I am not too fond of it myself._I knew you'd understand me, @.$6'",
+"Fall5": "I have been thinking about my descendant recently. I helped him ascend to Godhood and wanted him to inherit my position one day.#$b# A lot of things happened, though, and I was very disappointed of him. #$e# Yet sometimes, I can't help but wonder whether or not I might have been too strict.",
+
+//Winter
+"Winter1": "The snow in the Northern capital often piled up so high that it reached the roofs of the houses.#$b# Some mortals loved it. Some hated it.#$e# But hey, if they were so angry about it, they could've just moved to the South, no?$1",
+"Winter2": "Truth be told, the weather in here is much milder than in my homeland. #$e# I guess living with a heater makes surviving easier for the villagers...#$b# Such an interesting device.$6 ",
+"Winter3": "All this cold makes me crave some quality tanghulu again...$4#$b# Perhaps I should start using the kitchen in my residence more often.#$e# Hey, @, do you have some fruit in that fridge of yours that you wouldn't mind sharing? $3",
+"Winter4": "I saw Vincent and Jas building something made of snow the other day.$#b# I don't know if it was supposed to represent any god of yours...#$b# but I certainly know someone who would pass out from anger if he saw something like that in his temple. Hah! $1",
+"Winter5": "When I was a mortal still, my brothers and I used to build snow lions in our family's garden.#$b# The results varied.#$b# We weren't the most... artistically skilled bunch.$7#$e# Why do you think I became a soldier instead? $1",
+"Winter_1": "Finally, it's Winter. My favorite season. $6 #$b# It reminds me of home, even if it is a cruel and gruesome season.#$b# If you know how to navigate it, there is much potential to be found in this time of the year.",
+
+//Festivals
+"Peimingegg": "Searching for eggs? This is ridiculous. Why should I, as a God...#$b# %Pei Ming continues yapping and you decide to slowly distance yourself.",
+"Peiming_y2egg": "If that's what the people of this village like doing, so be it.",
+"Peiming_spouse_y2egg": "You are going to search eggs, @? Well, if you are into it...",
+"Peimingflower": "So this is how the villagers search for a suitable partner?#$b# I have better means but I would not say no to a dance with the right person.$2",
+"Peiming_y2flower": "And here we go again. Are you having fun?",
+"Peiming_spouse_y2flower": "Why don't we dance together, dear @?",
+"Peimingluau": "I have no expertise on cooking. Do you think this flower I found on the road is suitable?",
+"Peiming_y2luau": "Why is Lewis always acting like this, all high and mighty? He is quite bothersome.",
+"Peiming_spouse_y2luau": "I trust you to make the best possible choice for this soup. And if you don't, I won't die either way.",
+"Peimingjellies": "I have been informed of this natural spectacle, so naturally, I came here to see what it is about.",
+"Peiming_y2jellies": "If this is as gorgeous as it was last year, I am all too excited. $1",
+"Peiming_spouse_y2jellies": "Want to watch the jellies together, dear @?",
+"Peimingice": "Did you see Leah's sculpture? Interesting craftsmenship! $8",
+"Peiming_y2ice": "This weather is more to my tastes. The cold, brisk air... wonderful. #$e# I could do without the fishy stench, though.",
+"Peiming_spouse_y2ice": "Are you going to take part in the fishing challenge, @?#$b# Make this General proud! $1",
+"PeimingWinterStar": "I find it sort of sad that the saloon doesn't open today.",
+"Peiming_y2WinterStar": "Another year has almost passed. Who do you think is your secret gift giver?",
+"Peiming_spouse_y2WinterStar": "Hey, @.#$b# %Pei Ming lowers his voice and whispers. #$b# Why don't we go home and enjoy the day with each other instead, hmm? $3",
+"DesertFestival1": "I don't think I am made to be a vendor, but let's try.",
+"DesertFestival2": "You'll find only the finest wares here!$1#$b# Am I a convincing vendor?",
+"RSVEmberOfResolutions.": "Another year has passed. To someone like me whose age spans several centuries, it felt like but a moment.#$e# Well. It is quite interesting that you celebrate New Year's on another day than I used to.",
+
+//Gift responses
+"AcceptGift(O)109": "How dare you- this brings back terrible memories.$2#$b# Have you heard the tale of 'The General who broke his Sword?' Most likely not. Leave me alone.$5",
+"AcceptGift(O)155": "Hoho~ You know me too well.$3",
+"AcceptGift(O)155.LessFlirty": "Now this thing certainly looks funny.",
+"AcceptGift(O)91": "Ha! Thank you. I needed to blow off some steam later, if you catch my drift. $3",
+"AcceptGift(O)91.LessFlirty": "Ha, how did you know I liked bananas? Thank you, @! $1", //new in 1.1.0
+"AcceptGift(O)342": "I do not have the best memories of... pickles. Thank you for nothing!$7",
+"AcceptGift(O_WhatIsThis": ".............$8#$b#..............................................$8#$b#........................................................$8",
+"AcceptGift(O_Tanghulu": "!!!!!!!$8#$b# Is that...$8#$b#... Tanghulu?! $1#$b# That certainly is a flavor of my childhood. It's been hundreds of years but I will never forget having that treat with my brothers. @, you have my gratitude. $6 ",
+"AcceptGift(O)613": "And you are the apple of my eye, @. $3", 
+"AcceptGift(O)613.LessFlirty": "Now now, you really shouldn't have! Thank you, an apple a day keeps the doctor away. #$b# And I really don't want to see Harvey.", //new in 1.1.0
+"AcceptGift(O)StardropTea": "So this is the specialty tea in this area? I love this a lot, thank you, @! #$b# Want to have a taste?",
+"AcceptGift(O)797": "Oh, how gorgeous, a pearl. I love seeing those on gorgeous ladies. $2",
+"AcceptGift(O)Cornucopia_Rose": "A rose, the ultimate symbol of elegance and beauty.#$b# I will find a proper vase for it. Thank you, @.#$b# Or wait...#$b# Did you give it to me because you fancy me? Hoho, you poor soul, this General will never be romantically available! $9",
+"AcceptGift(O)Cornucopia_Rose.LessFlirty": "A rose, the ultimate symbol of elegance and beauty.#$b# I will find a proper vase for it. People would sometimes give roses to me because they fancied me, ha! #$b# But don't worry, I am not suspecting you of doing that. Besides... #$b# I'll never be romantically available to anyone! $9", //new in 1.1.0
+"AcceptGift(O)FlashShifter.StardewValleyExpandedCP_Alligator": "AAAH?! WHAT IN THE WORLD?! IT'S TRYING TO EAT ME! $8",
+"AcceptGift(O)FlashShifter.StardewValleyExpandedCP_Bonefish": "Hm. Would it surprise you if I told you that I knew of someone who kept things like these as pets? #$b# I hate them.$7",
+"AcceptGift(O)FlashShifter.StardewValleyExpandedCP_Winter_Star_Rose": "Oh, what a gorgeous, gorgeous flower. I could glance at it all day. Beauty is such a fickle thing, don't you think,@?",
+"AcceptGift(O)454": "Now that is an intersting fruit! You say its origins are in a distant past? Ha! #$b# That fruit is just like me! $9",
+"AcceptGift(O)637": "Ah, now this is a fruit of divinity. Pomegranates, the gods among fruits.",
+"AcceptGift(O)814": "Ink! I remember the scent of ink, the scent of scrolls and ink, to be precise. #$b# Reminds me of my studious friends. Thank you, @.",
+"AcceptGift(O)852": "Impressive! Did you slay a dragon on your own?! $8",
+"AcceptGift(O)void.NorthernHeartMelon_Tassel": "Is that...$8#$b# Did you make this yourself?! This is such fine craftmenship.$8#$b# I am truly impressed!#$b#",
+"AcceptGift(O)void.NorthernHeartMelon_NHMelon": "A Northern Heart Melon! A sweet treat that is said to be able to change people's feelings towards the giver. #$b# And I might even like you a little more after receiving it!$1",
+"AcceptGift(O)void.NorthernHeartMelon_HeartMelonHuangjiu": "So you gave making your own huangjiu a try? $6#$b# I am impressed. I cannot wait to try this at home.",
+
+
+"GiftTastePeiMing.love": "Hoho! Now that is certainly a treat.",
+"GiftTastePeiMing.like": "Recognizing this General’s refined tastes? Wonderful.",
+"GiftTastePeiMing.dislike": "Well, thank you, I suppose.",
+"GiftTastePeiMing.hate": "How dare you-",
+"GiftTastePeiMing.neutral": "I appreciate the gesture but I doubt I have use for this.",
+
+"Peiming_EngagedRoommate": "So you want this God of Love to move in with you? A bold step. #$b# But I like your courage, so let me accept. $1",
+
+
+//Conversation Topics
+"cc_Complete": "I heard you restored the village's Community Center. That is an impressive feat, @.#$b# Where I am from, this would have been reason enough for you to ascend to Godhood! $1",
+"cc_Bus": "I heard the object called 'bus' has been restored. What exactly is a bus? Do you ride it into war? It looks unsettling, to say the least.#$b# Like a very, very strange horse. $7",
+"ElliottGone5": "Elliott has been gone for quite a while. I miss listening to him go and on on about his struggles as a storywriter.",
+"gotPet": "Oh, so you have adopted a pet! $1 #$b# $y 'What kind of pet did you get?_A cat! Meow!_Oh, a cat. I am personally more of a dog person, but you could say that I like cat... $6#$b# ...boys! Hoho! $9_A dog, woof._How lovely. When I was a young boy, my father took me into the city... #$b# ...and I adopted a dog there. The pup has been the most loyal being I have ever encountered but I had to leave her behind after I joined the army.'",
+"married": "So you decided to walk the path of wedlock? Personally, that is something I do not wish for. I am a free spirit, after all. #$b# But as the God of Love, I do wish you all the best. You have my blessing, so to speak. $6",
+"married_twice": "Oh, you married again? Is polygamy common here? No? Oh, you got divorced the first time around? I see.",
+"divorced_twice": "Divorced again? Huh. #$b# Maybe third time's the charm then, hohoho! $9",
+"gotPet_memory_oneyear": "A year ago, you adopted your first pet. How time flies.",
+"cropMatured_417": "You harvested your first Sweet Gem Berry? Why don't you make tanghulu once you have several?",
+"cropMatured_void.NorthernHeartMelon_NHMelon": "I can't believe it! You really managed to cultivate a Northern Heart Melon?$8#$b# I never thought it would be possible...",
+"dating_Elliott": "You have commenced a romantic relationship with Elliott? While those are not the kind of relationships I personally understand, I wish for your love to prosper. #$e# I AM the God of Love, after all.$3",
+"movieTheater": "I heard a movie theater has been built in the village. So what exactly is it? Is it like watching stage plays?",
+"SterlingTrash": "This Sterling guy vomited into the trashcan. Disgusting and undisciplined. $7",
+"SterlingDrugs": "Sterling has asked me for substances he could abuse. Hah, if only I had access to the Ghost City from here, I'd give him some and he would hopefully learn his lesson. $7",
+"JunaSign": "I did read the writing on the sign. Juna certainly is... interesting.",
+"JasperGone2": "I noticed that Jasper hasn't been around. Is he alright? I would hate for an entertaining man such as him to disappear.",
+"JasperHomeA": "Finally, Jasper has returned. Perhaps I will go see him.",
+"keahi_prank": "@, you reek. This reminds of when I ate a specific kind of candy once that was supposed to hide my presence from ghosts whose territory I infiltrated. $6#$b# I was then told that this candy makes me stink so badly that it even repels ghosts, can you believe that? And well, your smell repels ME. Good bye.",
+"MeetTheCats": "Talking cats? That's unexpected but not the strangest thing I have witnessed. Ah, they are going to be annoying, no?",
+"HaleysCakeWalk": "There were so many cakes...$8#$b# Haley did great.",
+"joja_Complete": "You spent a big sum of your money for the Community Development Program, but I have to wonder... #$b# Why were you the only one donating at all?",
+"Vinilla.Honeyfuggle_Arrival": "I can't particularly say I am fond of people hiding their identities behind a mask but this newcomer seems interesting. I wonder where they are from.",
+"UnhelpfulAdvice": "I don't want to talk to you. $2 ",
+"UnhelpfulAdvice2": "@, I mean it. I neither wish to see nor talk to you. Stop being clingy. $7",
+"UnhelpfulAdvice3": "%Pei Ming heaves out an exasperated sigh. #$e# This can't go on like this. $5",
+
+"AfterFirstMeeting_Abigail": "Have you heard those weird noises from the forest? There was a WOOOOSH and a BOOOOM!$1#$b# I checked and suddenly found a new house there! This is so exciting!$1",
+"AfterFirstMeeting_Alex": "I heard a new house appeared in the forest all of a sudden. Do you think the person who lives in there is working out?",
+"AfterFirstMeeting_Caroline": "Abigail is so excited about the sudden appearance of the new house. When we heard all those noises, she jumped up and down excitedly.$2#$b# I am worried about her.$2",
+"AfterFirstMeeting_Clint": "Loud noise in the forest? No, I haven't heard anything. I was busy here.",
+"AfterFirstMeeting_Demetrius": "You say a strange person showed up after the noises in the forest, claiming they are a God? I don't think this is anything science can explain.",
+"AfterFirstMeeting_Elliott": "I moved to Pelican Town to have some piece and quiet while working on my novel, but there is always something new and extraordinary happening every single day. Like houses and gods showing up out of nowhere.#$b# Perhaps I should use these occurrences as inspiration!$1",
+"AfterFirstMeeting_Emily": "Say that again, @?!$6#$b# An ancient deity descended from above, claiming to be a God of Love?!$6 If that is true, I really need to know more. This can only be an omen. Only time can tell whether or not it's a good one.",
+"AfterFirstMeeting_Evelyn": "What eventful times we live in... may Yoba have mercy.",
+"AfterFirstMeeting_George": "You say there was a man who claimed to be a god?#$b# Young people these days, they're good for nothing! Perhaps this guy should find a job!$3",
+"AfterFirstMeeting_Gus": "No matter where this new person claiming to be a god is from, if they need food and drink, they will always be welcome in my saloon. #$b# This place is for everyone and we don't discriminate between gods and humans! Hahaha! $1",
+"AfterFirstMeeting_Haley": "Ugh, Emily is all worked up over this 'god' or whatever.$3 #$b# $y 'But if he actually is a god... do you think he looks good?_Yes, very!_Ha, then I might check him out!$1_No, he wasn't my type._Huh, really? Here I thought this was my chance.'",
+"AfterFirstMeeting_Harvey": "A stranger claiming to be a god? #$b# Oh dear, perhaps you should send him to my clinic for a check-up.$8",
+"AfterFirstMeeting_Jas": "I saw a man and a house fall from the sky! It was so scary... $2",
+"AfterFirstMeeting_Krobus": "Hm, you think a deity accidentally showing up in the valley is strange?$1#$b# I wouldn't say so. $7",
+"AfterFirstMeeting_Leah": "A lot of people here believe in Yoba. I don't really believe this newcomer is a god, but if he turns out to be, I would like to sculpt a statue of him.#$b# Just like people used to in old times!$1",
+"AfterFirstMeeting_Leo": "A man fell from the sky? Did he have an accident?",
+"AfterFirstMeeting_Lewis": "This newcomer in the Forest sounds like trouble. I will keep an eye on the situation.$2",
+"AfterFirstMeeting_Linus": "You say a disoriented man appeared in the forest? Perhaps I will check on him later. I still have some fresh fruit in my tent.",
+"AfterFirstMeeting_Marnie": "My poor cows got so startled from that noise! It took a while to calm them down. $3",
+"AfterFirstMeeting_Maru": "I wonder what the recent developments in the forest mean for science and research. @, will you help me find out? $1",
+"AfterFirstMeeting_Penny": "%Penny seems to be too shocked to talk to you.",
+"AfterFirstMeeting_Pierre": "Great. Yet another occurrence Abigail can be weird about.$2",
+"AfterFirstMeeting_Sam":"Finally, something interesting happening here. Do you reckon this sky guy likes to make music?",
+"AfterFirstMeeting_Sebastian": "I am curious about this new fellow in the forest. Perhaps Abby, Sam and I will pay him a visit later.",
+"AfterFirstMeeting_Shane": "Am I just REALLY drunk or did I really just see what I saw in the Forest?",
+"AfterFirstMeeting_Olivia": "The 'God of Love'?#$b# Ohohoho!$1#$b# He either is very funny or very serious. #$b# If he truly is a god, I hope I am his type so we can share some fine wine together.$9",
+"AfterFirstMeeting_Morgan": "I saw him! I saw the god! Magnus said that it's definitely in the realm of the possible.",
+"AfterFirstMeeting_Claire": "Gods descending from the sky? Sure, why not. Can they also end retail jobs once and for all?",
+"AfterFirstMeeting_Andy": "Yoba almighty, just what was that loud noise across my farm?",
+
+"PM7HCT_Elliott": "I heard the story Pei Ming told you in the saloon recently. #$b# I joined him after you left, so he would not spiral into some bad thoughts. #$b# We had a couple of drinks, too. $h",
+"PM7HCT_Emily": "I couldn't help but listen to the story Pei Ming told you while you two were sitting in the bar the other day. #$b# I wonder if we could help him, somehow? Maybe there's a crystal for that?",
+"PM7HCT_Gus": "Poor Pei Ming. #$b# For as long as he stays here, he will always be welcome in my humble saloon.",
+
+"TanghuluCT_Caroline": "Pei Ming offered me some homemade tanghulu and told me that you helped him making them! #$b# They tasted very nice, well done.",
+"TanghuluCT_Evelyn": "Sir Pei Ming brought us some sweet fruit skewers earlier. #$b# It's nice to see that young men are willing to cook! $h",
+
+"PMKrobusCT_Krobus": "Ah, hello, @. I encountered Pei Ming the other day. #$b# He really scared me at first but in the end, he didn't attack me at all. #$e# You see, I have been wanting to help him reconnect with the people he misses ever since his landing here. #$b# I will let you know if I figure something out. $1",
+"PMKrobusCT_PeiMing": "If it isn't my favorite farmer @. I am sure you know Krobers? #$b# I ran into them recently, they thought I was about to end their life or something. #$e# Turns out that they want to help somehow, heh...#$b# $y 'They shouldn't concern themselves with such things._Be nice to Krobus, okay?_Ha, of course! I have no reason not to._Their name is Krobus, by the way._Oh? Well, Krobus then.'",
+"PMKrobusCT_Wizard": "So our divine visitor has encountered Krobus? Well, I suppose they both are unique individuals.",
+
+"PXDwarfCT_Dwarf1": "Greetings, @. #$b# You say you met a person on your way out? #$b# Yeah, he's... someone who got lost here.",
+"PXDwarfCT_Dwarf2": "He could understand me, for some reason, so I felt inclined to help him.",
+"PXDwarfCT_Dwarf3": "Huh? Is that the ancient Dwarven scroll...? #$b# .................. #$b# I see. I am sorry, @, as of now, I can't tell you anything about it.",
+"PXDwarfCT_Dwarf4": "To think he lost such an important ancient artifact, though... #$b# I wonder where it is now.",
+
+"CT_MysteriousNote1": "Greetings, farmer. #$b# Oh, you found a note you cannot decipher? Let me see. #$b# Hmmm... hm.... #$b# Ah. #$b# I am afraid I am unable to read any of this. You should ask someone else for help. Call it a day and continue your search tomorrow.",
+"CT_MysteriousNote2_Elliott": "Oh, hello, @, what brings you here? #$b# A strange scripture, you say? #$b# ........... #$b# I am a writer, not a historian, mind you. Why don't you ask Pei Ming tomorrow?",
+"CT_MysteriousNote2_Krobus": "You found a note? .........hm, I can't say I understand a thing. Try asking Pei Ming tomorrow, perhaps?",
+"CT_MysteriousNote3": "Hello, @! What a day, huh? #$b# You want to show me something? #$b# .................. #$b# %You hand Pei Ming the note you found. #$b# !!!! $7 #$b# That handwriting... where and how did you find this letter?! $7#$b# %Pei Ming seems agitated. Best to leave the note with him and leave him be.",
+
+"CT_PMRoommate_Krobus": "Oh, Pei Ming moved in with you? That is interesting. He is quite the unusual person, but I am glad you get along. $h",
+
+
+////////roommate dialogue
+//moving in accept
+"PeimingRoommate0": "What an interesting choice to make. But remember that I can't cook at all. $1",
+"PeimingRoommate1": "I hope we will enjoy each other's company. It has become quite lonely in my abode.",
+
+"Spring_Peiming": "You know that I am a free spirit. We don't need to cling to each other day and night. #$b# So don't mind me if I wander around the valley.",
+"Summer_Peiming": "Should I go to the beach? Or spend the day in the cool deep forest nearby?",
+"Fall_Peiming": "Fall means it's time for chestnuts. Do chestnuts grow around the valley, I wonder?",
+"Winter_Peiming": "It is quite chilly outside. Why don't you take a hot beverage for the road? [(O)614 (O)StardropTea (O)253 (O)Cornucopia_Eggnog (O)Cornucopia_HotChocolate (O)void.NorthernHeartMelon_LoveTea (O)Lumisteria.MtVapius_ArtisanGoods_MyriadinTea (O)skellady.SBVCP_MarigoldTea (O)DN.SnS_ancientsweettea] #$e#", //note for translators: do not translate the text in the [] brackets
+"patio_Peiming": "Greetings, @. It sure is nice sitting by the fountain and trying to come up with some poetry.",
+
+"Rainy_Day_0": "This weather calls for a warm drink! Here you go!$1 [(O)Cornucopia_HotChocolate (O)614 (O)253 (O)skellady.SBVCP_DialaHotChoco (O)Wildflour.AtelierGoods_Amoretto_Latte (O)Wildflour.AtelierGoods_Coco_Cabana_Latte (O)Wildflour.AtelierGoods_Early_Riser_Latte (O)Wildflour.AtelierGoods_Mucha_Mocha_Latte (O)Wildflour.AtelierGoods_Pistachio_Buzz_Latte (O)Wildflour.AtelierGoods_Sweetheart_Latte (O)Wildflour.AtelierGoods_Warm_Vanilla_Sugar_Latte (O)Wildflour.AtelierGoods_Flavored_Latte]", //note for translators: do not translate the text in the [] brackets
+
+"Rainy_Day_1": "No excuse to stay at home just because it's raining. I used to win battles in the worst of weather conditions. $3",
+"Rainy_Day_2": "Sometimes, I do think of the Rain Master... #$b# Oh, she's an old... #$b# ...acquaintance of mine.",
+"Rainy_Day_3": "What a weather, huh? While I don't personally mind the rain, I do dislike that it ruins my hair.",
+"Rainy_Day_4": "I should read a book. I found some fun ones with black and white drawings. #$e# Have you ever read 'The Scum Villain's Self-Saving System'? #$b# I'm not sure whether or not I want to give it a read.",
+"Rainy_Day_5": "It's been pouring for hours now, eh? I hope our crops won't go bad in a weather like this. It would be such a waste!",
+
+"Indoor_Day": "@! Up bright and early, are you?$1#$b# Do you need some help on the farm today? Say the word, and consider it done by yours truly.$3#$e#",
+"Indoor_Day_1": "Hey, @. Don't overextert yourself out there again, alright? I swear I can hear Harvey's gibberish in my sleep.",
+"Indoor_Day_2": "I had a weird dream.#$b# There was this weird, white doll, and.......... $8#$e# You know what, forget it. Inviting evil spirits into this house is the last thing we should do.",
+"Indoor_Day_3": "Perhaps we should go for a walk together today, hm?#$e# We could visit my old house, if you know what I mean.$3",
+"Indoor_Day_3.LessFlirty": "Perhaps we should go for a walk together today, hm?#$e# We could visit my old house, enjoy some fine tea or wine or both! $1",//new in 1.1.0
+"Indoor_Day_4": "I opened the windows to let some fresh air in but I think a bee got inside. #$e# Don't worry, I will catch and release it when I spot it again, just like you taught me.",
+"Indoor_Day_5": "I planned on making some pancakes but %pet somehow got its snout into the mix, so scrambled eggs it is.#$b# Bon appetit, @. [(O)194 (O)195 (O)201 (O)748 (O)766 (O)874]", //note for translators: do not translate the text in the [] brackets
+
+"Rainy_Night_0": "Rainy nights have something comforting about them, don't you think?",
+"Rainy_Night_1": "Have you ever thought about how you and I are something like Sworn Brothers? $1",
+"Rainy_Night_2": "I helped myself to a bit of wine today. Would you like me to pour you a glass while you tell me about your day, @?",
+"Rainy_Night_3": "@! Welcome back. #$e# Would you like to join me for a quick game of weiqi before bed? I may even let you win.$3",
+"Rainy_Night_4": "You look positively drenched, my friend.#$e# Get rid of these clothes and go sit in front of the fireplace, no?#$b# We can't have you catch a cold now! $8",
+"Rainy_Night_4.LessFlirty": "You look positively drenched, my friend.#$e# I'll bring you a change of fresh and dry clothes, but do go sit in front of the fireplace! #$b# We can't have you catch a cold now! $8",
+"Rainy_Night_5": "I stayed inside and meditated today. #$e# I think %pet sat on my lap at some point, too. Too bad you couldn't see it, @.",
+
+"Indoor_Night_1": "Nights like these make me wonder who I could ask to have some fun with... #$e# Oh, stop looking at me like that! You know exactly that's what I like to do! $9",
+"Indoor_Night_2": "Welcome back, @. It's good to see you around.",
+"Indoor_Night_3": "...hm. #$b# %Pei Ming seems to be spaced out. #$b# Ah, @! Welcome back home. Forgive me, I have been thinking about my best friends.",
+"Indoor_Night_4": "Good evening, @! Why don't we have a drink together? Here you go! $6[(O)FlashShifter.StardewValleyExpandedCP_BlueMoonWine (O)873 (O)903 (O)Wildflour.AtelierGoods_Bonfire_Ale (O)Wildflour.AtelierGoods_Flavored_Ale (O)Wildflour.AtelierGoods_Snowman_Cream_Ale (O)DN.SnS_salishbourbon (O)void.NorthernHeartMelon_HeartMelonHuangjiu]",//note for translators: do not translate the text in the [] brackets
+"Indoor_Night_5": "Hoho!$9",
+
+"funLeave_Peiming": "I will be heading out today to have some fun.$3#$e# A god has his hobbies and desires, too, after all. $9#$e# See you later!",
+"funReturn_Peiming": "That was a nice outing. I hope your day has been pleasant as well.",
+"Outdoor_Peiming": "Let me know if I can help you on the farm! These muscles aren't just for show. $3",
+"Outdoor_0": "I think I will try to fish a bit today. Willy borrowed me one of his fishing rods and said something about 'having to find my inner peace'. How peaceful can you be when there's a whole carp struggling on the hook???",
+"Outdoor_1": "Walking around the farm makes me appreciate little things in life. Have you heard how excited the cows are when you give them treats? #$b# I think I may just spoil them all day today!$1",
+"Outdoor_2": "Hey, @. I couldn't sleep, so I've decided to go outside. #$e# I played with %pet a bit, too. Who would've thought they'd have so much energy in the morning.#$b# Reminds me of some of the gods from the Upper Court, hah!",
+"Outdoor_3": "I think some birds think of me as a scarecrow. Just a few minutes ago, a sparrow sat on my head!",
+"Outdoor_4": "I spoke with Sam, Abigail and Sebastian recently. #$b# They tried to make me use your modern slang - I must admit, I do not see the appeal.#$e# What the hell is a 'rizz'?",
+"spouseRoom_Peiming": "So, what do you think of my little corner here? Fabulous, no? $1",
+
+"Good_0": "I am grateful for having a friend such as you, even if our lives have been so very different.",
+"Good_1": "Should you ever stumble into my time and space, just pray to one of my statues, okay? $3#$b# As soon as I hear from you, I'll appoint you as a deity! $9",
+"Good_2": "%Pei Ming seems to be in a good mood and is humming a melody to himself. #$e# %Upon listening closely, you realize with shock... #$b# %...that it's 'Rick Astley - Never Gonna Give You Up'",
+"Good_3": "Hey, @. You should be proud of what you've achieved on our farm. Good job maintaining all that for so long!",
+"Good_4": "The tassel you gave me? I keep it on me at all times. It reminds me of good things.",
+"Good_5": "You...$#b# ...need to give me cooking lessons one of these days.$4",
+"Good_6": "Should we start thinking about expanding our plot of land a bit? Hoho!",
+"Good_7": "Would you like to watch my morning routine? I can show you some cool blade tricks, @!",
+"Good_8": "I would love to introduce you to some of my friends one day, @.$1#$b# I'm sure you would enjoy their company, just as much as I'm enjoying yours.$6",
+"Good_9": "$y 'If I ever were to return to my realm, would you like to come with me?_Temporarily, yes._Understandable. I would show you my palace and all kinds of sights then._No, I'd rather stay here._Too bad, but I can't blame you. Things are very different in my home realm.' ",
+//good hearts dialogue for platonic parter only
+"Good_10": "I sometimes catch myself making two cups of tea out of reflex, even when I'm visiting my old house. [(O)614 (O)Wildflour.AtelierGoods_Alchemist_Blend_Tea (O)Wildflour.AtelierGoods_Blueberry_Matcha_Tea (O)Wildflour.AtelierGoods_Cherry_Blossom_Matcha_Tea (O)Wildflour.AtelierGoods_Good_Thyme_Tea (O)Wildflour.AtelierGoods_Happy_Harvest_Tea (O)Wildflour.AtelierGoods_North_Pole_Tea (O)Wildflour.AtelierGoods_Pelican_Fog_Tea (O)Wildflour.AtelierGoods_Plum_Chai_Tea (O)Wildflour.AtelierGoods_Sun_Room_Tea (O)Wildflour.AtelierGoods_Sunny_Delight_Tea] #$b# How peculiar, isn't it? I'm not used to that, haha! #$e#",//note for translators: do not translate the text in the [] brackets
+"Good_11": "Hey, @. #$b# I got you this from the mines. A keepsake, for good luck, heh. #$e# [(O)64 (O)72 (O)166 (O)275 (O)MysteryBox (O)GoldenMysteryBox (O)skellady.SBVCP_PrismaticOrb (O)skellady.SBVCP_MidnightOrb (O)skellady.SBCP_EclipseOrb (O)Lumisteria.MtVapius_BlackGeode (O)Lumisteria.MtVapius_Treasures_ArtifactTrove]",//note for translators: do not translate the text in the [] brackets
+
+"Neutral_0": "Would you mind getting me some of your homemade wine one of these days? It's been a while and I'm craving some.",
+"Neutral_1": "Hm... I'm craving some caviar today. And wine...",
+"Neutral_2": "You shouldn't limit yourself to just me as your roommate, @. If there are other people you want to live with, go for it.",
+"Neutral_3": "Hoho!$9",
+"Neutral_4": "I have been somewhat bored as of late...",
+"Neutral_5": "It's been one of these days where I direly miss my old friends. #$b# I never thought I'd ever feel this way.",
+"Neutral_6": "@... #$b# What is 'internet'? #$e# Why are you refusing to explain it to me! $8",
+"Neutral_7": "Sam has shown me a song called 'I know how to say', claiming it represents me quite well.#$e# I forgot the musician's name... Three-something?",
+"Neutral_8": "Can we hang out again soon? I am getting lonely here, even if it embarasses me to admit that.",
+"Neutral_9": "Want to spar with me? It's been a while since we did something togehter.",
+
+"Bad_0": "I am under the impression that you are avoiding me.",
+"Bad_1": "Is something the matter? We aren't talking as often as we used to.",
+"Bad_2": "Listen, @. If you don't want me around anymore, just say the word and I'll pack up and leave.",
+"Bad_3": "If only you knew how insufferable your obliviousness has been as of late.",
+"Bad_4": "You don't have to cling to me, by all means.#$b# But would it hurt to talk to me every once in a while?",
+"Bad_5": "Maybe I should move back into my house...",
+"Bad_6": "......................$7",
+"Bad_7": "%Pei Ming seems to be pouting.",
+"Bad_8": "I suppose someone like you can only be jealous of my good looks and my great wit.",
+"Bad_9": "I miss women. The ghostly ones, the mortal ones, the divine ones.#$b# I am bored out of my skin here and you are not even talking to me.",
+//bad hearts dialogue for platonic partner only
+"Bad_10": "@, admittdedly, I miss spending time with my companion. Want to play weiqi later this evening?",
+"Bad_11": "Do you still consider us as companions? If you do not, do tell me.",
+
+
+
+
+//partner dialogue
+
+"SpouseFarmhouseClutter": "Someone should tidy up. Do you have any deputies to help?",
+"Spouse_MonstersInHouse": "Let me take care of these monsters! Huh? No?",
+"SpouseStardrop": "Oh!",
+"RejectMermaidPendant_NeedHouseUpgrade": "Do you think a small shack such as yours is enough for someone like me? Please.",
+"RejectMermaidPendant_NotDatable": "I don't deem this necessary. And I frankly am not interested.",
+"RejectMermaidPendant_Under8Hearts": "This is not a commitment I am willing to make.",
+"RejectMermaidPendant_Under10Hearts": "Do you really think you are ready for this?",
+"RejectMermaidPendant_Under10Hearts_AskedAgain": "Asking again? I am not into clingy people.",
+"RejectMermaidPendant": "Keep it for yourself.",
+"divorced": "Sometimes people have to make decisions that are irreversible. In your case, it's also laughable. $5",
+"RejectGift_Divorced": "Once you lost a god's good graces, there is nearly no coming back.$7#$b# Let me phrase this in a way someone like you would understand, @.#$b# You. Screwed. Up.$5",
+"RejectMermaidPendant_Divorced": "Is this your understanding of comedy? If so, I suggest you take classes. $5",
+"RejectBouquet_Divorced": "Shove it up your- $5#$b# Ahem. Get rid of those weeds.",
+"WipedMemory": "Huh? Hm?",
+
+
+"PeimingEngaged0": "What an interesting choice to make. But remember that I can't cook at all. $1",
+"PeimingEngaged1": "Maybe one day, I can show you my palace. #$e# But do not expect me to cling to your side all the time. I am too much of a free spirit to do so. #$e# So, are there any retainers living in your house? No? How strange.",
+
+//neutral dialogue for partner and roommate
+"PartnerDialogue1": "You know that I am a free spirit. We don't need to cling to each other day and night. #$b# So don't mind me if I wander around the valley.",
+"PartnerDialogue2": "@! Up bright and early, are you?$1#$b# Do you need some help on the farm today? Say the word, and consider it done by yours truly.$3#$e#",
+"PartnerDialogue3": "@! Good morning. Would you like to spar with me for morning workout?",
+"PartnerDialogue4": "Good morning, @. I brewed some fresh tea before you woke up - here you go. [(O)614 (O)Wildflour.AtelierGoods_Alchemist_Blend_Tea (O)Wildflour.AtelierGoods_Blueberry_Matcha_Tea (O)Wildflour.AtelierGoods_Cherry_Blossom_Matcha_Tea (O)Wildflour.AtelierGoods_Cookie_Jar_Tea (O)Wildflour.AtelierGoods_Good_Thyme_Tea (O)Wildflour.AtelierGoods_Happy_Harvest_Tea (O)Wildflour.AtelierGoods_North_Pole_Tea (O)Wildflour.AtelierGoods_Pelican_Fog_Tea (O)Wildflour.AtelierGoods_Plum_Chai_Tea (O)Wildflour.AtelierGoods_Positivitea_Tea (O)Wildflour.AtelierGoods_Sun_Room_Tea (O)Wildflour.AtelierGoods_Sunny_Delight_Tea (O)Wildflour.AtelierGoods_Flavored_Tea (O)DN.SnS_ancientsweettea (O)Rafseazz.RSVCP_Matcha_Latte] #$b# Why won't we enjoy it together?$6 #$e# ",//note for translators: do not translate the text in the [] brackets
+"PartnerDialogue5": "I like this little patio you allowed me to have. Listening to the fountain and the birds is almost poetic.",
+"PartnerDialogue6": "Would you mind if I borrowed your horse for a ride, @? I promise to give it back to you in tip-top shape.",
+"PartnerDialogue7": "When I still lived in the Cindersap Forest, the sound of the rushing creek was so relaxing. We should go there again together one day, @.",
+"PartnerDialogue8": "Hm... Do you think these mortal robes you're wearing would suit me? #$b# They're so… plain. No offense. Maybe we should get you a hanfu instead so we could match, haha!",
+"PartnerDialogue9": "Caroline borrowed me some of her favourite novels to read. I must say, her taste in literature is... riveting. Would you like to read one of them, @?",
+
+"PartnerDialogue10": "I couldn't sleep at night so I roamed on the farm a bit.#$b# Yes, I took care of the monsters that were trying to eat your crops. #$b# No, you don't need the details. #$b# Yes, I looked impeccable as always. $3",
+"PartnerDialogue11": "I'll go check the mines today, maybe get some exercise while I'm at it. Don't wait up, @!",
+"PartnerDialogue12": "I saw an advertisement on TV this morning. 'Travel with us to go places' #$b# ...isn't that what travelling is for in the first place?",
+"PartnerDialogue13": "The sauna is far from being on the same level as my favourite hot springs, but hey, I can't complain $1. #$b# Although, I think I know a way to make it more bearable...$3#$b# %[Pei Ming nudges you with a smug smile].",
+"PartnerDialogue14": "@, do you feel fine? You look a bit pale. Why won't you take it easy for today, hm?",
+"PartnerDialogue15": "I spent a nice day outside but I am always glad to return to you, my dear companion. $1",
+"PartnerDialogue16": "That ancient sword that you donated to the museum? Yeah, the craftsmanship is nice. #$b# But why does it have to be all front and center? I swear, Gunther did it on purpose...$7",
+"PartnerDialogue17": "I'm still trying to get used to a slower lifestyle. #$b# No prayers to listen to, no powerful monsters to fight... #$b# The lack of an active communication array to keep me updated. Not even during my mortal life had I had as much free time as I do now.",
+"PartnerDialogue18": "The weather feels nice today. Maybe we should spend the day together, @?",
+
+//platonic partner exclusive
+
+"PartnerDialogue19": "I had no heart to wake you up early today. You looked extra comfortable, with %pet snuggled up to you.",
+"PartnerDialogue20": "Going out already? Keep your wits about, @.  Although I am but one call away, I do not wish to see you hurt from your outings.",
+"PartnerDialogue21": "While I like spending most of my time outside, please remember that coming back home always brings me comfort. #$b# Knowing that you'll be there makes our companionship important to me.",
+"PartnerDialogue22": "Hey, @. Do you need anything before I go out? I can stop by at Pierre's on my way back to the farm.",
+"PartnerDialogue23": "While I do not get the idea of sitting in a dark room and staring at the moving pictures at the screen, I suppose I'd be interested in going to the movies with you. #$b# This venerable one can even win you some prizes at those mysterious machines, heh. $3",
+"PartnerDialogue24": "I must admit that even though silence is not comfortable to me, I do not mind sharing it with you, @. Thank you.",
+"PartnerDialogue25": "I like what you did with the interior of the house, @. #$b# I do not possess such skill to make any place look as welcoming as our farm does right now $1.",
+"PartnerDialogue26": "If anything bothers you, I will always listen to your worries. #$b# However, I can't promise I'll give you good advice, but hey, #$b# I can always teach you how to beat someone up with a stick, hoho! $9",
+"PartnerDialogue27": "Knowing you, you are not going to stay inside despite the rain, are you? That's commendable.$6#$b# This is why we get along so well.",
+"PartnerDialogue28": "@! Isn't this the perfect weather to make some tanghulu together?$1",
+
+
+"Indoor_Day_0": "Try to not get into any trouble today, hm?#$b# We both know you have a talent for attracting that, hah!$6",
+
+"Indoor_Night_0": "Gods don't need sleep - it's considered a waste of time. #$b# Still, I must admit that the late night tranquility does make my eyelids feel heavy...",
+
+"funLeave1": "I will be out today - try to not pass out in the dirt again, hm?#$e# Oh, don't make that face, @! I wouldn't be teasing you about it if that had not happened four times by now!$1",
+"funLeave2": "I think I will take a stroll through the valley today - should I find something interesting, I will make sure to bring it back. #$e# Hm? What do you mean? We have enough cryst- #$b# Preposterous! $8#$b# There's never enough of these beautiful gems to display on these shelves! #$e#",
+"funLeave3": "Leah invited me for one of her drink and paint outings. Do you want to join us? #$b# You'll get to laugh at my painting skills, @! $1",
+
+"CustomSchedule0": "Ah, good morning, @! I think the town is lovely in Spring, don't you think? Especially the pink trees. $1",
+"CustomSchedule1": "I borrowed a history book from the library recently. I must say... #$b# a lot has happened. $8",
+
+/////Objects (new in 1.1.0)
+"MysteriousNote.name": "Mysterious Note", 
+"MysteriousNote.description": "The mysterious person you met by the bus stop dropped this but you can't read it.",
+
+"Tanghulu.DisplayName": "Tanghulu",
+"Tanghulu.Description": "A traditional Chinese snack consisting of several malt sugar coated fruits of Chinese hawthorn on a bamboo skewer",
+
+
+/////QUESTS
+"TalkWizard.title": "The 'Heavenly' Newcomer",
+"TalkWizard.text": "The Wizard wishes to talk to you about Pei Ming, who seemingly has no idea how he ended up here.",
+"TalkWizard.objective": "Go to the Wizard's tower in the forest to talk to Magnus.",
+
+"PMSaloon.title": "Hanging out with a deity",
+"PMSaloon.text": "Pei Ming accepted your offer to spend time together.",
+"PMSaloon.objective": "Head to the saloon after 18:00 to meet up with him.",
+
+"PMMountains.title": "Hanging out with a deity",
+"PMMountains.text": "Pei Ming accepted your offer to spend time together.",
+"PMMountains.objective": "Head to the mountains after 18:00 to meet up with him.",
+
+"NHMForPM.title": "A melon for Pei Ming",
+"NHMForPM.text": "Pei Ming sent you a letter informing you about the desert trader's new item in stock. He even sent you a sample!",
+"NHMForPM.objective": "Plant the seed in Winter and bring the harvested Northern Heart Melon to Pei Ming.",
+"NHMForPM.reaction": "Hoho! I can't believe the Northern Heart Melon managed to prosper on your farm!$1#$b# Thank you so much, @.$6",
+
+"MysteriousLetter1.title": "The Mysterious Letter 1", //new in 1.1.0
+"MysteriousLetter1.Description": "You found a mysterious letter after running into a stranger at the bus stop. Perhaps the Wizard can help decipher it?", //new in 1.1.0
+
+"MysteriousLetter2.title": "The Mysterious Letter 2", //new in 1.1.0
+"MysteriousLetter2.Description": "The Wizard couldn't help you read the note and suggested you find someone else to decipher it.",//new in 1.1.0
+
+"MysteriousNote3.title": "The Mysterious Letter 3", //new in 1.1.0
+"MysteriousNote3.text": "While you still haven't found anyone to decipher the note for you, you have been told to talk to Pei Ming. Could he possibly read the note?", //new in 1.1.0
+"MysteriousNote3.objective": "Bring the Mysterious Note to Pei Ming.", //new in 1.1.0
+"MysteriousNote3.reaction": "Hello, @! What a day, huh? #$b# You want to show me something? #$b# ..................  #$b# !!!! $7 #$b# That handwriting... where and how did you find this letter?! $7#$b# Could you please leave me be for a moment?", //new in 1.1.0
+
+"MysteriousLetter3.title": "The Mysterious Letter 3", //new in 1.1.0
+"MysteriousLetter3.Description": "While you still haven't found anyone to decipher the note for you, you have been told to talk to Pei Ming. Could he possibly read the note?", //new in 1.1.0
+
+"MysteriousNote1": "Talk to the Wizard about the mysterious note you found.", //new in 1.1.0
+"MysteriousNote2": "Find another person who could help you read the mysterious note.", //new in 1.1.0
+"MysteriousNote3": "Talk to Pei Ming. Don't forget to bring the note with you!", //new in 1.1.0
+
+"GemQuest.title": "The red gem", //new in 1.1.0
+"GemQuest.text": "Krobus mentioned an ancient red gem that exists beyond the bounds of space and time, to be found in caverns.", //new in 1.1.0
+"GemQuest.objective": "Find that gem and bring it to Krobus.", //new in 1.1.0
+"GemQuest.reaction": "Could it be...? The gem from the tale really exists?! I will do some research on it. Give me some time to get back to you.", //new in 1.1.0
+
+"PMRequestQuest.title": "Pei Ming and the Note", //new in 1.1.0
+"PMRequestQuest.text": "Pei Ming requested you to go see him to talk about the note you handed him the other day.", //new in 1.1.0
+"PMRequestQuest.objective": "Go to Pei Ming's house at your earliest convenience.", //new in 1.1.0
+
+
+
+/////SPECIAL ORDER
+"SORefinedTastesName": "A Martial God's refined tastes",
+"SORefinedTastesText": "The valley has a lot of interesting food and drink options. I would love to try some to see if they suit my palate, freshly procured, of course. I will reward handsomely.",
+"SODeliverCaviar": "Deliver 1 Caviar to Pei Ming",
+"SODeliverCaviarResponse": "Caviar, a delicacy in many parts of the world. I wonder if it tastes just the way I remember it. #$b# Thank you, @!$h",
+"SODeliverAgedRoe.Text": "Deliver 3 Aged Roe to Pei Ming",
+"SODeliverAgedRoe.Message": "Aged roe, hm? It does look strange, but I do think it is quite tasty.",
+"SODeliverWine.Text": "Deliver 2 bottles of wine to Pei Ming",
+"SODeliverWine.Message": "I have always been quite fond of wine, but here, it is quite different from how I know it.#$b# I can't wait to sample it.",
+"SODeliverSoup.Text": "Deliver 5 bowls of soup to Pei Ming",
+"SODeliverSoup.Message": "Ah, sometimes, it's something as simple as a soup during a cold day to warm the soul. #$b# Thank you so much, @.",
+
+"SOTanghuluIngredientsName": "Tanghulu ingredients required!",
+"SOTanghuluIngredientsText": "I would like to give making my favorite treat, Tanghulu, a try. I require a number of ingredients to do and would appreciate the help.",
+"SODeliverSugar": "Deliver 20 bags of sugar",
+"SODeliverSugarResponse": "Oh, is that the sugar for the tanghulu? Thanks! $1",
+"SODeliverSweetGemBerry.Text": "Deliver 6 Sweet Gem Berries",
+"SODeliverSweetGemBerry.Message": "I heard Sweet Gem Berries are rare and difficult to grow but I think they are best for tanghulu. Thank you!",
+"SODeliverFruit.Text": "Deliver 10 fruits to Pei Ming.",
+"SODeliverFruit.Message": "Thank you! I will use all of this in my tanghulu attempt.",
+"SODeliverBerries.Text": "Deliver 20 berries to Pei Ming.",
+"SODeliverBerries.Message": "Those berries look delicious! My tanghulu is going to turn out amazing.$6",
+
+
+/////MAIL
+"WizardLetter.title": "So about this General...",
+"WizardLetter.text": "Hello, enlightened farmer @.^You have encountered the newcomer in the Forest. Let us talk about him.^Come to my abode as soon as you can.^ - Magnus R.",
+"PMLibraryThanks.title": "You have my gratitude",
+"PMLibraryThanks.text": "Greetings, @. ^I wanted to express my gratitude for your help the other day in the library. I was too upset to show properly, so please accept this token of appreciation for what you have done for me.^^ - General Ming Guang, Martial God of the North",
+"PM4HSaloonLetter.title": "Your invitation.",
+"PM4HSaloonLetter.text": "Dear @,^ As promised, I would like to take up on your offer of spending time together at the saloon. Let us meet there at 18:00. ^ - General Ming Guang, Martial God of the North",
+"PM4HMountainsLetter.title": "Your invitation.",
+"PM4HMountainsLetter.text": "Dear @,^ As promised, I would like to take up on your offer of hiking to the mountains. Let us meet there at 18:00. ^ - General Ming Guang, Martial God of the North",
+"PMTanghuluLetter.title": "Tanghulu Recipe",
+"PMTanghuluLetter.text": "Esteemed @,^^ Thank you for making Tanghulu with me the other day. It's so easy that even I can make it myself, hoho! It's a sweet treat I remember fondly from the distant past. Attached you will find the recipe for it. ^^ - General Ming Guang, Martial God of the North",
+"PMApologyLetter.title": "Let us start over. ",
+"PMApologyLetter.text": "Greetings, @.^^ I have done some thinking since our last conversation. I don't think you are in the right, but moping about won't help my case either. In fact, it is quite immature to try to avoid you like this, so forgive my rare emotional response to your words. Let us try be better friends for each other; my doors will be open for you again. ^^ - General Ming Guang, Martial God of the North",
+"SleepoverLetter.title": "Come over anytime!",
+"SleepoverLetter.text": "Greetings @! ^^ I wanted to offer you the possibility to sleep at my place any time you need. So feel free to use my bed whenever you need it.  Additionally, I managed to set up a teleportation array from the Bus Stop to my house! ^^ - General Ming Guang, Martial God of The North",
+"NHMSeedsLetter.title": "Northern Heart Melon seeds!",
+"NHMSeedsLetter.text": "Esteemed @, ^^ the other day, I was taking a stroll to the desert as I heard that the dungeon there is a lot more challenging than the mines. However, a special trader caught my eye and I went to check out their wares. The good news: for some reason, they are selling Northern Heart Melon seeds! That is incredible, I thought they only existed in my time and location. Perhaps I shouldn't question where they got them from. I luckily had Prismatic Shards with me, so I am adding the seed package to this letter. Why don't you try growing a Northern Heart Melon plant? ^^ - General Ming Guang, Martial God of the North",
+"GlazedHeartMelonLetter.title": "Cooking with the Northern Heart Melon.",
+"GlazedHeartMelonLetter.text": "Greetings @! ^^ I would like to show you my gratitude for bringing me a fresh Northern Heart Melon. I am not a good cook but I added a recipe from my childhood made from this rare ingredient. Give it a try! ^^ - General Ming Guang, Martial God of the North",
+"MovingInLetter.title": "Renovations for Pei Ming",
+"MovingInLetter.text": "Dear @, ^^ Pei Ming approached me about adding more space to your farm so he can move in. Come see me in my workshop and we can talk about the details! ^^ Robin",
+"HuangjiuLetter.title": "Regarding my special order",
+"HuangjiuLetter.text": "Greetings, @. ^^ I have had time to taste the food and drink you brought me and I must say that I am quite impressed by the flavor and quality. I am curious whether or not you are capable of brewing Heart Melon Huangjiu with your means. Why don't you give it a try?^^ - General Ming Guang, Martial God of the North",
+"PM7HSaloonLetter.title": "Invitation to the Saloon",
+"PM7HSaloonLetter.text": "Greetings, @. ^^ I wish to continue our conversation from the other day. Why don't we meet up at the saloon at 18:00 during a rainy weekend day? I'd like to see you there. ^^ General Ming Guang, Martial God of the North",
+"TanghuluInvite.title": "Making Tanghulu",
+"TanghuluInvite.text": "Hello, @! ^^ I would like to invite you to making tanghulu with me at my house, since you have been kind enough to procure all the ingredients. Feel free to come over around 10 in the morning! ^^ General Ming Guang, Martial God of the North",
+"LoveTeaLetter.title": "A special tea blend",
+"LoveTeaLetter.text": "Dear @, ^^ we have known for each other for such a long time and have shared a special bond ever since. To commemorate this, I added the recipe to one of my favorite blends of tea. It is said to make anyone love you instantly, hoho! ^^ General Ming Guang, Martial God of the North",
+"KrobusInvitation.title": "Sewer Invitation", //new in 1.1.0
+"KrobusInvitation.text": "Hello, @. I have some news I would like to talk to you about. Come see me in my usual spot in the sewers between 7 o'clock and midnight. ^ Krobus", //new in 1.1.0
+"PMRequestLetter.title": "The mysterious note.", //new in 1.1.0
+"PMRequestLetter.text": "Greetings, esteemed @. ^ Would you be so kind and meet me as soon as you can? I promise, there is no dubious activity involved. I wish to talk about the torn note you handed me the other day. ^ - General Ming Guang, Martial God of the North", //new in 1.1.0
+
+//////SCHEDULE STRINGS
+"PeiMingHouse0": "Hoho, coming to see me at this time?$3",
+"PeiMingHouse1": "Back in my day, I used to have a palace.#$e# So if I have to be honest, this shack here is a large downgrade.$2",
+"PeiMingHouse2": "Some green tea to start such a gloomy morning is always a treat.",
+"PeiMingHouse3": "Rain, huh? Luckily, it doesn't seem like this place will be affected by droughts anytime soon.",
+"PeiMingHouse4": "Did you know that where I come from, there were Gods controlling the elements? #$b# Seeing that rain outside reminded me of someone.",
+"PeiMingHouse5": "Being a Martial God won't be of much use here, I suppose. So I tried picking up a new hobby.",
+"PeiMingHouse6": "Have you ever attempted writing poetry? Turns out this is hardly my field of expertise.",
+"PeiMingHouse7": "To what do I owe the pleasure to see you here in this weather?$1#$e# Would you like some tea to warm up? I just brewed a whole pot.$6",
+"PeiMingHouse8": "%Pei Ming looks relaxed.#$e# @! Fancy to see you in my abode again.$1#$b# Me? Oh, I simply enjoy the weather. It reminds me of my homeland.$6",
+"PeiMingHouse9": "Well, the weather can't be THAT bad if you made an effort to visit me today, @! Hoho! $9",
+"PeiMingHouse10": "Do you have too much time during winter, or are you just bored enough to come and see me so often?#$b# Not that I mind, heh.$3",
+"PeiMingHouse11": "$y 'Do you grow anything on your farm this season?_Yes, I do._Hoho! Mortals' adaptability is truly fascinating to me.$1_No._That's a pity. I guess tending to animals is the way to go for you during the winter, hm?' ",
+
+"PeiMingRainyOutdoor0": "I actually don't mind being outside in the rain.",
+"PeiMingRainyOutdoor1": "Hello. Why don't you stay and enjoy the rain with me for a while? #$e# We can go back to my place afterwards.$3", //currently not in use I think
+"PeiMingRainyOutdoor2": ".........(Pei Ming glances at you with a weird stare.)$2 #$b# HAHAHAHA! Farmer, you look so very funny all drenched from the rain. A sight to behold.$6",
+"PeiMingRainyOutdoor3": "I wonder if I should pick up fishing?",
+
+"PeiMingMines0": "I tend to get bored here so I went to check the mines.#$e# The monsters are still too weak here, so my boredom did not get resolved.$7",
+"PeiMingMines1": "I flung a stone crab onto a slime and it just exploded.#$b# The slime, I mean.",
+"PeiMingMines2": "I find these mines to be quite underwhelming. I miss having a challenge.",
+"PeiMingMines3": "Even if I do not particularly enjoy myself in those mines, venturing there reminds me of the various times I accompanied my descendant during missions. #$e# I wonder how he is doing and where he is right now.$7",
+"PeiMingMines4": "Have you heard the voice from over there? I want to know who's there! $1",
+
+"PeiMingSummerBeach0": "Random: During such a Weather one simply must use the chance and take a dip in the sea.",
+"PeiMingSummerBeach1": "Recently I learned of an ointment called 'sun screen'.#$e# Want to help me rub it on my back?$3",
+"PeiMingSummerBeach1.LessFlirty": "Recently I learned of an ointment called 'sun screen'.#$e# It's pretty difficult to get it on my back, though.", //new in 1.1.0
+"PeiMingSummerBeach2": "The waves of the ocean remind me of a very dear friend I haven't seen in a long time.#$b#...............hm.$7#$e# I think I will listen to the waves a little longer.$7",
+"PeiMingSummerBeach3": "I love swimming. Those back muscles didn't build up on their own! $1",
+"PeiMingSummerBeach4": "With all due respect, @... #$b# You are standing in the sun. Please move a step or two. $7",
+
+"PeiMingBath0": "Lovely of you to join me today during this Green Rain, @.",
+"PeiMingBath1": "There is nothing better to do in this weather than take a dip in the bath. I don't get why the villagers are so scared.",
+"PeiMingBath2": "I used to be part of tight-knit friend trio.#$b# There were banquets in our realm every now and then and we would often go to the hot springs together afterwards.$1#$e# Hah...#$b# I miss them a lot. Don't tell anyone I said that. $4",
+"PeiMingBath3": "%(Pei Ming seems to be zoned out. Best to leave him be before he starts flirting with you again.)",
+"PeiMingBath3.LessFlirty": "%(Pei Ming seems to be zoned out. Best to leave him be.)", //new in 1.1.0
+
+"PeiMingBday0": "Ah, good morning, @. It is my birthday and I am a little melancholic about it. Please don't mind me.",
+"PeiMingBday1": "The view over the valley from here is great but I can't help but miss the view from my old palace.#$e# On my birthday, I would often invite over my closest companions and enjoy freshly brewed tea, sitting at the balcony that overlooked the North together.",
+"PeiMingBday2": "%It's Pei Ming's birthday but he seems to be lost in thought. Perhaps even someone like him needs a quiet moment to himself.",
+"PeiMingBday3": "%Pei Ming is wistfully staring at the water.#$e# (mumbling)... it's been so long since I last saw him. A birthday without him feels shallow.$7 #$e# %Pei Ming doesn't notice your presence. You decide to leave him alone.",
+"PeiMingBday4": "Hello, @. I was just reminiscing. #$b# $y 'Have you ever crossed the waters within a coffin?_I'm sorry, what?_Yeah, forget about it.$7_That's a little macabre._Life is macabre, little farmer.$7_Uhm... isn't it your birthday?_....ha. You remembered?$7#$b# Indeed it is. I am not in a festive mood, though.' ",
+"PeiMingBday5": "This birthday in particular causes me to feel quite sad. But maybe you could help me, @?#$b#Why don't we go for a swim together? I just know you look great in swimwear.$3",
+"PeiMingBday5.LessFlirty": "This birthday in particular causes me to feel quite sad. Maybe could help, @? #$b# Let's swim! The one who reaches the island first is the winner.",
+"PeiMingBday6": "All in all, if this birthday taught me anything, it's that I am glad to have you around, @. $6",
+
+//1_6_Strings
+"Renovation_AddCustomRoom": "Add Pei Ming's own little room to your house!/Select an area for the renovation.",
+
+//StringsFromMaps
+"OutdoorString0": "A marble statue depiciting a conventionally attractive woman. You wonder if it reflects the owner's tastes.",
+"OutdoorString1": "PEI MING",
+"OutdoorString2": "Pei Ming seems to have locked the door for you and doesn't want you to enter his house anymore.",
+
+"PeiMingHouse.000": "You wish you had never seen what's inside that drawer.",
+"PeiMingHouse.001": "Those look like strategic notes... or, wait? Is that a... poem?",
+"PeiMingHouse.002": "You wonder why Pei Ming has a kitchen at all. He can neither cook nor does he like doing it, but expects women to be perfect cooks. ${You disagree with those archaic views.^Perhaps you should teach him a lesson someday.^What a weirdo.}$", //changed, new in 1.1.0
+"PeiMingHouse.003": "Pei Ming seems to be fond of roses.",
+"PeiMingHouse.004": "A good book and tea gets you through the gloomiest day. Even Pei Ming seems to understand that. You check the book cover and read the title 'Heaven Official's Blessing'.",
+"PeiMingHouse.005": "An interesting collection of trinkets and artifacts that seem as if they were from a whole different world. It appears that they manifested here just as randomly as Pei Ming did.",
+"PeiMingHouse.006": "Pei Ming appears to enjoy wine. This bottle looks very expensive...",
+"PeiMingHouse.007": "Different kinds of robes that are befitting of an ancient deity. Pei Ming really sticks out like a sore thumb here.",
+"PeiMingHouse.008": "Fresh and cheap?... there is something written in the bottom left corner of the flag. 'Happy birthday from your two best friends, old Pei.'",
+"PeiMingHouse.009": "You always find a freshly brewed mug of tea here. You would never find him drink tea from those cheap tea bags.",
+
+"PeiMingSpouseRoom.000": "Pei Ming deposited books of all genres for indoor days here.",
+"PeiMingSpouseRoom.001": "Since Pei Ming loves roses so much, he put some on display here.",
+"PeiMingSpouseRoom.002": "Pei Ming's favorite wine. Maybe you should have a drink with him together later.",
+
+//Dynamic Strings
+"PMRoommate.true": "Roommate",
+"PMRoommate.false": "Platonic partner",
+
+//roommate schedule dialogue (after he moved in)
+"PMRoommate0": "Ah, good morning, @. Do you want to head to the Night Market together later?",
+"PMRoommate1": "I thought it would be nice to have a little drink before heading to the Night Market. Why don't you have some, too? #$b# Don't worry, I'll pay!$1 [(O)873 (O)903 (O)Wildflour.AtelierGoods_Bonfire_Ale (O)Wildflour.AtelierGoods_Snowman_Cream_Ale (O)Wildflour.AtelierGoods_Sunny_Daze_Mead]",//note for translators: do not translate the text in the [] brackets
+"PMRoommate2": "@! You actually came to the Night Market! $1#$e# I am pretty curious about the vendors that have set up shop here.",
+"PMRoommate3": "So there are even real mermaids, huh? #$e# Perhaps I'll check them out. $3",
+"PMRoommate4": "Ah, so you've decided to hike up the mountain, too? I quite enjoyed myself doing so.$6",
+"PMRoommate5": "A 'witch' lives in here, according to rumors. I sort of want to check out this place.",
+"PMRoommate6": "During Winter, I prefer retreating to my abode and enjoy some tea just how I like it. #$e# You are always free to join, naturally.",
+"PMRoommate7": "Missing me on the farm already? $3#$e# Worry not! I shall return shortly.$6",
+
+//Movies
+
+"MovieInvitation": "Movies? This is the modern form of stageplay, no? Well, I am all for it. $1",
+"RejectMovieTicket_AlreadyInvitedBySomeoneElse": "Too bad, somebody else has already invited me.",
+"RejectMovieTicket_AlreadyWatchedThisWeek": "I have already watched a movie this week. Why don't we go next week?",
+"RejectMovieTicket_Divorced": "Are you serious? $7",
+"RejectMovieTicket_DontWantToSeeThatMovie": "I don't find this movie interesting enough. Why don't you ask someone else? #$b# Or just don't go and the two of us go grab a drink instead? $3",
+"RejectMovieTicket": "I have other things to do. Like... #$b# %Pei Ming pretends to think for a long time. #$b# Like........ Staring at the sea.",
+
+"Movies.0": "So you are telling me the actors in this movie are not real but drawn by artist? What a strange idea...",
+"Movies.1": "%Pei Ming appears to be bored.",
+"Movies.2": "That wasn't really what I hoped for. Too bad, but I did enjoy the time with a friend.",
+"Movies.3": "I heard this is based on a so-called 'video game'. What is that?",
+"Movies.4": "Woah!",
+"Movies.5": "I did not really understand the story but I had lots of fun anyway. $6",
+"Movies.6": "I don't know what to think of this movie. 'Mysterium'? This entire world is a mysterium. Hoho!",
+"Movies.7": "Hm... a little scary, no?",
+"Movies.8": "I have to be honest: I am not too fond of scary movies. #$b# But since you were around, I had fun. $6",
+"Movies.9": "Thank you for the invitation during those cold Winter days. #$b# I think it's fun to go to this place together!",
+"Movies.10": "Huh?!$8#$b# When did I fall asleep? Why didn't you wake me up?$8#$b# Haha, please forigve this venerable one. I did not like the story at all.",
+"Movies.11": "Oh, so this is an informational piece, you say? #$b# Sounds great! That way, I can learn even more about this area. $6#$b# I didn't think there would be things like that in this time and age.",
+"Movies.12": "Now that was interesting. I learned so much! #$b# I can't believe that the vegetation in this valley is...#$b#%Pei Ming continues to yap about the documentary for another 30 minutes.",
+"Movies.13": "'It howls in the rain'... Do you think it's got anything to do with wolves? #$b# I find wolves quite interesting.$1",
+"Movies.14": "Are they stupid?",
+"Movies.15": "With all due respect, these children were acting like buffoons. #$b# Perhaps they should train under me to learn some rational thinking. $9",
+"Movies.16": "So you say that this is considered a classic these days? #$b# Well, to me, it is still quite the novelty!$1",
+"Movies.17": "No... it can't be...",
+"Movies.18": "I see why this is considered a 'classic'. It was really good! #$b# And the actress was...#$b# ... you know.< $3",
+
+//config options
+"config.House Location.name": "House Location",
+"config.House Location.description": "Changes the location of Pei Ming's house when using SVE, will otherwise cause clipping issues with Andy's farm. 'Alternate' adds a warp point next to the Wizard Tower and should be selected in case there's conflicts with other mods.",
+"config.House Location.values.Vanilla": "Vanilla",
+"config.House Location.values.SVE": "SVE",
+"config.House Location.values.Alternate": "Alternate",
+
+"config.Portrait Style.name": "Portrait Style",
+"config.Portrait Style.description": "Default = by Pastelshrooms whose sprites inspired this mod; Alternative = by voidcultist, inspired by Nyapu",
+"config.Portrait Style.values.Default": "Default",
+"config.Portrait Style.values.Alternative": "Alternative",
+
+"config.Festival Participation.name": "Festival Participation",
+"config.Festival Participation.description": "Let Pei Ming attend festivals. Disable if there is conflict with other mods. Default true.",
+
+"config.Partnership.name": "Partnership",
+"config.Partnership.description": "Whether Pei Ming behaves like a vanilla roommate or a platonic partner after moving in. Please note: Platonic Partner ignores the roommate schedule and is highly experimental, so bugs are to be expected. Gameplay Suggestion: use Platonic Partnership with the Mod 'Hugs and Kisses' with 'RoommateKisses' enabled!",
+"config.Partnership.values.Platonic Partnership": "Platonic Partnership",
+"config.Partnership.values.Roommates": "Roommates",
+
+"config.section.Relationship.name": "Relationship",
+"config.section.Relationship.description": "",
+
+//PeiXiu (new in 1.1.0)
+
+
+  "peixiu.Intro": "Ah, good day, @. I apologize for everything my ancestor might have said to you thus far. Do call me Pei Xiu. I used to be part of the General's palace.",
+  "peixiu.Spring.Mon": "%Pei Xiu courtly nods at you.",
+  "peixiu.Spring.Mon.2Hearts": "Has my ancestor been giving you a headache lately?",
+  "peixiu.Spring.Tue": "Greetings.",
+  "peixiu.Spring.Tue.2Hearts": "General Ming Guang is a respectable person and I owe him a lot. I do understand that he can be quite a lot, sometimes.",
+  "peixiu.Spring.Wed": "%Pei Xiu looks at you with a deadpan gaze. You wonder if you did anyhting to offend him.",
+  "peixiu.Spring.Thu": "Is there anything you require?",
+  "peixiu.Spring.Fri": "Good day.",
+  "peixiu.Spring.Sat": "...yes?",
+  "peixiu.Spring.Sun": "Can I help you?",
+  "peixiu.GiftLove": "Interesting. I like this. You have my gratitude.",
+  "peixiu.GiftLike": "Thank you for the gift.",
+  "peixiu.GiftDislike": "What is this...?",
+  "peixiu.GiftHate": "...",
+  "peixiu.AcceptGift_(O)109": "Ah, an old sword, you say? I will keep it. Thank you.",
+  "peixiu.BirthdayGift.Loved": "Ah, you remembered my birthday? That is very thoughtful of you.",
+  "peixiu.Bouquet.Reject": "There is already someone else I have in mind.",
+  "peixiu.desert.0": "I have nothing to say to you.",
+  "peixiu.desert.1": "I have no time for idle chatter. There is something I have to find.",
+  "peixiu.desert.2": "There is no time for me to listen to anything you have to say.",
+  "peixiu.desert.3": "What do you want?",
+  "peixiu.desert.4": "........"
+
+  
+ 
+}
+
+
