@@ -34,6 +34,7 @@ The following mods absolutely **must** be installed for this one to work:
 - [HxW Tilesheets](https://www.nexusmods.com/stardewvalley/mods/20139)
 - [PC's Tilesheets](https://www.nexusmods.com/stardewvalley/mods/38116)
 - [Northern Heart Melon](https://www.nexusmods.com/stardewvalley/mods/40998?tab=description)
+- [Event Command Codex](https://github.com/ichortower/EventCommandCodex/releases/download/0.10.0-beta/EventCommandCodex-0.10.0-beta.zip)
 
 And of course, SMAPI and Content Patcher.
 
@@ -50,6 +51,7 @@ Mods that neatly tie in with this one and enhance it, some of them have added co
 - [Hugs and Kisses](https://www.nexusmods.com/stardewvalley/mods/10062): for Roommate kisses! yay!
 - [Platonic Partners and Friendships](https://www.nexusmods.com/stardewvalley/mods/8146): custom relationship labels!
 - [Lookup Anything](https://www.nexusmods.com/stardewvalley/mods/541): just a generally very useful mod for checking schedules, gift tastes etc
+- [BirthdayCTGSQ](https://www.nexusmods.com/stardewvalley/mods/43723) adds dialogue for the player's birthday
 
 Other than that, the mod is compatible with Stardew Valley Expanded. Should compatibility issues with other mods pop up, please let me know.
 
@@ -79,7 +81,7 @@ Additionally, once you have seen the roommate proposal event, the Volcano Trader
 
 
 ## Progression Requirements
-As of version 1.0.0, there are 7 Heart Events and 3 other Events, with more events coming soon. If you can't seem to be able to unlock the events, refer to the following section for the conditions. If all of the conditions apply but you can still not access the event, do report this to me.
+As of version 1.1.0, there are 8 Heart Events and some other Events, with more events coming soon. If you can't seem to be able to unlock the events, refer to the following section for the conditions. If all of the conditions apply but you can still not access the event, do report this to me.
 
 ### Heart Events
 
@@ -166,11 +168,25 @@ As of version 1.0.0, there are 7 Heart Events and 3 other Events, with more even
 | Location | Requirements |
 |----------|--------------|
 |Saloon | must have seen the aforementioned event|
-|      | Friendship with Pei Ming needs to be at 6 Hearts ( = 1750 points) |
+|      | Friendship with Pei Ming needs to be at 7 Hearts ( = 1750 points) |
 |	   | between 18:00 and 24:00 |
 |	   | Saturday or Sunday |
 |	   | Rainy weather |
 |      | player must have received the letter with in which Pei Ming invites the player to the saloon |	
+
+</details>
+
+
+<details>
+<summary>8-Heart-Event</summary>
+
+| Location | Requirements |
+|----------|--------------|
+|Sewer	   |must have seen the 7-heart-event and the "Meeting Krobus" event (see further below)|
+|      | Friendship with Pei Ming needs to be at 8 Hearts ( = 2000 points) |
+|      |between 19:00 to 02:00 |
+|      | must have received invitation letter from Krobus |
+
 
 </details>
 
@@ -216,6 +232,43 @@ This event gives the player the option to become Roommates with Pei Ming. It sho
 |----------|--------------|
 |Town  | Sewer open  |
 |	   | between 21:00 and 02:00 |
+
+
+</details>
+
+
+<details>
+<summary>Meeting new Character </summary>
+
+| Location | Requirements |
+|----------|--------------|
+|Bus Stop  |must have seen Pei Ming's 7-heart-event |
+|	   | between 20:00 and 02:00 |
+
+
+</details>
+
+<details>
+<summary>New Character meets the dwarf </summary>
+
+| Location | Requirements |
+|----------|--------------|
+| Mines  |must have seen the aforementioned event and four days must have passed since |
+|	   | player has met the dwarf |
+|	   | between 18:00 and 00:00 |
+
+</details>
+
+
+
+</details>
+
+<details>
+<summary>Mysterious Note Event</summary>
+
+| Location | Requirements |
+|----------|--------------|
+| Pei Ming's house  | must have received the letter "Pei Ming's request" |
 
 
 </details>
@@ -299,12 +352,35 @@ Requirements:
 Should unlock option to make Huangjiu in kegs
 </details>
 
+<details>
+<summary> Krobus invitation letter: "Sewer Invitation" </summary>
+Requirements:
+* player must have completed the "Mysterious Note 3" quest and at least 4 days must have passed
+
+</details>
+
+<details>
+<summary> Pei Ming's request letter: "The mysterious Note" </summary>
+Requirements:
+* player must have completed the "The mysterious gem" quest, at least 4 days must have passed since then and the player needs to have been to the Caldera on Ginger Island at least once. This letter unlocks the quest "Pei Ming's Request"
+
+</details>
+
 ## Special Orders and Quests
 This mod adds 2 Special Orders and some quests.
 ### Quests
 | Quest | Unlock Conditions |
 |----------|--------------|
 |Tanghulu quest  | Player must have received the letter in which Pei Ming invites the player to make tanghulu together |
+|Mysterious Note 1 | After the encounter with the new character, the player receives a note. The quest starts on the next day. Show the note to the Wizard.  |
+|Mysterious Note 2 | After showing the note to the wizard, the second part of the quest starts the next day.|
+|Mysterious Note 3 | After showing the note to the correct NPC, the third part of the quest starts the next day. Deliver the note to Pei Ming. |
+|Mysterious Gem Quest | After seeing Pei Ming's heart event, go check your letterbox. This will add the Mysterious Gem quest. You can find the required gem by breaking geodes. |
+|Pei Ming's request | Unlocks after receiving the letter "About the mysterious note" |
+
+
+<details> <summary> Spoiler for Mysterious Note 2 if you can't find the right character to talk to </summary>
+Talk to Krobus.</details>
 
 
 ### Special Orders
